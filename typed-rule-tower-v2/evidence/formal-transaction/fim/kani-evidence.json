@@ -1,0 +1,43 @@
+{
+  "schema": "kani-bounded-check-evidence-v1",
+  "tool": "Kani 0.67.0 / CBMC 6.8.0",
+  "candidate_whole_body": {
+    "status": "refuted",
+    "candidate_file": "1/candidate.rs",
+    "harness_file": "candidate-kani.rs",
+    "log": "kani-candidate.log",
+    "failed_checks": [
+      "subtraction overflow",
+      "acceptance condition",
+      "remaining budget preservation"
+    ]
+  },
+  "handwritten_positive_control": {
+    "status": "verified within harness bounds",
+    "harness": "handwritten-focused-control.rs",
+    "log": "kani-focused-control.log",
+    "model_generated": false,
+    "bounds": "matching fixed key, Waiting, no prior commits, budget 0..2, status 0..2, arbitrary u32 old/new word"
+  },
+  "broad_control": {
+    "status": "unknown",
+    "reason": "terminated exit 143 without a completed verdict",
+    "log": "kani-broad-control-incomplete.log"
+  },
+  "actual_fim_expression": {
+    "candidate_sha256": "fd45e1414867e91d914fc408d867531563bc8d0ec47565e179a459abd888807b",
+    "accepted_updates": "verified within matching-key harness bounds",
+    "general_guard": "unknown; 60-second timeout, not refutation",
+    "log": "publish-expression/kani-combined.log",
+    "scoped_rejection_checks": {
+      "verified": 10,
+      "failed": 0,
+      "log": "publish-expression/kani-scoped-rejections.log",
+      "bounds": "fixed a/b incarnation, one concrete difference at a time in five correlation fields; concrete key values 0/1/2; word arbitrary u32; one prior commit for duplicate case; specific Ready/Terminal/no-pending/invalid-status cases"
+    },
+    "accepted_updates_bounds": "matching fixed key, Waiting, no prior commits, budget 0..2, status 0..2, arbitrary u32 old/new word"
+  },
+  "native_implementation_theorem": "open",
+  "runtime_atomic_commit": "open",
+  "executable_admission": false
+}

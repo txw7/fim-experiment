@@ -1,0 +1,560 @@
+{
+  "schema": "coordination-rule-v1",
+  "id": "grow-vm-iteration-v1",
+  "match": {
+    "kind": "occurrence",
+    "node_type": ":run-node",
+    "body": "open",
+    "bind": {
+      "body_address": "NativeAddress",
+      "root_graph": "GraphId"
+    }
+  },
+  "parameters": {
+    "iteration_bound": "PositiveBound",
+    "effects": "EffectSet",
+    "contract": "ContractId",
+    "correlation_type": "TypeId"
+  },
+  "fresh": {
+    "cycle_graph": {
+      "type": "GraphId",
+      "scope": "$root_graph"
+    },
+    "controller": {
+      "type": "PlacementId",
+      "scope": "$cycle_graph"
+    },
+    "worker": {
+      "type": "PlacementId",
+      "scope": "$cycle_graph"
+    },
+    "machine": {
+      "type": "MachineId",
+      "scope": "$cycle_graph"
+    },
+    "call": {
+      "type": "RelationIntentId",
+      "scope": "$cycle_graph"
+    },
+    "cycle": {
+      "type": "RelationIntentId",
+      "scope": "$cycle_graph"
+    },
+    "controller_op": {
+      "type": "OperationId",
+      "scope": "$cycle_graph"
+    },
+    "worker_op": {
+      "type": "OperationId",
+      "scope": "$cycle_graph"
+    },
+    "controller_node": {
+      "type": "NodeTypeId",
+      "scope": "$cycle_graph"
+    },
+    "worker_node": {
+      "type": "NodeTypeId",
+      "scope": "$cycle_graph"
+    },
+    "seed_port": {
+      "type": "PortId",
+      "scope": "$cycle_graph"
+    },
+    "outcome_port": {
+      "type": "PortId",
+      "scope": "$cycle_graph"
+    },
+    "request_port": {
+      "type": "PortId",
+      "scope": "$cycle_graph"
+    },
+    "receive_port": {
+      "type": "PortId",
+      "scope": "$cycle_graph"
+    },
+    "argument_port": {
+      "type": "PortId",
+      "scope": "$cycle_graph"
+    },
+    "result_port": {
+      "type": "PortId",
+      "scope": "$cycle_graph"
+    }
+  },
+  "requires": [
+    "current-native-subject",
+    "body-open",
+    "allowed-effects",
+    "finite-growth"
+  ],
+  "produce": {
+    "type": "ConstructionProgram",
+    "inputs": {
+      "body_address": "NativeAddress",
+      "root_graph": "GraphId",
+      "iteration_bound": "PositiveBound",
+      "effects": "EffectSet",
+      "contract": "ContractId",
+      "correlation_type": "TypeId"
+    },
+    "outputs": {
+      "delta": "GraphDelta",
+      "obligations": "ObligationSet"
+    },
+    "instructions": [
+      {
+        "op": "nest",
+        "body": "$body_address",
+        "graph": "$cycle_graph"
+      },
+      {
+        "op": "append",
+        "graph": "$cycle_graph",
+        "collection": "port_definitions",
+        "value": {
+          "id": "$seed_port",
+          "direction": ":in",
+          "value_type": ":vm-state",
+          "effects": "$effects",
+          "contract": "$contract"
+        }
+      },
+      {
+        "op": "append",
+        "graph": "$cycle_graph",
+        "collection": "port_definitions",
+        "value": {
+          "id": "$outcome_port",
+          "direction": ":out",
+          "value_type": ":run-outcome",
+          "effects": "$effects",
+          "contract": "$contract"
+        }
+      },
+      {
+        "op": "append",
+        "graph": "$cycle_graph",
+        "collection": "port_definitions",
+        "value": {
+          "id": "$request_port",
+          "direction": ":out",
+          "value_type": ":activation-request",
+          "effects": "$effects",
+          "contract": "$contract"
+        }
+      },
+      {
+        "op": "append",
+        "graph": "$cycle_graph",
+        "collection": "port_definitions",
+        "value": {
+          "id": "$receive_port",
+          "direction": ":in",
+          "value_type": ":step-completion",
+          "effects": "$effects",
+          "contract": "$contract"
+        }
+      },
+      {
+        "op": "append",
+        "graph": "$cycle_graph",
+        "collection": "port_definitions",
+        "value": {
+          "id": "$argument_port",
+          "direction": ":in",
+          "value_type": ":activation-request",
+          "effects": "$effects",
+          "contract": "$contract"
+        }
+      },
+      {
+        "op": "append",
+        "graph": "$cycle_graph",
+        "collection": "port_definitions",
+        "value": {
+          "id": "$result_port",
+          "direction": ":out",
+          "value_type": ":step-completion",
+          "effects": "$effects",
+          "contract": "$contract"
+        }
+      },
+      {
+        "op": "append",
+        "graph": "$cycle_graph",
+        "collection": "operations",
+        "value": {
+          "id": "$controller_op",
+          "inputs": [
+            "$seed_port",
+            "$receive_port"
+          ],
+          "outputs": [
+            "$outcome_port",
+            "$request_port"
+          ],
+          "preconditions": [],
+          "postconditions": [
+            ":bounded-step-loop"
+          ],
+          "effects": "$effects",
+          "contract": "$contract"
+        }
+      },
+      {
+        "op": "append",
+        "graph": "$cycle_graph",
+        "collection": "operations",
+        "value": {
+          "id": "$worker_op",
+          "inputs": [
+            "$argument_port"
+          ],
+          "outputs": [
+            "$result_port"
+          ],
+          "preconditions": [],
+          "postconditions": [
+            ":abstract-step-callee"
+          ],
+          "effects": "$effects",
+          "contract": "$contract"
+        }
+      },
+      {
+        "op": "append",
+        "graph": "$cycle_graph",
+        "collection": "machines",
+        "value": {
+          "id": "$machine",
+          "states": [
+            ":ready",
+            ":waiting",
+            ":terminated"
+          ],
+          "initial": ":ready",
+          "transitions": [
+            {
+              "id": ":issue",
+              "to": ":waiting",
+              "trigger": ":activation-request",
+              "guard": ":positive-budget",
+              "operation": "$controller_op",
+              "effects": [
+                ":activate",
+                ":await"
+              ],
+              "contract": "$contract",
+              "from": ":ready"
+            },
+            {
+              "id": ":continue",
+              "to": ":ready",
+              "trigger": ":step-completion",
+              "guard": ":continue",
+              "operation": "$controller_op",
+              "effects": [
+                ":publish"
+              ],
+              "contract": "$contract",
+              "from": ":waiting"
+            },
+            {
+              "id": ":budget",
+              "to": ":terminated",
+              "trigger": ":step-completion",
+              "guard": ":stop",
+              "operation": "$controller_op",
+              "effects": [
+                ":publish",
+                ":terminate"
+              ],
+              "contract": "$contract",
+              "from": ":waiting"
+            },
+            {
+              "id": ":halt",
+              "to": ":terminated",
+              "trigger": ":step-completion",
+              "guard": ":halt",
+              "operation": "$controller_op",
+              "effects": [
+                ":publish",
+                ":terminate"
+              ],
+              "contract": "$contract",
+              "from": ":waiting"
+            },
+            {
+              "id": ":trap",
+              "to": ":terminated",
+              "trigger": ":step-completion",
+              "guard": ":trap",
+              "operation": "$controller_op",
+              "effects": [
+                ":terminate"
+              ],
+              "contract": "$contract",
+              "from": ":waiting"
+            },
+            {
+              "id": ":exhaust",
+              "to": ":terminated",
+              "trigger": ":exhaustion-event",
+              "guard": ":zero-budget",
+              "operation": "$controller_op",
+              "effects": [
+                ":terminate"
+              ],
+              "contract": "$contract",
+              "from": ":ready"
+            }
+          ]
+        }
+      },
+      {
+        "op": "append",
+        "graph": "$cycle_graph",
+        "collection": "node_types",
+        "value": {
+          "id": "$controller_node",
+          "ports": [
+            "$seed_port",
+            "$outcome_port",
+            "$request_port",
+            "$receive_port"
+          ],
+          "operations": [
+            "$controller_op"
+          ],
+          "machine": "$machine",
+          "contract": "$contract"
+        }
+      },
+      {
+        "op": "append",
+        "graph": "$cycle_graph",
+        "collection": "node_types",
+        "value": {
+          "id": "$worker_node",
+          "ports": [
+            "$argument_port",
+            "$result_port"
+          ],
+          "operations": [
+            "$worker_op"
+          ],
+          "machine": ":unbound",
+          "contract": "$contract"
+        }
+      },
+      {
+        "op": "append",
+        "graph": "$cycle_graph",
+        "collection": "placements",
+        "value": {
+          "id": "$controller",
+          "type": "$controller_node",
+          "parent": ":none",
+          "state": ":ready",
+          "memory": ":unbound",
+          "provider": ":unbound",
+          "child": null
+        }
+      },
+      {
+        "op": "append",
+        "graph": "$cycle_graph",
+        "collection": "placements",
+        "value": {
+          "id": "$worker",
+          "type": "$worker_node",
+          "parent": ":none",
+          "state": ":unbound",
+          "memory": ":unbound",
+          "provider": ":unbound",
+          "child": null
+        }
+      },
+      {
+        "op": "append",
+        "graph": "$cycle_graph",
+        "collection": "connections",
+        "value": {
+          "id": "$call",
+          "type": ":call",
+          "ends": [
+            {
+              "role": ":caller",
+              "placement": "$controller",
+              "port": "$request_port"
+            },
+            {
+              "role": ":argument",
+              "placement": "$worker",
+              "port": "$argument_port"
+            },
+            {
+              "role": ":result",
+              "placement": "$worker",
+              "port": "$result_port"
+            },
+            {
+              "role": ":return",
+              "placement": "$controller",
+              "port": "$receive_port"
+            }
+          ],
+          "contract": "$contract",
+          "effects": "$effects",
+          "handler": ":unbound",
+          "callee_operation": "$worker_op"
+        }
+      },
+      {
+        "op": "append",
+        "graph": "$cycle_graph",
+        "collection": "connections",
+        "value": {
+          "id": "$cycle",
+          "type": ":activation-feedback",
+          "ends": [
+            {
+              "role": ":controller",
+              "placement": "$controller",
+              "port": "$request_port"
+            },
+            {
+              "role": ":activation",
+              "placement": "$worker",
+              "port": "$argument_port"
+            },
+            {
+              "role": ":completion",
+              "placement": "$worker",
+              "port": "$result_port"
+            },
+            {
+              "role": ":continuation",
+              "placement": "$controller",
+              "port": "$receive_port"
+            }
+          ],
+          "contract": "$contract",
+          "effects": "$effects",
+          "handler": ":unbound",
+          "machine": "$machine",
+          "correlation_schema": "$correlation_type",
+          "iteration_bound": "$iteration_bound",
+          "work_relation": [
+            ":relation",
+            "$cycle_graph",
+            "$call"
+          ]
+        }
+      },
+      {
+        "op": "enclose",
+        "graph": "$cycle_graph",
+        "map": [
+          {
+            "outer": ":run-state",
+            "inner_placement": "$controller",
+            "inner_port": "$seed_port"
+          },
+          {
+            "outer": ":run-outcome-port",
+            "inner_placement": "$controller",
+            "inner_port": "$outcome_port"
+          }
+        ]
+      }
+    ]
+  },
+  "obligations": [
+    "boundary-preservation",
+    "effect-containment",
+    "matching-completion",
+    "environmental-liveness-unproven",
+    "behavioral-refinement-unproven"
+  ],
+  "interface": {
+    "ports": [
+      {
+        "name": "body_address",
+        "direction": "in",
+        "value_type": "NativeAddress"
+      },
+      {
+        "name": "root_graph",
+        "direction": "in",
+        "value_type": "GraphId"
+      },
+      {
+        "name": "iteration_bound",
+        "direction": "in",
+        "value_type": "PositiveBound"
+      },
+      {
+        "name": "effects",
+        "direction": "in",
+        "value_type": "EffectSet"
+      },
+      {
+        "name": "contract",
+        "direction": "in",
+        "value_type": "ContractId"
+      },
+      {
+        "name": "correlation_type",
+        "direction": "in",
+        "value_type": "TypeId"
+      },
+      {
+        "name": "delta",
+        "direction": "out",
+        "value_type": "GraphDelta"
+      },
+      {
+        "name": "obligations",
+        "direction": "out",
+        "value_type": "ObligationSet"
+      }
+    ],
+    "boundary_map": [
+      {
+        "outer": "body_address",
+        "inner": "produce.body_address"
+      },
+      {
+        "outer": "root_graph",
+        "inner": "produce.root_graph"
+      },
+      {
+        "outer": "iteration_bound",
+        "inner": "produce.iteration_bound"
+      },
+      {
+        "outer": "effects",
+        "inner": "produce.effects"
+      },
+      {
+        "outer": "contract",
+        "inner": "produce.contract"
+      },
+      {
+        "outer": "correlation_type",
+        "inner": "produce.correlation_type"
+      },
+      {
+        "outer": "delta",
+        "inner": "produce.delta"
+      },
+      {
+        "outer": "obligations",
+        "inner": "produce.obligations"
+      }
+    ]
+  }
+}

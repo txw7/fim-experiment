@@ -1,0 +1,1173 @@
+{
+  "kind": "exhaustive-finite-transition-check",
+  "status": "passed",
+  "states": 16,
+  "progress_edges": 29,
+  "rejection_edges": 20,
+  "domains": {
+    "initial_budget": [
+      0,
+      1,
+      2
+    ],
+    "word": [
+      0,
+      1
+    ],
+    "status": [
+      "continue",
+      "halt",
+      "trap"
+    ],
+    "identities": "one fresh incarnation per initial model; monotonically allocated iterations"
+  },
+  "reachability": {
+    "termination": true,
+    "successful_commit": true
+  },
+  "transitions": [
+    {
+      "before": {
+        "phase": "ready",
+        "remaining": 0,
+        "pending": null,
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      },
+      "event": {
+        "kind": "exhaust"
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      }
+    },
+    {
+      "before": {
+        "phase": "ready",
+        "remaining": 1,
+        "pending": null,
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      },
+      "event": {
+        "kind": "issue"
+      },
+      "after": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "b8c13c57d1d643e1aeefe891a44f7de6",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "b8c13c57d1d643e1aeefe891a44f7de6",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "b8c13c57d1d643e1aeefe891a44f7de6",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "status": "continue",
+        "state": {
+          "word": 0
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "3357b54cc7d5c39a2125cd7b9d8df7f6419a2c37901f68e5ff9f120e152b5d5b"
+        ],
+        "iteration": 1,
+        "value": 0
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "b8c13c57d1d643e1aeefe891a44f7de6",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "b8c13c57d1d643e1aeefe891a44f7de6",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "status": "continue",
+        "state": {
+          "word": 1
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "3357b54cc7d5c39a2125cd7b9d8df7f6419a2c37901f68e5ff9f120e152b5d5b"
+        ],
+        "iteration": 1,
+        "value": 1
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "b8c13c57d1d643e1aeefe891a44f7de6",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "b8c13c57d1d643e1aeefe891a44f7de6",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "status": "halt",
+        "state": {
+          "word": 0
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "3357b54cc7d5c39a2125cd7b9d8df7f6419a2c37901f68e5ff9f120e152b5d5b"
+        ],
+        "iteration": 1,
+        "value": 0
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "b8c13c57d1d643e1aeefe891a44f7de6",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "b8c13c57d1d643e1aeefe891a44f7de6",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "status": "halt",
+        "state": {
+          "word": 1
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "3357b54cc7d5c39a2125cd7b9d8df7f6419a2c37901f68e5ff9f120e152b5d5b"
+        ],
+        "iteration": 1,
+        "value": 1
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "b8c13c57d1d643e1aeefe891a44f7de6",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "b8c13c57d1d643e1aeefe891a44f7de6",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "status": "trap",
+        "state": {
+          "word": 0
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "3357b54cc7d5c39a2125cd7b9d8df7f6419a2c37901f68e5ff9f120e152b5d5b"
+        ],
+        "iteration": 1,
+        "value": 0
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "b8c13c57d1d643e1aeefe891a44f7de6",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "b8c13c57d1d643e1aeefe891a44f7de6",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "status": "trap",
+        "state": {
+          "word": 1
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "3357b54cc7d5c39a2125cd7b9d8df7f6419a2c37901f68e5ff9f120e152b5d5b"
+        ],
+        "iteration": 1,
+        "value": 0
+      }
+    },
+    {
+      "before": {
+        "phase": "ready",
+        "remaining": 2,
+        "pending": null,
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      },
+      "event": {
+        "kind": "issue"
+      },
+      "after": {
+        "phase": "waiting",
+        "remaining": 1,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 1,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "status": "continue",
+        "state": {
+          "word": 0
+        }
+      },
+      "after": {
+        "phase": "ready",
+        "remaining": 1,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 0
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 1,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "status": "continue",
+        "state": {
+          "word": 1
+        }
+      },
+      "after": {
+        "phase": "ready",
+        "remaining": 1,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 1
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 1,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "status": "halt",
+        "state": {
+          "word": 0
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 1,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 0
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 1,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "status": "halt",
+        "state": {
+          "word": 1
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 1,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 1
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 1,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "status": "trap",
+        "state": {
+          "word": 0
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 1,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 0
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 1,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "committed": [],
+        "iteration": 0,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 0,
+          "attempt": 0
+        },
+        "status": "trap",
+        "state": {
+          "word": 1
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 1,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 0
+      }
+    },
+    {
+      "before": {
+        "phase": "ready",
+        "remaining": 1,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 1
+      },
+      "event": {
+        "kind": "issue"
+      },
+      "after": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 1
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 1
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "status": "continue",
+        "state": {
+          "word": 0
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71",
+          "c6f6e7c03f12b607759c9fa65cd797ac613872fab8244a9c46e089b6f54814fb"
+        ],
+        "iteration": 2,
+        "value": 0
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 1
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "status": "continue",
+        "state": {
+          "word": 1
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71",
+          "c6f6e7c03f12b607759c9fa65cd797ac613872fab8244a9c46e089b6f54814fb"
+        ],
+        "iteration": 2,
+        "value": 1
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 1
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "status": "halt",
+        "state": {
+          "word": 0
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71",
+          "c6f6e7c03f12b607759c9fa65cd797ac613872fab8244a9c46e089b6f54814fb"
+        ],
+        "iteration": 2,
+        "value": 0
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 1
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "status": "halt",
+        "state": {
+          "word": 1
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71",
+          "c6f6e7c03f12b607759c9fa65cd797ac613872fab8244a9c46e089b6f54814fb"
+        ],
+        "iteration": 2,
+        "value": 1
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 1
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "status": "trap",
+        "state": {
+          "word": 0
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71",
+          "c6f6e7c03f12b607759c9fa65cd797ac613872fab8244a9c46e089b6f54814fb"
+        ],
+        "iteration": 2,
+        "value": 1
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 1
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "status": "trap",
+        "state": {
+          "word": 1
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71",
+          "c6f6e7c03f12b607759c9fa65cd797ac613872fab8244a9c46e089b6f54814fb"
+        ],
+        "iteration": 2,
+        "value": 1
+      }
+    },
+    {
+      "before": {
+        "phase": "ready",
+        "remaining": 1,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 0
+      },
+      "event": {
+        "kind": "issue"
+      },
+      "after": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 0
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "status": "continue",
+        "state": {
+          "word": 0
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71",
+          "c6f6e7c03f12b607759c9fa65cd797ac613872fab8244a9c46e089b6f54814fb"
+        ],
+        "iteration": 2,
+        "value": 0
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "status": "continue",
+        "state": {
+          "word": 1
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71",
+          "c6f6e7c03f12b607759c9fa65cd797ac613872fab8244a9c46e089b6f54814fb"
+        ],
+        "iteration": 2,
+        "value": 1
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "status": "halt",
+        "state": {
+          "word": 0
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71",
+          "c6f6e7c03f12b607759c9fa65cd797ac613872fab8244a9c46e089b6f54814fb"
+        ],
+        "iteration": 2,
+        "value": 0
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "status": "halt",
+        "state": {
+          "word": 1
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71",
+          "c6f6e7c03f12b607759c9fa65cd797ac613872fab8244a9c46e089b6f54814fb"
+        ],
+        "iteration": 2,
+        "value": 1
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "status": "trap",
+        "state": {
+          "word": 0
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71",
+          "c6f6e7c03f12b607759c9fa65cd797ac613872fab8244a9c46e089b6f54814fb"
+        ],
+        "iteration": 2,
+        "value": 0
+      }
+    },
+    {
+      "before": {
+        "phase": "waiting",
+        "remaining": 0,
+        "pending": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71"
+        ],
+        "iteration": 1,
+        "value": 0
+      },
+      "event": {
+        "kind": "completion",
+        "key": {
+          "graph_generation": 1,
+          "input_generation": 0,
+          "invocation": "f9df8fb8d7314fe285c1b688ee12c5db",
+          "iteration": 1,
+          "attempt": 0
+        },
+        "status": "trap",
+        "state": {
+          "word": 1
+        }
+      },
+      "after": {
+        "phase": "terminated",
+        "remaining": 0,
+        "pending": null,
+        "committed": [
+          "8412f02f7ac75708adfa76e14250fdab9cfd8c064cb22a4087d417b09cf21c71",
+          "c6f6e7c03f12b607759c9fa65cd797ac613872fab8244a9c46e089b6f54814fb"
+        ],
+        "iteration": 2,
+        "value": 0
+      }
+    }
+  ],
+  "silent_worker_counterexample": [
+    "Ready(1)",
+    "dispatch \u2192 Waiting(0)",
+    "idle \u2192 Waiting(0)",
+    "repeat forever"
+  ],
+  "liveness": "not unconditional; matching completions and fair service required",
+  "retry_profile": "unsupported; no timeout/cancellation/retry claim",
+  "native_to_interpreter_general_proof": "open",
+  "runtime_atomicity": "open"
+}

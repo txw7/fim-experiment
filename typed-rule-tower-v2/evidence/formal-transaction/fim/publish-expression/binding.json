@@ -1,0 +1,21 @@
+{
+  "schema": "proposed-code-refinement-transaction-v1",
+  "subject": "63cd7669632f2de9be2693600a26a043654b9eec61013f6df5bda01105b79e03",
+  "snapshot": "39952b83ccd456b448a9304323d66b26ad60499aaaabf630d5b8a5cb77317afd",
+  "lowering_profile": "authored checked-profile lowering scaffold; FIM publish-value expression",
+  "semantic_scope": "completion acceptance subclaim under controller operation; helper is not yet a native admitted realization",
+  "contract": "cycle-contract",
+  "source_sha256": "55fa236c16a1bc3455e48a38fd4c99467517cb3dcf49953f69851df85cdd9cb5",
+  "byte_range": [
+    1375,
+    1382
+  ],
+  "required_gates": [
+    "exact-source",
+    "rust-tests",
+    "implementation-proof",
+    "runtime-atomic-commit"
+  ],
+  "proof_scope": "pure function and later implementation/model correspondence",
+  "execution": "blocked"
+}

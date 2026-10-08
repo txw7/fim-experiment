@@ -1,0 +1,20 @@
+{
+  "rule_identity": "878d4b643f5ffe51bbd951e7bb7235a7ff39d8cfbbdd2757375c518dc6de937c",
+  "seed_addresses": 158,
+  "grown_addresses": 431,
+  "negative_checks": 22,
+  "r001_selected": 431,
+  "feedback_trace": "two correlated successes then budget termination",
+  "halt_trap_checked": true,
+  "native_source": "/home/user0/ORCHESTRATION/worktrees/goggles-vm-feedback-47fe6800",
+  "base_commit": "47fe6800307c8921a4b733ad6e56fa0b78698de8",
+  "native_files_sha256": {
+    "lisp/shg_encapsulator_v1.lisp": "1a680528677846f176ba2c9b1d5ce91bdb7100946804d072a34ab6e87ce62aeb",
+    "lisp/shg_activation_feedback_v1.lisp": "e75d28019a9b21627a82e7fcaaf351c7c21341d2853b769641597bc4b77f0970",
+    "lsip-shg-encapsulator-v1.asd": "9569cd18a34db337f015ff3c19248b5685696d9d0af21aba0451fd9046a10175"
+  },
+  "structural_admission_only": true,
+  "behavioral_liveness_proof": "open",
+  "dispatch": "bounded protocol interpreter; no provider or VM instruction execution",
+  "interpreter_sha256": "b25a63c80c938502e18f537b78738556ab8fcba3566d15444832c8cafc9fd3a8"
+}

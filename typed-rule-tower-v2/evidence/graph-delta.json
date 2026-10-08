@@ -1,0 +1,592 @@
+{
+  "transaction_identity": "855204e7d7b24b9496b41b38a9dc9148",
+  "source_pin": {
+    "declaration_digest": "4f8c118195695aff4e23fdc19fe6e1c7532210486486b1b36a10b5a2440948db",
+    "index_digest": "e59dee8af0f78cc8dc4a167c9d5601d341d56eef8580ceafbe507314e87b8e20"
+  },
+  "parent_address": "25f5721840ed3ed19ab505576bb17aaa9a4088f7649a336ff78d9791ec9a241a",
+  "parent_generation": 0,
+  "rule_identity": "878d4b643f5ffe51bbd951e7bb7235a7ff39d8cfbbdd2757375c518dc6de937c",
+  "added_child": {
+    "schema": ":shg-declarations-v1",
+    "id": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+    "generation": 1,
+    "source_ref": [
+      ":transaction",
+      "855204e7d7b24b9496b41b38a9dc9148",
+      ":source-pin",
+      "e3d1e1264bd67689c688e559d52afdc0f5c6e9d2778502ad1efa133f1a86339a",
+      ":construction-rule",
+      "878d4b643f5ffe51bbd951e7bb7235a7ff39d8cfbbdd2757375c518dc6de937c",
+      ":parent-address",
+      "25f5721840ed3ed19ab505576bb17aaa9a4088f7649a336ff78d9791ec9a241a",
+      ":bindings",
+      "ea5e95dca9d6ad3806347fa2a68c5e050b88e00ac88fc0017bea49b428029a5e"
+    ],
+    "limits": {
+      "max_depth": 4,
+      "max_occurrences": 12,
+      "max_relations": 1024,
+      "max_input_nodes": 4096
+    },
+    "types": [
+      {
+        "id": ":vm-state",
+        "schema": [
+          ":record",
+          ":word",
+          ":u32"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":run-outcome",
+        "schema": [
+          ":result",
+          ":vm-state",
+          ":halt-trap-budget"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":activation-key",
+        "schema": [
+          ":record",
+          ":graph-generation",
+          ":natural",
+          ":input-generation",
+          ":natural",
+          ":invocation",
+          ":string",
+          ":iteration",
+          ":natural",
+          ":attempt",
+          ":natural"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":activation-request",
+        "schema": [
+          ":record",
+          ":key",
+          ":activation-key",
+          ":state",
+          ":vm-state"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":step-completion",
+        "schema": [
+          ":record",
+          ":key",
+          ":activation-key",
+          ":state",
+          ":vm-state",
+          ":status",
+          ":continue-halt-trap"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":controller-state",
+        "schema": [
+          ":record",
+          ":budget",
+          ":natural",
+          ":carried-state",
+          ":vm-state",
+          ":pending-key",
+          ":activation-key"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":positive-budget",
+        "schema": [
+          ":predicate",
+          [
+            ":controller-state"
+          ],
+          ":boolean",
+          ":positive-budget"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":zero-budget",
+        "schema": [
+          ":predicate",
+          [
+            ":controller-state"
+          ],
+          ":boolean",
+          ":zero-budget"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":continue",
+        "schema": [
+          ":predicate",
+          [
+            ":controller-state",
+            ":step-completion"
+          ],
+          ":boolean",
+          ":continue"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":stop",
+        "schema": [
+          ":predicate",
+          [
+            ":controller-state",
+            ":step-completion"
+          ],
+          ":boolean",
+          ":stop"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":halt",
+        "schema": [
+          ":predicate",
+          [
+            ":controller-state",
+            ":step-completion"
+          ],
+          ":boolean",
+          ":halt"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":trap",
+        "schema": [
+          ":predicate",
+          [
+            ":controller-state",
+            ":step-completion"
+          ],
+          ":boolean",
+          ":trap"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":exhaustion-event",
+        "schema": ":unit",
+        "refinements": []
+      }
+    ],
+    "effects": [
+      {
+        "id": ":activate",
+        "input": ":vm-state",
+        "output": ":activation-request",
+        "constraints": []
+      },
+      {
+        "id": ":await",
+        "input": ":step-completion",
+        "output": ":step-completion",
+        "constraints": []
+      },
+      {
+        "id": ":publish",
+        "input": ":step-completion",
+        "output": ":vm-state",
+        "constraints": []
+      },
+      {
+        "id": ":terminate",
+        "input": ":step-completion",
+        "output": ":run-outcome",
+        "constraints": []
+      }
+    ],
+    "contracts": [
+      {
+        "id": ":cycle-contract",
+        "assume": [
+          ":environment-may-not-complete"
+        ],
+        "guarantee": [
+          ":matching-completion-only",
+          ":trap-preserves-carried-state"
+        ],
+        "invariants": [
+          ":one-pending-request"
+        ],
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "dependencies": []
+      }
+    ],
+    "port_definitions": [
+      {
+        "id": ":seed-port-3583ce64d551abff2bfe5d9bc8d3d86601f7e9f37c07fb45f76504962e37e1de",
+        "direction": ":in",
+        "value_type": ":vm-state",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      },
+      {
+        "id": ":outcome-port-6d529236a5a4ed80543b10657457d6ea6ffab9090a737a02e1c5dc59c7dffe6d",
+        "direction": ":out",
+        "value_type": ":run-outcome",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      },
+      {
+        "id": ":request-port-af623b80556eb8dd7794e7f694fc39e1ac26c5178b73b7e6f4a968816ac4d028",
+        "direction": ":out",
+        "value_type": ":activation-request",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      },
+      {
+        "id": ":receive-port-32cec441e236140bef410b858d90f0bf8af65e2c43b621742e13910a84e20f5b",
+        "direction": ":in",
+        "value_type": ":step-completion",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      },
+      {
+        "id": ":argument-port-9326089005b8239a212f857227c48494b6441ab3b61767b2784a194fc08dbda9",
+        "direction": ":in",
+        "value_type": ":activation-request",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      },
+      {
+        "id": ":result-port-880fa6fd38f82a25ee6ee4568c024591d29077c2dda57cde2f258f153476cfb8",
+        "direction": ":out",
+        "value_type": ":step-completion",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    ],
+    "node_types": [
+      {
+        "id": ":controller-node-3898da9d62c3c1ab274a322288942ea8ccbac4dd5b455e54b4c7a672e16369a5",
+        "ports": [
+          ":seed-port-3583ce64d551abff2bfe5d9bc8d3d86601f7e9f37c07fb45f76504962e37e1de",
+          ":outcome-port-6d529236a5a4ed80543b10657457d6ea6ffab9090a737a02e1c5dc59c7dffe6d",
+          ":request-port-af623b80556eb8dd7794e7f694fc39e1ac26c5178b73b7e6f4a968816ac4d028",
+          ":receive-port-32cec441e236140bef410b858d90f0bf8af65e2c43b621742e13910a84e20f5b"
+        ],
+        "operations": [
+          ":controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a"
+        ],
+        "machine": ":machine-8ba1d0708e88660bd1353e41ce835c3330f3d2c45fff9f3df5441deadcda1486",
+        "contract": ":cycle-contract"
+      },
+      {
+        "id": ":worker-node-93ee982b37019441971337173fe449febf871b8ebd4cd20ded30b4d508206bfb",
+        "ports": [
+          ":argument-port-9326089005b8239a212f857227c48494b6441ab3b61767b2784a194fc08dbda9",
+          ":result-port-880fa6fd38f82a25ee6ee4568c024591d29077c2dda57cde2f258f153476cfb8"
+        ],
+        "operations": [
+          ":worker-op-0ee21d2c6eafa541ed2ecc5082c623215242690245b95886d3d5bf83c702d1d9"
+        ],
+        "machine": ":unbound",
+        "contract": ":cycle-contract"
+      }
+    ],
+    "machines": [
+      {
+        "id": ":machine-8ba1d0708e88660bd1353e41ce835c3330f3d2c45fff9f3df5441deadcda1486",
+        "states": [
+          ":ready",
+          ":waiting",
+          ":terminated"
+        ],
+        "initial": ":ready",
+        "transitions": [
+          {
+            "id": ":issue",
+            "to": ":waiting",
+            "trigger": ":activation-request",
+            "guard": ":positive-budget",
+            "operation": ":controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+            "effects": [
+              ":activate",
+              ":await"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":ready"
+          },
+          {
+            "id": ":continue",
+            "to": ":ready",
+            "trigger": ":step-completion",
+            "guard": ":continue",
+            "operation": ":controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+            "effects": [
+              ":publish"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":waiting"
+          },
+          {
+            "id": ":budget",
+            "to": ":terminated",
+            "trigger": ":step-completion",
+            "guard": ":stop",
+            "operation": ":controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+            "effects": [
+              ":publish",
+              ":terminate"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":waiting"
+          },
+          {
+            "id": ":halt",
+            "to": ":terminated",
+            "trigger": ":step-completion",
+            "guard": ":halt",
+            "operation": ":controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+            "effects": [
+              ":publish",
+              ":terminate"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":waiting"
+          },
+          {
+            "id": ":trap",
+            "to": ":terminated",
+            "trigger": ":step-completion",
+            "guard": ":trap",
+            "operation": ":controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+            "effects": [
+              ":terminate"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":waiting"
+          },
+          {
+            "id": ":exhaust",
+            "to": ":terminated",
+            "trigger": ":exhaustion-event",
+            "guard": ":zero-budget",
+            "operation": ":controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+            "effects": [
+              ":terminate"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":ready"
+          }
+        ]
+      }
+    ],
+    "operations": [
+      {
+        "id": ":controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+        "inputs": [
+          ":seed-port-3583ce64d551abff2bfe5d9bc8d3d86601f7e9f37c07fb45f76504962e37e1de",
+          ":receive-port-32cec441e236140bef410b858d90f0bf8af65e2c43b621742e13910a84e20f5b"
+        ],
+        "outputs": [
+          ":outcome-port-6d529236a5a4ed80543b10657457d6ea6ffab9090a737a02e1c5dc59c7dffe6d",
+          ":request-port-af623b80556eb8dd7794e7f694fc39e1ac26c5178b73b7e6f4a968816ac4d028"
+        ],
+        "preconditions": [],
+        "postconditions": [
+          ":bounded-step-loop"
+        ],
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      },
+      {
+        "id": ":worker-op-0ee21d2c6eafa541ed2ecc5082c623215242690245b95886d3d5bf83c702d1d9",
+        "inputs": [
+          ":argument-port-9326089005b8239a212f857227c48494b6441ab3b61767b2784a194fc08dbda9"
+        ],
+        "outputs": [
+          ":result-port-880fa6fd38f82a25ee6ee4568c024591d29077c2dda57cde2f258f153476cfb8"
+        ],
+        "preconditions": [],
+        "postconditions": [
+          ":abstract-step-callee"
+        ],
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    ],
+    "memory": [],
+    "bindings": [],
+    "placements": [
+      {
+        "id": ":controller-fdfa0ea9617ee7d69253dd7c98ac95fdc4a27fa494a614af7da0a23e8531c521",
+        "type": ":controller-node-3898da9d62c3c1ab274a322288942ea8ccbac4dd5b455e54b4c7a672e16369a5",
+        "parent": ":none",
+        "state": ":ready",
+        "memory": ":unbound",
+        "provider": ":unbound",
+        "child": null
+      },
+      {
+        "id": ":worker-2b64c88c01a9cd5e76718debba7233fe02830c84790d62baa57f1a5e5dec0fbc",
+        "type": ":worker-node-93ee982b37019441971337173fe449febf871b8ebd4cd20ded30b4d508206bfb",
+        "parent": ":none",
+        "state": ":unbound",
+        "memory": ":unbound",
+        "provider": ":unbound",
+        "child": null
+      }
+    ],
+    "connections": [
+      {
+        "id": ":call-fcc9ab893de02dbb225de2bf13a27608d284dcaa098f225439538065fd12cbb6",
+        "type": ":call",
+        "ends": [
+          {
+            "role": ":caller",
+            "placement": ":controller-fdfa0ea9617ee7d69253dd7c98ac95fdc4a27fa494a614af7da0a23e8531c521",
+            "port": ":request-port-af623b80556eb8dd7794e7f694fc39e1ac26c5178b73b7e6f4a968816ac4d028"
+          },
+          {
+            "role": ":argument",
+            "placement": ":worker-2b64c88c01a9cd5e76718debba7233fe02830c84790d62baa57f1a5e5dec0fbc",
+            "port": ":argument-port-9326089005b8239a212f857227c48494b6441ab3b61767b2784a194fc08dbda9"
+          },
+          {
+            "role": ":result",
+            "placement": ":worker-2b64c88c01a9cd5e76718debba7233fe02830c84790d62baa57f1a5e5dec0fbc",
+            "port": ":result-port-880fa6fd38f82a25ee6ee4568c024591d29077c2dda57cde2f258f153476cfb8"
+          },
+          {
+            "role": ":return",
+            "placement": ":controller-fdfa0ea9617ee7d69253dd7c98ac95fdc4a27fa494a614af7da0a23e8531c521",
+            "port": ":receive-port-32cec441e236140bef410b858d90f0bf8af65e2c43b621742e13910a84e20f5b"
+          }
+        ],
+        "contract": ":cycle-contract",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "handler": ":unbound",
+        "callee_operation": ":worker-op-0ee21d2c6eafa541ed2ecc5082c623215242690245b95886d3d5bf83c702d1d9"
+      },
+      {
+        "id": ":cycle-59c1c0ddd25d3ac7d29c5ceedc4f2a834e19ad2da289c60638ebba42452b05ba",
+        "type": ":activation-feedback",
+        "ends": [
+          {
+            "role": ":controller",
+            "placement": ":controller-fdfa0ea9617ee7d69253dd7c98ac95fdc4a27fa494a614af7da0a23e8531c521",
+            "port": ":request-port-af623b80556eb8dd7794e7f694fc39e1ac26c5178b73b7e6f4a968816ac4d028"
+          },
+          {
+            "role": ":activation",
+            "placement": ":worker-2b64c88c01a9cd5e76718debba7233fe02830c84790d62baa57f1a5e5dec0fbc",
+            "port": ":argument-port-9326089005b8239a212f857227c48494b6441ab3b61767b2784a194fc08dbda9"
+          },
+          {
+            "role": ":completion",
+            "placement": ":worker-2b64c88c01a9cd5e76718debba7233fe02830c84790d62baa57f1a5e5dec0fbc",
+            "port": ":result-port-880fa6fd38f82a25ee6ee4568c024591d29077c2dda57cde2f258f153476cfb8"
+          },
+          {
+            "role": ":continuation",
+            "placement": ":controller-fdfa0ea9617ee7d69253dd7c98ac95fdc4a27fa494a614af7da0a23e8531c521",
+            "port": ":receive-port-32cec441e236140bef410b858d90f0bf8af65e2c43b621742e13910a84e20f5b"
+          }
+        ],
+        "contract": ":cycle-contract",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "handler": ":unbound",
+        "machine": ":machine-8ba1d0708e88660bd1353e41ce835c3330f3d2c45fff9f3df5441deadcda1486",
+        "correlation_schema": ":activation-key",
+        "iteration_bound": 2,
+        "work_relation": [
+          ":relation",
+          ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+          ":call-fcc9ab893de02dbb225de2bf13a27608d284dcaa098f225439538065fd12cbb6"
+        ]
+      }
+    ],
+    "children": []
+  },
+  "boundary_map": [
+    {
+      "outer": ":run-state",
+      "inner_placement": ":controller-fdfa0ea9617ee7d69253dd7c98ac95fdc4a27fa494a614af7da0a23e8531c521",
+      "inner_port": ":seed-port-3583ce64d551abff2bfe5d9bc8d3d86601f7e9f37c07fb45f76504962e37e1de"
+    },
+    {
+      "outer": ":run-outcome-port",
+      "inner_placement": ":controller-fdfa0ea9617ee7d69253dd7c98ac95fdc4a27fa494a614af7da0a23e8531c521",
+      "inner_port": ":outcome-port-6d529236a5a4ed80543b10657457d6ea6ffab9090a737a02e1c5dc59c7dffe6d"
+    }
+  ],
+  "obligations": [
+    "boundary-preservation",
+    "effect-containment",
+    "matching-completion",
+    "environmental-liveness-unproven",
+    "behavioral-refinement-unproven"
+  ],
+  "admission": "candidate-pending-native-checks"
+}

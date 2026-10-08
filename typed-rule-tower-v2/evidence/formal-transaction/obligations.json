@@ -1,0 +1,38 @@
+{
+  "schema": "refinement-obligation-ledger-v1",
+  "subject": "031081c84024d7fc1ff449d15e736a711fee8817b128efd8af23b762aadbfa18",
+  "snapshot": "39952b83ccd456b448a9304323d66b26ad60499aaaabf630d5b8a5cb77317afd",
+  "obligations": [
+    {
+      "id": "finite-model",
+      "subject": "031081c84024d7fc1ff449d15e736a711fee8817b128efd8af23b762aadbfa18",
+      "snapshot": "39952b83ccd456b448a9304323d66b26ad60499aaaabf630d5b8a5cb77317afd",
+      "status": "checked",
+      "gates": [
+        "bounded-model"
+      ],
+      "required_kind": "exhaustive-finite-transition-check",
+      "dependencies": [],
+      "evidence": {
+        "path": "finite-check.json",
+        "kind": "exhaustive-finite-transition-check",
+        "sha256": "4ed73c1179023958d302f4022bc793cb11bb9c04535df82c194335995338019a"
+      }
+    },
+    {
+      "id": "implementation-correspondence",
+      "subject": "031081c84024d7fc1ff449d15e736a711fee8817b128efd8af23b762aadbfa18",
+      "snapshot": "39952b83ccd456b448a9304323d66b26ad60499aaaabf630d5b8a5cb77317afd",
+      "status": "open",
+      "gates": [
+        "behavioral",
+        "executable"
+      ],
+      "required_kind": "checked-theorem",
+      "dependencies": [
+        "finite-model"
+      ],
+      "evidence": null
+    }
+  ]
+}

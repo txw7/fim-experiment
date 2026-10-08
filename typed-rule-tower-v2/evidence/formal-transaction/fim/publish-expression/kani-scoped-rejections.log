@@ -1,0 +1,185 @@
+Kani Rust Verifier 0.67.0 (standalone)
+warning: unexpected `cfg` condition name: `test`
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/candidate-scoped-rejections.rs:24:7
+   |
+24 | #[cfg(test)] mod tests {
+   |       ^^^^
+   |
+   = help: expected names are: `kani` and 31 more
+   = help: to expect this configuration use `--check-cfg=cfg(test)`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg.html> for more information about checking conditional configuration
+   = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: variable does not need to be mutable
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/candidate-scoped-rejections.rs:41:6
+   |
+41 |  let mut state=State{phase:1,remaining:1,pending:Some(key.clone()),committed:vec![],word:kani::any()};
+   |      ----^^^^^
+   |      |
+   |      help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/candidate-scoped-rejections.rs:48:6
+   |
+48 |  let mut state=State{phase:1,remaining:1,pending:Some(key.clone()),committed:vec![],word:kani::any()};
+   |      ----^^^^^
+   |      |
+   |      help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/candidate-scoped-rejections.rs:55:6
+   |
+55 |  let mut state=State{phase:1,remaining:1,pending:Some(key.clone()),committed:vec![],word:kani::any()};
+   |      ----^^^^^
+   |      |
+   |      help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/candidate-scoped-rejections.rs:62:6
+   |
+62 |  let mut state=State{phase:1,remaining:1,pending:Some(key.clone()),committed:vec![],word:kani::any()};
+   |      ----^^^^^
+   |      |
+   |      help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/candidate-scoped-rejections.rs:69:6
+   |
+69 |  let mut state=State{phase:1,remaining:1,pending:Some(key.clone()),committed:vec![],word:kani::any()};
+   |      ----^^^^^
+   |      |
+   |      help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/candidate-scoped-rejections.rs:77:6
+   |
+77 |  let mut completion=Completion{key:key.clone(),status:0,word:kani::any()};
+   |      ----^^^^^^^^^^
+   |      |
+   |      help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/candidate-scoped-rejections.rs:84:6
+   |
+84 |  let mut completion=Completion{key:key.clone(),status:0,word:kani::any()};
+   |      ----^^^^^^^^^^
+   |      |
+   |      help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/candidate-scoped-rejections.rs:91:6
+   |
+91 |  let mut completion=Completion{key:key.clone(),status:0,word:kani::any()};
+   |      ----^^^^^^^^^^
+   |      |
+   |      help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/candidate-scoped-rejections.rs:98:6
+   |
+98 |  let mut completion=Completion{key:key.clone(),status:0,word:kani::any()};
+   |      ----^^^^^^^^^^
+   |      |
+   |      help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/candidate-scoped-rejections.rs:104:6
+    |
+104 |  let mut state=State{phase:1,remaining:1,pending:Some(key.clone()),committed:vec![],word:kani::any()};
+    |      ----^^^^^
+    |      |
+    |      help: remove this `mut`
+
+warning: Found the following unsupported constructs:
+             - caller_location (1)
+             - foreign function (2)
+         
+         Verification will fail if one or more of these constructs is reachable.
+         See https://model-checking.github.io/kani/rust-feature-support.html for more details.
+
+warning: 12 warnings emitted
+
+Checking harness scoped_rejections::invalid_status...
+
+VERIFICATION RESULT:
+ ** 0 of 672 failed (12 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.7357377s
+
+Checking harness scoped_rejections::terminal_phase...
+
+VERIFICATION RESULT:
+ ** 0 of 673 failed (12 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.3288294s
+
+Checking harness scoped_rejections::ready_phase...
+
+VERIFICATION RESULT:
+ ** 0 of 673 failed (12 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.4523146s
+
+Checking harness scoped_rejections::no_pending...
+
+VERIFICATION RESULT:
+ ** 0 of 673 failed (12 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.3486751s
+
+Checking harness scoped_rejections::duplicate_commit...
+
+VERIFICATION RESULT:
+ ** 0 of 674 failed (10 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 7.5614457s
+
+Checking harness scoped_rejections::wrong_attempt...
+
+VERIFICATION RESULT:
+ ** 0 of 672 failed (12 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.3720933s
+
+Checking harness scoped_rejections::wrong_iteration...
+
+VERIFICATION RESULT:
+ ** 0 of 672 failed (12 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.6358068s
+
+Checking harness scoped_rejections::wrong_incarnation...
+
+VERIFICATION RESULT:
+ ** 0 of 672 failed (12 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.855789s
+
+Checking harness scoped_rejections::wrong_input_generation...
+
+VERIFICATION RESULT:
+ ** 0 of 672 failed (12 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.3484445s
+
+Checking harness scoped_rejections::wrong_generation...
+
+VERIFICATION RESULT:
+ ** 0 of 672 failed (12 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.1313789s
+
+Manual Harness Summary:
+Complete - 10 successfully verified harnesses, 0 failures, 10 total.

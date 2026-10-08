@@ -1,0 +1,21 @@
+{
+  "schema": "proposed-code-refinement-transaction-v1",
+  "subject": "63cd7669632f2de9be2693600a26a043654b9eec61013f6df5bda01105b79e03",
+  "snapshot": "39952b83ccd456b448a9304323d66b26ad60499aaaabf630d5b8a5cb77317afd",
+  "lowering_profile": "authored guard scaffold and FIM state-update span",
+  "semantic_scope": "completion acceptance subclaim under controller operation; helper is not yet a native admitted realization",
+  "contract": "cycle-contract",
+  "source_sha256": "72d99088ff33b0aa1f4912369f792b1d53530fb3a61016fd04ef67f7c195b913",
+  "byte_range": [
+    1234,
+    1241
+  ],
+  "required_gates": [
+    "exact-source",
+    "rust-tests",
+    "implementation-proof",
+    "runtime-atomic-commit"
+  ],
+  "proof_scope": "pure function and later implementation/model correspondence",
+  "execution": "blocked"
+}

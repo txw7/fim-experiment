@@ -1,0 +1,15 @@
+[
+  {
+    "address_ref_ascii": "d54b2af995e51a2e539b697bf74dd8573d2942ae960b2667db2fd19a5579965d",
+    "source_bundle_snapshot_ref": "39952b83ccd456b448a9304323d66b26ad60499aaaabf630d5b8a5cb77317afd",
+    "occurrence_scope_ref": "2da58a52b6d2b80dc017f5deac5a422849e9c31aaaab8690e86c30f9bed64c0f",
+    "source_registry_root_ref": "fd96c5f3746d75f2e756da2771d140817ddb6da0b31848941b0a4840b541c51f",
+    "source_registry_kind_ascii": "relation-registry-v1",
+    "source_row_ref_ascii": "7399c3bf0d76ca5585ad48ece540b6d722b3ba6ec4099d616911523ca05086c9",
+    "source_row_digest_32b_hex": "7399c3bf0d76ca5585ad48ece540b6d722b3ba6ec4099d616911523ca05086c9",
+    "h002_resolution_receipt_ref": "73be31764693a988e7b268aba29aba2abe6a87189514e8c0599e7ef858da0b74",
+    "boundary_contract_ref": "017ebc2f15590534186873d46cb880f607ead4fd39af27ef75911dbe96e7ff50",
+    "object_class_ref_ascii": "relation",
+    "open_region": false
+  }
+]

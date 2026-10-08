@@ -1,0 +1,44 @@
+next.pending=None;next.committed.push(completion.key.clone());next.phase=if completion.status==0 {0}else{2};next.word=if completion.status==2 {7}else{9};Some(next)
+}
+// phase 1=Waiting, 2=Terminal. Generate only this function body.
+fn accept_waiting(state:&State, completion:&Completion)->Option<State> {
+if state.phase != 1 || state.pending.as_ref() != Some(&completion.key)
+    || state.committed.contains(&completion.key) || completion.status > 2 { return None; }
+let mut next = state.clone();
+// Clear pending, append this key, set phase from status and remaining, publish word except trap.
+next.pending=None;next.committed.push(completion.key.clone());next.phase=if completion.status==0 {0}else{2};next.word=if completion.status==2 {7}else{9};Some(next)
+}
+// phase 2=Terminal. Generate only this function body.
+fn accept_terminal(state:&State, completion:&Completion)->Option<State> {
+if state.phase != 2 || state.pending.as_ref() != Some(&completion.key)
+    || state.committed.contains(&completion.key) || completion.status > 2 { return None; }
+let mut next = state.clone();
+// Clear pending, append this key, set phase from status and remaining, publish word except trap.
+next.pending=None;next.committed.push(completion.key.clone());next.phase=if completion.status==0 {0}else{2};next.word=if completion.status==2 {7}else{9};Some(next)
+}
+// phase 0=Ready, 1=Waiting, 2=Terminal. Generate only this function body.
+fn accept_ready(state:&State, completion:&Completion)->Option<State> {
+if state.phase != 0 || state.pending.as_ref() != Some(&completion.key)
+    || state.committed.contains(&completion.key) || completion.status > 2 { return None; }
+let mut next = state.clone();
+// Clear pending, append this key, set phase from status and remaining, publish word except trap.
+next.pending=None;next.committed.push(completion.key.clone());next.phase=if completion.status==0 {0}else{2};next.word=if completion.status==2 {7}else{9};Some(next)
+}
+// phase 0=Ready, 1=Waiting, 2=Terminal. Generate only this function body.
+fn accept(state:&State, completion:&Completion)->Option<State> {
+if state.phase != 0 || state.pending.as_ref() != Some(&completion.key)
+    || state.committed.contains(&completion.key) || completion.status > 2 { return None; }
+let mut next = state.clone();
+// Clear pending, append this key, set phase from status and remaining, publish word except trap.
+next.pending=None;next.committed.push(completion.key.clone());next.phase=if completion.status==0 {0}else{2};next.word=if completion.status==2 {7}else{9};Some(next)
+}
+// phase 0=Ready, 1=Waiting, 2=Terminal. Generate only this function body.
+fn accept_0(state:&State, completion:&Completion)->Option<State> {
+if state.phase != 0 || state.pending.as_ref() != Some(&completion.key)
+    || state.committed.contains(&completion.key) || completion.status > 2 { return None; }
+let mut next = state.clone();
+// Clear pending, append this key, set phase from status and remaining, publish word except trap.
+next.pending=None;next.committed.push(completion.key.clone());next.phase=if completion.status==0 {0}else{2};next.word=if completion.status==2 {7}else{9};Some(next)
+}
+// phase 1=Waiting, 2=Terminal. Generate only this function body.
+fn accept_1(state:&State, completion:&Completion)->Option

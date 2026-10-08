@@ -1,0 +1,48 @@
+{
+  "bounded_model_receipt": {
+    "gate": "bounded-model",
+    "evidence_integrity_passed": true,
+    "proof_closure": "not established",
+    "scope": "receipt integrity only; independent checker gate retained separately",
+    "obligations": [
+      "finite-model"
+    ]
+  },
+  "behavioral": "open",
+  "liveness": "conditional, no general proof",
+  "executable": "blocked",
+  "negative_checks": [
+    {
+      "expected": "correlation-mismatch",
+      "rejected": true
+    },
+    {
+      "expected": "identity-already-reserved",
+      "rejected": true
+    },
+    {
+      "expected": "source-pin-mismatch",
+      "rejected": true
+    },
+    {
+      "expected": "source-pin-mismatch",
+      "rejected": true
+    },
+    {
+      "expected": "transaction-binding-mismatch",
+      "rejected": true
+    },
+    {
+      "expected": "obligation-open",
+      "rejected": true
+    },
+    {
+      "expected": "native-theorem-required",
+      "rejected": true
+    },
+    {
+      "expected": "evidence-stale",
+      "rejected": true
+    }
+  ]
+}

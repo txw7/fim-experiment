@@ -1,0 +1,22 @@
+Kani Rust Verifier 0.67.0 (standalone)
+warning: unexpected `cfg` condition name: `test`
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/handwritten-control-kani.rs:22:7
+   |
+22 | #[cfg(test)] mod tests {
+   |       ^^^^
+   |
+   = help: expected names are: `kani` and 31 more
+   = help: to expect this configuration use `--check-cfg=cfg(test)`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg.html> for more information about checking conditional configuration
+   = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: Found the following unsupported constructs:
+             - caller_location (1)
+             - foreign function (2)
+         
+         Verification will fail if one or more of these constructs is reachable.
+         See https://model-checking.github.io/kani/rust-feature-support.html for more details.
+
+warning: 2 warnings emitted
+
+Checking harness verification::completion_contract...

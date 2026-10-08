@@ -1,0 +1,6 @@
+{
+  "status": "structurally-admitted-to-bounded-registry",
+  "rule": "878d4b643f5ffe51bbd951e7bb7235a7ff39d8cfbbdd2757375c518dc6de937c",
+  "behavioral_proof": "open",
+  "scope": "exact checked coordination template"
+}

@@ -1,0 +1,487 @@
+[
+  {
+    "statement": {
+      "op": "nest",
+      "body": "25f5721840ed3ed19ab505576bb17aaa9a4088f7649a336ff78d9791ec9a241a",
+      "graph": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4"
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+      "collection": "port_definitions",
+      "value": {
+        "id": ":seed-port-3583ce64d551abff2bfe5d9bc8d3d86601f7e9f37c07fb45f76504962e37e1de",
+        "direction": ":in",
+        "value_type": ":vm-state",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+      "collection": "port_definitions",
+      "value": {
+        "id": ":outcome-port-6d529236a5a4ed80543b10657457d6ea6ffab9090a737a02e1c5dc59c7dffe6d",
+        "direction": ":out",
+        "value_type": ":run-outcome",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+      "collection": "port_definitions",
+      "value": {
+        "id": ":request-port-af623b80556eb8dd7794e7f694fc39e1ac26c5178b73b7e6f4a968816ac4d028",
+        "direction": ":out",
+        "value_type": ":activation-request",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+      "collection": "port_definitions",
+      "value": {
+        "id": ":receive-port-32cec441e236140bef410b858d90f0bf8af65e2c43b621742e13910a84e20f5b",
+        "direction": ":in",
+        "value_type": ":step-completion",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+      "collection": "port_definitions",
+      "value": {
+        "id": ":argument-port-9326089005b8239a212f857227c48494b6441ab3b61767b2784a194fc08dbda9",
+        "direction": ":in",
+        "value_type": ":activation-request",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+      "collection": "port_definitions",
+      "value": {
+        "id": ":result-port-880fa6fd38f82a25ee6ee4568c024591d29077c2dda57cde2f258f153476cfb8",
+        "direction": ":out",
+        "value_type": ":step-completion",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+      "collection": "operations",
+      "value": {
+        "id": ":controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+        "inputs": [
+          ":seed-port-3583ce64d551abff2bfe5d9bc8d3d86601f7e9f37c07fb45f76504962e37e1de",
+          ":receive-port-32cec441e236140bef410b858d90f0bf8af65e2c43b621742e13910a84e20f5b"
+        ],
+        "outputs": [
+          ":outcome-port-6d529236a5a4ed80543b10657457d6ea6ffab9090a737a02e1c5dc59c7dffe6d",
+          ":request-port-af623b80556eb8dd7794e7f694fc39e1ac26c5178b73b7e6f4a968816ac4d028"
+        ],
+        "preconditions": [],
+        "postconditions": [
+          ":bounded-step-loop"
+        ],
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+      "collection": "operations",
+      "value": {
+        "id": ":worker-op-0ee21d2c6eafa541ed2ecc5082c623215242690245b95886d3d5bf83c702d1d9",
+        "inputs": [
+          ":argument-port-9326089005b8239a212f857227c48494b6441ab3b61767b2784a194fc08dbda9"
+        ],
+        "outputs": [
+          ":result-port-880fa6fd38f82a25ee6ee4568c024591d29077c2dda57cde2f258f153476cfb8"
+        ],
+        "preconditions": [],
+        "postconditions": [
+          ":abstract-step-callee"
+        ],
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+      "collection": "machines",
+      "value": {
+        "id": ":machine-8ba1d0708e88660bd1353e41ce835c3330f3d2c45fff9f3df5441deadcda1486",
+        "states": [
+          ":ready",
+          ":waiting",
+          ":terminated"
+        ],
+        "initial": ":ready",
+        "transitions": [
+          {
+            "id": ":issue",
+            "to": ":waiting",
+            "trigger": ":activation-request",
+            "guard": ":positive-budget",
+            "operation": ":controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+            "effects": [
+              ":activate",
+              ":await"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":ready"
+          },
+          {
+            "id": ":continue",
+            "to": ":ready",
+            "trigger": ":step-completion",
+            "guard": ":continue",
+            "operation": ":controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+            "effects": [
+              ":publish"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":waiting"
+          },
+          {
+            "id": ":budget",
+            "to": ":terminated",
+            "trigger": ":step-completion",
+            "guard": ":stop",
+            "operation": ":controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+            "effects": [
+              ":publish",
+              ":terminate"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":waiting"
+          },
+          {
+            "id": ":halt",
+            "to": ":terminated",
+            "trigger": ":step-completion",
+            "guard": ":halt",
+            "operation": ":controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+            "effects": [
+              ":publish",
+              ":terminate"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":waiting"
+          },
+          {
+            "id": ":trap",
+            "to": ":terminated",
+            "trigger": ":step-completion",
+            "guard": ":trap",
+            "operation": ":controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+            "effects": [
+              ":terminate"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":waiting"
+          },
+          {
+            "id": ":exhaust",
+            "to": ":terminated",
+            "trigger": ":exhaustion-event",
+            "guard": ":zero-budget",
+            "operation": ":controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+            "effects": [
+              ":terminate"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":ready"
+          }
+        ]
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+      "collection": "node_types",
+      "value": {
+        "id": ":controller-node-3898da9d62c3c1ab274a322288942ea8ccbac4dd5b455e54b4c7a672e16369a5",
+        "ports": [
+          ":seed-port-3583ce64d551abff2bfe5d9bc8d3d86601f7e9f37c07fb45f76504962e37e1de",
+          ":outcome-port-6d529236a5a4ed80543b10657457d6ea6ffab9090a737a02e1c5dc59c7dffe6d",
+          ":request-port-af623b80556eb8dd7794e7f694fc39e1ac26c5178b73b7e6f4a968816ac4d028",
+          ":receive-port-32cec441e236140bef410b858d90f0bf8af65e2c43b621742e13910a84e20f5b"
+        ],
+        "operations": [
+          ":controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a"
+        ],
+        "machine": ":machine-8ba1d0708e88660bd1353e41ce835c3330f3d2c45fff9f3df5441deadcda1486",
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+      "collection": "node_types",
+      "value": {
+        "id": ":worker-node-93ee982b37019441971337173fe449febf871b8ebd4cd20ded30b4d508206bfb",
+        "ports": [
+          ":argument-port-9326089005b8239a212f857227c48494b6441ab3b61767b2784a194fc08dbda9",
+          ":result-port-880fa6fd38f82a25ee6ee4568c024591d29077c2dda57cde2f258f153476cfb8"
+        ],
+        "operations": [
+          ":worker-op-0ee21d2c6eafa541ed2ecc5082c623215242690245b95886d3d5bf83c702d1d9"
+        ],
+        "machine": ":unbound",
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+      "collection": "placements",
+      "value": {
+        "id": ":controller-fdfa0ea9617ee7d69253dd7c98ac95fdc4a27fa494a614af7da0a23e8531c521",
+        "type": ":controller-node-3898da9d62c3c1ab274a322288942ea8ccbac4dd5b455e54b4c7a672e16369a5",
+        "parent": ":none",
+        "state": ":ready",
+        "memory": ":unbound",
+        "provider": ":unbound",
+        "child": null
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+      "collection": "placements",
+      "value": {
+        "id": ":worker-2b64c88c01a9cd5e76718debba7233fe02830c84790d62baa57f1a5e5dec0fbc",
+        "type": ":worker-node-93ee982b37019441971337173fe449febf871b8ebd4cd20ded30b4d508206bfb",
+        "parent": ":none",
+        "state": ":unbound",
+        "memory": ":unbound",
+        "provider": ":unbound",
+        "child": null
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+      "collection": "connections",
+      "value": {
+        "id": ":call-fcc9ab893de02dbb225de2bf13a27608d284dcaa098f225439538065fd12cbb6",
+        "type": ":call",
+        "ends": [
+          {
+            "role": ":caller",
+            "placement": ":controller-fdfa0ea9617ee7d69253dd7c98ac95fdc4a27fa494a614af7da0a23e8531c521",
+            "port": ":request-port-af623b80556eb8dd7794e7f694fc39e1ac26c5178b73b7e6f4a968816ac4d028"
+          },
+          {
+            "role": ":argument",
+            "placement": ":worker-2b64c88c01a9cd5e76718debba7233fe02830c84790d62baa57f1a5e5dec0fbc",
+            "port": ":argument-port-9326089005b8239a212f857227c48494b6441ab3b61767b2784a194fc08dbda9"
+          },
+          {
+            "role": ":result",
+            "placement": ":worker-2b64c88c01a9cd5e76718debba7233fe02830c84790d62baa57f1a5e5dec0fbc",
+            "port": ":result-port-880fa6fd38f82a25ee6ee4568c024591d29077c2dda57cde2f258f153476cfb8"
+          },
+          {
+            "role": ":return",
+            "placement": ":controller-fdfa0ea9617ee7d69253dd7c98ac95fdc4a27fa494a614af7da0a23e8531c521",
+            "port": ":receive-port-32cec441e236140bef410b858d90f0bf8af65e2c43b621742e13910a84e20f5b"
+          }
+        ],
+        "contract": ":cycle-contract",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "handler": ":unbound",
+        "callee_operation": ":worker-op-0ee21d2c6eafa541ed2ecc5082c623215242690245b95886d3d5bf83c702d1d9"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+      "collection": "connections",
+      "value": {
+        "id": ":cycle-59c1c0ddd25d3ac7d29c5ceedc4f2a834e19ad2da289c60638ebba42452b05ba",
+        "type": ":activation-feedback",
+        "ends": [
+          {
+            "role": ":controller",
+            "placement": ":controller-fdfa0ea9617ee7d69253dd7c98ac95fdc4a27fa494a614af7da0a23e8531c521",
+            "port": ":request-port-af623b80556eb8dd7794e7f694fc39e1ac26c5178b73b7e6f4a968816ac4d028"
+          },
+          {
+            "role": ":activation",
+            "placement": ":worker-2b64c88c01a9cd5e76718debba7233fe02830c84790d62baa57f1a5e5dec0fbc",
+            "port": ":argument-port-9326089005b8239a212f857227c48494b6441ab3b61767b2784a194fc08dbda9"
+          },
+          {
+            "role": ":completion",
+            "placement": ":worker-2b64c88c01a9cd5e76718debba7233fe02830c84790d62baa57f1a5e5dec0fbc",
+            "port": ":result-port-880fa6fd38f82a25ee6ee4568c024591d29077c2dda57cde2f258f153476cfb8"
+          },
+          {
+            "role": ":continuation",
+            "placement": ":controller-fdfa0ea9617ee7d69253dd7c98ac95fdc4a27fa494a614af7da0a23e8531c521",
+            "port": ":receive-port-32cec441e236140bef410b858d90f0bf8af65e2c43b621742e13910a84e20f5b"
+          }
+        ],
+        "contract": ":cycle-contract",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "handler": ":unbound",
+        "machine": ":machine-8ba1d0708e88660bd1353e41ce835c3330f3d2c45fff9f3df5441deadcda1486",
+        "correlation_schema": ":activation-key",
+        "iteration_bound": 2,
+        "work_relation": [
+          ":relation",
+          ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+          ":call-fcc9ab893de02dbb225de2bf13a27608d284dcaa098f225439538065fd12cbb6"
+        ]
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "enclose",
+      "graph": ":cycle-graph-019aa2f4a950221aea6d24337b6cc5a7ec9ac81fc62ae71ab8740e97af2f54d4",
+      "map": [
+        {
+          "outer": ":run-state",
+          "inner_placement": ":controller-fdfa0ea9617ee7d69253dd7c98ac95fdc4a27fa494a614af7da0a23e8531c521",
+          "inner_port": ":seed-port-3583ce64d551abff2bfe5d9bc8d3d86601f7e9f37c07fb45f76504962e37e1de"
+        },
+        {
+          "outer": ":run-outcome-port",
+          "inner_placement": ":controller-fdfa0ea9617ee7d69253dd7c98ac95fdc4a27fa494a614af7da0a23e8531c521",
+          "inner_port": ":outcome-port-6d529236a5a4ed80543b10657457d6ea6ffab9090a737a02e1c5dc59c7dffe6d"
+        }
+      ]
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  }
+]

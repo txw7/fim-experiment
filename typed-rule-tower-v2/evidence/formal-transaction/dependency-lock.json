@@ -1,0 +1,9 @@
+{
+  "kani": "kani 0.67.0",
+  "rustc": "rustc 1.93.0-nightly (53732d5e0 2025-11-20)",
+  "cbmc": "6.8.0 (cbmc-6.8.0)",
+  "rust_toolchain": "nightly-2025-11-21-x86_64-unknown-linux-gnu",
+  "rust_src": true,
+  "default_toolchain_unchanged": "1.94.0",
+  "proof_admission": "missing checked native implementation theorem; blocked"
+}

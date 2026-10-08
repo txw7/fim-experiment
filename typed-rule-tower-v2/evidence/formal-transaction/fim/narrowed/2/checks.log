@@ -1,0 +1,14 @@
+error: unexpected closing delimiter: `}`
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/narrowed/2/candidate.rs:64:1
+   |
+53 | fn accept_0(state:&State, completion:&Completion)->Option<State> {
+   |                                                                  - this opening brace...
+...
+59 | }
+   | - ...matches this closing brace
+...
+64 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 1 previous error
+

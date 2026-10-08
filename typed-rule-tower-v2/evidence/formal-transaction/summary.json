@@ -1,0 +1,31 @@
+{
+  "native_addresses": {
+    "seed": 158,
+    "grown": 431
+  },
+  "construction": "native structural checks passed",
+  "review_counterexamples": "passed, including native second-occurrence growth and pinned snapshot rejection",
+  "finite_model": {
+    "states": 16,
+    "progress_edges": 29,
+    "rejection_edges": 20,
+    "scope": "explicit finite domains; no unconditional liveness"
+  },
+  "fim": {
+    "whole_body": "3 candidates failed",
+    "state_update": "3 candidates failed",
+    "publish_expression": "completion.word on second attempt; 6 Rust tests passed",
+    "bounded_kani_checks": 11,
+    "broad_guard": "unknown (timeout)",
+    "native_implementation_correspondence": "open",
+    "runtime_atomic_commit": "open",
+    "executable_admission": "blocked"
+  },
+  "native_rank_proof": {
+    "status": "checked and deterministically rechecked",
+    "edges": 29,
+    "scope": "retained table arithmetic only",
+    "counterexample": "nondecreasing edge rejected",
+    "runtime_correspondence": "open"
+  }
+}

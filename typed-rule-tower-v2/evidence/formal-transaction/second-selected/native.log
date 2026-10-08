@@ -1,0 +1,6 @@
+TOWER_SYNTH_BEGIN stage=0
+TOWER_REPLAY_BEGIN stage=0
+TOWER_STAGE_GREEN stage=0 addresses=187 dataflows=0
+TOWER_SYNTH_BEGIN stage=1
+TOWER_REPLAY_BEGIN stage=1
+TOWER_STAGE_GREEN stage=1 addresses=460 dataflows=0

@@ -1,0 +1,193 @@
+[
+  {
+    "machine_address": "031081c84024d7fc1ff449d15e736a711fee8817b128efd8af23b762aadbfa18",
+    "hyperedge_address": "33a0404fb3b772398f90991621641e5dc2cded98adb6a13c57bee8afef8e42ca",
+    "event": {
+      "kind": "issue"
+    },
+    "transition": {
+      "id": "issue",
+      "to": "waiting",
+      "trigger": "activation-request",
+      "guard": "positive-budget",
+      "operation": "controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+      "effects": [
+        "activate",
+        "await"
+      ],
+      "contract": "cycle-contract",
+      "from": "ready"
+    },
+    "before": {
+      "state": "ready",
+      "budget": 2,
+      "iteration": 0,
+      "value": 0
+    },
+    "after": {
+      "state": "waiting",
+      "budget": 1,
+      "iteration": 0,
+      "value": 0
+    },
+    "pending": {
+      "graph_generation": 1,
+      "input_generation": 0,
+      "invocation": "038e750d6d7046c3aa2a237bbc21cfef",
+      "iteration": 0,
+      "attempt": 0
+    },
+    "emitted_request": {
+      "key": {
+        "graph_generation": 1,
+        "input_generation": 0,
+        "invocation": "038e750d6d7046c3aa2a237bbc21cfef",
+        "iteration": 0,
+        "attempt": 0
+      },
+      "state": {
+        "word": 0
+      }
+    }
+  },
+  {
+    "machine_address": "031081c84024d7fc1ff449d15e736a711fee8817b128efd8af23b762aadbfa18",
+    "hyperedge_address": "33a0404fb3b772398f90991621641e5dc2cded98adb6a13c57bee8afef8e42ca",
+    "event": {
+      "kind": "completion",
+      "key": {
+        "graph_generation": 1,
+        "input_generation": 0,
+        "invocation": "038e750d6d7046c3aa2a237bbc21cfef",
+        "iteration": 0,
+        "attempt": 0
+      },
+      "status": "continue",
+      "state": {
+        "word": 1
+      }
+    },
+    "transition": {
+      "id": "continue",
+      "to": "ready",
+      "trigger": "step-completion",
+      "guard": "continue",
+      "operation": "controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+      "effects": [
+        "publish"
+      ],
+      "contract": "cycle-contract",
+      "from": "waiting"
+    },
+    "before": {
+      "state": "waiting",
+      "budget": 1,
+      "iteration": 0,
+      "value": 0
+    },
+    "after": {
+      "state": "ready",
+      "budget": 1,
+      "iteration": 1,
+      "value": 1
+    },
+    "pending": null,
+    "emitted_request": null
+  },
+  {
+    "machine_address": "031081c84024d7fc1ff449d15e736a711fee8817b128efd8af23b762aadbfa18",
+    "hyperedge_address": "33a0404fb3b772398f90991621641e5dc2cded98adb6a13c57bee8afef8e42ca",
+    "event": {
+      "kind": "issue"
+    },
+    "transition": {
+      "id": "issue",
+      "to": "waiting",
+      "trigger": "activation-request",
+      "guard": "positive-budget",
+      "operation": "controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+      "effects": [
+        "activate",
+        "await"
+      ],
+      "contract": "cycle-contract",
+      "from": "ready"
+    },
+    "before": {
+      "state": "ready",
+      "budget": 1,
+      "iteration": 1,
+      "value": 1
+    },
+    "after": {
+      "state": "waiting",
+      "budget": 0,
+      "iteration": 1,
+      "value": 1
+    },
+    "pending": {
+      "graph_generation": 1,
+      "input_generation": 0,
+      "invocation": "038e750d6d7046c3aa2a237bbc21cfef",
+      "iteration": 1,
+      "attempt": 0
+    },
+    "emitted_request": {
+      "key": {
+        "graph_generation": 1,
+        "input_generation": 0,
+        "invocation": "038e750d6d7046c3aa2a237bbc21cfef",
+        "iteration": 1,
+        "attempt": 0
+      },
+      "state": {
+        "word": 1
+      }
+    }
+  },
+  {
+    "machine_address": "031081c84024d7fc1ff449d15e736a711fee8817b128efd8af23b762aadbfa18",
+    "hyperedge_address": "33a0404fb3b772398f90991621641e5dc2cded98adb6a13c57bee8afef8e42ca",
+    "event": {
+      "kind": "completion",
+      "key": {
+        "graph_generation": 1,
+        "input_generation": 0,
+        "invocation": "038e750d6d7046c3aa2a237bbc21cfef",
+        "iteration": 1,
+        "attempt": 0
+      },
+      "status": "continue",
+      "state": {
+        "word": 2
+      }
+    },
+    "transition": {
+      "id": "budget",
+      "to": "terminated",
+      "trigger": "step-completion",
+      "guard": "stop",
+      "operation": "controller-op-2e8d7928a5da10540e1a42242c82d9bf70546bef4c137603bc149c242158557a",
+      "effects": [
+        "publish",
+        "terminate"
+      ],
+      "contract": "cycle-contract",
+      "from": "waiting"
+    },
+    "before": {
+      "state": "waiting",
+      "budget": 0,
+      "iteration": 1,
+      "value": 1
+    },
+    "after": {
+      "state": "terminated",
+      "budget": 0,
+      "iteration": 2,
+      "value": 2
+    },
+    "pending": null,
+    "emitted_request": null
+  }
+]

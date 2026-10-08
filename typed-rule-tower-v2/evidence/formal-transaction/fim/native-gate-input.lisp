@@ -1,0 +1,1 @@
+(defparameter *fim-transaction* '(:subject "63cd7669632f2de9be2693600a26a043654b9eec61013f6df5bda01105b79e03" :snapshot "39952b83ccd456b448a9304323d66b26ad60499aaaabf630d5b8a5cb77317afd" :candidate-digest "f2108e1cbfa8b827fa8542fbecc073885fb7bba6695b7a1376bcc634df19231e" :required-claim :IMPLEMENTATION-CORRESPONDENCE :evidence-kind :RUST-TEST-RUN))

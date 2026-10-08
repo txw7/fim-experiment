@@ -1,0 +1,61 @@
+{
+  "subject": "63cd7669632f2de9be2693600a26a043654b9eec61013f6df5bda01105b79e03",
+  "snapshot": "39952b83ccd456b448a9304323d66b26ad60499aaaabf630d5b8a5cb77317afd",
+  "source_sha256": "72d99088ff33b0aa1f4912369f792b1d53530fb3a61016fd04ef67f7c195b913",
+  "checkpoint": {
+    "checkpoint": "Qwen2.5-Coder-1.5B-Base",
+    "gguf": "/home/user0/.local/share/fim-models/Qwen2.5-Coder-1.5B-Base.gguf",
+    "sha256": "6a77366395772462c84f0c4d226ac404674327cbe78c01e4391cc7e0c698851e",
+    "endpoint": "http://127.0.0.1:8085",
+    "protocol": "raw /completion; no ChatML",
+    "fim_token_ids": [
+      151659,
+      151661,
+      151660
+    ],
+    "template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate_sha256": "2b7bf6ad26070b060407bf0edea43d8f90ec65e6df63222aecdcb79bd4134958",
+      "tests_passed": false,
+      "proof": "open",
+      "executable_admission": false
+    },
+    {
+      "attempt": 2,
+      "candidate_sha256": "8abca6c2d4c42f462a76747c5e9b9279af2395b291b62a779b4f5610cfa83d72",
+      "tests_passed": false,
+      "proof": "open",
+      "executable_admission": false
+    },
+    {
+      "attempt": 3,
+      "candidate_sha256": "2d589b7af5ed872248d6c087e6618e020867799ade84f19c26d5ceb015965902",
+      "tests_passed": false,
+      "proof": "open",
+      "executable_admission": false
+    }
+  ],
+  "negative_checks": [
+    {
+      "case": "stale-source",
+      "rejected": true
+    },
+    {
+      "case": "wrong-range",
+      "rejected": true
+    }
+  ],
+  "rustc": "rustc 1.94.0 (4a4ef493e 2026-03-02)",
+  "tests_passed": false,
+  "implementation_proof": "open",
+  "native_proof_receipt": null,
+  "runtime_atomic_commit": "open",
+  "closure": {
+    "candidate_inspectable": true,
+    "executable_admission": false,
+    "reason": "required implementation theorem and runtime correspondence absent"
+  }
+}

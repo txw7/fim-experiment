@@ -1,0 +1,11 @@
+
+running 6 tests
+test tests::duplicate ... ok
+test tests::all_correlations ... ok
+test tests::invalid_status ... ok
+test tests::no_pending ... ok
+test tests::valid_and_budget ... ok
+test tests::wrong_phase ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

@@ -1,0 +1,29 @@
+
+running 6 tests
+test tests::all_correlations ... ok
+test tests::duplicate ... FAILED
+test tests::invalid_status ... ok
+test tests::no_pending ... ok
+test tests::valid_and_budget ... FAILED
+test tests::wrong_phase ... ok
+
+failures:
+
+---- tests::duplicate stdout ----
+
+thread 'tests::duplicate' (367432) panicked at /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/1/candidate.rs:26:172:
+called `Option::unwrap()` on a `None` value
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- tests::valid_and_budget stdout ----
+
+thread 'tests::valid_and_budget' (367435) panicked at /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/1/candidate.rs:22:169:
+called `Option::unwrap()` on a `None` value
+
+
+failures:
+    tests::duplicate
+    tests::valid_and_budget
+
+test result: FAILED. 4 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

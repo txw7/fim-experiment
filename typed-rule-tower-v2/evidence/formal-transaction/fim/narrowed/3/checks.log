@@ -1,0 +1,19 @@
+error[E0308]: mismatched types
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/narrowed/3/candidate.rs:18:99
+   |
+18 | ...one());next.phase=if completion.status==0 {next.remaining-=1}else{2};next.word=if completion.status==2 {7}else{completion.word};r...
+   |                                               ^^^^^^^^^^^^^^^^^ expected `u8`, found `()`
+
+warning: unreachable expression
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/narrowed/3/candidate.rs:19:1
+   |
+18 | next.pending=None;next.committed.push(completion.key.clone());next.phase=if completion.status==0 {next.remaining-=1}else{2};next.word=if completion.status==2 {7}else{completion.word};return Some(next);
+   |                                                                                                                                                                                        ----------------- any code following this expression is unreachable
+19 | Some(next)
+   | ^^^^^^^^^^ unreachable expression
+   |
+   = note: `#[warn(unreachable_code)]` (part of `#[warn(unused)]`) on by default
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0308`.

@@ -1,0 +1,147 @@
+error[E0428]: the name `accept_completion` is defined multiple times
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/1/candidate.rs:34:1
+   |
+13 | fn accept_completion(state:&State, completion:&Completion)->Option<State> {
+   | ------------------------------------------------------------------------- previous definition of the value `accept_completion` here
+...
+34 | fn accept_completion(state:&State, completion:&Completion)->Option<State> {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `accept_completion` redefined here
+   |
+   = note: `accept_completion` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `Key` is defined multiple times
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/1/candidate.rs:28:1
+   |
+ 7 | struct Key { generation:u64, input_generation:u64, incarnation:String, iteration:u64, attempt:u64 }
+   | ---------- previous definition of the type `Key` here
+...
+28 | struct Key { generation:u64, input_generation:u64, incarnation:String, iteration:u64, attempt:u64 }
+   | ^^^^^^^^^^ `Key` redefined here
+   |
+   = note: `Key` must be defined only once in the type namespace of this module
+
+error[E0428]: the name `State` is defined multiple times
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/1/candidate.rs:30:1
+   |
+ 9 | struct State { phase:u8, remaining:u32, pending:Option<Key>, committed:Vec<Key>, word:u32 }
+   | ------------ previous definition of the type `State` here
+...
+30 | struct State { phase:u8, remaining:u32, pending:Option<Key>, committed:Vec<Key>, word:u32 }
+   | ^^^^^^^^^^^^ `State` redefined here
+   |
+   = note: `State` must be defined only once in the type namespace of this module
+
+error[E0428]: the name `Completion` is defined multiple times
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/1/candidate.rs:32:1
+   |
+11 | struct Completion { key:Key, status:u8, word:u32 }
+   | ----------------- previous definition of the type `Completion` here
+...
+32 | struct Completion { key:Key, status:u8, word:u32 }
+   | ^^^^^^^^^^^^^^^^^ `Completion` redefined here
+   |
+   = note: `Completion` must be defined only once in the type namespace of this module
+
+error[E0119]: conflicting implementations of trait `Clone` for type `Key`
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/1/candidate.rs:27:10
+   |
+ 6 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |          ----- first implementation here
+...
+27 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |          ^^^^^ conflicting implementation for `Key`
+
+error[E0119]: conflicting implementations of trait `Clone` for type `State`
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/1/candidate.rs:29:10
+   |
+ 8 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |          ----- first implementation here
+...
+29 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |          ^^^^^ conflicting implementation for `State`
+
+error[E0119]: conflicting implementations of trait `Clone` for type `Completion`
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/1/candidate.rs:31:10
+   |
+10 | #[derive(Clone)]
+   |          ----- first implementation here
+...
+31 | #[derive(Clone)]
+   |          ^^^^^ conflicting implementation for `Completion`
+
+error[E0119]: conflicting implementations of trait `Debug` for type `Key`
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/1/candidate.rs:27:17
+   |
+ 6 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |                 ----- first implementation here
+...
+27 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |                 ^^^^^ conflicting implementation for `Key`
+
+error[E0119]: conflicting implementations of trait `Debug` for type `State`
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/1/candidate.rs:29:17
+   |
+ 8 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |                 ----- first implementation here
+...
+29 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |                 ^^^^^ conflicting implementation for `State`
+
+error[E0119]: conflicting implementations of trait `StructuralPartialEq` for type `Key`
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/1/candidate.rs:27:24
+   |
+ 6 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |                        --------- first implementation here
+...
+27 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |                        ^^^^^^^^^ conflicting implementation for `Key`
+
+error[E0119]: conflicting implementations of trait `StructuralPartialEq` for type `State`
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/1/candidate.rs:29:24
+   |
+ 8 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |                        --------- first implementation here
+...
+29 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |                        ^^^^^^^^^ conflicting implementation for `State`
+
+error[E0119]: conflicting implementations of trait `PartialEq` for type `Key`
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/1/candidate.rs:27:24
+   |
+ 6 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |                        --------- first implementation here
+...
+27 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |                        ^^^^^^^^^ conflicting implementation for `Key`
+
+error[E0119]: conflicting implementations of trait `PartialEq` for type `State`
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/1/candidate.rs:29:24
+   |
+ 8 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |                        --------- first implementation here
+...
+29 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |                        ^^^^^^^^^ conflicting implementation for `State`
+
+error[E0119]: conflicting implementations of trait `Eq` for type `Key`
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/1/candidate.rs:27:35
+   |
+ 6 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |                                   -- first implementation here
+...
+27 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |                                   ^^ conflicting implementation for `Key`
+
+error[E0119]: conflicting implementations of trait `Eq` for type `State`
+  --> /home/user0/FIM/runs/typed-rule-tower/1791491290246378450/formal-transaction/fim/publish-expression/1/candidate.rs:29:35
+   |
+ 8 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |                                   -- first implementation here
+...
+29 | #[derive(Clone, Debug, PartialEq, Eq)]
+   |                                   ^^ conflicting implementation for `State`
+
+error: aborting due to 15 previous errors
+
+Some errors have detailed explanations: E0119, E0428.
+For more information about an error, try `rustc --explain E0119`.

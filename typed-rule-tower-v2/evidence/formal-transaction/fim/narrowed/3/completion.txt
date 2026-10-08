@@ -1,0 +1,1 @@
+next.pending=None;next.committed.push(completion.key.clone());next.phase=if completion.status==0 {next.remaining-=1}else{2};next.word=if completion.status==2 {7}else{completion.word};return Some(next);

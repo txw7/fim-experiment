@@ -1,0 +1,1 @@
+ if state.phase==1 && completion.status==0 && completion.word==state.word { Some(State{phase:0,remaining:state.remaining-1,pending:None,committed:vec![completion.key.clone()],word:completion.word}) } else { None }
