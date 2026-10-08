@@ -1,46 +1,212 @@
 {
-  "schema": "hand-shg-build-evidence-v1",
+  "schema": "bounded-shg-evidence-v2",
   "goggles_commit": "99ad6709431af62dee389535ec0c62cfda40292f",
-  "builder": "handwritten local SHG extension backed by native H001/H002/A002",
-  "build_result": "SHG_BUILD_RELOAD_GREEN collections=15 rules=8 projections=7 invariants=9 addresses=45 symbolic-routes=1 behavioral-admission=OPEN",
-  "fresh_process_commands_passed": [
-    "show",
-    "route",
-    "resolve /G",
-    "resolve H"
-  ],
-  "checks": [
-    "typed-record/native-member correspondence",
-    "root and record lookup",
-    "native relation incidence correspondence",
-    "native hole owner and boundary correspondence",
-    "symbolic route endpoints",
-    "native query/export/profile witness validation",
-    "save/reload equality"
-  ],
-  "rejections": [
-    "missing member",
-    "stale snapshot",
-    "missing type",
-    "missing export",
-    "wrong route profile"
-  ],
-  "claims_not_established": [
-    "external R001/R002 acceptance",
-    "executable dispatch",
-    "behavioral proof",
-    "executable transformation algebra",
-    "CAS storage",
-    "arbitrary recursive synthesis"
+  "supported_profile": "generation-zero-read-only-dataflow",
+  "semantics": {
+    "structure": "checked",
+    "predicates": "retained",
+    "behavior": "unverified",
+    "execution": "unbound"
+  },
+  "commands": [
+    {
+      "command": [
+        "./shg-stack",
+        "build"
+      ],
+      "exit_code": 0,
+      "output": "evidence/check-00.log",
+      "execution": "fresh-process"
+    },
+    {
+      "command": [
+        "sbcl",
+        "--script",
+        "tests/check.lisp"
+      ],
+      "exit_code": 0,
+      "output": "evidence/check-01.log",
+      "execution": "fresh-process"
+    },
+    {
+      "command": [
+        "./shg-stack",
+        "describe"
+      ],
+      "exit_code": 0,
+      "output": "evidence/check-02.log",
+      "execution": "fresh-process"
+    },
+    {
+      "command": [
+        "./shg-stack",
+        "show"
+      ],
+      "exit_code": 0,
+      "output": "evidence/check-03.log",
+      "execution": "fresh-process"
+    },
+    {
+      "command": [
+        "./shg-stack",
+        "resolve",
+        "/G"
+      ],
+      "exit_code": 0,
+      "output": "evidence/check-04.log",
+      "execution": "fresh-process"
+    },
+    {
+      "command": [
+        "./shg-stack",
+        "resolve",
+        "OP"
+      ],
+      "exit_code": 0,
+      "output": "evidence/check-05.log",
+      "execution": "fresh-process"
+    },
+    {
+      "command": [
+        "./shg-stack",
+        "resolve",
+        "H"
+      ],
+      "exit_code": 0,
+      "output": "evidence/check-06.log",
+      "execution": "fresh-process"
+    },
+    {
+      "command": [
+        "./shg-stack",
+        "resolve",
+        "R"
+      ],
+      "exit_code": 0,
+      "output": "evidence/check-07.log",
+      "execution": "fresh-process"
+    },
+    {
+      "command": [
+        "./shg-stack",
+        "relations"
+      ],
+      "exit_code": 0,
+      "output": "evidence/check-08.log",
+      "execution": "fresh-process"
+    },
+    {
+      "command": [
+        "./shg-stack",
+        "dependencies"
+      ],
+      "exit_code": 0,
+      "output": "evidence/check-09.log",
+      "execution": "fresh-process"
+    },
+    {
+      "command": [
+        "./shg-stack",
+        "neighbors",
+        "P-OUT"
+      ],
+      "exit_code": 0,
+      "output": "evidence/check-10.log",
+      "execution": "fresh-process"
+    },
+    {
+      "command": [
+        "./shg-stack",
+        "obligations"
+      ],
+      "exit_code": 0,
+      "output": "evidence/check-11.log",
+      "execution": "fresh-process"
+    },
+    {
+      "command": [
+        "./shg-stack",
+        "route",
+        "R"
+      ],
+      "exit_code": 0,
+      "output": "evidence/check-12.log",
+      "execution": "fresh-process"
+    },
+    {
+      "command": [
+        "sbcl",
+        "--script",
+        "tests/native-checks.lisp"
+      ],
+      "exit_code": 0,
+      "output": "evidence/check-13.log",
+      "execution": "retained-successful-native-run"
+    },
+    {
+      "command": [
+        "./shg-stack",
+        "resolve",
+        "B-OP"
+      ],
+      "environment": {
+        "SHG_ARTIFACT": "working/second.sexp"
+      },
+      "exit_code": 0,
+      "output": "evidence/check-14.log",
+      "execution": "fresh-process"
+    },
+    {
+      "command": [
+        "./shg-stack",
+        "route",
+        "B-R2"
+      ],
+      "environment": {
+        "SHG_ARTIFACT": "working/second.sexp"
+      },
+      "exit_code": 0,
+      "output": "evidence/check-15.log",
+      "execution": "fresh-process"
+    }
   ],
   "sha256": {
-    "shg-stack.lisp": "a8f9fd03a34b25e5ea2ed8dfbbd0ef8bda1166a6258328fc2b3f50270e3ec5de",
-    "SHG-STACK.md": "4f2ce3f50f146b6238902428b675555eff7cd0799890119495e67672157b80f9",
-    "working/shg-stack.sexp": "aee42e609935353016a14d471ac86b11ae0091b3679902bca73d0ee36c4d379d",
-    "working/shg-view.sexp": "61077caa4d2336b8d31595f5c1507dd136d50279a057be69fa21eea5a2a296e0",
-    "working/shg-route.sexp": "5f8e88d44d13f885d3852f07bae18936d7d47dc7a225ecfd710bceb554e1a49d",
-    "working/shg-root-resolution.sexp": "3d8001ebf26cfd1c3f082707ae5e315ccaffa1dcf7df0637240b97d247c1ed15",
-    "working/shg-hole-resolution.sexp": "f8bfe7573f420ccd758494df82311d148532c129fdc4ac21beaecc31b0b02021",
-    "working/shg-checks.log": "441ad5f53ed3eefc7f1f0e7b5d83510c96374a3cf2181294a46e76d37c61d4c9"
+    "README.md": "fffc46c0bd6f175a57b9f15089a37a0eb72cfc34072e723a755942854f0b95bd",
+    "REVIEW.md": "3086ecdd120eddf363873e4baddcb7c3147d7662ba604cc9b05748c94b60b7c6",
+    "shg-stack.lisp": "950305b81e9de358a559a8514c75dafac74acc6c81dc434405101cd318405200",
+    "shg-stack": "e74843730fa130b5276414bcc44a411d22ec2fa0937e3fec0e0d5300c03f9e30",
+    "pins.json": "608851e0d060ec01593f1aaa03d5fb44da2e117d5ef8680011cc03730dea08b6",
+    "tests/check.lisp": "58450a94d81ae0e628c57339151e4be069673d933bb7909e4c0fe82df7d5da17",
+    "tests/native-checks.lisp": "1c040ff84bc2a121161aad03f9ade31b44d86539da1ca34df42ebaca354be4fa",
+    "scripts/capture-evidence.py": "ba47a6b6ddd86a365c5d65b9d3e086fc86e4cc2603f961ad1e5518bfb122fd84",
+    "synthesis/working_graph.lisp": "7b25ff5a9bcf9f5b2e8cf56f1ce23d6e624dcbc9cb6e093e9208762bc67290ad",
+    "evidence/check-00.log": "30b893ae8b1996e91649929fa9c50970baded71ca4acfe0bdf42a0241dfd44ce",
+    "evidence/check-01.log": "6fe8542976e6435fa7ee3a11266ca59015971e75c73c60338d26261c87d8e478",
+    "evidence/check-02.log": "c1b7e9f3b9d94fdf1f00bfb1b5fed8b1e2747eb6476a09a5c87c1497ed90ae8a",
+    "evidence/check-03.log": "f9487d748547666de09168fa92af1e770754c93aa14ba72111e7c0dc83213e81",
+    "evidence/check-04.log": "0c35638041cfa5b8153e1cbad99c1c3541d281d2fe81f0559c6e89ca670ac5ba",
+    "evidence/check-05.log": "3d8d066266a61518323ed2b297ef90e14438a0f7c21fc297d6bbddee8216eb86",
+    "evidence/check-06.log": "76dd6665d762de25751da27d182ccb55ab0429b1e18834916e8bbc738103105b",
+    "evidence/check-07.log": "fe36bc0fcab1693346518a2068aec5639af80a94336d3995158f46b94b5eeb31",
+    "evidence/check-08.log": "b39f5979426491ddf78d3ecdb4d843a966f1a75edf245cb5f100af4b916fd532",
+    "evidence/check-09.log": "d07f9548a8ff25e815ae1b9f0558edaff3bb5019e25d4d3ce792ca04e02b3a32",
+    "evidence/check-10.log": "23fdde54bff656abb22bd51bf32afa9600d2cc91d78aa6f3a9380a56aaeb72dd",
+    "evidence/check-11.log": "37685dd9fb739f00e46111e67718766664b3777221a5662fd9509d3305b8bd21",
+    "evidence/check-12.log": "80c7fbec5af871778eb3febfa20f3244a729861b9a4ad6119a9f3382e7fd03b6",
+    "evidence/check-13.log": "a6c0d82dd046e890d9e3e48d1a9e6c7d33d3af1eaf462ff1c9d2977e2b1dc470",
+    "evidence/native-profile.log": "a6c0d82dd046e890d9e3e48d1a9e6c7d33d3af1eaf462ff1c9d2977e2b1dc470",
+    "evidence/reproduction-before.log": "a2b1347b8b87a15bc05f07f5361658cf229c47b270b191629e5af307ef8b69df",
+    "evidence/second.sexp": "7f826d232c33a3c3df46ac48d7e496c3aa2bcbf60bb6a2d00fa5181cb86c0f5b",
+    "evidence/shg-checks.log": "6fe8542976e6435fa7ee3a11266ca59015971e75c73c60338d26261c87d8e478",
+    "evidence/shg-hole-resolution.sexp": "76dd6665d762de25751da27d182ccb55ab0429b1e18834916e8bbc738103105b",
+    "evidence/shg-root-resolution.sexp": "0c35638041cfa5b8153e1cbad99c1c3541d281d2fe81f0559c6e89ca670ac5ba",
+    "evidence/shg-route.sexp": "80c7fbec5af871778eb3febfa20f3244a729861b9a4ad6119a9f3382e7fd03b6",
+    "evidence/shg-stack.sexp": "57e9b6a8f59a4e0c463e64f74e4fae3493f74832da1390f54325a8e96a55f245",
+    "evidence/shg-view.sexp": "f9487d748547666de09168fa92af1e770754c93aa14ba72111e7c0dc83213e81",
+    "evidence/check-14.log": "d747a27ea4e45e5c82e377f1e1260919d3a702829ee9b12b13f0618e50a8956b",
+    "evidence/check-15.log": "e343ddffcb40658044a9eb3156c9ca5868dc41eb5349bc57882840200cf0c9f5"
+  },
+  "toolchain": {
+    "sbcl": "SBCL 2.2.9.debian"
   }
 }
