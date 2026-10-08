@@ -1,0 +1,554 @@
+{
+  "parent_address": "f32e1130cc7a2da42e64088f8348eee64f23b733b65a19b90bbcafc64192e8b2",
+  "parent_generation": 0,
+  "rule_identity": "f55cb9a26e67337acf9d8e272e4a244714b1f6d1b67edf47a4af5f5a1b16dee5",
+  "added_child": {
+    "schema": ":shg-declarations-v1",
+    "id": ":cycle-graph-2b838277",
+    "generation": 1,
+    "source_ref": [
+      ":construction-rule",
+      "f55cb9a26e67337acf9d8e272e4a244714b1f6d1b67edf47a4af5f5a1b16dee5",
+      ":parent-address",
+      "f32e1130cc7a2da42e64088f8348eee64f23b733b65a19b90bbcafc64192e8b2",
+      ":bindings",
+      "f20af4aedf47f963d88d1db05dfafe97eb4ea262f2b7e0ba79d497b965b8f2ef"
+    ],
+    "limits": {
+      "max_depth": 4,
+      "max_occurrences": 12,
+      "max_relations": 1024,
+      "max_input_nodes": 4096
+    },
+    "types": [
+      {
+        "id": ":vm-state",
+        "schema": [
+          ":record",
+          ":word",
+          ":u32"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":run-outcome",
+        "schema": [
+          ":result",
+          ":vm-state",
+          ":halt-trap-budget"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":activation-key",
+        "schema": [
+          ":record",
+          ":graph-generation",
+          ":natural",
+          ":input-generation",
+          ":natural",
+          ":invocation",
+          ":string",
+          ":iteration",
+          ":natural",
+          ":attempt",
+          ":natural"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":activation-request",
+        "schema": [
+          ":record",
+          ":key",
+          ":activation-key",
+          ":state",
+          ":vm-state"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":step-completion",
+        "schema": [
+          ":record",
+          ":key",
+          ":activation-key",
+          ":state",
+          ":vm-state",
+          ":status",
+          ":continue-halt-trap"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":controller-state",
+        "schema": [
+          ":record",
+          ":budget",
+          ":natural",
+          ":carried-state",
+          ":vm-state",
+          ":pending-key",
+          ":activation-key"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":positive-budget",
+        "schema": [
+          ":predicate",
+          [
+            ":controller-state"
+          ],
+          ":boolean",
+          ":positive-budget"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":continue",
+        "schema": [
+          ":predicate",
+          [
+            ":controller-state",
+            ":step-completion"
+          ],
+          ":boolean",
+          ":continue"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":stop",
+        "schema": [
+          ":predicate",
+          [
+            ":controller-state",
+            ":step-completion"
+          ],
+          ":boolean",
+          ":stop"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":halt",
+        "schema": [
+          ":predicate",
+          [
+            ":controller-state",
+            ":step-completion"
+          ],
+          ":boolean",
+          ":halt"
+        ],
+        "refinements": []
+      },
+      {
+        "id": ":trap",
+        "schema": [
+          ":predicate",
+          [
+            ":controller-state",
+            ":step-completion"
+          ],
+          ":boolean",
+          ":trap"
+        ],
+        "refinements": []
+      }
+    ],
+    "effects": [
+      {
+        "id": ":activate",
+        "input": ":vm-state",
+        "output": ":activation-request",
+        "constraints": []
+      },
+      {
+        "id": ":await",
+        "input": ":step-completion",
+        "output": ":step-completion",
+        "constraints": []
+      },
+      {
+        "id": ":publish",
+        "input": ":step-completion",
+        "output": ":vm-state",
+        "constraints": []
+      },
+      {
+        "id": ":terminate",
+        "input": ":step-completion",
+        "output": ":run-outcome",
+        "constraints": []
+      }
+    ],
+    "contracts": [
+      {
+        "id": ":cycle-contract",
+        "assume": [
+          ":environment-may-not-complete"
+        ],
+        "guarantee": [
+          ":matching-completion-only",
+          ":trap-preserves-carried-state"
+        ],
+        "invariants": [
+          ":one-pending-request"
+        ],
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "dependencies": []
+      }
+    ],
+    "port_definitions": [
+      {
+        "id": ":seed-port-dd5fba93",
+        "direction": ":in",
+        "value_type": ":vm-state",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      },
+      {
+        "id": ":outcome-port-f48163a2",
+        "direction": ":out",
+        "value_type": ":run-outcome",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      },
+      {
+        "id": ":request-port-95bab616",
+        "direction": ":out",
+        "value_type": ":activation-request",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      },
+      {
+        "id": ":receive-port-bff263f7",
+        "direction": ":in",
+        "value_type": ":step-completion",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      },
+      {
+        "id": ":argument-port-aedf41d2",
+        "direction": ":in",
+        "value_type": ":activation-request",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      },
+      {
+        "id": ":result-port-fda4e099",
+        "direction": ":out",
+        "value_type": ":step-completion",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    ],
+    "node_types": [
+      {
+        "id": ":controller-node-f5bd6fe9",
+        "ports": [
+          ":seed-port-dd5fba93",
+          ":outcome-port-f48163a2",
+          ":request-port-95bab616",
+          ":receive-port-bff263f7"
+        ],
+        "operations": [
+          ":controller-op-003b3259"
+        ],
+        "machine": ":machine-629fb9cb",
+        "contract": ":cycle-contract"
+      },
+      {
+        "id": ":worker-node-ebc5784a",
+        "ports": [
+          ":argument-port-aedf41d2",
+          ":result-port-fda4e099"
+        ],
+        "operations": [
+          ":worker-op-13536bc3"
+        ],
+        "machine": ":unbound",
+        "contract": ":cycle-contract"
+      }
+    ],
+    "machines": [
+      {
+        "id": ":machine-629fb9cb",
+        "states": [
+          ":ready",
+          ":waiting",
+          ":terminated"
+        ],
+        "initial": ":ready",
+        "transitions": [
+          {
+            "id": ":issue",
+            "to": ":waiting",
+            "trigger": ":activation-request",
+            "guard": ":positive-budget",
+            "operation": ":controller-op-003b3259",
+            "effects": [
+              ":activate",
+              ":await"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":ready"
+          },
+          {
+            "id": ":continue",
+            "to": ":ready",
+            "trigger": ":step-completion",
+            "guard": ":continue",
+            "operation": ":controller-op-003b3259",
+            "effects": [
+              ":publish"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":waiting"
+          },
+          {
+            "id": ":budget",
+            "to": ":terminated",
+            "trigger": ":step-completion",
+            "guard": ":stop",
+            "operation": ":controller-op-003b3259",
+            "effects": [
+              ":publish",
+              ":terminate"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":waiting"
+          },
+          {
+            "id": ":halt",
+            "to": ":terminated",
+            "trigger": ":step-completion",
+            "guard": ":halt",
+            "operation": ":controller-op-003b3259",
+            "effects": [
+              ":publish",
+              ":terminate"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":waiting"
+          },
+          {
+            "id": ":trap",
+            "to": ":terminated",
+            "trigger": ":step-completion",
+            "guard": ":trap",
+            "operation": ":controller-op-003b3259",
+            "effects": [
+              ":terminate"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":waiting"
+          }
+        ]
+      }
+    ],
+    "operations": [
+      {
+        "id": ":controller-op-003b3259",
+        "inputs": [
+          ":seed-port-dd5fba93",
+          ":receive-port-bff263f7"
+        ],
+        "outputs": [
+          ":outcome-port-f48163a2",
+          ":request-port-95bab616"
+        ],
+        "preconditions": [],
+        "postconditions": [
+          ":bounded-step-loop"
+        ],
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      },
+      {
+        "id": ":worker-op-13536bc3",
+        "inputs": [
+          ":argument-port-aedf41d2"
+        ],
+        "outputs": [
+          ":result-port-fda4e099"
+        ],
+        "preconditions": [],
+        "postconditions": [
+          ":abstract-step-callee"
+        ],
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    ],
+    "memory": [],
+    "bindings": [],
+    "placements": [
+      {
+        "id": ":controller-31d7fa00",
+        "type": ":controller-node-f5bd6fe9",
+        "parent": ":none",
+        "state": ":ready",
+        "memory": ":unbound",
+        "provider": ":unbound",
+        "child": null
+      },
+      {
+        "id": ":worker-7d7750a9",
+        "type": ":worker-node-ebc5784a",
+        "parent": ":none",
+        "state": ":unbound",
+        "memory": ":unbound",
+        "provider": ":unbound",
+        "child": null
+      }
+    ],
+    "connections": [
+      {
+        "id": ":call-f04487e0",
+        "type": ":call",
+        "ends": [
+          {
+            "role": ":caller",
+            "placement": ":controller-31d7fa00",
+            "port": ":request-port-95bab616"
+          },
+          {
+            "role": ":argument",
+            "placement": ":worker-7d7750a9",
+            "port": ":argument-port-aedf41d2"
+          },
+          {
+            "role": ":result",
+            "placement": ":worker-7d7750a9",
+            "port": ":result-port-fda4e099"
+          },
+          {
+            "role": ":return",
+            "placement": ":controller-31d7fa00",
+            "port": ":receive-port-bff263f7"
+          }
+        ],
+        "contract": ":cycle-contract",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "handler": ":unbound",
+        "callee_operation": ":worker-op-13536bc3"
+      },
+      {
+        "id": ":cycle-5862f814",
+        "type": ":activation-feedback",
+        "ends": [
+          {
+            "role": ":controller",
+            "placement": ":controller-31d7fa00",
+            "port": ":request-port-95bab616"
+          },
+          {
+            "role": ":activation",
+            "placement": ":worker-7d7750a9",
+            "port": ":argument-port-aedf41d2"
+          },
+          {
+            "role": ":completion",
+            "placement": ":worker-7d7750a9",
+            "port": ":result-port-fda4e099"
+          },
+          {
+            "role": ":continuation",
+            "placement": ":controller-31d7fa00",
+            "port": ":receive-port-bff263f7"
+          }
+        ],
+        "contract": ":cycle-contract",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "handler": ":unbound",
+        "machine": ":machine-629fb9cb",
+        "correlation_schema": ":activation-key",
+        "iteration_bound": 2,
+        "work_relation": [
+          ":relation",
+          ":cycle-graph-2b838277",
+          ":call-f04487e0"
+        ]
+      }
+    ],
+    "children": []
+  },
+  "boundary_map": [
+    {
+      "outer": ":run-state",
+      "inner_placement": ":controller-31d7fa00",
+      "inner_port": ":seed-port-dd5fba93"
+    },
+    {
+      "outer": ":run-outcome-port",
+      "inner_placement": ":controller-31d7fa00",
+      "inner_port": ":outcome-port-f48163a2"
+    }
+  ],
+  "obligations": [
+    "boundary-preservation",
+    "effect-containment",
+    "matching-completion",
+    "environmental-liveness-unproven",
+    "behavioral-refinement-unproven"
+  ],
+  "admission": "candidate-pending-native-checks"
+}

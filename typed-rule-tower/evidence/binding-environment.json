@@ -1,0 +1,139 @@
+{
+  "body_address": {
+    "class": "matched",
+    "type": "NativeAddress",
+    "value": "f32e1130cc7a2da42e64088f8348eee64f23b733b65a19b90bbcafc64192e8b2",
+    "scope": ":vm-feedback"
+  },
+  "root_graph": {
+    "class": "matched",
+    "type": "GraphId",
+    "value": ":vm-feedback",
+    "scope": ":vm-feedback"
+  },
+  "iteration_bound": {
+    "class": "parameter",
+    "type": "PositiveBound",
+    "value": 2,
+    "scope": ":vm-feedback"
+  },
+  "effects": {
+    "class": "parameter",
+    "type": "EffectSet",
+    "value": [
+      ":activate",
+      ":await",
+      ":publish",
+      ":terminate"
+    ],
+    "scope": ":vm-feedback"
+  },
+  "contract": {
+    "class": "parameter",
+    "type": "ContractId",
+    "value": ":cycle-contract",
+    "scope": ":vm-feedback"
+  },
+  "correlation_type": {
+    "class": "parameter",
+    "type": "TypeId",
+    "value": ":activation-key",
+    "scope": ":vm-feedback"
+  },
+  "cycle_graph": {
+    "class": "fresh",
+    "type": "GraphId",
+    "value": ":cycle-graph-2b838277",
+    "scope": ":vm-feedback"
+  },
+  "controller": {
+    "class": "fresh",
+    "type": "PlacementId",
+    "value": ":controller-31d7fa00",
+    "scope": ":cycle-graph-2b838277"
+  },
+  "worker": {
+    "class": "fresh",
+    "type": "PlacementId",
+    "value": ":worker-7d7750a9",
+    "scope": ":cycle-graph-2b838277"
+  },
+  "machine": {
+    "class": "fresh",
+    "type": "MachineId",
+    "value": ":machine-629fb9cb",
+    "scope": ":cycle-graph-2b838277"
+  },
+  "call": {
+    "class": "fresh",
+    "type": "RelationIntentId",
+    "value": ":call-f04487e0",
+    "scope": ":cycle-graph-2b838277"
+  },
+  "cycle": {
+    "class": "fresh",
+    "type": "RelationIntentId",
+    "value": ":cycle-5862f814",
+    "scope": ":cycle-graph-2b838277"
+  },
+  "controller_op": {
+    "class": "fresh",
+    "type": "OperationId",
+    "value": ":controller-op-003b3259",
+    "scope": ":cycle-graph-2b838277"
+  },
+  "worker_op": {
+    "class": "fresh",
+    "type": "OperationId",
+    "value": ":worker-op-13536bc3",
+    "scope": ":cycle-graph-2b838277"
+  },
+  "controller_node": {
+    "class": "fresh",
+    "type": "NodeTypeId",
+    "value": ":controller-node-f5bd6fe9",
+    "scope": ":cycle-graph-2b838277"
+  },
+  "worker_node": {
+    "class": "fresh",
+    "type": "NodeTypeId",
+    "value": ":worker-node-ebc5784a",
+    "scope": ":cycle-graph-2b838277"
+  },
+  "seed_port": {
+    "class": "fresh",
+    "type": "PortId",
+    "value": ":seed-port-dd5fba93",
+    "scope": ":cycle-graph-2b838277"
+  },
+  "outcome_port": {
+    "class": "fresh",
+    "type": "PortId",
+    "value": ":outcome-port-f48163a2",
+    "scope": ":cycle-graph-2b838277"
+  },
+  "request_port": {
+    "class": "fresh",
+    "type": "PortId",
+    "value": ":request-port-95bab616",
+    "scope": ":cycle-graph-2b838277"
+  },
+  "receive_port": {
+    "class": "fresh",
+    "type": "PortId",
+    "value": ":receive-port-bff263f7",
+    "scope": ":cycle-graph-2b838277"
+  },
+  "argument_port": {
+    "class": "fresh",
+    "type": "PortId",
+    "value": ":argument-port-aedf41d2",
+    "scope": ":cycle-graph-2b838277"
+  },
+  "result_port": {
+    "class": "fresh",
+    "type": "PortId",
+    "value": ":result-port-fda4e099",
+    "scope": ":cycle-graph-2b838277"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "status": "structurally-validated-only",
+  "graph": "/home/user0/FIM/runs/typed-rule-tower/1791489573465162811/grown/stage-1.sexp",
+  "graph_sha256": "65670da64df46a84655498e37783cb2fdb9914fe14ee15225d077a0b848f09ed",
+  "root_header": {
+    "schema": "semantic-hypergraph-header-v1",
+    "id": "vm-feedback",
+    "generation": 1,
+    "root": [
+      "shg-address-v1",
+      "vm-feedback",
+      1,
+      {
+        "graph": "vm-feedback"
+      },
+      "semantic-hypergraph",
+      "vm-feedback"
+    ],
+    "native-root-address": "c4b2ae5aa09919151bced518e41ac142b28819f8b0837d1cfb4cb3c6759537b2",
+    "bundle-ref": "18cc55751728af99822afe80c45f46f138a47617480a7c7b4a03786a8d3d5e8e",
+    "snapshot-ref": "6d97667acabb07adcba4da797ffcf594516429bdc3d73f681c6444384badc12e",
+    "registries-ref": "f23d605fd29a409a088f889090f7fbe87c5ffb25342d9daf2bd7a6bb1e74b269",
+    "identity": "0bbf8ba3bb051a5930b6bd3fb085d28a61ef05086d750a0c85cc2ddaac019264",
+    "lifecycle": "instantiated"
+  },
+  "rule_identity": "f55cb9a26e67337acf9d8e272e4a244714b1f6d1b67edf47a4af5f5a1b16dee5",
+  "parent_subject": "f32e1130cc7a2da42e64088f8348eee64f23b733b65a19b90bbcafc64192e8b2"
+}

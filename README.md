@@ -118,3 +118,7 @@ registry, incidence, generation, address and route contracts, loading the full
 system once. It avoids the upstream shell suite's repeated forced compilation.
 `SHG_ARTIFACT=working/second.sexp ./shg-stack route B-R2` queries the second fixture
 in a fresh process. The complete upstream thirteen-script suite is not claimed.
+
+## Typed construction tower
+
+The newer bounded graph-growth experiment, recorded evidence, native patch and proposed formal transaction contract are in [typed-rule-tower](typed-rule-tower/README.md). Its structural checks do not claim behavioral proof closure.

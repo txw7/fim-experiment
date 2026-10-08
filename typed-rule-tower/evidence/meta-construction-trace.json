@@ -1,0 +1,80 @@
+[
+  {
+    "op": "append",
+    "field": "schema",
+    "value_digest": "e0fc15fd11fff86f62bea184dcc12d0cb69a7039dbfc986a8a05e5e5a78c03ab"
+  },
+  {
+    "op": "append",
+    "field": "id",
+    "value_digest": "3d0f81bf3734051b798e28b6c3fb7b7d748336d6f8d3e86c94a670d8e3738a25"
+  },
+  {
+    "op": "append",
+    "field": "match",
+    "value_digest": "e8524a0ccb6743a0f8aaee6473aa79017f7f6b948a2aa90501117fe03ca07747"
+  },
+  {
+    "op": "append",
+    "field": "parameters",
+    "value_digest": "f504d0d84f4988bed6fe2584b29f01d361bc47bd0fdcf6c68f1f89d7474c23c9"
+  },
+  {
+    "op": "append",
+    "field": "fresh",
+    "value_digest": "b999b5ee5a6578a7318a446e66d21aa171b51b96135e01e0fba09a8112864f3b"
+  },
+  {
+    "op": "append",
+    "field": "requires",
+    "value_digest": "768f70a3b53077acc292620c9137397a9835fb4526c9aeb7367b4fd299cea53d"
+  },
+  {
+    "op": "append",
+    "field": "obligations",
+    "value_digest": "4498f50d02483bdcb69874fd9eaa2263a62d8865c7dc0d2875d62c372cc2e9e9"
+  },
+  {
+    "op": "nest",
+    "field": "produce",
+    "value_digest": "e9cb0915af1e2347e2900f63eb9f6293b3576fb76f582cf038a57b3f780bb1b1"
+  },
+  {
+    "op": "enclose",
+    "boundary_map": [
+      {
+        "outer": "body_address",
+        "inner": "produce.body_address"
+      },
+      {
+        "outer": "root_graph",
+        "inner": "produce.root_graph"
+      },
+      {
+        "outer": "iteration_bound",
+        "inner": "produce.iteration_bound"
+      },
+      {
+        "outer": "effects",
+        "inner": "produce.effects"
+      },
+      {
+        "outer": "contract",
+        "inner": "produce.contract"
+      },
+      {
+        "outer": "correlation_type",
+        "inner": "produce.correlation_type"
+      },
+      {
+        "outer": "delta",
+        "inner": "produce.delta"
+      },
+      {
+        "outer": "obligations",
+        "inner": "produce.obligations"
+      }
+    ],
+    "meaning": "map typed outer rule ports onto production-program ports; parameter substitution is separate"
+  }
+]

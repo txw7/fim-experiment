@@ -1,0 +1,8 @@
+{
+  "status": "structurally-validated-candidate",
+  "native_replay": true,
+  "boundary_effect_checks": true,
+  "behavioral_proof": "open",
+  "liveness": "unproven-environment-dependent",
+  "executable_admission": false
+}

@@ -1,0 +1,193 @@
+[
+  {
+    "machine_address": "ff4f880f62feae9fa9a925972a35fba9d935559563aefe6def4fe02dee46e9e7",
+    "hyperedge_address": "7abff61b9fb740c2cbbf80d6d1708821dd48cf35a6649c1fd805171d0b346bc5",
+    "event": {
+      "kind": "issue"
+    },
+    "transition": {
+      "id": "issue",
+      "to": "waiting",
+      "trigger": "activation-request",
+      "guard": "positive-budget",
+      "operation": "controller-op-003b3259",
+      "effects": [
+        "activate",
+        "await"
+      ],
+      "contract": "cycle-contract",
+      "from": "ready"
+    },
+    "before": {
+      "state": "ready",
+      "budget": 2,
+      "iteration": 0,
+      "value": 0
+    },
+    "after": {
+      "state": "waiting",
+      "budget": 2,
+      "iteration": 0,
+      "value": 0
+    },
+    "pending": {
+      "graph_generation": 1,
+      "input_generation": 0,
+      "invocation": "demo",
+      "iteration": 0,
+      "attempt": 0
+    },
+    "emitted_request": {
+      "key": {
+        "graph_generation": 1,
+        "input_generation": 0,
+        "invocation": "demo",
+        "iteration": 0,
+        "attempt": 0
+      },
+      "state": {
+        "word": 0
+      }
+    }
+  },
+  {
+    "machine_address": "ff4f880f62feae9fa9a925972a35fba9d935559563aefe6def4fe02dee46e9e7",
+    "hyperedge_address": "7abff61b9fb740c2cbbf80d6d1708821dd48cf35a6649c1fd805171d0b346bc5",
+    "event": {
+      "kind": "completion",
+      "key": {
+        "graph_generation": 1,
+        "input_generation": 0,
+        "invocation": "demo",
+        "iteration": 0,
+        "attempt": 0
+      },
+      "status": "continue",
+      "state": {
+        "word": 1
+      }
+    },
+    "transition": {
+      "id": "continue",
+      "to": "ready",
+      "trigger": "step-completion",
+      "guard": "continue",
+      "operation": "controller-op-003b3259",
+      "effects": [
+        "publish"
+      ],
+      "contract": "cycle-contract",
+      "from": "waiting"
+    },
+    "before": {
+      "state": "waiting",
+      "budget": 2,
+      "iteration": 0,
+      "value": 0
+    },
+    "after": {
+      "state": "ready",
+      "budget": 1,
+      "iteration": 1,
+      "value": 1
+    },
+    "pending": null,
+    "emitted_request": null
+  },
+  {
+    "machine_address": "ff4f880f62feae9fa9a925972a35fba9d935559563aefe6def4fe02dee46e9e7",
+    "hyperedge_address": "7abff61b9fb740c2cbbf80d6d1708821dd48cf35a6649c1fd805171d0b346bc5",
+    "event": {
+      "kind": "issue"
+    },
+    "transition": {
+      "id": "issue",
+      "to": "waiting",
+      "trigger": "activation-request",
+      "guard": "positive-budget",
+      "operation": "controller-op-003b3259",
+      "effects": [
+        "activate",
+        "await"
+      ],
+      "contract": "cycle-contract",
+      "from": "ready"
+    },
+    "before": {
+      "state": "ready",
+      "budget": 1,
+      "iteration": 1,
+      "value": 1
+    },
+    "after": {
+      "state": "waiting",
+      "budget": 1,
+      "iteration": 1,
+      "value": 1
+    },
+    "pending": {
+      "graph_generation": 1,
+      "input_generation": 0,
+      "invocation": "demo",
+      "iteration": 1,
+      "attempt": 0
+    },
+    "emitted_request": {
+      "key": {
+        "graph_generation": 1,
+        "input_generation": 0,
+        "invocation": "demo",
+        "iteration": 1,
+        "attempt": 0
+      },
+      "state": {
+        "word": 1
+      }
+    }
+  },
+  {
+    "machine_address": "ff4f880f62feae9fa9a925972a35fba9d935559563aefe6def4fe02dee46e9e7",
+    "hyperedge_address": "7abff61b9fb740c2cbbf80d6d1708821dd48cf35a6649c1fd805171d0b346bc5",
+    "event": {
+      "kind": "completion",
+      "key": {
+        "graph_generation": 1,
+        "input_generation": 0,
+        "invocation": "demo",
+        "iteration": 1,
+        "attempt": 0
+      },
+      "status": "continue",
+      "state": {
+        "word": 2
+      }
+    },
+    "transition": {
+      "id": "budget",
+      "to": "terminated",
+      "trigger": "step-completion",
+      "guard": "stop",
+      "operation": "controller-op-003b3259",
+      "effects": [
+        "publish",
+        "terminate"
+      ],
+      "contract": "cycle-contract",
+      "from": "waiting"
+    },
+    "before": {
+      "state": "waiting",
+      "budget": 1,
+      "iteration": 1,
+      "value": 1
+    },
+    "after": {
+      "state": "terminated",
+      "budget": 0,
+      "iteration": 2,
+      "value": 2
+    },
+    "pending": null,
+    "emitted_request": null
+  }
+]

@@ -1,0 +1,475 @@
+[
+  {
+    "statement": {
+      "op": "nest",
+      "body": "f32e1130cc7a2da42e64088f8348eee64f23b733b65a19b90bbcafc64192e8b2",
+      "graph": ":cycle-graph-2b838277"
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-2b838277",
+      "collection": "port_definitions",
+      "value": {
+        "id": ":seed-port-dd5fba93",
+        "direction": ":in",
+        "value_type": ":vm-state",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-2b838277",
+      "collection": "port_definitions",
+      "value": {
+        "id": ":outcome-port-f48163a2",
+        "direction": ":out",
+        "value_type": ":run-outcome",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-2b838277",
+      "collection": "port_definitions",
+      "value": {
+        "id": ":request-port-95bab616",
+        "direction": ":out",
+        "value_type": ":activation-request",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-2b838277",
+      "collection": "port_definitions",
+      "value": {
+        "id": ":receive-port-bff263f7",
+        "direction": ":in",
+        "value_type": ":step-completion",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-2b838277",
+      "collection": "port_definitions",
+      "value": {
+        "id": ":argument-port-aedf41d2",
+        "direction": ":in",
+        "value_type": ":activation-request",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-2b838277",
+      "collection": "port_definitions",
+      "value": {
+        "id": ":result-port-fda4e099",
+        "direction": ":out",
+        "value_type": ":step-completion",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-2b838277",
+      "collection": "operations",
+      "value": {
+        "id": ":controller-op-003b3259",
+        "inputs": [
+          ":seed-port-dd5fba93",
+          ":receive-port-bff263f7"
+        ],
+        "outputs": [
+          ":outcome-port-f48163a2",
+          ":request-port-95bab616"
+        ],
+        "preconditions": [],
+        "postconditions": [
+          ":bounded-step-loop"
+        ],
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-2b838277",
+      "collection": "operations",
+      "value": {
+        "id": ":worker-op-13536bc3",
+        "inputs": [
+          ":argument-port-aedf41d2"
+        ],
+        "outputs": [
+          ":result-port-fda4e099"
+        ],
+        "preconditions": [],
+        "postconditions": [
+          ":abstract-step-callee"
+        ],
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-2b838277",
+      "collection": "machines",
+      "value": {
+        "id": ":machine-629fb9cb",
+        "states": [
+          ":ready",
+          ":waiting",
+          ":terminated"
+        ],
+        "initial": ":ready",
+        "transitions": [
+          {
+            "id": ":issue",
+            "to": ":waiting",
+            "trigger": ":activation-request",
+            "guard": ":positive-budget",
+            "operation": ":controller-op-003b3259",
+            "effects": [
+              ":activate",
+              ":await"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":ready"
+          },
+          {
+            "id": ":continue",
+            "to": ":ready",
+            "trigger": ":step-completion",
+            "guard": ":continue",
+            "operation": ":controller-op-003b3259",
+            "effects": [
+              ":publish"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":waiting"
+          },
+          {
+            "id": ":budget",
+            "to": ":terminated",
+            "trigger": ":step-completion",
+            "guard": ":stop",
+            "operation": ":controller-op-003b3259",
+            "effects": [
+              ":publish",
+              ":terminate"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":waiting"
+          },
+          {
+            "id": ":halt",
+            "to": ":terminated",
+            "trigger": ":step-completion",
+            "guard": ":halt",
+            "operation": ":controller-op-003b3259",
+            "effects": [
+              ":publish",
+              ":terminate"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":waiting"
+          },
+          {
+            "id": ":trap",
+            "to": ":terminated",
+            "trigger": ":step-completion",
+            "guard": ":trap",
+            "operation": ":controller-op-003b3259",
+            "effects": [
+              ":terminate"
+            ],
+            "contract": ":cycle-contract",
+            "from": ":waiting"
+          }
+        ]
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-2b838277",
+      "collection": "node_types",
+      "value": {
+        "id": ":controller-node-f5bd6fe9",
+        "ports": [
+          ":seed-port-dd5fba93",
+          ":outcome-port-f48163a2",
+          ":request-port-95bab616",
+          ":receive-port-bff263f7"
+        ],
+        "operations": [
+          ":controller-op-003b3259"
+        ],
+        "machine": ":machine-629fb9cb",
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-2b838277",
+      "collection": "node_types",
+      "value": {
+        "id": ":worker-node-ebc5784a",
+        "ports": [
+          ":argument-port-aedf41d2",
+          ":result-port-fda4e099"
+        ],
+        "operations": [
+          ":worker-op-13536bc3"
+        ],
+        "machine": ":unbound",
+        "contract": ":cycle-contract"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-2b838277",
+      "collection": "placements",
+      "value": {
+        "id": ":controller-31d7fa00",
+        "type": ":controller-node-f5bd6fe9",
+        "parent": ":none",
+        "state": ":ready",
+        "memory": ":unbound",
+        "provider": ":unbound",
+        "child": null
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-2b838277",
+      "collection": "placements",
+      "value": {
+        "id": ":worker-7d7750a9",
+        "type": ":worker-node-ebc5784a",
+        "parent": ":none",
+        "state": ":unbound",
+        "memory": ":unbound",
+        "provider": ":unbound",
+        "child": null
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-2b838277",
+      "collection": "connections",
+      "value": {
+        "id": ":call-f04487e0",
+        "type": ":call",
+        "ends": [
+          {
+            "role": ":caller",
+            "placement": ":controller-31d7fa00",
+            "port": ":request-port-95bab616"
+          },
+          {
+            "role": ":argument",
+            "placement": ":worker-7d7750a9",
+            "port": ":argument-port-aedf41d2"
+          },
+          {
+            "role": ":result",
+            "placement": ":worker-7d7750a9",
+            "port": ":result-port-fda4e099"
+          },
+          {
+            "role": ":return",
+            "placement": ":controller-31d7fa00",
+            "port": ":receive-port-bff263f7"
+          }
+        ],
+        "contract": ":cycle-contract",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "handler": ":unbound",
+        "callee_operation": ":worker-op-13536bc3"
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "append",
+      "graph": ":cycle-graph-2b838277",
+      "collection": "connections",
+      "value": {
+        "id": ":cycle-5862f814",
+        "type": ":activation-feedback",
+        "ends": [
+          {
+            "role": ":controller",
+            "placement": ":controller-31d7fa00",
+            "port": ":request-port-95bab616"
+          },
+          {
+            "role": ":activation",
+            "placement": ":worker-7d7750a9",
+            "port": ":argument-port-aedf41d2"
+          },
+          {
+            "role": ":completion",
+            "placement": ":worker-7d7750a9",
+            "port": ":result-port-fda4e099"
+          },
+          {
+            "role": ":continuation",
+            "placement": ":controller-31d7fa00",
+            "port": ":receive-port-bff263f7"
+          }
+        ],
+        "contract": ":cycle-contract",
+        "effects": [
+          ":activate",
+          ":await",
+          ":publish",
+          ":terminate"
+        ],
+        "handler": ":unbound",
+        "machine": ":machine-629fb9cb",
+        "correlation_schema": ":activation-key",
+        "iteration_bound": 2,
+        "work_relation": [
+          ":relation",
+          ":cycle-graph-2b838277",
+          ":call-f04487e0"
+        ]
+      }
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  },
+  {
+    "statement": {
+      "op": "enclose",
+      "graph": ":cycle-graph-2b838277",
+      "map": [
+        {
+          "outer": ":run-state",
+          "inner_placement": ":controller-31d7fa00",
+          "inner_port": ":seed-port-dd5fba93"
+        },
+        {
+          "outer": ":run-outcome-port",
+          "inner_placement": ":controller-31d7fa00",
+          "inner_port": ":outcome-port-f48163a2"
+        }
+      ]
+    },
+    "status": "staged",
+    "publication": "not-yet-native-validated"
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "expected": "rule-parameter-correspondence",
+    "rejected": true
+  },
+  {
+    "expected": "missing-obligation",
+    "rejected": true
+  },
+  {
+    "expected": "unbound-rule-variable",
+    "rejected": true
+  },
+  {
+    "expected": "rule-boundary-type",
+    "rejected": true
+  },
+  {
+    "expected": "iteration-bound",
+    "rejected": true
+  },
+  {
+    "expected": "event-kind",
+    "rejected": true
+  },
+  {
+    "expected": "correlation-type",
+    "rejected": true
+  },
+  {
+    "expected": "completion-state-type",
+    "rejected": true
+  },
+  {
+    "expected": "completion-state-type",
+    "rejected": true
+  },
+  {
+    "expected": "completion-state-type",
+    "rejected": true
+  },
+  {
+    "expected": "correlation-mismatch",
+    "rejected": true
+  },
+  {
+    "expected": "correlation-mismatch",
+    "rejected": true
+  },
+  {
+    "expected": "correlation-mismatch",
+    "rejected": true
+  },
+  {
+    "expected": "correlation-mismatch",
+    "rejected": true
+  },
+  {
+    "expected": "correlation-mismatch",
+    "rejected": true
+  },
+  {
+    "expected": "no-pending-activation",
+    "rejected": true
+  },
+  {
+    "case": "missing-role",
+    "expected": "SHG feedback requires exactly four distinct roles",
+    "rejected": true
+  },
+  {
+    "case": "wrong-request-type",
+    "expected": "SHG call typed argument/result or ownership mismatch",
+    "rejected": true
+  },
+  {
+    "case": "undeclared-effect",
+    "expected": "SHG required reference does not resolve",
+    "rejected": true
+  },
+  {
+    "case": "missing-transition",
+    "expected": "SHG feedback transition profile invalid",
+    "rejected": true
+  },
+  {
+    "case": "wrong-guard-type",
+    "expected": "SHG feedback guard signature invalid",
+    "rejected": true
+  },
+  {
+    "case": "missing-boundary",
+    "expected": "SHG child boundary is not total",
+    "rejected": true
+  }
+]

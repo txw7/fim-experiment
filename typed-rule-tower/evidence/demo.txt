@@ -1,0 +1,12 @@
+Typed rule tower — executed
+
+Checked template → generated complete rule → bounded structural rule admission
+→ addressed seed match + explicit fresh allocation → interpreted graph delta
+→ native nested SHG with CALL and activation-feedback hyperedges
+→ two correlated successes, then budget termination.
+
+154 seed addresses → 421 grown addresses; 421 R001 lookups passed.
+22 negative checks passed; upstream SHG regression: 27 checks passed.
+Halt/trap paths passed; trap preserves carried state.
+Behavioral refinement and environmental liveness remain unproven.
+No provider execution or VM instruction execution claimed.

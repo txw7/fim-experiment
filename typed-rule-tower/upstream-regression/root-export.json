@@ -1,0 +1,13 @@
+[{
+"address_ref_ascii": "cc042efea5f5373431327d8324930289b7d8bd2dafdb401bc06fb47409e4f799",
+"source_bundle_snapshot_ref": "de4ca97f48b89bf582750ac4057c652632b4668500dc7bec6c2b98297d2cc703",
+"occurrence_scope_ref": "e958fcf8468ecd6df2f84a3e5937509994822a463e2879fb957118ef90c1ac26",
+"source_registry_root_ref": "f61bc8dc74a8989e036d07aceeb0c04f2a7a6231c8d279e2ea6e66d14ce4d970",
+"source_registry_kind_ascii": "member-registry-v1",
+"source_row_ref_ascii": "1321f3083faf089a2379f84e6dd8a0fb4fb76fc4681cea3f588be6459e3a0d5f",
+"source_row_digest_32b_hex": "1321f3083faf089a2379f84e6dd8a0fb4fb76fc4681cea3f588be6459e3a0d5f",
+"h002_resolution_receipt_ref": "5624cce65bcff36aeef5ccb332f45cc491b8093e7eff54bbfee4761d6707c291",
+"boundary_contract_ref": "edfeda66f4f94d00a324983120537dbf226fd7ad464cd1f765b4289237dab8d0",
+"object_class_ref_ascii": "semantic-hypergraph",
+"open_region": false
+}]

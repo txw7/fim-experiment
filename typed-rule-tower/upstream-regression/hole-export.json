@@ -1,0 +1,13 @@
+[{
+"address_ref_ascii": "1d6558dd14c1521bd6ff41e8f198c45698a09824bdbd20ef4863d96fb14fe32d",
+"source_bundle_snapshot_ref": "de4ca97f48b89bf582750ac4057c652632b4668500dc7bec6c2b98297d2cc703",
+"occurrence_scope_ref": "e958fcf8468ecd6df2f84a3e5937509994822a463e2879fb957118ef90c1ac26",
+"source_registry_root_ref": "a3ca6e9b60b064822fb52351c887e220d7afe75991622e1d2418991c5c46d4af",
+"source_registry_kind_ascii": "hole-registry-v1",
+"source_row_ref_ascii": "41b171a9afb92019984e6b3120a6d008b4fca3bb4912e10a20f08182aee9ab5a",
+"source_row_digest_32b_hex": "41b171a9afb92019984e6b3120a6d008b4fca3bb4912e10a20f08182aee9ab5a",
+"h002_resolution_receipt_ref": "05eb717bfd43063ce216092bc6b4ec63a3dfa5f85c249d4c1dfbcc9fb69e1765",
+"boundary_contract_ref": "b02f5bc94490d150ec7455aafcdc38dea7f7f4cbe1798c6f299d24088f5b0448",
+"object_class_ref_ascii": "hole",
+"open_region": true
+}]
