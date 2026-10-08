@@ -1,0 +1,46 @@
+{
+  "schema": "hand-shg-build-evidence-v1",
+  "goggles_commit": "99ad6709431af62dee389535ec0c62cfda40292f",
+  "builder": "handwritten local SHG extension backed by native H001/H002/A002",
+  "build_result": "SHG_BUILD_RELOAD_GREEN collections=15 rules=8 projections=7 invariants=9 addresses=45 symbolic-routes=1 behavioral-admission=OPEN",
+  "fresh_process_commands_passed": [
+    "show",
+    "route",
+    "resolve /G",
+    "resolve H"
+  ],
+  "checks": [
+    "typed-record/native-member correspondence",
+    "root and record lookup",
+    "native relation incidence correspondence",
+    "native hole owner and boundary correspondence",
+    "symbolic route endpoints",
+    "native query/export/profile witness validation",
+    "save/reload equality"
+  ],
+  "rejections": [
+    "missing member",
+    "stale snapshot",
+    "missing type",
+    "missing export",
+    "wrong route profile"
+  ],
+  "claims_not_established": [
+    "external R001/R002 acceptance",
+    "executable dispatch",
+    "behavioral proof",
+    "executable transformation algebra",
+    "CAS storage",
+    "arbitrary recursive synthesis"
+  ],
+  "sha256": {
+    "shg-stack.lisp": "a8f9fd03a34b25e5ea2ed8dfbbd0ef8bda1166a6258328fc2b3f50270e3ec5de",
+    "SHG-STACK.md": "4f2ce3f50f146b6238902428b675555eff7cd0799890119495e67672157b80f9",
+    "working/shg-stack.sexp": "aee42e609935353016a14d471ac86b11ae0091b3679902bca73d0ee36c4d379d",
+    "working/shg-view.sexp": "61077caa4d2336b8d31595f5c1507dd136d50279a057be69fa21eea5a2a296e0",
+    "working/shg-route.sexp": "5f8e88d44d13f885d3852f07bae18936d7d47dc7a225ecfd710bceb554e1a49d",
+    "working/shg-root-resolution.sexp": "3d8001ebf26cfd1c3f082707ae5e315ccaffa1dcf7df0637240b97d247c1ed15",
+    "working/shg-hole-resolution.sexp": "f8bfe7573f420ccd758494df82311d148532c129fdc4ac21beaecc31b0b02021",
+    "working/shg-checks.log": "441ad5f53ed3eefc7f1f0e7b5d83510c96374a3cf2181294a46e76d37c61d4c9"
+  }
+}
