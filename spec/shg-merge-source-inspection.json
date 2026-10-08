@@ -1,0 +1,28 @@
+{
+  "schema": "shg-merge-spec-inspection-v1",
+  "handoff_commit": "7b66ecc9b717361b00bd833d391fafd0c5db40ab",
+  "handoff_source_files_checked": 76,
+  "mismatches": [],
+  "goggles_commit": "6674a072521c821a3e586077d553000fb699100b",
+  "principal_producer_blobs_match_historical_pin": true,
+  "egress_commit": "0a48afc66ca24b94ba93cbcb40c82bdf6a1ee76a",
+  "integration_implemented": false,
+  "acceptance_tests_run_this_task": false,
+  "verification": "source inspection and integrity only",
+  "specifications": {
+    "shg-tower-addressing-machines-merge-v1.md": "f87299b867f8facc73398954de1ad1ef0003318a36cb70d96cbb822f3d9b5a64",
+    "co-grown-shg-tower-spec-v2.md": "3cb3cc4e0ec839c1c3b47c09f3d85f28cc0f71300d0ef70e7a9c30cc6559b0a8"
+  },
+  "active_specification": "co-grown-shg-tower-spec-v2.md",
+  "superseded_specification": "shg-tower-addressing-machines-merge-v1.md",
+  "spec_checks": [
+    "native authority retained",
+    "shared typed construction algebra",
+    "single growth/admission transaction",
+    "joint machine/address/registry provenance",
+    "explicit unsupported semantics",
+    "graph-only posthoc routing rejected",
+    "explicit matched/parameter/fresh bindings and boundary derivation",
+    "complete-input deterministic replay vs fresh allocation"
+  ]
+}
