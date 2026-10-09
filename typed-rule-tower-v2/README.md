@@ -8,6 +8,8 @@ Actual local Qwen2.5-Coder-1.5B-Base FIM attempts are retained. Whole-body and s
 
 ## Evidence
 
+- `evidence/s3-contract-network.html`: interactive radial candidate-network view. Its prompt/output panel states that this graph has no recorded model calls.
+- `evidence/s3-contract-network.json` and `evidence/s3-contract-prompt-trace.json`: expanded graph and explicit empty prompt trace; semantic admission remains `NOT_RUN`.
 - `evidence/formal-transaction/summary.json`: scoped results.
 - `evidence/formal-transaction/native-rank-receipt.sexp`: original checked theorem, program, environment and native admission receipt.
 - `evidence/formal-transaction/fim/publish-expression/`: exact requests, completions, source candidates, Rust results, Kani logs and open native obligation.

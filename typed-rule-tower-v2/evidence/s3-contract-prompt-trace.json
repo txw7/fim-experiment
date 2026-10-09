@@ -1,0 +1,9 @@
+{
+  "schema": "shg-model-prompt-trace-v1",
+  "graph": "S3_LIVE_AB",
+  "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+  "status": "NO_MODEL_CALLS_RECORDED",
+  "requests": [],
+  "responses": [],
+  "note": "This network was built by deterministic source extraction. No Jev, Laya, or Qwen prompt or output is available for it."
+}
