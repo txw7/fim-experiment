@@ -116,6 +116,167 @@ index 07929071..13354459 100644
               :child-closures parent-child-closures
               :child-generated-registry-sets parent-child-generated))
            (let* ((internal-row-bindings
+diff --git a/lisp/shg_context_lift_v1.lisp b/lisp/shg_context_lift_v1.lisp
+new file mode 100644
+index 00000000..9b87ad6b
+--- /dev/null
++++ b/lisp/shg_context_lift_v1.lisp
+@@ -0,0 +1,155 @@
++(in-package #:lsip)
++
++;;; Bounded normal-form construction interpreter. Nominal interfaces are
++;;; proposals, not verified refinements of the original OPEN operations.
++(defun shg-context-lift-grow-v1 (state term)
++  (let* ((source (getf state :bundle)) (closure (getf state :closure))
++         (path (getf state :source-path))
++         (namespace (realization-v1-digest
++                     (list :shg-context-lift-v1 (getf state :transaction)
++                           (shg-growth-snapshot-v1 closure) term)))
++         (effects (make-semantic-effect-profile-v1
++                   :effect-kinds '(:vm-state-access) :externality-class :local))
++         (open-surface (make-semantic-boundary-surface-v1 :effect-profile effects))
++         (members nil) (ports nil) (holes nil) (connections nil) (calls nil)
++         (applications nil) (deltas nil) (bundle source) (closed closure) (generated nil))
++    (validate-semantic-bundle-persistence-components-v1 source (getf state :generated) closure)
++    (unless (and (realization-v1-proper-list-p term) (= 4 (length term))
++                 (eq :lambda (first term)) (stringp (second term)) (stringp (third term)))
++      (error "Context lift requires one typed lambda."))
++    (labels
++        ((shape (value tag length)
++           (unless (and (realization-v1-proper-list-p value)
++                        (= length (length value)) (eq tag (first value)))
++             (error "Malformed context construction ~S." tag)))
++         (member-row (key semantics)
++           (let ((row (make-semantic-member-row-v1
++                       :local-member-key (list namespace key) :member-kind :operation
++                       :semantic-ref semantics
++                       :surface-ref (semantic-boundary-surface-v1-surface-identity open-surface)
++                       :effect-profile-ref (semantic-effect-profile-v1-profile-identity effects))))
++             (push row members)
++             (push (make-semantic-hole-row-v1
++                    :local-hole-key (list namespace key :obligations)
++                    :hole-kind :refinement :owner-ref (semantic-member-row-v1-member-row-identity row)
++                    :required-contract-refs '(:context-proposed-interface-v1)
++                    :required-formal-refs '(:effect-containment-open-v1 :behavioral-refinement-open-v1)) holes)
++             row))
++         (port-row (owner key direction type)
++           (let ((row (make-semantic-port-row-v1
++                       :local-port-key (list namespace key direction) :owner-kind :member
++                       :owner-ref (semantic-member-row-v1-member-row-identity owner)
++                       :port-kind (if (eq direction :in) :input :output) :direction direction
++                       :contract-ref (list :proposed-value-type type)
++                       :effect-profile-ref (semantic-effect-profile-v1-profile-identity effects)
++                       :visibility :bundle-export)))
++             (push row ports) row))
++         (coordinate (row)
++           (make-semantic-bundle-row-address-v1
++            :bundle-occurrence-path path
++            :bundle-snapshot-ref (semantic-bundle-closure-v1-bundle-snapshot-ref closure)
++            :registry-kind :member-registry-v1 :row-ref (semantic-member-row-v1-member-row-identity row)
++            :lineage-ref (semantic-bundle-row-lineage-v1 path :member-registry-v1 row)))
++         (walk (expression variable input-port input-type depth)
++           (when (> depth 16) (error "Context construction depth budget exceeded."))
++           (if (eq :variable (first expression))
++               (progn (shape expression :variable 3)
++                      (unless (and (equal variable (second expression))
++                                   (equal input-type (third expression)))
++                        (error "Unbound or mistyped construction variable."))
++                      (values input-port input-type))
++               (progn
++                 (shape expression :application 3)
++                 (let ((callee (second expression)))
++                   (shape callee :callee 5)
++                   (unless (every #'stringp (rest callee)) (error "Callee fields must be strings."))
++                   (multiple-value-bind (incoming type)
++                       (walk (third expression) variable input-port input-type (1+ depth))
++                     (unless (equal type (third callee)) (error "Construction interface mismatch."))
++                     (let* ((definition (shg-vm-member-v1 source (intern (string-upcase (second callee)) :keyword)))
++                            (address (coordinate definition))
++                            (key (list :call-use depth))
++                            (use (member-row key (list :context-call-use :callee-address (fifth callee)
++                                                       :input (third callee) :output (fourth callee)
++                                                       :interface-status :proposed)))
++                            (in (port-row use key :in type))
++                            (out (port-row use key :out (fourth callee))))
++                       (unless (equal (fifth callee) (semantic-bundle-row-address-v1-address-identity address))
++                         (error "Stale or wrong native callee address."))
++                       (resolve-semantic-bundle-row-address-v1 address source closure (getf state :generated))
++                       (push (list use definition in out) calls)
++                       (push (list incoming in type) connections)
++                       (values out (fourth callee)))))))))
++      (let* ((region (member-row :step-region (list :context-generator term :implementation :open)))
++             (input (port-row region :boundary :in (third term))))
++        (multiple-value-bind (result type) (walk (fourth term) (second term) input (third term) 0)
++          (let ((output (port-row region :boundary :out type)))
++            (push (list result output type) connections))))
++      (let ((delta (make-semantic-bundle-delta-v1
++                    :expected-predecessor-snapshot (semantic-bundle-closure-v1-bundle-snapshot-ref closure)
++                    :operations (append (mapcar (lambda (r) (list :add-member r)) (reverse members))
++                                        (mapcar (lambda (r) (list :add-port r)) (reverse ports))
++                                        (mapcar (lambda (r) (list :add-hole r)) (reverse holes)))
++                    :provenance-ref (list :typed-context-construction namespace))))
++        (setf bundle (apply-semantic-bundle-delta-v1 source closure delta))
++        (push delta deltas)
++        (multiple-value-setq (closed generated)
++          (shg-vm-close-v1 bundle :child-closures (getf state :retained-child-closures)
++                          :child-generated-registry-sets (getf state :retained-child-generated))))
++      (labels ((relate (constitution roles parameters surfaces)
++                 (multiple-value-bind (next next-closure registries delta application)
++                     (shg-vm-add-relation-v1 bundle closed constitution roles parameters surfaces
++                      :child-closures (getf state :retained-child-closures)
++                      :child-generated-registry-sets (getf state :retained-child-generated))
++                   (setf bundle next closed next-closure generated registries)
++                   (push delta deltas) (push application applications))))
++        (unless (gethash :shg-context-call-interface-v1 *semantic-relation-constitutions-v2*)
++          (semantic-v2-register
++           (current-semantic-algebra-registry-v2) :shg-context-call-interface-v1 :protocol :protocol
++           (list (semantic-v2-role :call-use 1 1 '(:member))
++                 (semantic-v2-role :argument 1 1 '(:port))
++                 (semantic-v2-role :result 1 1 '(:port)))
++           :parameters '(:callee-address :contract-status)))
++        (dolist (use (reverse calls))
++          (relate :call-v2
++                  (list (list :caller :member (semantic-member-row-v1-member-row-identity (first use)))
++                        (list :callee :member (semantic-member-row-v1-member-row-identity (second use))))
++                  (list :call-site-ref (semantic-member-row-v1-member-row-identity (first use)))
++                  (list open-surface open-surface))
++          ;; Preserve the ternary interface association locally. This does not
++          ;; certify an executable argument/result binding across the CALL cut.
++          (relate :shg-context-call-interface-v1
++                  (list (list :call-use :member (semantic-member-row-v1-member-row-identity (first use)))
++                        (list :argument :port (semantic-port-row-v1-port-row-identity (third use)))
++                        (list :result :port (semantic-port-row-v1-port-row-identity (fourth use))))
++                  (list :callee-address (semantic-bundle-row-address-v1-address-identity (coordinate (second use)))
++                        :contract-status :proposed) nil))
++        (dolist (connection (reverse connections))
++          (let ((surface (make-semantic-boundary-surface-v1
++                          :input-port-classes (list (third connection))
++                          :output-port-classes (list (third connection)) :effect-profile effects)))
++            (relate :dataflow-v2
++                    (list (list :source :port (semantic-port-row-v1-port-row-identity (first connection)))
++                          (list :target :port (semantic-port-row-v1-port-row-identity (second connection))))
++                    nil (list surface surface)))))
++      ;; Return typed additions to the existing append/nest/enclose pipeline.
++      ;; Staged relation deltas are retained; generated registries are never edited.
++      (let ((operations nil))
++        (dolist (kind *semantic-bundle-base-registry-kinds-v1*)
++          (dolist (row (recursive-semantic-bundle-base-rows-v1 bundle kind))
++            (unless (find (semantic-registry-row-identity-v1 row)
++                          (recursive-semantic-bundle-base-rows-v1 source kind)
++                          :test #'equal :key #'semantic-registry-row-identity-v1)
++              (push (list (ecase kind
++                            (:member-registry-v1 :add-member) (:port-registry-v1 :add-port)
++                            (:relation-registry-v1 :add-relation) (:incidence-registry-v1 :add-incidence)
++                            (:hole-registry-v1 :add-hole)) row) operations))))
++        (let ((result (copy-list state)))
++          (setf (getf result :operations) (nreverse operations)
++                (getf result :selected-member-refs) (mapcar #'semantic-member-row-v1-member-row-identity members)
++                (getf result :context-lift-receipt)
++                (list :term term :namespace namespace :applications (reverse applications)
++                      :staged-deltas (reverse deltas) :calls (length calls)
++                      :call-interfaces (length calls) :dataflows (length connections) :interface-status :proposed
++                      :behavioral-proof :open :execution :unbound))
++          result)))))
 diff --git a/lisp/shg_growth_algebra_v1.lisp b/lisp/shg_growth_algebra_v1.lisp
 new file mode 100644
 index 00000000..600b9dc6
@@ -269,10 +430,10 @@ index 00000000..600b9dc6
 +     :identity-law-ref :shg-growth-identity-v1)))
 diff --git a/lisp/shg_growth_constructor_v1.lisp b/lisp/shg_growth_constructor_v1.lisp
 new file mode 100644
-index 00000000..66b2aadb
+index 00000000..640fec8b
 --- /dev/null
 +++ b/lisp/shg_growth_constructor_v1.lisp
-@@ -0,0 +1,306 @@
+@@ -0,0 +1,314 @@
 +(in-package #:lsip)
 +
 +;;; Bounded native construction capabilities. These are checked primitive
@@ -292,6 +453,10 @@ index 00000000..66b2aadb
 +         (getf state :transaction) (getf state :expected-snapshot)
 +         (getf state :symbolic-route-profile)
 +         (getf state :construction-law) (getf state :budget)
++         (mapcar #'semantic-bundle-closure-ref-v1 (getf state :retained-child-closures))
++         (mapcar (lambda (entry)
++                   (list (car entry) (semantic-bundle-generated-registry-set-v1-generated-registry-set-identity (cdr entry))))
++                 (getf state :retained-child-generated))
 +         (when (getf state :step-subject-address)
 +           (semantic-bundle-row-address-v1-address-identity (getf state :step-subject-address)))
 +         (when (getf state :subject-address)
@@ -459,7 +624,9 @@ index 00000000..66b2aadb
 +      (declare (ignore _shape))
 +      (multiple-value-bind (closed generated)
 +          (close-recursive-semantic-bundle-v1
-+           candidate :route-rows
++           candidate :child-closures (getf state :retained-child-closures)
++           :child-generated-registry-sets (getf state :retained-child-generated)
++           :route-rows
 +           (when (getf state :symbolic-route-profile)
 +             (ecase (getf state :symbolic-route-profile)
 +               (:source-target-v1 (shg-growth-source-target-route-rows-v1 candidate))
@@ -495,6 +662,8 @@ index 00000000..66b2aadb
 +        (extract-semantic-fragment-v1
 +         bundle closure generated selection cut
 +         :fragment-kind :function-fragment :policy policy
++         :child-closures (getf state :retained-child-closures)
++         :child-generated-registry-sets (getf state :retained-child-generated)
 +         :route-row-producer
 +         (when (getf state :symbolic-route-profile)
 +           (ecase (getf state :symbolic-route-profile)
@@ -581,10 +750,10 @@ index 00000000..66b2aadb
 +   :invariants '(:capability-resolved-primitives-only)))
 diff --git a/lisp/shg_vm_growth_v1.lisp b/lisp/shg_vm_growth_v1.lisp
 new file mode 100644
-index 00000000..a80daf33
+index 00000000..004d4cf0
 --- /dev/null
 +++ b/lisp/shg_vm_growth_v1.lisp
-@@ -0,0 +1,676 @@
+@@ -0,0 +1,684 @@
 +(in-package #:lsip)
 +
 +;;; Bounded authored VM declarations, lowered by native H001/A002 owners.
@@ -601,16 +770,27 @@ index 00000000..a80daf33
 +    (:control :register-read) (:control :register-write)
 +    (:control :memory-read) (:control :memory-write)))
 +
-+(defun shg-vm-close-v1 (bundle)
++(defun install-shg-vm-body-candidate-constitution-v1 ()
++  ;; Persistence replay needs the same canonical owner, without regrowing a VM.
++  (or (gethash :shg-vm-body-candidate-v1 *semantic-relation-constitutions-v2*)
++      (semantic-v2-register
++       (current-semantic-algebra-registry-v2) :shg-vm-body-candidate-v1 :refinement :refinement
++       (list (semantic-v2-role :abstract 1 1 '(:member :port))
++             (semantic-v2-role :refinement 1 1 '(:member :port)))
++       :parameters '(:source-body-ref :preservation-status))))
++
++(defun shg-vm-close-v1 (bundle &key child-closures child-generated-registry-sets)
 +  (close-recursive-semantic-bundle-v1
-+   bundle :route-rows (shg-growth-incidence-route-rows-v1 bundle)))
++   bundle :route-rows (shg-growth-incidence-route-rows-v1 bundle)
++   :child-closures child-closures :child-generated-registry-sets child-generated-registry-sets))
 +
 +(defun shg-vm-member-v1 (bundle name)
 +  (or (find name (recursive-semantic-bundle-base-rows-v1 bundle :member-registry-v1)
 +            :test #'equal :key #'semantic-member-row-v1-local-member-key)
 +      (error "Unknown VM member ~S." name)))
 +
-+(defun shg-vm-add-relation-v1 (bundle closure constitution roles parameters &optional surfaces)
++(defun shg-vm-add-relation-v1 (bundle closure constitution roles parameters &optional surfaces
++                             &key child-closures child-generated-registry-sets)
 +  (when (eq constitution :state-access-v2)
 +    (let* ((actor (third (assoc :actor roles)))
 +           (domain (third (assoc :state roles)))
@@ -647,7 +827,9 @@ index 00000000..a80daf33
 +                     application (semantic-bundle-closure-v1-bundle-snapshot-ref closure))
 +                  (error (e) (error "Native VM relation ~S rejected: ~A" constitution e))))
 +         (next (apply-semantic-bundle-delta-v1 bundle closure delta)))
-+    (multiple-value-bind (closed generated) (shg-vm-close-v1 next)
++    (multiple-value-bind (closed generated)
++        (shg-vm-close-v1 next :child-closures child-closures
++                        :child-generated-registry-sets child-generated-registry-sets)
 +      (values next closed generated delta application))))
 +
 +(defun make-shg-vm-call-seed-v1 ()
@@ -849,12 +1031,7 @@ index 00000000..a80daf33
 +             (list (semantic-v2-role :machine 1 1 '(:member))
 +                   (semantic-v2-role :phase 5 5 '(:member) :ordered t)
 +                   (semantic-v2-role :transition 6 6 '(:member) :ordered t))))
-+          (unless (gethash :shg-vm-body-candidate-v1 *semantic-relation-constitutions-v2*)
-+            (semantic-v2-register
-+             (current-semantic-algebra-registry-v2) :shg-vm-body-candidate-v1 :refinement :refinement
-+             (list (semantic-v2-role :abstract 1 1 '(:member :port))
-+                   (semantic-v2-role :refinement 1 1 '(:member :port)))
-+             :parameters '(:source-body-ref :preservation-status)))
++          (install-shg-vm-body-candidate-constitution-v1)
 +          (multiple-value-setq (closed generated) (shg-vm-close-v1 candidate))
 +          (dolist (production
 +                    (append
@@ -1262,19 +1439,127 @@ index 00000000..a80daf33
 +                      :semantic-status :open :activation-mode :open :behavioral-proof :open)))))
 +    state))
 diff --git a/lsip.asd b/lsip.asd
-index 64990ba7..31c9782f 100644
+index 64990ba7..727ec786 100644
 --- a/lsip.asd
 +++ b/lsip.asd
-@@ -332,6 +332,9 @@
+@@ -332,6 +332,10 @@
                  (:file "lisp/semantic_constructor_execution_bridge_v1")
                  (:file "lisp/synthesis_self_host_constructor_executor_self_host_v1")
                  (:file "lisp/synthesis_constructor_capability_v1")
 +                (:file "lisp/shg_growth_constructor_v1")
 +               (:file "lisp/shg_growth_algebra_v1")
 +               (:file "lisp/shg_vm_growth_v1")
++               (:file "lisp/shg_context_lift_v1")
                  (:file "lisp/synthesis_self_host_constructor_synthesizer_self_host_v1")
                  (:file "lisp/synthesis_self_host_constructor_validator_self_host_v1")
                  (:file "lisp/synthesis_self_host_successor_controller_self_host_v1")
+diff --git a/scripts/check_shg_context_lift_v1.lisp b/scripts/check_shg_context_lift_v1.lisp
+new file mode 100644
+index 00000000..2422acac
+--- /dev/null
++++ b/scripts/check_shg_context_lift_v1.lisp
+@@ -0,0 +1,101 @@
++#!/usr/bin/env sbcl --script
++(require :asdf)
++(defparameter *context-root* (truename (merge-pathnames "../" (uiop:pathname-directory-pathname *load-truename*))))
++(let* ((path (merge-pathnames "scripts/check_shg_growth_selfhost_v1.lisp" *context-root*))
++       (*load-truename* (truename path)) (*load-pathname* path))
++  (with-open-file (in path) (read-line in)
++    (loop for form = (read in nil :eof) until (eq form :eof) do (eval form))))
++(in-package #:lsip)
++(install-shg-vm-body-candidate-constitution-v1)
++(defparameter *context-artifact*
++  (with-open-file (in "/home/user0/FIM/experiment/native-growth/evidence/joint-growth/native.sexp")
++    (let ((*read-eval* nil)) (read in))))
++(defparameter *context-term*
++  (with-open-file (in "/home/user0/FIM/runs/vm-context-lift-native-v1/construction-input.sexp")
++    (let ((*read-eval* nil)) (read in))))
++(defparameter *context-state*
++  (let ((result (getf *context-artifact* :result)))
++    (list :transaction "typed-context-native-1"
++          :bundle (getf result :parent) :closure (getf result :parent-closure)
++          :generated (getf result :parent-generated)
++          :retained-child-closures (list (getf result :child-closure))
++          :retained-child-generated
++          (list (cons (semantic-bundle-closure-ref-v1 (getf result :child-closure))
++                      (getf result :child-generated)))
++          :expected-snapshot (shg-growth-snapshot-v1 (getf result :parent-closure))
++          :source-path (getf result :source-path)
++          :symbolic-route-profile :relation-incidences-v1
++          :policy (make-semantic-decomposition-policy-v1))))
++(defparameter *context-description* (shg-growth-constructor-description-v1))
++(defparameter *context-program*
++  (synthesize-semantic-constructor-program-v1 *context-description* :shg-growth-enclosed '(:shg-growth-source)))
++(defun context-run (term &optional (state *context-state*))
++  (nth-value 0 (execute-shg-growth-request-v1 *context-program* *context-description*
++                (shg-context-lift-grow-v1 state term))))
++(defun context-rejects (term category)
++  (handler-case (progn (context-run term) (error "Expected rejection was absent."))
++    (error (condition) (assert (search category (princ-to-string condition))))))
++(format t "Context-native-start~%") (finish-output)
++(defparameter *context-result* (context-run *context-term*))
++(let* ((result *context-result*) (receipt (getf result :context-lift-receipt))
++       (child (getf result :child)) (replay (context-run *context-term*)))
++  (assert (= 3 (getf receipt :calls)))
++  (assert (= 4 (getf receipt :dataflows)))
++  (assert (= 3 (getf receipt :call-interfaces)))
++  (assert (= 4 (length (recursive-semantic-bundle-base-rows-v1 child :member-registry-v1))))
++  (assert (= 4 (length (recursive-semantic-bundle-base-rows-v1 child :hole-registry-v1))))
++  (assert (= 7 (length (recursive-semantic-bundle-base-rows-v1 child :relation-registry-v1))))
++  (dolist (relation (recursive-semantic-bundle-base-rows-v1 child :relation-registry-v1))
++    (let ((ends (remove (semantic-relation-row-v1-relation-row-identity relation)
++                        (recursive-semantic-bundle-base-rows-v1 child :incidence-registry-v1)
++                        :test-not #'equal :key #'semantic-incidence-row-v1-relation-ref)))
++      (ecase (semantic-relation-row-v1-relation-kind relation)
++        (:protocol
++         (assert (equal '(:argument :call-use :result)
++                        (sort (mapcar #'semantic-incidence-row-v1-role ends) #'string<))))
++        (:dataflow
++         (let ((ports (mapcar (lambda (end)
++                               (find (semantic-incidence-row-v1-participant-ref end)
++                                     (recursive-semantic-bundle-base-rows-v1 child :port-registry-v1)
++                                     :test #'equal :key #'semantic-port-row-v1-port-row-identity)) ends)))
++           (assert (= 2 (length ports)))
++           (assert (equal (semantic-port-row-v1-contract-ref (first ports))
++                          (semantic-port-row-v1-contract-ref (second ports)))))))))
++  (dolist (member (recursive-semantic-bundle-base-rows-v1 (getf *context-state* :bundle) :member-registry-v1))
++    (when (eq :child-bundle (semantic-member-row-v1-member-kind member))
++      (assert (find (semantic-member-row-v1-member-row-identity member)
++                    (recursive-semantic-bundle-base-rows-v1 (getf result :parent) :member-registry-v1)
++                    :test #'equal :key #'semantic-member-row-v1-member-row-identity))))
++  (assert (equal (shg-growth-snapshot-v1 (getf result :child-closure))
++                 (shg-growth-snapshot-v1 (getf replay :child-closure))))
++  (dolist (kind *semantic-bundle-base-registry-kinds-v1*)
++    (dolist (row (recursive-semantic-bundle-base-rows-v1 (getf *context-state* :bundle) kind))
++      (assert (find (semantic-registry-row-identity-v1 row)
++                    (recursive-semantic-bundle-base-rows-v1 (getf result :bundle) kind)
++                    :test #'equal :key #'semantic-registry-row-identity-v1))))
++  (let ((bad (copy-tree *context-term*)))
++    (setf (third (second (fourth bad))) "WrongInput")
++    (context-rejects bad "Construction interface mismatch"))
++  (let ((bad (copy-tree *context-term*)))
++    (setf (fifth (second (fourth bad))) "wrong-address")
++    (context-rejects bad "Stale or wrong native callee address"))
++  (let ((bad (copy-tree *context-term*)))
++    (setf (fourth bad) '(:variable "unbound" "VmState"))
++    (context-rejects bad "Unbound or mistyped construction variable"))
++  (let ((bad (copy-list *context-state*)))
++    (setf (getf bad :retained-child-closures) nil)
++    (handler-case (progn (context-run *context-term* bad) (error "Missing child accepted."))
++      (error (condition) (assert (search "unavailable closure" (princ-to-string condition))))))
++  (dolist (scope '(:parent :child))
++    (let* ((generated (getf result (if (eq scope :parent) :parent-generated :child-generated)))
++           (actual (semantic-registry-root-v1-row-refs
++                    (semantic-bundle-generated-root-v1 generated :route-registry-v1)))
++           (expected (mapcar #'semantic-registry-row-identity-v1
++                            (shg-growth-incidence-route-rows-v1 (getf result scope)))))
++      (assert (equal actual (semantic-bundle-canonical-set-v1 expected)))))
++  (with-open-file (out (uiop:getenv "SHG_CONTEXT_VIEW") :direction :output :if-exists :supersede)
++    (write-string (compiler-ir-json-value (shg-vm-growth-view-v1 result)) out))
++  (with-open-file (out (uiop:getenv "SHG_CONTEXT_EVIDENCE") :direction :output :if-exists :supersede)
++    (let ((*print-readably* t) (*print-circle* t))
++      (write (list :term *context-term* :source *context-state* :result result :replay replay) :stream out)))
++  (format t "SHGContextLiftV1Green calls=3 dataflows=4 members=4 holes=4 replay=1 negative-checks=4 proof=OPEN~%"))
 diff --git a/scripts/check_shg_growth_algebra_v1.lisp b/scripts/check_shg_growth_algebra_v1.lisp
 new file mode 100644
 index 00000000..992f5d23

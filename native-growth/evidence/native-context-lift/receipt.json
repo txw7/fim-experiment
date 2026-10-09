@@ -1,0 +1,75 @@
+{
+  "schema": "native-context-lift-acceptance-v1",
+  "native_base": "6674a072521c821a3e586077d553000fb699100b",
+  "command": "SHG_GROWTH_EVIDENCE=<constructor.sexp> SHG_CONTEXT_EVIDENCE=<native.sexp> SHG_CONTEXT_VIEW=<view.json> sbcl --script scripts/check_shg_context_lift_v1.lisp",
+  "fresh_process_exit_code": 0,
+  "generated_SH40_SH39_reference_disabled": true,
+  "native_calls": 3,
+  "local_ternary_interface_associations": 3,
+  "native_dataflows": 4,
+  "grown_members": 4,
+  "open_holes": 4,
+  "resolved_addresses": 316,
+  "route_rows": {
+    "parent": 28,
+    "child": 7
+  },
+  "boundary_correspondence_links": 3,
+  "source_rows_preserved": true,
+  "existing_child_preserved": true,
+  "deterministic_native_replay": true,
+  "category_specific_rejections": [
+    "interface mismatch",
+    "wrong native callee address",
+    "unbound variable",
+    "missing retained child closure"
+  ],
+  "browser_checks": [
+    "boundary inspector",
+    "child collapse/expand"
+  ],
+  "native_refinement_admission": false,
+  "execution": "unbound",
+  "behavioral_proof": "OPEN",
+  "effect_preservation": "OPEN",
+  "loop_context_materialization": "NOT_IMPLEMENTED",
+  "interfaces": "proposed; original native callee interfaces remain OPEN",
+  "boundary_profile": "binary external CALL plus local ternary interface association; direct multi-role CALL split requires an unimplemented adapter",
+  "source_pins": {
+    "lisp/shg_context_lift_v1.lisp": "5865461ccbd6e3e79de06ec74076674c8e7355c4f06dad6dfaba99dc5ce28296",
+    "lisp/shg_vm_growth_v1.lisp": "4c027628c10e0f7e13c5b020f311e0f29f9639bb53434bc3ae596150bdfb6836",
+    "lisp/shg_growth_constructor_v1.lisp": "701c9744cfe27057cdeb5f35fead0901eafc086bdb7be3fa85f7005d13f3e3ba",
+    "scripts/check_shg_context_lift_v1.lisp": "3b6392a7db00c900b19c416033591666eff771639e784c2191d47f6ea9d2f167",
+    "lsip.asd": "7adbac555b389210762ead2589bb416347df77f7b7d34cccbc96b02dd1e42c33"
+  },
+  "python_source_pins": {
+    "native-growth/vm-context-lift.py": "e164fb21c129d55a2f7735e43417dace792470ffdfb425027e95b4d41b16a5e4",
+    "native-growth/render-network.py": "ea0b0b5f78346f46cce9020a95b54add576ee45654e78ff50cdf7c31f0264304"
+  },
+  "patch_sha256": "3e2b414985b1a6be5ebaf70efed0933194ad2dda579d58be7e4f993cdfda5254",
+  "retained_diagnostics": [
+    "failed-resolver-order.log",
+    "debug-reload-check.log"
+  ],
+  "upstream_warning_count": 124,
+  "full_upstream_regression_pass": false,
+  "artifacts": {
+    "network.html": "77df2b5028a0d0d7c062b2c039396b66f7b36652e4288e2cc834b0b5212330af",
+    "network.png": "2ab678a6b55a8cc4bb023d8a8de11d82de866cf9f4a60df9f7ebfa12b73aeba2",
+    "browser-check.log": "a2fab29f6c2497e0d470d6208afba15c69b8da83bc95eae6ba0974a80d8da7fa",
+    "debug-reload-check.log": "0ce9f8dfe7ebc3191712392ed8cc6b1af299706a82962e6e1519156163f2b7a5",
+    "check.log": "b47bdfeefde4d8bd5165813d016a99cde730dd5308b29a3f4a3efe468b379e3e",
+    "view.json": "6a622127b3ec05cd9db98866aa2e11b159b16fa934eebaba0fb7e06e28434447",
+    "preview.log": "82b9cf439693384251819cc8ec2015627de8cf4473d738a9e38c9bdb816acc71",
+    "native.sexp": "85791c1971c03528b929a91c477303c8566a557b20998dba0af06c00e481d192",
+    "failed-resolver-order.log": "e7d8535ddbfc25791cd9074fc0abd2989e4554ae57b9c0f17b47958d044f8696",
+    "browser-check.dom": "f5365f395806c1d446a71aadd7bf217673a3a2a96295f92994911a260af5ddcd",
+    "construction-input.sexp": "d9d23279b9f345f1b2092f106ae4fb29c14d4a7349c8092ed46d767de69088b3",
+    "constructor.sexp": "03b2be80761d972f64e28ca00607401e07bd8eb2529ed3822d44e691a64c73fa",
+    "source/lsip.asd": "7adbac555b389210762ead2589bb416347df77f7b7d34cccbc96b02dd1e42c33",
+    "source/check_shg_context_lift_v1.lisp": "3b6392a7db00c900b19c416033591666eff771639e784c2191d47f6ea9d2f167",
+    "source/shg_context_lift_v1.lisp": "5865461ccbd6e3e79de06ec74076674c8e7355c4f06dad6dfaba99dc5ce28296",
+    "source/shg_growth_constructor_v1.lisp": "701c9744cfe27057cdeb5f35fead0901eafc086bdb7be3fa85f7005d13f3e3ba",
+    "source/shg_vm_growth_v1.lisp": "4c027628c10e0f7e13c5b020f311e0f29f9639bb53434bc3ae596150bdfb6836"
+  }
+}

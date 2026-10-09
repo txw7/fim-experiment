@@ -116,6 +116,18 @@ def main(out):
     (out / 'graph.json').write_text(json.dumps(graph_export(run, digest(run)), indent=2)+'\n')
     (out / 'construction.lisp.txt').write_text('\n\n'.join(k+'\n'+pretty(v) for k,v in terms.items())+'\n')
     (out / 'receipt.json').write_text(json.dumps(receipt, indent=2)+'\n')
+    def native_term(t):
+        q = lambda value: json.dumps(value)
+        if t.kind == 'abstract':
+            return '(:lambda ' + q(t.name) + ' ' + q(t.type) + ' ' + native_term(t.args[0]) + ')'
+        if t.kind == 'var':
+            return '(:variable ' + q(t.name) + ' ' + q(t.type) + ')'
+        if t.kind == 'apply':
+            return '(:application ' + native_term(t.args[0]) + ' ' + native_term(t.args[1]) + ')'
+        if t.kind == 'atom' and isinstance(t.type, tuple):
+            return '(:callee ' + ' '.join(q(x) for x in [t.name, t.type[1], t.type[2], t.origin]) + ')'
+        raise ValueError('Unsupported native construction operand')
+    (out / 'construction-input.sexp').write_text(native_term(step) + '\n')
     print(json.dumps({'calls': len(uses), 'dataflows': len(edges),
                       'interface_mismatch_rejected': rejected,
                       'alternative_generator_same_boundary': True,
