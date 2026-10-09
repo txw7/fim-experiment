@@ -1,0 +1,54 @@
+[
+  {
+    "network": "flow-82af4083b1",
+    "observation": {
+      "flow-82af4083b1/step/0": {
+        "diagnostic": "The semantic reading is supported. The text 'source A typed pair output' (bytes 1007-1033) functions as the initial input to the sequence described in the source anchor. The arrow notation ('→') in '→",
+        "evidence_ref": "source:c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3:1007-1460",
+        "status": "supported"
+      }
+    },
+    "graph_mutations": 0,
+    "admission": "OBSERVATION_ONLY"
+  },
+  {
+    "network": "recovery-network",
+    "observation": {
+      "c-d421b7724cde:action": {
+        "diagnostic": "The construction 'conditional-prohibition' with operator 'PROHIBIT_AFTER' is semantically supported by the source text 'no retries after uncertain submissions'. The text explicitly prohibits the 'retr",
+        "evidence_ref": "source:c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3:1993-2031",
+        "status": "supported"
+      },
+      "c-d421b7724cde:condition": {
+        "diagnostic": "The construction 'conditional-prohibition' with operator 'PROHIBIT_CONDITION' is not semantically supported by the source text 'no retries after uncertain submissions'. The text does not establish a '",
+        "evidence_ref": "source:c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3:1993-2031",
+        "status": "unsupported"
+      }
+    },
+    "graph_mutations": 0,
+    "admission": "OBSERVATION_ONLY"
+  },
+  {
+    "network": "web/conformance-candidate-v1",
+    "observation": {
+      "c1": {
+        "status": "unresolved"
+      },
+      "c2": {
+        "status": "unresolved"
+      },
+      "c3": {
+        "status": "unresolved"
+      },
+      "c4": {
+        "status": "unresolved"
+      },
+      "c5": {
+        "status": "unresolved"
+      }
+    },
+    "graph_mutations": 0,
+    "admission": "OBSERVATION_ONLY",
+    "candidate": "higher-order cross-network web"
+  }
+]

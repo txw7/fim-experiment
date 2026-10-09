@@ -1,0 +1,193 @@
+{
+  "domains": {
+    "topology": "web/topology",
+    "execution": "web/execution",
+    "guards": "web/guards",
+    "evidence": "web/evidence",
+    "gates": "web/gates"
+  },
+  "root": "web/root",
+  "conformance_v0": "web/conformance-candidate-v0",
+  "conformance_v1": "web/conformance-candidate-v1",
+  "higher_order_relation": "web/higher-order-conformance",
+  "cross_relations": {
+    "scope": "web/relation/scope-constrains-execution",
+    "guard": "web/relation/guards-execution",
+    "execution_evidence": "web/relation/execution-witnessed-by-evidence",
+    "gate_evidence": "web/relation/gate-requires-evidence",
+    "gate_execution": "web/relation/gate-checks-execution"
+  },
+  "alternative_sets": [
+    "web/alternatives/web-topology-reading",
+    "web/alternatives/web-scope-reading",
+    "web/alternatives/web-gate-reading",
+    "web/alternatives/web-evidence-reading"
+  ],
+  "viewer_networks": [
+    "web/topology",
+    "web/execution",
+    "web/guards",
+    "web/evidence",
+    "web/gates",
+    "web/root",
+    "web/conformance-candidate-v0",
+    "web/conformance-candidate-v1",
+    "web/alternatives/web-topology-reading",
+    "web/alternatives/web-scope-reading",
+    "web/alternatives/web-gate-reading",
+    "web/alternatives/web-evidence-reading"
+  ],
+  "obligations": [
+    {
+      "id": "web/obligation/topology-closure",
+      "status": "OPEN",
+      "source_clause": "clause-010",
+      "changes_parent": "web/conformance-candidate-v1",
+      "trigger_relation": "web/higher-order-conformance",
+      "slots": [
+        {
+          "id": "web/obligation/topology-closure/slot/literal-topology-parse",
+          "source_clause": "clause-007",
+          "status": "PARSED_SOURCE_FORM"
+        },
+        {
+          "id": "web/obligation/topology-closure/slot/pair1-boundary-selection",
+          "source_clause": "clause-010",
+          "status": "OPEN"
+        },
+        {
+          "id": "web/obligation/topology-closure/slot/B1-C1-identity-correspondence",
+          "source_clause": "clause-008",
+          "status": "OPEN"
+        },
+        {
+          "id": "web/obligation/topology-closure/slot/runtime-identity-state-preservation",
+          "source_clause": "clause-007",
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "id": "web/obligation/guard-execution",
+      "status": "OPEN",
+      "source_clause": "clause-020",
+      "changes_parent": "web/conformance-candidate-v1",
+      "trigger_relation": "web/higher-order-conformance",
+      "slots": [
+        {
+          "id": "web/obligation/guard-execution/slot/uncertain-submission-policy",
+          "source_clause": "clause-020",
+          "status": "OPEN"
+        },
+        {
+          "id": "web/obligation/guard-execution/slot/idempotency-key-binding",
+          "source_clause": "clause-013",
+          "status": "OPEN"
+        },
+        {
+          "id": "web/obligation/guard-execution/slot/one-invocation-bound",
+          "source_clause": "clause-020",
+          "status": "OPEN"
+        },
+        {
+          "id": "web/obligation/guard-execution/slot/no-duplicate-browser-send",
+          "source_clause": "clause-020",
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "id": "web/obligation/gate-evidence",
+      "status": "OPEN",
+      "source_clause": "clause-022",
+      "changes_parent": "web/conformance-candidate-v1",
+      "trigger_relation": "web/higher-order-conformance",
+      "slots": [
+        {
+          "id": "web/obligation/gate-evidence/slot/receipt-field-to-observation-map",
+          "source_clause": "clause-022",
+          "status": "OPEN"
+        },
+        {
+          "id": "web/obligation/gate-evidence/slot/negative-test-to-gate-map",
+          "source_clause": "clause-023",
+          "status": "OPEN"
+        },
+        {
+          "id": "web/obligation/gate-evidence/slot/provider-turn-identity",
+          "source_clause": "clause-022",
+          "status": "OPEN"
+        },
+        {
+          "id": "web/obligation/gate-evidence/slot/source-result-commitment-receipt",
+          "source_clause": "clause-022",
+          "status": "OPEN"
+        }
+      ]
+    }
+  ],
+  "topology_tree": {
+    "status": "PARSED_SOURCE_FORM",
+    "root": "web/topology-tree/root",
+    "nodes": {
+      "root/head": "web/topology-tree/root/head",
+      "root/0": "web/topology-tree/root/0",
+      "root/1/head": "web/topology-tree/root/1/head",
+      "root/1/0/head": "web/topology-tree/root/1/0/head",
+      "root/1/0/0": "web/topology-tree/root/1/0/0",
+      "root/1/0/1": "web/topology-tree/root/1/0/1",
+      "root/1/0": "web/topology-tree/root/1/0",
+      "root/1/1/head": "web/topology-tree/root/1/1/head",
+      "root/1/1/0": "web/topology-tree/root/1/1/0",
+      "root/1/1/1": "web/topology-tree/root/1/1/1",
+      "root/1/1": "web/topology-tree/root/1/1",
+      "root/1": "web/topology-tree/root/1",
+      "root": "web/topology-tree/root"
+    },
+    "source": {
+      "text": "(SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2)))",
+      "char_start": 559,
+      "char_end": 610,
+      "byte_start": 561,
+      "byte_end": 612,
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3"
+    },
+    "alias_correspondences": [
+      {
+        "alias": "B1",
+        "relation": "web/topology/alias-map/B1",
+        "mapping": "mapping-b8dba07e12",
+        "status": "CANDIDATE_SOURCE_CORRESPONDENCE"
+      },
+      {
+        "alias": "C1",
+        "relation": "web/topology/alias-map/C1",
+        "mapping": "mapping-b8dba07e12",
+        "status": "CANDIDATE_SOURCE_CORRESPONDENCE"
+      }
+    ]
+  },
+  "metrics": {
+    "domain_networks": 5,
+    "domain_memberships": 44,
+    "shared_clause_ids_across_all_domains": [],
+    "clauses_in_multiple_domains": 13,
+    "cross_network_candidate_relations": 5,
+    "higher_order_relations": 1,
+    "relations_consumed_as_higher_order_operands": 5,
+    "classifier_alternative_sets": 4,
+    "classifier_observations_received": 8,
+    "classifier_consensus_sets": 3,
+    "feedback_rounds": 1,
+    "feedback_obligations_generated": 3,
+    "feedback_obligations_open": 3,
+    "feedback_slots_generated": 12,
+    "feedback_slots_source_form_parsed": 1,
+    "feedback_slots_open": 11,
+    "topology_expression_nodes": 13,
+    "topology_alias_correspondences": 2,
+    "parent_candidate_revised": true,
+    "saturation_fixed_point": false,
+    "admitted_relations": 0
+  }
+}

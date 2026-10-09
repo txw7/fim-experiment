@@ -1,0 +1,15 @@
+REDUCTION RECEIPT
+mode: readable candidate projection; semantic rewrite count: 0
+input_graph_objects: 386
+selected_source_clauses: 29 / 34
+selected_source_bytes: 3053 / 3380 (clause spans may be adjacent; no semantic coverage claim)
+normal_form_bytes_utf8: 2940
+raw_source_to_view_size_ratio: 1.150 (size only; not a semantic compression proof)
+topology_reconstruction: PASS ((SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))))
+source_anchor_verification: PASS (29 clauses)
+open_feedback_slots_preserved: 11
+source_form_only_slots_preserved: 1
+qwen_unresolved_relations_preserved: 5 / 5
+semantic_equivalence_to_entire_S3: NOT_ESTABLISHED
+native_admission: NOT_RUN
+selected source clause text and byte/character anchors remain in provenance.txt; input graph remains unchanged.
