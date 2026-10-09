@@ -1,0 +1,5 @@
+{
+  "path": "/home/user0/semalg-flow-viewer/construction-search-v1/local_constructions.py",
+  "sha256": "bcd916269581b036ca0eaf131bc418e94f85caaac6f46f4c3a3d976709ead1d0",
+  "change": "Explicit construction-output obligation and composition gate; original results retained unchanged"
+}

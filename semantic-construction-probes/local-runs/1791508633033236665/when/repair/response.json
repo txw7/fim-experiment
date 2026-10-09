@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"candidates\":[{\"id\":\"op_002\",\"reading\":\"temporal-subordination-chain\",\"objects\":[{\"id\":\"n0\",\"kind\":\"occurrence\",\"type\":\"lexical-occurrence\",\"anchors\":[\"t0\"],\"members\":[],\"license\":\"literal source occurrence\"},{\"id\":\"n1\",\"kind\":\"occurrence\",\"type\":\"lexical-occurrence\",\"anchors\":[\"t1\"],\"members\":[],\"license\":\"literal source occurrence\"},{\"id\":\"n2\",\"kind\":\"occurrence\",\"type\":\"lexical-occurrence\",\"anchors\":[\"t2\"],\"members\":[],\"license\":\"literal source occurrence\"}],\"relations\":[{\"id\":\"r0\",\"family\":\"binding\",\"constitution\":\"temporal-clause\",\"ends\":[{\"role\":\"head\",\"target\":\"n0\"},{\"role\":\"subordinate\",\"target\":\"n1\"}]},{\"id\":\"r1\",\"family\":\"binding\",\"constitution\":\"temporal-clause\",\"ends\":[{\"role\":\"head\",\"target\":\"n1\"},{\"role\":\"predicate\",\"target\":\"n2\"}]}]}],\"unresolved\":[]\n}"
+      }
+    }
+  ],
+  "created": 1791508805,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 203,
+    "prompt_tokens": 907,
+    "total_tokens": 1110,
+    "prompt_tokens_details": {
+      "cached_tokens": 212
+    }
+  },
+  "id": "chatcmpl-Vou3aYO4pKm71IPIXUjCWKZtcZdzpSbI",
+  "timings": {
+    "cache_n": 212,
+    "prompt_n": 695,
+    "prompt_ms": 1916.825,
+    "prompt_per_token_ms": 2.758021582733813,
+    "prompt_per_second": 362.5787434951026,
+    "predicted_n": 203,
+    "predicted_ms": 49120.38,
+    "predicted_per_token_ms": 243.17019801980197,
+    "predicted_per_second": 4.1123460364109565
+  }
+}

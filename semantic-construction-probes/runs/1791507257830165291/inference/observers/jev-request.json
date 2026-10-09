@@ -1,0 +1,297 @@
+{
+  "state": {
+    "source": "3. Instead, he must mean that one can then safely call a person blessed.\nBecause:\n1. He [that person] is now beyond evils and misfortunes.",
+    "candidates": [
+      {
+        "id": "initial-0",
+        "reading": "The pronoun 'he' in the main clause refers to the same entity as the bracketed 'that person' in the ",
+        "objects": [
+          {
+            "id": "n0",
+            "kind": "operator",
+            "type": "assertion",
+            "anchors": [
+              "t4",
+              "t5",
+              "t6"
+            ],
+            "members": [],
+            "license": "subject-predicate binding"
+          },
+          {
+            "id": "n1",
+            "kind": "operator",
+            "type": "proposition",
+            "anchors": [
+              "t7",
+              "t8",
+              "t9",
+              "t10",
+              "t11",
+              "t12",
+              "t13",
+              "t14",
+              "t15"
+            ],
+            "members": [
+              "n2"
+            ],
+            "license": "modal permission"
+          },
+          {
+            "id": "n2",
+            "kind": "entity",
+            "type": "agent",
+            "anchors": [
+              "t8"
+            ],
+            "members": [],
+            "license": "generic agent"
+          },
+          {
+            "id": "n3",
+            "kind": "entity",
+            "type": "patient",
+            "anchors": [
+              "t14"
+            ],
+            "members": [],
+            "license": "generic patient"
+          },
+          {
+            "id": "n4",
+            "kind": "entity",
+            "type": "state",
+            "anchors": [
+              "t15"
+            ],
+            "members": [],
+            "license": "predicative adjective"
+          },
+          {
+            "id": "n5",
+            "kind": "operator",
+            "type": "justification",
+            "anchors": [
+              "t17",
+              "t18",
+              "t19"
+            ],
+            "members": [
+              "n6"
+            ],
+            "license": "causal link"
+          },
+          {
+            "id": "n6",
+            "kind": "entity",
+            "type": "subject",
+            "anchors": [
+              "t21",
+              "t24"
+            ],
+            "members": [],
+            "license": "anaphoric reference"
+          },
+          {
+            "id": "n7",
+            "kind": "entity",
+            "type": "location",
+            "anchors": [
+              "t28"
+            ],
+            "members": [],
+            "license": "prepositional complement"
+          }
+        ],
+        "relations": [
+          {
+            "id": "r0",
+            "family": "binding",
+            "constitution": "n0 binds n1",
+            "ends": [
+              {
+                "role": "subject",
+                "target": "n0"
+              },
+              {
+                "role": "content",
+                "target": "n1"
+              }
+            ]
+          },
+          {
+            "id": "r1",
+            "family": "argument",
+            "constitution": "n1 applies to n2 and n3",
+            "ends": [
+              {
+                "role": "agent",
+                "target": "n2"
+              },
+              {
+                "role": "patient",
+                "target": "n3"
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "family": "attachment",
+            "constitution": "n3 possesses n4",
+            "ends": [
+              {
+                "role": "holder",
+                "target": "n3"
+              },
+              {
+                "role": "state",
+                "target": "n4"
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "family": "scope",
+            "constitution": "n5 supports n1",
+            "ends": [
+              {
+                "role": "basis",
+                "target": "n5"
+              },
+              {
+                "role": "conclusion",
+                "target": "n1"
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "family": "binding",
+            "constitution": "n6 is identified with n0",
+            "ends": [
+              {
+                "role": "referent",
+                "target": "n6"
+              },
+              {
+                "role": "source",
+                "target": "n0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "checks": {
+      "initial-0": {
+        "status": "REJECTED",
+        "errors": [
+          "non-network interior n1",
+          "non-network interior n5"
+        ],
+        "obligations": [
+          {
+            "subject": "n0",
+            "requirement": "operator constitution",
+            "claimed": "subject-predicate binding",
+            "hypothesized_type": "assertion"
+          },
+          {
+            "subject": "n1",
+            "requirement": "operator constitution",
+            "claimed": "modal permission",
+            "hypothesized_type": "proposition"
+          },
+          {
+            "subject": "n5",
+            "requirement": "operator constitution",
+            "claimed": "causal link",
+            "hypothesized_type": "justification"
+          },
+          {
+            "subject": "r0",
+            "requirement": "binding constitution",
+            "claimed": "n0 binds n1"
+          },
+          {
+            "subject": "r1",
+            "requirement": "argument constitution",
+            "claimed": "n1 applies to n2 and n3"
+          },
+          {
+            "subject": "r2",
+            "requirement": "attachment constitution",
+            "claimed": "n3 possesses n4"
+          },
+          {
+            "subject": "r3",
+            "requirement": "scope constitution",
+            "claimed": "n5 supports n1"
+          },
+          {
+            "subject": "r4",
+            "requirement": "binding constitution",
+            "claimed": "n6 is identified with n0"
+          }
+        ],
+        "backward_goals": [
+          {
+            "parent": "r0",
+            "child": "n0",
+            "role": "subject",
+            "requires": "establish typed interface and binding locality",
+            "status": "OPEN"
+          },
+          {
+            "parent": "r0",
+            "child": "n1",
+            "role": "content",
+            "requires": "establish typed interface and binding locality",
+            "status": "OPEN"
+          },
+          {
+            "parent": "r2",
+            "child": "n3",
+            "role": "holder",
+            "requires": "establish typed interface and source license",
+            "status": "OPEN"
+          },
+          {
+            "parent": "r2",
+            "child": "n4",
+            "role": "state",
+            "requires": "establish typed interface and source license",
+            "status": "OPEN"
+          },
+          {
+            "parent": "r4",
+            "child": "n6",
+            "role": "referent",
+            "requires": "establish typed interface and binding locality",
+            "status": "OPEN"
+          },
+          {
+            "parent": "r4",
+            "child": "n0",
+            "role": "source",
+            "requires": "establish typed interface and binding locality",
+            "status": "OPEN"
+          }
+        ],
+        "semantic_admission": "NOT_RUN"
+      }
+    },
+    "authority": "Model alternatives only. Missing grammatical laws remain open."
+  },
+  "questions": {
+    "network": {
+      "type": "choice",
+      "instructions": "Compare whole source-grounded candidate graphs, including introduced positions, binding and higher-order operands. Which candidate has the best source support? Probabilities do not discharge laws.",
+      "criteria": {
+        "initial-0": "The pronoun 'he' in the main clause refers to the same entity as the bracketed 'that person' in the ",
+        "unresolved": "Source/law evidence does not determine a unique graph."
+      }
+    }
+  }
+}

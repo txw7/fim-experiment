@@ -1,0 +1,24 @@
+{
+  "text": "1. Our discussion will be adequate if it has as much clarity as the subject-matter admits.",
+  "sha256": "ef1b9274ba9dff9d28f757b3fca5da7cdf79d4584ccd0dc4d2d3e8fc9c6c43bd",
+  "origin": {
+    "path": "/home/user0/.local/state/turn-transport/aristotle-operator-examples-v1/results.json",
+    "sha256": "7879c4f8ca963961afeb914044818a9cfac3630d0b5c981fb02705a46c8903ec",
+    "original_ref": {
+      "chapter_ref": "archelogos:toc-eni/eni3.xml",
+      "document_ref": "archelogos:toc-eni/eni3.xml",
+      "section_kind_ascii": "prop",
+      "section_parent_ref": "archelogos:toc-eni/eni3.xml:prop:1",
+      "section_ref": "archelogos:toc-eni/eni3.xml:prop:1",
+      "source_artifact_ref": "sha256:4e5ff43fe3cece0891286eb8cd249c3878dbf63ab043e3096f2a20b22f12e0f2",
+      "source_span": {
+        "end_byte": 1349,
+        "start_byte": 753
+      },
+      "source_system": "archelogos_xml",
+      "unit_ref": "archelogos:toc-eni/eni3.xml:prop:2",
+      "work_ref": "archelogos:work:Nicomachean Ethics I",
+      "work_title": "Nicomachean Ethics I"
+    }
+  }
+}

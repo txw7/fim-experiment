@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"candidates\": [\n    {\n      \"id\": \"h0\",\n      \"reading\": \"Nested Temporal-Location Interrogatives\",\n      \"objects\": [\n        {\"id\": \"n0\", \"kind\": \"operator\", \"type\": \"wh-gap\", \"anchors\": [\"t0\"], \"members\": [], \"license\": \"wh-gap licensing\"},\n        {\"id\": \"n1\", \"kind\": \"operator\", \"type\": \"temporal\", \"anchors\": [\"t3\"], \"members\": [], \"license\": \"temporal operator disambiguation\"},\n        {\"id\": \"n2\", \"kind\": \"operator\", \"type\": \"temporal\", \"anchors\": [\"t12\"], \"members\": [], \"license\": \"temporal operator disambiguation\"},\n        {\"id\": \"n3\", \"kind\": \"operator\", \"type\": \"location\", \"anchors\": [\"t6\"], \"members\": [], \"license\": \"wh-gap licensing\"},\n        {\"id\": \"n4\", \"kind\": \"operator\", \"type\": \"location\", \"anchors\": [\"t9\"], \"members\": [], \"license\": \"wh-gap licensing\"},\n        {\"id\": \"n5\", \"kind\": \"operator\", \"type\": \"event\", \"anchors\": [\"t14\"], \"members\": [], \"license\": \"opaque occurrence formation\"},\n        {\"id\": \"n6\", \"kind\": \"operator\", \"type\": \"state\", \"anchors\": [\"t2\", \"t5\", \"t8\", \"t11\"], \"members\": [], \"license\": \"partial graph/region/incidence holes\"},\n        {\"id\": \"n7\", \"kind\": \"operator\", \"type\": \"subject\", \"anchors\": [\"t1\", \"t4\", \"t7\", \"t10\"], \"members\": [], \"license\": \"partial graph/region/incidence holes\"}\n      ],\n      \"relations\": [\n        {\"id\": \"r0\", \"family\": \"binding\", \"constitution\": \"n0 binds n7\", \"ends\": [{\"role\": \"head\", \"target\": \"n0\"}, {\"role\": \"tail\", \"target\": \"n7\"}]},\n        {\"id\": \"r1\", \"family\": \"attachment\", \"constitution\": \"n1 attaches to n6\", \"ends\": [{\"role\": \"head\", \"target\": \"n1\"}, {\"role\": \"tail\", \"target\": \"n6\"}]},\n        {\"id\": \"r2\", \"family\": \"attachment\", \"constitution\": \"n3 attaches to n6\", \"ends\": [{\"role\": \"head\", \"target\": \"n3\"}, {\"role\": \"tail\", \"target\": \"n6\"}]},\n        {\"id\": \"r3\", \"family\": \"attachment\", \"constitution\": \"n4 attaches to n6\", \"ends\": [{\"role\": \"head\", \"target\": \"n4\"}, {\"role\": \"tail\", \"target\": \"n6\"}]},\n        {\"id\": \"r4\", \"family\": \"attachment\", \"constitution\": \"n2 attaches to n5\", \"ends\": [{\"role\": \"head\", \"target\": \"n2\"}, {\"role\": \"tail\", \"target\": \"n5\"}]}\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"Scope of 'where' (t9) relative to 'they were' (t7-t8)\",\n    \"Binding of 'what' (t0) to specific subject instances\",\n    \"Temporal hierarchy between 'when it happened' and prior states\"\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1791507307,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 804,
+    "prompt_tokens": 663,
+    "total_tokens": 1467,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-PDctPgCpHT32Qo07wh1t6UtDEDgQUpZT",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 663,
+    "prompt_ms": 2917.822,
+    "prompt_per_token_ms": 4.4009381598793365,
+    "prompt_per_second": 227.22427893133988,
+    "predicted_n": 804,
+    "predicted_ms": 46148.349,
+    "predicted_per_token_ms": 57.469924034869244,
+    "predicted_per_second": 17.400405808667173
+  }
+}

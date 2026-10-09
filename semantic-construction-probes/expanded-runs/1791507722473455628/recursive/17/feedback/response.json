@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"candidates\": [\n    {\n      \"id\": \"hypothesis-1\",\n      \"reading\": \"nested-temporal-location-state\",\n      \"objects\": [\n        {\n          \"id\": \"n0\",\n          \"kind\": \"entity\",\n          \"type\": \"she\",\n          \"anchors\": [\"t1\"],\n          \"members\": [],\n          \"license\": \"refers to the female subject in the initial clause\"\n        },\n        {\n          \"id\": \"n1\",\n          \"kind\": \"entity\",\n          \"type\": \"he\",\n          \"anchors\": [\"t4\"],\n          \"members\": [],\n          \"license\": \"refers to the male subject in the first embedded clause\"\n        },\n        {\n          \"id\": \"n2\",\n          \"kind\": \"entity\",\n          \"type\": \"they\",\n          \"anchors\": [\"t7\"],\n          \"members\": [],\n          \"license\": \"refers to the plural group in the second embedded clause\"\n        },\n        {\n          \"id\": \"n3\",\n          \"kind\": \"entity\",\n          \"type\": \"she\",\n          \"anchors\": [\"t10\"],\n          \"members\": [],\n          \"license\": \"refers to the female subject in the final clause\"\n        },\n        {\n          \"id\": \"n4\",\n          \"kind\": \"entity\",\n          \"type\": \"it\",\n          \"anchors\": [\"t13\"],\n          \"members\": [],\n          \"license\": \"refers to the event that happened\"\n        },\n        {\n          \"id\": \"n5\",\n          \"kind\": \"entity\",\n          \"type\": \"state-of-being\",\n          \"anchors\": [\"t2\"],\n          \"members\": [],\n          \"license\": \"represents the state of n0 at the first temporal point\"\n        },\n        {\n          \"id\": \"n6\",\n          \"kind\": \"entity\",\n          \"type\": \"location\",\n          \"anchors\": [\"t6\"],\n          \"members\": [],\n          \"license\": \"represents the location of n1 at the first temporal point\"\n        },\n        {\n          \"id\": \"n7\",\n          \"kind\": \"entity\",\n          \"type\": \"location\",\n          \"anchors\": [\"t9\"],\n          \"members\": [],\n          \"license\": \"represents the location of n3 at the final temporal point\"\n        },\n        {\n          \"id\": \"n8\",\n          \"kind\": \"entity\",\n          \"type\": \"location\",\n          \"anchors\": [\"t8\"],\n          \"members\": [],\n          \"license\": \"represents the location of n2 at the second temporal point\"\n        },\n        {\n          \"id\": \"n9\",\n          \"kind\": \"entity\",\n          \"type\": \"event\",\n          \"anchors\": [\"t14\"],\n          \"members\": [],\n          \"license\": \"represents the occurrence of the event n4\"\n        }\n      ],\n      \"relations\": [\n        {\n          \"id\": \"r0\",\n          \"family\": \"attachment\",\n          \"constitution\": \"temporal-clause\",\n          \"ends\": [\n            {\n              \"role\": \"head\",\n              \"target\": \"n0\"\n            },\n            {\n              \"role\": \"mod\",\n              \"target\": \"n5\"\n            }\n          ]\n        },\n        {\n          \"id\": \"r1\",\n          \"family\": \"attachment\",\n          \"constitution\": \"temporal-clause\",\n          \"ends\": [\n            {\n              \"role\": \"head\",\n              \"target\": \"n1\"\n            },\n            {\n              \"role\": \"mod\",\n              \"target\": \"n6\"\n            }\n          ]\n        },\n        {\n          \"id\": \"r2\",\n          \"family\": \"attachment\",\n          \"constitution\": \"temporal-clause\",\n          \"ends\": [\n            {\n              \"role\": \"head\",\n              \"target\": \"n2\"\n            },\n            {\n              \"role\": \"mod\",\n              \"target\": \"n8\"\n            }\n          ]\n        },\n        {\n          \"id\": \"r3\",\n          \"family\": \"attachment\",\n          \"constitution\": \"temporal-clause\",\n          \"ends\": [\n            {\n              \"role\": \"head\",\n              \"target\": \"n3\"\n            },\n            {\n              \"role\": \"mod\",\n              \"target\": \"n7\"\n            }\n          ]\n        },\n        {\n          \"id\": \"r4\",\n          \"family\": \"attachment\",\n          \"constitution\": \"event-occurrence\",\n          \"ends\": [\n            {\n              \"role\": \"head\",\n              \"target\": \"n4\"\n            },\n            {\n              \"role\": \"mod\",\n              \"target\": \"n9\"\n            }\n          ]\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"The temporal relationships between the states of n0, n1, n2, and n3 relative to the event n9 are not\",\n    \"The specific identity of the event n4 is unknown\"\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1791507859,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 1204,
+    "prompt_tokens": 1393,
+    "total_tokens": 2597,
+    "prompt_tokens_details": {
+      "cached_tokens": 195
+    }
+  },
+  "id": "chatcmpl-d8j3qvw2gZoghHsuDvo7Rb1TrQE3lFK4",
+  "timings": {
+    "cache_n": 195,
+    "prompt_n": 1198,
+    "prompt_ms": 1435.308,
+    "prompt_per_token_ms": 1.1980868113522538,
+    "prompt_per_second": 834.6640581673063,
+    "predicted_n": 1204,
+    "predicted_ms": 84851.231,
+    "predicted_per_token_ms": 70.53302660016625,
+    "predicted_per_second": 14.17775541759671
+  }
+}

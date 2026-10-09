@@ -1,0 +1,249 @@
+{
+  "model": "local",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Construct a grammatical hypothesis with typed operator applications and interfaces. Source tokens are immutable external occurrences: do not regenerate them. References may name source token IDs or declared applications, ports, positions, bindings, networks and relations. Choose the operator names, grammatical analysis and types yourself; no intended reading is supplied. Applications must have anchored source operators, typed argument ports and result types. Ports point to exact occurrences or constructed results; use licensed grammatical positions for absent arguments rather than invented words. Bindings identify an actual position and its domain. Networks preserve member identities and expose typed results through application/port references. Separate predicate arguments, binding, scope and attachment. A source fragment may be incomplete or ambiguous: retain that explicitly. Do not fabricate a completed interpretation or native law. Each license is a hypothesis requiring independent native verification. Account for every source occurrence, especially what/when/where. Return one compact candidate: usually fewer than 8 applications and 3 networks. If no interpretation is justified explain it in unresolved rather than mislabeling simple adjacency as binding."
+    },
+    {
+      "role": "user",
+      "content": "{\"source\":\"what she was\",\"occurrences\":[{\"id\":\"t0\",\"text\":\"what\",\"begin\":0,\"end\":4},{\"id\":\"t1\",\"text\":\"she\",\"begin\":5,\"end\":8},{\"id\":\"t2\",\"text\":\"was\",\"begin\":9,\"end\":12}],\"feedback\":null}"
+    }
+  ],
+  "temperature": 0,
+  "max_tokens": 2600,
+  "stream": true,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "typed_construction",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "reading": {
+            "type": "string"
+          },
+          "applications": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "operator": {
+                  "type": "string"
+                },
+                "anchors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "construction": {
+                  "type": "string"
+                },
+                "ports": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "role": {
+                        "type": "string"
+                      },
+                      "value_type": {
+                        "type": "string"
+                      },
+                      "filler": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "role",
+                      "value_type",
+                      "filler"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "result_type": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "operator",
+                "anchors",
+                "construction",
+                "ports",
+                "result_type"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "positions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string"
+                },
+                "value_type": {
+                  "type": "string"
+                },
+                "license": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "role",
+                "value_type",
+                "license"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "bindings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "binder": {
+                  "type": "string"
+                },
+                "position": {
+                  "type": "string"
+                },
+                "domain": {
+                  "type": "string"
+                },
+                "license": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "binder",
+                "position",
+                "domain",
+                "license"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "networks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "members": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "imports": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "exports": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "members",
+                "imports",
+                "exports"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "relations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "family": {
+                  "type": "string"
+                },
+                "roles": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "role": {
+                        "type": "string"
+                      },
+                      "target": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "role",
+                      "target"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "license": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "family",
+                "roles",
+                "license"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "unresolved": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "reading",
+          "applications",
+          "positions",
+          "bindings",
+          "networks",
+          "relations",
+          "unresolved"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

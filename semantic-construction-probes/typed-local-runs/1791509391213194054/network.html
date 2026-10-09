@@ -1,0 +1,237 @@
+<!doctype html><meta charset="utf-8"><title>Typed local construction evidence</title><style>body{font:16px system-ui;background:#14212b;color:#eee;margin:30px}pre{white-space:pre-wrap;background:#20313e;padding:15px}details{border:1px solid #537285;padding:14px;margin:15px 0}summary{cursor:pointer}a{color:#8cdaff}</style><h1>Typed grammatical construction proposals</h1><p>Semantic laws unregistered; no native semantic admission.</p><a href="report.md">Results and native storage check</a><details open><summary>when / initial</summary><pre>when he was</pre><h3>Application projection</h3><pre></pre><h3>Exact typed objects and interfaces</h3><pre>{
+  &quot;reading&quot;: &quot;unresolved&quot;,
+  &quot;applications&quot;: [],
+  &quot;positions&quot;: [
+    {
+      &quot;id&quot;: &quot;t0&quot;,
+      &quot;role&quot;: &quot;temporal_subordinator&quot;,
+      &quot;value_type&quot;: &quot;interrogative_adverb&quot;,
+      &quot;license&quot;: &quot;hypothesis&quot;
+    },
+    {
+      &quot;id&quot;: &quot;t1&quot;,
+      &quot;role&quot;: &quot;subject&quot;,
+      &quot;value_type&quot;: &quot;pronoun&quot;,
+      &quot;license&quot;: &quot;hypothesis&quot;
+    },
+    {
+      &quot;id&quot;: &quot;t2&quot;,
+      &quot;role&quot;: &quot;verb_past&quot;,
+      &quot;value_type&quot;: &quot;copula&quot;,
+      &quot;license&quot;: &quot;hypothesis&quot;
+    }
+  ],
+  &quot;bindings&quot;: [],
+  &quot;networks&quot;: [],
+  &quot;relations&quot;: [
+    {
+      &quot;id&quot;: &quot;r0&quot;,
+      &quot;family&quot;: &quot;temporal_clause&quot;,
+      &quot;roles&quot;: [
+        {
+          &quot;role&quot;: &quot;subordinator&quot;,
+          &quot;target&quot;: &quot;t0&quot;
+        },
+        {
+          &quot;role&quot;: &quot;subject&quot;,
+          &quot;target&quot;: &quot;t1&quot;
+        },
+        {
+          &quot;role&quot;: &quot;predicate&quot;,
+          &quot;target&quot;: &quot;t2&quot;
+        }
+      ],
+      &quot;license&quot;: &quot;hypothesis&quot;
+    }
+  ],
+  &quot;unresolved&quot;: [
+    &quot;The fragment &#x27;when he was&#x27; lacks a complement (e.g., &#x27;when he was here&#x27; or &#x27;when he was born&#x27;).&quot;,
+    &quot;The temporal subordinator &#x27;when&#x27; requires a clause to establish a time reference.&quot;,
+    &quot;The copula &#x27;was&#x27; requires a subject complement or predicate nominative to complete the proposition.&quot;,
+    &quot;No semantic closure exists; the sequence is an open temporal phrase.&quot;
+  ]
+}</pre><h3>Checks</h3><pre>{
+  &quot;errors&quot;: [
+    &quot;duplicate identity&quot;
+  ],
+  &quot;uncovered_occurrences&quot;: [],
+  &quot;uninterpreted_operator_occurrences&quot;: [
+    &quot;t0&quot;
+  ],
+  &quot;law_obligations&quot;: [
+    {
+      &quot;subject&quot;: &quot;t0&quot;,
+      &quot;law&quot;: &quot;hypothesis&quot;,
+      &quot;status&quot;: &quot;UNREGISTERED&quot;
+    },
+    {
+      &quot;subject&quot;: &quot;t1&quot;,
+      &quot;law&quot;: &quot;hypothesis&quot;,
+      &quot;status&quot;: &quot;UNREGISTERED&quot;
+    },
+    {
+      &quot;subject&quot;: &quot;t2&quot;,
+      &quot;law&quot;: &quot;hypothesis&quot;,
+      &quot;status&quot;: &quot;UNREGISTERED&quot;
+    }
+  ],
+  &quot;structural_gate&quot;: false,
+  &quot;semantic_admission&quot;: &quot;NOT_RUN&quot;,
+  &quot;source_preservation&quot;: &quot;IMMUTABLE_EXTERNAL_SUBSTRATE&quot;
+}</pre><a href="when/initial/request.json">Exact request</a></details><details open><summary>where / initial</summary><pre>where they were</pre><h3>Application projection</h3><pre></pre><h3>Exact typed objects and interfaces</h3><pre>{
+  &quot;reading&quot;: &quot;unresolved&quot;,
+  &quot;applications&quot;: [],
+  &quot;positions&quot;: [
+    {
+      &quot;id&quot;: &quot;t0&quot;,
+      &quot;role&quot;: &quot;interrogative_adverb&quot;,
+      &quot;value_type&quot;: &quot;location_reference&quot;,
+      &quot;license&quot;: &quot;fragment_incomplete&quot;
+    },
+    {
+      &quot;id&quot;: &quot;t1&quot;,
+      &quot;role&quot;: &quot;pronoun_subject&quot;,
+      &quot;value_type&quot;: &quot;entity_reference&quot;,
+      &quot;license&quot;: &quot;fragment_incomplete&quot;
+    },
+    {
+      &quot;id&quot;: &quot;t2&quot;,
+      &quot;role&quot;: &quot;verb_past&quot;,
+      &quot;value_type&quot;: &quot;state_reference&quot;,
+      &quot;license&quot;: &quot;fragment_incomplete&quot;
+    }
+  ],
+  &quot;bindings&quot;: [],
+  &quot;networks&quot;: [],
+  &quot;relations&quot;: [
+    {
+      &quot;id&quot;: &quot;r0&quot;,
+      &quot;family&quot;: &quot;adjacency&quot;,
+      &quot;roles&quot;: [
+        {
+          &quot;role&quot;: &quot;t0&quot;,
+          &quot;target&quot;: &quot;t1&quot;
+        },
+        {
+          &quot;role&quot;: &quot;t1&quot;,
+          &quot;target&quot;: &quot;t2&quot;
+        }
+      ],
+      &quot;license&quot;: &quot;simple_sequence&quot;
+    }
+  ],
+  &quot;unresolved&quot;: [
+    &quot;The fragment &#x27;where they were&#x27; lacks a governing clause or antecedent to establish a complete proposition.&quot;,
+    &quot;No semantic binding exists between the interrogative &#x27;where&#x27; and the subject &#x27;they&#x27; without an external context defining the location.&quot;,
+    &quot;The verb &#x27;were&#x27; has no complement or predicate object to resolve the state of the subject.&quot;,
+    &quot;The sequence is syntactically valid as a dependent clause fragment but semantically incomplete as a standalone statement.&quot;
+  ]
+}</pre><h3>Checks</h3><pre>{
+  &quot;errors&quot;: [
+    &quot;duplicate identity&quot;
+  ],
+  &quot;uncovered_occurrences&quot;: [
+    &quot;t0&quot;
+  ],
+  &quot;uninterpreted_operator_occurrences&quot;: [
+    &quot;t0&quot;
+  ],
+  &quot;law_obligations&quot;: [
+    {
+      &quot;subject&quot;: &quot;t0&quot;,
+      &quot;law&quot;: &quot;fragment_incomplete&quot;,
+      &quot;status&quot;: &quot;UNREGISTERED&quot;
+    },
+    {
+      &quot;subject&quot;: &quot;t1&quot;,
+      &quot;law&quot;: &quot;fragment_incomplete&quot;,
+      &quot;status&quot;: &quot;UNREGISTERED&quot;
+    },
+    {
+      &quot;subject&quot;: &quot;t2&quot;,
+      &quot;law&quot;: &quot;fragment_incomplete&quot;,
+      &quot;status&quot;: &quot;UNREGISTERED&quot;
+    }
+  ],
+  &quot;structural_gate&quot;: false,
+  &quot;semantic_admission&quot;: &quot;NOT_RUN&quot;,
+  &quot;source_preservation&quot;: &quot;IMMUTABLE_EXTERNAL_SUBSTRATE&quot;
+}</pre><a href="where/initial/request.json">Exact request</a></details><details open><summary>where / repair</summary><pre>where they were</pre><h3>Application projection</h3><pre></pre><h3>Exact typed objects and interfaces</h3><pre>{
+  &quot;reading&quot;: &quot;unresolved&quot;,
+  &quot;applications&quot;: [],
+  &quot;positions&quot;: [
+    {
+      &quot;id&quot;: &quot;t0&quot;,
+      &quot;role&quot;: &quot;interrogative_adverb&quot;,
+      &quot;value_type&quot;: &quot;location_reference&quot;,
+      &quot;license&quot;: &quot;fragment_incomplete&quot;
+    },
+    {
+      &quot;id&quot;: &quot;t1&quot;,
+      &quot;role&quot;: &quot;pronoun_subject&quot;,
+      &quot;value_type&quot;: &quot;entity_reference&quot;,
+      &quot;license&quot;: &quot;fragment_incomplete&quot;
+    },
+    {
+      &quot;id&quot;: &quot;t2&quot;,
+      &quot;role&quot;: &quot;verb_past&quot;,
+      &quot;value_type&quot;: &quot;state_reference&quot;,
+      &quot;license&quot;: &quot;fragment_incomplete&quot;
+    }
+  ],
+  &quot;bindings&quot;: [],
+  &quot;networks&quot;: [],
+  &quot;relations&quot;: [
+    {
+      &quot;id&quot;: &quot;r0&quot;,
+      &quot;family&quot;: &quot;adjacency&quot;,
+      &quot;roles&quot;: [
+        {
+          &quot;role&quot;: &quot;t0&quot;,
+          &quot;target&quot;: &quot;t1&quot;
+        },
+        {
+          &quot;role&quot;: &quot;t1&quot;,
+          &quot;target&quot;: &quot;t2&quot;
+        }
+      ],
+      &quot;license&quot;: &quot;simple_sequence&quot;
+    }
+  ],
+  &quot;unresolved&quot;: [
+    &quot;The fragment &#x27;where they were&#x27; lacks a governing clause or antecedent to establish a complete proposition.&quot;,
+    &quot;No semantic binding exists between the interrogative &#x27;where&#x27; and the subject &#x27;they&#x27; without an external context defining the location.&quot;,
+    &quot;The verb &#x27;were&#x27; has no complement or predicate object to resolve the state of the subject.&quot;,
+    &quot;The sequence is syntactically valid as a dependent clause fragment but semantically incomplete as a standalone statement.&quot;
+  ]
+}</pre><h3>Checks</h3><pre>{
+  &quot;errors&quot;: [
+    &quot;duplicate identity&quot;
+  ],
+  &quot;uncovered_occurrences&quot;: [
+    &quot;t0&quot;
+  ],
+  &quot;uninterpreted_operator_occurrences&quot;: [
+    &quot;t0&quot;
+  ],
+  &quot;law_obligations&quot;: [
+    {
+      &quot;subject&quot;: &quot;t0&quot;,
+      &quot;law&quot;: &quot;fragment_incomplete&quot;,
+      &quot;status&quot;: &quot;UNREGISTERED&quot;
+    },
+    {
+      &quot;subject&quot;: &quot;t1&quot;,
+      &quot;law&quot;: &quot;fragment_incomplete&quot;,
+      &quot;status&quot;: &quot;UNREGISTERED&quot;
+    },
+    {
+      &quot;subject&quot;: &quot;t2&quot;,
+      &quot;law&quot;: &quot;fragment_incomplete&quot;,
+      &quot;status&quot;: &quot;UNREGISTERED&quot;
+    }
+  ],
+  &quot;structural_gate&quot;: false,
+  &quot;semantic_admission&quot;: &quot;NOT_RUN&quot;,
+  &quot;source_preservation&quot;: &quot;IMMUTABLE_EXTERNAL_SUBSTRATE&quot;
+}</pre><a href="where/repair/request.json">Exact request</a></details>

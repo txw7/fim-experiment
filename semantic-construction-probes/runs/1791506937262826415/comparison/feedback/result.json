@@ -1,0 +1,373 @@
+{
+  "status": "COMPLETED",
+  "proposal": {
+    "candidates": [
+      {
+        "id": "hypothesis_1",
+        "reading": "Standard Cleft-Conditional Equivalence",
+        "objects": [
+          {
+            "id": "t2",
+            "kind": "entity",
+            "type": "discussion",
+            "anchors": [
+              "t2"
+            ],
+            "members": [
+              "t3"
+            ],
+            "license": "subject-phrase"
+          },
+          {
+            "id": "t4",
+            "kind": "operator",
+            "type": "future",
+            "anchors": [
+              "t4"
+            ],
+            "members": [
+              "t5"
+            ],
+            "license": "temporal-modifier"
+          },
+          {
+            "id": "t6",
+            "kind": "entity",
+            "type": "state",
+            "anchors": [
+              "t6"
+            ],
+            "members": [
+              "t6"
+            ],
+            "license": "predicate-adj"
+          },
+          {
+            "id": "t8",
+            "kind": "entity",
+            "type": "discourse",
+            "anchors": [
+              "t8"
+            ],
+            "members": [
+              "t8"
+            ],
+            "license": "wh-gap-licensor"
+          },
+          {
+            "id": "t9",
+            "kind": "operator",
+            "type": "possess",
+            "anchors": [
+              "t9"
+            ],
+            "members": [
+              "t8"
+            ],
+            "license": "verb-head"
+          },
+          {
+            "id": "t12",
+            "kind": "entity",
+            "type": "quality",
+            "anchors": [
+              "t12"
+            ],
+            "members": [
+              "t12"
+            ],
+            "license": "noun-head"
+          },
+          {
+            "id": "t15",
+            "kind": "entity",
+            "type": "domain",
+            "anchors": [
+              "t15"
+            ],
+            "members": [
+              "t15"
+            ],
+            "license": "noun-head"
+          },
+          {
+            "id": "t16",
+            "kind": "operator",
+            "type": "limit",
+            "anchors": [
+              "t16"
+            ],
+            "members": [
+              "t15"
+            ],
+            "license": "verb-head"
+          }
+        ],
+        "relations": [
+          {
+            "id": "r1",
+            "family": "scope",
+            "constitution": "conditional-clause",
+            "ends": [
+              {
+                "role": "antecedent",
+                "target": "t7"
+              },
+              {
+                "role": "consequent",
+                "target": "t9"
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "family": "binding",
+            "constitution": "gap-filling",
+            "ends": [
+              {
+                "role": "gap",
+                "target": "t8"
+              },
+              {
+                "role": "filler",
+                "target": "t2"
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "family": "attachment",
+            "constitution": "adverbial-modification",
+            "ends": [
+              {
+                "role": "head",
+                "target": "t4"
+              },
+              {
+                "role": "modifier",
+                "target": "t6"
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "family": "scope",
+            "constitution": "quantifier-domain",
+            "ends": [
+              {
+                "role": "quantifier",
+                "target": "t11"
+              },
+              {
+                "role": "domain",
+                "target": "r5"
+              }
+            ]
+          },
+          {
+            "id": "r5",
+            "family": "attachment",
+            "constitution": "comparative-equality",
+            "ends": [
+              {
+                "role": "standard",
+                "target": "t13"
+              },
+              {
+                "role": "comparand",
+                "target": "t16"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hypothesis_2",
+        "reading": "Nested Predicate-Argument Restriction",
+        "objects": [
+          {
+            "id": "t2",
+            "kind": "entity",
+            "type": "discussion",
+            "anchors": [
+              "t2"
+            ],
+            "members": [
+              "t3"
+            ],
+            "license": "subject-phrase"
+          },
+          {
+            "id": "t6",
+            "kind": "entity",
+            "type": "state",
+            "anchors": [
+              "t6"
+            ],
+            "members": [
+              "t6"
+            ],
+            "license": "predicate-adj"
+          },
+          {
+            "id": "t8",
+            "kind": "entity",
+            "type": "discourse",
+            "anchors": [
+              "t8"
+            ],
+            "members": [
+              "t8"
+            ],
+            "license": "wh-gap-licensor"
+          },
+          {
+            "id": "t12",
+            "kind": "entity",
+            "type": "quality",
+            "anchors": [
+              "t12"
+            ],
+            "members": [
+              "t12"
+            ],
+            "license": "noun-head"
+          },
+          {
+            "id": "t15",
+            "kind": "entity",
+            "type": "domain",
+            "anchors": [
+              "t15"
+            ],
+            "members": [
+              "t15"
+            ],
+            "license": "noun-head"
+          },
+          {
+            "id": "t16",
+            "kind": "operator",
+            "type": "limit",
+            "anchors": [
+              "t16"
+            ],
+            "members": [
+              "t15"
+            ],
+            "license": "verb-head"
+          },
+          {
+            "id": "t7",
+            "kind": "operator",
+            "type": "conditional",
+            "anchors": [
+              "t7"
+            ],
+            "members": [
+              "t9"
+            ],
+            "license": "clause-intro"
+          }
+        ],
+        "relations": [
+          {
+            "id": "r1",
+            "family": "attachment",
+            "constitution": "main-predicate",
+            "ends": [
+              {
+                "role": "subject",
+                "target": "t2"
+              },
+              {
+                "role": "verb",
+                "target": "t9"
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "family": "attachment",
+            "constitution": "object-argument",
+            "ends": [
+              {
+                "role": "verb",
+                "target": "t9"
+              },
+              {
+                "role": "object",
+                "target": "t10"
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "family": "scope",
+            "constitution": "degree-modification",
+            "ends": [
+              {
+                "role": "degree",
+                "target": "t11"
+              },
+              {
+                "role": "base",
+                "target": "t12"
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "family": "attachment",
+            "constitution": "comparative-standard",
+            "ends": [
+              {
+                "role": "standard",
+                "target": "t13"
+              },
+              {
+                "role": "comparand",
+                "target": "r3"
+              }
+            ]
+          },
+          {
+            "id": "r5",
+            "family": "attachment",
+            "constitution": "limitation-source",
+            "ends": [
+              {
+                "role": "source",
+                "target": "t16"
+              },
+              {
+                "role": "target",
+                "target": "r4"
+              }
+            ]
+          },
+          {
+            "id": "r6",
+            "family": "scope",
+            "constitution": "conditional-restriction",
+            "ends": [
+              {
+                "role": "condition",
+                "target": "t7"
+              },
+              {
+                "role": "scope",
+                "target": "r1"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "unresolved": [
+      "The semantic boundary of 'subject-matter' (t15) as a domain vs. a specific entity remains open to interpretation without external context.",
+      "The binding mechanism for 'it' (t8) could be analyzed as a direct anaphor to 'discussion' (t2) or as a null operator bound by the conditional clause structure."
+    ]
+  },
+  "latency_seconds": 89.402
+}

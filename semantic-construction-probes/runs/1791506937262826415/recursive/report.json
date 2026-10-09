@@ -1,0 +1,16 @@
+{
+  "source": "recursive",
+  "candidates": 0,
+  "initial_status": "FAILED",
+  "feedback_status": "FAILED",
+  "shape_signatures": [],
+  "native_semantic_admission": "NOT_RUN",
+  "observations": {
+    "laya": {
+      "status": "NOT_RUN"
+    },
+    "jev": {
+      "status": "NOT_RUN"
+    }
+  }
+}

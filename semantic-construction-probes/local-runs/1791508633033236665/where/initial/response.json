@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"candidates\":[{\"id\":\"c0\",\"reading\":\"where they were\",\"objects\":[{\"id\":\"n0\",\"kind\":\"occurrence\",\"type\":\"lexical-occurrence\",\"anchors\":[\"t0\"],\"members\":[],\"license\":\"literal source occurrence\"},{\"id\":\"n1\",\"kind\":\"occurrence\",\"type\":\"lexical-occurrence\",\"anchors\":[\"t1\"],\"members\":[],\"license\":\"literal source occurrence\"},{\"id\":\"n2\",\"kind\":\"occurrence\",\"type\":\"lexical-occurrence\",\"anchors\":[\"t2\"],\"members\":[],\"license\":\"literal source occurrence\"}],\"relations\":[{\"id\":\"r0\",\"family\":\"argument\",\"constitution\":\"clause\",\"ends\":[{\"role\":\"head\",\"target\":\"n0\"},{\"role\":\"argument\",\"target\":\"n1\"},{\"role\":\"argument\",\"target\":\"n2\"}]}]}],\"unresolved\":[\"n0\",\"n1\",\"n2\"]}"
+      }
+    }
+  ],
+  "created": 1791508675,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 178,
+    "prompt_tokens": 394,
+    "total_tokens": 572,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-GWv80zE0ELO2FyP9NUZBlYGXCx8GLxjk",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 394,
+    "prompt_ms": 3926.459,
+    "prompt_per_token_ms": 9.96563197969543,
+    "prompt_per_second": 100.34486543728077,
+    "predicted_n": 178,
+    "predicted_ms": 38376.036,
+    "predicted_per_token_ms": 216.8137627118644,
+    "predicted_per_second": 4.612253334346465
+  }
+}

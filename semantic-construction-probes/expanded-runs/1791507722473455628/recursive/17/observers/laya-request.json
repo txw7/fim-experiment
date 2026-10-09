@@ -1,0 +1,50 @@
+{
+  "model": "english",
+  "state": {
+    "source": "what she was when he was where they were where she was when it happened",
+    "relation": {
+      "id": "r0",
+      "family": "attachment",
+      "constitution": "temporal-clause",
+      "ends": [
+        {
+          "role": "head",
+          "target": "n0"
+        },
+        {
+          "role": "mod",
+          "target": "n6"
+        }
+      ]
+    },
+    "operands": [
+      {
+        "id": "n0",
+        "type": "she",
+        "anchors": [
+          "t1",
+          "t10"
+        ]
+      },
+      {
+        "id": "n6",
+        "type": "state-of-being",
+        "anchors": [
+          "t2",
+          "t11"
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "fit": {
+      "type": "choice",
+      "instructions": "Is this exact proposed relation licensed by the source?",
+      "criteria": {
+        "supported": "Source supports roles.",
+        "unsupported": "Roles conflict with source.",
+        "unresolved": "Insufficient evidence."
+      }
+    }
+  }
+}

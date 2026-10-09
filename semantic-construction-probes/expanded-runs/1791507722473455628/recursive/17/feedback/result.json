@@ -1,0 +1,195 @@
+{
+  "status": "COMPLETED",
+  "proposal": {
+    "candidates": [
+      {
+        "id": "hypothesis-1",
+        "reading": "nested-temporal-location-state",
+        "objects": [
+          {
+            "id": "n0",
+            "kind": "entity",
+            "type": "she",
+            "anchors": [
+              "t1"
+            ],
+            "members": [],
+            "license": "refers to the female subject in the initial clause"
+          },
+          {
+            "id": "n1",
+            "kind": "entity",
+            "type": "he",
+            "anchors": [
+              "t4"
+            ],
+            "members": [],
+            "license": "refers to the male subject in the first embedded clause"
+          },
+          {
+            "id": "n2",
+            "kind": "entity",
+            "type": "they",
+            "anchors": [
+              "t7"
+            ],
+            "members": [],
+            "license": "refers to the plural group in the second embedded clause"
+          },
+          {
+            "id": "n3",
+            "kind": "entity",
+            "type": "she",
+            "anchors": [
+              "t10"
+            ],
+            "members": [],
+            "license": "refers to the female subject in the final clause"
+          },
+          {
+            "id": "n4",
+            "kind": "entity",
+            "type": "it",
+            "anchors": [
+              "t13"
+            ],
+            "members": [],
+            "license": "refers to the event that happened"
+          },
+          {
+            "id": "n5",
+            "kind": "entity",
+            "type": "state-of-being",
+            "anchors": [
+              "t2"
+            ],
+            "members": [],
+            "license": "represents the state of n0 at the first temporal point"
+          },
+          {
+            "id": "n6",
+            "kind": "entity",
+            "type": "location",
+            "anchors": [
+              "t6"
+            ],
+            "members": [],
+            "license": "represents the location of n1 at the first temporal point"
+          },
+          {
+            "id": "n7",
+            "kind": "entity",
+            "type": "location",
+            "anchors": [
+              "t9"
+            ],
+            "members": [],
+            "license": "represents the location of n3 at the final temporal point"
+          },
+          {
+            "id": "n8",
+            "kind": "entity",
+            "type": "location",
+            "anchors": [
+              "t8"
+            ],
+            "members": [],
+            "license": "represents the location of n2 at the second temporal point"
+          },
+          {
+            "id": "n9",
+            "kind": "entity",
+            "type": "event",
+            "anchors": [
+              "t14"
+            ],
+            "members": [],
+            "license": "represents the occurrence of the event n4"
+          }
+        ],
+        "relations": [
+          {
+            "id": "r0",
+            "family": "attachment",
+            "constitution": "temporal-clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n0"
+              },
+              {
+                "role": "mod",
+                "target": "n5"
+              }
+            ]
+          },
+          {
+            "id": "r1",
+            "family": "attachment",
+            "constitution": "temporal-clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n1"
+              },
+              {
+                "role": "mod",
+                "target": "n6"
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "family": "attachment",
+            "constitution": "temporal-clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n2"
+              },
+              {
+                "role": "mod",
+                "target": "n8"
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "family": "attachment",
+            "constitution": "temporal-clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n3"
+              },
+              {
+                "role": "mod",
+                "target": "n7"
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "family": "attachment",
+            "constitution": "event-occurrence",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n4"
+              },
+              {
+                "role": "mod",
+                "target": "n9"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "unresolved": [
+      "The temporal relationships between the states of n0, n1, n2, and n3 relative to the event n9 are not",
+      "The specific identity of the event n4 is unknown"
+    ]
+  },
+  "seconds": 86.91
+}

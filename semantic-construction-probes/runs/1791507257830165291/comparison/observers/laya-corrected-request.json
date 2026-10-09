@@ -1,0 +1,167 @@
+{
+  "model": "english",
+  "state": {
+    "source": "1. Our discussion will be adequate if it has as much clarity as the subject-matter admits.",
+    "goal": {
+      "parent": "r1",
+      "child": "n1",
+      "role": "subject",
+      "requires": "establish typed interface and source license",
+      "status": "OPEN"
+    },
+    "candidate_readings": [
+      "Conditional Sufficiency via Wh-Gap Licensing"
+    ],
+    "instruction": "Does source establish this exact dependency, conflict with it, or leave it unresolved?",
+    "candidate": {
+      "id": "initial-0",
+      "reading": "Conditional Sufficiency via Wh-Gap Licensing",
+      "objects": [
+        {
+          "id": "n0",
+          "kind": "proposition",
+          "type": "conditional",
+          "anchors": [
+            "t4",
+            "t5",
+            "t6"
+          ],
+          "members": [],
+          "license": "wh-gap licensing"
+        },
+        {
+          "id": "n1",
+          "kind": "entity",
+          "type": "discussion",
+          "anchors": [
+            "t2",
+            "t3"
+          ],
+          "members": [],
+          "license": "subject formation"
+        },
+        {
+          "id": "n2",
+          "kind": "entity",
+          "type": "subject-matter",
+          "anchors": [
+            "t14",
+            "t15"
+          ],
+          "members": [],
+          "license": "subject formation"
+        },
+        {
+          "id": "n3",
+          "kind": "operator",
+          "type": "clarity_measure",
+          "anchors": [
+            "t12"
+          ],
+          "members": [],
+          "license": "arbitrary lexical constitution"
+        },
+        {
+          "id": "n4",
+          "kind": "operator",
+          "type": "admission_limit",
+          "anchors": [
+            "t16"
+          ],
+          "members": [
+            "n2"
+          ],
+          "license": "bounded graph search"
+        }
+      ],
+      "relations": [
+        {
+          "id": "r0",
+          "family": "scope",
+          "constitution": "conditional_clause",
+          "ends": [
+            {
+              "role": "antecedent",
+              "target": "n0"
+            },
+            {
+              "role": "consequent",
+              "target": "n0"
+            }
+          ]
+        },
+        {
+          "id": "r1",
+          "family": "attachment",
+          "constitution": "subject_predicate",
+          "ends": [
+            {
+              "role": "subject",
+              "target": "n1"
+            },
+            {
+              "role": "predicate",
+              "target": "n0"
+            }
+          ]
+        },
+        {
+          "id": "r2",
+          "family": "binding",
+          "constitution": "wh_gap",
+          "ends": [
+            {
+              "role": "gap",
+              "target": "n0"
+            },
+            {
+              "role": "licensor",
+              "target": "n3"
+            }
+          ]
+        },
+        {
+          "id": "r3",
+          "family": "attachment",
+          "constitution": "measure_limit",
+          "ends": [
+            {
+              "role": "measure",
+              "target": "n3"
+            },
+            {
+              "role": "limit_source",
+              "target": "n4"
+            }
+          ]
+        },
+        {
+          "id": "r4",
+          "family": "attachment",
+          "constitution": "entity_domain",
+          "ends": [
+            {
+              "role": "domain",
+              "target": "n4"
+            },
+            {
+              "role": "entity",
+              "target": "n2"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "questions": {
+    "dependency": {
+      "type": "choice",
+      "criteria": {
+        "supported": "Exact proposed dependency is source-supported.",
+        "unsupported": "It conflicts with source.",
+        "unresolved": "Insufficient binding, role or construction evidence."
+      },
+      "instructions": "Does the unchanged source license the exact candidate dependency in the goal? Assess the referenced graph roles, not truth. Choose unresolved if construction evidence is missing."
+    }
+  }
+}

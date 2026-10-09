@@ -1,0 +1,191 @@
+{
+  "initial-17": {
+    "status": "REJECTED",
+    "errors": [
+      "non-network interior n0",
+      "non-network interior n1",
+      "dangling relation operand r1",
+      "containment cycle"
+    ],
+    "obligations": [
+      {
+        "subject": "n0",
+        "requirement": "operator constitution",
+        "claimed": "He refers to the speaker or a specific agent in the discourse context.",
+        "hypothesized_type": "Subject"
+      },
+      {
+        "subject": "n1",
+        "requirement": "operator constitution",
+        "claimed": "'must mean' functions as a modal assertion of implication.",
+        "hypothesized_type": "Predicate"
+      },
+      {
+        "subject": "r0",
+        "requirement": "argument constitution",
+        "claimed": "n0"
+      },
+      {
+        "subject": "r1",
+        "requirement": "argument constitution",
+        "claimed": "n1"
+      }
+    ],
+    "backward_goals": [],
+    "semantic_admission": "NOT_RUN",
+    "occurrence_diagnostics": [],
+    "metrics": {
+      "networks": 0,
+      "network_operands": 0,
+      "relation_operands": 0,
+      "implicit_positions": 0
+    }
+  },
+  "feedback-17": {
+    "status": "REJECTED",
+    "errors": [
+      "dangling interior n0",
+      "non-network interior n0",
+      "dangling interior n1",
+      "non-network interior n1",
+      "dangling interior n2",
+      "non-network interior n2",
+      "dangling interior n3",
+      "non-network interior n3",
+      "dangling interior n4",
+      "non-network interior n4",
+      "dangling interior n5",
+      "non-network interior n5",
+      "dangling interior n6",
+      "non-network interior n6",
+      "dangling interior n7",
+      "non-network interior n7",
+      "dangling interior n8",
+      "non-network interior n8",
+      "dangling interior n9",
+      "non-network interior n9",
+      "dangling interior n10",
+      "non-network interior n10",
+      "dangling interior n11",
+      "non-network interior n11"
+    ],
+    "obligations": [
+      {
+        "subject": "n0",
+        "requirement": "operator constitution",
+        "claimed": "The pronoun 'he' functions as the agent initiating the modal assertion.",
+        "hypothesized_type": "Agent"
+      },
+      {
+        "subject": "n1",
+        "requirement": "operator constitution",
+        "claimed": "The phrase 'must mean' establishes a necessary implication or definition.",
+        "hypothesized_type": "Modal_Predicate"
+      },
+      {
+        "subject": "n2",
+        "requirement": "operator constitution",
+        "claimed": "The conjunction 'that' introduces the content of the meaning.",
+        "hypothesized_type": "Proposition"
+      },
+      {
+        "subject": "n3",
+        "requirement": "operator constitution",
+        "claimed": "The modal 'can' expresses the possibility or permission to perform an action.",
+        "hypothesized_type": "Ability"
+      },
+      {
+        "subject": "n4",
+        "requirement": "operator constitution",
+        "claimed": "The verb 'call' denotes the act of labeling or categorizing.",
+        "hypothesized_type": "Action"
+      },
+      {
+        "subject": "n5",
+        "requirement": "operator constitution",
+        "claimed": "The indefinite noun 'person' serves as the entity receiving the label.",
+        "hypothesized_type": "Patient"
+      },
+      {
+        "subject": "n6",
+        "requirement": "operator constitution",
+        "claimed": "The adjective 'blessed' is the property ascribed to the patient.",
+        "hypothesized_type": "Attribute"
+      },
+      {
+        "subject": "n7",
+        "requirement": "operator constitution",
+        "claimed": "The pronoun 'He' in the subordinate clause refers to the specific individual previously mentioned.",
+        "hypothesized_type": "Condition"
+      },
+      {
+        "subject": "n8",
+        "requirement": "operator constitution",
+        "claimed": "The copula 'is' links the subject to its current state.",
+        "hypothesized_type": "State"
+      },
+      {
+        "subject": "n9",
+        "requirement": "operator constitution",
+        "claimed": "The preposition 'beyond' defines the spatial or metaphorical position relative to negatives.",
+        "hypothesized_type": "Location"
+      },
+      {
+        "subject": "n10",
+        "requirement": "operator constitution",
+        "claimed": "The noun 'evils' constitutes the first element of the excluded set.",
+        "hypothesized_type": "Negated_Set_1"
+      },
+      {
+        "subject": "n11",
+        "requirement": "operator constitution",
+        "claimed": "The noun 'misfortunes' constitutes the second element of the excluded set.",
+        "hypothesized_type": "Negated_Set_2"
+      },
+      {
+        "subject": "r0",
+        "requirement": "argument constitution",
+        "claimed": "n0"
+      },
+      {
+        "subject": "r1",
+        "requirement": "argument constitution",
+        "claimed": "n1"
+      },
+      {
+        "subject": "r2",
+        "requirement": "argument constitution",
+        "claimed": "n2"
+      },
+      {
+        "subject": "r3",
+        "requirement": "argument constitution",
+        "claimed": "n4"
+      },
+      {
+        "subject": "r4",
+        "requirement": "argument constitution",
+        "claimed": "n7"
+      },
+      {
+        "subject": "r5",
+        "requirement": "argument constitution",
+        "claimed": "n8"
+      },
+      {
+        "subject": "r6",
+        "requirement": "argument constitution",
+        "claimed": "n9"
+      }
+    ],
+    "backward_goals": [],
+    "semantic_admission": "NOT_RUN",
+    "occurrence_diagnostics": [],
+    "metrics": {
+      "networks": 0,
+      "network_operands": 0,
+      "relation_operands": 0,
+      "implicit_positions": 0
+    }
+  }
+}

@@ -1,0 +1,8 @@
+FRONTIER_GATE_GREEN unique/exact-pins/no-mutation/stale-rejection/nonunique-no-proposal
+frontier=ec5bed4569f75019e68f37d6a17d620fc51b6b8af76ada468de9ad9b2a599a53 outcome=:UNIQUE-SOLUTION delta=(:CANDIDATE
+                                                                                                          (:DONE
+                                                                                                           T)
+                                                                                                          :PROBLEM
+                                                                                                          "synthesis-search-problem:f2b10a6e5076a2451e208ddd1dd582911977f163a6a391fdd4b4cb7c9af26895"
+                                                                                                          :HOLE
+                                                                                                          "c2dfa70ff42764f148d3da898d4f52873b28d50fe6d8f6db6195a5e76ab73b3a")

@@ -1,0 +1,24 @@
+{
+  "text": "what she was",
+  "occurrences": [
+    {
+      "id": "t0",
+      "text": "what",
+      "begin": 0,
+      "end": 4
+    },
+    {
+      "id": "t1",
+      "text": "she",
+      "begin": 5,
+      "end": 8
+    },
+    {
+      "id": "t2",
+      "text": "was",
+      "begin": 9,
+      "end": 12
+    }
+  ],
+  "sha256": "4da45f5af1bb132648e3d76bb27c1bfd59d1e7b25271d9e514afb13c936b7f3a"
+}

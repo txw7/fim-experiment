@@ -1,0 +1,87 @@
+{
+  "status": "COMPLETED",
+  "candidate": {
+    "id": "c0",
+    "reading": "where they were",
+    "objects": [
+      {
+        "id": "n0",
+        "kind": "occurrence",
+        "type": "lexical-occurrence",
+        "anchors": [
+          "t0"
+        ],
+        "members": [],
+        "license": "literal source occurrence"
+      },
+      {
+        "id": "n1",
+        "kind": "occurrence",
+        "type": "lexical-occurrence",
+        "anchors": [
+          "t1"
+        ],
+        "members": [],
+        "license": "literal source occurrence"
+      },
+      {
+        "id": "n2",
+        "kind": "occurrence",
+        "type": "lexical-occurrence",
+        "anchors": [
+          "t2"
+        ],
+        "members": [],
+        "license": "literal source occurrence"
+      }
+    ],
+    "relations": [
+      {
+        "id": "r0",
+        "family": "argument",
+        "constitution": "clause",
+        "ends": [
+          {
+            "role": "head",
+            "target": "n0"
+          },
+          {
+            "role": "argument",
+            "target": "n1"
+          },
+          {
+            "role": "argument",
+            "target": "n2"
+          }
+        ]
+      }
+    ]
+  },
+  "checks": {
+    "status": "STRUCTURALLY_REVIEWABLE",
+    "errors": [],
+    "obligations": [
+      {
+        "subject": "r0",
+        "requirement": "argument constitution",
+        "claimed": "clause"
+      }
+    ],
+    "backward_goals": [],
+    "semantic_admission": "NOT_RUN",
+    "occurrence_diagnostics": [],
+    "metrics": {
+      "networks": 0,
+      "network_operands": 0,
+      "relation_operands": 0,
+      "implicit_positions": 0
+    },
+    "substrate_errors": [],
+    "uninterpreted_occurrences": [],
+    "uninterpreted_operators": [],
+    "source_preserved": true,
+    "complete_operator_coverage": true,
+    "semantic_status": "UNVERIFIED_LICENSES"
+  },
+  "seconds": 42.59
+}

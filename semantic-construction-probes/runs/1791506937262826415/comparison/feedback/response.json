@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"candidates\": [\n    {\n      \"id\": \"hypothesis_1\",\n      \"reading\": \"Standard Cleft-Conditional Equivalence\",\n      \"objects\": [\n        {\"id\": \"t2\", \"kind\": \"entity\", \"type\": \"discussion\", \"anchors\": [\"t2\"],\"members\": [\"t3\"],\"license\": \"subject-phrase\"},\n        {\"id\": \"t4\", \"kind\": \"operator\", \"type\": \"future\", \"anchors\": [\"t4\"],\"members\": [\"t5\"],\"license\": \"temporal-modifier\"},\n        {\"id\": \"t6\", \"kind\": \"entity\", \"type\": \"state\", \"anchors\": [\"t6\"],\"members\": [\"t6\"],\"license\": \"predicate-adj\"},\n        {\"id\": \"t8\", \"kind\": \"entity\", \"type\": \"discourse\", \"anchors\": [\"t8\"],\"members\": [\"t8\"],\"license\": \"wh-gap-licensor\"},\n        {\"id\": \"t9\", \"kind\": \"operator\", \"type\": \"possess\", \"anchors\": [\"t9\"],\"members\": [\"t8\"],\"license\": \"verb-head\"},\n        {\"id\": \"t12\", \"kind\": \"entity\", \"type\": \"quality\", \"anchors\": [\"t12\"],\"members\": [\"t12\"],\"license\": \"noun-head\"},\n        {\"id\": \"t15\", \"kind\": \"entity\", \"type\": \"domain\", \"anchors\": [\"t15\"],\"members\": [\"t15\"],\"license\": \"noun-head\"},\n        {\"id\": \"t16\", \"kind\": \"operator\", \"type\": \"limit\", \"anchors\": [\"t16\"],\"members\": [\"t15\"],\"license\": \"verb-head\"}\n      ],\n      \"relations\": [\n        {\"id\": \"r1\", \"family\": \"scope\", \"constitution\": \"conditional-clause\", \"ends\": [{\"role\": \"antecedent\", \"target\": \"t7\"}, {\"role\": \"consequent\", \"target\": \"t9\"}]},\n        {\"id\": \"r2\", \"family\": \"binding\", \"constitution\": \"gap-filling\", \"ends\": [{\"role\": \"gap\", \"target\": \"t8\"}, {\"role\": \"filler\", \"target\": \"t2\"}]},\n        {\"id\": \"r3\", \"family\": \"attachment\", \"constitution\": \"adverbial-modification\", \"ends\": [{\"role\": \"head\", \"target\": \"t4\"}, {\"role\": \"modifier\", \"target\": \"t6\"}]},\n        {\"id\": \"r4\", \"family\": \"scope\", \"constitution\": \"quantifier-domain\", \"ends\": [{\"role\": \"quantifier\", \"target\": \"t11\"}, {\"role\": \"domain\", \"target\": \"r5\"}]},\n        {\"id\": \"r5\", \"family\": \"attachment\", \"constitution\": \"comparative-equality\", \"ends\": [{\"role\": \"standard\", \"target\": \"t13\"}, {\"role\": \"comparand\", \"target\": \"t16\"}]}\n      ]\n    },\n    {\n      \"id\": \"hypothesis_2\",\n      \"reading\": \"Nested Predicate-Argument Restriction\",\n      \"objects\": [\n        {\"id\": \"t2\", \"kind\": \"entity\", \"type\": \"discussion\", \"anchors\": [\"t2\"],\"members\": [\"t3\"],\"license\": \"subject-phrase\"},\n        {\"id\": \"t6\", \"kind\": \"entity\", \"type\": \"state\", \"anchors\": [\"t6\"],\"members\": [\"t6\"],\"license\": \"predicate-adj\"},\n        {\"id\": \"t8\", \"kind\": \"entity\", \"type\": \"discourse\", \"anchors\": [\"t8\"],\"members\": [\"t8\"],\"license\": \"wh-gap-licensor\"},\n        {\"id\": \"t12\", \"kind\": \"entity\", \"type\": \"quality\", \"anchors\": [\"t12\"],\"members\": [\"t12\"],\"license\": \"noun-head\"},\n        {\"id\": \"t15\", \"kind\": \"entity\", \"type\": \"domain\", \"anchors\": [\"t15\"],\"members\": [\"t15\"],\"license\": \"noun-head\"},\n        {\"id\": \"t16\", \"kind\": \"operator\", \"type\": \"limit\", \"anchors\": [\"t16\"],\"members\": [\"t15\"],\"license\": \"verb-head\"},\n        {\"id\": \"t7\", \"kind\": \"operator\", \"type\": \"conditional\", \"anchors\": [\"t7\"],\"members\": [\"t9\"],\"license\": \"clause-intro\"}\n      ],\n      \"relations\": [\n        {\"id\": \"r1\", \"family\": \"attachment\", \"constitution\": \"main-predicate\", \"ends\": [{\"role\": \"subject\", \"target\": \"t2\"}, {\"role\": \"verb\", \"target\": \"t9\"}]},\n        {\"id\": \"r2\", \"family\": \"attachment\", \"constitution\": \"object-argument\", \"ends\": [{\"role\": \"verb\", \"target\": \"t9\"}, {\"role\": \"object\", \"target\": \"t10\"}]},\n        {\"id\": \"r3\", \"family\": \"scope\", \"constitution\": \"degree-modification\", \"ends\": [{\"role\": \"degree\", \"target\": \"t11\"}, {\"role\": \"base\", \"target\": \"t12\"}]},\n        {\"id\": \"r4\", \"family\": \"attachment\", \"constitution\": \"comparative-standard\", \"ends\": [{\"role\": \"standard\", \"target\": \"t13\"}, {\"role\": \"comparand\", \"target\": \"r3\"}]},\n        {\"id\": \"r5\", \"family\": \"attachment\", \"constitution\": \"limitation-source\", \"ends\": [{\"role\": \"source\", \"target\": \"t16\"}, {\"role\": \"target\", \"target\": \"r4\"}]},\n        {\"id\": \"r6\", \"family\": \"scope\", \"constitution\": \"conditional-restriction\", \"ends\": [{\"role\": \"condition\", \"target\": \"t7\"}, {\"role\": \"scope\", \"target\": \"r1\"}]}\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"The semantic boundary of 'subject-matter' (t15) as a domain vs. a specific entity remains open to interpretation without external context.\",\n    \"The binding mechanism for 'it' (t8) could be analyzed as a direct anaphor to 'discussion' (t2) or as a null operator bound by the conditional clause structure.\"\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1791507135,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 1538,
+    "prompt_tokens": 668,
+    "total_tokens": 2206,
+    "prompt_tokens_details": {
+      "cached_tokens": 177
+    }
+  },
+  "id": "chatcmpl-ZW8kZrEc48Vd57vfdXAKasDMnaj4fxdP",
+  "timings": {
+    "cache_n": 177,
+    "prompt_n": 491,
+    "prompt_ms": 2242.249,
+    "prompt_per_token_ms": 4.566698574338085,
+    "prompt_per_second": 218.97657218266127,
+    "predicted_n": 1538,
+    "predicted_ms": 85761.881,
+    "predicted_per_token_ms": 55.79823096942095,
+    "predicted_per_second": 17.921715126560716
+  }
+}

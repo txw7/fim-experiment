@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"candidates\": [\n    {\n      \"id\": \"hypothesis_01\",\n      \"reading\": \"Conditional Sufficiency via Wh-Gap Licensing\",\n      \"objects\": [\n        { \"id\": \"n0\", \"kind\": \"proposition\", \"type\": \"conditional\", \"anchors\": [\"t4\", \"t5\", \"t6\"], \"members\": [], \"license\": \"wh-gap licensing\" },\n        { \"id\": \"n1\", \"kind\": \"entity\", \"type\": \"discussion\", \"anchors\": [\"t2\", \"t3\"], \"members\": [], \"license\": \"subject formation\" },\n        { \"id\": \"n2\", \"kind\": \"entity\", \"type\": \"subject-matter\", \"anchors\": [\"t14\", \"t15\"], \"members\": [], \"license\": \"subject formation\" },\n        { \"id\": \"n3\", \"kind\": \"operator\", \"type\": \"clarity_measure\", \"anchors\": [\"t12\"], \"members\": [], \"license\": \"arbitrary lexical constitution\" },\n        { \"id\": \"n4\", \"kind\": \"operator\", \"type\": \"admission_limit\", \"anchors\": [\"t16\"], \"members\": [\"n2\"], \"license\": \"bounded graph search\" }\n      ],\n      \"relations\": [\n        { \"id\": \"r0\", \"family\": \"scope\", \"constitution\": \"conditional_clause\", \"ends\": [\n          { \"role\": \"antecedent\", \"target\": \"n0\" },\n          { \"role\": \"consequent\", \"target\": \"n0\" }\n        ] },\n        { \"id\": \"r1\", \"family\": \"attachment\", \"constitution\": \"subject_predicate\", \"ends\": [\n          { \"role\": \"subject\", \"target\": \"n1\" },\n          { \"role\": \"predicate\", \"target\": \"n0\" }\n        ] },\n        { \"id\": \"r2\", \"family\": \"binding\", \"constitution\": \"wh_gap\", \"ends\": [\n          { \"role\": \"gap\", \"target\": \"n0\" },\n          { \"role\": \"licensor\", \"target\": \"n3\" }\n        ] },\n        { \"id\": \"r3\", \"family\": \"attachment\", \"constitution\": \"measure_limit\", \"ends\": [\n          { \"role\": \"measure\", \"target\": \"n3\" },\n          { \"role\": \"limit_source\", \"target\": \"n4\" }\n        ] },\n        { \"id\": \"r4\", \"family\": \"attachment\", \"constitution\": \"entity_domain\", \"ends\": [\n          { \"role\": \"domain\", \"target\": \"n4\" },\n          { \"role\": \"entity\", \"target\": \"n2\" }\n        ] }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"Temporal operator disambiguation for 'will'\",\n    \"Natural-language inference proof for 'adequate'\"\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1791507300,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 698,
+    "prompt_tokens": 726,
+    "total_tokens": 1424,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-jyQMVlsEkB6MVmozsQL6L649mb4tX87X",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 726,
+    "prompt_ms": 3001.737,
+    "prompt_per_token_ms": 4.134623966942149,
+    "prompt_per_second": 241.85996308137587,
+    "predicted_n": 698,
+    "predicted_ms": 39017.574,
+    "predicted_per_token_ms": 55.97930272596844,
+    "predicted_per_second": 17.86374519338388
+  }
+}

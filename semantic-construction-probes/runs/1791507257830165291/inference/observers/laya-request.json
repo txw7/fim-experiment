@@ -1,0 +1,14 @@
+{
+  "model": "english",
+  "state": "{\"source\":\"3. Instead, he must mean that one can then safely call a person blessed.\\nBecause:\\n1. He [that person] is now beyond evils and misfortunes.\",\"goal\":{\"parent\":\"r0\",\"child\":\"n0\",\"role\":\"subject\",\"requires\":\"establish typed interface and binding locality\",\"status\":\"OPEN\"},\"candidate_readings\":[\"The pronoun 'he' in the main clause refers to the same entity as the bracketed 'that person' in the \"],\"instruction\":\"Does source establish this exact dependency, conflict with it, or leave it unresolved?\"}",
+  "questions": {
+    "dependency": {
+      "type": "choice",
+      "criteria": {
+        "supported": "Exact proposed dependency is source-supported.",
+        "unsupported": "It conflicts with source.",
+        "unresolved": "Insufficient binding, role or construction evidence."
+      }
+    }
+  }
+}

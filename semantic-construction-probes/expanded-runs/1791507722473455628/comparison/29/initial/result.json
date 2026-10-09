@@ -1,0 +1,76 @@
+{
+  "status": "COMPLETED",
+  "proposal": {
+    "candidates": [
+      {
+        "id": "c0",
+        "reading": "r0",
+        "objects": [
+          {
+            "id": "n0",
+            "kind": "entity",
+            "type": "discussion",
+            "anchors": [
+              "t3"
+            ],
+            "members": [],
+            "license": "t2-t3"
+          },
+          {
+            "id": "n1",
+            "kind": "entity",
+            "type": "clarity",
+            "anchors": [
+              "t12"
+            ],
+            "members": [],
+            "license": "t12"
+          },
+          {
+            "id": "n2",
+            "kind": "entity",
+            "type": "subject-matter",
+            "anchors": [
+              "t15"
+            ],
+            "members": [],
+            "license": "t14-t15"
+          },
+          {
+            "id": "n3",
+            "kind": "entity",
+            "type": "adequacy",
+            "anchors": [
+              "t6"
+            ],
+            "members": [],
+            "license": "t6"
+          }
+        ],
+        "relations": [
+          {
+            "id": "r0",
+            "family": "inference",
+            "constitution": "conditional",
+            "ends": [
+              {
+                "role": "condition",
+                "target": "n3"
+              },
+              {
+                "role": "consequent",
+                "target": "n0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "unresolved": [
+      "t8 (it) refers to n0",
+      "t11 (much) quantifies the degree of n1",
+      "t16 (admits) defines the boundary of n2"
+    ]
+  },
+  "seconds": 19.74
+}

@@ -1,0 +1,14 @@
+{
+  "model": "english",
+  "state": "{\"source\":\"1. Our discussion will be adequate if it has as much clarity as the subject-matter admits.\",\"goal\":{\"parent\":\"r1\",\"child\":\"n1\",\"role\":\"subject\",\"requires\":\"establish typed interface and source license\",\"status\":\"OPEN\"},\"candidate_readings\":[\"Conditional Sufficiency via Wh-Gap Licensing\"],\"instruction\":\"Does source establish this exact dependency, conflict with it, or leave it unresolved?\"}",
+  "questions": {
+    "dependency": {
+      "type": "choice",
+      "criteria": {
+        "supported": "Exact proposed dependency is source-supported.",
+        "unsupported": "It conflicts with source.",
+        "unresolved": "Insufficient binding, role or construction evidence."
+      }
+    }
+  }
+}

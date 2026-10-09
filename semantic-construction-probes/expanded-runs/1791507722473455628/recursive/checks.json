@@ -1,0 +1,366 @@
+{
+  "initial-17": {
+    "status": "REJECTED",
+    "errors": [
+      "non-network interior n0",
+      "non-network interior n1",
+      "non-network interior n2"
+    ],
+    "obligations": [
+      {
+        "subject": "r0",
+        "requirement": "attachment constitution",
+        "claimed": "temporal-clause"
+      },
+      {
+        "subject": "r1",
+        "requirement": "attachment constitution",
+        "claimed": "temporal-clause"
+      },
+      {
+        "subject": "r2",
+        "requirement": "attachment constitution",
+        "claimed": "temporal-clause"
+      },
+      {
+        "subject": "r3",
+        "requirement": "attachment constitution",
+        "claimed": "temporal-clause"
+      },
+      {
+        "subject": "r4",
+        "requirement": "attachment constitution",
+        "claimed": "temporal-clause"
+      },
+      {
+        "subject": "r5",
+        "requirement": "attachment constitution",
+        "claimed": "event-occurrence"
+      }
+    ],
+    "backward_goals": [
+      {
+        "parent": "r0",
+        "child": "n0",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r0",
+        "child": "n6",
+        "role": "mod",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r1",
+        "child": "n1",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r1",
+        "child": "n7",
+        "role": "mod",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r2",
+        "child": "n2",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r2",
+        "child": "n7",
+        "role": "mod",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r3",
+        "child": "n4",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r3",
+        "child": "n7",
+        "role": "mod",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r4",
+        "child": "n0",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r4",
+        "child": "n7",
+        "role": "mod",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r5",
+        "child": "n3",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r5",
+        "child": "n7",
+        "role": "mod",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      }
+    ],
+    "semantic_admission": "NOT_RUN",
+    "occurrence_diagnostics": [
+      "Occurrence correspondence requires review: n0 merges distinct subjects/copulas; retain independent occurrences before grouping.",
+      "Occurrence correspondence requires review: n6 merges distinct subjects/copulas; retain independent occurrences before grouping."
+    ],
+    "metrics": {
+      "networks": 0,
+      "network_operands": 0,
+      "relation_operands": 0,
+      "implicit_positions": 0
+    }
+  },
+  "feedback-17": {
+    "status": "STRUCTURALLY_REVIEWABLE",
+    "errors": [],
+    "obligations": [
+      {
+        "subject": "r0",
+        "requirement": "attachment constitution",
+        "claimed": "temporal-clause"
+      },
+      {
+        "subject": "r1",
+        "requirement": "attachment constitution",
+        "claimed": "temporal-clause"
+      },
+      {
+        "subject": "r2",
+        "requirement": "attachment constitution",
+        "claimed": "temporal-clause"
+      },
+      {
+        "subject": "r3",
+        "requirement": "attachment constitution",
+        "claimed": "temporal-clause"
+      },
+      {
+        "subject": "r4",
+        "requirement": "attachment constitution",
+        "claimed": "event-occurrence"
+      }
+    ],
+    "backward_goals": [
+      {
+        "parent": "r0",
+        "child": "n0",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r0",
+        "child": "n5",
+        "role": "mod",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r1",
+        "child": "n1",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r1",
+        "child": "n6",
+        "role": "mod",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r2",
+        "child": "n2",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r2",
+        "child": "n8",
+        "role": "mod",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r3",
+        "child": "n3",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r3",
+        "child": "n7",
+        "role": "mod",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r4",
+        "child": "n4",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r4",
+        "child": "n9",
+        "role": "mod",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      }
+    ],
+    "semantic_admission": "NOT_RUN",
+    "occurrence_diagnostics": [],
+    "metrics": {
+      "networks": 0,
+      "network_operands": 0,
+      "relation_operands": 0,
+      "implicit_positions": 0
+    }
+  },
+  "initial-29": {
+    "status": "REJECTED",
+    "errors": [
+      "non-network interior n2",
+      "non-network interior n3"
+    ],
+    "obligations": [
+      {
+        "subject": "r0",
+        "requirement": "argument constitution",
+        "claimed": "subject"
+      },
+      {
+        "subject": "r1",
+        "requirement": "argument constitution",
+        "claimed": "subject"
+      },
+      {
+        "subject": "r2",
+        "requirement": "argument constitution",
+        "claimed": "subject"
+      },
+      {
+        "subject": "r3",
+        "requirement": "argument constitution",
+        "claimed": "subject"
+      },
+      {
+        "subject": "r4",
+        "requirement": "argument constitution",
+        "claimed": "subject"
+      },
+      {
+        "subject": "r5",
+        "requirement": "argument constitution",
+        "claimed": "complement"
+      },
+      {
+        "subject": "r6",
+        "requirement": "argument constitution",
+        "claimed": "complement"
+      },
+      {
+        "subject": "r7",
+        "requirement": "argument constitution",
+        "claimed": "complement"
+      }
+    ],
+    "backward_goals": [],
+    "semantic_admission": "NOT_RUN",
+    "occurrence_diagnostics": [],
+    "metrics": {
+      "networks": 0,
+      "network_operands": 0,
+      "relation_operands": 3,
+      "implicit_positions": 0
+    }
+  },
+  "feedback-29": {
+    "status": "REJECTED",
+    "errors": [
+      "non-network interior n2",
+      "non-network interior n3"
+    ],
+    "obligations": [
+      {
+        "subject": "r0",
+        "requirement": "argument constitution",
+        "claimed": "subject"
+      },
+      {
+        "subject": "r1",
+        "requirement": "argument constitution",
+        "claimed": "subject"
+      },
+      {
+        "subject": "r2",
+        "requirement": "argument constitution",
+        "claimed": "subject"
+      },
+      {
+        "subject": "r3",
+        "requirement": "argument constitution",
+        "claimed": "subject"
+      },
+      {
+        "subject": "r4",
+        "requirement": "argument constitution",
+        "claimed": "subject"
+      },
+      {
+        "subject": "r5",
+        "requirement": "argument constitution",
+        "claimed": "complement"
+      },
+      {
+        "subject": "r6",
+        "requirement": "argument constitution",
+        "claimed": "complement"
+      },
+      {
+        "subject": "r7",
+        "requirement": "argument constitution",
+        "claimed": "complement"
+      }
+    ],
+    "backward_goals": [],
+    "semantic_admission": "NOT_RUN",
+    "occurrence_diagnostics": [],
+    "metrics": {
+      "networks": 0,
+      "network_operands": 0,
+      "relation_operands": 3,
+      "implicit_positions": 0
+    }
+  }
+}

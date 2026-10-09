@@ -1,0 +1,188 @@
+[
+  {
+    "seed": 17,
+    "initial": "FAILED"
+  },
+  {
+    "seed": 29,
+    "initial": {
+      "status": "STRUCTURALLY_REVIEWABLE",
+      "errors": [],
+      "obligations": [
+        {
+          "subject": "r0",
+          "requirement": "inference constitution",
+          "claimed": "conditional"
+        }
+      ],
+      "backward_goals": [
+        {
+          "parent": "r0",
+          "child": "n3",
+          "role": "condition",
+          "requires": "establish typed interface and source license",
+          "status": "OPEN"
+        },
+        {
+          "parent": "r0",
+          "child": "n0",
+          "role": "consequent",
+          "requires": "establish typed interface and source license",
+          "status": "OPEN"
+        }
+      ],
+      "semantic_admission": "NOT_RUN",
+      "occurrence_diagnostics": [],
+      "metrics": {
+        "networks": 0,
+        "network_operands": 0,
+        "relation_operands": 0,
+        "implicit_positions": 0
+      }
+    },
+    "feedback_generation": "COMPLETED",
+    "laya": {
+      "status": "COMPLETED",
+      "answers": {
+        "fit": {
+          "type": "choice",
+          "choice": "unsupported",
+          "probabilities": {
+            "supported": 0.2604,
+            "unsupported": 0.4173,
+            "unresolved": 0.3223
+          },
+          "confidence": 0.0169,
+          "answer_confidence": 0.4173,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      }
+    },
+    "feedback": {
+      "status": "REJECTED",
+      "errors": [
+        "unlicensed implicit object n4",
+        "unlicensed implicit object n5"
+      ],
+      "obligations": [
+        {
+          "subject": "n4",
+          "requirement": "grammatical-position license",
+          "claimed": "inference-bound"
+        },
+        {
+          "subject": "n5",
+          "requirement": "grammatical-position license",
+          "claimed": "inference-bound"
+        },
+        {
+          "subject": "r0",
+          "requirement": "inference constitution",
+          "claimed": "conditional"
+        },
+        {
+          "subject": "r1",
+          "requirement": "inference constitution",
+          "claimed": "comparative_equality"
+        },
+        {
+          "subject": "r2",
+          "requirement": "inference constitution",
+          "claimed": "attribute_of"
+        },
+        {
+          "subject": "r3",
+          "requirement": "inference constitution",
+          "claimed": "attribute_of"
+        },
+        {
+          "subject": "r4",
+          "requirement": "inference constitution",
+          "claimed": "conditional_limit"
+        }
+      ],
+      "backward_goals": [
+        {
+          "parent": "r0",
+          "child": "n3",
+          "role": "condition",
+          "requires": "establish typed interface and source license",
+          "status": "OPEN"
+        },
+        {
+          "parent": "r0",
+          "child": "n0",
+          "role": "consequent",
+          "requires": "establish typed interface and source license",
+          "status": "OPEN"
+        },
+        {
+          "parent": "r1",
+          "child": "n1",
+          "role": "operand_a",
+          "requires": "establish typed interface and source license",
+          "status": "OPEN"
+        },
+        {
+          "parent": "r1",
+          "child": "n4",
+          "role": "operand_b",
+          "requires": "establish typed interface and source license",
+          "status": "OPEN"
+        },
+        {
+          "parent": "r2",
+          "child": "n4",
+          "role": "subject",
+          "requires": "establish typed interface and source license",
+          "status": "OPEN"
+        },
+        {
+          "parent": "r2",
+          "child": "n2",
+          "role": "predicate",
+          "requires": "establish typed interface and source license",
+          "status": "OPEN"
+        },
+        {
+          "parent": "r3",
+          "child": "n5",
+          "role": "subject",
+          "requires": "establish typed interface and source license",
+          "status": "OPEN"
+        },
+        {
+          "parent": "r3",
+          "child": "n2",
+          "role": "predicate",
+          "requires": "establish typed interface and source license",
+          "status": "OPEN"
+        },
+        {
+          "parent": "r4",
+          "child": "n5",
+          "role": "condition",
+          "requires": "establish typed interface and source license",
+          "status": "OPEN"
+        },
+        {
+          "parent": "r4",
+          "child": "n1",
+          "role": "result",
+          "requires": "establish typed interface and source license",
+          "status": "OPEN"
+        }
+      ],
+      "semantic_admission": "NOT_RUN",
+      "occurrence_diagnostics": [],
+      "metrics": {
+        "networks": 0,
+        "network_operands": 0,
+        "relation_operands": 0,
+        "implicit_positions": 0
+      }
+    }
+  }
+]

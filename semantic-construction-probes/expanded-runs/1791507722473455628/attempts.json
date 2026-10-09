@@ -1,0 +1,52 @@
+[
+  {
+    "request": "comparison/17/initial/result.json",
+    "status": "FAILED",
+    "seconds": 120.23
+  },
+  {
+    "request": "comparison/29/initial/result.json",
+    "status": "COMPLETED",
+    "seconds": 19.74
+  },
+  {
+    "request": "comparison/29/feedback/result.json",
+    "status": "COMPLETED",
+    "seconds": 29.77
+  },
+  {
+    "request": "inference/17/initial/result.json",
+    "status": "COMPLETED",
+    "seconds": 22.7
+  },
+  {
+    "request": "inference/17/feedback/result.json",
+    "status": "COMPLETED",
+    "seconds": 82.5
+  },
+  {
+    "request": "inference/29/initial/result.json",
+    "status": "FAILED",
+    "seconds": 120.1
+  },
+  {
+    "request": "recursive/17/initial/result.json",
+    "status": "COMPLETED",
+    "seconds": 50.39
+  },
+  {
+    "request": "recursive/17/feedback/result.json",
+    "status": "COMPLETED",
+    "seconds": 86.91
+  },
+  {
+    "request": "recursive/29/initial/result.json",
+    "status": "COMPLETED",
+    "seconds": 59.19
+  },
+  {
+    "request": "recursive/29/feedback/result.json",
+    "status": "COMPLETED",
+    "seconds": 45.49
+  }
+]

@@ -1,0 +1,340 @@
+[
+  {
+    "id": "initial-0",
+    "reading": "Nested Temporal-Location Interrogatives",
+    "objects": [
+      {
+        "id": "n0",
+        "kind": "operator",
+        "type": "wh-gap",
+        "anchors": [
+          "t0"
+        ],
+        "members": [],
+        "license": "wh-gap licensing"
+      },
+      {
+        "id": "n1",
+        "kind": "operator",
+        "type": "temporal",
+        "anchors": [
+          "t3"
+        ],
+        "members": [],
+        "license": "temporal operator disambiguation"
+      },
+      {
+        "id": "n2",
+        "kind": "operator",
+        "type": "temporal",
+        "anchors": [
+          "t12"
+        ],
+        "members": [],
+        "license": "temporal operator disambiguation"
+      },
+      {
+        "id": "n3",
+        "kind": "operator",
+        "type": "location",
+        "anchors": [
+          "t6"
+        ],
+        "members": [],
+        "license": "wh-gap licensing"
+      },
+      {
+        "id": "n4",
+        "kind": "operator",
+        "type": "location",
+        "anchors": [
+          "t9"
+        ],
+        "members": [],
+        "license": "wh-gap licensing"
+      },
+      {
+        "id": "n5",
+        "kind": "operator",
+        "type": "event",
+        "anchors": [
+          "t14"
+        ],
+        "members": [],
+        "license": "opaque occurrence formation"
+      },
+      {
+        "id": "n6",
+        "kind": "operator",
+        "type": "state",
+        "anchors": [
+          "t2",
+          "t5",
+          "t8",
+          "t11"
+        ],
+        "members": [],
+        "license": "partial graph/region/incidence holes"
+      },
+      {
+        "id": "n7",
+        "kind": "operator",
+        "type": "subject",
+        "anchors": [
+          "t1",
+          "t4",
+          "t7",
+          "t10"
+        ],
+        "members": [],
+        "license": "partial graph/region/incidence holes"
+      }
+    ],
+    "relations": [
+      {
+        "id": "r0",
+        "family": "binding",
+        "constitution": "n0 binds n7",
+        "ends": [
+          {
+            "role": "head",
+            "target": "n0"
+          },
+          {
+            "role": "tail",
+            "target": "n7"
+          }
+        ]
+      },
+      {
+        "id": "r1",
+        "family": "attachment",
+        "constitution": "n1 attaches to n6",
+        "ends": [
+          {
+            "role": "head",
+            "target": "n1"
+          },
+          {
+            "role": "tail",
+            "target": "n6"
+          }
+        ]
+      },
+      {
+        "id": "r2",
+        "family": "attachment",
+        "constitution": "n3 attaches to n6",
+        "ends": [
+          {
+            "role": "head",
+            "target": "n3"
+          },
+          {
+            "role": "tail",
+            "target": "n6"
+          }
+        ]
+      },
+      {
+        "id": "r3",
+        "family": "attachment",
+        "constitution": "n4 attaches to n6",
+        "ends": [
+          {
+            "role": "head",
+            "target": "n4"
+          },
+          {
+            "role": "tail",
+            "target": "n6"
+          }
+        ]
+      },
+      {
+        "id": "r4",
+        "family": "attachment",
+        "constitution": "n2 attaches to n5",
+        "ends": [
+          {
+            "role": "head",
+            "target": "n2"
+          },
+          {
+            "role": "tail",
+            "target": "n5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feedback-0",
+    "reading": "Nested Temporal-Location Interrogatives (Revised Binding)",
+    "objects": [
+      {
+        "id": "n0",
+        "kind": "operator",
+        "type": "wh-gap",
+        "anchors": [
+          "t0"
+        ],
+        "members": [],
+        "license": "wh-gap licensing"
+      },
+      {
+        "id": "n1",
+        "kind": "operator",
+        "type": "temporal",
+        "anchors": [
+          "t3"
+        ],
+        "members": [],
+        "license": "temporal operator disambiguation"
+      },
+      {
+        "id": "n2",
+        "kind": "operator",
+        "type": "temporal",
+        "anchors": [
+          "t12"
+        ],
+        "members": [],
+        "license": "temporal operator disambiguation"
+      },
+      {
+        "id": "n3",
+        "kind": "operator",
+        "type": "location",
+        "anchors": [
+          "t6"
+        ],
+        "members": [],
+        "license": "wh-gap licensing"
+      },
+      {
+        "id": "n4",
+        "kind": "operator",
+        "type": "location",
+        "anchors": [
+          "t9"
+        ],
+        "members": [],
+        "license": "wh-gap licensing"
+      },
+      {
+        "id": "n5",
+        "kind": "operator",
+        "type": "event",
+        "anchors": [
+          "t14"
+        ],
+        "members": [],
+        "license": "opaque occurrence formation"
+      },
+      {
+        "id": "n6",
+        "kind": "operator",
+        "type": "state",
+        "anchors": [
+          "t2",
+          "t5",
+          "t8",
+          "t11"
+        ],
+        "members": [],
+        "license": "partial graph/region/incidence holes"
+      },
+      {
+        "id": "n7",
+        "kind": "operator",
+        "type": "subject",
+        "anchors": [
+          "t1",
+          "t4",
+          "t7",
+          "t10"
+        ],
+        "members": [],
+        "license": "partial graph/region/incidence holes"
+      }
+    ],
+    "relations": [
+      {
+        "id": "r0",
+        "family": "binding",
+        "constitution": "n0 binds n7",
+        "ends": [
+          {
+            "role": "head",
+            "target": "n0"
+          },
+          {
+            "role": "tail",
+            "target": "n7"
+          }
+        ]
+      },
+      {
+        "id": "r1",
+        "family": "attachment",
+        "constitution": "n1 attaches to n6",
+        "ends": [
+          {
+            "role": "head",
+            "target": "n1"
+          },
+          {
+            "role": "tail",
+            "target": "n6"
+          }
+        ]
+      },
+      {
+        "id": "r2",
+        "family": "attachment",
+        "constitution": "n3 attaches to n6",
+        "ends": [
+          {
+            "role": "head",
+            "target": "n3"
+          },
+          {
+            "role": "tail",
+            "target": "n6"
+          }
+        ]
+      },
+      {
+        "id": "r3",
+        "family": "attachment",
+        "constitution": "n4 attaches to n6",
+        "ends": [
+          {
+            "role": "head",
+            "target": "n4"
+          },
+          {
+            "role": "tail",
+            "target": "n6"
+          }
+        ]
+      },
+      {
+        "id": "r4",
+        "family": "attachment",
+        "constitution": "n2 attaches to n5",
+        "ends": [
+          {
+            "role": "head",
+            "target": "n2"
+          },
+          {
+            "role": "tail",
+            "target": "n5"
+          }
+        ]
+      }
+    ]
+  }
+]

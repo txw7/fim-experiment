@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"candidates\":[{\"id\":\"alt-1\",\"reading\":\"Conditional Sufficiency via Wh-Gap Licensing\",\"objects\":[{\"id\":\"n0\",\"kind\":\"proposition\",\"type\":\"conditional\",\"anchors\":[\"t4\",\"t5\",\"t6\"],\"members\":[],\"license\":\"wh-gap licensing\"},{\"id\":\"n1\",\"kind\":\"entity\",\"type\":\"discussion\",\"anchors\":[\"t2\",\"t3\"],\"members\":[],\"license\":\"subject formation\"},{\"id\":\"n2\",\"kind\":\"entity\",\"type\":\"subject-matter\",\"anchors\":[\"t14\",\"t15\"],\"members\":[],\"license\":\"subject formation\"},{\"id\":\"n3\",\"kind\":\"operator\",\"type\":\"clarity_measure\",\"anchors\":[\"t12\"],\"members\":[],\"license\":\"arbitrary lexical constitution\"},{\"id\":\"n4\",\"kind\":\"operator\",\"type\":\"admission_limit\",\"anchors\":[\"t16\"],\"members\":[\"n2\"],\"license\":\"bounded graph search\"}],\"relations\":[{\"id\":\"r0\",\"family\":\"scope\",\"constitution\":\"conditional_clause\",\"ends\":[{\"role\":\"antecedent\",\"target\":\"n0\"},{\"role\":\"consequent\",\"target\":\"n0\"}]},{\"id\":\"r1\",\"family\":\"attachment\",\"constitution\":\"subject_predicate\",\"ends\":[{\"role\":\"subject\",\"target\":\"n1\"},{\"role\":\"predicate\",\"target\":\"n0\"}]},{\"id\":\"r2\",\"family\":\"binding\",\"constitution\":\"wh_gap\",\"ends\":[{\"role\":\"gap\",\"target\":\"n0\"},{\"role\":\"licensor\",\"target\":\"n3\"}]},{\"id\":\"r3\",\"family\":\"attachment\",\"constitution\":\"measure_limit\",\"ends\":[{\"role\":\"measure\",\"target\":\"n3\"},{\"role\":\"limit_source\",\"target\":\"n4\"}]},{\"id\":\"r4\",\"family\":\"attachment\",\"constitution\":\"entity_domain\",\"ends\":[{\"role\":\"domain\",\"target\":\"n4\"},{\"role\":\"entity\",\"target\":\"n2\"}]}]}],\"unresolved\":[\"t0\",\"t1\",\"t7\"]}"
+      }
+    }
+  ],
+  "created": 1791507334,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 383,
+    "prompt_tokens": 1316,
+    "total_tokens": 1699,
+    "prompt_tokens_details": {
+      "cached_tokens": 258
+    }
+  },
+  "id": "chatcmpl-Ns5Opi29HAG5MhwMMBcUm9xQWtP8sjht",
+  "timings": {
+    "cache_n": 258,
+    "prompt_n": 1058,
+    "prompt_ms": 1226.195,
+    "prompt_per_token_ms": 1.1589744801512287,
+    "prompt_per_second": 862.8317681934766,
+    "predicted_n": 383,
+    "predicted_ms": 26047.383,
+    "predicted_per_token_ms": 68.1868664921466,
+    "predicted_per_second": 14.665580799422344
+  }
+}

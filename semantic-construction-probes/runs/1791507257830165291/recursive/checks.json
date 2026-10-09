@@ -1,0 +1,306 @@
+{
+  "initial-0": {
+    "status": "STRUCTURALLY_REVIEWABLE",
+    "errors": [],
+    "obligations": [
+      {
+        "subject": "n0",
+        "requirement": "operator constitution",
+        "claimed": "wh-gap licensing",
+        "hypothesized_type": "wh-gap"
+      },
+      {
+        "subject": "n1",
+        "requirement": "operator constitution",
+        "claimed": "temporal operator disambiguation",
+        "hypothesized_type": "temporal"
+      },
+      {
+        "subject": "n2",
+        "requirement": "operator constitution",
+        "claimed": "temporal operator disambiguation",
+        "hypothesized_type": "temporal"
+      },
+      {
+        "subject": "n3",
+        "requirement": "operator constitution",
+        "claimed": "wh-gap licensing",
+        "hypothesized_type": "location"
+      },
+      {
+        "subject": "n4",
+        "requirement": "operator constitution",
+        "claimed": "wh-gap licensing",
+        "hypothesized_type": "location"
+      },
+      {
+        "subject": "n5",
+        "requirement": "operator constitution",
+        "claimed": "opaque occurrence formation",
+        "hypothesized_type": "event"
+      },
+      {
+        "subject": "n6",
+        "requirement": "operator constitution",
+        "claimed": "partial graph/region/incidence holes",
+        "hypothesized_type": "state"
+      },
+      {
+        "subject": "n7",
+        "requirement": "operator constitution",
+        "claimed": "partial graph/region/incidence holes",
+        "hypothesized_type": "subject"
+      },
+      {
+        "subject": "r0",
+        "requirement": "binding constitution",
+        "claimed": "n0 binds n7"
+      },
+      {
+        "subject": "r1",
+        "requirement": "attachment constitution",
+        "claimed": "n1 attaches to n6"
+      },
+      {
+        "subject": "r2",
+        "requirement": "attachment constitution",
+        "claimed": "n3 attaches to n6"
+      },
+      {
+        "subject": "r3",
+        "requirement": "attachment constitution",
+        "claimed": "n4 attaches to n6"
+      },
+      {
+        "subject": "r4",
+        "requirement": "attachment constitution",
+        "claimed": "n2 attaches to n5"
+      }
+    ],
+    "backward_goals": [
+      {
+        "parent": "r0",
+        "child": "n0",
+        "role": "head",
+        "requires": "establish typed interface and binding locality",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r0",
+        "child": "n7",
+        "role": "tail",
+        "requires": "establish typed interface and binding locality",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r1",
+        "child": "n1",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r1",
+        "child": "n6",
+        "role": "tail",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r2",
+        "child": "n3",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r2",
+        "child": "n6",
+        "role": "tail",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r3",
+        "child": "n4",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r3",
+        "child": "n6",
+        "role": "tail",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r4",
+        "child": "n2",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r4",
+        "child": "n5",
+        "role": "tail",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      }
+    ],
+    "semantic_admission": "NOT_RUN"
+  },
+  "feedback-0": {
+    "status": "STRUCTURALLY_REVIEWABLE",
+    "errors": [],
+    "obligations": [
+      {
+        "subject": "n0",
+        "requirement": "operator constitution",
+        "claimed": "wh-gap licensing",
+        "hypothesized_type": "wh-gap"
+      },
+      {
+        "subject": "n1",
+        "requirement": "operator constitution",
+        "claimed": "temporal operator disambiguation",
+        "hypothesized_type": "temporal"
+      },
+      {
+        "subject": "n2",
+        "requirement": "operator constitution",
+        "claimed": "temporal operator disambiguation",
+        "hypothesized_type": "temporal"
+      },
+      {
+        "subject": "n3",
+        "requirement": "operator constitution",
+        "claimed": "wh-gap licensing",
+        "hypothesized_type": "location"
+      },
+      {
+        "subject": "n4",
+        "requirement": "operator constitution",
+        "claimed": "wh-gap licensing",
+        "hypothesized_type": "location"
+      },
+      {
+        "subject": "n5",
+        "requirement": "operator constitution",
+        "claimed": "opaque occurrence formation",
+        "hypothesized_type": "event"
+      },
+      {
+        "subject": "n6",
+        "requirement": "operator constitution",
+        "claimed": "partial graph/region/incidence holes",
+        "hypothesized_type": "state"
+      },
+      {
+        "subject": "n7",
+        "requirement": "operator constitution",
+        "claimed": "partial graph/region/incidence holes",
+        "hypothesized_type": "subject"
+      },
+      {
+        "subject": "r0",
+        "requirement": "binding constitution",
+        "claimed": "n0 binds n7"
+      },
+      {
+        "subject": "r1",
+        "requirement": "attachment constitution",
+        "claimed": "n1 attaches to n6"
+      },
+      {
+        "subject": "r2",
+        "requirement": "attachment constitution",
+        "claimed": "n3 attaches to n6"
+      },
+      {
+        "subject": "r3",
+        "requirement": "attachment constitution",
+        "claimed": "n4 attaches to n6"
+      },
+      {
+        "subject": "r4",
+        "requirement": "attachment constitution",
+        "claimed": "n2 attaches to n5"
+      }
+    ],
+    "backward_goals": [
+      {
+        "parent": "r0",
+        "child": "n0",
+        "role": "head",
+        "requires": "establish typed interface and binding locality",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r0",
+        "child": "n7",
+        "role": "tail",
+        "requires": "establish typed interface and binding locality",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r1",
+        "child": "n1",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r1",
+        "child": "n6",
+        "role": "tail",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r2",
+        "child": "n3",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r2",
+        "child": "n6",
+        "role": "tail",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r3",
+        "child": "n4",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r3",
+        "child": "n6",
+        "role": "tail",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r4",
+        "child": "n2",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r4",
+        "child": "n5",
+        "role": "tail",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      }
+    ],
+    "semantic_admission": "NOT_RUN"
+  }
+}

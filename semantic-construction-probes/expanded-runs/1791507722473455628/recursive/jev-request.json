@@ -1,0 +1,900 @@
+{
+  "state": {
+    "source": "what she was when he was where they were where she was when it happened",
+    "candidates": [
+      {
+        "id": "initial-17",
+        "reading": "temporal-location-state-identity",
+        "objects": [
+          {
+            "id": "n0",
+            "kind": "entity",
+            "type": "she",
+            "anchors": [
+              "t1",
+              "t10"
+            ],
+            "members": [
+              "n1",
+              "n2"
+            ],
+            "license": "refers to an unspecified female subject in two distinct temporal contexts"
+          },
+          {
+            "id": "n1",
+            "kind": "entity",
+            "type": "he",
+            "anchors": [
+              "t4"
+            ],
+            "members": [
+              "n3"
+            ],
+            "license": "refers to an unspecified male subject in a specific temporal context"
+          },
+          {
+            "id": "n2",
+            "kind": "entity",
+            "type": "they",
+            "anchors": [
+              "t7"
+            ],
+            "members": [
+              "n4",
+              "n5"
+            ],
+            "license": "refers to a plural group in a specific temporal context"
+          },
+          {
+            "id": "n3",
+            "kind": "entity",
+            "type": "it",
+            "anchors": [
+              "t13"
+            ],
+            "members": [],
+            "license": "refers to an unspecified event or occurrence"
+          },
+          {
+            "id": "n4",
+            "kind": "entity",
+            "type": "she",
+            "anchors": [
+              "t10"
+            ],
+            "members": [],
+            "license": "refers to the same female subject as n0 but in a state of being at a specific time"
+          },
+          {
+            "id": "n5",
+            "kind": "entity",
+            "type": "she",
+            "anchors": [
+              "t10"
+            ],
+            "members": [],
+            "license": "refers to the same female subject as n0 but in a state of being at a specific time"
+          },
+          {
+            "id": "n6",
+            "kind": "entity",
+            "type": "state-of-being",
+            "anchors": [
+              "t2",
+              "t11"
+            ],
+            "members": [],
+            "license": "represents the condition or identity of the subject 'she' at a specific moment"
+          },
+          {
+            "id": "n7",
+            "kind": "entity",
+            "type": "location",
+            "anchors": [
+              "t6",
+              "t9"
+            ],
+            "members": [],
+            "license": "represents the spatial setting of the male subject 'he' and the female subject 'she' at different or"
+          }
+        ],
+        "relations": [
+          {
+            "id": "r0",
+            "family": "attachment",
+            "constitution": "temporal-clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n0"
+              },
+              {
+                "role": "mod",
+                "target": "n6"
+              }
+            ]
+          },
+          {
+            "id": "r1",
+            "family": "attachment",
+            "constitution": "temporal-clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n1"
+              },
+              {
+                "role": "mod",
+                "target": "n7"
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "family": "attachment",
+            "constitution": "temporal-clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n2"
+              },
+              {
+                "role": "mod",
+                "target": "n7"
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "family": "attachment",
+            "constitution": "temporal-clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n4"
+              },
+              {
+                "role": "mod",
+                "target": "n7"
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "family": "attachment",
+            "constitution": "temporal-clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n0"
+              },
+              {
+                "role": "mod",
+                "target": "n7"
+              }
+            ]
+          },
+          {
+            "id": "r5",
+            "family": "attachment",
+            "constitution": "event-occurrence",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n3"
+              },
+              {
+                "role": "mod",
+                "target": "n7"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "feedback-17",
+        "reading": "nested-temporal-location-state",
+        "objects": [
+          {
+            "id": "n0",
+            "kind": "entity",
+            "type": "she",
+            "anchors": [
+              "t1"
+            ],
+            "members": [],
+            "license": "refers to the female subject in the initial clause"
+          },
+          {
+            "id": "n1",
+            "kind": "entity",
+            "type": "he",
+            "anchors": [
+              "t4"
+            ],
+            "members": [],
+            "license": "refers to the male subject in the first embedded clause"
+          },
+          {
+            "id": "n2",
+            "kind": "entity",
+            "type": "they",
+            "anchors": [
+              "t7"
+            ],
+            "members": [],
+            "license": "refers to the plural group in the second embedded clause"
+          },
+          {
+            "id": "n3",
+            "kind": "entity",
+            "type": "she",
+            "anchors": [
+              "t10"
+            ],
+            "members": [],
+            "license": "refers to the female subject in the final clause"
+          },
+          {
+            "id": "n4",
+            "kind": "entity",
+            "type": "it",
+            "anchors": [
+              "t13"
+            ],
+            "members": [],
+            "license": "refers to the event that happened"
+          },
+          {
+            "id": "n5",
+            "kind": "entity",
+            "type": "state-of-being",
+            "anchors": [
+              "t2"
+            ],
+            "members": [],
+            "license": "represents the state of n0 at the first temporal point"
+          },
+          {
+            "id": "n6",
+            "kind": "entity",
+            "type": "location",
+            "anchors": [
+              "t6"
+            ],
+            "members": [],
+            "license": "represents the location of n1 at the first temporal point"
+          },
+          {
+            "id": "n7",
+            "kind": "entity",
+            "type": "location",
+            "anchors": [
+              "t9"
+            ],
+            "members": [],
+            "license": "represents the location of n3 at the final temporal point"
+          },
+          {
+            "id": "n8",
+            "kind": "entity",
+            "type": "location",
+            "anchors": [
+              "t8"
+            ],
+            "members": [],
+            "license": "represents the location of n2 at the second temporal point"
+          },
+          {
+            "id": "n9",
+            "kind": "entity",
+            "type": "event",
+            "anchors": [
+              "t14"
+            ],
+            "members": [],
+            "license": "represents the occurrence of the event n4"
+          }
+        ],
+        "relations": [
+          {
+            "id": "r0",
+            "family": "attachment",
+            "constitution": "temporal-clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n0"
+              },
+              {
+                "role": "mod",
+                "target": "n5"
+              }
+            ]
+          },
+          {
+            "id": "r1",
+            "family": "attachment",
+            "constitution": "temporal-clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n1"
+              },
+              {
+                "role": "mod",
+                "target": "n6"
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "family": "attachment",
+            "constitution": "temporal-clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n2"
+              },
+              {
+                "role": "mod",
+                "target": "n8"
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "family": "attachment",
+            "constitution": "temporal-clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n3"
+              },
+              {
+                "role": "mod",
+                "target": "n7"
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "family": "attachment",
+            "constitution": "event-occurrence",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n4"
+              },
+              {
+                "role": "mod",
+                "target": "n9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "initial-29",
+        "reading": "temporal_and_spatial_co-occurrence_chain",
+        "objects": [
+          {
+            "id": "n0",
+            "kind": "entity",
+            "type": "person",
+            "anchors": [
+              "t1"
+            ],
+            "members": [],
+            "license": "subject of first clause"
+          },
+          {
+            "id": "n1",
+            "kind": "entity",
+            "type": "person",
+            "anchors": [
+              "t4"
+            ],
+            "members": [],
+            "license": "subject of second clause"
+          },
+          {
+            "id": "n2",
+            "kind": "entity",
+            "type": "group",
+            "anchors": [
+              "t7"
+            ],
+            "members": [
+              "n0",
+              "n1"
+            ],
+            "license": "subject of third clause"
+          },
+          {
+            "id": "n3",
+            "kind": "entity",
+            "type": "person",
+            "anchors": [
+              "t10"
+            ],
+            "members": [
+              "n0"
+            ],
+            "license": "subject of fourth clause"
+          },
+          {
+            "id": "n4",
+            "kind": "entity",
+            "type": "event",
+            "anchors": [
+              "t13",
+              "t14"
+            ],
+            "members": [],
+            "license": "subject of final clause"
+          },
+          {
+            "id": "n5",
+            "kind": "entity",
+            "type": "state",
+            "anchors": [
+              "t2"
+            ],
+            "members": [],
+            "license": "predicate of first clause"
+          },
+          {
+            "id": "n6",
+            "kind": "entity",
+            "type": "state",
+            "anchors": [
+              "t5"
+            ],
+            "members": [],
+            "license": "predicate of second clause"
+          },
+          {
+            "id": "n7",
+            "kind": "entity",
+            "type": "state",
+            "anchors": [
+              "t8"
+            ],
+            "members": [],
+            "license": "predicate of third clause"
+          },
+          {
+            "id": "n8",
+            "kind": "entity",
+            "type": "state",
+            "anchors": [
+              "t11"
+            ],
+            "members": [],
+            "license": "predicate of fourth clause"
+          },
+          {
+            "id": "n9",
+            "kind": "entity",
+            "type": "location",
+            "anchors": [
+              "t6"
+            ],
+            "members": [],
+            "license": "spatial complement of second clause"
+          },
+          {
+            "id": "n10",
+            "kind": "entity",
+            "type": "location",
+            "anchors": [
+              "t9"
+            ],
+            "members": [],
+            "license": "spatial complement of fourth clause"
+          },
+          {
+            "id": "n11",
+            "kind": "entity",
+            "type": "location",
+            "anchors": [
+              "t12"
+            ],
+            "members": [],
+            "license": "temporal complement of final clause"
+          }
+        ],
+        "relations": [
+          {
+            "id": "r0",
+            "family": "argument",
+            "constitution": "subject",
+            "ends": [
+              {
+                "role": "agent",
+                "target": "n0"
+              },
+              {
+                "role": "patient",
+                "target": "n5"
+              }
+            ]
+          },
+          {
+            "id": "r1",
+            "family": "argument",
+            "constitution": "subject",
+            "ends": [
+              {
+                "role": "agent",
+                "target": "n1"
+              },
+              {
+                "role": "patient",
+                "target": "n6"
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "family": "argument",
+            "constitution": "subject",
+            "ends": [
+              {
+                "role": "agent",
+                "target": "n2"
+              },
+              {
+                "role": "patient",
+                "target": "n7"
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "family": "argument",
+            "constitution": "subject",
+            "ends": [
+              {
+                "role": "agent",
+                "target": "n3"
+              },
+              {
+                "role": "patient",
+                "target": "n8"
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "family": "argument",
+            "constitution": "subject",
+            "ends": [
+              {
+                "role": "agent",
+                "target": "n4"
+              },
+              {
+                "role": "patient",
+                "target": "n8"
+              }
+            ]
+          },
+          {
+            "id": "r5",
+            "family": "argument",
+            "constitution": "complement",
+            "ends": [
+              {
+                "role": "location",
+                "target": "n9"
+              },
+              {
+                "role": "temporal",
+                "target": "r1"
+              }
+            ]
+          },
+          {
+            "id": "r6",
+            "family": "argument",
+            "constitution": "complement",
+            "ends": [
+              {
+                "role": "location",
+                "target": "n10"
+              },
+              {
+                "role": "temporal",
+                "target": "r3"
+              }
+            ]
+          },
+          {
+            "id": "r7",
+            "family": "argument",
+            "constitution": "complement",
+            "ends": [
+              {
+                "role": "temporal",
+                "target": "n11"
+              },
+              {
+                "role": "event",
+                "target": "r4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "feedback-29",
+        "reading": "nested_temporal_spatial_clauses",
+        "objects": [
+          {
+            "id": "n0",
+            "kind": "entity",
+            "type": "person",
+            "anchors": [
+              "t1"
+            ],
+            "members": [],
+            "license": "first_subject"
+          },
+          {
+            "id": "n1",
+            "kind": "entity",
+            "type": "person",
+            "anchors": [
+              "t4"
+            ],
+            "members": [],
+            "license": "second_subject"
+          },
+          {
+            "id": "n2",
+            "kind": "entity",
+            "type": "group",
+            "anchors": [
+              "t7"
+            ],
+            "members": [
+              "n0",
+              "n1"
+            ],
+            "license": "third_subject"
+          },
+          {
+            "id": "n3",
+            "kind": "entity",
+            "type": "person",
+            "anchors": [
+              "t10"
+            ],
+            "members": [
+              "n0"
+            ],
+            "license": "fourth_subject"
+          },
+          {
+            "id": "n4",
+            "kind": "entity",
+            "type": "event",
+            "anchors": [
+              "t13",
+              "t14"
+            ],
+            "members": [],
+            "license": "final_event_subject"
+          },
+          {
+            "id": "n5",
+            "kind": "entity",
+            "type": "state",
+            "anchors": [
+              "t2"
+            ],
+            "members": [],
+            "license": "first_state"
+          },
+          {
+            "id": "n6",
+            "kind": "entity",
+            "type": "state",
+            "anchors": [
+              "t5"
+            ],
+            "members": [],
+            "license": "second_state"
+          },
+          {
+            "id": "n7",
+            "kind": "entity",
+            "type": "state",
+            "anchors": [
+              "t8"
+            ],
+            "members": [],
+            "license": "third_state"
+          },
+          {
+            "id": "n8",
+            "kind": "entity",
+            "type": "state",
+            "anchors": [
+              "t11"
+            ],
+            "members": [],
+            "license": "fourth_state"
+          },
+          {
+            "id": "n9",
+            "kind": "entity",
+            "type": "location",
+            "anchors": [
+              "t6"
+            ],
+            "members": [],
+            "license": "second_location"
+          },
+          {
+            "id": "n10",
+            "kind": "entity",
+            "type": "location",
+            "anchors": [
+              "t9"
+            ],
+            "members": [],
+            "license": "fourth_location"
+          },
+          {
+            "id": "n11",
+            "kind": "entity",
+            "type": "location",
+            "anchors": [
+              "t12"
+            ],
+            "members": [],
+            "license": "final_temporal_marker"
+          }
+        ],
+        "relations": [
+          {
+            "id": "r0",
+            "family": "argument",
+            "constitution": "subject",
+            "ends": [
+              {
+                "role": "agent",
+                "target": "n0"
+              },
+              {
+                "role": "patient",
+                "target": "n5"
+              }
+            ]
+          },
+          {
+            "id": "r1",
+            "family": "argument",
+            "constitution": "subject",
+            "ends": [
+              {
+                "role": "agent",
+                "target": "n1"
+              },
+              {
+                "role": "patient",
+                "target": "n6"
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "family": "argument",
+            "constitution": "subject",
+            "ends": [
+              {
+                "role": "agent",
+                "target": "n2"
+              },
+              {
+                "role": "patient",
+                "target": "n7"
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "family": "argument",
+            "constitution": "subject",
+            "ends": [
+              {
+                "role": "agent",
+                "target": "n3"
+              },
+              {
+                "role": "patient",
+                "target": "n8"
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "family": "argument",
+            "constitution": "subject",
+            "ends": [
+              {
+                "role": "agent",
+                "target": "n4"
+              },
+              {
+                "role": "patient",
+                "target": "n8"
+              }
+            ]
+          },
+          {
+            "id": "r5",
+            "family": "argument",
+            "constitution": "complement",
+            "ends": [
+              {
+                "role": "location",
+                "target": "n9"
+              },
+              {
+                "role": "temporal",
+                "target": "r1"
+              }
+            ]
+          },
+          {
+            "id": "r6",
+            "family": "argument",
+            "constitution": "complement",
+            "ends": [
+              {
+                "role": "location",
+                "target": "n10"
+              },
+              {
+                "role": "temporal",
+                "target": "r3"
+              }
+            ]
+          },
+          {
+            "id": "r7",
+            "family": "argument",
+            "constitution": "complement",
+            "ends": [
+              {
+                "role": "temporal",
+                "target": "n11"
+              },
+              {
+                "role": "event",
+                "target": "r4"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "fit": {
+      "type": "choice",
+      "instructions": "Compare exact graph hypotheses against unchanged source. Select best source support, or unresolved. Scores do not prove meaning.",
+      "criteria": {
+        "initial-17": "temporal-location-state-identity",
+        "feedback-17": "nested-temporal-location-state",
+        "initial-29": "temporal_and_spatial_co-occurrence_chain",
+        "feedback-29": "nested_temporal_spatial_clauses",
+        "unresolved": "No justified selection."
+      }
+    }
+  }
+}

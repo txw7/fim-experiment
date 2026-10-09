@@ -1,0 +1,32 @@
+[
+  {
+    "id": "n0",
+    "kind": "occurrence",
+    "type": "lexical-occurrence",
+    "anchors": [
+      "t0"
+    ],
+    "members": [],
+    "license": "literal source occurrence"
+  },
+  {
+    "id": "n1",
+    "kind": "occurrence",
+    "type": "lexical-occurrence",
+    "anchors": [
+      "t1"
+    ],
+    "members": [],
+    "license": "literal source occurrence"
+  },
+  {
+    "id": "n2",
+    "kind": "occurrence",
+    "type": "lexical-occurrence",
+    "anchors": [
+      "t2"
+    ],
+    "members": [],
+    "license": "literal source occurrence"
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "text": "3. Instead, he must mean that one can then safely call a person blessed.\nBecause:\n1. He [that person] is now beyond evils and misfortunes.",
+  "origin": {
+    "path": "/home/user0/.local/state/turn-transport/aristotle-logic-pilot-v1/ethics-source.json",
+    "sha256": "e15f8715215d98fe06bea29b9f4e9737fe1ddf9fdd15cb09ba8d756a54da5f01",
+    "units": [
+      {
+        "id": "u17",
+        "text": "3. Instead, he must mean that one can then safely call a person blessed.",
+        "source_ref": {
+          "chapter_ref": "archelogos:toc-eni/eni10.xml",
+          "document_ref": "archelogos:toc-eni/eni10.xml",
+          "section_kind_ascii": "prop",
+          "section_parent_ref": "archelogos:toc-eni/eni10.xml:prop:1",
+          "section_ref": "archelogos:toc-eni/eni10.xml:prop:1",
+          "source_artifact_ref": "sha256:2eb6e7ec8f3ba27e58b173dd44fc54f77ffa3504df3807b76d4121dcf5d57be7",
+          "source_span": {
+            "end_byte": 3177,
+            "start_byte": 2695
+          },
+          "source_system": "archelogos_xml",
+          "unit_ref": "archelogos:toc-eni/eni10.xml:prop:6",
+          "work_ref": "archelogos:work:Nicomachean Ethics I",
+          "work_title": "Nicomachean Ethics I"
+        },
+        "parent_unit_ref": "archelogos:toc-eni/eni10.xml:prop:1"
+      },
+      {
+        "id": "u18",
+        "text": "Because:",
+        "source_ref": {
+          "chapter_ref": "archelogos:toc-eni/eni10.xml",
+          "document_ref": "archelogos:toc-eni/eni10.xml",
+          "section_kind_ascii": "prop",
+          "section_parent_ref": "archelogos:toc-eni/eni10.xml:prop:6",
+          "section_ref": "archelogos:toc-eni/eni10.xml:prop:6",
+          "source_artifact_ref": "sha256:2eb6e7ec8f3ba27e58b173dd44fc54f77ffa3504df3807b76d4121dcf5d57be7",
+          "source_span": {
+            "end_byte": 3024,
+            "start_byte": 2935
+          },
+          "source_system": "archelogos_xml",
+          "unit_ref": "archelogos:toc-eni/eni10.xml:prop:7",
+          "work_ref": "archelogos:work:Nicomachean Ethics I",
+          "work_title": "Nicomachean Ethics I"
+        },
+        "parent_unit_ref": "archelogos:toc-eni/eni10.xml:prop:6"
+      },
+      {
+        "id": "u19",
+        "text": "1. He [that person] is now beyond evils and misfortunes.",
+        "source_ref": {
+          "chapter_ref": "archelogos:toc-eni/eni10.xml",
+          "document_ref": "archelogos:toc-eni/eni10.xml",
+          "section_kind_ascii": "prop",
+          "section_parent_ref": "archelogos:toc-eni/eni10.xml:prop:6",
+          "section_ref": "archelogos:toc-eni/eni10.xml:prop:6",
+          "source_artifact_ref": "sha256:2eb6e7ec8f3ba27e58b173dd44fc54f77ffa3504df3807b76d4121dcf5d57be7",
+          "source_span": {
+            "end_byte": 3166,
+            "start_byte": 3029
+          },
+          "source_system": "archelogos_xml",
+          "unit_ref": "archelogos:toc-eni/eni10.xml:prop:8",
+          "work_ref": "archelogos:work:Nicomachean Ethics I",
+          "work_title": "Nicomachean Ethics I"
+        },
+        "parent_unit_ref": "archelogos:toc-eni/eni10.xml:prop:6"
+      }
+    ],
+    "joining": "newlines between unchanged extracted units; XML tree references retained"
+  },
+  "sha256": "3ca64c4ef9cfcf91cf19e68105dde6ff10713f0a3d8259ebf93a3b3cac211c92"
+}

@@ -1,0 +1,106 @@
+{
+  "initial-0": {
+    "status": "REJECTED",
+    "errors": [
+      "non-network interior n4"
+    ],
+    "obligations": [
+      {
+        "subject": "n3",
+        "requirement": "operator constitution",
+        "claimed": "arbitrary lexical constitution",
+        "hypothesized_type": "clarity_measure"
+      },
+      {
+        "subject": "n4",
+        "requirement": "operator constitution",
+        "claimed": "bounded graph search",
+        "hypothesized_type": "admission_limit"
+      },
+      {
+        "subject": "r0",
+        "requirement": "scope constitution",
+        "claimed": "conditional_clause"
+      },
+      {
+        "subject": "r1",
+        "requirement": "attachment constitution",
+        "claimed": "subject_predicate"
+      },
+      {
+        "subject": "r2",
+        "requirement": "binding constitution",
+        "claimed": "wh_gap"
+      },
+      {
+        "subject": "r3",
+        "requirement": "attachment constitution",
+        "claimed": "measure_limit"
+      },
+      {
+        "subject": "r4",
+        "requirement": "attachment constitution",
+        "claimed": "entity_domain"
+      }
+    ],
+    "backward_goals": [
+      {
+        "parent": "r1",
+        "child": "n1",
+        "role": "subject",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r1",
+        "child": "n0",
+        "role": "predicate",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r2",
+        "child": "n0",
+        "role": "gap",
+        "requires": "establish typed interface and binding locality",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r2",
+        "child": "n3",
+        "role": "licensor",
+        "requires": "establish typed interface and binding locality",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r3",
+        "child": "n3",
+        "role": "measure",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r3",
+        "child": "n4",
+        "role": "limit_source",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r4",
+        "child": "n4",
+        "role": "domain",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r4",
+        "child": "n2",
+        "role": "entity",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      }
+    ],
+    "semantic_admission": "NOT_RUN"
+  }
+}

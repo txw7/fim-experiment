@@ -1,0 +1,200 @@
+[
+  {
+    "id": "t0",
+    "text": "3",
+    "begin": 0,
+    "end": 1
+  },
+  {
+    "id": "t1",
+    "text": ".",
+    "begin": 1,
+    "end": 2
+  },
+  {
+    "id": "t2",
+    "text": "Instead",
+    "begin": 3,
+    "end": 10
+  },
+  {
+    "id": "t3",
+    "text": ",",
+    "begin": 10,
+    "end": 11
+  },
+  {
+    "id": "t4",
+    "text": "he",
+    "begin": 12,
+    "end": 14
+  },
+  {
+    "id": "t5",
+    "text": "must",
+    "begin": 15,
+    "end": 19
+  },
+  {
+    "id": "t6",
+    "text": "mean",
+    "begin": 20,
+    "end": 24
+  },
+  {
+    "id": "t7",
+    "text": "that",
+    "begin": 25,
+    "end": 29
+  },
+  {
+    "id": "t8",
+    "text": "one",
+    "begin": 30,
+    "end": 33
+  },
+  {
+    "id": "t9",
+    "text": "can",
+    "begin": 34,
+    "end": 37
+  },
+  {
+    "id": "t10",
+    "text": "then",
+    "begin": 38,
+    "end": 42
+  },
+  {
+    "id": "t11",
+    "text": "safely",
+    "begin": 43,
+    "end": 49
+  },
+  {
+    "id": "t12",
+    "text": "call",
+    "begin": 50,
+    "end": 54
+  },
+  {
+    "id": "t13",
+    "text": "a",
+    "begin": 55,
+    "end": 56
+  },
+  {
+    "id": "t14",
+    "text": "person",
+    "begin": 57,
+    "end": 63
+  },
+  {
+    "id": "t15",
+    "text": "blessed",
+    "begin": 64,
+    "end": 71
+  },
+  {
+    "id": "t16",
+    "text": ".",
+    "begin": 71,
+    "end": 72
+  },
+  {
+    "id": "t17",
+    "text": "Because",
+    "begin": 73,
+    "end": 80
+  },
+  {
+    "id": "t18",
+    "text": ":",
+    "begin": 80,
+    "end": 81
+  },
+  {
+    "id": "t19",
+    "text": "1",
+    "begin": 82,
+    "end": 83
+  },
+  {
+    "id": "t20",
+    "text": ".",
+    "begin": 83,
+    "end": 84
+  },
+  {
+    "id": "t21",
+    "text": "He",
+    "begin": 85,
+    "end": 87
+  },
+  {
+    "id": "t22",
+    "text": "[",
+    "begin": 88,
+    "end": 89
+  },
+  {
+    "id": "t23",
+    "text": "that",
+    "begin": 89,
+    "end": 93
+  },
+  {
+    "id": "t24",
+    "text": "person",
+    "begin": 94,
+    "end": 100
+  },
+  {
+    "id": "t25",
+    "text": "]",
+    "begin": 100,
+    "end": 101
+  },
+  {
+    "id": "t26",
+    "text": "is",
+    "begin": 102,
+    "end": 104
+  },
+  {
+    "id": "t27",
+    "text": "now",
+    "begin": 105,
+    "end": 108
+  },
+  {
+    "id": "t28",
+    "text": "beyond",
+    "begin": 109,
+    "end": 115
+  },
+  {
+    "id": "t29",
+    "text": "evils",
+    "begin": 116,
+    "end": 121
+  },
+  {
+    "id": "t30",
+    "text": "and",
+    "begin": 122,
+    "end": 125
+  },
+  {
+    "id": "t31",
+    "text": "misfortunes",
+    "begin": 126,
+    "end": 137
+  },
+  {
+    "id": "t32",
+    "text": ".",
+    "begin": 137,
+    "end": 138
+  }
+]

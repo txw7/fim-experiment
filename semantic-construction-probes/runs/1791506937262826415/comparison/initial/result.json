@@ -1,0 +1,6 @@
+{
+  "status": "FAILED",
+  "error": "token budget exhausted; partial response retained",
+  "response_error": null,
+  "latency_seconds": 109.064
+}

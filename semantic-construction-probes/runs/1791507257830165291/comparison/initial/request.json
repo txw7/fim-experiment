@@ -1,0 +1,179 @@
+{
+  "model": "local",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Construct competing semantic graph hypotheses from unchanged source occurrences. No operator inventory or topology is supplied. Propose ONE compact candidate, at most 8 objects and 5 relations. It can cover part of the source; retain other extents as unresolved. Give objects IDs n0,n1,... and relations r0,r1,...; source token IDs t0,t1,... are anchors, not graph endpoints. All relation endpoints and members must name graph objects/relations actually declared in this response. ONLY network objects can have members; others MUST have empty members. Never put an object inside itself. Keep license names short. Choose operator names, types, grammatical positions, roles, binding, scope and network boundaries. Objects have source token IDs; missing grammatical positions may have no anchors ONLY with an explicit named grammatical construction license. No invented lexical referents. Networks retain member identities and may be operands of higher relations. Relation endpoints may reference relations. Different readings should differ in structure, not just labels. Separate argument, binding, attachment and scope. Every constitution/license is a CLAIM requiring native checking, not proof. On feedback, address narrower backward obligations and preserve viable alternatives; do not silently resolve source ambiguity. Do not summarize. Token anchors are IDs, never regenerate offsets."
+    },
+    {
+      "role": "user",
+      "content": "{\"source\":\"1. Our discussion will be adequate if it has as much clarity as the subject-matter admits.\",\"occurrences\":[{\"id\":\"t0\",\"text\":\"1\",\"begin\":0,\"end\":1},{\"id\":\"t1\",\"text\":\".\",\"begin\":1,\"end\":2},{\"id\":\"t2\",\"text\":\"Our\",\"begin\":3,\"end\":6},{\"id\":\"t3\",\"text\":\"discussion\",\"begin\":7,\"end\":17},{\"id\":\"t4\",\"text\":\"will\",\"begin\":18,\"end\":22},{\"id\":\"t5\",\"text\":\"be\",\"begin\":23,\"end\":25},{\"id\":\"t6\",\"text\":\"adequate\",\"begin\":26,\"end\":34},{\"id\":\"t7\",\"text\":\"if\",\"begin\":35,\"end\":37},{\"id\":\"t8\",\"text\":\"it\",\"begin\":38,\"end\":40},{\"id\":\"t9\",\"text\":\"has\",\"begin\":41,\"end\":44},{\"id\":\"t10\",\"text\":\"as\",\"begin\":45,\"end\":47},{\"id\":\"t11\",\"text\":\"much\",\"begin\":48,\"end\":52},{\"id\":\"t12\",\"text\":\"clarity\",\"begin\":53,\"end\":60},{\"id\":\"t13\",\"text\":\"as\",\"begin\":61,\"end\":63},{\"id\":\"t14\",\"text\":\"the\",\"begin\":64,\"end\":67},{\"id\":\"t15\",\"text\":\"subject-matter\",\"begin\":68,\"end\":82},{\"id\":\"t16\",\"text\":\"admits\",\"begin\":83,\"end\":89},{\"id\":\"t17\",\"text\":\".\",\"begin\":89,\"end\":90}],\"available_native_mechanisms\":[\"opaque occurrence formation\",\"partial graph/region/incidence holes\",\"bounded graph search\",\"region contraction/expansion\"],\"missing_native_meanings\":[\"arbitrary lexical/grammatical operator constitution admission\",\"wh gap licensing\",\"temporal operator disambiguation\",\"natural-language inference proof\"],\"feedback\":null,\"limits\":{\"max_total_alternatives\":4,\"max_expansions\":100}}"
+    }
+  ],
+  "temperature": 0,
+  "max_tokens": 1300,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "construction_programs",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "candidates": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "maxLength": 100
+                },
+                "reading": {
+                  "type": "string",
+                  "maxLength": 100
+                },
+                "objects": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "pattern": "^n[0-9]+$"
+                      },
+                      "kind": {
+                        "type": "string",
+                        "enum": [
+                          "entity",
+                          "operator",
+                          "proposition",
+                          "network",
+                          "position",
+                          "binder"
+                        ]
+                      },
+                      "type": {
+                        "type": "string",
+                        "maxLength": 100
+                      },
+                      "anchors": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "maxLength": 100
+                        }
+                      },
+                      "members": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "maxLength": 100
+                        }
+                      },
+                      "license": {
+                        "type": "string",
+                        "maxLength": 100
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "kind",
+                      "type",
+                      "anchors",
+                      "members",
+                      "license"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "maxItems": 8
+                },
+                "relations": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "pattern": "^r[0-9]+$"
+                      },
+                      "family": {
+                        "type": "string",
+                        "enum": [
+                          "argument",
+                          "binding",
+                          "scope",
+                          "attachment",
+                          "inference",
+                          "enclosure",
+                          "lift"
+                        ]
+                      },
+                      "constitution": {
+                        "type": "string",
+                        "maxLength": 100
+                      },
+                      "ends": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "role": {
+                              "type": "string",
+                              "maxLength": 100
+                            },
+                            "target": {
+                              "type": "string",
+                              "maxLength": 100
+                            }
+                          },
+                          "required": [
+                            "role",
+                            "target"
+                          ],
+                          "additionalProperties": false
+                        }
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "family",
+                      "constitution",
+                      "ends"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "maxItems": 5
+                }
+              },
+              "required": [
+                "id",
+                "reading",
+                "objects",
+                "relations"
+              ],
+              "additionalProperties": false
+            },
+            "maxItems": 1
+          },
+          "unresolved": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 100
+            },
+            "maxItems": 3
+          }
+        },
+        "required": [
+          "candidates",
+          "unresolved"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

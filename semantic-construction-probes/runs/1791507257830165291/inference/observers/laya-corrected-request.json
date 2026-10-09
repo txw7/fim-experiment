@@ -1,0 +1,208 @@
+{
+  "model": "english",
+  "state": {
+    "source": "3. Instead, he must mean that one can then safely call a person blessed.\nBecause:\n1. He [that person] is now beyond evils and misfortunes.",
+    "goal": {
+      "parent": "r0",
+      "child": "n0",
+      "role": "subject",
+      "requires": "establish typed interface and binding locality",
+      "status": "OPEN"
+    },
+    "candidate_readings": [
+      "The pronoun 'he' in the main clause refers to the same entity as the bracketed 'that person' in the "
+    ],
+    "instruction": "Does source establish this exact dependency, conflict with it, or leave it unresolved?",
+    "candidate": {
+      "id": "initial-0",
+      "reading": "The pronoun 'he' in the main clause refers to the same entity as the bracketed 'that person' in the ",
+      "objects": [
+        {
+          "id": "n0",
+          "kind": "operator",
+          "type": "assertion",
+          "anchors": [
+            "t4",
+            "t5",
+            "t6"
+          ],
+          "members": [],
+          "license": "subject-predicate binding"
+        },
+        {
+          "id": "n1",
+          "kind": "operator",
+          "type": "proposition",
+          "anchors": [
+            "t7",
+            "t8",
+            "t9",
+            "t10",
+            "t11",
+            "t12",
+            "t13",
+            "t14",
+            "t15"
+          ],
+          "members": [
+            "n2"
+          ],
+          "license": "modal permission"
+        },
+        {
+          "id": "n2",
+          "kind": "entity",
+          "type": "agent",
+          "anchors": [
+            "t8"
+          ],
+          "members": [],
+          "license": "generic agent"
+        },
+        {
+          "id": "n3",
+          "kind": "entity",
+          "type": "patient",
+          "anchors": [
+            "t14"
+          ],
+          "members": [],
+          "license": "generic patient"
+        },
+        {
+          "id": "n4",
+          "kind": "entity",
+          "type": "state",
+          "anchors": [
+            "t15"
+          ],
+          "members": [],
+          "license": "predicative adjective"
+        },
+        {
+          "id": "n5",
+          "kind": "operator",
+          "type": "justification",
+          "anchors": [
+            "t17",
+            "t18",
+            "t19"
+          ],
+          "members": [
+            "n6"
+          ],
+          "license": "causal link"
+        },
+        {
+          "id": "n6",
+          "kind": "entity",
+          "type": "subject",
+          "anchors": [
+            "t21",
+            "t24"
+          ],
+          "members": [],
+          "license": "anaphoric reference"
+        },
+        {
+          "id": "n7",
+          "kind": "entity",
+          "type": "location",
+          "anchors": [
+            "t28"
+          ],
+          "members": [],
+          "license": "prepositional complement"
+        }
+      ],
+      "relations": [
+        {
+          "id": "r0",
+          "family": "binding",
+          "constitution": "n0 binds n1",
+          "ends": [
+            {
+              "role": "subject",
+              "target": "n0"
+            },
+            {
+              "role": "content",
+              "target": "n1"
+            }
+          ]
+        },
+        {
+          "id": "r1",
+          "family": "argument",
+          "constitution": "n1 applies to n2 and n3",
+          "ends": [
+            {
+              "role": "agent",
+              "target": "n2"
+            },
+            {
+              "role": "patient",
+              "target": "n3"
+            }
+          ]
+        },
+        {
+          "id": "r2",
+          "family": "attachment",
+          "constitution": "n3 possesses n4",
+          "ends": [
+            {
+              "role": "holder",
+              "target": "n3"
+            },
+            {
+              "role": "state",
+              "target": "n4"
+            }
+          ]
+        },
+        {
+          "id": "r3",
+          "family": "scope",
+          "constitution": "n5 supports n1",
+          "ends": [
+            {
+              "role": "basis",
+              "target": "n5"
+            },
+            {
+              "role": "conclusion",
+              "target": "n1"
+            }
+          ]
+        },
+        {
+          "id": "r4",
+          "family": "binding",
+          "constitution": "n6 is identified with n0",
+          "ends": [
+            {
+              "role": "referent",
+              "target": "n6"
+            },
+            {
+              "role": "source",
+              "target": "n0"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "questions": {
+    "dependency": {
+      "type": "choice",
+      "criteria": {
+        "supported": "Exact proposed dependency is source-supported.",
+        "unsupported": "It conflicts with source.",
+        "unresolved": "Insufficient binding, role or construction evidence."
+      },
+      "instructions": "Does the unchanged source license the exact candidate dependency in the goal? Assess the referenced graph roles, not truth. Choose unresolved if construction evidence is missing."
+    }
+  }
+}

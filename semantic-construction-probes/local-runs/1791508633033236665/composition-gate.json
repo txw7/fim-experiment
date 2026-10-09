@@ -1,0 +1,8 @@
+{
+  "eligible_structural_proposals": [
+    "when",
+    "where"
+  ],
+  "semantic_admission": "NOT_RUN",
+  "licensed_native_components": []
+}

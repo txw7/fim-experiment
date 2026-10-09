@@ -1,0 +1,193 @@
+{
+  "state": {
+    "source": "where they were",
+    "alternatives": {
+      "initial": {
+        "id": "c0",
+        "reading": "where they were",
+        "objects": [
+          {
+            "id": "n0",
+            "kind": "occurrence",
+            "type": "lexical-occurrence",
+            "anchors": [
+              "t0"
+            ],
+            "members": [],
+            "license": "literal source occurrence"
+          },
+          {
+            "id": "n1",
+            "kind": "occurrence",
+            "type": "lexical-occurrence",
+            "anchors": [
+              "t1"
+            ],
+            "members": [],
+            "license": "literal source occurrence"
+          },
+          {
+            "id": "n2",
+            "kind": "occurrence",
+            "type": "lexical-occurrence",
+            "anchors": [
+              "t2"
+            ],
+            "members": [],
+            "license": "literal source occurrence"
+          }
+        ],
+        "relations": [
+          {
+            "id": "r0",
+            "family": "argument",
+            "constitution": "clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n0"
+              },
+              {
+                "role": "argument",
+                "target": "n1"
+              },
+              {
+                "role": "argument",
+                "target": "n2"
+              }
+            ]
+          }
+        ]
+      },
+      "repair": {
+        "id": "c1",
+        "reading": "where they were",
+        "objects": [
+          {
+            "id": "n0",
+            "kind": "occurrence",
+            "type": "lexical-occurrence",
+            "anchors": [
+              "t0"
+            ],
+            "members": [],
+            "license": "literal source occurrence"
+          },
+          {
+            "id": "n1",
+            "kind": "occurrence",
+            "type": "lexical-occurrence",
+            "anchors": [
+              "t1"
+            ],
+            "members": [],
+            "license": "literal source occurrence"
+          },
+          {
+            "id": "n2",
+            "kind": "occurrence",
+            "type": "lexical-occurrence",
+            "anchors": [
+              "t2"
+            ],
+            "members": [],
+            "license": "literal source occurrence"
+          }
+        ],
+        "relations": [
+          {
+            "id": "r0",
+            "family": "argument",
+            "constitution": "clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n0"
+              },
+              {
+                "role": "argument",
+                "target": "n1"
+              },
+              {
+                "role": "argument",
+                "target": "n2"
+              }
+            ]
+          },
+          {
+            "id": "r1",
+            "family": "binding",
+            "constitution": "operator",
+            "ends": [
+              {
+                "role": "source",
+                "target": "n0"
+              },
+              {
+                "role": "target",
+                "target": "n1"
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "family": "binding",
+            "constitution": "operator",
+            "ends": [
+              {
+                "role": "source",
+                "target": "n1"
+              },
+              {
+                "role": "target",
+                "target": "n2"
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "family": "scope",
+            "constitution": "operator",
+            "ends": [
+              {
+                "role": "domain",
+                "target": "r0"
+              },
+              {
+                "role": "range",
+                "target": "r1"
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "family": "scope",
+            "constitution": "operator",
+            "ends": [
+              {
+                "role": "domain",
+                "target": "r0"
+              },
+              {
+                "role": "range",
+                "target": "r2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "questions": {
+    "fit": {
+      "type": "choice",
+      "instructions": "Which exact grammatical graph best preserves source operators, argument positions, bindings and unresolved attachment? Reject missing source structure. This is support, not native proof.",
+      "criteria": {
+        "initial": "initial exact graph",
+        "repair": "repair exact graph",
+        "neither": "Both unsupported or malformed.",
+        "unresolved": "Cannot distinguish."
+      }
+    }
+  }
+}
