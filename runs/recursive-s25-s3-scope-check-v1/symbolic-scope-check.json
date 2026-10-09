@@ -1,0 +1,82 @@
+{
+  "schema": "RecursiveScopeSymbolicCheckV1",
+  "run": "recursive-s25-s3-v1-run5",
+  "result": "SOURCE_AND_GRAPH_CHECKS_PASS_SCOPE_LAW_UNREGISTERED",
+  "checks": {
+    "pinned_sources": {
+      "S25": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "S3": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "state": "PASS"
+    },
+    "source_anchors": {
+      "validated_anchor_count": 39,
+      "per_document": {
+        "S25": 16,
+        "S3": 23
+      },
+      "exact_char_and_byte_slices": "PASS"
+    },
+    "candidate_placements": {
+      "candidate-placement-s3-within-pair1": {
+        "roles": {
+          "candidate_universe": "e555efdfc61f4c3ba14a981bd2516c41",
+          "parent_region": "12f8eab1c0d04b63a8766136ac7cad3b",
+          "operand_network": "8076dd1a68ab453f9c4c9843a8990f1a",
+          "source_anchor": "183ceb9489124de4a6e29224e140b3f6",
+          "candidate": "8549243d2670419898530d94e3516e13"
+        },
+        "signature": "CANDIDATE_ONLY_UNREGISTERED"
+      },
+      "candidate-placement-s3-within-pair2": {
+        "roles": {
+          "candidate_universe": "e555efdfc61f4c3ba14a981bd2516c41",
+          "parent_region": "c72d7b32cf0144f3ac8dd1b2be499bb5",
+          "operand_network": "8076dd1a68ab453f9c4c9843a8990f1a",
+          "source_anchor": "183ceb9489124de4a6e29224e140b3f6",
+          "candidate": "e16aeb08abfb480d8db2d2442297420e"
+        },
+        "signature": "CANDIDATE_ONLY_UNREGISTERED"
+      }
+    },
+    "source_comparison": {
+      "S3_scope_clause": "S3 exercises only original A→B real provider handoff within pair-1 B1→C1 boundary",
+      "supports": "s3-within-pair1",
+      "conflicts_with": "s3-within-pair2",
+      "basis": "literal source clause plus S25 identity/topology anchors"
+    },
+    "graph_integrity": {
+      "objects": 522,
+      "relations": 308,
+      "dangling_endpoints": 0,
+      "sqlite_integrity": "ok"
+    },
+    "registered_law": {
+      "constitution": "CandidateScopePlacement",
+      "registered": false,
+      "result": "UNREGISTERED"
+    },
+    "outer_composition": {
+      "NetworkComposition": {
+        "present": true,
+        "roles": [
+          "result",
+          "operand",
+          "operand-2"
+        ],
+        "required_roles": [
+          "operand",
+          "result"
+        ]
+      }
+    }
+  },
+  "not_established": [
+    "native SemAlg/Goggles admission",
+    "semantic entailment beyond literal scope alignment",
+    "runtime execution",
+    "provider correctness",
+    "S3 completeness"
+  ],
+  "next_gap": "Register and implement a typed scope-placement constitution in the authoritative SemAlg/Goggles registry, then run its native validator against this candidate.",
+  "_validated_anchor_count": 39
+}

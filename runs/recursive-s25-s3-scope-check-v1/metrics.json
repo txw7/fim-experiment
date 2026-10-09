@@ -1,0 +1,678 @@
+{
+  "schema": "RecursiveS25S3CandidateMetricsV1",
+  "source_pins": {
+    "S25": {
+      "sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "bytes": 4330
+    },
+    "S3": {
+      "sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "bytes": 3380
+    }
+  },
+  "s3_input_candidate_snapshot_sha256": "ddf5d12f12ebdf2e68e925d0024dd0ebb6df764472d4c75e129dd8207cca0d81",
+  "s3_input_status": "INCOMPLETE_CANDIDATE",
+  "s3_model_usage": "NOT_RECORDED_IN_IMPORTED_CANDIDATE_FRAME",
+  "s3_existing_checks_snapshot_sha256": "6d1b82b04c1df8879ea276922773b82f1e509fb1fc8f1684d7bd2389268bc29f",
+  "source_bytes_retained": 7710,
+  "semantic_compression": "NOT_COMPUTED_NO_REGISTERED_NORMALIZATION_WITNESSES",
+  "nodes": 210,
+  "hyperrelations": 308,
+  "role_incidences": 753,
+  "object_sorts": {
+    "Activation": 1,
+    "AlternativeSet": 1,
+    "Boundary": 4,
+    "Buffer": 8,
+    "Constraint": 5,
+    "Correlation": 3,
+    "Effect": 4,
+    "Entity": 17,
+    "Expression": 14,
+    "Generation": 2,
+    "Mapping": 3,
+    "Message": 2,
+    "ModelObservation": 10,
+    "Network": 22,
+    "Obligation": 6,
+    "Operation": 6,
+    "Pipe": 4,
+    "Port": 11,
+    "PrivateResource": 6,
+    "Property": 24,
+    "Resource": 1,
+    "SourceAnchor": 39,
+    "SourceDocument": 2,
+    "State": 13
+  },
+  "constitutions": {
+    "DocumentAnchor": 39,
+    "NetworkComposition": 9,
+    "SourceGrounding": 128,
+    "NetworkMember": 1,
+    "SupervisorFork": 1,
+    "MappingCorrespondence": 4,
+    "NewIdentity": 2,
+    "PairComposition": 2,
+    "PairResources": 4,
+    "PairPipes": 2,
+    "IndependentLoop": 2,
+    "StateTransition": 6,
+    "BoundaryExport": 8,
+    "AccessConstraint": 9,
+    "BoundaryAccess": 4,
+    "LocalExit": 2,
+    "ParentExitRequest": 2,
+    "IndependentInterleaving": 1,
+    "PreservationEffect": 12,
+    "RestartPreservation": 1,
+    "AdditiveGrowth": 1,
+    "EffectConstraint": 1,
+    "Transformation": 1,
+    "EffectComposition": 1,
+    "RequirementCandidate": 4,
+    "ClassifierObservation": 7,
+    "SourceSupportObservation": 4,
+    "PrivateOwnership": 2,
+    "GenerationMatch": 1,
+    "CorrelationMatch": 1,
+    "GuardedCommit": 1,
+    "MismatchEffect": 1,
+    "identity-correspondence.v1": 2,
+    "network-member.v1": 9,
+    "network-operand.v1": 4,
+    "port-actor.v1": 2,
+    "arrow-sequence.v1": 6,
+    "count-bound.v1": 1,
+    "relation-operand.v1": 1,
+    "alternative.v1": 2,
+    "argument.v1": 4,
+    "state-qualification.v1": 2,
+    "scope-bound.v1": 1,
+    "CandidateScopePlacement": 3,
+    "MappingAlignment": 1,
+    "OpenObligation": 6
+  },
+  "unregistered_constitutions": [
+    "AdditiveGrowth",
+    "CandidateScopePlacement",
+    "ClassifierObservation",
+    "DocumentAnchor",
+    "IndependentInterleaving",
+    "IndependentLoop",
+    "LocalExit",
+    "MappingAlignment",
+    "NetworkMember",
+    "NewIdentity",
+    "OpenObligation",
+    "PairComposition",
+    "PairPipes",
+    "PairResources",
+    "ParentExitRequest",
+    "RequirementCandidate",
+    "RestartPreservation",
+    "SourceGrounding",
+    "SourceSupportObservation",
+    "StateTransition",
+    "SupervisorFork",
+    "alternative.v1",
+    "argument.v1",
+    "arrow-sequence.v1",
+    "count-bound.v1",
+    "identity-correspondence.v1",
+    "network-member.v1",
+    "network-operand.v1",
+    "port-actor.v1",
+    "relation-operand.v1",
+    "scope-bound.v1",
+    "state-qualification.v1"
+  ],
+  "distinct_roles": 80,
+  "role_counts": {
+    "activation": 1,
+    "actor": 15,
+    "added": 1,
+    "agent": 2,
+    "alias": 2,
+    "anchor": 39,
+    "application": 4,
+    "argument": 4,
+    "bound": 1,
+    "boundary": 8,
+    "candidate": 16,
+    "child": 2,
+    "condition": 1,
+    "context": 1,
+    "correlation": 3,
+    "cursor": 4,
+    "decision": 3,
+    "destination": 1,
+    "document": 39,
+    "domain": 1,
+    "effect": 14,
+    "effects": 2,
+    "existing": 1,
+    "expected": 1,
+    "expression": 2,
+    "forward": 2,
+    "from": 12,
+    "guard": 1,
+    "input": 4,
+    "interface": 13,
+    "interior": 8,
+    "law": 4,
+    "left": 3,
+    "machine": 6,
+    "mailbox": 4,
+    "mapping": 7,
+    "member": 15,
+    "member-2": 1,
+    "member-3": 1,
+    "mode": 13,
+    "network": 20,
+    "obligation": 6,
+    "observation": 10,
+    "observed": 1,
+    "operand": 14,
+    "operand-2": 5,
+    "operand-3": 3,
+    "operand_network": 1,
+    "operation": 17,
+    "original": 2,
+    "output": 4,
+    "owner": 2,
+    "pair": 10,
+    "pair1": 1,
+    "pair2": 1,
+    "parent": 7,
+    "parent_region": 1,
+    "pending-calls": 1,
+    "policy": 13,
+    "port": 12,
+    "property": 13,
+    "region": 10,
+    "reply": 1,
+    "request": 1,
+    "requirement": 4,
+    "resource": 2,
+    "result": 10,
+    "reverse": 2,
+    "right": 3,
+    "s25_mapping": 1,
+    "s3_mapping": 1,
+    "semantic_object": 128,
+    "set": 2,
+    "source": 7,
+    "source_anchor": 129,
+    "state": 4,
+    "subject": 13,
+    "supervisor": 1,
+    "target": 4,
+    "to": 12
+  },
+  "edge_status_counts": {
+    "CANDIDATE": 65,
+    "IN_REJECTED_CANDIDATE": 3,
+    "OPEN": 6,
+    "REJECTED_BY_SYMBOLIC_SOURCE_CONSTRAINT": 2,
+    "SOURCE_ANCHORED": 128,
+    "SOURCE_PINNED": 39,
+    "STRUCTURALLY_CHECKED_CANDIDATE": 28,
+    "STRUCTURAL_CANDIDATE": 34
+  },
+  "mapping_checks": [
+    {
+      "mapping": "mapping:AB-aliases",
+      "status": "CHECKED",
+      "correspondence_count": 2,
+      "errors": [],
+      "obligations": [],
+      "guarantee": "endpoint coverage and injectivity only; semantic identity/state preservation NOT_PROVED"
+    }
+  ],
+  "s3_mapping_checks_reused": [
+    {
+      "mapping": "mapping-b8dba07e12",
+      "status": "CHECKED",
+      "correspondence_count": 2,
+      "errors": [],
+      "obligations": [],
+      "guarantee": "endpoint coverage and injectivity only; runtime identity/state preservation NOT_PROVED"
+    }
+  ],
+  "incidence_connected_components": 1,
+  "component_sizes": [
+    513
+  ],
+  "source_coverage": {
+    "S25": {
+      "source_characters": 4309,
+      "covered_characters": 1643,
+      "coverage_fraction": 0.3813,
+      "covered_spans": [
+        [
+          788,
+          839
+        ],
+        [
+          840,
+          949
+        ],
+        [
+          950,
+          1110
+        ],
+        [
+          1193,
+          1246
+        ],
+        [
+          1247,
+          1530
+        ],
+        [
+          1699,
+          1834
+        ],
+        [
+          1835,
+          1940
+        ],
+        [
+          1941,
+          2081
+        ],
+        [
+          2082,
+          2214
+        ],
+        [
+          2215,
+          2309
+        ],
+        [
+          2310,
+          2446
+        ],
+        [
+          2447,
+          2613
+        ],
+        [
+          2614,
+          2662
+        ],
+        [
+          3232,
+          3263
+        ]
+      ]
+    },
+    "S3": {
+      "source_characters": 3354,
+      "covered_characters": 689,
+      "coverage_fraction": 0.2054,
+      "covered_spans": [
+        [
+          612,
+          666
+        ],
+        [
+          722,
+          803
+        ],
+        [
+          1001,
+          1517
+        ],
+        [
+          1967,
+          2005
+        ]
+      ]
+    }
+  },
+  "s25_reused_candidate_networks": 4,
+  "s25_reused_classifier_observations": [
+    {
+      "id": "observation:S25:identity-wrap:laya",
+      "provider": "laya",
+      "choice": "identity-preserving",
+      "replayed": true
+    },
+    {
+      "id": "observation:S25:identity-wrap:jev",
+      "provider": "jev",
+      "choice": "identity-preserving",
+      "replayed": true
+    },
+    {
+      "id": "observation:S25:child-boundary:laya",
+      "provider": "laya",
+      "choice": "direct-private-access",
+      "replayed": true
+    },
+    {
+      "id": "observation:S25:child-boundary:jev",
+      "provider": "jev",
+      "choice": "exported-interface",
+      "replayed": true
+    },
+    {
+      "id": "observation:S25:generation-guard:laya",
+      "provider": "laya",
+      "choice": "exact-generation-correlation",
+      "replayed": true
+    },
+    {
+      "id": "observation:S25:generation-guard:jev",
+      "provider": "jev",
+      "choice": "exact-generation-correlation",
+      "replayed": true
+    }
+  ],
+  "model_usage_reused_run7": [
+    {
+      "fixture": "identity-wrap",
+      "hop": "laya",
+      "model": "laya-rl-agent",
+      "usage": {
+        "input_tokens": 308,
+        "output_tokens": 0,
+        "state_tokens": 210,
+        "state_tokens_dropped": 0,
+        "truncated": false,
+        "truncated_questions": []
+      },
+      "elapsed_seconds": 0.2774749759119004,
+      "replayed_from": "local-workspace-path-omitted"
+    },
+    {
+      "fixture": "identity-wrap",
+      "hop": "jev",
+      "model": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 588,
+        "output_tokens": 52
+      },
+      "elapsed_seconds": 0.5037204739637673,
+      "replayed_from": "local-workspace-path-omitted"
+    },
+    {
+      "fixture": "identity-wrap",
+      "hop": "qwen-check",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 1631,
+        "total_tokens": 1640,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "elapsed_seconds": 2.383005057927221
+    },
+    {
+      "fixture": "child-boundary",
+      "hop": "laya",
+      "model": "laya-rl-agent",
+      "usage": {
+        "input_tokens": 221,
+        "output_tokens": 0,
+        "state_tokens": 139,
+        "state_tokens_dropped": 0,
+        "truncated": false,
+        "truncated_questions": []
+      },
+      "elapsed_seconds": 0.10029077692888677,
+      "replayed_from": "local-workspace-path-omitted"
+    },
+    {
+      "fixture": "child-boundary",
+      "hop": "jev",
+      "model": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 506,
+        "output_tokens": 52
+      },
+      "elapsed_seconds": 0.4395249600056559,
+      "replayed_from": "local-workspace-path-omitted"
+    },
+    {
+      "fixture": "child-boundary",
+      "hop": "qwen-check",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "usage": {
+        "completion_tokens": 14,
+        "prompt_tokens": 1467,
+        "total_tokens": 1481,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "elapsed_seconds": 2.175336783984676
+    },
+    {
+      "fixture": "generation-guard",
+      "hop": "laya",
+      "model": "laya-rl-agent",
+      "usage": {
+        "input_tokens": 211,
+        "output_tokens": 0,
+        "state_tokens": 129,
+        "state_tokens_dropped": 0,
+        "truncated": false,
+        "truncated_questions": []
+      },
+      "elapsed_seconds": 0.14472642599139363,
+      "replayed_from": "local-workspace-path-omitted"
+    },
+    {
+      "fixture": "generation-guard",
+      "hop": "jev",
+      "model": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 502,
+        "output_tokens": 56
+      },
+      "elapsed_seconds": 0.3809938649646938,
+      "replayed_from": "local-workspace-path-omitted"
+    },
+    {
+      "fixture": "generation-guard",
+      "hop": "qwen-check",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 992,
+        "total_tokens": 1001,
+        "prompt_tokens_details": {
+          "cached_tokens": 46
+        }
+      },
+      "elapsed_seconds": 1.883789532002993
+    }
+  ],
+  "model_usage_summary_reused_run7": {
+    "laya": {
+      "calls": 3,
+      "input_tokens": 740,
+      "output_tokens": 0,
+      "total_tokens": 740,
+      "replayed_calls": 3
+    },
+    "jev": {
+      "calls": 3,
+      "input_tokens": 1596,
+      "output_tokens": 160,
+      "total_tokens": 1756,
+      "replayed_calls": 3
+    },
+    "qwen-check": {
+      "calls": 3,
+      "input_tokens": 4090,
+      "output_tokens": 32,
+      "total_tokens": 4122,
+      "replayed_calls": 0
+    }
+  },
+  "fresh_model_calls": 3,
+  "qwen_graph_mutations": 0,
+  "native_admission": "NOT_RUN",
+  "live_provider_execution": "NOT_RUN",
+  "open_obligations": [
+    "S3 input candidate remains INCOMPLETE_CANDIDATE",
+    "S3 live provider execution NOT_RUN",
+    "native Goggles/SemAlg admission NOT_RUN",
+    "all operational preservation, restart, interleaving, and effect proofs remain open",
+    "S3 payload and destination types unresolved in source candidate",
+    "S3 parked: modifier/evidence flow construction not yet registered — , with trustworthy source→effect→provider turn→return→graph commit receipts"
+  ],
+  "structural_checks": {
+    "dangling_endpoints": 0,
+    "source_span_preimage_errors": 0,
+    "registered_signature_violations": 0,
+    "recursive_root_links_s25_and_s3": true,
+    "source_spans_are_utf8_byte_and_character_addressed": true
+  },
+  "fresh_model_observation_attempts": 4,
+  "fresh_model_usage": {
+    "jev": {
+      "input_tokens": 941,
+      "output_tokens": 65
+    },
+    "qwen": {
+      "input_tokens": 536,
+      "output_tokens": 119,
+      "total_tokens": 655
+    },
+    "laya": {
+      "input_tokens": 512,
+      "output_tokens": 0,
+      "state_tokens_dropped": 82,
+      "truncated": true
+    }
+  },
+  "model_observation_states": {
+    "laya": "OBSERVED_AFTER_RETRY (attempt 1 truncated)",
+    "jev": "OBSERVED",
+    "qwen": "OBSERVED"
+  },
+  "scope_candidate_results": {
+    "laya": {
+      "state": "FAILED",
+      "provider": "laya",
+      "reason": "Truncated classifier input; 82 state tokens dropped. Response retained, excluded from candidate judgments.",
+      "source_digests": {
+        "S25": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+        "S3": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3"
+      },
+      "candidate_ids": [
+        "s3-within-pair1",
+        "s3-within-pair2"
+      ],
+      "graph_mutations": 0
+    },
+    "jev": {
+      "state": "OBSERVED",
+      "provider": "jev",
+      "choice": "s3-within-pair1",
+      "answer": {
+        "type": "choice",
+        "choice": "s3-within-pair1",
+        "confidence": 0.98,
+        "probabilities": {
+          "s3-within-pair1": 0.99,
+          "s3-within-pair2": 0.0,
+          "unresolved": 0.01
+        }
+      },
+      "usage": {
+        "input_tokens": 941,
+        "output_tokens": 65
+      },
+      "calibrated": false,
+      "source_digests": {
+        "S25": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+        "S3": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3"
+      },
+      "candidate_ids": [
+        "s3-within-pair1",
+        "s3-within-pair2"
+      ],
+      "graph_mutations": 0
+    },
+    "qwen": {
+      "state": "OBSERVED",
+      "provider": "qwen",
+      "answer": {
+        "candidate_assessments": [
+          {
+            "candidate_id": "s3-within-pair1",
+            "evidence": [
+              "S3 exercises only original A→B real provider handoff within pair-1 B1→C1 boundary"
+            ],
+            "source_support": "supported"
+          },
+          {
+            "candidate_id": "s3-within-pair2",
+            "evidence": [
+              "S3 exercises only original A→B real provider handoff within pair-1 B1→C1 boundary"
+            ],
+            "source_support": "unsupported"
+          }
+        ],
+        "overall": "s3-within-pair1",
+        "reasoning_status": "source_clause_match_only"
+      },
+      "calibrated": false,
+      "candidate_ids": [
+        "s3-within-pair1",
+        "s3-within-pair2"
+      ],
+      "graph_mutations": 0,
+      "source_digests": {
+        "S25": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+        "S3": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3"
+      }
+    }
+  },
+  "stored_graph_objects_including_regions": 522,
+  "stored_graph_object_kinds": {
+    "region": 3,
+    "buffer": 211,
+    "relation": 308
+  },
+  "lowered_node_records": 210,
+  "laya_retry_usage": {
+    "input_tokens": 387,
+    "output_tokens": 0,
+    "state_tokens": 294,
+    "state_tokens_dropped": 0,
+    "truncated": false,
+    "truncated_questions": []
+  },
+  "laya_retry_choice": "s3-within-pair1",
+  "laya_retry_confidence": 0.1647,
+  "laya_retry_answer_confidence": 0.6259,
+  "registered_constitutions": [
+    "AccessConstraint",
+    "BoundaryAccess",
+    "BoundaryExport",
+    "CorrelationMatch",
+    "EffectComposition",
+    "EffectConstraint",
+    "GenerationMatch",
+    "GuardedCommit",
+    "MappingCorrespondence",
+    "MismatchEffect",
+    "NetworkComposition",
+    "PreservationEffect",
+    "PrivateOwnership",
+    "Transformation"
+  ],
+  "symbolic_scope_check": {
+    "path": "symbolic-scope-check.json",
+    "result": "SOURCE_AND_GRAPH_CHECKS_PASS_SCOPE_LAW_UNREGISTERED"
+  }
+}

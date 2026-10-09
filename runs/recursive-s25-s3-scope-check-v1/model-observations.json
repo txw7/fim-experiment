@@ -1,0 +1,123 @@
+{
+  "laya": {
+    "state": "OBSERVED_AFTER_RETRY",
+    "attempts": [
+      {
+        "state": "FAILED",
+        "provider": "laya",
+        "reason": "Truncated classifier input; 82 state tokens dropped. Response retained, excluded from candidate judgments.",
+        "source_digests": {
+          "S25": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+          "S3": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3"
+        },
+        "candidate_ids": [
+          "s3-within-pair1",
+          "s3-within-pair2"
+        ],
+        "graph_mutations": 0
+      },
+      {
+        "state": "OBSERVED",
+        "provider": "laya",
+        "attempt_id": "attempt-2",
+        "choice": "s3-within-pair1",
+        "answer": {
+          "type": "choice",
+          "choice": "s3-within-pair1",
+          "probabilities": {
+            "s3-within-pair1": 0.6259,
+            "s3-within-pair2": 0.1645,
+            "unresolved": 0.2096
+          },
+          "confidence": 0.1647,
+          "answer_confidence": 0.6259,
+          "action": {
+            "act_probability": 1.0
+          }
+        },
+        "usage": {
+          "input_tokens": 387,
+          "output_tokens": 0,
+          "state_tokens": 294,
+          "state_tokens_dropped": 0,
+          "truncated": false,
+          "truncated_questions": []
+        },
+        "calibrated": false,
+        "candidate_ids": [
+          "s3-within-pair1",
+          "s3-within-pair2"
+        ],
+        "graph_mutations": 0,
+        "source_digests": {
+          "S25": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+          "S3": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3"
+        }
+      }
+    ],
+    "effective_choice": "s3-within-pair1"
+  },
+  "jev": {
+    "state": "OBSERVED",
+    "provider": "jev",
+    "choice": "s3-within-pair1",
+    "answer": {
+      "type": "choice",
+      "choice": "s3-within-pair1",
+      "confidence": 0.98,
+      "probabilities": {
+        "s3-within-pair1": 0.99,
+        "s3-within-pair2": 0.0,
+        "unresolved": 0.01
+      }
+    },
+    "usage": {
+      "input_tokens": 941,
+      "output_tokens": 65
+    },
+    "calibrated": false,
+    "source_digests": {
+      "S25": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "S3": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3"
+    },
+    "candidate_ids": [
+      "s3-within-pair1",
+      "s3-within-pair2"
+    ],
+    "graph_mutations": 0
+  },
+  "qwen": {
+    "state": "OBSERVED",
+    "provider": "qwen",
+    "answer": {
+      "candidate_assessments": [
+        {
+          "candidate_id": "s3-within-pair1",
+          "evidence": [
+            "S3 exercises only original A→B real provider handoff within pair-1 B1→C1 boundary"
+          ],
+          "source_support": "supported"
+        },
+        {
+          "candidate_id": "s3-within-pair2",
+          "evidence": [
+            "S3 exercises only original A→B real provider handoff within pair-1 B1→C1 boundary"
+          ],
+          "source_support": "unsupported"
+        }
+      ],
+      "overall": "s3-within-pair1",
+      "reasoning_status": "source_clause_match_only"
+    },
+    "calibrated": false,
+    "candidate_ids": [
+      "s3-within-pair1",
+      "s3-within-pair2"
+    ],
+    "graph_mutations": 0,
+    "source_digests": {
+      "S25": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "S3": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3"
+    }
+  }
+}

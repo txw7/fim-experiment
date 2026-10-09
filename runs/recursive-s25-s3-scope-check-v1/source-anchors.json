@@ -1,0 +1,444 @@
+{
+  "source_pins": {
+    "S25": {
+      "sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "bytes": 4330
+    },
+    "S3": {
+      "sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "bytes": 3380
+    }
+  },
+  "anchors": [
+    {
+      "byte_end": 850,
+      "byte_start": 799,
+      "char_end": 839,
+      "char_start": 788,
+      "document": "S25",
+      "id": "anchor:S25:788-839",
+      "sort": "SourceAnchor",
+      "source_sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "text": "(SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2)))"
+    },
+    {
+      "byte_end": 960,
+      "byte_start": 851,
+      "char_end": 949,
+      "char_start": 840,
+      "document": "S25",
+      "id": "anchor:S25:840-949",
+      "sort": "SourceAnchor",
+      "source_sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "text": "A0 is a NEW supervisor fork from original A with a snapshot of its context, but pending calls NOT duplicated."
+    },
+    {
+      "byte_end": 1121,
+      "byte_start": 961,
+      "char_end": 1110,
+      "char_start": 950,
+      "document": "S25",
+      "id": "anchor:S25:950-1110",
+      "sort": "SourceAnchor",
+      "source_sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "text": "B1 and C1 are role aliases for the ORIGINAL A and B, preserving their exact stable agent identities, private state, pipe cursor and ongoing turn during wrapping"
+    },
+    {
+      "byte_end": 1257,
+      "byte_start": 1204,
+      "char_end": 1246,
+      "char_start": 1193,
+      "document": "S25",
+      "id": "anchor:S25:1193-1246",
+      "sort": "SourceAnchor",
+      "source_sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "text": "B2 and C2 are NEW logical agents with new identities."
+    },
+    {
+      "byte_end": 1541,
+      "byte_start": 1258,
+      "char_end": 1530,
+      "char_start": 1247,
+      "document": "S25",
+      "id": "anchor:S25:1247-1530",
+      "sort": "SourceAnchor",
+      "source_sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "text": "PAIR1 and PAIR2 are independently-running child REGIONS with their own loop instance, private role-specific mailboxes, flow-local in/out buffers, pipes, independent subscriber cursors, correlation/activation/iteration identities, retained messages/effects/receipts and restart state."
+    },
+    {
+      "byte_end": 1847,
+      "byte_start": 1710,
+      "char_end": 1834,
+      "char_start": 1699,
+      "document": "S25",
+      "id": "anchor:S25:1699-1834",
+      "sort": "SourceAnchor",
+      "source_sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "text": "parent may observe child events/results and request parent-exit but must NOT enter child's private mailboxes or gate each B↔C exchange."
+    },
+    {
+      "byte_end": 1953,
+      "byte_start": 1848,
+      "char_end": 1940,
+      "char_start": 1835,
+      "document": "S25",
+      "id": "anchor:S25:1835-1940",
+      "sort": "SourceAnchor",
+      "source_sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "text": "Each child can produce local exit; parent exit must be addressed, correlated and exercised at a boundary."
+    },
+    {
+      "byte_end": 2100,
+      "byte_start": 1954,
+      "char_end": 2081,
+      "char_start": 1941,
+      "document": "S25",
+      "id": "anchor:S25:1941-2081",
+      "sort": "SourceAnchor",
+      "source_sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "text": "Finite budget/cancellation semantics: ENTER→RUNNING→EXIT_REQUESTED→EXITED or equivalent, no unbounded loop; no autonomous background runner."
+    },
+    {
+      "byte_end": 2233,
+      "byte_start": 2101,
+      "char_end": 2214,
+      "char_start": 2082,
+      "document": "S25",
+      "id": "anchor:S25:2082-2214",
+      "sort": "SourceAnchor",
+      "source_sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "text": "Actual independent interleaving: both pairs can advance independently and in either order, progress of one must not block the other."
+    },
+    {
+      "byte_end": 2328,
+      "byte_start": 2234,
+      "char_end": 2309,
+      "char_start": 2215,
+      "document": "S25",
+      "id": "anchor:S25:2215-2309",
+      "sort": "SourceAnchor",
+      "source_sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "text": "Prove identity and current state preserved before/after wrapping, no messages lost/duplicated."
+    },
+    {
+      "byte_end": 2465,
+      "byte_start": 2329,
+      "char_end": 2446,
+      "char_start": 2310,
+      "document": "S25",
+      "id": "anchor:S25:2310-2446",
+      "sort": "SourceAnchor",
+      "source_sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "text": "Parent remains live and maintains child refs; restarts reconstruct every region, exports, mailboxes, pipes, states, cursors and history."
+    },
+    {
+      "byte_end": 2632,
+      "byte_start": 2466,
+      "char_end": 2613,
+      "char_start": 2447,
+      "document": "S25",
+      "id": "anchor:S25:2447-2613",
+      "sort": "SourceAnchor",
+      "source_sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "text": "Allow additive runtime growth: create B2/C2 and their flow-local mailboxes and wire them without deleting PAIR1 history; version/revision receipts and stable exports."
+    },
+    {
+      "byte_end": 2681,
+      "byte_start": 2633,
+      "char_end": 2662,
+      "char_start": 2614,
+      "document": "S25",
+      "id": "anchor:S25:2614-2662",
+      "sort": "SourceAnchor",
+      "source_sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "text": "No direct child internal access across boundary."
+    },
+    {
+      "byte_end": 1121,
+      "byte_start": 1014,
+      "char_end": 1110,
+      "char_start": 1003,
+      "document": "S25",
+      "id": "anchor:S25:1003-1110",
+      "sort": "SourceAnchor",
+      "source_sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "text": "preserving their exact stable agent identities, private state, pipe cursor and ongoing turn during wrapping"
+    },
+    {
+      "byte_end": 1818,
+      "byte_start": 1778,
+      "char_end": 1807,
+      "char_start": 1767,
+      "document": "S25",
+      "id": "anchor:S25:1767-1807",
+      "sort": "SourceAnchor",
+      "source_sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "text": "must NOT enter child's private mailboxes"
+    },
+    {
+      "byte_end": 3282,
+      "byte_start": 3251,
+      "char_end": 3263,
+      "char_start": 3232,
+      "document": "S25",
+      "id": "anchor:S25:3232-3263",
+      "sort": "SourceAnchor",
+      "source_sha256": "475626d949cf9fac967ccd5b879f150cf520ca1ad0c74fbd0324028e2577c140",
+      "text": "wrong-generation reply rejected"
+    },
+    {
+      "byte_end": 668,
+      "byte_start": 614,
+      "char_end": 666,
+      "char_start": 612,
+      "document": "S3",
+      "id": "anchor:S3:612-666",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "B1/C1 are identity-preserving aliases for original A/B"
+    },
+    {
+      "byte_end": 666,
+      "byte_start": 665,
+      "char_end": 664,
+      "char_start": 663,
+      "document": "S3",
+      "id": "anchor:S3:663-664",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "A"
+    },
+    {
+      "byte_end": 616,
+      "byte_start": 614,
+      "char_end": 614,
+      "char_start": 612,
+      "document": "S3",
+      "id": "anchor:S3:612-614",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "B1"
+    },
+    {
+      "byte_end": 668,
+      "byte_start": 667,
+      "char_end": 666,
+      "char_start": 665,
+      "document": "S3",
+      "id": "anchor:S3:665-666",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "B"
+    },
+    {
+      "byte_end": 619,
+      "byte_start": 617,
+      "char_end": 617,
+      "char_start": 615,
+      "document": "S3",
+      "id": "anchor:S3:615-617",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "C1"
+    },
+    {
+      "byte_end": 1460,
+      "byte_start": 1007,
+      "char_end": 1442,
+      "char_start": 1001,
+      "document": "S3",
+      "id": "anchor:S3:1001-1442",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "source A typed pair output → first-class authorized pipe → S2 effect attempt durable journal with graph/input generation, correlation+activation IDs, provider realization, idempotency key, exact pipe → Looper actual provider turn via existing local controller → observed actual Codex result in a DISTINCT provider thread/session from implementing agent → validate exact correlation/generation/types → commit ONCE to B typed destination input"
+    },
+    {
+      "byte_end": 1033,
+      "byte_start": 1007,
+      "char_end": 1027,
+      "char_start": 1001,
+      "document": "S3",
+      "id": "anchor:S3:1001-1027",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "source A typed pair output"
+    },
+    {
+      "byte_end": 1015,
+      "byte_start": 1014,
+      "char_end": 1009,
+      "char_start": 1008,
+      "document": "S3",
+      "id": "anchor:S3:1008-1009",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "A"
+    },
+    {
+      "byte_end": 1065,
+      "byte_start": 1038,
+      "char_end": 1057,
+      "char_start": 1030,
+      "document": "S3",
+      "id": "anchor:S3:1030-1057",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "first-class authorized pipe"
+    },
+    {
+      "byte_end": 1210,
+      "byte_start": 1070,
+      "char_end": 1200,
+      "char_start": 1060,
+      "document": "S3",
+      "id": "anchor:S3:1060-1200",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "S2 effect attempt durable journal with graph/input generation, correlation+activation IDs, provider realization, idempotency key, exact pipe"
+    },
+    {
+      "byte_end": 1272,
+      "byte_start": 1215,
+      "char_end": 1260,
+      "char_start": 1203,
+      "document": "S3",
+      "id": "anchor:S3:1203-1260",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "Looper actual provider turn via existing local controller"
+    },
+    {
+      "byte_end": 1367,
+      "byte_start": 1277,
+      "char_end": 1353,
+      "char_start": 1263,
+      "document": "S3",
+      "id": "anchor:S3:1263-1353",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "observed actual Codex result in a DISTINCT provider thread/session from implementing agent"
+    },
+    {
+      "byte_end": 1415,
+      "byte_start": 1372,
+      "char_end": 1399,
+      "char_start": 1356,
+      "document": "S3",
+      "id": "anchor:S3:1356-1399",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "validate exact correlation/generation/types"
+    },
+    {
+      "byte_end": 1460,
+      "byte_start": 1420,
+      "char_end": 1442,
+      "char_start": 1402,
+      "document": "S3",
+      "id": "anchor:S3:1402-1442",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "commit ONCE to B typed destination input"
+    },
+    {
+      "byte_end": 1436,
+      "byte_start": 1435,
+      "char_end": 1418,
+      "char_start": 1417,
+      "document": "S3",
+      "id": "anchor:S3:1417-1418",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "B"
+    },
+    {
+      "byte_end": 1431,
+      "byte_start": 1427,
+      "char_end": 1413,
+      "char_start": 1409,
+      "document": "S3",
+      "id": "anchor:S3:1409-1413",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "ONCE"
+    },
+    {
+      "byte_end": 2031,
+      "byte_start": 1993,
+      "char_end": 2005,
+      "char_start": 1967,
+      "document": "S3",
+      "id": "anchor:S3:1967-2005",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "no retries after uncertain submissions"
+    },
+    {
+      "byte_end": 2003,
+      "byte_start": 1996,
+      "char_end": 1977,
+      "char_start": 1970,
+      "document": "S3",
+      "id": "anchor:S3:1970-1977",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "retries"
+    },
+    {
+      "byte_end": 2031,
+      "byte_start": 2010,
+      "char_end": 2005,
+      "char_start": 1984,
+      "document": "S3",
+      "id": "anchor:S3:1984-2005",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "uncertain submissions"
+    },
+    {
+      "byte_end": 2019,
+      "byte_start": 2010,
+      "char_end": 1993,
+      "char_start": 1984,
+      "document": "S3",
+      "id": "anchor:S3:1984-1993",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "uncertain"
+    },
+    {
+      "byte_end": 809,
+      "byte_start": 724,
+      "char_end": 803,
+      "char_start": 722,
+      "document": "S3",
+      "id": "anchor:S3:722-803",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "S3 exercises only original A→B real provider handoff within pair-1 B1→C1 boundary"
+    },
+    {
+      "byte_end": 800,
+      "byte_start": 786,
+      "char_end": 794,
+      "char_start": 782,
+      "document": "S3",
+      "id": "anchor:S3:782-794",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": "pair-1 B1→C1"
+    },
+    {
+      "byte_end": 1543,
+      "byte_start": 1460,
+      "char_end": 1517,
+      "char_start": 1442,
+      "document": "S3",
+      "id": "anchor:S3:1442-1517",
+      "sort": "SourceAnchor",
+      "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "text": ", with trustworthy source→effect→provider turn→return→graph commit receipts"
+    }
+  ],
+  "full_source_preimage_included": false
+}
