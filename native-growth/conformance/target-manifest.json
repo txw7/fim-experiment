@@ -1,0 +1,36 @@
+{
+  "schema": "shg-shape-target-v1",
+  "source": "/home/user0/FIM/runs/typed-rule-tower/1791489573465162811/network.html",
+  "source_sha256": "e782e0c6fb35afc3010a2c93f2f29f5d0b66e5cc1223291330e05136a169400f",
+  "target_sha256": "409609ed9d2889018c72edddc723d48ceab981df8d8d47c0e97432855be426dc",
+  "family_counts": {
+    "artifact": 1,
+    "collection": 30,
+    "contract": 2,
+    "effect": 8,
+    "hole": 8,
+    "invariant": 18,
+    "machine": 1,
+    "node-type": 3,
+    "obligation": 83,
+    "occurrence": 3,
+    "operation": 6,
+    "port": 16,
+    "projection": 14,
+    "relation": 187,
+    "revision": 1,
+    "semantic-hypergraph": 2,
+    "transformation": 16,
+    "type": 22
+  },
+  "scope": "Historical structural target, not behavioral evidence",
+  "runtime_trace_policy": "Excluded: historical budget accounting and incarnation identities are not the required semantics",
+  "required_connections": [
+    "role-bearing CALL",
+    "activation-feedback",
+    "typed contract dependencies",
+    "definition-instance correspondence",
+    "parent-child boundary correspondence"
+  ],
+  "native_acceptance": "Requires structured family records and native correspondence receipts; labels and opaque semantic-ref payloads are insufficient"
+}
