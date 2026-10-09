@@ -1,0 +1,14 @@
+{
+  "prompt": "<|fim_prefix|>// Proposed read_register contract: 8 u32 registers; index is u8.\n// Return the indexed value for index < 8, otherwise InvalidRegister(index).\n// No mutation, panic, wrapping index, or default value. Generate only the body.\n#[derive(Debug, PartialEq, Eq)]\npub enum Trap { InvalidRegister(u8) }\npub struct Cpu { pub registers: [u32; 8] }\nimpl Cpu {\n    pub fn read_register(&self, index: u8) -> Result<u32, Trap> {\n<|fim_suffix|>\n    }\n}\n#[cfg(test)] mod tests {\n    use super::*;\n    #[test] fn all_indices_and_preservation() {\n        for values in [[0; 8], [u32::MAX; 8], [0, 1, 2, 3, 0x80000000, 7, 99, u32::MAX]] {\n            let cpu = Cpu { registers: values };\n            for index in 0..=u8::MAX {\n                let expected = if index < 8 { Ok(values[index as usize]) }\n                    else { Err(Trap::InvalidRegister(index)) };\n                assert_eq!(cpu.read_register(index), expected);\n                assert_eq!(cpu.registers, values);\n            }\n        }\n    }\n}\n<|fim_middle|>",
+  "temperature": 0,
+  "n_predict": 160,
+  "stream": false,
+  "stop": [
+    "<|endoftext|>",
+    "<|fim_prefix|>",
+    "<|fim_suffix|>",
+    "<|fim_middle|>",
+    "<|im_start|>",
+    "<|im_end|>"
+  ]
+}

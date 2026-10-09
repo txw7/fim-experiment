@@ -1,0 +1,155 @@
+(in-package #:lsip)
+
+;;; Bounded normal-form construction interpreter. Nominal interfaces are
+;;; proposals, not verified refinements of the original OPEN operations.
+(defun shg-context-lift-grow-v1 (state term)
+  (let* ((source (getf state :bundle)) (closure (getf state :closure))
+         (path (getf state :source-path))
+         (namespace (realization-v1-digest
+                     (list :shg-context-lift-v1 (getf state :transaction)
+                           (shg-growth-snapshot-v1 closure) term)))
+         (effects (make-semantic-effect-profile-v1
+                   :effect-kinds '(:vm-state-access) :externality-class :local))
+         (open-surface (make-semantic-boundary-surface-v1 :effect-profile effects))
+         (members nil) (ports nil) (holes nil) (connections nil) (calls nil)
+         (applications nil) (deltas nil) (bundle source) (closed closure) (generated nil))
+    (validate-semantic-bundle-persistence-components-v1 source (getf state :generated) closure)
+    (unless (and (realization-v1-proper-list-p term) (= 4 (length term))
+                 (eq :lambda (first term)) (stringp (second term)) (stringp (third term)))
+      (error "Context lift requires one typed lambda."))
+    (labels
+        ((shape (value tag length)
+           (unless (and (realization-v1-proper-list-p value)
+                        (= length (length value)) (eq tag (first value)))
+             (error "Malformed context construction ~S." tag)))
+         (member-row (key semantics)
+           (let ((row (make-semantic-member-row-v1
+                       :local-member-key (list namespace key) :member-kind :operation
+                       :semantic-ref semantics
+                       :surface-ref (semantic-boundary-surface-v1-surface-identity open-surface)
+                       :effect-profile-ref (semantic-effect-profile-v1-profile-identity effects))))
+             (push row members)
+             (push (make-semantic-hole-row-v1
+                    :local-hole-key (list namespace key :obligations)
+                    :hole-kind :refinement :owner-ref (semantic-member-row-v1-member-row-identity row)
+                    :required-contract-refs '(:context-proposed-interface-v1)
+                    :required-formal-refs '(:effect-containment-open-v1 :behavioral-refinement-open-v1)) holes)
+             row))
+         (port-row (owner key direction type)
+           (let ((row (make-semantic-port-row-v1
+                       :local-port-key (list namespace key direction) :owner-kind :member
+                       :owner-ref (semantic-member-row-v1-member-row-identity owner)
+                       :port-kind (if (eq direction :in) :input :output) :direction direction
+                       :contract-ref (list :proposed-value-type type)
+                       :effect-profile-ref (semantic-effect-profile-v1-profile-identity effects)
+                       :visibility :bundle-export)))
+             (push row ports) row))
+         (coordinate (row)
+           (make-semantic-bundle-row-address-v1
+            :bundle-occurrence-path path
+            :bundle-snapshot-ref (semantic-bundle-closure-v1-bundle-snapshot-ref closure)
+            :registry-kind :member-registry-v1 :row-ref (semantic-member-row-v1-member-row-identity row)
+            :lineage-ref (semantic-bundle-row-lineage-v1 path :member-registry-v1 row)))
+         (walk (expression variable input-port input-type depth)
+           (when (> depth 16) (error "Context construction depth budget exceeded."))
+           (if (eq :variable (first expression))
+               (progn (shape expression :variable 3)
+                      (unless (and (equal variable (second expression))
+                                   (equal input-type (third expression)))
+                        (error "Unbound or mistyped construction variable."))
+                      (values input-port input-type))
+               (progn
+                 (shape expression :application 3)
+                 (let ((callee (second expression)))
+                   (shape callee :callee 5)
+                   (unless (every #'stringp (rest callee)) (error "Callee fields must be strings."))
+                   (multiple-value-bind (incoming type)
+                       (walk (third expression) variable input-port input-type (1+ depth))
+                     (unless (equal type (third callee)) (error "Construction interface mismatch."))
+                     (let* ((definition (shg-vm-member-v1 source (intern (string-upcase (second callee)) :keyword)))
+                            (address (coordinate definition))
+                            (key (list :call-use depth))
+                            (use (member-row key (list :context-call-use :callee-address (fifth callee)
+                                                       :input (third callee) :output (fourth callee)
+                                                       :interface-status :proposed)))
+                            (in (port-row use key :in type))
+                            (out (port-row use key :out (fourth callee))))
+                       (unless (equal (fifth callee) (semantic-bundle-row-address-v1-address-identity address))
+                         (error "Stale or wrong native callee address."))
+                       (resolve-semantic-bundle-row-address-v1 address source closure (getf state :generated))
+                       (push (list use definition in out) calls)
+                       (push (list incoming in type) connections)
+                       (values out (fourth callee)))))))))
+      (let* ((region (member-row :step-region (list :context-generator term :implementation :open)))
+             (input (port-row region :boundary :in (third term))))
+        (multiple-value-bind (result type) (walk (fourth term) (second term) input (third term) 0)
+          (let ((output (port-row region :boundary :out type)))
+            (push (list result output type) connections))))
+      (let ((delta (make-semantic-bundle-delta-v1
+                    :expected-predecessor-snapshot (semantic-bundle-closure-v1-bundle-snapshot-ref closure)
+                    :operations (append (mapcar (lambda (r) (list :add-member r)) (reverse members))
+                                        (mapcar (lambda (r) (list :add-port r)) (reverse ports))
+                                        (mapcar (lambda (r) (list :add-hole r)) (reverse holes)))
+                    :provenance-ref (list :typed-context-construction namespace))))
+        (setf bundle (apply-semantic-bundle-delta-v1 source closure delta))
+        (push delta deltas)
+        (multiple-value-setq (closed generated)
+          (shg-vm-close-v1 bundle :child-closures (getf state :retained-child-closures)
+                          :child-generated-registry-sets (getf state :retained-child-generated))))
+      (labels ((relate (constitution roles parameters surfaces)
+                 (multiple-value-bind (next next-closure registries delta application)
+                     (shg-vm-add-relation-v1 bundle closed constitution roles parameters surfaces
+                      :child-closures (getf state :retained-child-closures)
+                      :child-generated-registry-sets (getf state :retained-child-generated))
+                   (setf bundle next closed next-closure generated registries)
+                   (push delta deltas) (push application applications))))
+        (unless (gethash :shg-context-call-interface-v1 *semantic-relation-constitutions-v2*)
+          (semantic-v2-register
+           (current-semantic-algebra-registry-v2) :shg-context-call-interface-v1 :protocol :protocol
+           (list (semantic-v2-role :call-use 1 1 '(:member))
+                 (semantic-v2-role :argument 1 1 '(:port))
+                 (semantic-v2-role :result 1 1 '(:port)))
+           :parameters '(:callee-address :contract-status)))
+        (dolist (use (reverse calls))
+          (relate :call-v2
+                  (list (list :caller :member (semantic-member-row-v1-member-row-identity (first use)))
+                        (list :callee :member (semantic-member-row-v1-member-row-identity (second use))))
+                  (list :call-site-ref (semantic-member-row-v1-member-row-identity (first use)))
+                  (list open-surface open-surface))
+          ;; Preserve the ternary interface association locally. This does not
+          ;; certify an executable argument/result binding across the CALL cut.
+          (relate :shg-context-call-interface-v1
+                  (list (list :call-use :member (semantic-member-row-v1-member-row-identity (first use)))
+                        (list :argument :port (semantic-port-row-v1-port-row-identity (third use)))
+                        (list :result :port (semantic-port-row-v1-port-row-identity (fourth use))))
+                  (list :callee-address (semantic-bundle-row-address-v1-address-identity (coordinate (second use)))
+                        :contract-status :proposed) nil))
+        (dolist (connection (reverse connections))
+          (let ((surface (make-semantic-boundary-surface-v1
+                          :input-port-classes (list (third connection))
+                          :output-port-classes (list (third connection)) :effect-profile effects)))
+            (relate :dataflow-v2
+                    (list (list :source :port (semantic-port-row-v1-port-row-identity (first connection)))
+                          (list :target :port (semantic-port-row-v1-port-row-identity (second connection))))
+                    nil (list surface surface)))))
+      ;; Return typed additions to the existing append/nest/enclose pipeline.
+      ;; Staged relation deltas are retained; generated registries are never edited.
+      (let ((operations nil))
+        (dolist (kind *semantic-bundle-base-registry-kinds-v1*)
+          (dolist (row (recursive-semantic-bundle-base-rows-v1 bundle kind))
+            (unless (find (semantic-registry-row-identity-v1 row)
+                          (recursive-semantic-bundle-base-rows-v1 source kind)
+                          :test #'equal :key #'semantic-registry-row-identity-v1)
+              (push (list (ecase kind
+                            (:member-registry-v1 :add-member) (:port-registry-v1 :add-port)
+                            (:relation-registry-v1 :add-relation) (:incidence-registry-v1 :add-incidence)
+                            (:hole-registry-v1 :add-hole)) row) operations))))
+        (let ((result (copy-list state)))
+          (setf (getf result :operations) (nreverse operations)
+                (getf result :selected-member-refs) (mapcar #'semantic-member-row-v1-member-row-identity members)
+                (getf result :context-lift-receipt)
+                (list :term term :namespace namespace :applications (reverse applications)
+                      :staged-deltas (reverse deltas) :calls (length calls)
+                      :call-interfaces (length calls) :dataflows (length connections) :interface-status :proposed
+                      :behavioral-proof :open :execution :unbound))
+          result)))))

@@ -1,0 +1,101 @@
+{
+  "schema": "native-vm-run-growth-receipt-v1",
+  "recorded_at": "2026-10-09T00:11:33.988439+00:00",
+  "status": "bounded-structural-construction-and-phase-checks-passed",
+  "native_base": "6674a072521c821a3e586077d553000fb699100b",
+  "scope": "authored incomplete register-VM CALL seed plus one trusted native run-region growth law",
+  "authority": {
+    "semantic": "H001/A002/H006/H002",
+    "constructor_synthesizer": "generated SH40 active",
+    "constructor_executor": "generated SH39 active",
+    "constructor_fallbacks_disabled": true,
+    "other_runtime_authorities": "bootstrap",
+    "growth_law": "trusted handwritten fixed law; not discovered or theorem-proved"
+  },
+  "commands": [
+    {
+      "cwd": "/home/user0/FIM/deps/goggles-shg-growth",
+      "command": "SHG_GROWTH_EVIDENCE=/home/user0/FIM/runs/native-vm-growth-v1/constructor.sexp SHG_VM_GROWTH_EVIDENCE=/home/user0/FIM/runs/native-vm-growth-v1/native.sexp SHG_VM_GROWTH_VIEW=/home/user0/FIM/runs/native-vm-growth-v1/view.json sbcl --script scripts/check_shg_vm_growth_v1.lisp",
+      "exit_code": 0
+    },
+    {
+      "cwd": "/home/user0/FIM/deps/goggles-shg-growth",
+      "command": "SHG_GROWTH_ALGEBRA_EVIDENCE=/home/user0/FIM/runs/native-vm-growth-v1/algebra.sexp sbcl --script scripts/check_shg_growth_algebra_v1.lisp",
+      "exit_code": 0,
+      "output_note": "This variable is unused by the checker. Native artifact was written to /tmp/shg-growth-algebra.sexp and copied to algebra.sexp after successful exit."
+    }
+  ],
+  "established": {
+    "source_functions": 13,
+    "source_CALL_relations": 19,
+    "source_base_row_identities_preserved": true,
+    "grown_child_members": 17,
+    "phase_states": 5,
+    "phase_transitions_executed": 6,
+    "explicit_open_holes": 10,
+    "native_child_relations": 13,
+    "native_parent_relations": 21,
+    "native_child_symbolic_routes": 13,
+    "native_parent_symbolic_routes": 21,
+    "resolved_parent_and_child_H002_addresses": 313,
+    "deterministic_child_snapshot_and_contraction_replay": true,
+    "fresh_transaction_namespace_differs": true,
+    "vm_negative_cases": 4,
+    "generic_algebra_operators": 3,
+    "generic_algebra_witnesses": 3,
+    "generic_algebra_negative_cases": 3,
+    "aggregate_delta_matches_all_staged_base_rows": true,
+    "one_original_predecessor_in_final_delta": true
+  },
+  "native_headers": [
+    {
+      "scope": "parent",
+      "bundle": "6d99b0f0578e3010102c7768d61687b35f88471c4247ec0d06f6d3c6e8dada23",
+      "snapshot": "370a2ccbacf06789310d4ef210698b2ea8dffdef997a5e7215668056c0aa9548"
+    },
+    {
+      "scope": "child",
+      "bundle": "33b60d5cbb9b9ad609a4a72e8d17b3b02c50968209e175e10d974403c22b601c",
+      "snapshot": "a92a828c51e4e9d43e52181227eada172cc7d1e42d926678122f8efd21f5b423"
+    }
+  ],
+  "view": {
+    "nodes": 224,
+    "incidences": 89,
+    "read_only": true,
+    "renderer_constructs_semantics": false
+  },
+  "open": [
+    "concrete VM instruction semantics and argument/result mapping",
+    "step controller and complete CHECKPIN targets",
+    "guard/correlation/budget/commit implementation",
+    "behavioral and liveness proof",
+    "atomic graph publication and admission",
+    "executable VM, provider routing and FIM",
+    "full 15-collection SHG ontology coverage and integer generation history"
+  ],
+  "warnings": [
+    "Native load retains upstream warnings; not a warning-free full upstream build.",
+    "Existing upstream algebra-law test mismatch remains as recorded in the historical increment receipt.",
+    "Two fresh runs failed at optional phase-test helpers; both logs retained. The final run uses the loaded native descriptor validator and AFSM expander."
+  ],
+  "artifacts": {
+    "algebra-check.log": "da2f6c1d8e7f0eeecdd3d629c9ad394150904e8254bce163b020d6533ab62cda",
+    "algebra.sexp": "c84586db2bd8e86d1e61853eb288cfac01491fc478b02e79fe21dd6a3ed09efa",
+    "constructor.sexp": "03b2be80761d972f64e28ca00607401e07bd8eb2529ed3822d44e691a64c73fa",
+    "fresh-check-helper-failure.log": "9b4004992f722e70ee52c204f2091f7062658f2fd6133c607eac0092c284d2ed",
+    "fresh-check-optional-helper-failure.log": "9202249809721166ea77b6c9507c5b5d6352bf1e292bc143daa98f0f654378e4",
+    "fresh-check.log": "3e1bb6143218b97f4d81f777364cf9cb66266c69cc39a4d1ed7e6c97a3f9531a",
+    "native.sexp": "b62d807f9d123aa000d113e34cea200d76bb51e502326bfb7351837970df1c76",
+    "network.html": "000f06891f4884ed52c6aea0728c3dfe2dee0e7b8176850f83176b3f02aea2eb",
+    "network.png": "ea28087e2a3ed6a08dcc38a22317c171813fabd2b95e645103a23a342b4b6f2a",
+    "source-pins.json": "e2b6bd0289b34855b4b80bfa896908da67a48db17723b71f99e2f90cee93d230",
+    "view.json": "46f8d4f4fbc85eab84dcc6053dcf2056328d205aabe1c1def22294e15531876e"
+  },
+  "visual_checks": {
+    "renderer_exit_code": 0,
+    "javascript_syntax_exit_code": 0,
+    "isolated_headless_chrome_exit_code": 0,
+    "screenshot_inspected": true
+  }
+}

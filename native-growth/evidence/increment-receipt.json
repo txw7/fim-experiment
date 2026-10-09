@@ -1,0 +1,58 @@
+{
+  "schema": "native-shg-growth-increment-receipt-v1",
+  "base": "6674a072521c821a3e586077d553000fb699100b",
+  "status": "bounded-structural-checks-passed-existing-upstream-regression-reproduced",
+  "commands": [
+    {
+      "cwd": "/home/user0/FIM/deps/goggles-shg-growth",
+      "command": "SHG_ALGEBRA_EVIDENCE=/home/user0/FIM/runs/native-growth-algebra-v1/native.sexp sbcl --script scripts/check_shg_growth_algebra_v1.lisp",
+      "exit_code": 0
+    },
+    {
+      "cwd": "/home/user0/FIM/deps/goggles-shg-growth",
+      "command": "SHG_GROWTH_EVIDENCE=/home/user0/FIM/runs/selfhost-growth-routes-v1/native.sexp sbcl --script scripts/check_shg_growth_selfhost_v1.lisp",
+      "exit_code": 0
+    }
+  ],
+  "established": {
+    "registered_native_algebra_operators": 3,
+    "native_composition_witnesses": 3,
+    "algebra_misuse_rejections": 3,
+    "generated_sh40_sh39_active": true,
+    "constructor_fallbacks_disabled": true,
+    "source_preservation": true,
+    "deterministic_replay": true,
+    "distinct_transaction_embedding": true,
+    "resolved_child_addresses": 6,
+    "incidence_derived_candidate_routes": 2
+  },
+  "open": {
+    "behavioral_proof": true,
+    "vm_coordination_growth": true,
+    "recursive_symbolic_route_closure": true,
+    "full_checkpin_closure": true,
+    "atomic_graph_publication": true
+  },
+  "warnings": "Full system compilation reports 124 upstream warnings; this is not a warning-free build.",
+  "artifacts": {
+    "algebra-native.sexp": "3a7e9e707668c0dc0b5043ccbe1a864ed4d5b9f36a56dd687d6d10fae13661e9",
+    "routes-check.log": "077a0cee4a230bf91395de7466366f28a5b4b39107cf005213fc1fb4662a57aa",
+    "routes-native.sexp": "d1caf7cbcf2925d31b59363b87b7cd3f9cf0314c3d89b8ccad8c6fd04879af95",
+    "source-pins.json": "1e281e07aa5381166ec3fe6ef10f326ba905d504b284c4474b8f0ca6a0c96cfd",
+    "algebra-check.log": "da2f6c1d8e7f0eeecdd3d629c9ad394150904e8254bce163b020d6533ab62cda",
+    "law-registry.log": "17dc6fdb82217f739be23d37a635a1c5a3177de2412ff1e0d13b6853667e1e72",
+    "law-registry-baseline.log": "bc92801efd711ca9edb78699d2fdd2bc009f1d7e5ad05fd6bf7ec37279f575b8"
+  },
+  "upstream_regression": {
+    "command": "sbcl --script scripts/check_semantic_algebra_law_registry_v1.lisp",
+    "modified_cwd": "/home/user0/FIM/deps/goggles-shg-growth",
+    "baseline_cwd": "/tmp/shg-growth-baseline-6674a072",
+    "baseline_commit": "6674a072521c821a3e586077d553000fb699100b",
+    "modified_exit_code": 1,
+    "baseline_exit_code": 1,
+    "same_failure": "TYPED-EXECUTION-MATERIALIZES",
+    "same_product_identity": "4388A7FB",
+    "same_witness_identity": "86E39B48",
+    "classification": "existing-pinned-base-test-mismatch-not-fixed"
+  }
+}

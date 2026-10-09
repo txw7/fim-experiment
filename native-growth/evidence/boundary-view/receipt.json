@@ -1,0 +1,77 @@
+{
+  "schema": "native-h006-boundary-view-receipt-v1",
+  "recorded_at": "2026-10-09T00:22:55.459030+00:00",
+  "status": "native-correspondences-resolved-and-view-checks-passed",
+  "native_base": "6674a072521c821a3e586077d553000fb699100b",
+  "source_artifact": {
+    "path": "/home/user0/FIM/runs/native-vm-growth-v1/native.sexp",
+    "sha256": "b62d807f9d123aa000d113e34cea200d76bb51e502326bfb7351837970df1c76"
+  },
+  "commands": [
+    {
+      "cwd": "/home/user0/FIM/deps/goggles-shg-growth",
+      "command": "SHG_VM_GROWTH_VIEW=/home/user0/FIM/runs/native-vm-boundary-view-v1/view.json sbcl --script scripts/check_shg_vm_boundary_view_v1.lisp",
+      "exit_code": 0
+    },
+    {
+      "command": "node --check /tmp/native-vm-network-script.js",
+      "exit_code": 0
+    },
+    {
+      "command": "isolated headless Chrome: screenshot and DOM checks of generated network",
+      "exit_code": 0
+    }
+  ],
+  "established": {
+    "native_H006_boundary_mappings": 2,
+    "derived_inspection_links": 6,
+    "native_H002_endpoints_resolved": true,
+    "source_and_successor_incidence_correspondence_checked": true,
+    "boundary_directions_and_contracts_checked": true,
+    "dangling_mapping_rejected": true,
+    "native_snapshots_unchanged": true,
+    "native_rows_unchanged": true,
+    "original_89_incidences_unchanged": true,
+    "run_to_controller_navigation_connected": true,
+    "worker_to_step_navigation_connected": true,
+    "clickable_witness_inspector_checked_in_browser": true,
+    "expand_collapse_checked_in_browser": true,
+    "screenshot_inspected": true
+  },
+  "interpretation": "Inspection/navigation links derived from the retained native H006 map. They are not new semantic relations or executable CALL edges. No graph construction, admission or VM execution was performed by this view update.",
+  "source_hashes": {
+    "lisp/shg_vm_growth_v1.lisp": "dfc02d721c0ff484e68071fdb19e720ff7e93438e339543204e5ba4857377e4b",
+    "scripts/check_shg_vm_boundary_view_v1.lisp": "13240beb8bb071e36201da508b24400d8e7c3bcc6204d06e8e46a3397cd5b9a9",
+    "render-network.py": "b44fa829a81ea3bc2932a702c4362f2c92368b942119a38cecb1fd1e4983672a"
+  },
+  "native_headers": [
+    {
+      "scope": "parent",
+      "bundle": "6d99b0f0578e3010102c7768d61687b35f88471c4247ec0d06f6d3c6e8dada23",
+      "snapshot": "370a2ccbacf06789310d4ef210698b2ea8dffdef997a5e7215668056c0aa9548"
+    },
+    {
+      "scope": "child",
+      "bundle": "33b60d5cbb9b9ad609a4a72e8d17b3b02c50968209e175e10d974403c22b601c",
+      "snapshot": "a92a828c51e4e9d43e52181227eada172cc7d1e42d926678122f8efd21f5b423"
+    }
+  ],
+  "open": [
+    "behavioral and liveness proof",
+    "executable VM and executable routing",
+    "full CHECKPIN closure"
+  ],
+  "warnings": [
+    "Native system load retains the previously recorded upstream warnings."
+  ],
+  "artifacts": {
+    "browser-check.dom": "96ff81920f290ea71cff4017a1f315c25c4e042e6ccd35976a3bc3b8ddab0ed3",
+    "browser-check.log": "c2e12a6fa4905f664107145ba757e60e49da240e5cd59b2bd3d9da98fa867a77",
+    "check.log": "f2d3026759e26e6f568c59eb6cd6e7fe7e6d7549923eb81273186c40c6d1de1c",
+    "navigation-checks.json": "12d4999e1b02e9625b834f9e22ae77d01037df888403a2b84a562446698d0308",
+    "network.html": "51195a39d84f4f1a8e102facfe5ca9f7e538f541c97f8974f83bf5e3fa8ea824",
+    "network.png": "cc63b8ffaac65282eb10b02c9cb8def2599dfce5925163138a9c0e5db70b628e",
+    "preview.log": "1dc1e6ec9bc8d6dc9c1ad21bfc3394c58796b8057fc21ce769636e41792495c4",
+    "view.json": "7e1132b199e596dfbdb662b8383804a92a39503da718feae951007f3a0e2169e"
+  }
+}

@@ -1,0 +1,401 @@
+{
+  "object_id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f",
+  "root": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root",
+  "nodes": [
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root",
+      "address": "root",
+      "kind": "call",
+      "label": "bounded-loop-region",
+      "type": "(VmState -> RunResult)",
+      "origin": "",
+      "structural_depth": 0,
+      "degree_by_family": {
+        "structural-child": {
+          "in": 0,
+          "out": 3
+        },
+        "declares": {
+          "in": 0,
+          "out": 0
+        },
+        "bound-by": {
+          "in": 0,
+          "out": 0
+        }
+      },
+      "branching_factor": 3
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work",
+      "address": "root/work",
+      "kind": "abstract",
+      "label": "input",
+      "type": "(VmState -> StepResult)",
+      "origin": "",
+      "structural_depth": 1,
+      "degree_by_family": {
+        "structural-child": {
+          "in": 1,
+          "out": 1
+        },
+        "declares": {
+          "in": 0,
+          "out": 1
+        },
+        "bound-by": {
+          "in": 0,
+          "out": 0
+        }
+      },
+      "branching_factor": 1
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/binder",
+      "address": "root/work/binder",
+      "kind": "binder",
+      "label": "input",
+      "type": "VmState",
+      "scope_root": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body",
+      "structural_depth": 2,
+      "degree_by_family": {
+        "structural-child": {
+          "in": 0,
+          "out": 0
+        },
+        "declares": {
+          "in": 1,
+          "out": 0
+        },
+        "bound-by": {
+          "in": 1,
+          "out": 0
+        }
+      },
+      "branching_factor": 0
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body",
+      "address": "root/work/body",
+      "kind": "apply",
+      "label": "",
+      "type": "StepResult",
+      "origin": "",
+      "structural_depth": 2,
+      "degree_by_family": {
+        "structural-child": {
+          "in": 1,
+          "out": 2
+        },
+        "declares": {
+          "in": 0,
+          "out": 0
+        },
+        "bound-by": {
+          "in": 0,
+          "out": 0
+        }
+      },
+      "branching_factor": 2
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body/function",
+      "address": "root/work/body/function",
+      "kind": "atom",
+      "label": "execute",
+      "type": "(Decoded -> StepResult)",
+      "origin": "22e9a0f64ed012567835b7152f2ac7dc4e91e2d8e26d0c5a6149575f2b5e0c5e",
+      "structural_depth": 3,
+      "degree_by_family": {
+        "structural-child": {
+          "in": 1,
+          "out": 0
+        },
+        "declares": {
+          "in": 0,
+          "out": 0
+        },
+        "bound-by": {
+          "in": 0,
+          "out": 0
+        }
+      },
+      "branching_factor": 0
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body/argument",
+      "address": "root/work/body/argument",
+      "kind": "apply",
+      "label": "",
+      "type": "Decoded",
+      "origin": "",
+      "structural_depth": 3,
+      "degree_by_family": {
+        "structural-child": {
+          "in": 1,
+          "out": 2
+        },
+        "declares": {
+          "in": 0,
+          "out": 0
+        },
+        "bound-by": {
+          "in": 0,
+          "out": 0
+        }
+      },
+      "branching_factor": 2
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body/argument/function",
+      "address": "root/work/body/argument/function",
+      "kind": "atom",
+      "label": "decode",
+      "type": "(Fetched -> Decoded)",
+      "origin": "3f2a50e9e07cec2d91a8773697a91980a7d4cae172e1ad0f497563f49986d35b",
+      "structural_depth": 4,
+      "degree_by_family": {
+        "structural-child": {
+          "in": 1,
+          "out": 0
+        },
+        "declares": {
+          "in": 0,
+          "out": 0
+        },
+        "bound-by": {
+          "in": 0,
+          "out": 0
+        }
+      },
+      "branching_factor": 0
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body/argument/argument",
+      "address": "root/work/body/argument/argument",
+      "kind": "apply",
+      "label": "",
+      "type": "Fetched",
+      "origin": "",
+      "structural_depth": 4,
+      "degree_by_family": {
+        "structural-child": {
+          "in": 1,
+          "out": 2
+        },
+        "declares": {
+          "in": 0,
+          "out": 0
+        },
+        "bound-by": {
+          "in": 0,
+          "out": 0
+        }
+      },
+      "branching_factor": 2
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body/argument/argument/function",
+      "address": "root/work/body/argument/argument/function",
+      "kind": "atom",
+      "label": "fetch",
+      "type": "(VmState -> Fetched)",
+      "origin": "b2f52fee24cbfc712cc8dfd709336342ed4d80302fce0d85c25f53a95348dcde",
+      "structural_depth": 5,
+      "degree_by_family": {
+        "structural-child": {
+          "in": 1,
+          "out": 0
+        },
+        "declares": {
+          "in": 0,
+          "out": 0
+        },
+        "bound-by": {
+          "in": 0,
+          "out": 0
+        }
+      },
+      "branching_factor": 0
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body/argument/argument/argument",
+      "address": "root/work/body/argument/argument/argument",
+      "kind": "var",
+      "label": "input",
+      "type": "VmState",
+      "origin": "",
+      "structural_depth": 5,
+      "degree_by_family": {
+        "structural-child": {
+          "in": 1,
+          "out": 0
+        },
+        "declares": {
+          "in": 0,
+          "out": 0
+        },
+        "bound-by": {
+          "in": 0,
+          "out": 1
+        }
+      },
+      "branching_factor": 0
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/policy",
+      "address": "root/policy",
+      "kind": "atom",
+      "label": "budget/correlation/continue/exit obligations OPEN",
+      "type": "LoopPolicy",
+      "origin": "",
+      "structural_depth": 1,
+      "degree_by_family": {
+        "structural-child": {
+          "in": 1,
+          "out": 0
+        },
+        "declares": {
+          "in": 0,
+          "out": 0
+        },
+        "bound-by": {
+          "in": 0,
+          "out": 0
+        }
+      },
+      "branching_factor": 0
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/effects",
+      "address": "root/effects",
+      "kind": "atom",
+      "label": "vm-state-access; containment obligation OPEN",
+      "type": "EffectBoundary",
+      "origin": "",
+      "structural_depth": 1,
+      "degree_by_family": {
+        "structural-child": {
+          "in": 1,
+          "out": 0
+        },
+        "declares": {
+          "in": 0,
+          "out": 0
+        },
+        "bound-by": {
+          "in": 0,
+          "out": 0
+        }
+      },
+      "branching_factor": 0
+    }
+  ],
+  "edges": [
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#e0",
+      "source": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work",
+      "target": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/binder",
+      "family": "declares",
+      "role": "binder"
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#e1",
+      "source": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body",
+      "target": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body/function",
+      "family": "structural-child",
+      "role": "function"
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#e2",
+      "source": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body/argument",
+      "target": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body/argument/function",
+      "family": "structural-child",
+      "role": "function"
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#e3",
+      "source": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body/argument/argument",
+      "target": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body/argument/argument/function",
+      "family": "structural-child",
+      "role": "function"
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#e4",
+      "source": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body/argument/argument/argument",
+      "target": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/binder",
+      "family": "bound-by",
+      "role": "variable-resolution",
+      "scope_depth": 1,
+      "binder_tree_distance": 5
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#e5",
+      "source": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body/argument/argument",
+      "target": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body/argument/argument/argument",
+      "family": "structural-child",
+      "role": "argument"
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#e6",
+      "source": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body/argument",
+      "target": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body/argument/argument",
+      "family": "structural-child",
+      "role": "argument"
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#e7",
+      "source": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body",
+      "target": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body/argument",
+      "family": "structural-child",
+      "role": "argument"
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#e8",
+      "source": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work",
+      "target": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work/body",
+      "family": "structural-child",
+      "role": "body"
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#e9",
+      "source": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root",
+      "target": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/work",
+      "family": "structural-child",
+      "role": "work"
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#e10",
+      "source": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root",
+      "target": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/policy",
+      "family": "structural-child",
+      "role": "policy"
+    },
+    {
+      "id": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#e11",
+      "source": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root",
+      "target": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f#root/effects",
+      "family": "structural-child",
+      "role": "effects"
+    }
+  ],
+  "hypotheses": [],
+  "metrics": {
+    "projection": "structural-child + declares for tree measures; bound-by measured separately",
+    "node_count": 12,
+    "edge_count": 12,
+    "max_depth": 5,
+    "binding_use_count": 1,
+    "mean_binding_tree_distance": 5.0,
+    "node_type_entropy_bits": 3.4182958340544896,
+    "serialized_compression_ratio": 0.35206611570247937,
+    "directed_acyclic_all_admitted_edges": true,
+    "uncomputed": {
+      "pmi": "Needs corpus counts and a sampling unit.",
+      "type_distance": "No type-distance graph is declared.",
+      "source_mdd": "Implicit and generated positions lack a complete source-position mapping.",
+      "pagerank_betweenness": "Not implemented in this bounded increment.",
+      "temporal_trajectory": "No chronology is derived from temporal parameters."
+    }
+  }
+}

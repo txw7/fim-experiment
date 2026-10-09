@@ -1,0 +1,26 @@
+// Proposed read_register contract: 8 u32 registers; index is u8.
+// Return the indexed value for index < 8, otherwise InvalidRegister(index).
+// No mutation, panic, wrapping index, or default value. Generate only the body.
+#[derive(Debug, PartialEq, Eq)]
+pub enum Trap { InvalidRegister(u8) }
+pub struct Cpu { pub registers: [u32; 8] }
+impl Cpu {
+    pub fn read_register(&self, index: u8) -> Result<u32, Trap> {
+        if index < 8 { Ok(self.registers[index as usize]) }
+        else { Err(Trap::InvalidRegister(index)) }
+    }
+}
+#[cfg(test)] mod tests {
+    use super::*;
+    #[test] fn all_indices_and_preservation() {
+        for values in [[0; 8], [u32::MAX; 8], [0, 1, 2, 3, 0x80000000, 7, 99, u32::MAX]] {
+            let cpu = Cpu { registers: values };
+            for index in 0..=u8::MAX {
+                let expected = if index < 8 { Ok(values[index as usize]) }
+                    else { Err(Trap::InvalidRegister(index)) };
+                assert_eq!(cpu.read_register(index), expected);
+                assert_eq!(cpu.registers, values);
+            }
+        }
+    }
+}

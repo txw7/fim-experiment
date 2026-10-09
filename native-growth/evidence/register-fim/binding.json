@@ -1,0 +1,34 @@
+{
+  "schema": "proposed-register-leaf-refinement-v1",
+  "native_subject": {
+    "id": "51ef24b43a67332215d00fa5697f42025d086e7e23e7145dedc4eaffd8883e4a",
+    "scope": "parent",
+    "registry": "member-registry-v1",
+    "address": "28b4bb5350a53975d817550a0c60fcbe71304830d1c999a80e8652b2bc2cbd1f",
+    "label": ":REGISTER-READ",
+    "details": "#S(LSIP::SEMANTIC-MEMBER-ROW-V1 :LOCAL-MEMBER-KEY :REGISTER-READ :MEMBER-KIND :OPERATION :SEMANTIC-REF (:VM-FUNCTION :REGISTER-READ :INTERFACE :OPEN) :SURFACE-REF \"febccdc59880aabca62c869be35516bdfe9000d5bd76d0c00243ef8de1de46ae\" :REFINEMENT-REF NIL :CHILD-BUNDLE-REF NIL :STATE-PROFILE-REF NIL :EFFECT-PROFILE-REF \"8d625050e0efa8d692e82de6f8fba72c30fd1e3c8208b417f1454ef60e879e3d\" :RESOURCE-PROFILE-REF NIL :AUTHORITY-PROFILE-REF NIL :FORMAL-STATE-REF NIL :PROVENANCE-REF NIL :MEMBER-ROW-IDENTITY \"51ef24b43a67332215d00fa5697f42025d086e7e23e7145dedc4eaffd8883e4a\")"
+  },
+  "native_header": {
+    "scope": "parent",
+    "bundle": "6e8c8eb87ae821c4ee0629ac20ec901afa66da0b073e9c2eeba5b207b94b8149",
+    "snapshot": "a69db5f1c1476deb9417fb600bcf0944868f43dfe38123469d89e9fd4c291688"
+  },
+  "view_sha256": "80caba6a584530d789c4fa06d5f327ad50f847048ac364d07ff2a4e04a3b7cf7",
+  "contract": {
+    "register_count": 8,
+    "value_type": "u32",
+    "index_type": "u8",
+    "valid": "return registers[index]",
+    "invalid": "return InvalidRegister(index)",
+    "writes": []
+  },
+  "contract_origin": "authored proposed refinement of OPEN native interface",
+  "lowering": "authored Rust profile; not native graph lowering",
+  "source_sha256": "eb9bfc9ed155cbb6423133e8d7190a6d40bc354e595aef9ac7b69283917a9744",
+  "body_byte_range": [
+    414,
+    421
+  ],
+  "native_admission": false,
+  "proof": "OPEN"
+}

@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "frozen_target_family_coverage": true,
+    "omitted_effect_rejected": true,
+    "debug_string_not_structured_coverage": true,
+    "coverage_cannot_grant_admission": true
+  },
+  "native_construction_run_this_increment": false
+}

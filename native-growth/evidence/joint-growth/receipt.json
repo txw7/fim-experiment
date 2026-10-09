@@ -1,0 +1,118 @@
+{
+  "schema": "native-vm-joint-growth-receipt-v1",
+  "recorded_at": "2026-10-09T00:50:25.210550+00:00",
+  "status": "bounded-joint-structural-growth-and-phase-checks-passed",
+  "native_base": "6674a072521c821a3e586077d553000fb699100b",
+  "authorship": {
+    "starting_function_and_CALL_requirements": "authored 13-function/19-CALL seed",
+    "production": "trusted handwritten fixed run/step growth law",
+    "law_discovery": false,
+    "native_product": "grown through generated SH40/SH39 and original H001/A002/H006/H002 owners"
+  },
+  "commands": [
+    {
+      "cwd": "/home/user0/FIM/deps/goggles-shg-growth",
+      "command": "SHG_GROWTH_EVIDENCE=/home/user0/FIM/runs/native-vm-joint-growth-v1/run-constructor.sexp SHG_VM_GROWTH_EVIDENCE=/home/user0/FIM/runs/native-vm-joint-growth-v1/run-only.sexp SHG_VM_GROWTH_VIEW=/home/user0/FIM/runs/native-vm-joint-growth-v1/run-only.json SHG_JOINT_EVIDENCE=/home/user0/FIM/runs/native-vm-joint-growth-v1/native.sexp SHG_JOINT_VIEW=/home/user0/FIM/runs/native-vm-joint-growth-v1/view.json sbcl --script scripts/check_shg_vm_joint_growth_v1.lisp",
+      "exit_code": 0,
+      "output_note": "Initial full-witness view was retained as debug-view-full-witness.json; the inspection command below generated the compact view."
+    },
+    {
+      "cwd": "/home/user0/FIM/deps/goggles-shg-growth",
+      "command": "SHG_VM_ARTIFACT=/home/user0/FIM/runs/native-vm-joint-growth-v1/native.sexp SHG_VM_GROWTH_VIEW=/home/user0/FIM/runs/native-vm-joint-growth-v1/view.json sbcl --script scripts/check_shg_vm_boundary_view_v1.lisp",
+      "exit_code": 0
+    }
+  ],
+  "established": {
+    "original_functions_preserved": 13,
+    "original_CALLs_preserved": 19,
+    "original_base_row_identities_preserved": true,
+    "one_aggregate_delta_against_original_predecessor": true,
+    "controllers": 2,
+    "source_linked_call_coordinations": 4,
+    "machine_definitions": 2,
+    "phase_states": 9,
+    "phase_transitions_executed": 13,
+    "grown_child_members": 36,
+    "explicit_open_holes": 22,
+    "native_child_relations_and_symbolic_routes": 33,
+    "native_parent_relations_and_symbolic_routes": 25,
+    "native_H002_rows_resolved": 521,
+    "H006_mappings": 6,
+    "inspection_boundary_links": 18,
+    "deterministic_child_snapshot_replay": true,
+    "fresh_step_allocation_namespace_differs": true,
+    "wrong_step_subject_rejected": true,
+    "dangling_mapping_rejected": true,
+    "native_serial_order": [
+      "fetch",
+      "decode",
+      "execute"
+    ],
+    "inspection_paths_checked": 5,
+    "browser_inspector_and_expand_collapse": true,
+    "javascript_syntax_check": true,
+    "screenshot_inspected": true
+  },
+  "native_headers": [
+    {
+      "scope": "parent",
+      "bundle": "6e8c8eb87ae821c4ee0629ac20ec901afa66da0b073e9c2eeba5b207b94b8149",
+      "snapshot": "a69db5f1c1476deb9417fb600bcf0944868f43dfe38123469d89e9fd4c291688"
+    },
+    {
+      "scope": "child",
+      "bundle": "f70fc614bbc1c1cab17fd92392c3f6b0189f288d88b0027de8d7fccac2476b1e",
+      "snapshot": "de33ac595281e5f22989340f61ef796afdb6ebabac1d483e3f08bd4bfd0e31eb"
+    }
+  ],
+  "inspection": {
+    "rows": 355,
+    "incidences": 166,
+    "native_graph_changed_by_view_compaction": false,
+    "compact_view_bytes": 560459,
+    "original_full_witness_view_bytes": 10329797,
+    "links_are_executable_CALLs": false
+  },
+  "source_pins": {
+    "lisp/shg_vm_growth_v1.lisp": "fec2e3457e351764221eee52f368e184e48129f924eef3cd440d537c0d6b830c",
+    "lisp/shg_growth_constructor_v1.lisp": "0c8f4ed96bd0853e2409fc8e75333b41f008791eeb2590cf73283a6b7086c2a9",
+    "scripts/check_shg_vm_joint_growth_v1.lisp": "9a68ecc0481dea5345f1caa3963b4ddd5b4ce7a3d742ef226099dd017120e22e",
+    "scripts/check_shg_vm_boundary_view_v1.lisp": "18e9a95aa2f322bf416438f5d3bff1c73ed0328cfe90609ca6fbbf50f674b69f"
+  },
+  "construction_module_source": {
+    "artifact": "source/shg_vm_growth_v1.build.lisp",
+    "sha256": "450fb18fcde9e4d4ab21ab8353848e846491e3a1080a4283a9f9a6d21af2bb10",
+    "note": "Exact construction-run module restored from the final module by undoing the one inspection-only change: full map object to map witness reference in link details. Semantic growth and validation code are identical."
+  },
+  "renderer_sha256": "a6bfd33ba226f9c9ad858caa7d55ce1cfe05f2dcdb9ecec6022fc21e1933d2b7",
+  "open": [
+    "concrete VM schemas, instruction semantics and argument/result mappings",
+    "guards, correlation, atomic commit and reset semantics",
+    "behavioral, safety and liveness proof beyond phase-projection checks",
+    "executable VM, provider routing and FIM",
+    "full ontology/CHECKPIN closure",
+    "atomic graph publication and generation history",
+    "CALL-topology synthesis from requirements and discovery of growth laws"
+  ],
+  "warnings": [
+    "Native system load retains upstream warnings; not a warning-free full upstream build.",
+    "The existing upstream algebra-law test mismatch remains as recorded in the earlier increment receipt."
+  ],
+  "artifact_digests": {
+    "browser-check.dom": "1039adeac1b62a079509bb7c91155a88e127016d28889432d41ccb48ccb997e6",
+    "browser-check.log": "d95e75473ad6b36b98262ecea425199eb647e085fe6858a49bbb2e15bd7926f0",
+    "check.log": "9106d42dd80a3ab907c6f066512dc8f6a4362ca56869ac1f1c3375cb93202960",
+    "native.sexp": "f5e579657de61e4992f3ce2f0f8724d467f83eff7493fb0a808210b5cbe0028c",
+    "network.html": "b6ac73075047c4f35053d8a0ae75010f2c29e22955a1895f39da6df8fbb47251",
+    "network.png": "dd488b939c4c2f37942a26f6aff2a32935f1581c707b8ae14fa1c368c88442ea",
+    "preview.log": "34bb4a59d5b2ecde09c8000ecd129e377ee57ae5bac3d52634772177c800a859",
+    "source/check_shg_vm_boundary_view_v1.lisp": "18e9a95aa2f322bf416438f5d3bff1c73ed0328cfe90609ca6fbbf50f674b69f",
+    "source/check_shg_vm_joint_growth_v1.lisp": "9a68ecc0481dea5345f1caa3963b4ddd5b4ce7a3d742ef226099dd017120e22e",
+    "source/shg_growth_constructor_v1.lisp": "0c8f4ed96bd0853e2409fc8e75333b41f008791eeb2590cf73283a6b7086c2a9",
+    "source/shg_vm_growth_v1.build.lisp": "450fb18fcde9e4d4ab21ab8353848e846491e3a1080a4283a9f9a6d21af2bb10",
+    "source/shg_vm_growth_v1.lisp": "fec2e3457e351764221eee52f368e184e48129f924eef3cd440d537c0d6b830c",
+    "view-check.log": "e7b1c295b4efddee8e3f25968de5e9d9c8b071d7f4a7b53f9bed702426152a05",
+    "view-checks.json": "3d23db60e8541d774d5357dc2c721572d1c8e054fc71e69b03f41733d7c7bf80",
+    "view.json": "80caba6a584530d789c4fa06d5f327ad50f847048ac364d07ff2a4e04a3b7cf7"
+  }
+}

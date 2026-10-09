@@ -1,0 +1,29 @@
+{
+  "schema": "shg-shape-coverage-v1",
+  "target_digest": "409609ed9d2889018c72edddc723d48ceab981df8d8d47c0e97432855be426dc",
+  "structured_family_counts": {
+    "artifact": 1,
+    "collection": 30,
+    "contract": 2,
+    "effect": 8,
+    "hole": 8,
+    "invariant": 18,
+    "machine": 1,
+    "node-type": 3,
+    "obligation": 83,
+    "occurrence": 3,
+    "operation": 6,
+    "port": 16,
+    "projection": 14,
+    "relation": 187,
+    "revision": 1,
+    "semantic-hypergraph": 2,
+    "transformation": 16,
+    "type": 22
+  },
+  "missing_families": [],
+  "family_coverage": "PRESENT",
+  "native_correspondence": "NOT_CHECKED",
+  "behavioral_proof": "OPEN",
+  "accepted_as_full_native_shg": false
+}
