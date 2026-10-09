@@ -1,0 +1,18 @@
+{
+  "base": "6674a072521c821a3e586077d553000fb699100b",
+  "branch": "evl/shg-growth-selfhost-v1",
+  "modified_sources": {
+    "lsip.asd": "1761368c4722394b330e5b0f6d293846dda123f9751d43fee3b8b23826bd8e4d",
+    "lisp/semantic_combinator_constitution_v1.lisp": "8a93bab46a959332860582c723a7ba4bb60c58efd72c05887471e9cb4973ae54",
+    "lisp/semantic_composition_v1.lisp": "fd478d283e09ebb2d2b0ff70a2e9223e3eaa43c6306e5a2a9b566b7ba55bafc3",
+    "lisp/semantic_fragment_extraction_v1.lisp": "8cfda0cf8af0aeafe943021d5ff29a23fcfd6b03843c596b04baca08377ccd9e",
+    "lisp/shg_growth_constructor_v1.lisp": "809a0ec2d34b5dfba54f16f40482b313b8cb7a261a44289c909899fd8775ae9d",
+    "lisp/shg_growth_algebra_v1.lisp": "5e996d89c41e1f5329cf87fb9cc73d3484efe2a7c7914a3f882d69f2e3e5f9d1",
+    "lisp/shg_vm_growth_v1.lisp": "4a25c5840034060f80e2a3ffe30aae61af86180bb1505adc2c01e543d7865b0f",
+    "scripts/check_shg_growth_selfhost_v1.lisp": "57a518fd1ba7042bb5b9dff9701748ec205f0ba3cf65bf3c51862e587bd85303",
+    "scripts/check_shg_growth_algebra_v1.lisp": "48f5bc02f1361e2467d886c84f17c3992d18fed4a2c10182e7b2eabf0b6e9568",
+    "scripts/check_shg_vm_growth_v1.lisp": "39e6ddab3373ce1a5ec80ddad67b2d57184b34895e154810da0827e2976334b1"
+  },
+  "checkpin_sha256": "d3d39300ba922634c3bdda35242c6b13067d9635fbef6ff2a80511eab0afeb4f",
+  "publication_repo_base": "16436b560d454971a79d8ae59758b8975828b297"
+}

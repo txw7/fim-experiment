@@ -1,0 +1,69 @@
+{
+  "schema": "shg-growth-constructor-slice-v1",
+  "status": "PASS_WITHIN_BOUNDED_SCOPE",
+  "upstream_commit": "6674a072521c821a3e586077d553000fb699100b",
+  "working_branch": "evl/shg-growth-selfhost-v1",
+  "command": "SHG_GROWTH_EVIDENCE=/home/user0/FIM/runs/selfhost-growth-v1/native-focused.sexp sbcl --script scripts/check_shg_growth_selfhost_v1.lisp",
+  "cwd": "/home/user0/FIM/deps/goggles-shg-growth",
+  "exit_code": 0,
+  "toolchain": "SBCL 2.2.9.debian",
+  "constructor_synthesizer": "adcaf0707e069b8122e62fc9945f01783944b076e0c48007a14d655975afb0bd",
+  "constructor_executor": "87713f486e1fd7ff4fb8ddc52901464b708150d83d760dfb011bcbab5b6aa202",
+  "constructor_program": "e98c5c5b4d99a59c859ad1fafa3b1040ff432529171488a3483172eee99d9aea",
+  "constructor_fallbacks_disabled": true,
+  "other_runtime_authorities": "bootstrap",
+  "growth_primitive_attachments": "handwritten native registered kernel",
+  "fixture": "original native H006 flow fixture, not VM controller",
+  "checks": [
+    "source unchanged",
+    "typed append through native delta",
+    "native extraction and enclosure",
+    "same-request deterministic replay",
+    "fresh transaction distinct native embedding",
+    "exact child expansion",
+    "six H002 coordinates resolve",
+    "stale, duplicate and malformed requests rejected",
+    "missing capability rejected",
+    "both handwritten constructor fallback calls rejected"
+  ],
+  "negative_check_scope": "six bounded rejection cases; helper catches errors, not a complete category-specific CheckPin negative suite",
+  "guarantees": {
+    "bounded_structural_execution": "tested",
+    "new_law_discovery": "NOT_IMPLEMENTED",
+    "generic_composition_operator_registration": "NOT_IMPLEMENTED",
+    "VM_controller_construction": "OPEN",
+    "behavioral_proof": "OPEN",
+    "generated_symbolic_routes": "OPEN",
+    "graph_atomic_publication": "OPEN",
+    "full_CHECKPIN_join": "OPEN"
+  },
+  "sources": [
+    {
+      "path": "lsip.asd",
+      "sha256": "25dd9631bbbbf8851d6cc2ca24d9aac4993db49ca1e73dbff577107704fae43a"
+    },
+    {
+      "path": "lisp/shg_growth_constructor_v1.lisp",
+      "sha256": "3a09da6a9b54f18b40051f3b20db17f208eb6a5780465484ac205c80cb2c2cdf"
+    },
+    {
+      "path": "scripts/check_shg_growth_selfhost_v1.lisp",
+      "sha256": "ea21acd578278f38f46b33603034848089edd53b0e55386e30f617e3d202ae66"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "final-check.log",
+      "sha256": "077a0cee4a230bf91395de7466366f28a5b4b39107cf005213fc1fb4662a57aa"
+    },
+    {
+      "path": "native-focused.sexp",
+      "sha256": "6def3ff17df8d80a40f23084ca791a6fe3fc523080784ba6bff31c86b56b982f"
+    },
+    {
+      "path": "goggles-growth.patch",
+      "sha256": "9117a142a77f2dd42a83b2aeccf713ecca090d9fe2ab3c606016ad17bf9e50be"
+    }
+  ],
+  "development_runs": "Initial JSON boundary failure and harness parse failure retained in local run logs; not acceptance evidence for final frozen source."
+}
