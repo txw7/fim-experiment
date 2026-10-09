@@ -76,3 +76,13 @@ The step phase projection has fetch/decode/execute/done phases; typed outcome pr
 Run `sbcl --script scripts/check_shg_vm_joint_growth_v1.lisp` with `SHG_JOINT_EVIDENCE` and `SHG_JOINT_VIEW` paths. The driver also reruns the prior run-only/self-host checks. To inspect a persisted result, set `SHG_VM_ARTIFACT` to the native artifact and run the boundary-view checker. The latter now handles either run-only or joint scope. The compact export retains witness references and exact endpoint coordinates instead of repeating the entire address map on every link.
 
 Newest artifacts: `evidence/joint-growth/network.html`, `receipt.json`, `native.sexp` and the actual check logs. The receipt distinguishes authored inputs, native generated products, phase checks and open semantic guarantees. The old evidence is retained as historical evidence.
+
+## Addressed register FIM leaf experiment
+
+`fim-register-demo.py` selects the unique parent `REGISTER-READ` member from the retained, native-resolved joint-growth export. It binds an authored concrete register contract to that exact H002 subject and snapshot, then places one Rust body range. This is a proposed refinement of the still-OPEN native interface, not an admitted graph transformation or a native lowering implementation.
+
+```sh
+python3 native-growth/fim-register-demo.py /tmp/register-fim-fresh-run
+```
+
+The output directory must not already exist. The runner verifies the configured local checkpoint digest and native FIM tokenization, uses the existing raw serializer and digest-checked insertion adapter, and records the exact prompt, response, candidate and checks. One actual local Qwen2.5-Coder-1.5B-Base request produced the body in `evidence/register-fim/completion.txt`; Rust checked all 256 indices across three register states, including preservation. Stale source and invalid ranges were rejected by category. These are tests, not a theorem over arbitrary register values. Implementation proof, native refinement admission and executable admission remain OPEN/false. The source graph is unchanged.

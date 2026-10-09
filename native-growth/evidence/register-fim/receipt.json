@@ -1,0 +1,48 @@
+{
+  "model": {
+    "checkpoint": "Qwen2.5-Coder-1.5B-Base",
+    "gguf": "/home/user0/.local/share/fim-models/Qwen2.5-Coder-1.5B-Base.gguf",
+    "sha256": "6a77366395772462c84f0c4d226ac404674327cbe78c01e4391cc7e0c698851e",
+    "endpoint": "http://127.0.0.1:8085",
+    "protocol": "raw /completion; no ChatML",
+    "fim_token_ids": [
+      151659,
+      151661,
+      151660
+    ],
+    "template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>"
+  },
+  "subject_address": "28b4bb5350a53975d817550a0c60fcbe71304830d1c999a80e8652b2bc2cbd1f",
+  "snapshot": "a69db5f1c1476deb9417fb600bcf0944868f43dfe38123469d89e9fd4c291688",
+  "source_sha256": "eb9bfc9ed155cbb6423133e8d7190a6d40bc354e595aef9ac7b69283917a9744",
+  "candidate_sha256": "2a9ba7acb9e5c7246991b828a5b33e441f49b4c549b9ca7095efdb7f39804980",
+  "negative_checks": [
+    {
+      "case": "stale-source",
+      "rejected": true,
+      "category": "Stale source digest"
+    },
+    {
+      "case": "out-of-range",
+      "rejected": true,
+      "category": "Invalid byte range"
+    }
+  ],
+  "rustc": "rustc 1.94.0 (4a4ef493e 2026-03-02)",
+  "tests_passed": true,
+  "test_scope": "all 256 u8 indices on three register states; preservation",
+  "implementation_proof": "OPEN",
+  "native_refinement_admission": false,
+  "executable_admission": false,
+  "artifacts": {
+    "response.json": "05dd95c57f5f44dff4b25e76747c8712e5a4361b33ec6412b83e80227c582de6",
+    "checks.log": "67423e4fa95065a1e8eb97d0106f3d3b872f56b503c17c2f1ad641c35024fb83",
+    "prompt.txt": "7bd70a7d04e88c6098e2791015442ca953fca97ef1120e8c893c50612d64a81b",
+    "tokenizer.json": "4da52c8796d7378a8e942bf04c769ddd2a53217726eea1e080dede1aeb44d825",
+    "request.json": "db5dc26d1f3050210e6fde8ad267136ce98a23ff95f4e7f2cee5864f25d4d550",
+    "binding.json": "2360f1449554f6de5f9a475c4f840669dd3f760373e94bdc173d299acdf8646e",
+    "scaffold.rs": "eb9bfc9ed155cbb6423133e8d7190a6d40bc354e595aef9ac7b69283917a9744",
+    "candidate.rs": "2a9ba7acb9e5c7246991b828a5b33e441f49b4c549b9ca7095efdb7f39804980",
+    "completion.txt": "2aaad93d100f6a47c129fae02494061431e46b79bdb12deecf23b1e4d786d7c5"
+  }
+}
