@@ -1,0 +1,94 @@
+{
+  "model": "jev-latest",
+  "state": "SOURCE DATA (classify expressed structure, not world truth):\nPROJECT /home/user0/shg_mu_workspace/project. Isolated controller http://127.0.0.1:8767 and code /home/user0/shg_mu_workspace/runtime/looper. Original /home/user0/greenfield, Factory, Goggles, other repositories: no edits. Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable, no push or GitHub Actions, S4-S6 blocked. S2.5 accepted 71 tests; promoted SHA256 90eb9703b8b97e981b93fdbc95ab9ee17a0224dd423d12b757f8d86f376dd536.",
+  "questions": {
+    "logic:nested": {
+      "type": "noul",
+      "instructions": "Does this span place one logical expression inside another?"
+    },
+    "logic:chain": {
+      "type": "noul",
+      "instructions": "Does one stated inference conclusion supply a later inference premise?"
+    },
+    "logic:shared_premise": {
+      "type": "noul",
+      "instructions": "Do two stated inferences use the same premise?"
+    },
+    "logic:branch": {
+      "type": "noul",
+      "instructions": "Does one stated premise or condition feed multiple consequences?"
+    },
+    "logic:equivalence": {
+      "type": "noul",
+      "instructions": "Does this span explicitly assert equivalence of two propositions?"
+    },
+    "logic:substitution": {
+      "type": "noul",
+      "instructions": "Does this span use an identity or equivalence to replace a term in an expression?"
+    },
+    "logic:missing_premise": {
+      "type": "noul",
+      "instructions": "Does a stated inference require a premise that this span does not supply?"
+    },
+    "axis:composition_topology": {
+      "type": "choice",
+      "instructions": "Classify the dominant composition of actual premise/conclusion dependencies.",
+      "criteria": {
+        "chain": "A conclusion feeds a later inference.",
+        "branch": "One premise/condition feeds multiple consequences.",
+        "shared": "Multiple flows share a premise without a serial chain.",
+        "none_or_unresolved": "No supported composition or unclear topology."
+      }
+    },
+    "axis:reference_alignment": {
+      "type": "choice",
+      "instructions": "Assess whether repeated terms in the proposed composition preserve referents and senses.",
+      "criteria": {
+        "aligned": "Same referents and senses are supported.",
+        "shifted": "A referent or sense changes.",
+        "mixed": "Some align and others shift.",
+        "unresolved": "Insufficient evidence to merge nodes."
+      }
+    },
+    "axis:composition_support": {
+      "type": "choice",
+      "instructions": "Assess source support for the larger connection, not philosophical truth.",
+      "criteria": {
+        "explicit": "Connection is explicitly expressed.",
+        "licensed": "Connection follows from supported component relations.",
+        "invented": "Connection requires an unsupported relation.",
+        "unresolved": "No candidate or uncertain support."
+      }
+    },
+    "axis:equivalence_strength": {
+      "type": "choice",
+      "instructions": "Distinguish two directions from similarity or a single implication.",
+      "criteria": {
+        "biconditional": "Both conditional directions with matching terms.",
+        "one_direction": "Only one conditional direction.",
+        "similarity": "Only analogy or resemblance.",
+        "none_or_unresolved": "No equivalence candidate or unclear senses."
+      }
+    },
+    "axis:context_dependence": {
+      "type": "choice",
+      "instructions": "Assess how much context is required for the proposed composition.",
+      "criteria": {
+        "unit": "One source unit suffices.",
+        "pair": "Both paired units are required.",
+        "parent": "Wider context is required.",
+        "unresolved": "Insufficient context to decide."
+      }
+    },
+    "axis:assumption_sensitivity": {
+      "type": "choice",
+      "instructions": "Assess reliance on an unstated bridge, identity or interpretation.",
+      "criteria": {
+        "independent": "Composition does not require an unstated bridge.",
+        "dependent": "Composition needs an unstated assumption.",
+        "not_applicable": "No composition candidate.",
+        "unresolved": "Cannot identify necessary assumptions."
+      }
+    }
+  }
+}

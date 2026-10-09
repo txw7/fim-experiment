@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "checks": [
+    "original 26 logic heads retained",
+    "symbolic actual 1500 interior updates",
+    "probabilistic actual 1500 interior updates",
+    "both students updated between initial and feedback prompts in all three layers",
+    "all six source spans exact",
+    "immutable philosophy origin snapshots match fork provenance; live originals may advance externally",
+    "eight original classifier heads have actual logits on five fresh spec pairs",
+    "absent last-paragraph pair masked rather than fabricated",
+    "native score legend correctly projected; inapplicable distinctions masked",
+    "saved frozen checkpoint replay verified"
+  ],
+  "source_semantic_admission": "NOT_RUN",
+  "single_source_pilot": true
+}

@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"profiles\": {\n    \"s3-p4\": {\n      \"nested\": \"unresolved\",\n      \"chain\": \"unresolved\",\n      \"shared_premise\": \"unresolved\",\n      \"branch\": \"unresolved\",\n      \"equivalence\": \"unresolved\",\n      \"substitution\": \"unresolved\",\n      \"missing_premise\": \"unresolved\"\n    }\n  },\n  \"symbolic\": {\n    \"atoms\": [\n      {\n        \"symbol\": \"create_test_live_ab_py\",\n        \"text\": \"create test_live_ab.py\",\n        \"source_quote\": \"create test_live_ab.py\",\n        \"kind\": \"proposition\"\n      },\n      {\n        \"symbol\": \"run_live_ab_py\",\n        \"text\": \"explicit scripts/run_live_ab.py\",\n        \"source_quote\": \"explicit scripts/run_live_ab.py\",\n        \"kind\": \"proposition\"\n      },\n      {\n        \"symbol\": \"provider_unavailable\",\n        \"text\": \"provider unavailable\",\n        \"source_quote\": \"provider unavailable\",\n        \"kind\": \"proposition\"\n      }\n    ],\n    \"premises\": [\n      \"(implies (and (implies (not (implies (not create_test_live_ab_py) (not run_live_ab_py))) (not provider_unavailable)) (or create_test_live_ab_py run_live_ab_py))\",\n      \"(implies (not provider_unavailable) (or create_test_live_ab_py run_live_ab_py))\"\n    ],\n    \"conclusion\": \"unresolved\",\n    \"identities\": [],\n    \"flows\": [\n      {\n        \"id\": \"flow_1\",\n        \"rule\": \"unresolved\",\n        \"premises\": [\n          \"create_test_live_ab_py\",\n          \"run_live_ab_py\"\n        ],\n        \"conclusion\": \"unresolved\"\n      },\n      {\n        \"id\": \"flow_2\",\n        \"rule\": \"unresolved\",\n        \"premises\": [\n          \"provider_unavailable\"\n        ],\n        \"conclusion\": \"unresolved\"\n      }\n    ],\n    \"compositions\": [\n      {\n        \"kind\": \"substitution\",\n        \"members\": [\n          \"create_test_live_ab_py\",\n          \"run_live_ab_py\"\n        ]\n      },\n      {\n        \"kind\": \"substitution\",\n        \"members\": [\n          \"provider_unavailable\"\n        ]\n      }\n    ],\n    \"unresolved\": [\n      \"S3_OPEN\",\n      \"manufactured_positive\"\n    ]\n  }\n}"
+      }
+    }
+  ],
+  "created": 1791516775,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 596,
+    "prompt_tokens": 2124,
+    "total_tokens": 2720,
+    "prompt_tokens_details": {
+      "cached_tokens": 426
+    }
+  },
+  "id": "chatcmpl-OmK2AGtjKQ9EAvfdrV5WJdFis8Eslxua",
+  "timings": {
+    "cache_n": 426,
+    "prompt_n": 1698,
+    "prompt_ms": 6593.866,
+    "prompt_per_token_ms": 3.883313309776207,
+    "prompt_per_second": 257.51205741821263,
+    "predicted_n": 596,
+    "predicted_ms": 129273.223,
+    "predicted_per_token_ms": 217.26592100840335,
+    "predicted_per_second": 4.602654642562753
+  }
+}

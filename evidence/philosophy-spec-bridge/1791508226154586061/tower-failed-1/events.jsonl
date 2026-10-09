@@ -1,0 +1,24 @@
+{"time_ns": 1791508877901003001, "kind": "observer_start", "provider": "jev", "record": "s3-p0", "phase": "layer-1"}
+{"time_ns": 1791508877903255950, "kind": "observer_start", "provider": "jev", "record": "s3-p1", "phase": "layer-1"}
+{"time_ns": 1791508878608728036, "kind": "observer_start", "provider": "laya", "record": "s3-p1", "phase": "layer-1/window-0"}
+{"time_ns": 1791508878613020155, "kind": "observer_start", "provider": "laya", "record": "s3-p0", "phase": "layer-1/window-0"}
+{"time_ns": 1791508879304966770, "kind": "observer_complete", "provider": "jev", "record": "s3-p1", "phase": "layer-1", "elapsed": 1.401335024042055}
+{"time_ns": 1791508879309950680, "kind": "observer_start", "provider": "laya", "record": "s3-p2", "phase": "layer-1/window-0"}
+{"time_ns": 1791508879319747099, "kind": "observer_complete", "provider": "jev", "record": "s3-p0", "phase": "layer-1", "elapsed": 1.4167079270118847}
+{"time_ns": 1791508879321672142, "kind": "observer_start", "provider": "jev", "record": "s3-p2", "phase": "layer-1"}
+{"time_ns": 1791508880130512306, "kind": "observer_complete", "provider": "jev", "record": "s3-p2", "phase": "layer-1", "elapsed": 0.8086627370212227}
+{"time_ns": 1791508880134870091, "kind": "observer_start", "provider": "laya", "record": "s3-p3", "phase": "layer-1/window-0"}
+{"time_ns": 1791508884575524826, "kind": "observer_complete", "provider": "laya", "record": "s3-p1", "phase": "layer-1/window-0", "elapsed": 5.964678791933693}
+{"time_ns": 1791508884577918004, "kind": "observer_start", "provider": "jev", "record": "s3-p3", "phase": "layer-1"}
+{"time_ns": 1791508885641246002, "kind": "observer_complete", "provider": "jev", "record": "s3-p3", "phase": "layer-1", "elapsed": 1.063146477099508}
+{"time_ns": 1791508885646136957, "kind": "observer_start", "provider": "laya", "record": "s3-p4", "phase": "layer-1/window-0"}
+{"time_ns": 1791508887934099671, "kind": "observer_complete", "provider": "laya", "record": "s3-p0", "phase": "layer-1/window-0", "elapsed": 9.320737726986408}
+{"time_ns": 1791508887936478391, "kind": "observer_start", "provider": "jev", "record": "s3-p4", "phase": "layer-1"}
+{"time_ns": 1791508888961193700, "kind": "observer_complete", "provider": "jev", "record": "s3-p4", "phase": "layer-1", "elapsed": 1.0244500179542229}
+{"time_ns": 1791508888965401602, "kind": "observer_start", "provider": "laya", "record": "s3-p5", "phase": "layer-1/window-0"}
+{"time_ns": 1791508893526373393, "kind": "observer_complete", "provider": "laya", "record": "s3-p2", "phase": "layer-1/window-0", "elapsed": 14.215715639060363}
+{"time_ns": 1791508893527906210, "kind": "observer_start", "provider": "jev", "record": "s3-p5", "phase": "layer-1"}
+{"time_ns": 1791508894600360574, "kind": "observer_complete", "provider": "jev", "record": "s3-p5", "phase": "layer-1", "elapsed": 1.0722818140638992}
+{"time_ns": 1791508900603468296, "kind": "observer_complete", "provider": "laya", "record": "s3-p3", "phase": "layer-1/window-0", "elapsed": 20.46844767604489}
+{"time_ns": 1791508907622440420, "kind": "observer_complete", "provider": "laya", "record": "s3-p4", "phase": "layer-1/window-0", "elapsed": 21.97603400296066}
+{"time_ns": 1791508911935157514, "kind": "observer_complete", "provider": "laya", "record": "s3-p5", "phase": "layer-1/window-0", "elapsed": 22.969437537016347}

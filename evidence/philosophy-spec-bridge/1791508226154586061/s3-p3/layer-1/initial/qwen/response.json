@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"profiles\": {\n    \"s3-p3\": {\n      \"entity\": \"present\",\n      \"predicate\": \"present\",\n      \"proposition\": \"present\",\n      \"not\": \"present\",\n      \"and\": \"present\",\n      \"or\": \"present\",\n      \"implies\": \"present\",\n      \"iff\": \"present\"\n    }\n  },\n  \"symbolic\": {\n    \"atoms\": [\n      {\n        \"symbol\": \"A\",\n        \"text\": \"IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable\",\n        \"source_quote\": \"IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable\",\n        \"kind\": \"proposition\"\n      },\n      {\n        \"symbol\": \"B\",\n        \"text\": \"commit ONCE to B typed destination input\",\n        \"source_quote\": \"commit ONCE to B typed destination input\",\n        \"kind\": \"proposition\"\n      },\n      {\n        \"symbol\": \"C\",\n        \"text\": \"Looper actual provider turn via existing local controller\",\n        \"source_quote\": \"Looper actual provider turn via existing local controller\",\n        \"kind\": \"proposition\"\n      }\n    ],\n    \"premises\": [\n      \"(and A C)\",\n      \"(implies (and A C) B)\"\n    ],\n    \"conclusion\": \"unresolved\",\n    \"identities\": [],\n    \"flows\": [\n      {\n        \"id\": \"flow-0\",\n        \"rule\": \"and_introduction\",\n        \"premises\": [\"A\", \"C\"],\n        \"conclusion\": \"(and A C)\"\n      },\n      {\n        \"id\": \"flow-1\",\n        \"rule\": \"modus_ponens\",\n        \"premises\": [\"(and A C)\", \"(implies (and A C) B)\"],\n        \"conclusion\": \"B\"\n      }\n    ],\n    \"compositions\": [\n      {\n        \"kind\": \"chain\",\n        \"members\": [\"A\", \"C\", \"B\"]\n      }\n    ],\n    \"unresolved\": [\n      \"Does A imply C?\",\n      \"Is B actually committed?\"\n    ]\n  }\n}"
+      }
+    }
+  ],
+  "created": 1791509635,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 530,
+    "prompt_tokens": 3023,
+    "total_tokens": 3553,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-bkJrh0oITvL4EcOhXJsejZUhXF8uTdjz",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 3023,
+    "prompt_ms": 25508.377,
+    "prompt_per_token_ms": 8.438100231558055,
+    "prompt_per_second": 118.51008788211026,
+    "predicted_n": 530,
+    "predicted_ms": 128148.371,
+    "predicted_per_token_ms": 242.24644801512287,
+    "predicted_per_second": 4.128027503369513
+  }
+}

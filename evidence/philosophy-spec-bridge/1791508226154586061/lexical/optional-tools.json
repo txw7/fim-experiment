@@ -1,0 +1,16 @@
+{
+  "graph_kernel": {
+    "status": "executed",
+    "matrix": [
+      [
+        1.0,
+        0.05048493987694004
+      ],
+      [
+        0.05048493987694004,
+        1.0
+      ]
+    ],
+    "definition": "WL lexical-label graph similarity, not semantic identity"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"profiles\": {\n    \"s3-p2\": {\n      \"nested\": \"unresolved\",\n      \"chain\": \"unresolved\",\n      \"shared_premise\": \"unresolved\",\n      \"branch\": \"unresolved\",\n      \"equivalence\": \"unresolved\",\n      \"substitution\": \"unresolved\",\n      \"missing_premise\": \"unresolved\"\n    }\n  },\n  \"symbolic\": {\n    \"atoms\": [\n      {\n        \"symbol\": \"S3_exercises_only_A_to_B\",\n        \"text\": \"S3 exercises only original A→B real provider handoff\",\n        \"source_quote\": \"S3 exercises only original A→B real provider handoff within pair-1 B1→C1 boundary\",\n        \"kind\": \"proposition\"\n      },\n      {\n        \"symbol\": \"S2_5_graph_defined\",\n        \"text\": \"S2.5 graph is (SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2)))\",\n        \"source_quote\": \"S2.5 graph is (SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2)))\",\n        \"kind\": \"proposition\"\n      },\n      {\n        \"symbol\": \"B1_C1_aliases_A_B\",\n        \"text\": \"B1/C1 are identity-preserving aliases for original A/B\",\n        \"source_quote\": \"B1/C1 are identity-preserving aliases for original A/B\",\n        \"kind\": \"proposition\"\n      }\n    ],\n    \"premises\": [\n      \"(implies S3_exercises_only_A_to_B (and (implies S3_exercises_only_A_to_B (SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2)))) (not (SUPERVISE A0 (PARALLEL (PAIR\"\n    ],\"conclusion\": \"unresolved\",\n    \"identities\": [\n      {\n        \"left\": \"B1\",\n        \"right\": \"A\",\n        \"source_quote\": \"B1/C1 are identity-preserving aliases for original A/B\"\n      }\n    ],\n    \"flows\": [\n      {\n        \"id\": \"flow-1\",\n        \"rule\": \"unresolved\",\n        \"premises\": [\n          \"(implies S3_exercises_only_A_to_B (SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))))\"\n        ],\n        \"conclusion\": \"unresolved\"\n      },\n      {\n        \"id\": \"flow-2\",\n        \"rule\": \"unresolved\",\n        \"premises\": [\n          \"(implies S3_exercises_only_A_to_B (SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))))\"\n        ],\n        \"conclusion\": \"unresolved\"\n      }\n    ],\n    \"compositions\": [\n      {\n        \"kind\": \"nested\",\n        \"members\": [\n          \"S3_exercises_only_A_to_B\",\n          \"S2_5_graph_defined\"\n        ]\n      }\n    ],\n    \"unresolved\": [\n      \"S3 execution status\",\n      \"S2.5 execution status\",\n      \"B1/C1 pair execution status\"\n    ]\n  }\n}"
+      }
+    }
+  ],
+  "created": 1791517064,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 769,
+    "prompt_tokens": 3161,
+    "total_tokens": 3930,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-tov2nCrHDZtvbm030FbT0kjhZFvmcMCI",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 3161,
+    "prompt_ms": 26359.48,
+    "prompt_per_token_ms": 8.338968680797215,
+    "prompt_per_second": 119.91890583577522,
+    "predicted_n": 769,
+    "predicted_ms": 189673.478,
+    "predicted_per_token_ms": 246.97067447916666,
+    "predicted_per_second": 4.049063728351098
+  }
+}

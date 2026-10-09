@@ -1,0 +1,1957 @@
+{
+  "epochs": 4,
+  "cost": 7889.341624102206,
+  "terms": [
+    {
+      "term": "implement",
+      "segments": [
+        "implement"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "s",
+      "segments": [
+        "s"
+      ],
+      "score": 4.084112428229789
+    },
+    {
+      "term": "live",
+      "segments": [
+        "live"
+      ],
+      "score": 5.4191134949621285
+    },
+    {
+      "term": "ab",
+      "segments": [
+        "ab"
+      ],
+      "score": 5.92993911872812
+    },
+    {
+      "term": "one",
+      "segments": [
+        "one"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "bounded",
+      "segments": [
+        "bound",
+        "ed"
+      ],
+      "score": 11.475429014389727
+    },
+    {
+      "term": "real",
+      "segments": [
+        "real"
+      ],
+      "score": 5.92993911872812
+    },
+    {
+      "term": "looper",
+      "segments": [
+        "looper"
+      ],
+      "score": 5.642257046276338
+    },
+    {
+      "term": "provider",
+      "segments": [
+        "provider"
+      ],
+      "score": 5.156749230494638
+    },
+    {
+      "term": "execution",
+      "segments": [
+        "execution"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "in",
+      "segments": [
+        "in"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "isolated",
+      "segments": [
+        "isolated"
+      ],
+      "score": 6.335404226836284
+    },
+    {
+      "term": "shg",
+      "segments": [
+        "shg"
+      ],
+      "score": 6.335404226836284
+    },
+    {
+      "term": "mu",
+      "segments": [
+        "mu"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "project",
+      "segments": [
+        "project"
+      ],
+      "score": 6.335404226836284
+    },
+    {
+      "term": "home",
+      "segments": [
+        "home"
+      ],
+      "score": 6.335404226836284
+    },
+    {
+      "term": "user",
+      "segments": [
+        "user"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "workspace",
+      "segments": [
+        "workspace"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "controller",
+      "segments": [
+        "controller"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "http",
+      "segments": [
+        "http"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "and",
+      "segments": [
+        "and"
+      ],
+      "score": 5.2367919381681745
+    },
+    {
+      "term": "code",
+      "segments": [
+        "code"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "runtime",
+      "segments": [
+        "run",
+        "time"
+      ],
+      "score": 12.391719746263881
+    },
+    {
+      "term": "original",
+      "segments": [
+        "original"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "greenfield",
+      "segments": [
+        "greenfield"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "factory",
+      "segments": [
+        "factory"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "goggles",
+      "segments": [
+        "goggles"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "other",
+      "segments": [
+        "other"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "repositories",
+      "segments": [
+        "repositories"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "no",
+      "segments": [
+        "no"
+      ],
+      "score": 5.642257046276338
+    },
+    {
+      "term": "edits",
+      "segments": [
+        "ed",
+        "its"
+      ],
+      "score": 11.986254638155717
+    },
+    {
+      "term": "keep",
+      "segments": [
+        "keep"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "all",
+      "segments": [
+        "all"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "archives",
+      "segments": [
+        "archive",
+        "s"
+      ],
+      "score": 9.958106390863431
+    },
+    {
+      "term": "promoted",
+      "segments": [
+        "promote",
+        "d"
+      ],
+      "score": 11.362100329082724
+    },
+    {
+      "term": "receipts",
+      "segments": [
+        "receipt",
+        "s"
+      ],
+      "score": 9.670424318411651
+    },
+    {
+      "term": "immutable",
+      "segments": [
+        "immutable"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "push",
+      "segments": [
+        "push"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "or",
+      "segments": [
+        "or"
+      ],
+      "score": 5.92993911872812
+    },
+    {
+      "term": "github",
+      "segments": [
+        "github"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "actions",
+      "segments": [
+        "actions"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "blocked",
+      "segments": [
+        "blocked"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "accepted",
+      "segments": [
+        "accepted"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "tests",
+      "segments": [
+        "tests"
+      ],
+      "score": 5.92993911872812
+    },
+    {
+      "term": "sha",
+      "segments": [
+        "sha"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "eb",
+      "segments": [
+        "e",
+        "b"
+      ],
+      "score": 10.44580959720857
+    },
+    {
+      "term": "b",
+      "segments": [
+        "b"
+      ],
+      "score": 5.0826412583409155
+    },
+    {
+      "term": "e",
+      "segments": [
+        "e"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "fdbc",
+      "segments": [
+        "fdbc"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "ee",
+      "segments": [
+        "ee"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "a",
+      "segments": [
+        "a"
+      ],
+      "score": 5.2367919381681745
+    },
+    {
+      "term": "dd",
+      "segments": [
+        "dd"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "d",
+      "segments": [
+        "d"
+      ],
+      "score": 5.775788438900861
+    },
+    {
+      "term": "f",
+      "segments": [
+        "f"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "architecture",
+      "segments": [
+        "architecture"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "graph",
+      "segments": [
+        "graph"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "is",
+      "segments": [
+        "is"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "supervise",
+      "segments": [
+        "supervise"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "parallel",
+      "segments": [
+        "parallel"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "pair",
+      "segments": [
+        "pair"
+      ],
+      "score": 5.775788438900861
+    },
+    {
+      "term": "c",
+      "segments": [
+        "c"
+      ],
+      "score": 5.642257046276338
+    },
+    {
+      "term": "are",
+      "segments": [
+        "are"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "identity",
+      "segments": [
+        "identity"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "preserving",
+      "segments": [
+        "preserv",
+        "ing"
+      ],
+      "score": 11.516251008909983
+    },
+    {
+      "term": "aliases",
+      "segments": [
+        "aliases"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "for",
+      "segments": [
+        "for"
+      ],
+      "score": 6.335404226836284
+    },
+    {
+      "term": "new",
+      "segments": [
+        "new"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "agents",
+      "segments": [
+        "agent",
+        "s"
+      ],
+      "score": 9.958106390863431
+    },
+    {
+      "term": "independently",
+      "segments": [
+        "independent",
+        "ly"
+      ],
+      "score": 11.803933081361762
+    },
+    {
+      "term": "looping",
+      "segments": [
+        "loop",
+        "ing"
+      ],
+      "score": 11.921716117018146
+    },
+    {
+      "term": "pairs",
+      "segments": [
+        "pair",
+        "s"
+      ],
+      "score": 9.110808530476229
+    },
+    {
+      "term": "exercises",
+      "segments": [
+        "exercises"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "only",
+      "segments": [
+        "on",
+        "ly"
+      ],
+      "score": 11.110785900801817
+    },
+    {
+      "term": "handoff",
+      "segments": [
+        "handoff"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "within",
+      "segments": [
+        "with",
+        "in"
+      ],
+      "score": 11.138956777768513
+    },
+    {
+      "term": "boundary",
+      "segments": [
+        "bound",
+        "ary"
+      ],
+      "score": 12.391719746263881
+    },
+    {
+      "term": "do",
+      "segments": [
+        "do"
+      ],
+      "score": 5.775788438900861
+    },
+    {
+      "term": "not",
+      "segments": [
+        "not"
+      ],
+      "score": 5.4191134949621285
+    },
+    {
+      "term": "flatten",
+      "segments": [
+        "flatten"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "nested",
+      "segments": [
+        "nested"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "topology",
+      "segments": [
+        "topology"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "claim",
+      "segments": [
+        "claim"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "both",
+      "segments": [
+        "both"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "executed",
+      "segments": [
+        "executed"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "use",
+      "segments": [
+        "use"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "autonomous",
+      "segments": [
+        "autonomous"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "background",
+      "segments": [
+        "background"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "task",
+      "segments": [
+        "task"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "introduce",
+      "segments": [
+        "introduce"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "second",
+      "segments": [
+        "second"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "dispatcher",
+      "segments": [
+        "dispatcher"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "should",
+      "segments": [
+        "should"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "depend",
+      "segments": [
+        "depend"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "on",
+      "segments": [
+        "on"
+      ],
+      "score": 6.335404226836284
+    },
+    {
+      "term": "stages",
+      "segments": [
+        "stage",
+        "s"
+      ],
+      "score": 9.670424318411651
+    },
+    {
+      "term": "json",
+      "segments": [
+        "json"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "merely",
+      "segments": [
+        "mere",
+        "ly"
+      ],
+      "score": 11.803933081361762
+    },
+    {
+      "term": "source",
+      "segments": [
+        "source"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "typed",
+      "segments": [
+        "type",
+        "d"
+      ],
+      "score": 11.138956777768513
+    },
+    {
+      "term": "output",
+      "segments": [
+        "output"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "first",
+      "segments": [
+        "first"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "class",
+      "segments": [
+        "class"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "authorized",
+      "segments": [
+        "authorized"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "pipe",
+      "segments": [
+        "pipe"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "effect",
+      "segments": [
+        "effect"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "attempt",
+      "segments": [
+        "attempt"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "durable",
+      "segments": [
+        "durable"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "journal",
+      "segments": [
+        "journal"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "with",
+      "segments": [
+        "with"
+      ],
+      "score": 5.775788438900861
+    },
+    {
+      "term": "input",
+      "segments": [
+        "input"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "generation",
+      "segments": [
+        "generation"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "correlation",
+      "segments": [
+        "correlation"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "activation",
+      "segments": [
+        "activation"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "ids",
+      "segments": [
+        "ids"
+      ],
+      "score": 6.335404226836284
+    },
+    {
+      "term": "realization",
+      "segments": [
+        "real",
+        "ization"
+      ],
+      "score": 12.209398189469928
+    },
+    {
+      "term": "idempotency",
+      "segments": [
+        "idempotency"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "key",
+      "segments": [
+        "key"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "exact",
+      "segments": [
+        "exact"
+      ],
+      "score": 6.335404226836284
+    },
+    {
+      "term": "actual",
+      "segments": [
+        "actual"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "turn",
+      "segments": [
+        "turn"
+      ],
+      "score": 5.775788438900861
+    },
+    {
+      "term": "via",
+      "segments": [
+        "via"
+      ],
+      "score": 6.335404226836284
+    },
+    {
+      "term": "existing",
+      "segments": [
+        "existing"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "local",
+      "segments": [
+        "local"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "observed",
+      "segments": [
+        "observed"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "codex",
+      "segments": [
+        "codex"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "result",
+      "segments": [
+        "result"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "distinct",
+      "segments": [
+        "distinct"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "thread",
+      "segments": [
+        "thread"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "session",
+      "segments": [
+        "session"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "from",
+      "segments": [
+        "from"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "implementing",
+      "segments": [
+        "implement",
+        "ing"
+      ],
+      "score": 11.00542538514399
+    },
+    {
+      "term": "agent",
+      "segments": [
+        "agent"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "validate",
+      "segments": [
+        "validat",
+        "e"
+      ],
+      "score": 11.986254638155717
+    },
+    {
+      "term": "types",
+      "segments": [
+        "type",
+        "s"
+      ],
+      "score": 9.447280767097443
+    },
+    {
+      "term": "commit",
+      "segments": [
+        "commit"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "once",
+      "segments": [
+        "once"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "to",
+      "segments": [
+        "to"
+      ],
+      "score": 5.92993911872812
+    },
+    {
+      "term": "destination",
+      "segments": [
+        "destination"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "trustworthy",
+      "segments": [
+        "trustworthy"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "return",
+      "segments": [
+        "re",
+        "turn"
+      ],
+      "score": 11.362100329082724
+    },
+    {
+      "term": "small",
+      "segments": [
+        "sm",
+        "all"
+      ],
+      "score": 12.391719746263881
+    },
+    {
+      "term": "benign",
+      "segments": [
+        "benign"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "non",
+      "segments": [
+        "no",
+        "n"
+      ],
+      "score": 11.516251008909983
+    },
+    {
+      "term": "sensitive",
+      "segments": [
+        "sensitive"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "prompt",
+      "segments": [
+        "prompt"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "this",
+      "segments": [
+        "this"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "must",
+      "segments": [
+        "mu",
+        "st"
+      ],
+      "score": 12.391719746263881
+    },
+    {
+      "term": "actually",
+      "segments": [
+        "actual",
+        "ly"
+      ],
+      "score": 10.887642349487606
+    },
+    {
+      "term": "call",
+      "segments": [
+        "c",
+        "all"
+      ],
+      "score": 11.00542538514399
+    },
+    {
+      "term": "mocks",
+      "segments": [
+        "mocks"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "previous",
+      "segments": [
+        "previous"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "recorded",
+      "segments": [
+        "recorded"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "outputs",
+      "segments": [
+        "output",
+        "s"
+      ],
+      "score": 9.958106390863431
+    },
+    {
+      "term": "hijack",
+      "segments": [
+        "hijack"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "the",
+      "segments": [
+        "the"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "currently",
+      "segments": [
+        "current",
+        "ly"
+      ],
+      "score": 11.803933081361762
+    },
+    {
+      "term": "running",
+      "segments": [
+        "run",
+        "n",
+        "ing"
+      ],
+      "score": 16.879419347777635
+    },
+    {
+      "term": "fabricate",
+      "segments": [
+        "fabricate"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "evidence",
+      "segments": [
+        "evidence"
+      ],
+      "score": 5.92993911872812
+    },
+    {
+      "term": "successful",
+      "segments": [
+        "successful"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "completion",
+      "segments": [
+        "completion"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "native",
+      "segments": [
+        "native"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "api",
+      "segments": [
+        "api"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "mcp",
+      "segments": [
+        "mcp"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "available",
+      "segments": [
+        "available"
+      ],
+      "score": 6.335404226836284
+    },
+    {
+      "term": "through",
+      "segments": [
+        "through"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "localhost",
+      "segments": [
+        "local",
+        "host"
+      ],
+      "score": 12.391719746263881
+    },
+    {
+      "term": "inspect",
+      "segments": [
+        "inspect"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "its",
+      "segments": [
+        "its"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "schema",
+      "segments": [
+        "schema"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "made",
+      "segments": [
+        "made"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "up",
+      "segments": [
+        "up"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "wire",
+      "segments": [
+        "wire"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "protocol",
+      "segments": [
+        "protocol"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "limit",
+      "segments": [
+        "limit"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "explicitly",
+      "segments": [
+        "explicit",
+        "ly"
+      ],
+      "score": 11.110785900801817
+    },
+    {
+      "term": "requested",
+      "segments": [
+        "requested"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "invocation",
+      "segments": [
+        "invocation"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "retries",
+      "segments": [
+        "retries"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "after",
+      "segments": [
+        "after"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "uncertain",
+      "segments": [
+        "uncertain"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "submissions",
+      "segments": [
+        "submissions"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "duplicate",
+      "segments": [
+        "duplicate"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "browser",
+      "segments": [
+        "browser"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "sends",
+      "segments": [
+        "sends"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "stage",
+      "segments": [
+        "stage"
+      ],
+      "score": 6.335404226836284
+    },
+    {
+      "term": "gates",
+      "segments": [
+        "gates"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "create",
+      "segments": [
+        "create"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "test",
+      "segments": [
+        "test"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "py",
+      "segments": [
+        "py"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "explicit",
+      "segments": [
+        "explicit"
+      ],
+      "score": 6.335404226836284
+    },
+    {
+      "term": "scripts",
+      "segments": [
+        "scripts"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "run",
+      "segments": [
+        "run"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "equivalent",
+      "segments": [
+        "equivalent"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "make",
+      "segments": [
+        "make"
+      ],
+      "score": 6.335404226836284
+    },
+    {
+      "term": "check",
+      "segments": [
+        "check"
+      ],
+      "score": 6.335404226836284
+    },
+    {
+      "term": "offline",
+      "segments": [
+        "offline"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "validating",
+      "segments": [
+        "validat",
+        "ing"
+      ],
+      "score": 11.516251008909983
+    },
+    {
+      "term": "initiate",
+      "segments": [
+        "initiate"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "package",
+      "segments": [
+        "package"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "freeze",
+      "segments": [
+        "freeze"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "reproducible",
+      "segments": [
+        "reproducible"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "archive",
+      "segments": [
+        "archive"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "fresh",
+      "segments": [
+        "fresh"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "extraction",
+      "segments": [
+        "extraction"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "promote",
+      "segments": [
+        "promote"
+      ],
+      "score": 6.335404226836284
+    },
+    {
+      "term": "integration",
+      "segments": [
+        "integration"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "if",
+      "segments": [
+        "if"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "define",
+      "segments": [
+        "define"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "addresses",
+      "segments": [
+        "addresses"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "transport",
+      "segments": [
+        "transport"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "observation",
+      "segments": [
+        "observation"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "commitment",
+      "segments": [
+        "commit",
+        "ment"
+      ],
+      "score": 12.391719746263881
+    },
+    {
+      "term": "receipt",
+      "segments": [
+        "receipt"
+      ],
+      "score": 6.335404226836284
+    },
+    {
+      "term": "negative",
+      "segments": [
+        "negative"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "stale",
+      "segments": [
+        "stale"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "mismatched",
+      "segments": [
+        "mismatched"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "wrong",
+      "segments": [
+        "wrong"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "target",
+      "segments": [
+        "target"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "type",
+      "segments": [
+        "type"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "private",
+      "segments": [
+        "private"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "child",
+      "segments": [
+        "child"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "access",
+      "segments": [
+        "access"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "double",
+      "segments": [
+        "do",
+        "uble"
+      ],
+      "score": 12.055247509642669
+    },
+    {
+      "term": "unavailable",
+      "segments": [
+        "un",
+        "available"
+      ],
+      "score": 12.209398189469926
+    },
+    {
+      "term": "retry",
+      "segments": [
+        "retry"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "restart",
+      "segments": [
+        "restart"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "replay",
+      "segments": [
+        "replay"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "preserve",
+      "segments": [
+        "preserv",
+        "e"
+      ],
+      "score": 11.986254638155717
+    },
+    {
+      "term": "earlier",
+      "segments": [
+        "earlier"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "frozen",
+      "segments": [
+        "frozen"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "digests",
+      "segments": [
+        "digests"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "checks",
+      "segments": [
+        "check",
+        "s"
+      ],
+      "score": 9.670424318411651
+    },
+    {
+      "term": "leave",
+      "segments": [
+        "leave"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "open",
+      "segments": [
+        "open"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "manufacture",
+      "segments": [
+        "manufacture"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "positive",
+      "segments": [
+        "positive"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "cicd",
+      "segments": [
+        "cicd"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "remain",
+      "segments": [
+        "remain"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "report",
+      "segments": [
+        "report"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "commands",
+      "segments": [
+        "commands"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "count",
+      "segments": [
+        "count"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "closure",
+      "segments": [
+        "closure"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "refs",
+      "segments": [
+        "refs"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "hashes",
+      "segments": [
+        "has",
+        "hes"
+      ],
+      "score": 12.902545370029873
+    },
+    {
+      "term": "file",
+      "segments": [
+        "file"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "paths",
+      "segments": [
+        "paths"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "remaining",
+      "segments": [
+        "remain",
+        "ing"
+      ],
+      "score": 11.516251008909983
+    },
+    {
+      "term": "residuals",
+      "segments": [
+        "residuals"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "services",
+      "segments": [
+        "service",
+        "s"
+      ],
+      "score": 9.958106390863431
+    },
+    {
+      "term": "stable",
+      "segments": [
+        "stable"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "delivery",
+      "segments": [
+        "delivery"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "service",
+      "segments": [
+        "service"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "has",
+      "segments": [
+        "has"
+      ],
+      "score": 6.623086299288064
+    },
+    {
+      "term": "already",
+      "segments": [
+        "already"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "been",
+      "segments": [
+        "been"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "restarted",
+      "segments": [
+        "restart",
+        "ed"
+      ],
+      "score": 11.986254638155717
+    },
+    {
+      "term": "draft",
+      "segments": [
+        "draft"
+      ],
+      "score": 6.335404226836284
+    },
+    {
+      "term": "overwrite",
+      "segments": [
+        "overwrite"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "policy",
+      "segments": [
+        "policy"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "expressly",
+      "segments": [
+        "express",
+        "ly"
+      ],
+      "score": 11.803933081361762
+    },
+    {
+      "term": "wants",
+      "segments": [
+        "wants"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "drafts",
+      "segments": [
+        "draft",
+        "s"
+      ],
+      "score": 9.670424318411651
+    },
+    {
+      "term": "discarded",
+      "segments": [
+        "discarded"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "so",
+      "segments": [
+        "so"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "reintroduce",
+      "segments": [
+        "re",
+        "introduce"
+      ],
+      "score": 12.209398189469926
+    },
+    {
+      "term": "blocker",
+      "segments": [
+        "blocker"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "composer",
+      "segments": [
+        "composer"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "final",
+      "segments": [
+        "final"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "concise",
+      "segments": [
+        "concise"
+      ],
+      "score": 7.028551407396229
+    },
+    {
+      "term": "bound",
+      "segments": [
+        "bound"
+      ],
+      "score": 6.112260675522074
+    },
+    {
+      "term": "chat",
+      "segments": [
+        "chat"
+      ],
+      "score": 7.028551407396229
+    }
+  ]
+}

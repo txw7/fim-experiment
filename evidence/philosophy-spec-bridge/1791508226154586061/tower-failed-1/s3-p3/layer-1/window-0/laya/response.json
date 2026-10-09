@@ -1,0 +1,577 @@
+{
+  "model": "laya-rl-agent",
+  "answers": {
+    "logic:entity": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.4875,
+        "absent": 0.2173,
+        "unresolved": 0.2952
+      },
+      "confidence": 0.0514,
+      "answer_confidence": 0.4875,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:predicate": {
+      "type": "choice",
+      "choice": "absent",
+      "probabilities": {
+        "present": 0.2757,
+        "absent": 0.3768,
+        "unresolved": 0.3475
+      },
+      "confidence": 0.0076,
+      "answer_confidence": 0.3768,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:proposition": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.5397,
+        "absent": 0.1979,
+        "unresolved": 0.2624
+      },
+      "confidence": 0.0856,
+      "answer_confidence": 0.5397,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:not": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.4537,
+        "absent": 0.2475,
+        "unresolved": 0.2988
+      },
+      "confidence": 0.0305,
+      "answer_confidence": 0.4537,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:and": {
+      "type": "choice",
+      "choice": "unresolved",
+      "probabilities": {
+        "present": 0.3512,
+        "absent": 0.29,
+        "unresolved": 0.3588
+      },
+      "confidence": 0.004,
+      "answer_confidence": 0.3588,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:or": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.4448,
+        "absent": 0.2303,
+        "unresolved": 0.3249
+      },
+      "confidence": 0.0317,
+      "answer_confidence": 0.4448,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:implies": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.4465,
+        "absent": 0.2315,
+        "unresolved": 0.322
+      },
+      "confidence": 0.0318,
+      "answer_confidence": 0.4465,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:iff": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.5068,
+        "absent": 0.2009,
+        "unresolved": 0.2923
+      },
+      "confidence": 0.0657,
+      "answer_confidence": 0.5068,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:assertion": {
+      "type": "choice",
+      "choice": "hypothetical",
+      "probabilities": {
+        "asserted": 0.1243,
+        "hypothetical": 0.7422,
+        "questioned": 0.0725,
+        "unresolved": 0.061
+      },
+      "confidence": 0.3931,
+      "answer_confidence": 0.7422,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:negation_scope": {
+      "type": "choice",
+      "choice": "modal",
+      "probabilities": {
+        "predicate": 0.1828,
+        "proposition": 0.2935,
+        "modal": 0.2988,
+        "none_or_unresolved": 0.2249
+      },
+      "confidence": 0.014,
+      "answer_confidence": 0.2988,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:modal_force": {
+      "type": "choice",
+      "choice": "necessary",
+      "probabilities": {
+        "necessary": 0.3647,
+        "possible": 0.2638,
+        "nonmodal": 0.2908,
+        "unresolved": 0.0806
+      },
+      "confidence": 0.0755,
+      "answer_confidence": 0.3647,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:being_reading": {
+      "type": "choice",
+      "choice": "predication",
+      "probabilities": {
+        "existence": 0.217,
+        "predication": 0.3185,
+        "identity": 0.1662,
+        "unresolved": 0.2983
+      },
+      "confidence": 0.0225,
+      "answer_confidence": 0.3185,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:connective_origin": {
+      "type": "choice",
+      "choice": "both",
+      "probabilities": {
+        "source": 0.2664,
+        "editorial": 0.2381,
+        "both": 0.3112,
+        "none_or_unresolved": 0.1843
+      },
+      "confidence": 0.0124,
+      "answer_confidence": 0.3112,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:proposition_nesting": {
+      "type": "choice",
+      "choice": "flat",
+      "probabilities": {
+        "embedded": 0.3211,
+        "flat": 0.4044,
+        "unresolved": 0.2746
+      },
+      "confidence": 0.0117,
+      "answer_confidence": 0.4044,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "legacy:negation": {
+      "type": "choice",
+      "choice": "absent",
+      "probabilities": {
+        "present": 0.3702,
+        "absent": 0.3832,
+        "ambiguous": 0.2467
+      },
+      "confidence": 0.0163,
+      "answer_confidence": 0.3832,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "legacy:conditional": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.391,
+        "absent": 0.3651,
+        "ambiguous": 0.2439
+      },
+      "confidence": 0.0177,
+      "answer_confidence": 0.391,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "legacy:quantification": {
+      "type": "choice",
+      "choice": "none",
+      "probabilities": {
+        "universal": 0.2644,
+        "existential": 0.0958,
+        "both": 0.2215,
+        "none": 0.3079,
+        "ambiguous": 0.1104
+      },
+      "confidence": 0.0579,
+      "answer_confidence": 0.3079,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "operator:not": {
+      "type": "choice",
+      "choice": "unresolved",
+      "probabilities": {
+        "present": 0.2651,
+        "absent": 0.3668,
+        "unresolved": 0.368
+      },
+      "confidence": 0.0099,
+      "answer_confidence": 0.368,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "operator:if": {
+      "type": "choice",
+      "choice": "unresolved",
+      "probabilities": {
+        "present": 0.249,
+        "absent": 0.3626,
+        "unresolved": 0.3884
+      },
+      "confidence": 0.0157,
+      "answer_confidence": 0.3884,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "operator:and": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.4762,
+        "absent": 0.2224,
+        "unresolved": 0.3014
+      },
+      "confidence": 0.045,
+      "answer_confidence": 0.4762,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "operator:or": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.4885,
+        "absent": 0.2139,
+        "unresolved": 0.2976
+      },
+      "confidence": 0.0528,
+      "answer_confidence": 0.4885,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "operator:but": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.3612,
+        "absent": 0.3035,
+        "unresolved": 0.3353
+      },
+      "confidence": 0.0023,
+      "answer_confidence": 0.3612,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "operator:only": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.368,
+        "absent": 0.303,
+        "unresolved": 0.329
+      },
+      "confidence": 0.0029,
+      "answer_confidence": 0.368,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "operator:universal": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.3515,
+        "absent": 0.301,
+        "unresolved": 0.3476
+      },
+      "confidence": 0.0022,
+      "answer_confidence": 0.3515,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "operator:existential": {
+      "type": "choice",
+      "choice": "unresolved",
+      "probabilities": {
+        "present": 0.3006,
+        "absent": 0.331,
+        "unresolved": 0.3684
+      },
+      "confidence": 0.0031,
+      "answer_confidence": 0.3684,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "operator:modal": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.4995,
+        "absent": 0.198,
+        "unresolved": 0.3025
+      },
+      "confidence": 0.0633,
+      "answer_confidence": 0.4995,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "operator:question": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.4392,
+        "absent": 0.2428,
+        "unresolved": 0.318
+      },
+      "confidence": 0.0266,
+      "answer_confidence": 0.4392,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "proofaxis:objects_types": {
+      "type": "choice",
+      "choice": "program",
+      "probabilities": {
+        "entity": 0.0649,
+        "proposition": 0.2342,
+        "program": 0.5817,
+        "unresolved": 0.1193
+      },
+      "confidence": 0.2164,
+      "answer_confidence": 0.5817,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "proofaxis:operators_scope": {
+      "type": "choice",
+      "choice": "no_operator",
+      "probabilities": {
+        "no_operator": 0.4521,
+        "clause": 0.1682,
+        "nested": 0.1448,
+        "unresolved": 0.2348
+      },
+      "confidence": 0.0775,
+      "answer_confidence": 0.4521,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "proofaxis:relations_obligations": {
+      "type": "choice",
+      "choice": "a_to_b",
+      "probabilities": {
+        "a_to_b": 0.3695,
+        "b_to_a": 0.1954,
+        "mutual": 0.1861,
+        "not_established": 0.2489
+      },
+      "confidence": 0.029,
+      "answer_confidence": 0.3695,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "proofaxis:composition": {
+      "type": "choice",
+      "choice": "standalone",
+      "probabilities": {
+        "standalone": 0.5085,
+        "linked_inference": 0.2038,
+        "missing_premise": 0.1275,
+        "unresolved": 0.1603
+      },
+      "confidence": 0.117,
+      "answer_confidence": 0.5085,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "spec:required": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.574,
+        "absent": 0.1724,
+        "unresolved": 0.2536
+      },
+      "confidence": 0.1174,
+      "answer_confidence": 0.574,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "spec:forbidden": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.5057,
+        "absent": 0.2252,
+        "unresolved": 0.2691
+      },
+      "confidence": 0.059,
+      "answer_confidence": 0.5057,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "spec:authorization": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.57,
+        "absent": 0.1879,
+        "unresolved": 0.242
+      },
+      "confidence": 0.1099,
+      "answer_confidence": 0.57,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "spec:generation": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.5859,
+        "absent": 0.1695,
+        "unresolved": 0.2447
+      },
+      "confidence": 0.1275,
+      "answer_confidence": 0.5859,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "spec:exactly_once": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.5904,
+        "absent": 0.163,
+        "unresolved": 0.2466
+      },
+      "confidence": 0.1335,
+      "answer_confidence": 0.5904,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "spec:uncertain_no_retry": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.5758,
+        "absent": 0.1932,
+        "unresolved": 0.231
+      },
+      "confidence": 0.1134,
+      "answer_confidence": 0.5758,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "spec:typed_endpoint": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.5446,
+        "absent": 0.1868,
+        "unresolved": 0.2686
+      },
+      "confidence": 0.0921,
+      "answer_confidence": 0.5446,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "spec:stage_gate": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.4914,
+        "absent": 0.205,
+        "unresolved": 0.3036
+      },
+      "confidence": 0.0571,
+      "answer_confidence": 0.4914,
+      "action": {
+        "act_probability": 1.0
+      }
+    }
+  },
+  "usage": {
+    "input_tokens": 10800,
+    "output_tokens": 0,
+    "state_tokens": 219,
+    "state_tokens_dropped": 0,
+    "truncated": false,
+    "truncated_questions": []
+  },
+  "routing": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "explicit model='english'",
+    "detection": null,
+    "workflow": null
+  }
+}

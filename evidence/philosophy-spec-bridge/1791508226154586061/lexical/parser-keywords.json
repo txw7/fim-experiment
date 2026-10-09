@@ -1,0 +1,5470 @@
+[
+  {
+    "source_id": "s3-p0",
+    "source_ref": {
+      "path": "/home/user0/shg_mu_workspace/project/semantic-slice/recent-s25-s3/S3/raw-spec.txt",
+      "sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "start": 0,
+      "end": 93
+    },
+    "keywords": [
+      [
+        "implement s3_live_ab",
+        1.0
+      ],
+      [
+        "bounded real",
+        1.0
+      ],
+      [
+        "looper provider",
+        1.0
+      ],
+      [
+        "execution",
+        1.0
+      ],
+      [
+        "isolated",
+        1.0
+      ],
+      [
+        "shg",
+        1.0
+      ],
+      [
+        "project",
+        1.0
+      ]
+    ],
+    "dependency_distance_mean": 2.5833333333333335,
+    "dependency_edges": [
+      {
+        "token": "IMPLEMENT",
+        "lemma": "implement",
+        "head": "IMPLEMENT",
+        "relation": "ROOT",
+        "start": 0,
+        "end": 9
+      },
+      {
+        "token": "S3_LIVE_AB",
+        "lemma": "s3_live_ab",
+        "head": "IMPLEMENT",
+        "relation": "advmod",
+        "start": 10,
+        "end": 20
+      },
+      {
+        "token": "—",
+        "lemma": "—",
+        "head": "IMPLEMENT",
+        "relation": "punct",
+        "start": 21,
+        "end": 22
+      },
+      {
+        "token": "ONE",
+        "lemma": "one",
+        "head": "BOUNDED",
+        "relation": "nummod",
+        "start": 23,
+        "end": 26
+      },
+      {
+        "token": "BOUNDED",
+        "lemma": "BOUNDED",
+        "head": "EXECUTION",
+        "relation": "compound",
+        "start": 27,
+        "end": 34
+      },
+      {
+        "token": "REAL",
+        "lemma": "REAL",
+        "head": "LOOPER",
+        "relation": "compound",
+        "start": 35,
+        "end": 39
+      },
+      {
+        "token": "LOOPER",
+        "lemma": "LOOPER",
+        "head": "EXECUTION",
+        "relation": "compound",
+        "start": 40,
+        "end": 46
+      },
+      {
+        "token": "PROVIDER",
+        "lemma": "PROVIDER",
+        "head": "EXECUTION",
+        "relation": "compound",
+        "start": 47,
+        "end": 55
+      },
+      {
+        "token": "EXECUTION",
+        "lemma": "execution",
+        "head": "IMPLEMENT",
+        "relation": "dobj",
+        "start": 56,
+        "end": 65
+      },
+      {
+        "token": "in",
+        "lemma": "in",
+        "head": "EXECUTION",
+        "relation": "prep",
+        "start": 66,
+        "end": 68
+      },
+      {
+        "token": "isolated",
+        "lemma": "isolated",
+        "head": "project",
+        "relation": "amod",
+        "start": 69,
+        "end": 77
+      },
+      {
+        "token": "SHG",
+        "lemma": "SHG",
+        "head": "mu",
+        "relation": "compound",
+        "start": 78,
+        "end": 81
+      },
+      {
+        "token": "-",
+        "lemma": "-",
+        "head": "mu",
+        "relation": "punct",
+        "start": 81,
+        "end": 82
+      },
+      {
+        "token": "mu",
+        "lemma": "mu",
+        "head": "project",
+        "relation": "compound",
+        "start": 82,
+        "end": 84
+      },
+      {
+        "token": "project",
+        "lemma": "project",
+        "head": "in",
+        "relation": "pobj",
+        "start": 85,
+        "end": 92
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "IMPLEMENT",
+        "relation": "punct",
+        "start": 92,
+        "end": 93
+      }
+    ],
+    "spec_identifier_occurrences": [
+      {
+        "identifier": "IMPLEMENT",
+        "start": 0,
+        "end": 9
+      },
+      {
+        "identifier": "ONE",
+        "start": 23,
+        "end": 26
+      },
+      {
+        "identifier": "BOUNDED",
+        "start": 27,
+        "end": 34
+      },
+      {
+        "identifier": "REAL",
+        "start": 35,
+        "end": 39
+      },
+      {
+        "identifier": "LOOPER",
+        "start": 40,
+        "end": 46
+      },
+      {
+        "identifier": "PROVIDER",
+        "start": 47,
+        "end": 55
+      },
+      {
+        "identifier": "EXECUTION",
+        "start": 56,
+        "end": 65
+      },
+      {
+        "identifier": "SHG",
+        "start": 78,
+        "end": 81
+      }
+    ]
+  },
+  {
+    "source_id": "s3-p1",
+    "source_ref": {
+      "path": "/home/user0/shg_mu_workspace/project/semantic-slice/recent-s25-s3/S3/raw-spec.txt",
+      "sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "start": 94,
+      "end": 529
+    },
+    "keywords": [
+      [
+        "90eb9703b8b97e981b93fdbc95ab9ee17a0224dd423d12b757f8d86f376dd536",
+        1.5605497360229492
+      ],
+      [
+        "user0 shg_mu_workspace",
+        1.0856536626815796
+      ],
+      [
+        "promoted receipts",
+        0.41498467326164246
+      ],
+      [
+        "user0 greenfield",
+        0.3947831392288208
+      ],
+      [
+        "project isolated",
+        0.39150506258010864
+      ],
+      [
+        "factory goggles",
+        0.36703598499298096
+      ],
+      [
+        "promoted sha256",
+        0.3662993013858795
+      ],
+      [
+        "runtime looper",
+        0.34256693720817566
+      ],
+      [
+        "github actions",
+        0.34213387966156006
+      ],
+      [
+        "accepted tests",
+        0.3420490622520447
+      ]
+    ],
+    "dependency_distance_mean": 3.6739130434782608,
+    "dependency_edges": [
+      {
+        "token": "PROJECT",
+        "lemma": "project",
+        "head": "project",
+        "relation": "nmod",
+        "start": 0,
+        "end": 7
+      },
+      {
+        "token": "/home",
+        "lemma": "/home",
+        "head": "PROJECT",
+        "relation": "punct",
+        "start": 8,
+        "end": 13
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "PROJECT",
+        "relation": "punct",
+        "start": 13,
+        "end": 14
+      },
+      {
+        "token": "user0",
+        "lemma": "user0",
+        "head": "project",
+        "relation": "nmod",
+        "start": 14,
+        "end": 19
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "project",
+        "relation": "punct",
+        "start": 19,
+        "end": 20
+      },
+      {
+        "token": "shg_mu_workspace",
+        "lemma": "shg_mu_workspace",
+        "head": "project",
+        "relation": "nmod",
+        "start": 20,
+        "end": 36
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "project",
+        "relation": "punct",
+        "start": 36,
+        "end": 37
+      },
+      {
+        "token": "project",
+        "lemma": "project",
+        "head": "project",
+        "relation": "ROOT",
+        "start": 37,
+        "end": 44
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "project",
+        "relation": "punct",
+        "start": 44,
+        "end": 45
+      },
+      {
+        "token": "Isolated",
+        "lemma": "isolated",
+        "head": "http://127.0.0.1:8767",
+        "relation": "amod",
+        "start": 46,
+        "end": 54
+      },
+      {
+        "token": "controller",
+        "lemma": "controller",
+        "head": "http://127.0.0.1:8767",
+        "relation": "compound",
+        "start": 55,
+        "end": 65
+      },
+      {
+        "token": "http://127.0.0.1:8767",
+        "lemma": "http://127.0.0.1:8767",
+        "head": "http://127.0.0.1:8767",
+        "relation": "ROOT",
+        "start": 66,
+        "end": 87
+      },
+      {
+        "token": "and",
+        "lemma": "and",
+        "head": "http://127.0.0.1:8767",
+        "relation": "cc",
+        "start": 88,
+        "end": 91
+      },
+      {
+        "token": "code",
+        "lemma": "code",
+        "head": "http://127.0.0.1:8767",
+        "relation": "conj",
+        "start": 92,
+        "end": 96
+      },
+      {
+        "token": "/home",
+        "lemma": "/home",
+        "head": "http://127.0.0.1:8767",
+        "relation": "punct",
+        "start": 97,
+        "end": 102
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "http://127.0.0.1:8767",
+        "relation": "punct",
+        "start": 102,
+        "end": 103
+      },
+      {
+        "token": "user0",
+        "lemma": "user0",
+        "head": "looper",
+        "relation": "nmod",
+        "start": 103,
+        "end": 108
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "looper",
+        "relation": "punct",
+        "start": 108,
+        "end": 109
+      },
+      {
+        "token": "shg_mu_workspace",
+        "lemma": "shg_mu_workspace",
+        "head": "runtime",
+        "relation": "nmod",
+        "start": 109,
+        "end": 125
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "runtime",
+        "relation": "punct",
+        "start": 125,
+        "end": 126
+      },
+      {
+        "token": "runtime",
+        "lemma": "runtime",
+        "head": "looper",
+        "relation": "nmod",
+        "start": 126,
+        "end": 133
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "looper",
+        "relation": "punct",
+        "start": 133,
+        "end": 134
+      },
+      {
+        "token": "looper",
+        "lemma": "looper",
+        "head": "http://127.0.0.1:8767",
+        "relation": "appos",
+        "start": 134,
+        "end": 140
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "http://127.0.0.1:8767",
+        "relation": "punct",
+        "start": 140,
+        "end": 141
+      },
+      {
+        "token": "Original",
+        "lemma": "original",
+        "head": "greenfield",
+        "relation": "amod",
+        "start": 142,
+        "end": 150
+      },
+      {
+        "token": "/home",
+        "lemma": "/home",
+        "head": "Original",
+        "relation": "punct",
+        "start": 151,
+        "end": 156
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "greenfield",
+        "relation": "punct",
+        "start": 156,
+        "end": 157
+      },
+      {
+        "token": "user0",
+        "lemma": "user0",
+        "head": "greenfield",
+        "relation": "nmod",
+        "start": 157,
+        "end": 162
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "greenfield",
+        "relation": "punct",
+        "start": 162,
+        "end": 163
+      },
+      {
+        "token": "greenfield",
+        "lemma": "greenfield",
+        "head": "repositories",
+        "relation": "nmod",
+        "start": 163,
+        "end": 173
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "greenfield",
+        "relation": "punct",
+        "start": 173,
+        "end": 174
+      },
+      {
+        "token": "Factory",
+        "lemma": "Factory",
+        "head": "greenfield",
+        "relation": "conj",
+        "start": 175,
+        "end": 182
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "Factory",
+        "relation": "punct",
+        "start": 182,
+        "end": 183
+      },
+      {
+        "token": "Goggles",
+        "lemma": "Goggles",
+        "head": "Factory",
+        "relation": "conj",
+        "start": 184,
+        "end": 191
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "Factory",
+        "relation": "punct",
+        "start": 191,
+        "end": 192
+      },
+      {
+        "token": "other",
+        "lemma": "other",
+        "head": "repositories",
+        "relation": "amod",
+        "start": 193,
+        "end": 198
+      },
+      {
+        "token": "repositories",
+        "lemma": "repository",
+        "head": "repositories",
+        "relation": "ROOT",
+        "start": 199,
+        "end": 211
+      },
+      {
+        "token": ":",
+        "lemma": ":",
+        "head": "repositories",
+        "relation": "punct",
+        "start": 211,
+        "end": 212
+      },
+      {
+        "token": "no",
+        "lemma": "no",
+        "head": "edits",
+        "relation": "det",
+        "start": 213,
+        "end": 215
+      },
+      {
+        "token": "edits",
+        "lemma": "edit",
+        "head": "repositories",
+        "relation": "appos",
+        "start": 216,
+        "end": 221
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "repositories",
+        "relation": "punct",
+        "start": 221,
+        "end": 222
+      },
+      {
+        "token": "Keep",
+        "lemma": "keep",
+        "head": "blocked",
+        "relation": "advcl",
+        "start": 223,
+        "end": 227
+      },
+      {
+        "token": "all",
+        "lemma": "all",
+        "head": "archives",
+        "relation": "det",
+        "start": 228,
+        "end": 231
+      },
+      {
+        "token": "S0",
+        "lemma": "S0",
+        "head": "S2.5",
+        "relation": "nmod",
+        "start": 232,
+        "end": 234
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "S2.5",
+        "relation": "punct",
+        "start": 234,
+        "end": 235
+      },
+      {
+        "token": "S1",
+        "lemma": "S1",
+        "head": "S2.5",
+        "relation": "nmod",
+        "start": 235,
+        "end": 237
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "S2.5",
+        "relation": "punct",
+        "start": 237,
+        "end": 238
+      },
+      {
+        "token": "S2",
+        "lemma": "S2",
+        "head": "S2.5",
+        "relation": "nmod",
+        "start": 238,
+        "end": 240
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "S2.5",
+        "relation": "punct",
+        "start": 240,
+        "end": 241
+      },
+      {
+        "token": "S2.5",
+        "lemma": "S2.5",
+        "head": "archives",
+        "relation": "compound",
+        "start": 241,
+        "end": 245
+      },
+      {
+        "token": "archives",
+        "lemma": "archive",
+        "head": "Keep",
+        "relation": "dobj",
+        "start": 246,
+        "end": 254
+      },
+      {
+        "token": "and",
+        "lemma": "and",
+        "head": "Keep",
+        "relation": "cc",
+        "start": 255,
+        "end": 258
+      },
+      {
+        "token": "promoted",
+        "lemma": "promote",
+        "head": "Keep",
+        "relation": "conj",
+        "start": 259,
+        "end": 267
+      },
+      {
+        "token": "receipts",
+        "lemma": "receipt",
+        "head": "promoted",
+        "relation": "dobj",
+        "start": 268,
+        "end": 276
+      },
+      {
+        "token": "immutable",
+        "lemma": "immutable",
+        "head": "receipts",
+        "relation": "amod",
+        "start": 277,
+        "end": 286
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "receipts",
+        "relation": "punct",
+        "start": 286,
+        "end": 287
+      },
+      {
+        "token": "no",
+        "lemma": "no",
+        "head": "push",
+        "relation": "det",
+        "start": 288,
+        "end": 290
+      },
+      {
+        "token": "push",
+        "lemma": "push",
+        "head": "receipts",
+        "relation": "conj",
+        "start": 291,
+        "end": 295
+      },
+      {
+        "token": "or",
+        "lemma": "or",
+        "head": "push",
+        "relation": "cc",
+        "start": 296,
+        "end": 298
+      },
+      {
+        "token": "GitHub",
+        "lemma": "GitHub",
+        "head": "Actions",
+        "relation": "compound",
+        "start": 299,
+        "end": 305
+      },
+      {
+        "token": "Actions",
+        "lemma": "Actions",
+        "head": "push",
+        "relation": "conj",
+        "start": 306,
+        "end": 313
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "blocked",
+        "relation": "punct",
+        "start": 313,
+        "end": 314
+      },
+      {
+        "token": "S4",
+        "lemma": "S4",
+        "head": "S6",
+        "relation": "compound",
+        "start": 315,
+        "end": 317
+      },
+      {
+        "token": "-",
+        "lemma": "-",
+        "head": "S6",
+        "relation": "punct",
+        "start": 317,
+        "end": 318
+      },
+      {
+        "token": "S6",
+        "lemma": "S6",
+        "head": "blocked",
+        "relation": "nsubj",
+        "start": 318,
+        "end": 320
+      },
+      {
+        "token": "blocked",
+        "lemma": "block",
+        "head": "blocked",
+        "relation": "ROOT",
+        "start": 321,
+        "end": 328
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "blocked",
+        "relation": "punct",
+        "start": 328,
+        "end": 329
+      },
+      {
+        "token": "S2.5",
+        "lemma": "S2.5",
+        "head": "accepted",
+        "relation": "nsubj",
+        "start": 330,
+        "end": 334
+      },
+      {
+        "token": "accepted",
+        "lemma": "accept",
+        "head": "accepted",
+        "relation": "ROOT",
+        "start": 335,
+        "end": 343
+      },
+      {
+        "token": "71",
+        "lemma": "71",
+        "head": "tests",
+        "relation": "nummod",
+        "start": 344,
+        "end": 346
+      },
+      {
+        "token": "tests",
+        "lemma": "test",
+        "head": "accepted",
+        "relation": "dobj",
+        "start": 347,
+        "end": 352
+      },
+      {
+        "token": ";",
+        "lemma": ";",
+        "head": "accepted",
+        "relation": "punct",
+        "start": 352,
+        "end": 353
+      },
+      {
+        "token": "promoted",
+        "lemma": "promote",
+        "head": "accepted",
+        "relation": "conj",
+        "start": 354,
+        "end": 362
+      },
+      {
+        "token": "SHA256",
+        "lemma": "SHA256",
+        "head": "90eb9703b8b97e981b93fdbc95ab9ee17a0224dd423d12b757f8d86f376dd536",
+        "relation": "compound",
+        "start": 363,
+        "end": 369
+      },
+      {
+        "token": "90eb9703b8b97e981b93fdbc95ab9ee17a0224dd423d12b757f8d86f376dd536",
+        "lemma": "90eb9703b8b97e981b93fdbc95ab9ee17a0224dd423d12b757f8d86f376dd536",
+        "head": "promoted",
+        "relation": "dobj",
+        "start": 370,
+        "end": 434
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "accepted",
+        "relation": "punct",
+        "start": 434,
+        "end": 435
+      }
+    ],
+    "spec_identifier_occurrences": [
+      {
+        "identifier": "PROJECT",
+        "start": 0,
+        "end": 7
+      },
+      {
+        "identifier": "S0",
+        "start": 232,
+        "end": 234
+      },
+      {
+        "identifier": "S1",
+        "start": 235,
+        "end": 237
+      },
+      {
+        "identifier": "S2",
+        "start": 238,
+        "end": 240
+      },
+      {
+        "identifier": "S2.5",
+        "start": 241,
+        "end": 245
+      },
+      {
+        "identifier": "S4",
+        "start": 315,
+        "end": 317
+      },
+      {
+        "identifier": "S6",
+        "start": 318,
+        "end": 320
+      },
+      {
+        "identifier": "S2.5",
+        "start": 330,
+        "end": 334
+      }
+    ]
+  },
+  {
+    "source_id": "s3-p2",
+    "source_ref": {
+      "path": "/home/user0/shg_mu_workspace/project/semantic-slice/recent-s25-s3/S3/raw-spec.txt",
+      "sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "start": 531,
+      "end": 988
+    },
+    "keywords": [
+      [
+        "autonomous background",
+        0.35078418254852295
+      ],
+      [
+        "independently looping",
+        0.3489745557308197
+      ],
+      [
+        "identity preserving",
+        0.31655749678611755
+      ],
+      [
+        "provider handoff",
+        0.2658853828907013
+      ],
+      [
+        "topology claim",
+        0.23385611176490784
+      ],
+      [
+        "pairs executed",
+        0.23264971375465393
+      ],
+      [
+        "flatten nested",
+        0.23244865238666534
+      ],
+      [
+        "parallel pair",
+        0.21715210378170013
+      ],
+      [
+        "original real",
+        0.21715210378170013
+      ],
+      [
+        "stages json",
+        0.19077764451503754
+      ]
+    ],
+    "dependency_distance_mean": 2.7205882352941178,
+    "dependency_edges": [
+      {
+        "token": "ARCHITECTURE",
+        "lemma": "ARCHITECTURE",
+        "head": "is",
+        "relation": "dep",
+        "start": 0,
+        "end": 12
+      },
+      {
+        "token": ":",
+        "lemma": ":",
+        "head": "ARCHITECTURE",
+        "relation": "punct",
+        "start": 12,
+        "end": 13
+      },
+      {
+        "token": "S2.5",
+        "lemma": "S2.5",
+        "head": "graph",
+        "relation": "compound",
+        "start": 14,
+        "end": 18
+      },
+      {
+        "token": "graph",
+        "lemma": "graph",
+        "head": "is",
+        "relation": "nsubj",
+        "start": 19,
+        "end": 24
+      },
+      {
+        "token": "is",
+        "lemma": "be",
+        "head": "is",
+        "relation": "ROOT",
+        "start": 25,
+        "end": 27
+      },
+      {
+        "token": "(",
+        "lemma": "(",
+        "head": "is",
+        "relation": "punct",
+        "start": 28,
+        "end": 29
+      },
+      {
+        "token": "SUPERVISE",
+        "lemma": "SUPERVISE",
+        "head": "A0",
+        "relation": "compound",
+        "start": 29,
+        "end": 38
+      },
+      {
+        "token": "A0",
+        "lemma": "A0",
+        "head": "is",
+        "relation": "dep",
+        "start": 39,
+        "end": 41
+      },
+      {
+        "token": "(",
+        "lemma": "(",
+        "head": "A0",
+        "relation": "punct",
+        "start": 42,
+        "end": 43
+      },
+      {
+        "token": "PARALLEL",
+        "lemma": "PARALLEL",
+        "head": "A0",
+        "relation": "appos",
+        "start": 43,
+        "end": 51
+      },
+      {
+        "token": "(",
+        "lemma": "(",
+        "head": "PARALLEL",
+        "relation": "punct",
+        "start": 52,
+        "end": 53
+      },
+      {
+        "token": "PAIR",
+        "lemma": "PAIR",
+        "head": "C1",
+        "relation": "compound",
+        "start": 53,
+        "end": 57
+      },
+      {
+        "token": "B1",
+        "lemma": "B1",
+        "head": "C1",
+        "relation": "compound",
+        "start": 58,
+        "end": 60
+      },
+      {
+        "token": "C1",
+        "lemma": "C1",
+        "head": "PARALLEL",
+        "relation": "appos",
+        "start": 61,
+        "end": 63
+      },
+      {
+        "token": ")",
+        "lemma": ")",
+        "head": "A0",
+        "relation": "punct",
+        "start": 63,
+        "end": 64
+      },
+      {
+        "token": "(",
+        "lemma": "(",
+        "head": "A0",
+        "relation": "punct",
+        "start": 65,
+        "end": 66
+      },
+      {
+        "token": "PAIR",
+        "lemma": "PAIR",
+        "head": "B2",
+        "relation": "compound",
+        "start": 66,
+        "end": 70
+      },
+      {
+        "token": "B2",
+        "lemma": "b2",
+        "head": "C2",
+        "relation": "compound",
+        "start": 71,
+        "end": 73
+      },
+      {
+        "token": "C2",
+        "lemma": "C2",
+        "head": "A0",
+        "relation": "appos",
+        "start": 74,
+        "end": 76
+      },
+      {
+        "token": ")",
+        "lemma": ")",
+        "head": "A0",
+        "relation": "punct",
+        "start": 76,
+        "end": 77
+      },
+      {
+        "token": ")",
+        "lemma": ")",
+        "head": "A0",
+        "relation": "punct",
+        "start": 77,
+        "end": 78
+      },
+      {
+        "token": ")",
+        "lemma": ")",
+        "head": "A0",
+        "relation": "punct",
+        "start": 78,
+        "end": 79
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "is",
+        "relation": "punct",
+        "start": 79,
+        "end": 80
+      },
+      {
+        "token": "B1",
+        "lemma": "B1",
+        "head": "C1",
+        "relation": "nmod",
+        "start": 81,
+        "end": 83
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "C1",
+        "relation": "punct",
+        "start": 83,
+        "end": 84
+      },
+      {
+        "token": "C1",
+        "lemma": "C1",
+        "head": "are",
+        "relation": "nsubj",
+        "start": 84,
+        "end": 86
+      },
+      {
+        "token": "are",
+        "lemma": "be",
+        "head": "are",
+        "relation": "ccomp",
+        "start": 87,
+        "end": 90
+      },
+      {
+        "token": "identity",
+        "lemma": "identity",
+        "head": "preserving",
+        "relation": "npadvmod",
+        "start": 91,
+        "end": 99
+      },
+      {
+        "token": "-",
+        "lemma": "-",
+        "head": "preserving",
+        "relation": "punct",
+        "start": 99,
+        "end": 100
+      },
+      {
+        "token": "preserving",
+        "lemma": "preserve",
+        "head": "aliases",
+        "relation": "amod",
+        "start": 100,
+        "end": 110
+      },
+      {
+        "token": "aliases",
+        "lemma": "alias",
+        "head": "are",
+        "relation": "attr",
+        "start": 111,
+        "end": 118
+      },
+      {
+        "token": "for",
+        "lemma": "for",
+        "head": "aliases",
+        "relation": "prep",
+        "start": 119,
+        "end": 122
+      },
+      {
+        "token": "original",
+        "lemma": "original",
+        "head": "B",
+        "relation": "amod",
+        "start": 123,
+        "end": 131
+      },
+      {
+        "token": "A",
+        "lemma": "A",
+        "head": "B",
+        "relation": "nmod",
+        "start": 132,
+        "end": 133
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "B",
+        "relation": "punct",
+        "start": 133,
+        "end": 134
+      },
+      {
+        "token": "B",
+        "lemma": "B",
+        "head": "for",
+        "relation": "pobj",
+        "start": 134,
+        "end": 135
+      },
+      {
+        "token": ";",
+        "lemma": ";",
+        "head": "are",
+        "relation": "punct",
+        "start": 135,
+        "end": 136
+      },
+      {
+        "token": "B2",
+        "lemma": "b2",
+        "head": "are",
+        "relation": "nsubj",
+        "start": 137,
+        "end": 139
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "C2",
+        "relation": "punct",
+        "start": 139,
+        "end": 140
+      },
+      {
+        "token": "C2",
+        "lemma": "C2",
+        "head": "are",
+        "relation": "nsubj",
+        "start": 140,
+        "end": 142
+      },
+      {
+        "token": "are",
+        "lemma": "be",
+        "head": "are",
+        "relation": "ROOT",
+        "start": 143,
+        "end": 146
+      },
+      {
+        "token": "new",
+        "lemma": "new",
+        "head": "agents",
+        "relation": "amod",
+        "start": 147,
+        "end": 150
+      },
+      {
+        "token": "agents",
+        "lemma": "agent",
+        "head": "are",
+        "relation": "attr",
+        "start": 151,
+        "end": 157
+      },
+      {
+        "token": "and",
+        "lemma": "and",
+        "head": "agents",
+        "relation": "cc",
+        "start": 158,
+        "end": 161
+      },
+      {
+        "token": "independently",
+        "lemma": "independently",
+        "head": "looping",
+        "relation": "advmod",
+        "start": 162,
+        "end": 175
+      },
+      {
+        "token": "looping",
+        "lemma": "loop",
+        "head": "agents",
+        "relation": "conj",
+        "start": 176,
+        "end": 183
+      },
+      {
+        "token": "pairs",
+        "lemma": "pair",
+        "head": "looping",
+        "relation": "dobj",
+        "start": 184,
+        "end": 189
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "are",
+        "relation": "punct",
+        "start": 189,
+        "end": 190
+      },
+      {
+        "token": "S3",
+        "lemma": "s3",
+        "head": "exercises",
+        "relation": "nsubj",
+        "start": 191,
+        "end": 193
+      },
+      {
+        "token": "exercises",
+        "lemma": "exercise",
+        "head": "exercises",
+        "relation": "ROOT",
+        "start": 194,
+        "end": 203
+      },
+      {
+        "token": "only",
+        "lemma": "only",
+        "head": "original",
+        "relation": "advmod",
+        "start": 204,
+        "end": 208
+      },
+      {
+        "token": "original",
+        "lemma": "original",
+        "head": "handoff",
+        "relation": "amod",
+        "start": 209,
+        "end": 217
+      },
+      {
+        "token": "A→B",
+        "lemma": "A→B",
+        "head": "handoff",
+        "relation": "compound",
+        "start": 218,
+        "end": 221
+      },
+      {
+        "token": "real",
+        "lemma": "real",
+        "head": "handoff",
+        "relation": "amod",
+        "start": 222,
+        "end": 226
+      },
+      {
+        "token": "provider",
+        "lemma": "provider",
+        "head": "handoff",
+        "relation": "compound",
+        "start": 227,
+        "end": 235
+      },
+      {
+        "token": "handoff",
+        "lemma": "handoff",
+        "head": "exercises",
+        "relation": "dobj",
+        "start": 236,
+        "end": 243
+      },
+      {
+        "token": "within",
+        "lemma": "within",
+        "head": "exercises",
+        "relation": "prep",
+        "start": 244,
+        "end": 250
+      },
+      {
+        "token": "pair-1",
+        "lemma": "pair-1",
+        "head": "boundary",
+        "relation": "nummod",
+        "start": 251,
+        "end": 257
+      },
+      {
+        "token": "B1→C1",
+        "lemma": "b1→c1",
+        "head": "boundary",
+        "relation": "compound",
+        "start": 258,
+        "end": 263
+      },
+      {
+        "token": "boundary",
+        "lemma": "boundary",
+        "head": "within",
+        "relation": "pobj",
+        "start": 264,
+        "end": 272
+      },
+      {
+        "token": ";",
+        "lemma": ";",
+        "head": "exercises",
+        "relation": "punct",
+        "start": 272,
+        "end": 273
+      },
+      {
+        "token": "do",
+        "lemma": "do",
+        "head": "flatten",
+        "relation": "aux",
+        "start": 274,
+        "end": 276
+      },
+      {
+        "token": "not",
+        "lemma": "not",
+        "head": "flatten",
+        "relation": "neg",
+        "start": 277,
+        "end": 280
+      },
+      {
+        "token": "flatten",
+        "lemma": "flatten",
+        "head": "exercises",
+        "relation": "conj",
+        "start": 281,
+        "end": 288
+      },
+      {
+        "token": "nested",
+        "lemma": "nested",
+        "head": "topology",
+        "relation": "amod",
+        "start": 289,
+        "end": 295
+      },
+      {
+        "token": "topology",
+        "lemma": "topology",
+        "head": "flatten",
+        "relation": "dobj",
+        "start": 296,
+        "end": 304
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "flatten",
+        "relation": "punct",
+        "start": 304,
+        "end": 305
+      },
+      {
+        "token": "claim",
+        "lemma": "claim",
+        "head": "flatten",
+        "relation": "conj",
+        "start": 306,
+        "end": 311
+      },
+      {
+        "token": "both",
+        "lemma": "both",
+        "head": "pairs",
+        "relation": "det",
+        "start": 312,
+        "end": 316
+      },
+      {
+        "token": "pairs",
+        "lemma": "pair",
+        "head": "use",
+        "relation": "nsubj",
+        "start": 317,
+        "end": 322
+      },
+      {
+        "token": "executed",
+        "lemma": "execute",
+        "head": "pairs",
+        "relation": "acl",
+        "start": 323,
+        "end": 331
+      },
+      {
+        "token": "live",
+        "lemma": "live",
+        "head": "executed",
+        "relation": "advmod",
+        "start": 332,
+        "end": 336
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "pairs",
+        "relation": "punct",
+        "start": 336,
+        "end": 337
+      },
+      {
+        "token": "use",
+        "lemma": "use",
+        "head": "claim",
+        "relation": "ccomp",
+        "start": 338,
+        "end": 341
+      },
+      {
+        "token": "autonomous",
+        "lemma": "autonomous",
+        "head": "task",
+        "relation": "amod",
+        "start": 342,
+        "end": 352
+      },
+      {
+        "token": "background",
+        "lemma": "background",
+        "head": "task",
+        "relation": "compound",
+        "start": 353,
+        "end": 363
+      },
+      {
+        "token": "task",
+        "lemma": "task",
+        "head": "use",
+        "relation": "dobj",
+        "start": 364,
+        "end": 368
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "use",
+        "relation": "punct",
+        "start": 368,
+        "end": 369
+      },
+      {
+        "token": "or",
+        "lemma": "or",
+        "head": "use",
+        "relation": "cc",
+        "start": 370,
+        "end": 372
+      },
+      {
+        "token": "introduce",
+        "lemma": "introduce",
+        "head": "use",
+        "relation": "conj",
+        "start": 373,
+        "end": 382
+      },
+      {
+        "token": "second",
+        "lemma": "second",
+        "head": "dispatcher",
+        "relation": "amod",
+        "start": 383,
+        "end": 389
+      },
+      {
+        "token": "dispatcher",
+        "lemma": "dispatcher",
+        "head": "introduce",
+        "relation": "dobj",
+        "start": 390,
+        "end": 400
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "exercises",
+        "relation": "punct",
+        "start": 400,
+        "end": 401
+      },
+      {
+        "token": "S3",
+        "lemma": "S3",
+        "head": "depend",
+        "relation": "nsubj",
+        "start": 402,
+        "end": 404
+      },
+      {
+        "token": "should",
+        "lemma": "should",
+        "head": "depend",
+        "relation": "aux",
+        "start": 405,
+        "end": 411
+      },
+      {
+        "token": "depend",
+        "lemma": "depend",
+        "head": "depend",
+        "relation": "ROOT",
+        "start": 412,
+        "end": 418
+      },
+      {
+        "token": "on",
+        "lemma": "on",
+        "head": "depend",
+        "relation": "prep",
+        "start": 419,
+        "end": 421
+      },
+      {
+        "token": "S2.5",
+        "lemma": "S2.5",
+        "head": "on",
+        "relation": "pobj",
+        "start": 422,
+        "end": 426
+      },
+      {
+        "token": "in",
+        "lemma": "in",
+        "head": "depend",
+        "relation": "prep",
+        "start": 427,
+        "end": 429
+      },
+      {
+        "token": "stages.json",
+        "lemma": "stages.json",
+        "head": "in",
+        "relation": "pobj",
+        "start": 430,
+        "end": 441
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "in",
+        "relation": "punct",
+        "start": 441,
+        "end": 442
+      },
+      {
+        "token": "not",
+        "lemma": "not",
+        "head": "in",
+        "relation": "neg",
+        "start": 443,
+        "end": 446
+      },
+      {
+        "token": "merely",
+        "lemma": "merely",
+        "head": "S2",
+        "relation": "advmod",
+        "start": 447,
+        "end": 453
+      },
+      {
+        "token": "S2",
+        "lemma": "S2",
+        "head": "in",
+        "relation": "pobj",
+        "start": 454,
+        "end": 456
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "depend",
+        "relation": "punct",
+        "start": 456,
+        "end": 457
+      }
+    ],
+    "spec_identifier_occurrences": [
+      {
+        "identifier": "ARCHITECTURE",
+        "start": 0,
+        "end": 12
+      },
+      {
+        "identifier": "S2.5",
+        "start": 14,
+        "end": 18
+      },
+      {
+        "identifier": "SUPERVISE",
+        "start": 29,
+        "end": 38
+      },
+      {
+        "identifier": "A0",
+        "start": 39,
+        "end": 41
+      },
+      {
+        "identifier": "PARALLEL",
+        "start": 43,
+        "end": 51
+      },
+      {
+        "identifier": "PAIR",
+        "start": 53,
+        "end": 57
+      },
+      {
+        "identifier": "B1",
+        "start": 58,
+        "end": 60
+      },
+      {
+        "identifier": "C1",
+        "start": 61,
+        "end": 63
+      },
+      {
+        "identifier": "PAIR",
+        "start": 66,
+        "end": 70
+      },
+      {
+        "identifier": "B2",
+        "start": 71,
+        "end": 73
+      },
+      {
+        "identifier": "C2",
+        "start": 74,
+        "end": 76
+      },
+      {
+        "identifier": "B1",
+        "start": 81,
+        "end": 83
+      },
+      {
+        "identifier": "C1",
+        "start": 84,
+        "end": 86
+      },
+      {
+        "identifier": "B2",
+        "start": 137,
+        "end": 139
+      },
+      {
+        "identifier": "C2",
+        "start": 140,
+        "end": 142
+      },
+      {
+        "identifier": "S3",
+        "start": 191,
+        "end": 193
+      },
+      {
+        "identifier": "B1",
+        "start": 258,
+        "end": 260
+      },
+      {
+        "identifier": "C1",
+        "start": 261,
+        "end": 263
+      },
+      {
+        "identifier": "S3",
+        "start": 402,
+        "end": 404
+      },
+      {
+        "identifier": "S2.5",
+        "start": 422,
+        "end": 426
+      },
+      {
+        "identifier": "S2",
+        "start": 454,
+        "end": 456
+      }
+    ]
+  },
+  {
+    "source_id": "s3-p3",
+    "source_ref": {
+      "path": "/home/user0/shg_mu_workspace/project/semantic-slice/recent-s25-s3/S3/raw-spec.txt",
+      "sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "start": 990,
+      "end": 2034
+    },
+    "keywords": [
+      [
+        "correlation generation",
+        0.21388714015483856
+      ],
+      [
+        "generation correlation",
+        0.21338088810443878
+      ],
+      [
+        "uncertain submissions",
+        0.2041649967432022
+      ],
+      [
+        "successful completion",
+        0.20380257070064545
+      ],
+      [
+        "explicitly requested",
+        0.19421273469924927
+      ],
+      [
+        "provider realization",
+        0.19409768283367157
+      ],
+      [
+        "running implementing",
+        0.19306215643882751
+      ],
+      [
+        "controller observed",
+        0.18406489491462708
+      ],
+      [
+        "implementing agent",
+        0.17499856650829315
+      ],
+      [
+        "fabricate provider",
+        0.17494678497314453
+      ]
+    ],
+    "dependency_distance_mean": 3.964788732394366,
+    "dependency_edges": [
+      {
+        "token": "IMPLEMENT",
+        "lemma": "implement",
+        "head": "IMPLEMENT",
+        "relation": "ROOT",
+        "start": 0,
+        "end": 9
+      },
+      {
+        "token": ":",
+        "lemma": ":",
+        "head": "IMPLEMENT",
+        "relation": "punct",
+        "start": 9,
+        "end": 10
+      },
+      {
+        "token": "source",
+        "lemma": "source",
+        "head": "IMPLEMENT",
+        "relation": "dobj",
+        "start": 11,
+        "end": 17
+      },
+      {
+        "token": "A",
+        "lemma": "a",
+        "head": "output",
+        "relation": "det",
+        "start": 18,
+        "end": 19
+      },
+      {
+        "token": "typed",
+        "lemma": "typed",
+        "head": "output",
+        "relation": "amod",
+        "start": 20,
+        "end": 25
+      },
+      {
+        "token": "pair",
+        "lemma": "pair",
+        "head": "output",
+        "relation": "compound",
+        "start": 26,
+        "end": 30
+      },
+      {
+        "token": "output",
+        "lemma": "output",
+        "head": "source",
+        "relation": "appos",
+        "start": 31,
+        "end": 37
+      },
+      {
+        "token": "→",
+        "lemma": "→",
+        "head": "output",
+        "relation": "punct",
+        "start": 38,
+        "end": 39
+      },
+      {
+        "token": "first",
+        "lemma": "first",
+        "head": "class",
+        "relation": "amod",
+        "start": 40,
+        "end": 45
+      },
+      {
+        "token": "-",
+        "lemma": "-",
+        "head": "class",
+        "relation": "punct",
+        "start": 45,
+        "end": 46
+      },
+      {
+        "token": "class",
+        "lemma": "class",
+        "head": "pipe",
+        "relation": "nmod",
+        "start": 46,
+        "end": 51
+      },
+      {
+        "token": "authorized",
+        "lemma": "authorize",
+        "head": "pipe",
+        "relation": "amod",
+        "start": 52,
+        "end": 62
+      },
+      {
+        "token": "pipe",
+        "lemma": "pipe",
+        "head": "output",
+        "relation": "appos",
+        "start": 63,
+        "end": 67
+      },
+      {
+        "token": "→",
+        "lemma": "→",
+        "head": "pipe",
+        "relation": "punct",
+        "start": 68,
+        "end": 69
+      },
+      {
+        "token": "S2",
+        "lemma": "s2",
+        "head": "effect",
+        "relation": "compound",
+        "start": 70,
+        "end": 72
+      },
+      {
+        "token": "effect",
+        "lemma": "effect",
+        "head": "attempt",
+        "relation": "nsubj",
+        "start": 73,
+        "end": 79
+      },
+      {
+        "token": "attempt",
+        "lemma": "attempt",
+        "head": "turn",
+        "relation": "dep",
+        "start": 80,
+        "end": 87
+      },
+      {
+        "token": "durable",
+        "lemma": "durable",
+        "head": "journal",
+        "relation": "amod",
+        "start": 88,
+        "end": 95
+      },
+      {
+        "token": "journal",
+        "lemma": "journal",
+        "head": "attempt",
+        "relation": "dobj",
+        "start": 96,
+        "end": 103
+      },
+      {
+        "token": "with",
+        "lemma": "with",
+        "head": "journal",
+        "relation": "prep",
+        "start": 104,
+        "end": 108
+      },
+      {
+        "token": "graph",
+        "lemma": "graph",
+        "head": "input",
+        "relation": "nmod",
+        "start": 109,
+        "end": 114
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "input",
+        "relation": "punct",
+        "start": 114,
+        "end": 115
+      },
+      {
+        "token": "input",
+        "lemma": "input",
+        "head": "generation",
+        "relation": "compound",
+        "start": 115,
+        "end": 120
+      },
+      {
+        "token": "generation",
+        "lemma": "generation",
+        "head": "with",
+        "relation": "pobj",
+        "start": 121,
+        "end": 131
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "attempt",
+        "relation": "punct",
+        "start": 131,
+        "end": 132
+      },
+      {
+        "token": "correlation+activation",
+        "lemma": "correlation+activation",
+        "head": "IDs",
+        "relation": "compound",
+        "start": 133,
+        "end": 155
+      },
+      {
+        "token": "IDs",
+        "lemma": "id",
+        "head": "attempt",
+        "relation": "conj",
+        "start": 156,
+        "end": 159
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "IDs",
+        "relation": "punct",
+        "start": 159,
+        "end": 160
+      },
+      {
+        "token": "provider",
+        "lemma": "provider",
+        "head": "realization",
+        "relation": "compound",
+        "start": 161,
+        "end": 169
+      },
+      {
+        "token": "realization",
+        "lemma": "realization",
+        "head": "IDs",
+        "relation": "conj",
+        "start": 170,
+        "end": 181
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "realization",
+        "relation": "punct",
+        "start": 181,
+        "end": 182
+      },
+      {
+        "token": "idempotency",
+        "lemma": "idempotency",
+        "head": "key",
+        "relation": "compound",
+        "start": 183,
+        "end": 194
+      },
+      {
+        "token": "key",
+        "lemma": "key",
+        "head": "pipe",
+        "relation": "amod",
+        "start": 195,
+        "end": 198
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "pipe",
+        "relation": "punct",
+        "start": 198,
+        "end": 199
+      },
+      {
+        "token": "exact",
+        "lemma": "exact",
+        "head": "pipe",
+        "relation": "amod",
+        "start": 200,
+        "end": 205
+      },
+      {
+        "token": "pipe",
+        "lemma": "pipe",
+        "head": "attempt",
+        "relation": "dobj",
+        "start": 206,
+        "end": 210
+      },
+      {
+        "token": "→",
+        "lemma": "→",
+        "head": "turn",
+        "relation": "punct",
+        "start": 211,
+        "end": 212
+      },
+      {
+        "token": "Looper",
+        "lemma": "looper",
+        "head": "turn",
+        "relation": "amod",
+        "start": 213,
+        "end": 219
+      },
+      {
+        "token": "actual",
+        "lemma": "actual",
+        "head": "provider",
+        "relation": "amod",
+        "start": 220,
+        "end": 226
+      },
+      {
+        "token": "provider",
+        "lemma": "provider",
+        "head": "turn",
+        "relation": "compound",
+        "start": 227,
+        "end": 235
+      },
+      {
+        "token": "turn",
+        "lemma": "turn",
+        "head": "IMPLEMENT",
+        "relation": "dobj",
+        "start": 236,
+        "end": 240
+      },
+      {
+        "token": "via",
+        "lemma": "via",
+        "head": "turn",
+        "relation": "prep",
+        "start": 241,
+        "end": 244
+      },
+      {
+        "token": "existing",
+        "lemma": "exist",
+        "head": "controller",
+        "relation": "amod",
+        "start": 245,
+        "end": 253
+      },
+      {
+        "token": "local",
+        "lemma": "local",
+        "head": "controller",
+        "relation": "amod",
+        "start": 254,
+        "end": 259
+      },
+      {
+        "token": "controller",
+        "lemma": "controller",
+        "head": "via",
+        "relation": "pobj",
+        "start": 260,
+        "end": 270
+      },
+      {
+        "token": "→",
+        "lemma": "→",
+        "head": "observed",
+        "relation": "punct",
+        "start": 271,
+        "end": 272
+      },
+      {
+        "token": "observed",
+        "lemma": "observe",
+        "head": "IMPLEMENT",
+        "relation": "conj",
+        "start": 273,
+        "end": 281
+      },
+      {
+        "token": "actual",
+        "lemma": "actual",
+        "head": "result",
+        "relation": "amod",
+        "start": 282,
+        "end": 288
+      },
+      {
+        "token": "Codex",
+        "lemma": "codex",
+        "head": "result",
+        "relation": "compound",
+        "start": 289,
+        "end": 294
+      },
+      {
+        "token": "result",
+        "lemma": "result",
+        "head": "observed",
+        "relation": "dobj",
+        "start": 295,
+        "end": 301
+      },
+      {
+        "token": "in",
+        "lemma": "in",
+        "head": "observed",
+        "relation": "prep",
+        "start": 302,
+        "end": 304
+      },
+      {
+        "token": "a",
+        "lemma": "a",
+        "head": "session",
+        "relation": "det",
+        "start": 305,
+        "end": 306
+      },
+      {
+        "token": "DISTINCT",
+        "lemma": "distinct",
+        "head": "session",
+        "relation": "compound",
+        "start": 307,
+        "end": 315
+      },
+      {
+        "token": "provider",
+        "lemma": "provider",
+        "head": "thread",
+        "relation": "compound",
+        "start": 316,
+        "end": 324
+      },
+      {
+        "token": "thread",
+        "lemma": "thread",
+        "head": "session",
+        "relation": "nmod",
+        "start": 325,
+        "end": 331
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "session",
+        "relation": "punct",
+        "start": 331,
+        "end": 332
+      },
+      {
+        "token": "session",
+        "lemma": "session",
+        "head": "in",
+        "relation": "pobj",
+        "start": 332,
+        "end": 339
+      },
+      {
+        "token": "from",
+        "lemma": "from",
+        "head": "observed",
+        "relation": "prep",
+        "start": 340,
+        "end": 344
+      },
+      {
+        "token": "implementing",
+        "lemma": "implement",
+        "head": "from",
+        "relation": "pcomp",
+        "start": 345,
+        "end": 357
+      },
+      {
+        "token": "agent",
+        "lemma": "agent",
+        "head": "implementing",
+        "relation": "dobj",
+        "start": 358,
+        "end": 363
+      },
+      {
+        "token": "→",
+        "lemma": "→",
+        "head": "observed",
+        "relation": "punct",
+        "start": 364,
+        "end": 365
+      },
+      {
+        "token": "validate",
+        "lemma": "validate",
+        "head": "observed",
+        "relation": "conj",
+        "start": 366,
+        "end": 374
+      },
+      {
+        "token": "exact",
+        "lemma": "exact",
+        "head": "types",
+        "relation": "amod",
+        "start": 375,
+        "end": 380
+      },
+      {
+        "token": "correlation",
+        "lemma": "correlation",
+        "head": "types",
+        "relation": "nmod",
+        "start": 381,
+        "end": 392
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "correlation",
+        "relation": "punct",
+        "start": 392,
+        "end": 393
+      },
+      {
+        "token": "generation",
+        "lemma": "generation",
+        "head": "types",
+        "relation": "nmod",
+        "start": 393,
+        "end": 403
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "types",
+        "relation": "punct",
+        "start": 403,
+        "end": 404
+      },
+      {
+        "token": "types",
+        "lemma": "type",
+        "head": "validate",
+        "relation": "dobj",
+        "start": 404,
+        "end": 409
+      },
+      {
+        "token": "→",
+        "lemma": "→",
+        "head": "commit",
+        "relation": "punct",
+        "start": 410,
+        "end": 411
+      },
+      {
+        "token": "commit",
+        "lemma": "commit",
+        "head": "validate",
+        "relation": "advcl",
+        "start": 412,
+        "end": 418
+      },
+      {
+        "token": "ONCE",
+        "lemma": "once",
+        "head": "commit",
+        "relation": "advmod",
+        "start": 419,
+        "end": 423
+      },
+      {
+        "token": "to",
+        "lemma": "to",
+        "head": "commit",
+        "relation": "prep",
+        "start": 424,
+        "end": 426
+      },
+      {
+        "token": "B",
+        "lemma": "b",
+        "head": "to",
+        "relation": "pobj",
+        "start": 427,
+        "end": 428
+      },
+      {
+        "token": "typed",
+        "lemma": "type",
+        "head": "IMPLEMENT",
+        "relation": "conj",
+        "start": 429,
+        "end": 434
+      },
+      {
+        "token": "destination",
+        "lemma": "destination",
+        "head": "input",
+        "relation": "compound",
+        "start": 435,
+        "end": 446
+      },
+      {
+        "token": "input",
+        "lemma": "input",
+        "head": "typed",
+        "relation": "dobj",
+        "start": 447,
+        "end": 452
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "typed",
+        "relation": "punct",
+        "start": 452,
+        "end": 453
+      },
+      {
+        "token": "with",
+        "lemma": "with",
+        "head": "typed",
+        "relation": "prep",
+        "start": 454,
+        "end": 458
+      },
+      {
+        "token": "trustworthy",
+        "lemma": "trustworthy",
+        "head": "commit",
+        "relation": "amod",
+        "start": 459,
+        "end": 470
+      },
+      {
+        "token": "source→effect→provider",
+        "lemma": "source→effect→provider",
+        "head": "turn→return→graph",
+        "relation": "compound",
+        "start": 471,
+        "end": 493
+      },
+      {
+        "token": "turn→return→graph",
+        "lemma": "turn→return→graph",
+        "head": "commit",
+        "relation": "nsubj",
+        "start": 494,
+        "end": 511
+      },
+      {
+        "token": "commit",
+        "lemma": "commit",
+        "head": "with",
+        "relation": "pcomp",
+        "start": 512,
+        "end": 518
+      },
+      {
+        "token": "receipts",
+        "lemma": "receipt",
+        "head": "commit",
+        "relation": "dobj",
+        "start": 519,
+        "end": 527
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "IMPLEMENT",
+        "relation": "punct",
+        "start": 527,
+        "end": 528
+      },
+      {
+        "token": "Small",
+        "lemma": "small",
+        "head": "benign",
+        "relation": "amod",
+        "start": 529,
+        "end": 534
+      },
+      {
+        "token": "benign",
+        "lemma": "benign",
+        "head": "prompt",
+        "relation": "amod",
+        "start": 535,
+        "end": 541
+      },
+      {
+        "token": "non",
+        "lemma": "non",
+        "head": "prompt",
+        "relation": "amod",
+        "start": 542,
+        "end": 545
+      },
+      {
+        "token": "-",
+        "lemma": "-",
+        "head": "prompt",
+        "relation": "amod",
+        "start": 545,
+        "end": 546
+      },
+      {
+        "token": "sensitive",
+        "lemma": "sensitive",
+        "head": "prompt",
+        "relation": "amod",
+        "start": 546,
+        "end": 555
+      },
+      {
+        "token": "prompt",
+        "lemma": "prompt",
+        "head": "prompt",
+        "relation": "ROOT",
+        "start": 556,
+        "end": 562
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "prompt",
+        "relation": "punct",
+        "start": 562,
+        "end": 563
+      },
+      {
+        "token": "This",
+        "lemma": "this",
+        "head": "call",
+        "relation": "nsubj",
+        "start": 564,
+        "end": 568
+      },
+      {
+        "token": "must",
+        "lemma": "must",
+        "head": "call",
+        "relation": "aux",
+        "start": 569,
+        "end": 573
+      },
+      {
+        "token": "actually",
+        "lemma": "actually",
+        "head": "call",
+        "relation": "advmod",
+        "start": 574,
+        "end": 582
+      },
+      {
+        "token": "call",
+        "lemma": "call",
+        "head": "call",
+        "relation": "ROOT",
+        "start": 583,
+        "end": 587
+      },
+      {
+        "token": "a",
+        "lemma": "a",
+        "head": "provider",
+        "relation": "det",
+        "start": 588,
+        "end": 589
+      },
+      {
+        "token": "provider",
+        "lemma": "provider",
+        "head": "call",
+        "relation": "dobj",
+        "start": 590,
+        "end": 598
+      },
+      {
+        "token": "via",
+        "lemma": "via",
+        "head": "call",
+        "relation": "prep",
+        "start": 599,
+        "end": 602
+      },
+      {
+        "token": "Looper",
+        "lemma": "Looper",
+        "head": "via",
+        "relation": "pobj",
+        "start": 603,
+        "end": 609
+      },
+      {
+        "token": "once",
+        "lemma": "once",
+        "head": "call",
+        "relation": "advmod",
+        "start": 610,
+        "end": 614
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "call",
+        "relation": "punct",
+        "start": 614,
+        "end": 615
+      },
+      {
+        "token": "not",
+        "lemma": "not",
+        "head": "mocks",
+        "relation": "neg",
+        "start": 616,
+        "end": 619
+      },
+      {
+        "token": "mocks",
+        "lemma": "mock",
+        "head": "call",
+        "relation": "dep",
+        "start": 620,
+        "end": 625
+      },
+      {
+        "token": "or",
+        "lemma": "or",
+        "head": "mocks",
+        "relation": "cc",
+        "start": 626,
+        "end": 628
+      },
+      {
+        "token": "previous",
+        "lemma": "previous",
+        "head": "outputs",
+        "relation": "amod",
+        "start": 629,
+        "end": 637
+      },
+      {
+        "token": "recorded",
+        "lemma": "record",
+        "head": "outputs",
+        "relation": "amod",
+        "start": 638,
+        "end": 646
+      },
+      {
+        "token": "outputs",
+        "lemma": "output",
+        "head": "mocks",
+        "relation": "conj",
+        "start": 647,
+        "end": 654
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "call",
+        "relation": "punct",
+        "start": 654,
+        "end": 655
+      },
+      {
+        "token": "Do",
+        "lemma": "do",
+        "head": "hijack",
+        "relation": "aux",
+        "start": 656,
+        "end": 658
+      },
+      {
+        "token": "not",
+        "lemma": "not",
+        "head": "hijack",
+        "relation": "neg",
+        "start": 659,
+        "end": 662
+      },
+      {
+        "token": "hijack",
+        "lemma": "hijack",
+        "head": "hijack",
+        "relation": "ROOT",
+        "start": 663,
+        "end": 669
+      },
+      {
+        "token": "the",
+        "lemma": "the",
+        "head": "running",
+        "relation": "nsubj",
+        "start": 670,
+        "end": 673
+      },
+      {
+        "token": "currently",
+        "lemma": "currently",
+        "head": "running",
+        "relation": "advmod",
+        "start": 674,
+        "end": 683
+      },
+      {
+        "token": "running",
+        "lemma": "run",
+        "head": "hijack",
+        "relation": "dobj",
+        "start": 684,
+        "end": 691
+      },
+      {
+        "token": "implementing",
+        "lemma": "implement",
+        "head": "running",
+        "relation": "xcomp",
+        "start": 692,
+        "end": 704
+      },
+      {
+        "token": "Codex",
+        "lemma": "Codex",
+        "head": "thread",
+        "relation": "compound",
+        "start": 705,
+        "end": 710
+      },
+      {
+        "token": "thread",
+        "lemma": "thread",
+        "head": "implementing",
+        "relation": "dobj",
+        "start": 711,
+        "end": 717
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "hijack",
+        "relation": "punct",
+        "start": 717,
+        "end": 718
+      },
+      {
+        "token": "Do",
+        "lemma": "do",
+        "head": "fabricate",
+        "relation": "aux",
+        "start": 719,
+        "end": 721
+      },
+      {
+        "token": "not",
+        "lemma": "not",
+        "head": "fabricate",
+        "relation": "neg",
+        "start": 722,
+        "end": 725
+      },
+      {
+        "token": "fabricate",
+        "lemma": "fabricate",
+        "head": "fabricate",
+        "relation": "ROOT",
+        "start": 726,
+        "end": 735
+      },
+      {
+        "token": "provider",
+        "lemma": "provider",
+        "head": "IDs",
+        "relation": "compound",
+        "start": 736,
+        "end": 744
+      },
+      {
+        "token": "IDs",
+        "lemma": "id",
+        "head": "fabricate",
+        "relation": "dobj",
+        "start": 745,
+        "end": 748
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "IDs",
+        "relation": "punct",
+        "start": 748,
+        "end": 749
+      },
+      {
+        "token": "return",
+        "lemma": "return",
+        "head": "fabricate",
+        "relation": "conj",
+        "start": 750,
+        "end": 756
+      },
+      {
+        "token": "evidence",
+        "lemma": "evidence",
+        "head": "return",
+        "relation": "dobj",
+        "start": 757,
+        "end": 765
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "evidence",
+        "relation": "punct",
+        "start": 765,
+        "end": 766
+      },
+      {
+        "token": "or",
+        "lemma": "or",
+        "head": "evidence",
+        "relation": "cc",
+        "start": 767,
+        "end": 769
+      },
+      {
+        "token": "successful",
+        "lemma": "successful",
+        "head": "completion",
+        "relation": "amod",
+        "start": 770,
+        "end": 780
+      },
+      {
+        "token": "completion",
+        "lemma": "completion",
+        "head": "evidence",
+        "relation": "conj",
+        "start": 781,
+        "end": 791
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "fabricate",
+        "relation": "punct",
+        "start": 791,
+        "end": 792
+      },
+      {
+        "token": "Native",
+        "lemma": "Native",
+        "head": "Looper",
+        "relation": "nmod",
+        "start": 793,
+        "end": 799
+      },
+      {
+        "token": "Looper",
+        "lemma": "Looper",
+        "head": "MCP",
+        "relation": "nmod",
+        "start": 800,
+        "end": 806
+      },
+      {
+        "token": "local",
+        "lemma": "local",
+        "head": "MCP",
+        "relation": "amod",
+        "start": 807,
+        "end": 812
+      },
+      {
+        "token": "API",
+        "lemma": "API",
+        "head": "MCP",
+        "relation": "nmod",
+        "start": 813,
+        "end": 816
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "MCP",
+        "relation": "punct",
+        "start": 816,
+        "end": 817
+      },
+      {
+        "token": "MCP",
+        "lemma": "MCP",
+        "head": "is",
+        "relation": "nsubj",
+        "start": 817,
+        "end": 820
+      },
+      {
+        "token": "is",
+        "lemma": "be",
+        "head": "inspect",
+        "relation": "ccomp",
+        "start": 821,
+        "end": 823
+      },
+      {
+        "token": "available",
+        "lemma": "available",
+        "head": "is",
+        "relation": "acomp",
+        "start": 824,
+        "end": 833
+      },
+      {
+        "token": "through",
+        "lemma": "through",
+        "head": "available",
+        "relation": "prep",
+        "start": 834,
+        "end": 841
+      },
+      {
+        "token": "localhost",
+        "lemma": "localhost",
+        "head": "through",
+        "relation": "pobj",
+        "start": 842,
+        "end": 851
+      },
+      {
+        "token": ";",
+        "lemma": ";",
+        "head": "inspect",
+        "relation": "punct",
+        "start": 851,
+        "end": 852
+      },
+      {
+        "token": "inspect",
+        "lemma": "inspect",
+        "head": "inspect",
+        "relation": "ROOT",
+        "start": 853,
+        "end": 860
+      },
+      {
+        "token": "and",
+        "lemma": "and",
+        "head": "inspect",
+        "relation": "cc",
+        "start": 861,
+        "end": 864
+      },
+      {
+        "token": "use",
+        "lemma": "use",
+        "head": "inspect",
+        "relation": "conj",
+        "start": 865,
+        "end": 868
+      },
+      {
+        "token": "its",
+        "lemma": "its",
+        "head": "schema",
+        "relation": "poss",
+        "start": 869,
+        "end": 872
+      },
+      {
+        "token": "actual",
+        "lemma": "actual",
+        "head": "schema",
+        "relation": "amod",
+        "start": 873,
+        "end": 879
+      },
+      {
+        "token": "schema",
+        "lemma": "schema",
+        "head": "use",
+        "relation": "dobj",
+        "start": 880,
+        "end": 886
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "schema",
+        "relation": "punct",
+        "start": 886,
+        "end": 887
+      },
+      {
+        "token": "not",
+        "lemma": "not",
+        "head": "schema",
+        "relation": "neg",
+        "start": 888,
+        "end": 891
+      },
+      {
+        "token": "a",
+        "lemma": "a",
+        "head": "protocol",
+        "relation": "det",
+        "start": 892,
+        "end": 893
+      },
+      {
+        "token": "made",
+        "lemma": "make",
+        "head": "protocol",
+        "relation": "amod",
+        "start": 894,
+        "end": 898
+      },
+      {
+        "token": "-",
+        "lemma": "-",
+        "head": "made",
+        "relation": "punct",
+        "start": 898,
+        "end": 899
+      },
+      {
+        "token": "up",
+        "lemma": "up",
+        "head": "made",
+        "relation": "prt",
+        "start": 899,
+        "end": 901
+      },
+      {
+        "token": "wire",
+        "lemma": "wire",
+        "head": "protocol",
+        "relation": "compound",
+        "start": 902,
+        "end": 906
+      },
+      {
+        "token": "protocol",
+        "lemma": "protocol",
+        "head": "schema",
+        "relation": "appos",
+        "start": 907,
+        "end": 915
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "inspect",
+        "relation": "punct",
+        "start": 915,
+        "end": 916
+      },
+      {
+        "token": "Limit",
+        "lemma": "Limit",
+        "head": "sends",
+        "relation": "npadvmod",
+        "start": 917,
+        "end": 922
+      },
+      {
+        "token": "to",
+        "lemma": "to",
+        "head": "Limit",
+        "relation": "prep",
+        "start": 923,
+        "end": 925
+      },
+      {
+        "token": "ONE",
+        "lemma": "one",
+        "head": "to",
+        "relation": "pobj",
+        "start": 926,
+        "end": 929
+      },
+      {
+        "token": "explicitly",
+        "lemma": "explicitly",
+        "head": "requested",
+        "relation": "advmod",
+        "start": 930,
+        "end": 940
+      },
+      {
+        "token": "requested",
+        "lemma": "request",
+        "head": "invocation",
+        "relation": "amod",
+        "start": 941,
+        "end": 950
+      },
+      {
+        "token": "live",
+        "lemma": "live",
+        "head": "invocation",
+        "relation": "amod",
+        "start": 951,
+        "end": 955
+      },
+      {
+        "token": "provider",
+        "lemma": "provider",
+        "head": "invocation",
+        "relation": "compound",
+        "start": 956,
+        "end": 964
+      },
+      {
+        "token": "invocation",
+        "lemma": "invocation",
+        "head": "to",
+        "relation": "pobj",
+        "start": 965,
+        "end": 975
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "sends",
+        "relation": "punct",
+        "start": 975,
+        "end": 976
+      },
+      {
+        "token": "no",
+        "lemma": "no",
+        "head": "retries",
+        "relation": "det",
+        "start": 977,
+        "end": 979
+      },
+      {
+        "token": "retries",
+        "lemma": "retrie",
+        "head": ",",
+        "relation": "prep",
+        "start": 980,
+        "end": 987
+      },
+      {
+        "token": "after",
+        "lemma": "after",
+        "head": "retries",
+        "relation": "prep",
+        "start": 988,
+        "end": 993
+      },
+      {
+        "token": "uncertain",
+        "lemma": "uncertain",
+        "head": "submissions",
+        "relation": "amod",
+        "start": 994,
+        "end": 1003
+      },
+      {
+        "token": "submissions",
+        "lemma": "submission",
+        "head": "after",
+        "relation": "pobj",
+        "start": 1004,
+        "end": 1015
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "sends",
+        "relation": "punct",
+        "start": 1015,
+        "end": 1016
+      },
+      {
+        "token": "no",
+        "lemma": "no",
+        "head": "browser",
+        "relation": "det",
+        "start": 1017,
+        "end": 1019
+      },
+      {
+        "token": "duplicate",
+        "lemma": "duplicate",
+        "head": "browser",
+        "relation": "amod",
+        "start": 1020,
+        "end": 1029
+      },
+      {
+        "token": "browser",
+        "lemma": "browser",
+        "head": "sends",
+        "relation": "nsubj",
+        "start": 1030,
+        "end": 1037
+      },
+      {
+        "token": "sends",
+        "lemma": "send",
+        "head": "sends",
+        "relation": "ROOT",
+        "start": 1038,
+        "end": 1043
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "sends",
+        "relation": "punct",
+        "start": 1043,
+        "end": 1044
+      }
+    ],
+    "spec_identifier_occurrences": [
+      {
+        "identifier": "IMPLEMENT",
+        "start": 0,
+        "end": 9
+      },
+      {
+        "identifier": "S2",
+        "start": 70,
+        "end": 72
+      },
+      {
+        "identifier": "DISTINCT",
+        "start": 307,
+        "end": 315
+      },
+      {
+        "identifier": "ONCE",
+        "start": 419,
+        "end": 423
+      },
+      {
+        "identifier": "API",
+        "start": 813,
+        "end": 816
+      },
+      {
+        "identifier": "MCP",
+        "start": 817,
+        "end": 820
+      },
+      {
+        "identifier": "ONE",
+        "start": 926,
+        "end": 929
+      }
+    ]
+  },
+  {
+    "source_id": "s3-p4",
+    "source_ref": {
+      "path": "/home/user0/shg_mu_workspace/project/semantic-slice/recent-s25-s3/S3/raw-spec.txt",
+      "sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "start": 2036,
+      "end": 2937
+    },
+    "keywords": [
+      [
+        "mismatched correlation",
+        0.2346566617488861
+      ],
+      [
+        "provider unavailable",
+        0.21332424879074097
+      ],
+      [
+        "manufacture positive",
+        0.21332424879074097
+      ],
+      [
+        "generation transport",
+        0.2121833860874176
+      ],
+      [
+        "validating existing",
+        0.20234836637973785
+      ],
+      [
+        "correlation attempt",
+        0.20211613178253174
+      ],
+      [
+        "freeze reproducible",
+        0.20174281299114227
+      ],
+      [
+        "commitment receipt",
+        0.1916104406118393
+      ],
+      [
+        "create test_live_ab",
+        0.18393616378307343
+      ],
+      [
+        "unavailable leave",
+        0.18132559955120087
+      ]
+    ],
+    "dependency_distance_mean": 3.256,
+    "dependency_edges": [
+      {
+        "token": "STAGE",
+        "lemma": "stage",
+        "head": "GATES",
+        "relation": "compound",
+        "start": 0,
+        "end": 5
+      },
+      {
+        "token": "GATES",
+        "lemma": "gate",
+        "head": "create",
+        "relation": "nsubj",
+        "start": 6,
+        "end": 11
+      },
+      {
+        "token": ":",
+        "lemma": ":",
+        "head": "GATES",
+        "relation": "punct",
+        "start": 11,
+        "end": 12
+      },
+      {
+        "token": "create",
+        "lemma": "create",
+        "head": "create",
+        "relation": "ROOT",
+        "start": 13,
+        "end": 19
+      },
+      {
+        "token": "test_live_ab.py",
+        "lemma": "test_live_ab.py",
+        "head": "create",
+        "relation": "dobj",
+        "start": 20,
+        "end": 35
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "test_live_ab.py",
+        "relation": "punct",
+        "start": 35,
+        "end": 36
+      },
+      {
+        "token": "explicit",
+        "lemma": "explicit",
+        "head": "scripts",
+        "relation": "amod",
+        "start": 37,
+        "end": 45
+      },
+      {
+        "token": "scripts",
+        "lemma": "script",
+        "head": "run_live_ab.py",
+        "relation": "nmod",
+        "start": 46,
+        "end": 53
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "run_live_ab.py",
+        "relation": "punct",
+        "start": 53,
+        "end": 54
+      },
+      {
+        "token": "run_live_ab.py",
+        "lemma": "run_live_ab.py",
+        "head": "test_live_ab.py",
+        "relation": "appos",
+        "start": 54,
+        "end": 68
+      },
+      {
+        "token": "or",
+        "lemma": "or",
+        "head": "run_live_ab.py",
+        "relation": "cc",
+        "start": 69,
+        "end": 71
+      },
+      {
+        "token": "equivalent",
+        "lemma": "equivalent",
+        "head": "run_live_ab.py",
+        "relation": "conj",
+        "start": 72,
+        "end": 82
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "test_live_ab.py",
+        "relation": "punct",
+        "start": 82,
+        "end": 83
+      },
+      {
+        "token": "make",
+        "lemma": "make",
+        "head": "create",
+        "relation": "conj",
+        "start": 84,
+        "end": 88
+      },
+      {
+        "token": "check",
+        "lemma": "check",
+        "head": "s3",
+        "relation": "compound",
+        "start": 89,
+        "end": 94
+      },
+      {
+        "token": "-",
+        "lemma": "-",
+        "head": "s3",
+        "relation": "punct",
+        "start": 94,
+        "end": 95
+      },
+      {
+        "token": "s3",
+        "lemma": "s3",
+        "head": "make",
+        "relation": "dobj",
+        "start": 95,
+        "end": 97
+      },
+      {
+        "token": "for",
+        "lemma": "for",
+        "head": "make",
+        "relation": "prep",
+        "start": 98,
+        "end": 101
+      },
+      {
+        "token": "offline",
+        "lemma": "offline",
+        "head": "tests",
+        "relation": "amod",
+        "start": 102,
+        "end": 109
+      },
+      {
+        "token": "tests",
+        "lemma": "test",
+        "head": "for",
+        "relation": "pobj",
+        "start": 110,
+        "end": 115
+      },
+      {
+        "token": "and",
+        "lemma": "and",
+        "head": "make",
+        "relation": "cc",
+        "start": 116,
+        "end": 119
+      },
+      {
+        "token": "validating",
+        "lemma": "validate",
+        "head": "make",
+        "relation": "conj",
+        "start": 120,
+        "end": 130
+      },
+      {
+        "token": "existing",
+        "lemma": "exist",
+        "head": "evidence",
+        "relation": "amod",
+        "start": 131,
+        "end": 139
+      },
+      {
+        "token": "evidence",
+        "lemma": "evidence",
+        "head": "validating",
+        "relation": "dobj",
+        "start": 140,
+        "end": 148
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "make",
+        "relation": "punct",
+        "start": 148,
+        "end": 149
+      },
+      {
+        "token": "make",
+        "lemma": "make",
+        "head": "make",
+        "relation": "conj",
+        "start": 150,
+        "end": 154
+      },
+      {
+        "token": "check",
+        "lemma": "check",
+        "head": "s3",
+        "relation": "compound",
+        "start": 155,
+        "end": 160
+      },
+      {
+        "token": "-",
+        "lemma": "-",
+        "head": "s3",
+        "relation": "punct",
+        "start": 160,
+        "end": 161
+      },
+      {
+        "token": "s3",
+        "lemma": "s3",
+        "head": "live",
+        "relation": "compound",
+        "start": 161,
+        "end": 163
+      },
+      {
+        "token": "-",
+        "lemma": "-",
+        "head": "live",
+        "relation": "punct",
+        "start": 163,
+        "end": 164
+      },
+      {
+        "token": "live",
+        "lemma": "live",
+        "head": "make",
+        "relation": "ccomp",
+        "start": 164,
+        "end": 168
+      },
+      {
+        "token": "to",
+        "lemma": "to",
+        "head": "initiate",
+        "relation": "aux",
+        "start": 169,
+        "end": 171
+      },
+      {
+        "token": "initiate",
+        "lemma": "initiate",
+        "head": "make",
+        "relation": "advcl",
+        "start": 172,
+        "end": 180
+      },
+      {
+        "token": "one",
+        "lemma": "one",
+        "head": "turn",
+        "relation": "nummod",
+        "start": 181,
+        "end": 184
+      },
+      {
+        "token": "bounded",
+        "lemma": "bounded",
+        "head": "turn",
+        "relation": "amod",
+        "start": 185,
+        "end": 192
+      },
+      {
+        "token": "real",
+        "lemma": "real",
+        "head": "turn",
+        "relation": "amod",
+        "start": 193,
+        "end": 197
+      },
+      {
+        "token": "turn",
+        "lemma": "turn",
+        "head": "initiate",
+        "relation": "dobj",
+        "start": 198,
+        "end": 202
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "make",
+        "relation": "punct",
+        "start": 202,
+        "end": 203
+      },
+      {
+        "token": "make",
+        "lemma": "make",
+        "head": "make",
+        "relation": "conj",
+        "start": 204,
+        "end": 208
+      },
+      {
+        "token": "package",
+        "lemma": "package",
+        "head": "s3",
+        "relation": "compound",
+        "start": 209,
+        "end": 216
+      },
+      {
+        "token": "-",
+        "lemma": "-",
+        "head": "s3",
+        "relation": "punct",
+        "start": 216,
+        "end": 217
+      },
+      {
+        "token": "s3",
+        "lemma": "s3",
+        "head": "freeze",
+        "relation": "nsubj",
+        "start": 217,
+        "end": 219
+      },
+      {
+        "token": "to",
+        "lemma": "to",
+        "head": "freeze",
+        "relation": "aux",
+        "start": 220,
+        "end": 222
+      },
+      {
+        "token": "freeze",
+        "lemma": "freeze",
+        "head": "make",
+        "relation": "ccomp",
+        "start": 223,
+        "end": 229
+      },
+      {
+        "token": "reproducible",
+        "lemma": "reproducible",
+        "head": "source",
+        "relation": "amod",
+        "start": 230,
+        "end": 242
+      },
+      {
+        "token": "S3",
+        "lemma": "S3",
+        "head": "source",
+        "relation": "compound",
+        "start": 243,
+        "end": 245
+      },
+      {
+        "token": "source",
+        "lemma": "source",
+        "head": "freeze",
+        "relation": "dobj",
+        "start": 246,
+        "end": 252
+      },
+      {
+        "token": "archive",
+        "lemma": "archive",
+        "head": "source",
+        "relation": "amod",
+        "start": 253,
+        "end": 260
+      },
+      {
+        "token": "with",
+        "lemma": "with",
+        "head": "archive",
+        "relation": "prep",
+        "start": 261,
+        "end": 265
+      },
+      {
+        "token": "fresh",
+        "lemma": "fresh",
+        "head": "extraction",
+        "relation": "amod",
+        "start": 266,
+        "end": 271
+      },
+      {
+        "token": "-",
+        "lemma": "-",
+        "head": "extraction",
+        "relation": "punct",
+        "start": 271,
+        "end": 272
+      },
+      {
+        "token": "extraction",
+        "lemma": "extraction",
+        "head": "tests",
+        "relation": "compound",
+        "start": 272,
+        "end": 282
+      },
+      {
+        "token": "tests",
+        "lemma": "test",
+        "head": "with",
+        "relation": "pobj",
+        "start": 283,
+        "end": 288
+      },
+      {
+        "token": "and",
+        "lemma": "and",
+        "head": "freeze",
+        "relation": "cc",
+        "start": 289,
+        "end": 292
+      },
+      {
+        "token": "promote",
+        "lemma": "promote",
+        "head": "freeze",
+        "relation": "conj",
+        "start": 293,
+        "end": 300
+      },
+      {
+        "token": "to",
+        "lemma": "to",
+        "head": "promote",
+        "relation": "prep",
+        "start": 301,
+        "end": 303
+      },
+      {
+        "token": "integration",
+        "lemma": "integration",
+        "head": "to",
+        "relation": "pobj",
+        "start": 304,
+        "end": 315
+      },
+      {
+        "token": "ONLY",
+        "lemma": "only",
+        "head": "accepted",
+        "relation": "advmod",
+        "start": 316,
+        "end": 320
+      },
+      {
+        "token": "if",
+        "lemma": "if",
+        "head": "accepted",
+        "relation": "mark",
+        "start": 321,
+        "end": 323
+      },
+      {
+        "token": "real",
+        "lemma": "real",
+        "head": "evidence",
+        "relation": "amod",
+        "start": 324,
+        "end": 328
+      },
+      {
+        "token": "evidence",
+        "lemma": "evidence",
+        "head": "accepted",
+        "relation": "nsubjpass",
+        "start": 329,
+        "end": 337
+      },
+      {
+        "token": "is",
+        "lemma": "be",
+        "head": "accepted",
+        "relation": "auxpass",
+        "start": 338,
+        "end": 340
+      },
+      {
+        "token": "accepted",
+        "lemma": "accept",
+        "head": "promote",
+        "relation": "advcl",
+        "start": 341,
+        "end": 349
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "create",
+        "relation": "punct",
+        "start": 349,
+        "end": 350
+      },
+      {
+        "token": "Define",
+        "lemma": "define",
+        "head": "Define",
+        "relation": "ROOT",
+        "start": 351,
+        "end": 357
+      },
+      {
+        "token": "evidence",
+        "lemma": "evidence",
+        "head": "Define",
+        "relation": "dobj",
+        "start": 358,
+        "end": 366
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "live_ab.json",
+        "relation": "punct",
+        "start": 366,
+        "end": 367
+      },
+      {
+        "token": "live_ab.json",
+        "lemma": "live_ab.json",
+        "head": "evidence",
+        "relation": "appos",
+        "start": 367,
+        "end": 379
+      },
+      {
+        "token": "with",
+        "lemma": "with",
+        "head": "Define",
+        "relation": "prep",
+        "start": 380,
+        "end": 384
+      },
+      {
+        "token": "exact",
+        "lemma": "exact",
+        "head": "observed",
+        "relation": "advmod",
+        "start": 385,
+        "end": 390
+      },
+      {
+        "token": "observed",
+        "lemma": "observe",
+        "head": "thread",
+        "relation": "amod",
+        "start": 391,
+        "end": 399
+      },
+      {
+        "token": "Looper",
+        "lemma": "Looper",
+        "head": "thread",
+        "relation": "amod",
+        "start": 400,
+        "end": 406
+      },
+      {
+        "token": "provider",
+        "lemma": "provider",
+        "head": "thread",
+        "relation": "compound",
+        "start": 407,
+        "end": 415
+      },
+      {
+        "token": "thread",
+        "lemma": "thread",
+        "head": "turn",
+        "relation": "nmod",
+        "start": 416,
+        "end": 422
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "thread",
+        "relation": "punct",
+        "start": 422,
+        "end": 423
+      },
+      {
+        "token": "turn",
+        "lemma": "turn",
+        "head": "with",
+        "relation": "pobj",
+        "start": 423,
+        "end": 427
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "turn",
+        "relation": "punct",
+        "start": 427,
+        "end": 428
+      },
+      {
+        "token": "graph",
+        "lemma": "graph",
+        "head": "addresses",
+        "relation": "compound",
+        "start": 429,
+        "end": 434
+      },
+      {
+        "token": "addresses",
+        "lemma": "address",
+        "head": "turn",
+        "relation": "conj",
+        "start": 435,
+        "end": 444
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "addresses",
+        "relation": "punct",
+        "start": 444,
+        "end": 445
+      },
+      {
+        "token": "correlation",
+        "lemma": "correlation",
+        "head": "attempt",
+        "relation": "nmod",
+        "start": 446,
+        "end": 457
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "attempt",
+        "relation": "punct",
+        "start": 457,
+        "end": 458
+      },
+      {
+        "token": "attempt",
+        "lemma": "attempt",
+        "head": "IDs",
+        "relation": "compound",
+        "start": 458,
+        "end": 465
+      },
+      {
+        "token": "IDs",
+        "lemma": "id",
+        "head": "addresses",
+        "relation": "conj",
+        "start": 466,
+        "end": 469
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "IDs",
+        "relation": "punct",
+        "start": 469,
+        "end": 470
+      },
+      {
+        "token": "generation",
+        "lemma": "generation",
+        "head": "addresses",
+        "relation": "appos",
+        "start": 471,
+        "end": 481
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "generation",
+        "relation": "punct",
+        "start": 481,
+        "end": 482
+      },
+      {
+        "token": "transport",
+        "lemma": "transport",
+        "head": "observation",
+        "relation": "compound",
+        "start": 483,
+        "end": 492
+      },
+      {
+        "token": "observation",
+        "lemma": "observation",
+        "head": "generation",
+        "relation": "conj",
+        "start": 493,
+        "end": 504
+      },
+      {
+        "token": "and",
+        "lemma": "and",
+        "head": "observation",
+        "relation": "cc",
+        "start": 505,
+        "end": 508
+      },
+      {
+        "token": "source",
+        "lemma": "source",
+        "head": "observation",
+        "relation": "conj",
+        "start": 509,
+        "end": 515
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "result",
+        "relation": "punct",
+        "start": 515,
+        "end": 516
+      },
+      {
+        "token": "result",
+        "lemma": "result",
+        "head": "receipt",
+        "relation": "compound",
+        "start": 516,
+        "end": 522
+      },
+      {
+        "token": "commitment",
+        "lemma": "commitment",
+        "head": "receipt",
+        "relation": "compound",
+        "start": 523,
+        "end": 533
+      },
+      {
+        "token": "receipt",
+        "lemma": "receipt",
+        "head": "observation",
+        "relation": "conj",
+        "start": 534,
+        "end": 541
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "Define",
+        "relation": "punct",
+        "start": 541,
+        "end": 542
+      },
+      {
+        "token": "Negative",
+        "lemma": "negative",
+        "head": "tests",
+        "relation": "amod",
+        "start": 543,
+        "end": 551
+      },
+      {
+        "token": "tests",
+        "lemma": "test",
+        "head": "tests",
+        "relation": "ROOT",
+        "start": 552,
+        "end": 557
+      },
+      {
+        "token": ":",
+        "lemma": ":",
+        "head": "tests",
+        "relation": "punct",
+        "start": 557,
+        "end": 558
+      },
+      {
+        "token": "stale",
+        "lemma": "stale",
+        "head": "generation",
+        "relation": "amod",
+        "start": 559,
+        "end": 564
+      },
+      {
+        "token": "generation",
+        "lemma": "generation",
+        "head": "tests",
+        "relation": "appos",
+        "start": 565,
+        "end": 575
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "generation",
+        "relation": "punct",
+        "start": 575,
+        "end": 576
+      },
+      {
+        "token": "mismatched",
+        "lemma": "mismatch",
+        "head": "correlation",
+        "relation": "amod",
+        "start": 577,
+        "end": 587
+      },
+      {
+        "token": "correlation",
+        "lemma": "correlation",
+        "head": "generation",
+        "relation": "appos",
+        "start": 588,
+        "end": 599
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "correlation",
+        "relation": "punct",
+        "start": 599,
+        "end": 600
+      },
+      {
+        "token": "wrong",
+        "lemma": "wrong",
+        "head": "type",
+        "relation": "amod",
+        "start": 601,
+        "end": 606
+      },
+      {
+        "token": "target",
+        "lemma": "target",
+        "head": "type",
+        "relation": "nmod",
+        "start": 607,
+        "end": 613
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "type",
+        "relation": "punct",
+        "start": 613,
+        "end": 614
+      },
+      {
+        "token": "type",
+        "lemma": "type",
+        "head": "correlation",
+        "relation": "conj",
+        "start": 614,
+        "end": 618
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "correlation",
+        "relation": "punct",
+        "start": 618,
+        "end": 619
+      },
+      {
+        "token": "private",
+        "lemma": "private",
+        "head": "access",
+        "relation": "amod",
+        "start": 620,
+        "end": 627
+      },
+      {
+        "token": "child",
+        "lemma": "child",
+        "head": "access",
+        "relation": "compound",
+        "start": 628,
+        "end": 633
+      },
+      {
+        "token": "access",
+        "lemma": "access",
+        "head": "correlation",
+        "relation": "conj",
+        "start": 634,
+        "end": 640
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "access",
+        "relation": "punct",
+        "start": 640,
+        "end": 641
+      },
+      {
+        "token": "double",
+        "lemma": "double",
+        "head": "commit",
+        "relation": "amod",
+        "start": 642,
+        "end": 648
+      },
+      {
+        "token": "commit",
+        "lemma": "commit",
+        "head": "generation",
+        "relation": "appos",
+        "start": 649,
+        "end": 655
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "generation",
+        "relation": "punct",
+        "start": 655,
+        "end": 656
+      },
+      {
+        "token": "provider",
+        "lemma": "provider",
+        "head": "generation",
+        "relation": "conj",
+        "start": 657,
+        "end": 665
+      },
+      {
+        "token": "unavailable",
+        "lemma": "unavailable",
+        "head": "provider",
+        "relation": "amod",
+        "start": 666,
+        "end": 677
+      },
+      {
+        "token": "and",
+        "lemma": "and",
+        "head": "unavailable",
+        "relation": "cc",
+        "start": 678,
+        "end": 681
+      },
+      {
+        "token": "uncertain",
+        "lemma": "uncertain",
+        "head": "unavailable",
+        "relation": "conj",
+        "start": 682,
+        "end": 691
+      },
+      {
+        "token": "no",
+        "lemma": "no",
+        "head": "retry",
+        "relation": "det",
+        "start": 692,
+        "end": 694
+      },
+      {
+        "token": "retry",
+        "lemma": "retry",
+        "head": "provider",
+        "relation": "conj",
+        "start": 695,
+        "end": 700
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "retry",
+        "relation": "punct",
+        "start": 700,
+        "end": 701
+      },
+      {
+        "token": "restart",
+        "lemma": "restart",
+        "head": "replay",
+        "relation": "compound",
+        "start": 702,
+        "end": 709
+      },
+      {
+        "token": "replay",
+        "lemma": "replay",
+        "head": "retry",
+        "relation": "appos",
+        "start": 710,
+        "end": 716
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "tests",
+        "relation": "punct",
+        "start": 716,
+        "end": 717
+      },
+      {
+        "token": "Preserve",
+        "lemma": "preserve",
+        "head": "Preserve",
+        "relation": "ROOT",
+        "start": 718,
+        "end": 726
+      },
+      {
+        "token": "earlier",
+        "lemma": "early",
+        "head": "tests",
+        "relation": "amod",
+        "start": 727,
+        "end": 734
+      },
+      {
+        "token": "71",
+        "lemma": "71",
+        "head": "tests",
+        "relation": "nummod",
+        "start": 735,
+        "end": 737
+      },
+      {
+        "token": "tests",
+        "lemma": "test",
+        "head": "Preserve",
+        "relation": "dobj",
+        "start": 738,
+        "end": 743
+      },
+      {
+        "token": "and",
+        "lemma": "and",
+        "head": "tests",
+        "relation": "cc",
+        "start": 744,
+        "end": 747
+      },
+      {
+        "token": "frozen",
+        "lemma": "frozen",
+        "head": "digests",
+        "relation": "amod",
+        "start": 748,
+        "end": 754
+      },
+      {
+        "token": "S0",
+        "lemma": "S0",
+        "head": "digests",
+        "relation": "nmod",
+        "start": 755,
+        "end": 757
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "digests",
+        "relation": "punct",
+        "start": 757,
+        "end": 758
+      },
+      {
+        "token": "S1",
+        "lemma": "S1",
+        "head": "digests",
+        "relation": "nmod",
+        "start": 758,
+        "end": 760
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "digests",
+        "relation": "punct",
+        "start": 760,
+        "end": 761
+      },
+      {
+        "token": "S2",
+        "lemma": "S2",
+        "head": "S2.5",
+        "relation": "nmod",
+        "start": 761,
+        "end": 763
+      },
+      {
+        "token": "/",
+        "lemma": "/",
+        "head": "S2.5",
+        "relation": "punct",
+        "start": 763,
+        "end": 764
+      },
+      {
+        "token": "S2.5",
+        "lemma": "S2.5",
+        "head": "digests",
+        "relation": "compound",
+        "start": 764,
+        "end": 768
+      },
+      {
+        "token": "digests",
+        "lemma": "digest",
+        "head": "tests",
+        "relation": "conj",
+        "start": 769,
+        "end": 776
+      },
+      {
+        "token": ";",
+        "lemma": ";",
+        "head": "Preserve",
+        "relation": "punct",
+        "start": 776,
+        "end": 777
+      },
+      {
+        "token": "run",
+        "lemma": "run",
+        "head": "Preserve",
+        "relation": "conj",
+        "start": 778,
+        "end": 781
+      },
+      {
+        "token": "checks",
+        "lemma": "check",
+        "head": "run",
+        "relation": "dobj",
+        "start": 782,
+        "end": 788
+      },
+      {
+        "token": "and",
+        "lemma": "and",
+        "head": "checks",
+        "relation": "cc",
+        "start": 789,
+        "end": 792
+      },
+      {
+        "token": "one",
+        "lemma": "one",
+        "head": "call",
+        "relation": "nummod",
+        "start": 793,
+        "end": 796
+      },
+      {
+        "token": "explicit",
+        "lemma": "explicit",
+        "head": "call",
+        "relation": "amod",
+        "start": 797,
+        "end": 805
+      },
+      {
+        "token": "live",
+        "lemma": "live",
+        "head": "call",
+        "relation": "amod",
+        "start": 806,
+        "end": 810
+      },
+      {
+        "token": "call",
+        "lemma": "call",
+        "head": "checks",
+        "relation": "conj",
+        "start": 811,
+        "end": 815
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "Preserve",
+        "relation": "punct",
+        "start": 815,
+        "end": 816
+      },
+      {
+        "token": "If",
+        "lemma": "if",
+        "head": "is",
+        "relation": "mark",
+        "start": 817,
+        "end": 819
+      },
+      {
+        "token": "provider",
+        "lemma": "provider",
+        "head": "is",
+        "relation": "nsubj",
+        "start": 820,
+        "end": 828
+      },
+      {
+        "token": "is",
+        "lemma": "be",
+        "head": "leave",
+        "relation": "advcl",
+        "start": 829,
+        "end": 831
+      },
+      {
+        "token": "unavailable",
+        "lemma": "unavailable",
+        "head": "is",
+        "relation": "acomp",
+        "start": 832,
+        "end": 843
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "is",
+        "relation": "punct",
+        "start": 843,
+        "end": 844
+      },
+      {
+        "token": "leave",
+        "lemma": "leave",
+        "head": "leave",
+        "relation": "ROOT",
+        "start": 845,
+        "end": 850
+      },
+      {
+        "token": "S3",
+        "lemma": "s3",
+        "head": "leave",
+        "relation": "dobj",
+        "start": 851,
+        "end": 853
+      },
+      {
+        "token": "OPEN",
+        "lemma": "open",
+        "head": "leave",
+        "relation": "oprd",
+        "start": 854,
+        "end": 858
+      },
+      {
+        "token": "and",
+        "lemma": "and",
+        "head": "leave",
+        "relation": "cc",
+        "start": 859,
+        "end": 862
+      },
+      {
+        "token": "do",
+        "lemma": "do",
+        "head": "manufacture",
+        "relation": "aux",
+        "start": 863,
+        "end": 865
+      },
+      {
+        "token": "not",
+        "lemma": "not",
+        "head": "manufacture",
+        "relation": "neg",
+        "start": 866,
+        "end": 869
+      },
+      {
+        "token": "manufacture",
+        "lemma": "manufacture",
+        "head": "leave",
+        "relation": "conj",
+        "start": 870,
+        "end": 881
+      },
+      {
+        "token": "a",
+        "lemma": "a",
+        "head": "positive",
+        "relation": "det",
+        "start": 882,
+        "end": 883
+      },
+      {
+        "token": "positive",
+        "lemma": "positive",
+        "head": "manufacture",
+        "relation": "dobj",
+        "start": 884,
+        "end": 892
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "leave",
+        "relation": "punct",
+        "start": 892,
+        "end": 893
+      },
+      {
+        "token": "No",
+        "lemma": "no",
+        "head": "S4",
+        "relation": "det",
+        "start": 894,
+        "end": 896
+      },
+      {
+        "token": "S4",
+        "lemma": "S4",
+        "head": "S4",
+        "relation": "ROOT",
+        "start": 897,
+        "end": 899
+      },
+      {
+        "token": "+",
+        "lemma": "+",
+        "head": "S4",
+        "relation": "nummod",
+        "start": 899,
+        "end": 900
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "S4",
+        "relation": "punct",
+        "start": 900,
+        "end": 901
+      }
+    ],
+    "spec_identifier_occurrences": [
+      {
+        "identifier": "STAGE",
+        "start": 0,
+        "end": 5
+      },
+      {
+        "identifier": "GATES",
+        "start": 6,
+        "end": 11
+      },
+      {
+        "identifier": "S3",
+        "start": 243,
+        "end": 245
+      },
+      {
+        "identifier": "ONLY",
+        "start": 316,
+        "end": 320
+      },
+      {
+        "identifier": "S0",
+        "start": 755,
+        "end": 757
+      },
+      {
+        "identifier": "S1",
+        "start": 758,
+        "end": 760
+      },
+      {
+        "identifier": "S2",
+        "start": 761,
+        "end": 763
+      },
+      {
+        "identifier": "S2.5",
+        "start": 764,
+        "end": 768
+      },
+      {
+        "identifier": "S3",
+        "start": 851,
+        "end": 853
+      },
+      {
+        "identifier": "OPEN",
+        "start": 854,
+        "end": 858
+      },
+      {
+        "identifier": "S4",
+        "start": 897,
+        "end": 899
+      }
+    ]
+  },
+  {
+    "source_id": "s3-p5",
+    "source_ref": {
+      "path": "/home/user0/shg_mu_workspace/project/semantic-slice/recent-s25-s3/S3/raw-spec.txt",
+      "sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3",
+      "start": 2939,
+      "end": 3354
+    },
+    "keywords": [
+      [
+        "reintroduce blocker",
+        0.4637273848056793
+      ],
+      [
+        "original services",
+        0.41491398215293884
+      ],
+      [
+        "isolated delivery",
+        0.41491398215293884
+      ],
+      [
+        "drafts discarded",
+        0.3905072808265686
+      ],
+      [
+        "chat destination",
+        0.3905072808265686
+      ],
+      [
+        "paths remaining",
+        0.36610057950019836
+      ],
+      [
+        "draft overwrite",
+        0.36610057950019836
+      ],
+      [
+        "composer drafts",
+        0.36103808879852295
+      ],
+      [
+        "report commands",
+        0.35597556829452515
+      ],
+      [
+        "concise report",
+        0.3416938781738281
+      ]
+    ],
+    "dependency_distance_mean": 2.1636363636363636,
+    "dependency_edges": [
+      {
+        "token": "CICD",
+        "lemma": "CICD",
+        "head": "remain",
+        "relation": "nsubj",
+        "start": 0,
+        "end": 4
+      },
+      {
+        "token": ":",
+        "lemma": ":",
+        "head": "CICD",
+        "relation": "punct",
+        "start": 4,
+        "end": 5
+      },
+      {
+        "token": "remain",
+        "lemma": "remain",
+        "head": "remain",
+        "relation": "ROOT",
+        "start": 6,
+        "end": 12
+      },
+      {
+        "token": "local",
+        "lemma": "local",
+        "head": "remain",
+        "relation": "acomp",
+        "start": 13,
+        "end": 18
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "remain",
+        "relation": "punct",
+        "start": 18,
+        "end": 19
+      },
+      {
+        "token": "Report",
+        "lemma": "report",
+        "head": "commands",
+        "relation": "compound",
+        "start": 20,
+        "end": 26
+      },
+      {
+        "token": "commands",
+        "lemma": "command",
+        "head": "commands",
+        "relation": "ROOT",
+        "start": 27,
+        "end": 35
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "commands",
+        "relation": "punct",
+        "start": 35,
+        "end": 36
+      },
+      {
+        "token": "test",
+        "lemma": "test",
+        "head": "count",
+        "relation": "compound",
+        "start": 37,
+        "end": 41
+      },
+      {
+        "token": "count",
+        "lemma": "count",
+        "head": "commands",
+        "relation": "conj",
+        "start": 42,
+        "end": 47
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "count",
+        "relation": "punct",
+        "start": 47,
+        "end": 48
+      },
+      {
+        "token": "stage",
+        "lemma": "stage",
+        "head": "closure",
+        "relation": "compound",
+        "start": 49,
+        "end": 54
+      },
+      {
+        "token": "closure",
+        "lemma": "closure",
+        "head": "count",
+        "relation": "conj",
+        "start": 55,
+        "end": 62
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "closure",
+        "relation": "punct",
+        "start": 62,
+        "end": 63
+      },
+      {
+        "token": "live",
+        "lemma": "live",
+        "head": "refs",
+        "relation": "amod",
+        "start": 64,
+        "end": 68
+      },
+      {
+        "token": "evidence",
+        "lemma": "evidence",
+        "head": "refs",
+        "relation": "compound",
+        "start": 69,
+        "end": 77
+      },
+      {
+        "token": "refs",
+        "lemma": "ref",
+        "head": "closure",
+        "relation": "conj",
+        "start": 78,
+        "end": 82
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "refs",
+        "relation": "punct",
+        "start": 82,
+        "end": 83
+      },
+      {
+        "token": "hashes",
+        "lemma": "hash",
+        "head": "refs",
+        "relation": "conj",
+        "start": 84,
+        "end": 90
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "hashes",
+        "relation": "punct",
+        "start": 90,
+        "end": 91
+      },
+      {
+        "token": "file",
+        "lemma": "file",
+        "head": "paths",
+        "relation": "compound",
+        "start": 92,
+        "end": 96
+      },
+      {
+        "token": "paths",
+        "lemma": "path",
+        "head": "hashes",
+        "relation": "conj",
+        "start": 97,
+        "end": 102
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "paths",
+        "relation": "punct",
+        "start": 102,
+        "end": 103
+      },
+      {
+        "token": "remaining",
+        "lemma": "remain",
+        "head": "residuals",
+        "relation": "amod",
+        "start": 104,
+        "end": 113
+      },
+      {
+        "token": "residuals",
+        "lemma": "residual",
+        "head": "paths",
+        "relation": "conj",
+        "start": 114,
+        "end": 123
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "commands",
+        "relation": "punct",
+        "start": 123,
+        "end": 124
+      },
+      {
+        "token": "Keep",
+        "lemma": "keep",
+        "head": "Keep",
+        "relation": "ROOT",
+        "start": 125,
+        "end": 129
+      },
+      {
+        "token": "original",
+        "lemma": "original",
+        "head": "services",
+        "relation": "amod",
+        "start": 130,
+        "end": 138
+      },
+      {
+        "token": "services",
+        "lemma": "service",
+        "head": "Keep",
+        "relation": "dobj",
+        "start": 139,
+        "end": 147
+      },
+      {
+        "token": "stable",
+        "lemma": "stable",
+        "head": "Keep",
+        "relation": "oprd",
+        "start": 148,
+        "end": 154
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "Keep",
+        "relation": "punct",
+        "start": 154,
+        "end": 155
+      },
+      {
+        "token": "The",
+        "lemma": "the",
+        "head": "service",
+        "relation": "det",
+        "start": 156,
+        "end": 159
+      },
+      {
+        "token": "isolated",
+        "lemma": "isolated",
+        "head": "service",
+        "relation": "amod",
+        "start": 160,
+        "end": 168
+      },
+      {
+        "token": "delivery",
+        "lemma": "delivery",
+        "head": "service",
+        "relation": "compound",
+        "start": 169,
+        "end": 177
+      },
+      {
+        "token": "service",
+        "lemma": "service",
+        "head": "restarted",
+        "relation": "nsubjpass",
+        "start": 178,
+        "end": 185
+      },
+      {
+        "token": "has",
+        "lemma": "have",
+        "head": "restarted",
+        "relation": "aux",
+        "start": 186,
+        "end": 189
+      },
+      {
+        "token": "already",
+        "lemma": "already",
+        "head": "restarted",
+        "relation": "advmod",
+        "start": 190,
+        "end": 197
+      },
+      {
+        "token": "been",
+        "lemma": "be",
+        "head": "restarted",
+        "relation": "auxpass",
+        "start": 198,
+        "end": 202
+      },
+      {
+        "token": "restarted",
+        "lemma": "restart",
+        "head": "wants",
+        "relation": "ccomp",
+        "start": 203,
+        "end": 212
+      },
+      {
+        "token": "with",
+        "lemma": "with",
+        "head": "restarted",
+        "relation": "prep",
+        "start": 213,
+        "end": 217
+      },
+      {
+        "token": "draft",
+        "lemma": "draft",
+        "head": "overwrite",
+        "relation": "compound",
+        "start": 218,
+        "end": 223
+      },
+      {
+        "token": "overwrite",
+        "lemma": "overwrite",
+        "head": "policy",
+        "relation": "amod",
+        "start": 224,
+        "end": 233
+      },
+      {
+        "token": "policy",
+        "lemma": "policy",
+        "head": "with",
+        "relation": "pobj",
+        "start": 234,
+        "end": 240
+      },
+      {
+        "token": ";",
+        "lemma": ";",
+        "head": "wants",
+        "relation": "punct",
+        "start": 240,
+        "end": 241
+      },
+      {
+        "token": "user",
+        "lemma": "user",
+        "head": "wants",
+        "relation": "nsubj",
+        "start": 242,
+        "end": 246
+      },
+      {
+        "token": "expressly",
+        "lemma": "expressly",
+        "head": "wants",
+        "relation": "advmod",
+        "start": 247,
+        "end": 256
+      },
+      {
+        "token": "wants",
+        "lemma": "want",
+        "head": "reintroduce",
+        "relation": "ccomp",
+        "start": 257,
+        "end": 262
+      },
+      {
+        "token": "drafts",
+        "lemma": "draft",
+        "head": "discarded",
+        "relation": "nsubj",
+        "start": 263,
+        "end": 269
+      },
+      {
+        "token": "discarded",
+        "lemma": "discard",
+        "head": "wants",
+        "relation": "ccomp",
+        "start": 270,
+        "end": 279
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "reintroduce",
+        "relation": "punct",
+        "start": 279,
+        "end": 280
+      },
+      {
+        "token": "so",
+        "lemma": "so",
+        "head": "reintroduce",
+        "relation": "advmod",
+        "start": 281,
+        "end": 283
+      },
+      {
+        "token": "do",
+        "lemma": "do",
+        "head": "reintroduce",
+        "relation": "aux",
+        "start": 284,
+        "end": 286
+      },
+      {
+        "token": "not",
+        "lemma": "not",
+        "head": "reintroduce",
+        "relation": "neg",
+        "start": 287,
+        "end": 290
+      },
+      {
+        "token": "reintroduce",
+        "lemma": "reintroduce",
+        "head": "reintroduce",
+        "relation": "ROOT",
+        "start": 291,
+        "end": 302
+      },
+      {
+        "token": "a",
+        "lemma": "a",
+        "head": "blocker",
+        "relation": "det",
+        "start": 303,
+        "end": 304
+      },
+      {
+        "token": "blocker",
+        "lemma": "blocker",
+        "head": "reintroduce",
+        "relation": "dobj",
+        "start": 305,
+        "end": 312
+      },
+      {
+        "token": "for",
+        "lemma": "for",
+        "head": "blocker",
+        "relation": "prep",
+        "start": 313,
+        "end": 316
+      },
+      {
+        "token": "composer",
+        "lemma": "composer",
+        "head": "drafts",
+        "relation": "compound",
+        "start": 317,
+        "end": 325
+      },
+      {
+        "token": "drafts",
+        "lemma": "draft",
+        "head": "for",
+        "relation": "pobj",
+        "start": 326,
+        "end": 332
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "reintroduce",
+        "relation": "punct",
+        "start": 332,
+        "end": 333
+      },
+      {
+        "token": "Final",
+        "lemma": "final",
+        "head": "report",
+        "relation": "amod",
+        "start": 334,
+        "end": 339
+      },
+      {
+        "token": "concise",
+        "lemma": "concise",
+        "head": "report",
+        "relation": "compound",
+        "start": 340,
+        "end": 347
+      },
+      {
+        "token": "report",
+        "lemma": "report",
+        "head": "report",
+        "relation": "ROOT",
+        "start": 348,
+        "end": 354
+      },
+      {
+        "token": "via",
+        "lemma": "via",
+        "head": "report",
+        "relation": "prep",
+        "start": 355,
+        "end": 358
+      },
+      {
+        "token": "bound",
+        "lemma": "bind",
+        "head": "destination",
+        "relation": "amod",
+        "start": 359,
+        "end": 364
+      },
+      {
+        "token": "Looper",
+        "lemma": "Looper",
+        "head": "destination",
+        "relation": "compound",
+        "start": 365,
+        "end": 371
+      },
+      {
+        "token": "chat",
+        "lemma": "chat",
+        "head": "destination",
+        "relation": "compound",
+        "start": 372,
+        "end": 376
+      },
+      {
+        "token": "destination",
+        "lemma": "destination",
+        "head": "via",
+        "relation": "pobj",
+        "start": 377,
+        "end": 388
+      },
+      {
+        "token": ",",
+        "lemma": ",",
+        "head": "destination",
+        "relation": "punct",
+        "start": 388,
+        "end": 389
+      },
+      {
+        "token": "not",
+        "lemma": "not",
+        "head": "destination",
+        "relation": "neg",
+        "start": 390,
+        "end": 393
+      },
+      {
+        "token": "a",
+        "lemma": "a",
+        "head": "thread",
+        "relation": "det",
+        "start": 394,
+        "end": 395
+      },
+      {
+        "token": "new",
+        "lemma": "new",
+        "head": "thread",
+        "relation": "amod",
+        "start": 396,
+        "end": 399
+      },
+      {
+        "token": "browser",
+        "lemma": "browser",
+        "head": "thread",
+        "relation": "compound",
+        "start": 400,
+        "end": 407
+      },
+      {
+        "token": "thread",
+        "lemma": "thread",
+        "head": "destination",
+        "relation": "appos",
+        "start": 408,
+        "end": 414
+      },
+      {
+        "token": ".",
+        "lemma": ".",
+        "head": "report",
+        "relation": "punct",
+        "start": 414,
+        "end": 415
+      }
+    ],
+    "spec_identifier_occurrences": [
+      {
+        "identifier": "CICD",
+        "start": 0,
+        "end": 4
+      }
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"profiles\": {\n    \"s3-p5\": {\n      \"entity\": \"present\",\n      \"predicate\": \"present\",\n      \"proposition\": \"present\",\n      \"not\": \"absent\",\n      \"and\": \"absent\",\n      \"or\": \"absent\",\n      \"implies\": \"absent\",\n      \"iff\": \"absent\"\n    }\n  },\n  \"symbolic\": {\n    \"atoms\": [\n      {\n        \"symbol\": \"CICD_remain_local\",\n        \"text\": \"CICD: remain local.\",\n        \"source_quote\": \"CICD: remain local.\",\n        \"kind\": \"proposition\"\n      },\n      {\n        \"symbol\": \"report_commands\",\n        \"text\": \"Report commands, test count, stage closure, live evidence refs, hashes, file paths, remaining残余.\",\n        \"source_quote\": \"Report commands, test count, stage closure, live evidence refs, hashes, file paths, remaining 残余\",\n        \"kind\": \"proposition\"\n      },\n      {\n        \"symbol\": \"isolated_service_restarted\",\n        \"text\": \"The isolated delivery service has already been restarted with draft overwrite policy\",\n        \"source_quote\": \"The isolated delivery service has already been restarted with draft overwrite policy\",\n        \"kind\": \"proposition\"\n      }\n    ],\n    \"premises\": [\n      \"CICD_remain_local\",\n      \"isolated_service_restarted\"\n    ],\n    \"conclusion\": \"unresolved\",\n    \"identities\": [],\n    \"flows\": [\n      {\n        \"id\": \"f1\",\n        \"rule\": \"unresolved\",\n        \"premises\": [\"CICD_remain_local\"],\n        \"conclusion\": \"unresolved\"\n      },\n      {\n        \"id\": \"f2\",\n        \"rule\": \"unresolved\",\n        \"premises\": [\"isolated_service_restarted\"],\n        \"conclusion\": \"unresolved\"\n      }\n    ],\n    \"compositions\": [\n      {\n        \"kind\": \"nested\",\n        \"members\": [\"CICD_remain_local\", \"report_commands\"]\n      },\n      {\n        \"kind\": \"nested\",\n        \"members\": [\"isolated_service_restarted\", \"user_wants_drafts_discarded\"]\n      }\n    ],\n    \"unresolved\": [\n      \"user_wants_drafts_discarded\",\n      \"final_concise_report_via_looper\"\n    ]\n  }\n}"
+      }
+    }
+  ],
+  "created": 1791509891,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 582,
+    "prompt_tokens": 2557,
+    "total_tokens": 3139,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-JDvFDfdFnCHDjr0TpKUXcph3Dj827h76",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 2557,
+    "prompt_ms": 11525.255,
+    "prompt_per_token_ms": 4.507334767305435,
+    "prompt_per_second": 221.86060091512076,
+    "predicted_n": 582,
+    "predicted_ms": 137452.57,
+    "predicted_per_token_ms": 236.5792943201377,
+    "predicted_per_second": 4.226912599742588
+  }
+}

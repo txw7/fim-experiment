@@ -1,0 +1,4027 @@
+[
+  {
+    "layer": 1,
+    "heads": [
+      "entity",
+      "predicate",
+      "proposition",
+      "not",
+      "and",
+      "or",
+      "implies",
+      "iff"
+    ],
+    "axes": [
+      "assertion",
+      "negation_scope",
+      "modal_force",
+      "being_reading",
+      "connective_origin",
+      "proposition_nesting"
+    ],
+    "preliminary": {
+      "profiles": {
+        "s3-p0": {
+          "entity": "present",
+          "predicate": "present",
+          "proposition": "present",
+          "not": "absent",
+          "and": "absent",
+          "or": "absent",
+          "implies": "absent",
+          "iff": "absent"
+        },
+        "s3-p1": {
+          "entity": "present",
+          "predicate": "present",
+          "proposition": "present",
+          "not": "absent",
+          "and": "absent",
+          "or": "absent",
+          "implies": "absent",
+          "iff": "absent"
+        },
+        "s3-p2": {
+          "entity": "absent",
+          "predicate": "absent",
+          "proposition": "absent",
+          "not": "absent",
+          "and": "absent",
+          "or": "absent",
+          "implies": "absent",
+          "iff": "absent"
+        },
+        "s3-p3": {
+          "entity": "present",
+          "predicate": "present",
+          "proposition": "present",
+          "not": "present",
+          "and": "present",
+          "or": "present",
+          "implies": "present",
+          "iff": "present"
+        },
+        "s3-p4": {
+          "entity": "present",
+          "predicate": "present",
+          "proposition": "present",
+          "not": "present",
+          "and": "present",
+          "or": "present",
+          "implies": "present",
+          "iff": "present"
+        },
+        "s3-p5": {
+          "entity": "present",
+          "predicate": "present",
+          "proposition": "present",
+          "not": "absent",
+          "and": "absent",
+          "or": "absent",
+          "implies": "absent",
+          "iff": "absent"
+        }
+      },
+      "symbolic": {
+        "by_unit": {
+          "s3-p0": {
+            "atoms": [
+              {
+                "symbol": "S3_LIVE_AB",
+                "text": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+                "source_quote": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "S3_LIVE_AB is to be implemented in an isolated SHG-mu project."
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [],
+            "compositions": [],
+            "unresolved": [
+              "execution status",
+              "stage gate status",
+              "authorization status"
+            ]
+          },
+          "s3-p1": {
+            "atoms": [
+              {
+                "symbol": "S2.5_accepted",
+                "text": "S2.5 accepted 71 tests",
+                "source_quote": "S2.5 accepted 71 tests",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "S2.5_immutable",
+                "text": "S2.5 archives and promoted receipts immutable",
+                "source_quote": "Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "S4_S6_blocked",
+                "text": "S4-S6 blocked",
+                "source_quote": "S4-S6 blocked",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "S2.5_accepted",
+              "S2.5_immutable",
+              "S4_S6_blocked"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [],
+            "compositions": [],
+            "unresolved": [
+              "S2.5_accepted",
+              "S2.5_immutable",
+              "S4_S6_blocked"
+            ]
+          },
+          "s3-p2": {
+            "atoms": [
+              {
+                "symbol": "S3",
+                "text": "stage:S3",
+                "source_quote": "stage:S3",
+                "kind": "entity"
+              },
+              {
+                "symbol": "S2_5",
+                "text": "stage:S2.5",
+                "source_quote": "stage:S2.5",
+                "kind": "entity"
+              },
+              {
+                "symbol": "B1",
+                "text": "identity:B1",
+                "source_quote": "identity:B1",
+                "kind": "entity"
+              }
+            ],
+            "premises": [
+              "(implies S3 (depends-on S3 S2_5))",
+              "(implies S3 (not (and B1 C1)))"
+            ],
+            "conclusion": "unresolved",
+            "identities": [
+              {
+                "left": "B1",
+                "right": "A",
+                "source_quote": "B1 aliases A"
+              }
+            ],
+            "flows": [
+              {
+                "id": "flow-1",
+                "rule": "unresolved",
+                "premises": [
+                  "(implies S3 (depends-on S3 S2_5))"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "nested",
+                "members": [
+                  "S3",
+                  "S2_5"
+                ]
+              }
+            ],
+            "unresolved": [
+              "S3 execution status",
+              "S2.5 execution status",
+              "B1/C1 pair execution status"
+            ]
+          },
+          "s3-p3": {
+            "atoms": [
+              {
+                "symbol": "A",
+                "text": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+                "source_quote": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "B",
+                "text": "commit ONCE to B typed destination input",
+                "source_quote": "commit ONCE to B typed destination input",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "C",
+                "text": "Looper actual provider turn via existing local controller",
+                "source_quote": "Looper actual provider turn via existing local controller",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "(and A C)",
+              "(implies (and A C) B)"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "flow-0",
+                "rule": "and_introduction",
+                "premises": [
+                  "A",
+                  "C"
+                ],
+                "conclusion": "(and A C)"
+              },
+              {
+                "id": "flow-1",
+                "rule": "modus_ponens",
+                "premises": [
+                  "(and A C)",
+                  "(implies (and A C) B)"
+                ],
+                "conclusion": "B"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "chain",
+                "members": [
+                  "A",
+                  "C",
+                  "B"
+                ]
+              }
+            ],
+            "unresolved": [
+              "Does A imply C?",
+              "Is B actually committed?"
+            ]
+          },
+          "s3-p4": {
+            "atoms": [
+              {
+                "symbol": "create_test_live_ab_py",
+                "text": "create test_live_ab.py",
+                "source_quote": "create test_live_ab.py",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "run_live_ab_py",
+                "text": "explicit scripts/run_live_ab.py",
+                "source_quote": "explicit scripts/run_live_ab.py",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "provider_unavailable",
+                "text": "provider unavailable",
+                "source_quote": "provider unavailable",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "(implies (and (implies (not (implies (not create_test_live_ab_py) (not run_live_ab_py))) (not provider_unavailable)) (or create_test_live_ab_py run_live_ab_py))",
+              "(implies (not provider_unavailable) (or create_test_live_ab_py run_live_ab_py))"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "flow_1",
+                "rule": "unresolved",
+                "premises": [
+                  "create_test_live_ab_py",
+                  "run_live_ab_py"
+                ],
+                "conclusion": "unresolved"
+              },
+              {
+                "id": "flow_2",
+                "rule": "unresolved",
+                "premises": [
+                  "provider_unavailable"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "substitution",
+                "members": [
+                  "create_test_live_ab_py",
+                  "run_live_ab_py"
+                ]
+              },
+              {
+                "kind": "substitution",
+                "members": [
+                  "provider_unavailable"
+                ]
+              }
+            ],
+            "unresolved": [
+              "S3_OPEN",
+              "manufactured_positive"
+            ]
+          },
+          "s3-p5": {
+            "atoms": [
+              {
+                "symbol": "CICD_remain_local",
+                "text": "CICD: remain local.",
+                "source_quote": "CICD: remain local.",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "report_commands",
+                "text": "Report commands, test count, stage closure, live evidence refs, hashes, file paths, remaining残余.",
+                "source_quote": "Report commands, test count, stage closure, live evidence refs, hashes, file paths, remaining 残余",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "isolated_service_restarted",
+                "text": "The isolated delivery service has already been restarted with draft overwrite policy",
+                "source_quote": "The isolated delivery service has already been restarted with draft overwrite policy",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "CICD_remain_local",
+              "isolated_service_restarted"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "f1",
+                "rule": "unresolved",
+                "premises": [
+                  "CICD_remain_local"
+                ],
+                "conclusion": "unresolved"
+              },
+              {
+                "id": "f2",
+                "rule": "unresolved",
+                "premises": [
+                  "isolated_service_restarted"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "nested",
+                "members": [
+                  "CICD_remain_local",
+                  "report_commands"
+                ]
+              },
+              {
+                "kind": "nested",
+                "members": [
+                  "isolated_service_restarted",
+                  "user_wants_drafts_discarded"
+                ]
+              }
+            ],
+            "unresolved": [
+              "user_wants_drafts_discarded",
+              "final_concise_report_via_looper"
+            ]
+          }
+        },
+        "scope": "Distinct source-unit candidates; composition IDs remain local and are not merged across paragraphs."
+      }
+    },
+    "initial_checks": {
+      "s3-p0": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Formula: trailing formula text",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "S3_LIVE_AB",
+            "quote": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+            "start": 0,
+            "end": 93
+          }
+        ],
+        "flows": [],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p1": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Hidden connective in atom S2.5_immutable: S2.5 archives and promoted receipts immutable",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "S2.5_accepted",
+            "quote": "S2.5 accepted 71 tests",
+            "start": 424,
+            "end": 446
+          },
+          {
+            "symbol": "S2.5_immutable",
+            "quote": "Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+            "start": 317,
+            "end": 380
+          },
+          {
+            "symbol": "S4_S6_blocked",
+            "quote": "S4-S6 blocked",
+            "start": 409,
+            "end": 422
+          }
+        ],
+        "flows": [],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p2": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Missing exact source quote: stage:S3",
+          "Missing exact source quote: stage:S2.5",
+          "Missing exact source quote: identity:B1",
+          "Formula: Unsupported formal operator: depends-on",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Identity lacks bound source symbols/quote",
+          "Flow flow-1: Unsupported formal operator: depends-on"
+        ],
+        "operators": [],
+        "anchors": [],
+        "flows": [
+          {
+            "id": "flow-1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Unsupported formal operator: depends-on",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p3": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Negation cue disappeared from formulas"
+        ],
+        "operators": [
+          "and",
+          "implies"
+        ],
+        "anchors": [
+          {
+            "symbol": "A",
+            "quote": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+            "start": 990,
+            "end": 1085
+          },
+          {
+            "symbol": "B",
+            "quote": "commit ONCE to B typed destination input",
+            "start": 1402,
+            "end": 1442
+          },
+          {
+            "symbol": "C",
+            "quote": "Looper actual provider turn via existing local controller",
+            "start": 1203,
+            "end": 1260
+          }
+        ],
+        "flows": [
+          {
+            "id": "flow-0",
+            "claimed_rule": "and_introduction",
+            "check": {
+              "status": "verified_entailment",
+              "checker": "exhaustive Boolean truth table",
+              "variables": [
+                "A",
+                "C"
+              ],
+              "valuations_checked": 4,
+              "premise_satisfying_valuations": 1,
+              "counterexamples": [],
+              "semantics": "Classical propositional entailment over explicitly declared Boolean variables only",
+              "source_formalization_fidelity": "Not established by checker; supplied formalization remains separately attributed",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "flow-1",
+            "claimed_rule": "modus_ponens",
+            "check": {
+              "status": "verified_entailment",
+              "checker": "exhaustive Boolean truth table",
+              "variables": [
+                "A",
+                "B",
+                "C"
+              ],
+              "valuations_checked": 8,
+              "premise_satisfying_valuations": 1,
+              "counterexamples": [],
+              "semantics": "Classical propositional entailment over explicitly declared Boolean variables only",
+              "source_formalization_fidelity": "Not established by checker; supplied formalization remains separately attributed",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": [
+          "Source supplies requirements/construction instructions, not an explicit performed deduction; proposed inference rule requires justification."
+        ]
+      },
+      "s3-p4": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Formula: unclosed/empty expression",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Flow flow_1: Undeclared proposition/type binding",
+          "Flow flow_2: Undeclared proposition/type binding"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "create_test_live_ab_py",
+            "quote": "create test_live_ab.py",
+            "start": 2049,
+            "end": 2071
+          },
+          {
+            "symbol": "run_live_ab_py",
+            "quote": "explicit scripts/run_live_ab.py",
+            "start": 2073,
+            "end": 2104
+          },
+          {
+            "symbol": "provider_unavailable",
+            "quote": "provider unavailable",
+            "start": 2693,
+            "end": 2713
+          }
+        ],
+        "flows": [
+          {
+            "id": "flow_1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "flow_2",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p5": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Missing exact source quote: Report commands, test count, stage closure, live evidence refs, hashes, file paths, remaining 残余",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Flow f1: Undeclared proposition/type binding",
+          "Flow f2: Undeclared proposition/type binding",
+          "Composition refers to unbound member"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "CICD_remain_local",
+            "quote": "CICD: remain local.",
+            "start": 2939,
+            "end": 2958
+          },
+          {
+            "symbol": "isolated_service_restarted",
+            "quote": "The isolated delivery service has already been restarted with draft overwrite policy",
+            "start": 3095,
+            "end": 3179
+          }
+        ],
+        "flows": [
+          {
+            "id": "f1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "f2",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      }
+    },
+    "feedback": {
+      "profiles": {
+        "s3-p0": {
+          "entity": "present",
+          "predicate": "present",
+          "proposition": "present",
+          "not": "absent",
+          "and": "absent",
+          "or": "absent",
+          "implies": "absent",
+          "iff": "absent"
+        },
+        "s3-p1": {
+          "entity": "present",
+          "predicate": "present",
+          "proposition": "present",
+          "not": "absent",
+          "and": "absent",
+          "or": "absent",
+          "implies": "absent",
+          "iff": "absent"
+        },
+        "s3-p2": {
+          "entity": "present",
+          "predicate": "present",
+          "proposition": "present",
+          "not": "absent",
+          "and": "absent",
+          "or": "absent",
+          "implies": "present",
+          "iff": "absent"
+        },
+        "s3-p3": {
+          "entity": "present",
+          "predicate": "present",
+          "proposition": "present",
+          "not": "present",
+          "and": "present",
+          "or": "present",
+          "implies": "present",
+          "iff": "present"
+        },
+        "s3-p4": {
+          "entity": "present",
+          "predicate": "present",
+          "proposition": "present",
+          "not": "present",
+          "and": "present",
+          "or": "present",
+          "implies": "present",
+          "iff": "unresolved"
+        },
+        "s3-p5": {
+          "entity": "present",
+          "predicate": "present",
+          "proposition": "present",
+          "not": "absent",
+          "and": "absent",
+          "or": "absent",
+          "implies": "absent",
+          "iff": "absent"
+        }
+      },
+      "symbolic": {
+        "by_unit": {
+          "s3-p0": {
+            "atoms": [
+              {
+                "symbol": "S3_LIVE_AB",
+                "text": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+                "source_quote": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "S3_LIVE_AB is to be implemented in an isolated SHG-mu project."
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [],
+            "compositions": [],
+            "unresolved": [
+              "execution status",
+              "stage gate status",
+              "authorization status"
+            ]
+          },
+          "s3-p1": {
+            "atoms": [
+              {
+                "symbol": "S2.5_accepted",
+                "text": "S2.5 accepted 71 tests",
+                "source_quote": "S2.5 accepted 71 tests",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "S2.5_immutable",
+                "text": "Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+                "source_quote": "Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "S4_S6_blocked",
+                "text": "S4-S6 blocked",
+                "source_quote": "S4-S6 blocked",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "S2.5_accepted",
+              "S2.5_immutable",
+              "S4_S6_blocked"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [],
+            "compositions": [],
+            "unresolved": [
+              "S2.5_accepted",
+              "S2.5_immutable",
+              "S4_S6_blocked"
+            ]
+          },
+          "s3-p2": {
+            "atoms": [
+              {
+                "symbol": "S3",
+                "text": "stage:S3",
+                "source_quote": "stage:S3",
+                "kind": "entity"
+              },
+              {
+                "symbol": "S2_5",
+                "text": "stage:S2.5",
+                "source_quote": "stage:S2.5",
+                "kind": "entity"
+              },
+              {
+                "symbol": "B1",
+                "text": "identity:B1",
+                "source_quote": "identity:B1",
+                "kind": "entity"
+              }
+            ],
+            "premises": [
+              "(implies S3 (SUPERVISE S3 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))))"
+            ],
+            "conclusion": "unresolved",
+            "identities": [
+              {
+                "left": "B1",
+                "right": "A",
+                "source_quote": "B1/C1 are identity-preserving aliases for original A/B"
+              }
+            ],
+            "flows": [
+              {
+                "id": "flow-1",
+                "rule": "unresolved",
+                "premises": [
+                  "(implies S3 (SUPERVISE S3 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))))"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "nested",
+                "members": [
+                  "S3",
+                  "S2_5"
+                ]
+              }
+            ],
+            "unresolved": [
+              "S3 execution status",
+              "S2.5 execution status",
+              "B1/C1 pair execution status"
+            ]
+          },
+          "s3-p3": {
+            "atoms": [
+              {
+                "symbol": "A",
+                "text": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+                "source_quote": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "B",
+                "text": "commit ONCE to B typed destination input",
+                "source_quote": "commit ONCE to B typed destination input",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "C",
+                "text": "Looper actual provider turn via existing local controller",
+                "source_quote": "Looper actual provider turn via existing local controller",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "(and A C)",
+              "(implies (and A C) B)"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "flow-0",
+                "rule": "and_introduction",
+                "premises": [
+                  "A",
+                  "C"
+                ],
+                "conclusion": "(and A C)"
+              },
+              {
+                "id": "flow-1",
+                "rule": "modus_ponens",
+                "premises": [
+                  "(and A C)",
+                  "(implies (and A C) B)"
+                ],
+                "conclusion": "B"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "chain",
+                "members": [
+                  "A",
+                  "C",
+                  "B"
+                ]
+              }
+            ],
+            "unresolved": [
+              "Does A imply C?",
+              "Is B actually committed?"
+            ]
+          },
+          "s3-p4": {
+            "atoms": [
+              {
+                "symbol": "create_test_live_ab_py",
+                "text": "create test_live_ab.py",
+                "source_quote": "create test_live_ab.py",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "run_live_ab_py",
+                "text": "explicit scripts/run_live_ab.py",
+                "source_quote": "explicit scripts/run_live_ab.py",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "provider_unavailable",
+                "text": "provider unavailable",
+                "source_quote": "provider unavailable",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "(implies (and (implies (not (implies (not create_test_live_ab_py) (not run_live_ab_py))) (not provider_unavailable)) (or create_test_live_ab_py run_live_ab_py))",
+              "(implies (not provider_unavailable) (or create_test_live_ab_py run_live_ab_py))"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "flow_1",
+                "rule": "unresolved",
+                "premises": [
+                  "create_test_live_ab_py",
+                  "run_live_ab_py"
+                ],
+                "conclusion": "unresolved"
+              },
+              {
+                "id": "flow_2",
+                "rule": "unresolved",
+                "premises": [
+                  "provider_unavailable"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "substitution",
+                "members": [
+                  "create_test_live_ab_py",
+                  "run_live_ab_py"
+                ]
+              },
+              {
+                "kind": "substitution",
+                "members": [
+                  "provider_unavailable"
+                ]
+              }
+            ],
+            "unresolved": [
+              "S3_OPEN",
+              "manufactured_positive"
+            ]
+          },
+          "s3-p5": {
+            "atoms": [
+              {
+                "symbol": "CICD_remain_local",
+                "text": "CICD: remain local.",
+                "source_quote": "CICD: remain local.",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "report_commands",
+                "text": "Report commands, test count, stage closure, live evidence refs, hashes, file paths, remaining 残余",
+                "source_quote": "Report commands, test count, stage closure, live evidence refs, hashes, file paths, remaining 残余",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "isolated_service_restarted",
+                "text": "The isolated delivery service has already been restarted with draft overwrite policy",
+                "source_quote": "The isolated delivery service has already been restarted with draft overwrite policy",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "CICD_remain_local",
+              "isolated_service_restarted",
+              "report_commands"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "f1",
+                "rule": "unresolved",
+                "premises": [
+                  "CICD_remain_local"
+                ],
+                "conclusion": "unresolved"
+              },
+              {
+                "id": "f2",
+                "rule": "unresolved",
+                "premises": [
+                  "isolated_service_restarted"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "nested",
+                "members": [
+                  "CICD_remain_local",
+                  "report_commands"
+                ]
+              },
+              {
+                "kind": "nested",
+                "members": [
+                  "isolated_service_restarted",
+                  "user_wants_drafts_discarded"
+                ]
+              }
+            ],
+            "unresolved": [
+              "user_wants_drafts_discarded",
+              "final_concise_report_via_looper"
+            ]
+          }
+        },
+        "scope": "Distinct source-unit candidates; composition IDs remain local and are not merged across paragraphs."
+      }
+    },
+    "final_checks": {
+      "s3-p0": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Formula: trailing formula text",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "S3_LIVE_AB",
+            "quote": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+            "start": 0,
+            "end": 93
+          }
+        ],
+        "flows": [],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p1": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Hidden connective in atom S2.5_immutable: Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "S2.5_accepted",
+            "quote": "S2.5 accepted 71 tests",
+            "start": 424,
+            "end": 446
+          },
+          {
+            "symbol": "S2.5_immutable",
+            "quote": "Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+            "start": 317,
+            "end": 380
+          },
+          {
+            "symbol": "S4_S6_blocked",
+            "quote": "S4-S6 blocked",
+            "start": 409,
+            "end": 422
+          }
+        ],
+        "flows": [],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p2": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Missing exact source quote: stage:S3",
+          "Missing exact source quote: stage:S2.5",
+          "Missing exact source quote: identity:B1",
+          "Formula: Unsupported formal operator: SUPERVISE",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Identity lacks bound source symbols/quote",
+          "Flow flow-1: Unsupported formal operator: SUPERVISE"
+        ],
+        "operators": [],
+        "anchors": [],
+        "flows": [
+          {
+            "id": "flow-1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Unsupported formal operator: SUPERVISE",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p3": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Negation cue disappeared from formulas"
+        ],
+        "operators": [
+          "and",
+          "implies"
+        ],
+        "anchors": [
+          {
+            "symbol": "A",
+            "quote": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+            "start": 990,
+            "end": 1085
+          },
+          {
+            "symbol": "B",
+            "quote": "commit ONCE to B typed destination input",
+            "start": 1402,
+            "end": 1442
+          },
+          {
+            "symbol": "C",
+            "quote": "Looper actual provider turn via existing local controller",
+            "start": 1203,
+            "end": 1260
+          }
+        ],
+        "flows": [
+          {
+            "id": "flow-0",
+            "claimed_rule": "and_introduction",
+            "check": {
+              "status": "verified_entailment",
+              "checker": "exhaustive Boolean truth table",
+              "variables": [
+                "A",
+                "C"
+              ],
+              "valuations_checked": 4,
+              "premise_satisfying_valuations": 1,
+              "counterexamples": [],
+              "semantics": "Classical propositional entailment over explicitly declared Boolean variables only",
+              "source_formalization_fidelity": "Not established by checker; supplied formalization remains separately attributed",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "flow-1",
+            "claimed_rule": "modus_ponens",
+            "check": {
+              "status": "verified_entailment",
+              "checker": "exhaustive Boolean truth table",
+              "variables": [
+                "A",
+                "B",
+                "C"
+              ],
+              "valuations_checked": 8,
+              "premise_satisfying_valuations": 1,
+              "counterexamples": [],
+              "semantics": "Classical propositional entailment over explicitly declared Boolean variables only",
+              "source_formalization_fidelity": "Not established by checker; supplied formalization remains separately attributed",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": [
+          "Source supplies requirements/construction instructions, not an explicit performed deduction; proposed inference rule requires justification."
+        ]
+      },
+      "s3-p4": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Formula: unclosed/empty expression",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Flow flow_1: Undeclared proposition/type binding",
+          "Flow flow_2: Undeclared proposition/type binding"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "create_test_live_ab_py",
+            "quote": "create test_live_ab.py",
+            "start": 2049,
+            "end": 2071
+          },
+          {
+            "symbol": "run_live_ab_py",
+            "quote": "explicit scripts/run_live_ab.py",
+            "start": 2073,
+            "end": 2104
+          },
+          {
+            "symbol": "provider_unavailable",
+            "quote": "provider unavailable",
+            "start": 2693,
+            "end": 2713
+          }
+        ],
+        "flows": [
+          {
+            "id": "flow_1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "flow_2",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p5": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Missing exact source quote: Report commands, test count, stage closure, live evidence refs, hashes, file paths, remaining 残余",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Flow f1: Undeclared proposition/type binding",
+          "Flow f2: Undeclared proposition/type binding",
+          "Composition refers to unbound member"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "CICD_remain_local",
+            "quote": "CICD: remain local.",
+            "start": 2939,
+            "end": 2958
+          },
+          {
+            "symbol": "isolated_service_restarted",
+            "quote": "The isolated delivery service has already been restarted with draft overwrite policy",
+            "start": 3095,
+            "end": 3179
+          }
+        ],
+        "flows": [
+          {
+            "id": "f1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "f2",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      }
+    }
+  },
+  {
+    "layer": 2,
+    "heads": [
+      "identity",
+      "reflexivity",
+      "symmetry",
+      "transitivity",
+      "modus_ponens",
+      "modus_tollens",
+      "and_introduction",
+      "and_elimination",
+      "or_introduction",
+      "disjunctive_syllogism",
+      "hypothetical_syllogism"
+    ],
+    "axes": [
+      "argument_direction",
+      "premise_status",
+      "premise_sufficiency",
+      "rule_pattern",
+      "identity_basis",
+      "reply_role"
+    ],
+    "preliminary": {
+      "profiles": {
+        "s3-p0": {
+          "identity": "unresolved",
+          "reflexivity": "unresolved",
+          "symmetry": "unresolved",
+          "transitivity": "unresolved",
+          "modus_ponens": "unresolved",
+          "modus_tollens": "unresolved",
+          "and_introduction": "unresolved",
+          "and_elimination": "unresolved",
+          "or_introduction": "unresolved",
+          "disjunctive_syllogism": "unresolved",
+          "hypothetical_syllogism": "unresolved"
+        },
+        "s3-p1": {
+          "identity": "unresolved",
+          "reflexivity": "unresolved",
+          "symmetry": "unresolved",
+          "transitivity": "unresolved",
+          "modus_ponens": "unresolved",
+          "modus_tollens": "unresolved",
+          "and_introduction": "unresolved",
+          "and_elimination": "unresolved",
+          "or_introduction": "unresolved",
+          "disjunctive_syllogism": "unresolved",
+          "hypothetical_syllogism": "unresolved"
+        },
+        "s3-p2": {
+          "identity": "unresolved",
+          "reflexivity": "unresolved",
+          "symmetry": "unresolved",
+          "transitivity": "unresolved",
+          "modus_ponens": "unresolved",
+          "modus_tollens": "unresolved",
+          "and_introduction": "unresolved",
+          "and_elimination": "unresolved",
+          "or_introduction": "unresolved",
+          "disjunctive_syllogism": "unresolved",
+          "hypothetical_syllogism": "unresolved"
+        },
+        "s3-p3": {
+          "identity": "unresolved",
+          "reflexivity": "unresolved",
+          "symmetry": "unresolved",
+          "transitivity": "unresolved",
+          "modus_ponens": "unresolved",
+          "modus_tollens": "unresolved",
+          "and_introduction": "unresolved",
+          "and_elimination": "unresolved",
+          "or_introduction": "unresolved",
+          "disjunctive_syllogism": "unresolved",
+          "hypothetical_syllogism": "unresolved"
+        },
+        "s3-p4": {
+          "identity": "unresolved",
+          "reflexivity": "unresolved",
+          "symmetry": "unresolved",
+          "transitivity": "unresolved",
+          "modus_ponens": "unresolved",
+          "modus_tollens": "unresolved",
+          "and_introduction": "unresolved",
+          "and_elimination": "unresolved",
+          "or_introduction": "unresolved",
+          "disjunctive_syllogism": "unresolved",
+          "hypothetical_syllogism": "unresolved"
+        },
+        "s3-p5": {
+          "identity": "unresolved",
+          "reflexivity": "unresolved",
+          "symmetry": "unresolved",
+          "transitivity": "unresolved",
+          "modus_ponens": "unresolved",
+          "modus_tollens": "unresolved",
+          "and_introduction": "unresolved",
+          "and_elimination": "unresolved",
+          "or_introduction": "unresolved",
+          "disjunctive_syllogism": "unresolved",
+          "hypothetical_syllogism": "unresolved"
+        }
+      },
+      "symbolic": {
+        "by_unit": {
+          "s3-p0": {
+            "atoms": [
+              {
+                "symbol": "S3_LIVE_AB",
+                "text": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+                "source_quote": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "S3_LIVE_AB is to be implemented in an isolated SHG-mu project."
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [],
+            "compositions": [],
+            "unresolved": [
+              "execution status",
+              "stage gate status",
+              "authorization status"
+            ]
+          },
+          "s3-p1": {
+            "atoms": [
+              {
+                "symbol": "S2.5_accepted",
+                "text": "S2.5 accepted 71 tests",
+                "source_quote": "S2.5 accepted 71 tests",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "S2.5_immutable",
+                "text": "Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+                "source_quote": "Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "S4_S6_blocked",
+                "text": "S4-S6 blocked",
+                "source_quote": "S4-S6 blocked",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "S2.5_accepted",
+              "S2.5_immutable",
+              "S4_S6_blocked"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [],
+            "compositions": [],
+            "unresolved": [
+              "S2.5_accepted",
+              "S2.5_immutable",
+              "S4_S6_blocked"
+            ]
+          },
+          "s3-p2": {
+            "atoms": [
+              {
+                "symbol": "S3",
+                "text": "stage:S3",
+                "source_quote": "stage:S3",
+                "kind": "entity"
+              },
+              {
+                "symbol": "S2_5",
+                "text": "stage:S2.5",
+                "source_quote": "stage:S2.5",
+                "kind": "entity"
+              },
+              {
+                "symbol": "B1",
+                "text": "identity:B1",
+                "source_quote": "identity:B1",
+                "kind": "entity"
+              }
+            ],
+            "premises": [
+              "(implies S3 (SUPERVISE S3 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))))"
+            ],
+            "conclusion": "unresolved",
+            "identities": [
+              {
+                "left": "B1",
+                "right": "A",
+                "source_quote": "B1/C1 are identity-preserving aliases for original A/B"
+              }
+            ],
+            "flows": [
+              {
+                "id": "flow-1",
+                "rule": "unresolved",
+                "premises": [
+                  "(implies S3 (SUPERVISE S3 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))))"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "nested",
+                "members": [
+                  "S3",
+                  "S2_5"
+                ]
+              }
+            ],
+            "unresolved": [
+              "S3 execution status",
+              "S2.5 execution status",
+              "B1/C1 pair execution status"
+            ]
+          },
+          "s3-p3": {
+            "atoms": [
+              {
+                "symbol": "A",
+                "text": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+                "source_quote": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "B",
+                "text": "commit ONCE to B typed destination input",
+                "source_quote": "commit ONCE to B typed destination input",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "C",
+                "text": "Looper actual provider turn via existing local controller",
+                "source_quote": "Looper actual provider turn via existing local controller",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "(and A C)",
+              "(implies (and A C) B)"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "flow-0",
+                "rule": "and_introduction",
+                "premises": [
+                  "A",
+                  "C"
+                ],
+                "conclusion": "(and A C)"
+              },
+              {
+                "id": "flow-1",
+                "rule": "modus_ponens",
+                "premises": [
+                  "(and A C)",
+                  "(implies (and A C) B)"
+                ],
+                "conclusion": "B"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "chain",
+                "members": [
+                  "A",
+                  "C",
+                  "B"
+                ]
+              }
+            ],
+            "unresolved": [
+              "Does A imply C?",
+              "Is B actually committed?"
+            ]
+          },
+          "s3-p4": {
+            "atoms": [
+              {
+                "symbol": "create_test_live_ab_py",
+                "text": "create test_live_ab.py",
+                "source_quote": "create test_live_ab.py",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "run_live_ab_py",
+                "text": "explicit scripts/run_live_ab.py",
+                "source_quote": "explicit scripts/run_live_ab.py",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "provider_unavailable",
+                "text": "provider unavailable",
+                "source_quote": "provider unavailable",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "(implies (and (implies (not (implies (not create_test_live_ab_py) (not run_live_ab_py))) (not provider_unavailable)) (or create_test_live_ab_py run_live_ab_py))",
+              "(implies (not provider_unavailable) (or create_test_live_ab_py run_live_ab_py))"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "flow_1",
+                "rule": "unresolved",
+                "premises": [
+                  "create_test_live_ab_py",
+                  "run_live_ab_py"
+                ],
+                "conclusion": "unresolved"
+              },
+              {
+                "id": "flow_2",
+                "rule": "unresolved",
+                "premises": [
+                  "provider_unavailable"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "substitution",
+                "members": [
+                  "create_test_live_ab_py",
+                  "run_live_ab_py"
+                ]
+              },
+              {
+                "kind": "substitution",
+                "members": [
+                  "provider_unavailable"
+                ]
+              }
+            ],
+            "unresolved": [
+              "S3_OPEN",
+              "manufactured_positive"
+            ]
+          },
+          "s3-p5": {
+            "atoms": [
+              {
+                "symbol": "CICD_remain_local",
+                "text": "CICD: remain local.",
+                "source_quote": "CICD: remain local.",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "isolated_service_restarted",
+                "text": "The isolated delivery service has already been restarted with draft overwrite policy",
+                "source_quote": "The isolated delivery service has already been restarted with draft overwrite policy",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "user_wants_drafts_discarded",
+                "text": "user expressly wants drafts discarded",
+                "source_quote": "user expressly wants drafts discarded",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "CICD_remain_local",
+              "isolated_service_restarted",
+              "user_wants_drafts_discarded"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "f1",
+                "rule": "unresolved",
+                "premises": [
+                  "CICD_remain_local"
+                ],
+                "conclusion": "unresolved"
+              },
+              {
+                "id": "f2",
+                "rule": "unresolved",
+                "premises": [
+                  "isolated_service_restarted"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "nested",
+                "members": [
+                  "CICD_remain_local",
+                  "report_commands"
+                ]
+              },
+              {
+                "kind": "nested",
+                "members": [
+                  "isolated_service_restarted",
+                  "user_wants_drafts_discarded"
+                ]
+              }
+            ],
+            "unresolved": [
+              "report_commands",
+              "final_concise_report_via_looper"
+            ]
+          }
+        },
+        "scope": "Distinct source-unit candidates; composition IDs remain local and are not merged across paragraphs."
+      }
+    },
+    "initial_checks": {
+      "s3-p0": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Formula: trailing formula text",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "S3_LIVE_AB",
+            "quote": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+            "start": 0,
+            "end": 93
+          }
+        ],
+        "flows": [],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p1": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Hidden connective in atom S2.5_immutable: Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "S2.5_accepted",
+            "quote": "S2.5 accepted 71 tests",
+            "start": 424,
+            "end": 446
+          },
+          {
+            "symbol": "S2.5_immutable",
+            "quote": "Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+            "start": 317,
+            "end": 380
+          },
+          {
+            "symbol": "S4_S6_blocked",
+            "quote": "S4-S6 blocked",
+            "start": 409,
+            "end": 422
+          }
+        ],
+        "flows": [],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p2": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Missing exact source quote: stage:S3",
+          "Missing exact source quote: stage:S2.5",
+          "Missing exact source quote: identity:B1",
+          "Formula: Unsupported formal operator: SUPERVISE",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Identity lacks bound source symbols/quote",
+          "Flow flow-1: Unsupported formal operator: SUPERVISE"
+        ],
+        "operators": [],
+        "anchors": [],
+        "flows": [
+          {
+            "id": "flow-1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Unsupported formal operator: SUPERVISE",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p3": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Negation cue disappeared from formulas"
+        ],
+        "operators": [
+          "and",
+          "implies"
+        ],
+        "anchors": [
+          {
+            "symbol": "A",
+            "quote": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+            "start": 990,
+            "end": 1085
+          },
+          {
+            "symbol": "B",
+            "quote": "commit ONCE to B typed destination input",
+            "start": 1402,
+            "end": 1442
+          },
+          {
+            "symbol": "C",
+            "quote": "Looper actual provider turn via existing local controller",
+            "start": 1203,
+            "end": 1260
+          }
+        ],
+        "flows": [
+          {
+            "id": "flow-0",
+            "claimed_rule": "and_introduction",
+            "check": {
+              "status": "verified_entailment",
+              "checker": "exhaustive Boolean truth table",
+              "variables": [
+                "A",
+                "C"
+              ],
+              "valuations_checked": 4,
+              "premise_satisfying_valuations": 1,
+              "counterexamples": [],
+              "semantics": "Classical propositional entailment over explicitly declared Boolean variables only",
+              "source_formalization_fidelity": "Not established by checker; supplied formalization remains separately attributed",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "flow-1",
+            "claimed_rule": "modus_ponens",
+            "check": {
+              "status": "verified_entailment",
+              "checker": "exhaustive Boolean truth table",
+              "variables": [
+                "A",
+                "B",
+                "C"
+              ],
+              "valuations_checked": 8,
+              "premise_satisfying_valuations": 1,
+              "counterexamples": [],
+              "semantics": "Classical propositional entailment over explicitly declared Boolean variables only",
+              "source_formalization_fidelity": "Not established by checker; supplied formalization remains separately attributed",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": [
+          "Source supplies requirements/construction instructions, not an explicit performed deduction; proposed inference rule requires justification."
+        ]
+      },
+      "s3-p4": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Formula: unclosed/empty expression",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Flow flow_1: Undeclared proposition/type binding",
+          "Flow flow_2: Undeclared proposition/type binding"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "create_test_live_ab_py",
+            "quote": "create test_live_ab.py",
+            "start": 2049,
+            "end": 2071
+          },
+          {
+            "symbol": "run_live_ab_py",
+            "quote": "explicit scripts/run_live_ab.py",
+            "start": 2073,
+            "end": 2104
+          },
+          {
+            "symbol": "provider_unavailable",
+            "quote": "provider unavailable",
+            "start": 2693,
+            "end": 2713
+          }
+        ],
+        "flows": [
+          {
+            "id": "flow_1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "flow_2",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p5": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Flow f1: Undeclared proposition/type binding",
+          "Flow f2: Undeclared proposition/type binding",
+          "Composition refers to unbound member"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "CICD_remain_local",
+            "quote": "CICD: remain local.",
+            "start": 2939,
+            "end": 2958
+          },
+          {
+            "symbol": "isolated_service_restarted",
+            "quote": "The isolated delivery service has already been restarted with draft overwrite policy",
+            "start": 3095,
+            "end": 3179
+          },
+          {
+            "symbol": "user_wants_drafts_discarded",
+            "quote": "user expressly wants drafts discarded",
+            "start": 3181,
+            "end": 3218
+          }
+        ],
+        "flows": [
+          {
+            "id": "f1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "f2",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      }
+    },
+    "feedback": {
+      "profiles": {
+        "s3-p0": {
+          "identity": "unresolved",
+          "reflexivity": "unresolved",
+          "symmetry": "unresolved",
+          "transitivity": "unresolved",
+          "modus_ponens": "unresolved",
+          "modus_tollens": "unresolved",
+          "and_introduction": "unresolved",
+          "and_elimination": "unresolved",
+          "or_introduction": "unresolved",
+          "disjunctive_syllogism": "unresolved",
+          "hypothetical_syllogism": "unresolved"
+        },
+        "s3-p1": {
+          "identity": "unresolved",
+          "reflexivity": "unresolved",
+          "symmetry": "unresolved",
+          "transitivity": "unresolved",
+          "modus_ponens": "unresolved",
+          "modus_tollens": "unresolved",
+          "and_introduction": "unresolved",
+          "and_elimination": "unresolved",
+          "or_introduction": "unresolved",
+          "disjunctive_syllogism": "unresolved",
+          "hypothetical_syllogism": "unresolved"
+        },
+        "s3-p2": {
+          "identity": "unresolved",
+          "reflexivity": "unresolved",
+          "symmetry": "unresolved",
+          "transitivity": "unresolved",
+          "modus_ponens": "unresolved",
+          "modus_tollens": "unresolved",
+          "and_introduction": "unresolved",
+          "and_elimination": "unresolved",
+          "or_introduction": "unresolved",
+          "disjunctive_syllogism": "unresolved",
+          "hypothetical_syllogism": "unresolved"
+        },
+        "s3-p3": {
+          "identity": "unresolved",
+          "reflexivity": "unresolved",
+          "symmetry": "unresolved",
+          "transitivity": "unresolved",
+          "modus_ponens": "unresolved",
+          "modus_tollens": "unresolved",
+          "and_introduction": "unresolved",
+          "and_elimination": "unresolved",
+          "or_introduction": "unresolved",
+          "disjunctive_syllogism": "unresolved",
+          "hypothetical_syllogism": "unresolved"
+        },
+        "s3-p4": {
+          "identity": "unresolved",
+          "reflexivity": "unresolved",
+          "symmetry": "unresolved",
+          "transitivity": "unresolved",
+          "modus_ponens": "unresolved",
+          "modus_tollens": "unresolved",
+          "and_introduction": "unresolved",
+          "and_elimination": "unresolved",
+          "or_introduction": "unresolved",
+          "disjunctive_syllogism": "unresolved",
+          "hypothetical_syllogism": "unresolved"
+        },
+        "s3-p5": {
+          "identity": "unresolved",
+          "reflexivity": "unresolved",
+          "symmetry": "unresolved",
+          "transitivity": "unresolved",
+          "modus_ponens": "unresolved",
+          "modus_tollens": "unresolved",
+          "and_introduction": "unresolved",
+          "and_elimination": "unresolved",
+          "or_introduction": "unresolved",
+          "disjunctive_syllogism": "unresolved",
+          "hypothetical_syllogism": "unresolved"
+        }
+      },
+      "symbolic": {
+        "by_unit": {
+          "s3-p0": {
+            "atoms": [
+              {
+                "symbol": "S3_LIVE_AB",
+                "text": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+                "source_quote": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "S3_LIVE_AB is to be implemented in an isolated SHG-mu project."
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [],
+            "compositions": [],
+            "unresolved": [
+              "execution status",
+              "stage gate status",
+              "authorization status"
+            ]
+          },
+          "s3-p1": {
+            "atoms": [
+              {
+                "symbol": "S2.5_accepted",
+                "text": "S2.5 accepted 71 tests",
+                "source_quote": "S2.5 accepted 71 tests",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "S2.5_immutable",
+                "text": "Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+                "source_quote": "Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "S4_S6_blocked",
+                "text": "S4-S6 blocked",
+                "source_quote": "S4-S6 blocked",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "S2.5_accepted",
+              "S2.5_immutable",
+              "S4_S6_blocked"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [],
+            "compositions": [],
+            "unresolved": [
+              "S2.5_accepted",
+              "S2.5_immutable",
+              "S4_S6_blocked"
+            ]
+          },
+          "s3-p2": {
+            "atoms": [
+              {
+                "symbol": "S3",
+                "text": "stage:S3",
+                "source_quote": "stage:S3",
+                "kind": "entity"
+              },
+              {
+                "symbol": "S2_5",
+                "text": "stage:S2.5",
+                "source_quote": "stage:S2.5",
+                "kind": "entity"
+              },
+              {
+                "symbol": "B1",
+                "text": "identity:B1",
+                "source_quote": "identity:B1",
+                "kind": "entity"
+              }
+            ],
+            "premises": [
+              "(implies S3 (SUPERVISE S3 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))))"
+            ],
+            "conclusion": "unresolved",
+            "identities": [
+              {
+                "left": "B1",
+                "right": "A",
+                "source_quote": "B1/C1 are identity-preserving aliases for original A/B"
+              }
+            ],
+            "flows": [
+              {
+                "id": "flow-1",
+                "rule": "unresolved",
+                "premises": [
+                  "(implies S3 (SUPERVISE S3 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))))"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "nested",
+                "members": [
+                  "S3",
+                  "S2_5"
+                ]
+              }
+            ],
+            "unresolved": [
+              "S3 execution status",
+              "S2.5 execution status",
+              "B1/C1 pair execution status"
+            ]
+          },
+          "s3-p3": {
+            "atoms": [
+              {
+                "symbol": "A",
+                "text": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+                "source_quote": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "B",
+                "text": "commit ONCE to B typed destination input",
+                "source_quote": "commit ONCE to B typed destination input",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "C",
+                "text": "Looper actual provider turn via existing local controller",
+                "source_quote": "Looper actual provider turn via existing local controller",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "(and A C)",
+              "(implies (and A C) B)"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "flow-0",
+                "rule": "and_introduction",
+                "premises": [
+                  "A",
+                  "C"
+                ],
+                "conclusion": "(and A C)"
+              },
+              {
+                "id": "flow-1",
+                "rule": "modus_ponens",
+                "premises": [
+                  "(and A C)",
+                  "(implies (and A C) B)"
+                ],
+                "conclusion": "B"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "chain",
+                "members": [
+                  "A",
+                  "C",
+                  "B"
+                ]
+              }
+            ],
+            "unresolved": [
+              "Does A imply C?",
+              "Is B actually committed?"
+            ]
+          },
+          "s3-p4": {
+            "atoms": [
+              {
+                "symbol": "create_test_live_ab_py",
+                "text": "create test_live_ab.py",
+                "source_quote": "create test_live_ab.py",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "run_live_ab_py",
+                "text": "explicit scripts/run_live_ab.py",
+                "source_quote": "explicit scripts/run_live_ab.py",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "provider_unavailable",
+                "text": "provider unavailable",
+                "source_quote": "provider unavailable",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "(implies (and (implies (not (implies (not create_test_live_ab_py) (not run_live_ab_py))) (not provider_unavailable)) (or create_test_live_ab_py run_live_ab_py))",
+              "(implies (not provider_unavailable) (or create_test_live_ab_py run_live_ab_py))"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "flow_1",
+                "rule": "unresolved",
+                "premises": [
+                  "create_test_live_ab_py",
+                  "run_live_ab_py"
+                ],
+                "conclusion": "unresolved"
+              },
+              {
+                "id": "flow_2",
+                "rule": "unresolved",
+                "premises": [
+                  "provider_unavailable"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "substitution",
+                "members": [
+                  "create_test_live_ab_py",
+                  "run_live_ab_py"
+                ]
+              },
+              {
+                "kind": "substitution",
+                "members": [
+                  "provider_unavailable"
+                ]
+              }
+            ],
+            "unresolved": [
+              "S3_OPEN",
+              "manufactured_positive"
+            ]
+          },
+          "s3-p5": {
+            "atoms": [
+              {
+                "symbol": "CICD_remain_local",
+                "text": "CICD: remain local.",
+                "source_quote": "CICD: remain local.",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "isolated_service_restarted",
+                "text": "The isolated delivery service has already been restarted with draft overwrite policy",
+                "source_quote": "The isolated delivery service has already been restarted with draft overwrite policy",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "user_wants_drafts_discarded",
+                "text": "user expressly wants drafts discarded",
+                "source_quote": "user expressly wants drafts discarded",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "CICD_remain_local",
+              "isolated_service_restarted",
+              "user_wants_drafts_discarded"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "f1",
+                "rule": "unresolved",
+                "premises": [
+                  "CICD_remain_local"
+                ],
+                "conclusion": "unresolved"
+              },
+              {
+                "id": "f2",
+                "rule": "unresolved",
+                "premises": [
+                  "isolated_service_restarted"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "nested",
+                "members": [
+                  "CICD_remain_local",
+                  "report_commands"
+                ]
+              },
+              {
+                "kind": "nested",
+                "members": [
+                  "isolated_service_restarted",
+                  "user_wants_drafts_discarded"
+                ]
+              }
+            ],
+            "unresolved": [
+              "report_commands",
+              "final_concise_report_via_looper"
+            ]
+          }
+        },
+        "scope": "Distinct source-unit candidates; composition IDs remain local and are not merged across paragraphs."
+      }
+    },
+    "final_checks": {
+      "s3-p0": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Formula: trailing formula text",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "S3_LIVE_AB",
+            "quote": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+            "start": 0,
+            "end": 93
+          }
+        ],
+        "flows": [],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p1": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Hidden connective in atom S2.5_immutable: Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "S2.5_accepted",
+            "quote": "S2.5 accepted 71 tests",
+            "start": 424,
+            "end": 446
+          },
+          {
+            "symbol": "S2.5_immutable",
+            "quote": "Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+            "start": 317,
+            "end": 380
+          },
+          {
+            "symbol": "S4_S6_blocked",
+            "quote": "S4-S6 blocked",
+            "start": 409,
+            "end": 422
+          }
+        ],
+        "flows": [],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p2": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Missing exact source quote: stage:S3",
+          "Missing exact source quote: stage:S2.5",
+          "Missing exact source quote: identity:B1",
+          "Formula: Unsupported formal operator: SUPERVISE",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Identity lacks bound source symbols/quote",
+          "Flow flow-1: Unsupported formal operator: SUPERVISE"
+        ],
+        "operators": [],
+        "anchors": [],
+        "flows": [
+          {
+            "id": "flow-1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Unsupported formal operator: SUPERVISE",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p3": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Negation cue disappeared from formulas"
+        ],
+        "operators": [
+          "and",
+          "implies"
+        ],
+        "anchors": [
+          {
+            "symbol": "A",
+            "quote": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+            "start": 990,
+            "end": 1085
+          },
+          {
+            "symbol": "B",
+            "quote": "commit ONCE to B typed destination input",
+            "start": 1402,
+            "end": 1442
+          },
+          {
+            "symbol": "C",
+            "quote": "Looper actual provider turn via existing local controller",
+            "start": 1203,
+            "end": 1260
+          }
+        ],
+        "flows": [
+          {
+            "id": "flow-0",
+            "claimed_rule": "and_introduction",
+            "check": {
+              "status": "verified_entailment",
+              "checker": "exhaustive Boolean truth table",
+              "variables": [
+                "A",
+                "C"
+              ],
+              "valuations_checked": 4,
+              "premise_satisfying_valuations": 1,
+              "counterexamples": [],
+              "semantics": "Classical propositional entailment over explicitly declared Boolean variables only",
+              "source_formalization_fidelity": "Not established by checker; supplied formalization remains separately attributed",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "flow-1",
+            "claimed_rule": "modus_ponens",
+            "check": {
+              "status": "verified_entailment",
+              "checker": "exhaustive Boolean truth table",
+              "variables": [
+                "A",
+                "B",
+                "C"
+              ],
+              "valuations_checked": 8,
+              "premise_satisfying_valuations": 1,
+              "counterexamples": [],
+              "semantics": "Classical propositional entailment over explicitly declared Boolean variables only",
+              "source_formalization_fidelity": "Not established by checker; supplied formalization remains separately attributed",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": [
+          "Source supplies requirements/construction instructions, not an explicit performed deduction; proposed inference rule requires justification."
+        ]
+      },
+      "s3-p4": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Formula: unclosed/empty expression",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Flow flow_1: Undeclared proposition/type binding",
+          "Flow flow_2: Undeclared proposition/type binding"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "create_test_live_ab_py",
+            "quote": "create test_live_ab.py",
+            "start": 2049,
+            "end": 2071
+          },
+          {
+            "symbol": "run_live_ab_py",
+            "quote": "explicit scripts/run_live_ab.py",
+            "start": 2073,
+            "end": 2104
+          },
+          {
+            "symbol": "provider_unavailable",
+            "quote": "provider unavailable",
+            "start": 2693,
+            "end": 2713
+          }
+        ],
+        "flows": [
+          {
+            "id": "flow_1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "flow_2",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p5": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Flow f1: Undeclared proposition/type binding",
+          "Flow f2: Undeclared proposition/type binding",
+          "Composition refers to unbound member"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "CICD_remain_local",
+            "quote": "CICD: remain local.",
+            "start": 2939,
+            "end": 2958
+          },
+          {
+            "symbol": "isolated_service_restarted",
+            "quote": "The isolated delivery service has already been restarted with draft overwrite policy",
+            "start": 3095,
+            "end": 3179
+          },
+          {
+            "symbol": "user_wants_drafts_discarded",
+            "quote": "user expressly wants drafts discarded",
+            "start": 3181,
+            "end": 3218
+          }
+        ],
+        "flows": [
+          {
+            "id": "f1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "f2",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      }
+    }
+  },
+  {
+    "layer": 3,
+    "heads": [
+      "nested",
+      "chain",
+      "shared_premise",
+      "branch",
+      "equivalence",
+      "substitution",
+      "missing_premise"
+    ],
+    "axes": [
+      "composition_topology",
+      "reference_alignment",
+      "composition_support",
+      "equivalence_strength",
+      "context_dependence",
+      "assumption_sensitivity"
+    ],
+    "preliminary": {
+      "profiles": {
+        "s3-p0": {
+          "nested": "unresolved",
+          "chain": "unresolved",
+          "shared_premise": "unresolved",
+          "branch": "unresolved",
+          "equivalence": "unresolved",
+          "substitution": "unresolved",
+          "missing_premise": "unresolved"
+        },
+        "s3-p1": {
+          "nested": "unresolved",
+          "chain": "unresolved",
+          "shared_premise": "unresolved",
+          "branch": "unresolved",
+          "equivalence": "unresolved",
+          "substitution": "unresolved",
+          "missing_premise": "unresolved"
+        },
+        "s3-p2": {
+          "nested": "unresolved",
+          "chain": "unresolved",
+          "shared_premise": "unresolved",
+          "branch": "unresolved",
+          "equivalence": "unresolved",
+          "substitution": "unresolved",
+          "missing_premise": "unresolved"
+        },
+        "s3-p3": {
+          "nested": "present",
+          "chain": "present",
+          "shared_premise": "present",
+          "branch": "present",
+          "equivalence": "unresolved",
+          "substitution": "unresolved",
+          "missing_premise": "present"
+        },
+        "s3-p4": {
+          "nested": "unresolved",
+          "chain": "unresolved",
+          "shared_premise": "unresolved",
+          "branch": "unresolved",
+          "equivalence": "unresolved",
+          "substitution": "unresolved",
+          "missing_premise": "unresolved"
+        },
+        "s3-p5": {
+          "nested": "unresolved",
+          "chain": "unresolved",
+          "shared_premise": "unresolved",
+          "branch": "unresolved",
+          "equivalence": "unresolved",
+          "substitution": "unresolved",
+          "missing_premise": "unresolved"
+        }
+      },
+      "symbolic": {
+        "by_unit": {
+          "s3-p0": {
+            "atoms": [
+              {
+                "symbol": "S3_LIVE_AB",
+                "text": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+                "source_quote": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "S3_LIVE_AB is to be implemented in an isolated SHG-mu project."
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [],
+            "compositions": [],
+            "unresolved": [
+              "execution status",
+              "stage gate status",
+              "authorization status"
+            ]
+          },
+          "s3-p1": {
+            "atoms": [
+              {
+                "symbol": "S2.5_accepted",
+                "text": "S2.5 accepted 71 tests",
+                "source_quote": "S2.5 accepted 71 tests",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "S2.5_immutable",
+                "text": "Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+                "source_quote": "Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "S4_S6_blocked",
+                "text": "S4-S6 blocked",
+                "source_quote": "S4-S6 blocked",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "S2.5_accepted",
+              "S2.5_immutable",
+              "S4_S6_blocked"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [],
+            "compositions": [],
+            "unresolved": [
+              "S2.5_accepted",
+              "S2.5_immutable",
+              "S4_S6_blocked"
+            ]
+          },
+          "s3-p2": {
+            "atoms": [
+              {
+                "symbol": "S3_executes",
+                "text": "S3 exercises only original A→B real provider handoff",
+                "source_quote": "S3 exercises only original A→B real provider handoff within pair-1 B1→C1 boundary",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "S2_5_active",
+                "text": "S2.5 graph is active",
+                "source_quote": "S3 should depend on S2.5 in stages.json",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "B1_C1_alias",
+                "text": "B1/C1 are identity-preserving aliases",
+                "source_quote": "B1/C1 are identity-preserving aliases for original A/B",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "(implies S3_executes (SUPERVISE S3 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))))",
+              "(implies S3_executes S2_5_active)"
+            ],
+            "conclusion": "unresolved",
+            "identities": [
+              {
+                "left": "B1",
+                "right": "A",
+                "source_quote": "B1/C1 are identity-preserving aliases for original A/B"
+              }
+            ],
+            "flows": [
+              {
+                "id": "flow-1",
+                "rule": "unresolved",
+                "premises": [
+                  "(implies S3_executes (SUPERVISE S3 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))))"
+                ],
+                "conclusion": "unresolved"
+              },
+              {
+                "id": "flow-2",
+                "rule": "unresolved",
+                "premises": [
+                  "(implies S3_executes S2_5_active)"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "nested",
+                "members": [
+                  "S3",
+                  "S2_5"
+                ]
+              }
+            ],
+            "unresolved": [
+              "S3 execution status",
+              "S2.5 execution status",
+              "B1/C1 pair execution status"
+            ]
+          },
+          "s3-p3": {
+            "atoms": [
+              {
+                "symbol": "A",
+                "text": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+                "source_quote": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "B",
+                "text": "commit ONCE to B typed destination input",
+                "source_quote": "commit ONCE to B typed destination input",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "C",
+                "text": "Looper actual provider turn via existing local controller",
+                "source_quote": "Looper actual provider turn via existing local controller",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "(and A C)",
+              "(implies (and A C) B)"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "flow-0",
+                "rule": "and_introduction",
+                "premises": [
+                  "A",
+                  "C"
+                ],
+                "conclusion": "(and A C)"
+              },
+              {
+                "id": "flow-1",
+                "rule": "modus_ponens",
+                "premises": [
+                  "(and A C)",
+                  "(implies (and A C) B)"
+                ],
+                "conclusion": "B"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "chain",
+                "members": [
+                  "A",
+                  "C",
+                  "B"
+                ]
+              }
+            ],
+            "unresolved": [
+              "Does A imply C?",
+              "Is B actually committed?"
+            ]
+          },
+          "s3-p4": {
+            "atoms": [
+              {
+                "symbol": "create_test_live_ab_py",
+                "text": "create test_live_ab.py",
+                "source_quote": "create test_live_ab.py",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "run_live_ab_py",
+                "text": "explicit scripts/run_live_ab.py",
+                "source_quote": "explicit scripts/run_live_ab.py",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "provider_unavailable",
+                "text": "provider unavailable",
+                "source_quote": "provider unavailable",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "(implies (and (implies (not (implies (not create_test_live_ab_py) (not run_live_ab_py))) (not provider_unavailable)) (or create_test_live_ab_py run_live_ab_py))",
+              "(implies (not provider_unavailable) (or create_test_live_ab_py run_live_ab_py))"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "flow_1",
+                "rule": "unresolved",
+                "premises": [
+                  "create_test_live_ab_py",
+                  "run_live_ab_py"
+                ],
+                "conclusion": "unresolved"
+              },
+              {
+                "id": "flow_2",
+                "rule": "unresolved",
+                "premises": [
+                  "provider_unavailable"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "substitution",
+                "members": [
+                  "create_test_live_ab_py",
+                  "run_live_ab_py"
+                ]
+              },
+              {
+                "kind": "substitution",
+                "members": [
+                  "provider_unavailable"
+                ]
+              }
+            ],
+            "unresolved": [
+              "S3_OPEN",
+              "manufactured_positive"
+            ]
+          },
+          "s3-p5": {
+            "atoms": [
+              {
+                "symbol": "A",
+                "text": "CICD: remain local.",
+                "source_quote": "CICD: remain local.",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "B",
+                "text": "The isolated delivery service has already been restarted with draft overwrite policy",
+                "source_quote": "The isolated delivery service has already been restarted with draft overwrite policy",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "C",
+                "text": "user expressly wants drafts discarded",
+                "source_quote": "user expressly wants drafts discarded",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "A",
+              "B",
+              "C"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "f1",
+                "rule": "unresolved",
+                "premises": [
+                  "A"
+                ],
+                "conclusion": "unresolved"
+              },
+              {
+                "id": "f2",
+                "rule": "unresolved",
+                "premises": [
+                  "B"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "nested",
+                "members": [
+                  "A",
+                  "report_commands"
+                ]
+              },
+              {
+                "kind": "nested",
+                "members": [
+                  "B",
+                  "C"
+                ]
+              }
+            ],
+            "unresolved": [
+              "report_commands",
+              "final_concise_report_via_looper"
+            ]
+          }
+        },
+        "scope": "Distinct source-unit candidates; composition IDs remain local and are not merged across paragraphs."
+      }
+    },
+    "initial_checks": {
+      "s3-p0": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Formula: trailing formula text",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "S3_LIVE_AB",
+            "quote": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+            "start": 0,
+            "end": 93
+          }
+        ],
+        "flows": [],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p1": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Hidden connective in atom S2.5_immutable: Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "S2.5_accepted",
+            "quote": "S2.5 accepted 71 tests",
+            "start": 424,
+            "end": 446
+          },
+          {
+            "symbol": "S2.5_immutable",
+            "quote": "Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+            "start": 317,
+            "end": 380
+          },
+          {
+            "symbol": "S4_S6_blocked",
+            "quote": "S4-S6 blocked",
+            "start": 409,
+            "end": 422
+          }
+        ],
+        "flows": [],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p2": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Formula: Unsupported formal operator: SUPERVISE",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Identity lacks bound source symbols/quote",
+          "Flow flow-1: Unsupported formal operator: SUPERVISE",
+          "Flow flow-2: Undeclared proposition/type binding",
+          "Composition refers to unbound member"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "S3_executes",
+            "quote": "S3 exercises only original A→B real provider handoff within pair-1 B1→C1 boundary",
+            "start": 722,
+            "end": 803
+          },
+          {
+            "symbol": "S2_5_active",
+            "quote": "S3 should depend on S2.5 in stages.json",
+            "start": 933,
+            "end": 972
+          },
+          {
+            "symbol": "B1_C1_alias",
+            "quote": "B1/C1 are identity-preserving aliases for original A/B",
+            "start": 612,
+            "end": 666
+          }
+        ],
+        "flows": [
+          {
+            "id": "flow-1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Unsupported formal operator: SUPERVISE",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "flow-2",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p3": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Negation cue disappeared from formulas"
+        ],
+        "operators": [
+          "and",
+          "implies"
+        ],
+        "anchors": [
+          {
+            "symbol": "A",
+            "quote": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+            "start": 990,
+            "end": 1085
+          },
+          {
+            "symbol": "B",
+            "quote": "commit ONCE to B typed destination input",
+            "start": 1402,
+            "end": 1442
+          },
+          {
+            "symbol": "C",
+            "quote": "Looper actual provider turn via existing local controller",
+            "start": 1203,
+            "end": 1260
+          }
+        ],
+        "flows": [
+          {
+            "id": "flow-0",
+            "claimed_rule": "and_introduction",
+            "check": {
+              "status": "verified_entailment",
+              "checker": "exhaustive Boolean truth table",
+              "variables": [
+                "A",
+                "C"
+              ],
+              "valuations_checked": 4,
+              "premise_satisfying_valuations": 1,
+              "counterexamples": [],
+              "semantics": "Classical propositional entailment over explicitly declared Boolean variables only",
+              "source_formalization_fidelity": "Not established by checker; supplied formalization remains separately attributed",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "flow-1",
+            "claimed_rule": "modus_ponens",
+            "check": {
+              "status": "verified_entailment",
+              "checker": "exhaustive Boolean truth table",
+              "variables": [
+                "A",
+                "B",
+                "C"
+              ],
+              "valuations_checked": 8,
+              "premise_satisfying_valuations": 1,
+              "counterexamples": [],
+              "semantics": "Classical propositional entailment over explicitly declared Boolean variables only",
+              "source_formalization_fidelity": "Not established by checker; supplied formalization remains separately attributed",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": [
+          "Source supplies requirements/construction instructions, not an explicit performed deduction; proposed inference rule requires justification."
+        ]
+      },
+      "s3-p4": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Formula: unclosed/empty expression",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Flow flow_1: Undeclared proposition/type binding",
+          "Flow flow_2: Undeclared proposition/type binding"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "create_test_live_ab_py",
+            "quote": "create test_live_ab.py",
+            "start": 2049,
+            "end": 2071
+          },
+          {
+            "symbol": "run_live_ab_py",
+            "quote": "explicit scripts/run_live_ab.py",
+            "start": 2073,
+            "end": 2104
+          },
+          {
+            "symbol": "provider_unavailable",
+            "quote": "provider unavailable",
+            "start": 2693,
+            "end": 2713
+          }
+        ],
+        "flows": [
+          {
+            "id": "flow_1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "flow_2",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p5": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Flow f1: Undeclared proposition/type binding",
+          "Flow f2: Undeclared proposition/type binding",
+          "Composition refers to unbound member"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "A",
+            "quote": "CICD: remain local.",
+            "start": 2939,
+            "end": 2958
+          },
+          {
+            "symbol": "B",
+            "quote": "The isolated delivery service has already been restarted with draft overwrite policy",
+            "start": 3095,
+            "end": 3179
+          },
+          {
+            "symbol": "C",
+            "quote": "user expressly wants drafts discarded",
+            "start": 3181,
+            "end": 3218
+          }
+        ],
+        "flows": [
+          {
+            "id": "f1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "f2",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      }
+    },
+    "feedback": {
+      "profiles": {
+        "s3-p0": {
+          "nested": "unresolved",
+          "chain": "unresolved",
+          "shared_premise": "unresolved",
+          "branch": "unresolved",
+          "equivalence": "unresolved",
+          "substitution": "unresolved",
+          "missing_premise": "unresolved"
+        },
+        "s3-p1": {
+          "nested": "unresolved",
+          "chain": "unresolved",
+          "shared_premise": "unresolved",
+          "branch": "unresolved",
+          "equivalence": "unresolved",
+          "substitution": "unresolved",
+          "missing_premise": "unresolved"
+        },
+        "s3-p2": {
+          "nested": "unresolved",
+          "chain": "unresolved",
+          "shared_premise": "unresolved",
+          "branch": "unresolved",
+          "equivalence": "unresolved",
+          "substitution": "unresolved",
+          "missing_premise": "unresolved"
+        },
+        "s3-p3": {
+          "nested": "unresolved",
+          "chain": "present",
+          "shared_premise": "unresolved",
+          "branch": "present",
+          "equivalence": "unresolved",
+          "substitution": "unresolved",
+          "missing_premise": "present"
+        },
+        "s3-p4": {
+          "nested": "unresolved",
+          "chain": "unresolved",
+          "shared_premise": "unresolved",
+          "branch": "unresolved",
+          "equivalence": "unresolved",
+          "substitution": "unresolved",
+          "missing_premise": "unresolved"
+        },
+        "s3-p5": {
+          "nested": "unresolved",
+          "chain": "unresolved",
+          "shared_premise": "unresolved",
+          "branch": "unresolved",
+          "equivalence": "unresolved",
+          "substitution": "unresolved",
+          "missing_premise": "unresolved"
+        }
+      },
+      "symbolic": {
+        "by_unit": {
+          "s3-p0": {
+            "atoms": [
+              {
+                "symbol": "S3_LIVE_AB",
+                "text": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+                "source_quote": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "S3_LIVE_AB is to be implemented in an isolated SHG-mu project."
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [],
+            "compositions": [],
+            "unresolved": [
+              "execution status",
+              "stage gate status",
+              "authorization status"
+            ]
+          },
+          "s3-p1": {
+            "atoms": [
+              {
+                "symbol": "S2.5_accepted",
+                "text": "S2.5 accepted 71 tests",
+                "source_quote": "S2.5 accepted 71 tests",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "S2.5_immutable",
+                "text": "Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+                "source_quote": "Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "S4_S6_blocked",
+                "text": "S4-S6 blocked",
+                "source_quote": "S4-S6 blocked",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "S2.5_accepted",
+              "S2.5_immutable",
+              "S4_S6_blocked"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [],
+            "compositions": [],
+            "unresolved": [
+              "S2.5_accepted",
+              "S2.5_immutable",
+              "S4_S6_blocked"
+            ]
+          },
+          "s3-p2": {
+            "atoms": [
+              {
+                "symbol": "S3_exercises_only_A_to_B",
+                "text": "S3 exercises only original A→B real provider handoff",
+                "source_quote": "S3 exercises only original A→B real provider handoff within pair-1 B1→C1 boundary",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "S2_5_graph_defined",
+                "text": "S2.5 graph is (SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2)))",
+                "source_quote": "S2.5 graph is (SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2)))",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "B1_C1_aliases_A_B",
+                "text": "B1/C1 are identity-preserving aliases for original A/B",
+                "source_quote": "B1/C1 are identity-preserving aliases for original A/B",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "(implies S3_exercises_only_A_to_B (and (implies S3_exercises_only_A_to_B (SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2)))) (not (SUPERVISE A0 (PARALLEL (PAIR"
+            ],
+            "conclusion": "unresolved",
+            "identities": [
+              {
+                "left": "B1",
+                "right": "A",
+                "source_quote": "B1/C1 are identity-preserving aliases for original A/B"
+              }
+            ],
+            "flows": [
+              {
+                "id": "flow-1",
+                "rule": "unresolved",
+                "premises": [
+                  "(implies S3_exercises_only_A_to_B (SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))))"
+                ],
+                "conclusion": "unresolved"
+              },
+              {
+                "id": "flow-2",
+                "rule": "unresolved",
+                "premises": [
+                  "(implies S3_exercises_only_A_to_B (SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))))"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "nested",
+                "members": [
+                  "S3_exercises_only_A_to_B",
+                  "S2_5_graph_defined"
+                ]
+              }
+            ],
+            "unresolved": [
+              "S3 execution status",
+              "S2.5 execution status",
+              "B1/C1 pair execution status"
+            ]
+          },
+          "s3-p3": {
+            "atoms": [
+              {
+                "symbol": "A",
+                "text": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+                "source_quote": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "B",
+                "text": "commit ONCE to B typed destination input",
+                "source_quote": "commit ONCE to B typed destination input",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "C",
+                "text": "Looper actual provider turn via existing local controller",
+                "source_quote": "Looper actual provider turn via existing local controller",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "(and A C)",
+              "(implies (and A C) B)"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "flow-0",
+                "rule": "and_introduction",
+                "premises": [
+                  "A",
+                  "C"
+                ],
+                "conclusion": "(and A C)"
+              },
+              {
+                "id": "flow-1",
+                "rule": "modus_ponens",
+                "premises": [
+                  "(and A C)",
+                  "(implies (and A C) B)"
+                ],
+                "conclusion": "B"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "chain",
+                "members": [
+                  "A",
+                  "C",
+                  "B"
+                ]
+              }
+            ],
+            "unresolved": [
+              "Does A imply C?",
+              "Is B actually committed?"
+            ]
+          },
+          "s3-p4": {
+            "atoms": [
+              {
+                "symbol": "create_test_live_ab_py",
+                "text": "create test_live_ab.py",
+                "source_quote": "create test_live_ab.py",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "run_live_ab_py",
+                "text": "explicit scripts/run_live_ab.py",
+                "source_quote": "explicit scripts/run_live_ab.py",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "provider_unavailable",
+                "text": "provider unavailable",
+                "source_quote": "provider unavailable",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "(implies (and (implies (not (implies (not create_test_live_ab_py) (not run_live_ab_py))) (not provider_unavailable)) (or create_test_live_ab_py run_live_ab_py))",
+              "(implies (not provider_unavailable) (or create_test_live_ab_py run_live_ab_py))"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "flow_1",
+                "rule": "unresolved",
+                "premises": [
+                  "create_test_live_ab_py",
+                  "run_live_ab_py"
+                ],
+                "conclusion": "unresolved"
+              },
+              {
+                "id": "flow_2",
+                "rule": "unresolved",
+                "premises": [
+                  "provider_unavailable"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "substitution",
+                "members": [
+                  "create_test_live_ab_py",
+                  "run_live_ab_py"
+                ]
+              },
+              {
+                "kind": "substitution",
+                "members": [
+                  "provider_unavailable"
+                ]
+              }
+            ],
+            "unresolved": [
+              "S3_OPEN",
+              "manufactured_positive"
+            ]
+          },
+          "s3-p5": {
+            "atoms": [
+              {
+                "symbol": "A",
+                "text": "CICD: remain local.",
+                "source_quote": "CICD: remain local.",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "B",
+                "text": "isolated_service_restarted",
+                "source_quote": "The isolated delivery service has already been restarted with draft overwrite policy",
+                "kind": "proposition"
+              },
+              {
+                "symbol": "C",
+                "text": "user_wants_drafts_discarded",
+                "source_quote": "user expressly wants drafts discarded",
+                "kind": "proposition"
+              }
+            ],
+            "premises": [
+              "A",
+              "B",
+              "C"
+            ],
+            "conclusion": "unresolved",
+            "identities": [],
+            "flows": [
+              {
+                "id": "f1",
+                "rule": "unresolved",
+                "premises": [
+                  "A"
+                ],
+                "conclusion": "unresolved"
+              },
+              {
+                "id": "f2",
+                "rule": "unresolved",
+                "premises": [
+                  "B"
+                ],
+                "conclusion": "unresolved"
+              }
+            ],
+            "compositions": [
+              {
+                "kind": "nested",
+                "members": [
+                  "A",
+                  "report_commands"
+                ]
+              },
+              {
+                "kind": "nested",
+                "members": [
+                  "B",
+                  "C"
+                ]
+              }
+            ],
+            "unresolved": [
+              "report_commands",
+              "final_concise_report_via_looper"
+            ]
+          }
+        },
+        "scope": "Distinct source-unit candidates; composition IDs remain local and are not merged across paragraphs."
+      }
+    },
+    "final_checks": {
+      "s3-p0": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Formula: trailing formula text",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "S3_LIVE_AB",
+            "quote": "IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.",
+            "start": 0,
+            "end": 93
+          }
+        ],
+        "flows": [],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p1": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Hidden connective in atom S2.5_immutable: Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "S2.5_accepted",
+            "quote": "S2.5 accepted 71 tests",
+            "start": 424,
+            "end": 446
+          },
+          {
+            "symbol": "S2.5_immutable",
+            "quote": "Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable",
+            "start": 317,
+            "end": 380
+          },
+          {
+            "symbol": "S4_S6_blocked",
+            "quote": "S4-S6 blocked",
+            "start": 409,
+            "end": 422
+          }
+        ],
+        "flows": [],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p2": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Formula: unclosed/empty expression",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Identity lacks bound source symbols/quote",
+          "Flow flow-1: Unsupported formal operator: SUPERVISE",
+          "Flow flow-2: Unsupported formal operator: SUPERVISE"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "S3_exercises_only_A_to_B",
+            "quote": "S3 exercises only original A→B real provider handoff within pair-1 B1→C1 boundary",
+            "start": 722,
+            "end": 803
+          },
+          {
+            "symbol": "S2_5_graph_defined",
+            "quote": "S2.5 graph is (SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2)))",
+            "start": 545,
+            "end": 610
+          },
+          {
+            "symbol": "B1_C1_aliases_A_B",
+            "quote": "B1/C1 are identity-preserving aliases for original A/B",
+            "start": 612,
+            "end": 666
+          }
+        ],
+        "flows": [
+          {
+            "id": "flow-1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Unsupported formal operator: SUPERVISE",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "flow-2",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Unsupported formal operator: SUPERVISE",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p3": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Negation cue disappeared from formulas"
+        ],
+        "operators": [
+          "and",
+          "implies"
+        ],
+        "anchors": [
+          {
+            "symbol": "A",
+            "quote": "IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable",
+            "start": 990,
+            "end": 1085
+          },
+          {
+            "symbol": "B",
+            "quote": "commit ONCE to B typed destination input",
+            "start": 1402,
+            "end": 1442
+          },
+          {
+            "symbol": "C",
+            "quote": "Looper actual provider turn via existing local controller",
+            "start": 1203,
+            "end": 1260
+          }
+        ],
+        "flows": [
+          {
+            "id": "flow-0",
+            "claimed_rule": "and_introduction",
+            "check": {
+              "status": "verified_entailment",
+              "checker": "exhaustive Boolean truth table",
+              "variables": [
+                "A",
+                "C"
+              ],
+              "valuations_checked": 4,
+              "premise_satisfying_valuations": 1,
+              "counterexamples": [],
+              "semantics": "Classical propositional entailment over explicitly declared Boolean variables only",
+              "source_formalization_fidelity": "Not established by checker; supplied formalization remains separately attributed",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "flow-1",
+            "claimed_rule": "modus_ponens",
+            "check": {
+              "status": "verified_entailment",
+              "checker": "exhaustive Boolean truth table",
+              "variables": [
+                "A",
+                "B",
+                "C"
+              ],
+              "valuations_checked": 8,
+              "premise_satisfying_valuations": 1,
+              "counterexamples": [],
+              "semantics": "Classical propositional entailment over explicitly declared Boolean variables only",
+              "source_formalization_fidelity": "Not established by checker; supplied formalization remains separately attributed",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": [
+          "Source supplies requirements/construction instructions, not an explicit performed deduction; proposed inference rule requires justification."
+        ]
+      },
+      "s3-p4": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Formula: unclosed/empty expression",
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Flow flow_1: Undeclared proposition/type binding",
+          "Flow flow_2: Undeclared proposition/type binding"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "create_test_live_ab_py",
+            "quote": "create test_live_ab.py",
+            "start": 2049,
+            "end": 2071
+          },
+          {
+            "symbol": "run_live_ab_py",
+            "quote": "explicit scripts/run_live_ab.py",
+            "start": 2073,
+            "end": 2104
+          },
+          {
+            "symbol": "provider_unavailable",
+            "quote": "provider unavailable",
+            "start": 2693,
+            "end": 2713
+          }
+        ],
+        "flows": [
+          {
+            "id": "flow_1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "flow_2",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      },
+      "s3-p5": {
+        "source_syntax_valid": false,
+        "errors": [
+          "Negation cue disappeared from formulas",
+          "Conditional cue disappeared from formulas",
+          "Flow f1: Undeclared proposition/type binding",
+          "Flow f2: Undeclared proposition/type binding",
+          "Composition refers to unbound member"
+        ],
+        "operators": [],
+        "anchors": [
+          {
+            "symbol": "A",
+            "quote": "CICD: remain local.",
+            "start": 2939,
+            "end": 2958
+          },
+          {
+            "symbol": "B",
+            "quote": "The isolated delivery service has already been restarted with draft overwrite policy",
+            "start": 3095,
+            "end": 3179
+          },
+          {
+            "symbol": "C",
+            "quote": "user expressly wants drafts discarded",
+            "start": 3181,
+            "end": 3218
+          }
+        ],
+        "flows": [
+          {
+            "id": "f1",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          },
+          {
+            "id": "f2",
+            "claimed_rule": "unresolved",
+            "check": {
+              "status": "unsupported_or_ill_typed",
+              "error": "Undeclared proposition/type binding",
+              "laya_scores_used": false
+            }
+          }
+        ],
+        "authority": "Checks anchor syntax, Boolean typing and supplied flow entailment; source/formula fidelity and higher-order identity claims remain unproved",
+        "source_fidelity_status": "not independently adjudicated",
+        "source_fidelity_flags": []
+      }
+    }
+  }
+]

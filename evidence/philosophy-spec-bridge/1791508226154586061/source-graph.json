@@ -1,0 +1,1144 @@
+{
+  "nodes": [
+    {
+      "id": "architecture",
+      "kind": "SUPERVISE",
+      "label": "SUPERVISE",
+      "spans": [
+        {
+          "start": 560,
+          "end": 569,
+          "quote": "SUPERVISE"
+        }
+      ]
+    },
+    {
+      "id": "identity:A0",
+      "kind": "agent",
+      "label": "A0",
+      "spans": [
+        {
+          "start": 570,
+          "end": 572,
+          "quote": "A0"
+        }
+      ]
+    },
+    {
+      "id": "architecture/0/use",
+      "kind": "use",
+      "label": "A0",
+      "spans": [
+        {
+          "start": 570,
+          "end": 572,
+          "quote": "A0"
+        }
+      ]
+    },
+    {
+      "id": "architecture/1",
+      "kind": "PARALLEL",
+      "label": "PARALLEL",
+      "spans": [
+        {
+          "start": 574,
+          "end": 582,
+          "quote": "PARALLEL"
+        }
+      ]
+    },
+    {
+      "id": "architecture/1/0",
+      "kind": "PAIR",
+      "label": "PAIR",
+      "spans": [
+        {
+          "start": 584,
+          "end": 588,
+          "quote": "PAIR"
+        }
+      ]
+    },
+    {
+      "id": "identity:B1",
+      "kind": "agent",
+      "label": "B1",
+      "spans": [
+        {
+          "start": 589,
+          "end": 591,
+          "quote": "B1"
+        },
+        {
+          "start": 612,
+          "end": 614,
+          "quote": "B1"
+        },
+        {
+          "start": 789,
+          "end": 791,
+          "quote": "B1"
+        }
+      ]
+    },
+    {
+      "id": "architecture/1/0/0/use",
+      "kind": "use",
+      "label": "B1",
+      "spans": [
+        {
+          "start": 589,
+          "end": 591,
+          "quote": "B1"
+        }
+      ]
+    },
+    {
+      "id": "identity:C1",
+      "kind": "agent",
+      "label": "C1",
+      "spans": [
+        {
+          "start": 592,
+          "end": 594,
+          "quote": "C1"
+        },
+        {
+          "start": 615,
+          "end": 617,
+          "quote": "C1"
+        },
+        {
+          "start": 792,
+          "end": 794,
+          "quote": "C1"
+        }
+      ]
+    },
+    {
+      "id": "architecture/1/0/1/use",
+      "kind": "use",
+      "label": "C1",
+      "spans": [
+        {
+          "start": 592,
+          "end": 594,
+          "quote": "C1"
+        }
+      ]
+    },
+    {
+      "id": "architecture/1/1",
+      "kind": "PAIR",
+      "label": "PAIR",
+      "spans": [
+        {
+          "start": 597,
+          "end": 601,
+          "quote": "PAIR"
+        }
+      ]
+    },
+    {
+      "id": "identity:B2",
+      "kind": "agent",
+      "label": "B2",
+      "spans": [
+        {
+          "start": 602,
+          "end": 604,
+          "quote": "B2"
+        },
+        {
+          "start": 668,
+          "end": 670,
+          "quote": "B2"
+        }
+      ]
+    },
+    {
+      "id": "architecture/1/1/0/use",
+      "kind": "use",
+      "label": "B2",
+      "spans": [
+        {
+          "start": 602,
+          "end": 604,
+          "quote": "B2"
+        }
+      ]
+    },
+    {
+      "id": "identity:C2",
+      "kind": "agent",
+      "label": "C2",
+      "spans": [
+        {
+          "start": 605,
+          "end": 607,
+          "quote": "C2"
+        },
+        {
+          "start": 671,
+          "end": 673,
+          "quote": "C2"
+        }
+      ]
+    },
+    {
+      "id": "architecture/1/1/1/use",
+      "kind": "use",
+      "label": "C2",
+      "spans": [
+        {
+          "start": 605,
+          "end": 607,
+          "quote": "C2"
+        }
+      ]
+    },
+    {
+      "id": "stage:S3",
+      "kind": "stage",
+      "label": "S3",
+      "spans": [
+        {
+          "start": 10,
+          "end": 12,
+          "quote": "S3"
+        },
+        {
+          "start": 722,
+          "end": 724,
+          "quote": "S3"
+        },
+        {
+          "start": 933,
+          "end": 935,
+          "quote": "S3"
+        },
+        {
+          "start": 2279,
+          "end": 2281,
+          "quote": "S3"
+        },
+        {
+          "start": 2887,
+          "end": 2889,
+          "quote": "S3"
+        }
+      ]
+    },
+    {
+      "id": "stage:S2.5",
+      "kind": "stage",
+      "label": "S2.5",
+      "spans": [
+        {
+          "start": 335,
+          "end": 339,
+          "quote": "S2.5"
+        },
+        {
+          "start": 424,
+          "end": 428,
+          "quote": "S2.5"
+        },
+        {
+          "start": 545,
+          "end": 549,
+          "quote": "S2.5"
+        },
+        {
+          "start": 953,
+          "end": 957,
+          "quote": "S2.5"
+        },
+        {
+          "start": 2800,
+          "end": 2804,
+          "quote": "S2.5"
+        }
+      ]
+    },
+    {
+      "id": "relation:S3-dependency",
+      "kind": "depends-on",
+      "label": "S3 depends on S2.5",
+      "spans": [
+        {
+          "start": 933,
+          "end": 957,
+          "quote": "S3 should depend on S2.5"
+        }
+      ]
+    },
+    {
+      "id": "identity:A",
+      "kind": "agent",
+      "label": "A",
+      "spans": [
+        {
+          "start": 654,
+          "end": 666,
+          "quote": "original A/B"
+        }
+      ]
+    },
+    {
+      "id": "alias:B1",
+      "kind": "aliases",
+      "label": "B1 aliases A",
+      "spans": [
+        {
+          "start": 612,
+          "end": 666,
+          "quote": "B1/C1 are identity-preserving aliases for original A/B"
+        }
+      ]
+    },
+    {
+      "id": "identity:B",
+      "kind": "agent",
+      "label": "B",
+      "spans": [
+        {
+          "start": 654,
+          "end": 666,
+          "quote": "original A/B"
+        }
+      ]
+    },
+    {
+      "id": "alias:C1",
+      "kind": "aliases",
+      "label": "C1 aliases B",
+      "spans": [
+        {
+          "start": 612,
+          "end": 666,
+          "quote": "B1/C1 are identity-preserving aliases for original A/B"
+        }
+      ]
+    },
+    {
+      "id": "operator:execution-sequence",
+      "kind": "SEQUENCE",
+      "label": "execution sequence",
+      "spans": [
+        {
+          "start": 1001,
+          "end": 1057,
+          "quote": "source A typed pair output \u2192 first-class authorized pipe"
+        }
+      ]
+    },
+    {
+      "id": "pipe:authorized",
+      "kind": "pipe",
+      "label": "authorized pipe",
+      "spans": [
+        {
+          "start": 1030,
+          "end": 1057,
+          "quote": "first-class authorized pipe"
+        }
+      ]
+    },
+    {
+      "id": "event:effect",
+      "kind": "event",
+      "label": "effect attempt",
+      "spans": [
+        {
+          "start": 1060,
+          "end": 1093,
+          "quote": "S2 effect attempt durable journal"
+        }
+      ]
+    },
+    {
+      "id": "event:provider-turn",
+      "kind": "event",
+      "label": "provider turn",
+      "spans": [
+        {
+          "start": 1203,
+          "end": 1230,
+          "quote": "Looper actual provider turn"
+        }
+      ]
+    },
+    {
+      "id": "event:provider-return",
+      "kind": "event",
+      "label": "provider return",
+      "spans": [
+        {
+          "start": 1263,
+          "end": 1291,
+          "quote": "observed actual Codex result"
+        }
+      ]
+    },
+    {
+      "id": "event:validation",
+      "kind": "event",
+      "label": "validation",
+      "spans": [
+        {
+          "start": 1356,
+          "end": 1399,
+          "quote": "validate exact correlation/generation/types"
+        }
+      ]
+    },
+    {
+      "id": "event:commit",
+      "kind": "event",
+      "label": "commit",
+      "spans": [
+        {
+          "start": 1402,
+          "end": 1413,
+          "quote": "commit ONCE"
+        }
+      ]
+    },
+    {
+      "id": "flow:0",
+      "kind": "flows-to",
+      "label": "A \u2192 authorized pipe",
+      "spans": [
+        {
+          "start": 1001,
+          "end": 1057,
+          "quote": "source A typed pair output \u2192 first-class authorized pipe"
+        }
+      ]
+    },
+    {
+      "id": "flow:1",
+      "kind": "flows-to",
+      "label": "authorized pipe \u2192 effect attempt",
+      "spans": [
+        {
+          "start": 1030,
+          "end": 1057,
+          "quote": "first-class authorized pipe"
+        }
+      ]
+    },
+    {
+      "id": "flow:2",
+      "kind": "flows-to",
+      "label": "effect attempt \u2192 provider turn",
+      "spans": [
+        {
+          "start": 1060,
+          "end": 1093,
+          "quote": "S2 effect attempt durable journal"
+        }
+      ]
+    },
+    {
+      "id": "flow:3",
+      "kind": "flows-to",
+      "label": "provider turn \u2192 provider return",
+      "spans": [
+        {
+          "start": 1203,
+          "end": 1230,
+          "quote": "Looper actual provider turn"
+        }
+      ]
+    },
+    {
+      "id": "flow:4",
+      "kind": "flows-to",
+      "label": "provider return \u2192 validation",
+      "spans": [
+        {
+          "start": 1263,
+          "end": 1291,
+          "quote": "observed actual Codex result"
+        }
+      ]
+    },
+    {
+      "id": "flow:5",
+      "kind": "flows-to",
+      "label": "validation \u2192 commit",
+      "spans": [
+        {
+          "start": 1356,
+          "end": 1399,
+          "quote": "validate exact correlation/generation/types"
+        }
+      ]
+    },
+    {
+      "id": "flow:6",
+      "kind": "flows-to",
+      "label": "commit \u2192 B",
+      "spans": [
+        {
+          "start": 1402,
+          "end": 1413,
+          "quote": "commit ONCE"
+        }
+      ]
+    },
+    {
+      "id": "operator:once",
+      "kind": "EXACTLY_ONCE",
+      "label": "EXACTLY_ONCE",
+      "spans": [
+        {
+          "start": 1402,
+          "end": 1413,
+          "quote": "commit ONCE"
+        }
+      ]
+    },
+    {
+      "id": "operator:unavailable-gate",
+      "kind": "IF",
+      "label": "IF",
+      "spans": [
+        {
+          "start": 2853,
+          "end": 2929,
+          "quote": "If provider is unavailable, leave S3 OPEN and do not manufacture a positive."
+        }
+      ]
+    },
+    {
+      "id": "state:provider-unavailable",
+      "kind": "state",
+      "label": "provider unavailable",
+      "spans": [
+        {
+          "start": 2856,
+          "end": 2879,
+          "quote": "provider is unavailable"
+        }
+      ]
+    },
+    {
+      "id": "operator:open-and-no-positive",
+      "kind": "AND",
+      "label": "AND",
+      "spans": [
+        {
+          "start": 2881,
+          "end": 2928,
+          "quote": "leave S3 OPEN and do not manufacture a positive"
+        }
+      ]
+    },
+    {
+      "id": "state:S3-open",
+      "kind": "state",
+      "label": "S3 OPEN",
+      "spans": [
+        {
+          "start": 2887,
+          "end": 2894,
+          "quote": "S3 OPEN"
+        }
+      ]
+    },
+    {
+      "id": "operator:not-positive",
+      "kind": "NOT",
+      "label": "NOT",
+      "spans": [
+        {
+          "start": 2899,
+          "end": 2928,
+          "quote": "do not manufacture a positive"
+        }
+      ]
+    },
+    {
+      "id": "event:manufactured-positive",
+      "kind": "event",
+      "label": "manufacture a positive",
+      "spans": [
+        {
+          "start": 2906,
+          "end": 2928,
+          "quote": "manufacture a positive"
+        }
+      ]
+    },
+    {
+      "id": "network:document",
+      "kind": "network",
+      "label": "S3",
+      "spans": [
+        {
+          "start": 10,
+          "end": 12,
+          "quote": "S3"
+        },
+        {
+          "start": 722,
+          "end": 724,
+          "quote": "S3"
+        },
+        {
+          "start": 933,
+          "end": 935,
+          "quote": "S3"
+        },
+        {
+          "start": 2279,
+          "end": 2281,
+          "quote": "S3"
+        },
+        {
+          "start": 2887,
+          "end": 2889,
+          "quote": "S3"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": 2,
+      "target": 1,
+      "role": "binding",
+      "position": 0,
+      "depth": 1,
+      "relation": "use"
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "role": "controller",
+      "position": 0,
+      "depth": 0,
+      "relation": "SUPERVISE"
+    },
+    {
+      "source": 3,
+      "target": 0,
+      "role": "scope",
+      "position": 0,
+      "depth": 1,
+      "relation": "PARALLEL"
+    },
+    {
+      "source": 4,
+      "target": 3,
+      "role": "scope",
+      "position": 0,
+      "depth": 2,
+      "relation": "PAIR"
+    },
+    {
+      "source": 6,
+      "target": 5,
+      "role": "binding",
+      "position": 0,
+      "depth": 3,
+      "relation": "use"
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "role": "operand",
+      "position": 0,
+      "depth": 2,
+      "relation": "PAIR"
+    },
+    {
+      "source": 8,
+      "target": 7,
+      "role": "binding",
+      "position": 0,
+      "depth": 3,
+      "relation": "use"
+    },
+    {
+      "source": 4,
+      "target": 8,
+      "role": "operand",
+      "position": 1,
+      "depth": 2,
+      "relation": "PAIR"
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "role": "operand",
+      "position": 0,
+      "depth": 1,
+      "relation": "PARALLEL"
+    },
+    {
+      "source": 9,
+      "target": 3,
+      "role": "scope",
+      "position": 0,
+      "depth": 2,
+      "relation": "PAIR"
+    },
+    {
+      "source": 11,
+      "target": 10,
+      "role": "binding",
+      "position": 0,
+      "depth": 3,
+      "relation": "use"
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "role": "operand",
+      "position": 0,
+      "depth": 2,
+      "relation": "PAIR"
+    },
+    {
+      "source": 13,
+      "target": 12,
+      "role": "binding",
+      "position": 0,
+      "depth": 3,
+      "relation": "use"
+    },
+    {
+      "source": 9,
+      "target": 13,
+      "role": "operand",
+      "position": 1,
+      "depth": 2,
+      "relation": "PAIR"
+    },
+    {
+      "source": 3,
+      "target": 9,
+      "role": "operand",
+      "position": 1,
+      "depth": 1,
+      "relation": "PARALLEL"
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "role": "body",
+      "position": 1,
+      "depth": 0,
+      "relation": "SUPERVISE"
+    },
+    {
+      "source": 16,
+      "target": 14,
+      "role": "source",
+      "position": 0,
+      "depth": 0,
+      "relation": "depends-on"
+    },
+    {
+      "source": 16,
+      "target": 15,
+      "role": "target",
+      "position": 1,
+      "depth": 0,
+      "relation": "depends-on"
+    },
+    {
+      "source": 18,
+      "target": 5,
+      "role": "source",
+      "position": 0,
+      "depth": 0,
+      "relation": "aliases"
+    },
+    {
+      "source": 18,
+      "target": 17,
+      "role": "target",
+      "position": 1,
+      "depth": 0,
+      "relation": "aliases"
+    },
+    {
+      "source": 20,
+      "target": 7,
+      "role": "source",
+      "position": 0,
+      "depth": 0,
+      "relation": "aliases"
+    },
+    {
+      "source": 20,
+      "target": 19,
+      "role": "target",
+      "position": 1,
+      "depth": 0,
+      "relation": "aliases"
+    },
+    {
+      "source": 21,
+      "target": 17,
+      "role": "operand",
+      "position": 0,
+      "depth": 0,
+      "relation": "SEQUENCE"
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "role": "operand",
+      "position": 1,
+      "depth": 0,
+      "relation": "SEQUENCE"
+    },
+    {
+      "source": 21,
+      "target": 23,
+      "role": "operand",
+      "position": 2,
+      "depth": 0,
+      "relation": "SEQUENCE"
+    },
+    {
+      "source": 21,
+      "target": 24,
+      "role": "operand",
+      "position": 3,
+      "depth": 0,
+      "relation": "SEQUENCE"
+    },
+    {
+      "source": 21,
+      "target": 25,
+      "role": "operand",
+      "position": 4,
+      "depth": 0,
+      "relation": "SEQUENCE"
+    },
+    {
+      "source": 21,
+      "target": 26,
+      "role": "operand",
+      "position": 5,
+      "depth": 0,
+      "relation": "SEQUENCE"
+    },
+    {
+      "source": 21,
+      "target": 27,
+      "role": "operand",
+      "position": 6,
+      "depth": 0,
+      "relation": "SEQUENCE"
+    },
+    {
+      "source": 21,
+      "target": 19,
+      "role": "operand",
+      "position": 7,
+      "depth": 0,
+      "relation": "SEQUENCE"
+    },
+    {
+      "source": 28,
+      "target": 17,
+      "role": "source",
+      "position": 0,
+      "depth": 0,
+      "relation": "flows-to"
+    },
+    {
+      "source": 28,
+      "target": 22,
+      "role": "target",
+      "position": 1,
+      "depth": 0,
+      "relation": "flows-to"
+    },
+    {
+      "source": 29,
+      "target": 22,
+      "role": "source",
+      "position": 0,
+      "depth": 0,
+      "relation": "flows-to"
+    },
+    {
+      "source": 29,
+      "target": 23,
+      "role": "target",
+      "position": 1,
+      "depth": 0,
+      "relation": "flows-to"
+    },
+    {
+      "source": 30,
+      "target": 23,
+      "role": "source",
+      "position": 0,
+      "depth": 0,
+      "relation": "flows-to"
+    },
+    {
+      "source": 30,
+      "target": 24,
+      "role": "target",
+      "position": 1,
+      "depth": 0,
+      "relation": "flows-to"
+    },
+    {
+      "source": 31,
+      "target": 24,
+      "role": "source",
+      "position": 0,
+      "depth": 0,
+      "relation": "flows-to"
+    },
+    {
+      "source": 31,
+      "target": 25,
+      "role": "target",
+      "position": 1,
+      "depth": 0,
+      "relation": "flows-to"
+    },
+    {
+      "source": 32,
+      "target": 25,
+      "role": "source",
+      "position": 0,
+      "depth": 0,
+      "relation": "flows-to"
+    },
+    {
+      "source": 32,
+      "target": 26,
+      "role": "target",
+      "position": 1,
+      "depth": 0,
+      "relation": "flows-to"
+    },
+    {
+      "source": 33,
+      "target": 26,
+      "role": "source",
+      "position": 0,
+      "depth": 0,
+      "relation": "flows-to"
+    },
+    {
+      "source": 33,
+      "target": 27,
+      "role": "target",
+      "position": 1,
+      "depth": 0,
+      "relation": "flows-to"
+    },
+    {
+      "source": 34,
+      "target": 27,
+      "role": "source",
+      "position": 0,
+      "depth": 0,
+      "relation": "flows-to"
+    },
+    {
+      "source": 34,
+      "target": 19,
+      "role": "target",
+      "position": 1,
+      "depth": 0,
+      "relation": "flows-to"
+    },
+    {
+      "source": 35,
+      "target": 27,
+      "role": "operand",
+      "position": 0,
+      "depth": 0,
+      "relation": "EXACTLY_ONCE"
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "role": "condition",
+      "position": 0,
+      "depth": 0,
+      "relation": "IF"
+    },
+    {
+      "source": 36,
+      "target": 38,
+      "role": "consequent",
+      "position": 1,
+      "depth": 0,
+      "relation": "IF"
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "role": "operand",
+      "position": 0,
+      "depth": 1,
+      "relation": "AND"
+    },
+    {
+      "source": 38,
+      "target": 40,
+      "role": "operand",
+      "position": 1,
+      "depth": 1,
+      "relation": "AND"
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "role": "operand",
+      "position": 0,
+      "depth": 2,
+      "relation": "NOT"
+    },
+    {
+      "source": 38,
+      "target": 36,
+      "role": "scope",
+      "position": 0,
+      "depth": 1,
+      "relation": "AND"
+    },
+    {
+      "source": 40,
+      "target": 38,
+      "role": "scope",
+      "position": 0,
+      "depth": 2,
+      "relation": "NOT"
+    },
+    {
+      "source": 42,
+      "target": 0,
+      "role": "member",
+      "position": 0,
+      "depth": 0,
+      "relation": "network"
+    },
+    {
+      "source": 42,
+      "target": 16,
+      "role": "member",
+      "position": 1,
+      "depth": 0,
+      "relation": "network"
+    },
+    {
+      "source": 42,
+      "target": 18,
+      "role": "member",
+      "position": 2,
+      "depth": 0,
+      "relation": "network"
+    },
+    {
+      "source": 42,
+      "target": 20,
+      "role": "member",
+      "position": 3,
+      "depth": 0,
+      "relation": "network"
+    },
+    {
+      "source": 42,
+      "target": 21,
+      "role": "member",
+      "position": 4,
+      "depth": 0,
+      "relation": "network"
+    },
+    {
+      "source": 42,
+      "target": 28,
+      "role": "member",
+      "position": 5,
+      "depth": 0,
+      "relation": "network"
+    },
+    {
+      "source": 42,
+      "target": 29,
+      "role": "member",
+      "position": 6,
+      "depth": 0,
+      "relation": "network"
+    },
+    {
+      "source": 42,
+      "target": 30,
+      "role": "member",
+      "position": 7,
+      "depth": 0,
+      "relation": "network"
+    },
+    {
+      "source": 42,
+      "target": 31,
+      "role": "member",
+      "position": 8,
+      "depth": 0,
+      "relation": "network"
+    },
+    {
+      "source": 42,
+      "target": 32,
+      "role": "member",
+      "position": 9,
+      "depth": 0,
+      "relation": "network"
+    },
+    {
+      "source": 42,
+      "target": 33,
+      "role": "member",
+      "position": 10,
+      "depth": 0,
+      "relation": "network"
+    },
+    {
+      "source": 42,
+      "target": 34,
+      "role": "member",
+      "position": 11,
+      "depth": 0,
+      "relation": "network"
+    },
+    {
+      "source": 42,
+      "target": 35,
+      "role": "member",
+      "position": 12,
+      "depth": 0,
+      "relation": "network"
+    },
+    {
+      "source": 42,
+      "target": 36,
+      "role": "member",
+      "position": 13,
+      "depth": 0,
+      "relation": "network"
+    }
+  ],
+  "root": 42,
+  "source": "IMPLEMENT S3_LIVE_AB \u2014 ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.\nPROJECT /home/user0/shg_mu_workspace/project. Isolated controller http://127.0.0.1:8767 and code /home/user0/shg_mu_workspace/runtime/looper. Original /home/user0/greenfield, Factory, Goggles, other repositories: no edits. Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable, no push or GitHub Actions, S4-S6 blocked. S2.5 accepted 71 tests; promoted SHA256 90eb9703b8b97e981b93fdbc95ab9ee17a0224dd423d12b757f8d86f376dd536.\n\nARCHITECTURE: S2.5 graph is (SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))). B1/C1 are identity-preserving aliases for original A/B; B2/C2 are new agents and independently looping pairs. S3 exercises only original A\u2192B real provider handoff within pair-1 B1\u2192C1 boundary; do not flatten nested topology, claim both pairs executed live, use autonomous background task, or introduce second dispatcher. S3 should depend on S2.5 in stages.json, not merely S2.\n\nIMPLEMENT: source A typed pair output \u2192 first-class authorized pipe \u2192 S2 effect attempt durable journal with graph/input generation, correlation+activation IDs, provider realization, idempotency key, exact pipe \u2192 Looper actual provider turn via existing local controller \u2192 observed actual Codex result in a DISTINCT provider thread/session from implementing agent \u2192 validate exact correlation/generation/types \u2192 commit ONCE to B typed destination input, with trustworthy source\u2192effect\u2192provider turn\u2192return\u2192graph commit receipts. Small benign non-sensitive prompt. This must actually call a provider via Looper once, not mocks or previous recorded outputs. Do not hijack the currently running implementing Codex thread. Do not fabricate provider IDs, return evidence, or successful completion. Native Looper local API/MCP is available through localhost; inspect and use its actual schema, not a made-up wire protocol. Limit to ONE explicitly requested live provider invocation, no retries after uncertain submissions, no duplicate browser sends.\n\nSTAGE GATES: create test_live_ab.py, explicit scripts/run_live_ab.py or equivalent, make check-s3 for offline tests and validating existing evidence, make check-s3-live to initiate one bounded real turn, make package-s3 to freeze reproducible S3 source archive with fresh-extraction tests and promote to integration ONLY if real evidence is accepted. Define evidence/live_ab.json with exact observed Looper provider thread/turn, graph addresses, correlation/attempt IDs, generation, transport observation and source/result commitment receipt. Negative tests: stale generation, mismatched correlation, wrong target/type, private child access, double commit, provider unavailable and uncertain no retry, restart replay. Preserve earlier 71 tests and frozen S0/S1/S2/S2.5 digests; run checks and one explicit live call. If provider is unavailable, leave S3 OPEN and do not manufacture a positive. No S4+.\n\nCICD: remain local. Report commands, test count, stage closure, live evidence refs, hashes, file paths, remaining residuals. Keep original services stable. The isolated delivery service has already been restarted with draft overwrite policy; user expressly wants drafts discarded, so do not reintroduce a blocker for composer drafts. Final concise report via bound Looper chat destination, not a new browser thread.",
+  "authority": "authored source-anchored candidate; not native admission",
+  "source_sha256": "c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3"
+}

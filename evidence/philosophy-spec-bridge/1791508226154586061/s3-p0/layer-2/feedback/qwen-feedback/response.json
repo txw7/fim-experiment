@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"profiles\": {\n    \"s3-p0\": {\n      \"identity\": \"unresolved\",\n      \"reflexivity\": \"unresolved\",\n      \"symmetry\": \"unresolved\",\n      \"transitivity\": \"unresolved\",\n      \"modus_ponens\": \"unresolved\",\n      \"modus_tollens\": \"unresolved\",\n      \"and_introduction\": \"unresolved\",\n      \"and_elimination\": \"unresolved\",\n      \"or_introduction\": \"unresolved\",\n      \"disjunctive_syllogism\": \"unresolved\",\n      \"hypothetical_syllogism\": \"unresolved\"\n    }\n  },\n  \"symbolic\": {\n    \"atoms\": [\n      {\n        \"symbol\": \"S3_LIVE_AB\",\n        \"text\": \"IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.\",\n        \"source_quote\": \"IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.\",\n        \"kind\": \"proposition\"\n      }\n    ],\n    \"premises\": [\n      \"S3_LIVE_AB is to be implemented in an isolated SHG-mu project.\"\n    ],\n    \"conclusion\": \"unresolved\",\n    \"identities\": [],\n    \"flows\": [],\n    \"compositions\": [],\n    \"unresolved\": [\n      \"execution status\",\n      \"stage gate status\",\n      \"authorization status\"\n    ]\n  }\n}"
+      }
+    }
+  ],
+  "created": 1791516121,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 356,
+    "prompt_tokens": 2321,
+    "total_tokens": 2677,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-DnW1RbSCRVHT3nLtymDvRtVhOSNooOSr",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 2321,
+    "prompt_ms": 24265.417,
+    "prompt_per_token_ms": 10.454725118483413,
+    "prompt_per_second": 95.65053013513017,
+    "predicted_n": 356,
+    "predicted_ms": 76028.092,
+    "predicted_per_token_ms": 214.16363943661972,
+    "predicted_per_second": 4.669326700977844
+  }
+}

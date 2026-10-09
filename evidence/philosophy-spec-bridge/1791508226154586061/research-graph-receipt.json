@@ -1,0 +1,12 @@
+{
+  "graph": "/home/user0/.local/state/turn-transport/philosopher-text-structure-v1/research-graph",
+  "parent_commit": "commit:sha256:1153ea068f93b04c025e02355bba565634de32498cb05e736f88a8a1a810bf2a",
+  "commit": "commit:sha256:8a830fc548bfda5d64ad499bd88ac252df220826ee2f1a379db931595d86e4a5",
+  "source_and_checkpoint_bytes_verified": true,
+  "steps": {
+    "symbolic": 1500,
+    "probabilistic": 1500
+  },
+  "native_semantic_admission": "NOT_RUN",
+  "existing_programs_preserved": true
+}

@@ -1,0 +1,22 @@
+{
+  "requested_output_tokens": 700,
+  "format": "column-row tables; labeled probability vectors",
+  "prompt_tokens": 2708,
+  "output_tokens": 700,
+  "safety_tokens": 32,
+  "context_tokens": 4096,
+  "active_heads": [
+    "entity",
+    "predicate",
+    "proposition",
+    "not",
+    "and",
+    "or",
+    "implies",
+    "iff"
+  ],
+  "source_preserved": true,
+  "model_probability_precision": 3,
+  "native_probabilities_retained_in_observer_receipts": true,
+  "auxiliary_projection": "Original auxiliary distributions remain in student channels and evidence; teacher packet keeps primary logic/interpretation/spec dimensions"
+}

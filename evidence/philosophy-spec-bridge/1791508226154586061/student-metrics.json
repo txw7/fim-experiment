@@ -1,0 +1,58 @@
+{
+  "symbolic": {
+    "live": {
+      "conditioned": {
+        "teacher_label_agreement": 0.8461538461538461,
+        "matched": 22,
+        "heads": 26,
+        "always_absent_baseline": 0.19230769230769232,
+        "authority": "Agreement with Qwen pseudo-labels, not gold accuracy"
+      },
+      "all_features_masked": {
+        "teacher_label_agreement": 0.7692307692307693,
+        "matched": 20,
+        "heads": 26,
+        "always_absent_baseline": 0.19230769230769232,
+        "authority": "Agreement with Qwen pseudo-labels, not gold accuracy"
+      }
+    },
+    "frozen": {
+      "conditioned": {
+        "teacher_label_agreement": 0.8461538461538461,
+        "matched": 22,
+        "heads": 26,
+        "always_absent_baseline": 0.19230769230769232,
+        "authority": "Agreement with Qwen pseudo-labels, not gold accuracy"
+      },
+      "all_features_masked": {
+        "teacher_label_agreement": 0.7692307692307693,
+        "matched": 20,
+        "heads": 26,
+        "always_absent_baseline": 0.19230769230769232,
+        "authority": "Agreement with Qwen pseudo-labels, not gold accuracy"
+      }
+    }
+  },
+  "probabilistic": {
+    "live": {
+      "conditioned": {
+        "distillation_probability_mse": 0.0218930002613143,
+        "authority": "Distance to native Jev observations; not calibration against truth"
+      },
+      "all_features_masked": {
+        "distillation_probability_mse": 0.01171877354374152,
+        "authority": "Distance to native Jev observations; not calibration against truth"
+      }
+    },
+    "frozen": {
+      "conditioned": {
+        "distillation_probability_mse": 0.0218930002613143,
+        "authority": "Distance to native Jev observations; not calibration against truth"
+      },
+      "all_features_masked": {
+        "distillation_probability_mse": 0.01171877354374152,
+        "authority": "Distance to native Jev observations; not calibration against truth"
+      }
+    }
+  }
+}

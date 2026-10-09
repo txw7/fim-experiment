@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"profiles\": {\n    \"s3-p3\": {\n      \"nested\": \"unresolved\",\n      \"chain\": \"present\",\n      \"shared_premise\": \"unresolved\",\n      \"branch\": \"present\",\n      \"equivalence\": \"unresolved\",\n      \"substitution\": \"unresolved\",\n      \"missing_premise\": \"present\"\n    }\n  },\n  \"symbolic\": {\n    \"atoms\": [\n      {\"symbol\": \"A\", \"text\": \"IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable\", \"source_quote\": \"IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable\", \"kind\": \"proposition\"},\n      {\"symbol\": \"B\", \"text\": \"commit ONCE to B typed destination input\", \"source_quote\": \"commit ONCE to B typed destination input\", \"kind\": \"proposition\"},\n      {\"symbol\": \"C\", \"text\": \"Looper actual provider turn via existing local controller\", \"source_quote\": \"Looper actual provider turn via existing local controller\", \"kind\": \"proposition\"}\n    ],\n    \"premises\": [\n      \"(and A C)\",\n      \"(implies (and A C) B)\"\n    ],\n    \"conclusion\": \"unresolved\",\n    \"identities\": [],\n    \"flows\": [\n      {\"id\": \"flow-0\", \"rule\": \"and_introduction\", \"premises\": [\"A\", \"C\"], \"conclusion\": \"(and A C)\"},\n      {\"id\": \"flow-1\", \"rule\": \"modus_ponens\", \"premises\": [\"(and A C)\", \"(implies (and A C) B)\"], \"conclusion\": \"B\"}\n    ],\n    \"compositions\": [\n      {\"kind\": \"chain\", \"members\": [\"A\", \"C\", \"B\"]}\n    ],\n    \"unresolved\": [\n      \"Does A imply C?\",\n      \"Is B actually committed?\"\n    ]\n  }\n}"
+      }
+    }
+  ],
+  "created": 1791517055,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 456,
+    "prompt_tokens": 3066,
+    "total_tokens": 3522,
+    "prompt_tokens_details": {
+      "cached_tokens": 453
+    }
+  },
+  "id": "chatcmpl-1nLEsUmgUorXZAKz3OqpeHXN2b5ZQj6V",
+  "timings": {
+    "cache_n": 453,
+    "prompt_n": 2613,
+    "prompt_ms": 9019.271,
+    "prompt_per_token_ms": 3.4516919249904325,
+    "prompt_per_second": 289.71299343372647,
+    "predicted_n": 456,
+    "predicted_ms": 108764.632,
+    "predicted_per_token_ms": 239.04314725274725,
+    "predicted_per_second": 4.183345188902951
+  }
+}

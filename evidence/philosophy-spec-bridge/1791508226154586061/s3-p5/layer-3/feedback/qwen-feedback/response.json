@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"profiles\": {\n    \"s3-p5\": {\n      \"nested\": \"unresolved\",\n      \"chain\": \"unresolved\",\n      \"shared_premise\": \"unresolved\",\n      \"branch\": \"unresolved\",\n      \"equivalence\": \"unresolved\",\n      \"substitution\": \"unresolved\",\n      \"missing_premise\": \"unresolved\"\n    }\n  },\n  \"symbolic\": {\n    \"atoms\": [\n      {\"symbol\": \"A\", \"text\": \"CICD: remain local.\", \"source_quote\": \"CICD: remain local.\", \"kind\": \"proposition\"},\n      {\"symbol\": \"B\", \"text\": \"isolated_service_restarted\", \"source_quote\": \"The isolated delivery service has already been restarted with draft overwrite policy\", \"kind\": \"proposition\"},\n      {\"symbol\": \"C\", \"text\": \"user_wants_drafts_discarded\", \"source_quote\": \"user expressly wants drafts discarded\", \"kind\": \"proposition\"}\n    ],\n    \"premises\": [\"A\", \"B\", \"C\"],\n    \"conclusion\": \"unresolved\",\n    \"identities\": [],\n    \"flows\": [\n      {\"id\": \"f1\", \"rule\": \"unresolved\", \"premises\": [\"A\"], \"conclusion\": \"unresolved\"},\n      {\"id\": \"f2\", \"rule\": \"unresolved\", \"premises\": [\"B\"], \"conclusion\": \"unresolved\"}\n    ],\n    \"compositions\": [\n      {\"kind\": \"nested\", \"members\": [\"A\", \"report_commands\"]},\n      {\"kind\": \"nested\", \"members\": [\"B\", \"C\"]}\n    ],\n    \"unresolved\": [\"report_commands\", \"final_concise_report_via_looper\"]\n  }\n}"
+      }
+    }
+  ],
+  "created": 1791517152,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 405,
+    "prompt_tokens": 2304,
+    "total_tokens": 2709,
+    "prompt_tokens_details": {
+      "cached_tokens": 453
+    }
+  },
+  "id": "chatcmpl-truIzFGlh13C84sfqvOPLmly8yFra5fw",
+  "timings": {
+    "cache_n": 453,
+    "prompt_n": 1851,
+    "prompt_ms": 6875.194,
+    "prompt_per_token_ms": 3.714313344138304,
+    "prompt_per_second": 269.2287664900801,
+    "predicted_n": 405,
+    "predicted_ms": 90134.606,
+    "predicted_per_token_ms": 223.1054603960396,
+    "predicted_per_second": 4.482185233050222
+  }
+}

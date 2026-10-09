@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"profiles\": {\n    \"s3-p2\": {\n      \"entity\": \"absent\",\n      \"predicate\": \"absent\",\n      \"proposition\": \"absent\",\n      \"not\": \"absent\",\n      \"and\": \"absent\",\n      \"or\": \"absent\",\n      \"implies\": \"absent\",\n      \"iff\": \"absent\"\n    }\n  },\n  \"symbolic\": {\n    \"atoms\": [\n      {\n        \"symbol\": \"S3\",\n        \"text\": \"stage:S3\",\n        \"source_quote\": \"stage:S3\",\n        \"kind\": \"entity\"\n      },\n      {\n        \"symbol\": \"S2_5\",\n        \"text\": \"stage:S2.5\",\n        \"source_quote\": \"stage:S2.5\",\n        \"kind\": \"entity\"\n      },\n      {\n        \"symbol\": \"B1\",\n        \"text\": \"identity:B1\",\n        \"source_quote\": \"identity:B1\",\n        \"kind\": \"entity\"\n      }\n    ],\n    \"premises\": [\n      \"(implies S3 (depends-on S3 S2_5))\",\n      \"(implies S3 (not (and B1 C1)))\"\n    ],\n    \"conclusion\": \"unresolved\",\n    \"identities\": [\n      {\n        \"left\": \"B1\",\n        \"right\": \"A\",\n        \"source_quote\": \"B1 aliases A\"\n      }\n    ],\n    \"flows\": [\n      {\n        \"id\": \"flow-1\",\n        \"rule\": \"unresolved\",\n        \"premises\": [\n          \"(implies S3 (depends-on S3 S2_5))\"\n        ],\n        \"conclusion\": \"unresolved\"\n      }\n    ],\n    \"compositions\": [\n      {\n        \"kind\": \"nested\",\n        \"members\": [\n          \"S3\",\n          \"S2_5\"\n        ]\n      }\n    ],\n    \"unresolved\": [\n      \"S3 execution status\",\n      \"S2.5 execution status\",\n      \"B1/C1 pair execution status\"\n    ]\n  }\n}"
+      }
+    }
+  ],
+  "created": 1791509627,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 521,
+    "prompt_tokens": 3094,
+    "total_tokens": 3615,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-nGWLqOi1CUD55MGcEgpYZEisw3Ijv4wd",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 3094,
+    "prompt_ms": 26634.342,
+    "prompt_per_token_ms": 8.608384615384615,
+    "prompt_per_second": 116.16581329473053,
+    "predicted_n": 521,
+    "predicted_ms": 118913.232,
+    "predicted_per_token_ms": 228.67929230769232,
+    "predicted_per_second": 4.372936394496451
+  }
+}

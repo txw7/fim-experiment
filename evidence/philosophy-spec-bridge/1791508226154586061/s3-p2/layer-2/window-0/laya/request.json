@@ -1,0 +1,165 @@
+{
+  "model": "english",
+  "state": "SOURCE DATA (classify expressed structure, not world truth):\nARCHITECTURE: S2.5 graph is (SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))). B1/C1 are identity-preserving aliases for original A/B; B2/C2 are new agents and independently looping pairs. S3 exercises only original A→B real provider handoff within pair-1 B1→C1 boundary; do not flatten nested topology, claim both pairs executed live, use autonomous background task, or introduce second dispatcher. S3 should depend on S2.5 in stages.json, not merely S2.",
+  "questions": {
+    "logic:identity": {
+      "type": "choice",
+      "instructions": "An explicit identity/equality claim; a predication using is alone does not establish identity.",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "logic:reflexivity": {
+      "type": "choice",
+      "instructions": "An identity or relation explicitly applied from an object to itself.",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "logic:symmetry": {
+      "type": "choice",
+      "instructions": "Both directions of the same identity/relation are represented.",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "logic:transitivity": {
+      "type": "choice",
+      "instructions": "A-to-B and B-to-C are composed to reach A-to-C.",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "logic:modus_ponens": {
+      "type": "choice",
+      "instructions": "Performed pattern: P→Q and P supplied; therefore Q.",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "logic:modus_tollens": {
+      "type": "choice",
+      "instructions": "Performed pattern: P→Q and NOT Q supplied; therefore NOT P.",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "logic:and_introduction": {
+      "type": "choice",
+      "instructions": "Performed pattern: P and Q supplied separately; therefore P AND Q.",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "logic:and_elimination": {
+      "type": "choice",
+      "instructions": "Performed pattern: P AND Q supplied; therefore P or therefore Q.",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "logic:or_introduction": {
+      "type": "choice",
+      "instructions": "A supplied proposition produces a disjunction containing it.",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "logic:disjunctive_syllogism": {
+      "type": "choice",
+      "instructions": "Performed pattern: P OR Q and NOT P supplied; therefore Q (or exchanged).",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "logic:hypothetical_syllogism": {
+      "type": "choice",
+      "instructions": "Performed pattern: P→Q and Q→R supplied; therefore P→R.",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "axis:argument_direction": {
+      "type": "choice",
+      "instructions": "Assess the direction of the main ordered relation, using the candidate argument order when available.",
+      "criteria": {
+        "forward": "Only A-to-B is supported.",
+        "reverse": "Only B-to-A is supported.",
+        "both": "Both directions are independently supported.",
+        "unresolved": "No ordered candidate or uncertain binding."
+      }
+    },
+    "axis:premise_status": {
+      "type": "choice",
+      "instructions": "Assess premises of the proposed inference, distinguishing assertion from supposition.",
+      "criteria": {
+        "asserted": "Required premises are asserted.",
+        "supposed": "Required premises are only supposed.",
+        "mixed": "Both asserted and supposed premises.",
+        "unresolved": "No inference or uncertain premise status."
+      }
+    },
+    "axis:premise_sufficiency": {
+      "type": "choice",
+      "instructions": "Assess whether the stated inference has its required premises. Do not invent bridging claims.",
+      "criteria": {
+        "complete": "All required premises supplied.",
+        "missing": "At least one required premise absent.",
+        "not_applicable": "No performed inference.",
+        "unresolved": "Cannot establish the required premises."
+      }
+    },
+    "axis:rule_pattern": {
+      "type": "choice",
+      "instructions": "Assess whether the candidate named rule matches its actual premise/conclusion pattern; entailment alone does not establish modus ponens.",
+      "criteria": {
+        "matches": "The named standard rule pattern matches.",
+        "mismatches": "The named pattern does not match.",
+        "not_applicable": "No named application.",
+        "unresolved": "Pattern or binding is uncertain."
+      }
+    },
+    "axis:identity_basis": {
+      "type": "choice",
+      "instructions": "Assess support for the proposed identity; is alone is insufficient.",
+      "criteria": {
+        "explicit": "Source explicitly equates the referents.",
+        "inferred": "Identity requires an interpretation or inference.",
+        "unsupported": "Proposed identity lacks source support.",
+        "not_applicable": "No identity candidate."
+      }
+    },
+    "axis:reply_role": {
+      "type": "choice",
+      "instructions": "Classify the reply relative to its preceding question or claim, retaining dialogue context.",
+      "criteria": {
+        "assent": "Reply endorses the prior proposition.",
+        "denial": "Reply rejects it.",
+        "qualification": "Reply qualifies or restricts it.",
+        "unresolved": "No reply or uncertain antecedent."
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"profiles\":{\"s3-p5\":{\"entity\":\"present\",\"predicate\":\"present\",\"proposition\":\"present\",\"not\":\"absent\",\"and\":\"absent\",\"or\":\"absent\",\"implies\":\"absent\",\"iff\":\"absent\"}},\"symbolic\":{\"atoms\":[{\"symbol\":\"CICD_remain_local\",\"text\":\"CICD: remain local.\",\"source_quote\":\"CICD: remain local.\",\"kind\":\"proposition\"},{\"symbol\":\"report_commands\",\"text\":\"Report commands, test count, stage closure, live evidence refs, hashes, file paths, remaining 残余\",\"source_quote\":\"Report commands, test count, stage closure, live evidence refs, hashes, file paths, remaining 残余\",\"kind\":\"proposition\"},{\"symbol\":\"isolated_service_restarted\",\"text\":\"The isolated delivery service has already been restarted with draft overwrite policy\",\"source_quote\":\"The isolated delivery service has already been restarted with draft overwrite policy\",\"kind\":\"proposition\"}],\"premises\":[\"CICD_remain_local\",\"isolated_service_restarted\",\"report_commands\"],\"conclusion\":\"unresolved\",\"identities\":[],\"flows\":[{\"id\":\"f1\",\"rule\":\"unresolved\",\"premises\":[\"CICD_remain_local\"],\"conclusion\":\"unresolved\"},{\"id\":\"f2\",\"rule\":\"unresolved\",\"premises\":[\"isolated_service_restarted\"],\"conclusion\":\"unresolved\"}],\"compositions\":[{\"kind\":\"nested\",\"members\":[\"CICD_remain_local\",\"report_commands\"]},{\"kind\":\"nested\",\"members\":[\"isolated_service_restarted\",\"user_wants_drafts_discarded\"]}],\"unresolved\":[\"user_wants_drafts_discarded\",\"final_concise_report_via_looper\"]}}"
+      }
+    }
+  ],
+  "created": 1791510298,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 333,
+    "prompt_tokens": 3198,
+    "total_tokens": 3531,
+    "prompt_tokens_details": {
+      "cached_tokens": 505
+    }
+  },
+  "id": "chatcmpl-XvqDSzk56CVdUNGyY2zuYbuGaK2vV8Yu",
+  "timings": {
+    "cache_n": 505,
+    "prompt_n": 2693,
+    "prompt_ms": 8194.702,
+    "prompt_per_token_ms": 3.042963980690679,
+    "prompt_per_second": 328.6269592231664,
+    "predicted_n": 333,
+    "predicted_ms": 81608.814,
+    "predicted_per_token_ms": 245.80968072289156,
+    "predicted_per_second": 4.068188026847198
+  }
+}

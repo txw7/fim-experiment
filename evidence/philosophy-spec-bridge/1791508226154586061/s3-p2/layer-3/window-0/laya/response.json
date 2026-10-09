@@ -1,0 +1,208 @@
+{
+  "model": "laya-rl-agent",
+  "answers": {
+    "logic:nested": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.8529,
+        "absent": 0.0641,
+        "unresolved": 0.083
+      },
+      "confidence": 0.5281,
+      "answer_confidence": 0.8529,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:chain": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.7025,
+        "absent": 0.1483,
+        "unresolved": 0.1492
+      },
+      "confidence": 0.2582,
+      "answer_confidence": 0.7025,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:shared_premise": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.8438,
+        "absent": 0.0669,
+        "unresolved": 0.0893
+      },
+      "confidence": 0.5085,
+      "answer_confidence": 0.8438,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:branch": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.8418,
+        "absent": 0.068,
+        "unresolved": 0.0903
+      },
+      "confidence": 0.5041,
+      "answer_confidence": 0.8418,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:equivalence": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.7527,
+        "absent": 0.1231,
+        "unresolved": 0.1242
+      },
+      "confidence": 0.3349,
+      "answer_confidence": 0.7527,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:substitution": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.7985,
+        "absent": 0.0932,
+        "unresolved": 0.1083
+      },
+      "confidence": 0.416,
+      "answer_confidence": 0.7985,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:missing_premise": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.85,
+        "absent": 0.0651,
+        "unresolved": 0.0849
+      },
+      "confidence": 0.5218,
+      "answer_confidence": 0.85,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:composition_topology": {
+      "type": "choice",
+      "choice": "none_or_unresolved",
+      "probabilities": {
+        "chain": 0.2205,
+        "branch": 0.2551,
+        "shared": 0.2542,
+        "none_or_unresolved": 0.2702
+      },
+      "confidence": 0.0019,
+      "answer_confidence": 0.2702,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:reference_alignment": {
+      "type": "choice",
+      "choice": "aligned",
+      "probabilities": {
+        "aligned": 0.4102,
+        "shifted": 0.2208,
+        "mixed": 0.1511,
+        "unresolved": 0.2179
+      },
+      "confidence": 0.0502,
+      "answer_confidence": 0.4102,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:composition_support": {
+      "type": "choice",
+      "choice": "explicit",
+      "probabilities": {
+        "explicit": 0.3567,
+        "licensed": 0.3543,
+        "invented": 0.1866,
+        "unresolved": 0.1025
+      },
+      "confidence": 0.0752,
+      "answer_confidence": 0.3567,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:equivalence_strength": {
+      "type": "choice",
+      "choice": "biconditional",
+      "probabilities": {
+        "biconditional": 0.5396,
+        "one_direction": 0.2083,
+        "similarity": 0.0943,
+        "none_or_unresolved": 0.1578
+      },
+      "confidence": 0.1534,
+      "answer_confidence": 0.5396,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:context_dependence": {
+      "type": "choice",
+      "choice": "pair",
+      "probabilities": {
+        "unit": 0.3062,
+        "pair": 0.3587,
+        "parent": 0.1338,
+        "unresolved": 0.2013
+      },
+      "confidence": 0.0464,
+      "answer_confidence": 0.3587,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:assumption_sensitivity": {
+      "type": "choice",
+      "choice": "independent",
+      "probabilities": {
+        "independent": 0.5023,
+        "dependent": 0.2519,
+        "not_applicable": 0.1266,
+        "unresolved": 0.1192
+      },
+      "confidence": 0.1283,
+      "answer_confidence": 0.5023,
+      "action": {
+        "act_probability": 1.0
+      }
+    }
+  },
+  "usage": {
+    "input_tokens": 2656,
+    "output_tokens": 0,
+    "state_tokens": 150,
+    "state_tokens_dropped": 0,
+    "truncated": false,
+    "truncated_questions": []
+  },
+  "routing": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "explicit model='english'",
+    "detection": null,
+    "workflow": null
+  }
+}
