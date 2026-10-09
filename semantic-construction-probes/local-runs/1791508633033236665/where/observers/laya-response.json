@@ -1,0 +1,34 @@
+{
+  "model": "laya-rl-agent",
+  "answers": {
+    "fit": {
+      "type": "choice",
+      "choice": "supported",
+      "probabilities": {
+        "supported": 0.4627,
+        "unsupported": 0.2893,
+        "unresolved": 0.248
+      },
+      "confidence": 0.034,
+      "answer_confidence": 0.4627,
+      "action": {
+        "act_probability": 1.0
+      }
+    }
+  },
+  "usage": {
+    "input_tokens": 201,
+    "output_tokens": 0,
+    "state_tokens": 161,
+    "state_tokens_dropped": 0,
+    "truncated": false,
+    "truncated_questions": []
+  },
+  "routing": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "explicit model='english'",
+    "detection": null,
+    "workflow": null
+  }
+}

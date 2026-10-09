@@ -1,0 +1,233 @@
+{
+  "feedback-0": {
+    "status": "REJECTED",
+    "errors": [
+      "dangling interior t2",
+      "non-network interior t2",
+      "dangling interior t4",
+      "non-network interior t4",
+      "non-network interior t6",
+      "non-network interior t8",
+      "non-network interior t9",
+      "non-network interior t12",
+      "non-network interior t15",
+      "non-network interior t16",
+      "dangling relation operand r1",
+      "dangling relation operand r4",
+      "dangling relation operand r5",
+      "containment cycle"
+    ],
+    "obligations": [
+      {
+        "subject": "t4",
+        "requirement": "operator constitution",
+        "claimed": "temporal-modifier",
+        "hypothesized_type": "future"
+      },
+      {
+        "subject": "t9",
+        "requirement": "operator constitution",
+        "claimed": "verb-head",
+        "hypothesized_type": "possess"
+      },
+      {
+        "subject": "t16",
+        "requirement": "operator constitution",
+        "claimed": "verb-head",
+        "hypothesized_type": "limit"
+      },
+      {
+        "subject": "r1",
+        "requirement": "scope constitution",
+        "claimed": "conditional-clause"
+      },
+      {
+        "subject": "r2",
+        "requirement": "binding constitution",
+        "claimed": "gap-filling"
+      },
+      {
+        "subject": "r3",
+        "requirement": "attachment constitution",
+        "claimed": "adverbial-modification"
+      },
+      {
+        "subject": "r4",
+        "requirement": "scope constitution",
+        "claimed": "quantifier-domain"
+      },
+      {
+        "subject": "r5",
+        "requirement": "attachment constitution",
+        "claimed": "comparative-equality"
+      }
+    ],
+    "backward_goals": [
+      {
+        "parent": "r2",
+        "child": "t8",
+        "role": "gap",
+        "requires": "establish typed interface and binding locality",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r2",
+        "child": "t2",
+        "role": "filler",
+        "requires": "establish typed interface and binding locality",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r3",
+        "child": "t4",
+        "role": "head",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r3",
+        "child": "t6",
+        "role": "modifier",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r5",
+        "child": "t13",
+        "role": "standard",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r5",
+        "child": "t16",
+        "role": "comparand",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      }
+    ],
+    "semantic_admission": "NOT_RUN"
+  },
+  "feedback-1": {
+    "status": "REJECTED",
+    "errors": [
+      "dangling interior t2",
+      "non-network interior t2",
+      "non-network interior t6",
+      "non-network interior t8",
+      "non-network interior t12",
+      "non-network interior t15",
+      "non-network interior t16",
+      "dangling interior t7",
+      "non-network interior t7",
+      "dangling relation operand r1",
+      "dangling relation operand r2",
+      "dangling relation operand r3",
+      "dangling relation operand r4",
+      "containment cycle"
+    ],
+    "obligations": [
+      {
+        "subject": "t16",
+        "requirement": "operator constitution",
+        "claimed": "verb-head",
+        "hypothesized_type": "limit"
+      },
+      {
+        "subject": "t7",
+        "requirement": "operator constitution",
+        "claimed": "clause-intro",
+        "hypothesized_type": "conditional"
+      },
+      {
+        "subject": "r1",
+        "requirement": "attachment constitution",
+        "claimed": "main-predicate"
+      },
+      {
+        "subject": "r2",
+        "requirement": "attachment constitution",
+        "claimed": "object-argument"
+      },
+      {
+        "subject": "r3",
+        "requirement": "scope constitution",
+        "claimed": "degree-modification"
+      },
+      {
+        "subject": "r4",
+        "requirement": "attachment constitution",
+        "claimed": "comparative-standard"
+      },
+      {
+        "subject": "r5",
+        "requirement": "attachment constitution",
+        "claimed": "limitation-source"
+      },
+      {
+        "subject": "r6",
+        "requirement": "scope constitution",
+        "claimed": "conditional-restriction"
+      }
+    ],
+    "backward_goals": [
+      {
+        "parent": "r1",
+        "child": "t2",
+        "role": "subject",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r1",
+        "child": "t9",
+        "role": "verb",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r2",
+        "child": "t9",
+        "role": "verb",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r2",
+        "child": "t10",
+        "role": "object",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r4",
+        "child": "t13",
+        "role": "standard",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r4",
+        "child": "r3",
+        "role": "comparand",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r5",
+        "child": "t16",
+        "role": "source",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r5",
+        "child": "r4",
+        "role": "target",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      }
+    ],
+    "semantic_admission": "NOT_RUN"
+  }
+}

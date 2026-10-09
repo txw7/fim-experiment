@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"candidates\":[{\"id\":\"n0\",\"reading\":\"he\",\"objects\":[{\"id\":\"n0\",\"kind\":\"operator\",\"type\":\"Subject\",\"anchors\":[\"t4\"],\"members\":[\"n0\"],\"license\":\"He refers to the speaker or a specific agent in the discourse context.\"},{\"id\":\"n1\",\"kind\":\"operator\",\"type\":\"Predicate\",\"anchors\":[\"t5\",\"t6\"],\"members\":[\"n1\"],\"license\":\"'must mean' functions as a modal assertion of implication.\"}],\"relations\":[{\"id\":\"r0\",\"family\":\"argument\",\"constitution\":\"n0\",\"ends\":[{\"role\":\"agent\",\"target\":\"n0\"},{\"role\":\"predicate\",\"target\":\"n1\"}]},{\"id\":\"r1\",\"family\":\"argument\",\"constitution\":\"n1\",\"ends\":[{\"role\":\"complement\",\"target\":\"n2\"}]}]\n}\n],\"unresolved\":[\"The antecedent of 'he' is not explicitly provided in the text snippet.\",\"The referent of 'that person' in the justification clause is linked to 'a person' but the semantic '\"\n]}"
+      }
+    }
+  ],
+  "created": 1791507745,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 233,
+    "prompt_tokens": 941,
+    "total_tokens": 1174,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-B01QJsUlPd4D3aIUwMJmhQUz9Cn1pUeX",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 941,
+    "prompt_ms": 3104.18,
+    "prompt_per_token_ms": 3.298809776833156,
+    "prompt_per_second": 303.13963752102006,
+    "predicted_n": 233,
+    "predicted_ms": 19350.646,
+    "predicted_per_token_ms": 83.40795689655172,
+    "predicted_per_second": 11.989263820959776
+  }
+}

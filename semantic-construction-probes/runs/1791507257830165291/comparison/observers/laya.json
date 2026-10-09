@@ -1,0 +1,6 @@
+{
+  "status": "FAILED",
+  "error": "HTTP Error 422: Unprocessable Entity",
+  "latency_seconds": 0.012,
+  "admission": "NOT_AUTHORIZED"
+}

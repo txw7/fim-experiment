@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"candidates\": [\n    {\n      \"id\": \"hypothesis_1\",\n      \"reading\": \"conditional_equality\",\n      \"objects\": [\n        {\"id\": \"t2\", \"kind\": \"entity\", \"type\": \"discussion\", \"anchors\": [\"t2\"],\"members\": [\"t3\"],\"license\": \"subject\"},\n        {\"id\": \"t6\", \"kind\": \"entity\", \"type\": \"state\", \"anchors\": [\"t6\"],\"members\": [\"t6\"],\"license\": \"predicate\"},\n        {\"id\": \"t8\", \"kind\": \"entity\", \"type\": \"discourse\", \"anchors\": [\"t8\"],\"members\": [\"t8\"],\"license\": \"gap_filler\"},\n        {\"id\": \"t12\", \"kind\": \"entity\", \"type\": \"quality\", \"anchors\": [\"t12\"],\"members\": [\"t12\"],\"license\": \"object\"},\n        {\"id\": \"t15\", \"kind\": \"entity\", \"type\": \"topic\", \"anchors\": [\"t15\"],\"members\": [\"t15\"],\"license\": \"subject_matter\"},\n        {\"id\": \"r1\", \"kind\": \"operator\", \"type\": \"be\", \"anchors\": [\"t5\"],\"members\": [\"t2\", \"t6\"],\"license\": \"copula\"},\n        {\"id\": \"r2\", \"kind\": \"operator\", \"type\": \"have\", \"anchors\": [\"t9\"],\"members\": [\"t8\", \"t12\"],\"license\": \"possession\"},\n        {\"id\": \"r3\", \"kind\": \"operator\", \"type\": \"admit\", \"anchors\": [\"t16\"],\"members\": [\"t15\", \"t12\"],\"license\": \"capacity\"},\n        {\"id\": \"r4\", \"kind\": \"operator\", \"type\": \"if\", \"anchors\": [\"t7\"],\"members\": [\"r2\", \"r1\"],\"license\": \"conditional\"},\n        {\"id\": \"r5\", \"kind\": \"operator\", \"type\": \"as\", \"anchors\": [\"t10\"],\"members\": [\"t12\", \"t12\"],\"license\": \"comparison\"},\n        {\"id\": \"r6\", \"kind\": \"operator\", \"type\": \"as\", \"anchors\": [\"t13\"],\"members\": [\"t12\", \"t15\"],\"license\": \"comparison\"}\n      ],\n      \"relations\": [\n        {\"id\": \"r1\", \"family\": \"inference\", \"constitution\": \"equivalence\", \"ends\": [{\"role\": \"subject\", \"target\": \"t2\"}, {\"role\": \"predicate\", \"target\": \"t6\"}]},\n        {\"id\": \"r2\", \"family\": \"inference\", \"constitution\": \"possession\", \"ends\": [{\"role\": \"agent\", \"target\": \"t8\"}, {\"role\": \"theme\", \"target\": \"t12\"}]},\n        {\"id\": \"r3\", \"family\": \"inference\", \"constitution\": \"capacity\", \"ends\": [{\"role\": \"agent\", \"target\": \"t15\"}, {\"role\": \"theme\", \"target\": \"t12\"}]},\n        {\"id\": \"r4\", \"family\": \"inference\", \"constitution\": \"condition\", \"ends\": [{\"role\": \"antecedent\", \"target\": \"r2\"}, {\"role\": \"consequent\", \"target\": \"r1\"}]},\n        {\"id\": \"r5\", \"family\": \"inference\", \"constitution\": \"degree\", \"ends\": [{\"role\": \"measure\", \"target\": \"t12\"}, {\"role\": \"standard\", \"target\": \"t12\"}]},\n        {\"id\": \"r6\", \"family\": \"inference\", \"constitution\": \"limit\", \"ends\": [{\"role\": \"measure\", \"target\": \"t12\"}, {\"role\": \"standard\", \"target\": \"t15\"}]}\n      ]\n    },\n    {\n      \"id\": \"hypothesis_2\",\n      \"reading\": \"threshold_sufficiency\",\n      \"objects\": [\n        {\"id\": \"t2\", \"kind\": \"entity\", \"type\": \"discussion\", \"anchors\": [\"t2\"],\"members\": [\"t3\"],\"license\": \"subject\"},\n        {\"id\": \"t6\", \"kind\": \"entity\", \"type\": \"state\", \"anchors\": [\"t6\"],\"members\": [\"t6\"],\"license\": \"predicate\"},\n        {\"id\": \"t8\", \"kind\": \"entity\", \"type\": \"discourse\", \"anchors\": [\"t8\"],\"members\": [\"t8\"],\"license\": \"gap_filler\"},\n        {\"id\": \"t12\", \"kind\": \"entity\", \"type\": \"quality\", \"anchors\": [\"t12\"],\"members\": [\"t12\"],\"license\": \"object\"},\n        {\"id\": \"t15\", \"kind\": \"entity\", \"type\": \"topic\", \"anchors\": [\"t15\"],\"members\": [\"t15\"],\"license\": \"subject_matter\"},\n        {\"id\": \"r1\", \"kind\": \"operator\", \"type\": \"be\", \"anchors\": [\"t5\"],\"members\": [\"t2\", \"t6\"],\"license\": \"copula\"},\n        {\"id\": \"r2\", \"kind\": \"operator\", \"type\": \"have\", \"anchors\": [\"t9\"],\"members\": [\"t8\", \"t12\"],\"license\": \"possession\"},\n        {\"id\": \"r3\", \"kind\": \"operator\", \"type\": \"admit\", \"anchors\": [\"t16\"],\"members\": [\"t15\", \"t12\"],\"license\": \"capacity\"},\n        {\"id\": \"r4\", \"kind\": \"operator\", \"type\": \"if\", \"anchors\": [\"t7\"],\"members\": [\"r2\", \"r1\"],\"license\": \"conditional\"},\n        {\"id\": \"r5\", \"kind\": \"operator\", \"type\": \"as\", \"anchors\": [\"t10\"],\"members\": [\"t12\", \"t12\"],\"license\": \"comparison\"},\n        {\"id\": \"r7\", \"kind\": \"operator\", \"type\": \"threshold\", \"anchors\": [\"t11\"],\"members\": [\"t12\", \"t15\"],\"license\": \"limitation\"}\n      ],\n      \"relations\": [\n        {\"id\": \"r1\", \"family\": \"inference\", \"constitution\": \"equivalence\", \"ends\": [{\"role\": \"subject\", \"target\": \"t2\"}, {\"role\": \"predicate\", \"target\": \"t6\"}]},\n        {\"id\": \"r2\", \"family\": \"inference\", \"constitution\": \"possession\", \"ends\": [{\"role\": \"agent\", \"target\": \"t8\"}, {\"role\": \"theme\", \"target\": \"t12\"}]},\n        {\"id\": \"r3\", \"family\": \"inference\", \"constitution\": \"capacity\", \"ends\": [{\"role\": \"agent\", \"target\": \"t15\"}, {\"role\": \"theme\", \"target\": \"t12\"}]},\n        {\"id\": \"r4\", \"family\": \"inference\", \"constitution\": \"condition\", \"ends\": [{\"role\": \"antecedent\", \"target\": \"r2\"}, {\"role\": \"consequent\", \"target\": \"r1\"}]},\n        {\"id\": \"r5\", \"family\": \"inference\", \"constitution\": \"degree\", \"ends\": [{\"role\": \"measure\", \"target\": \"t12\"}, {\"role\": \"standard\", \"target\": \"t12\"}]},\n        {\"id\": \"r7\", \"family\": \"inference\", \"constitution\": \"limitation\", \"ends\": [{\"role\": \"quantity\", \"target\": \"t11\"}, {\"role\": \"bound\", \"target\": \"t15\"}]}\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"The semantic role of 't11' (much) is ambiguous between a degree modifier for the"
+      }
+    }
+  ],
+  "created": 1791507046,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 1900,
+    "prompt_tokens": 645,
+    "total_tokens": 2545,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-DCchzQG2maokeERQmvs9HEvBo1sR6I8y",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 645,
+    "prompt_ms": 2949.939,
+    "prompt_per_token_ms": 4.5735488372093025,
+    "prompt_per_second": 218.6485890047218,
+    "predicted_n": 1900,
+    "predicted_ms": 105712.343,
+    "predicted_per_token_ms": 55.66737388098999,
+    "predicted_per_second": 17.963843635553513
+  }
+}

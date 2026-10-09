@@ -1,0 +1,24 @@
+{
+  "text": "when he was",
+  "occurrences": [
+    {
+      "id": "t0",
+      "text": "when",
+      "begin": 0,
+      "end": 4
+    },
+    {
+      "id": "t1",
+      "text": "he",
+      "begin": 5,
+      "end": 7
+    },
+    {
+      "id": "t2",
+      "text": "was",
+      "begin": 8,
+      "end": 11
+    }
+  ],
+  "sha256": "c071ed213abc7c27bc22c65fc3fbcb8ce09ef43cd1abdfefa9537ebbd493f0ca"
+}

@@ -1,0 +1,18 @@
+{
+  "model": "jev-1.13.0",
+  "answers": {
+    "network": {
+      "type": "choice",
+      "choice": "initial-0",
+      "confidence": 0.48,
+      "probabilities": {
+        "initial-0": 0.74,
+        "unresolved": 0.26
+      }
+    }
+  },
+  "usage": {
+    "input_tokens": 1913,
+    "output_tokens": 38
+  }
+}

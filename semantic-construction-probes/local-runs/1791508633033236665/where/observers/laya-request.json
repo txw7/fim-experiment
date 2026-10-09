@@ -1,0 +1,59 @@
+{
+  "model": "english",
+  "state": {
+    "source": "where they were",
+    "relation": {
+      "id": "r0",
+      "family": "argument",
+      "constitution": "clause",
+      "ends": [
+        {
+          "role": "head",
+          "target": "n0"
+        },
+        {
+          "role": "argument",
+          "target": "n1"
+        },
+        {
+          "role": "argument",
+          "target": "n2"
+        }
+      ]
+    },
+    "operands": [
+      {
+        "id": "n0",
+        "type": "lexical-occurrence",
+        "anchors": [
+          "t0"
+        ]
+      },
+      {
+        "id": "n1",
+        "type": "lexical-occurrence",
+        "anchors": [
+          "t1"
+        ]
+      },
+      {
+        "id": "n2",
+        "type": "lexical-occurrence",
+        "anchors": [
+          "t2"
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "fit": {
+      "type": "choice",
+      "instructions": "Is this exact proposed relation licensed by the source?",
+      "criteria": {
+        "supported": "Source supports roles.",
+        "unsupported": "Roles conflict with source.",
+        "unresolved": "Insufficient evidence."
+      }
+    }
+  }
+}

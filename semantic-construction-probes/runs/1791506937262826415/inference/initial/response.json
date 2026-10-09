@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"candidates\": [\n    {\n      \"id\": \"Hypothesis_A\",\n      \"reading\": \"Causal-Entailment with Explicit Subject Binding\",\n      \"objects\": [\n        {\"id\": \"t4\", \"kind\": \"operator\", \"type\": \"modal_verb\", \"anchors\": [\"t4\", \"t5\", \"t6\"],\"members\": [\"t4\", \"t5\", \"t6\"],\"license\": \"explicit_subject_binding\"},\n        {\"id\": \"t8\", \"kind\": \"operator\", \"type\": \"modal_verb\", \"anchors\": [\"t8\", \"t9\"],\"members\": [\"t8\", \"t9\"],\"license\": \"implicit_subject_binding\"},\n        {\"id\": \"t12\", \"kind\": \"operator\", \"type\": \"verb\", \"anchors\": [\"t12\"],\"members\": [\"t12\"],\"license\": \"transitive_action\"},\n        {\"id\": \"t14\", \"kind\": \"entity\", \"type\": \"person\", \"anchors\": [\"t14\"],\"members\": [\"t14\"],\"license\": \"indefinite_reference\"},\n        {\"id\": \"t15\", \"kind\": \"entity\", \"type\": \"state\", \"anchors\": [\"t15\"],\"members\": [\"t15\"],\"license\": \"adjectival_predicate\"},\n        {\"id\": \"t21\", \"kind\": \"entity\", \"type\": \"person\", \"anchors\": [\"t21\"],\"members\": [\"t21\"],\"license\": \"explicit_subject\"},\n        {\"id\": \"t24\", \"kind\": \"entity\", \"type\": \"person\", \"anchors\": [\"t24\"],\"members\": [\"t24\"],\"license\": \"definite_reference\"},\n        {\"id\": \"t26\", \"kind\": \"operator\", \"type\": \"verb\", \"anchors\": [\"t26\"],\"members\": [\"t26\"],\"license\": \"state_of_being\"},\n        {\"id\": \"t28\", \"kind\": \"entity\", \"type\": \"abstract_set\", \"anchors\": [\"t28\", \"t31\"],\"members\": [\"t28\", \"t31\"],\"license\": \"conjunctive_collection\"},\n        {\"id\": \"t17\", \"kind\": \"operator\", \"type\": \"conjunction\", \"anchors\": [\"t17\"],\"members\": [\"t17\"],\"license\": \"causal_marker\"}\n      ],\n      \"relations\": [\n        {\"id\": \"R1\", \"family\": \"argument\", \"constitution\": \"t4-t5-t6 governs t8-t9-t12\", \"ends\": [{\"role\": \"subject\", \"target\": \"t4\"}, {\"role\": \"predicate\", \"target\": \"t12\"}]},\n        {\"id\": \"R2\", \"family\": \"argument\", \"constitution\": \"t12 takes t14 as object\", \"ends\": [{\"role\": \"object\", \"target\": \"t14\"}]},\n        {\"id\": \"R3\", \"family\": \"argument\", \"constitution\": \"t15 modifies t14\", \"ends\": [{\"role\": \"modifier\", \"target\": \"t14\"}]},\n        {\"id\": \"R4\", \"family\": \"binding\", \"constitution\": \"t21 binds to t24 via wh-gap resolution\", \"ends\": [{\"role\": \"anaphor\", \"target\": \"t21\"}, {\"role\": \"antecedent\", \"target\": \"t24\"}]},\n        {\"id\": \"R5\", \"family\": \"argument\", \"constitution\": \"t26 takes t21 as subject\", \"ends\": [{\"role\": \"subject\", \"target\": \"t21\"}]},\n        {\"id\": \"R6\", \"family\": \"argument\", \"constitution\": \"t28 is complement of t26\", \"ends\": [{\"role\": \"complement\", \"target\": \"t28\"}]},\n        {\"id\": \"R7\", \"family\": \"scope\", \"constitution\": \"t17 scopes over the causal relation between R1 and R5\", \"ends\": [{\"role\": \"scope_head\", \"target\": \"t17\"}, {\"role\": \"scope_body\", \"target\": \"R5\"}]},\n        {\"id\": \"R8\", \"family\": \"attachment\", \"constitution\": \"t28 attaches to t29 and t31\", \"ends\": [{\"role\": \"head\", \"target\": \"t28\"}, {\"role\": \"member\", \"target\": \"t29\"}, {\"role\": \"member\", \"target\": \"t31\"}]},\n        {\"id\": \"R9\", \"family\": \"inference\", \"constitution\": \"R5 entails R1 outcome\", \"ends\": [{\"role\": \"premise\", \"target\": \"R5\"}, {\"role\": \"conclusion\", \"target\": \"R1\"}]}\n      ]\n    },\n    {\n      \"id\": \"Hypothesis_B\",\n      \"reading\": \"Opaque-Context with Region Contraction\",\n      \"objects\": [\n        {\"id\": \"t4\", \"kind\": \"operator\", \"type\": \"modal_verb\", \"anchors\": [\"t4\", \"t5\", \"t6\"],\"members\": [\"t4\", \"t5\", \"t6\"],\"license\": \"opaque_context_formation\"},\n        {\"id\": \"t12\", \"kind\": \"operator\", \"type\": \"verb\", \"anchors\": [\"t12\"],\"members\": [\"t12\"],\"license\": \"transitive_action\"},\n        {\"id\": \"t14\", \"kind\": \"entity\", \"type\": \"person\", \"anchors\": [\"t14\"],\"members\": [\"t14\"],\"license\": \"bound_variable\"},\n        {\"id\": \"t15\", \"kind\": \"entity\", \"type\": \"state\", \"anchors\": [\"t15\"],\"members\": [\"t15\"],\"license\": \"adjectival_predicate\"},\n        {\"id\": \"t21\", \"kind\": \"entity\", \"type\": \"person\", \"anchors\": [\"t21\"],\"members\": [\"t21\"],\"license\": \"opaque_reference\"},\n        {\"id\": \"t24\", \"kind\": \"entity\", \"type\": \"person\", \"anchors\": [\"t24\"],\"members\": [\"t24\"],\"license\": \"bound_variable\"},\n        {\"id\": \"t26\", \"kind\": \"operator\", \"type\": \"verb\", \"anchors\": [\"t26\"],\"members\": [\"t26\"],\"license\": \"state_of_being\"},\n        {\"id\": \"t28\", \"kind\": \"entity\", \"type\": \"abstract_set\", \"anchors\": [\"t28\", \"t31\"],\"members\": [\"t28\", \"t31\"],\"license\": \"conjunctive_collection\"},\n        {\"id\": \"t17\", \"kind\": \"operator\", \"type\": \"conjunction\", \"anchors\": [\"t17\"],\"members\": [\"t17\"],\"license\": \"causal_marker\"},\n        {\"id\": \"t10\", \"kind\": \"operator\", \"type\": \"temporal\", \"anchors\": [\"t10\"],\"members\": [\"t10\"],\"license\": \"sequence_operator\"}\n      ],\n      \"relations\": [\n        {\"id\": \"R1\", \"family\": \"argument\", \"constitution\": \"t4-t5-t6 governs t12 within opaque region\", \"ends\": [{\"role\": \"subject\", \"target\": \"t4\"}, {\"role\": \"predicate\", \"target\": \"t12\"}]},\n        {\"id\": \"R2\", \"family\": \"argument\", \"constitution\": \"t12 takes t14 as object\", \"ends\": [{\"role\": \"object\", \"target\": \"t14\"}]},\n        {\"id\": \"R3\", \"family\": \"argument\", \"constitution\": \"t15 modifies t14\", \"ends\": [{\"role\": \"modifier\", \"target\": \"t14\"}]},\n        {\"id\": \"R4\", \"family\": \"binding\", \"constitution\": \"t21 and t24 are bound variables in contracted region\", \"ends\": [{\"role\": \"bound_var\", \"target\": \"t21\"}, {\"role\": \"bound_var"
+      }
+    }
+  ],
+  "created": 1791507046,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 1900,
+    "prompt_tokens": 981,
+    "total_tokens": 2881,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-fE3PiDZVTa5LwciLthXEdDOJMqnJPHlW",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 981,
+    "prompt_ms": 2987.255,
+    "prompt_per_token_ms": 3.045112130479103,
+    "prompt_per_second": 328.39513198571933,
+    "predicted_n": 1900,
+    "predicted_ms": 105650.297,
+    "predicted_per_token_ms": 55.634700895208006,
+    "predicted_per_second": 17.974393389542485
+  }
+}

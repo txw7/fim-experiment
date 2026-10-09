@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETED",
+  "answers": {
+    "fit": {
+      "type": "choice",
+      "choice": "unresolved",
+      "probabilities": {
+        "supported": 0.299,
+        "unsupported": 0.3479,
+        "unresolved": 0.3531
+      },
+      "confidence": 0.0025,
+      "answer_confidence": 0.3531,
+      "action": {
+        "act_probability": 1.0
+      }
+    }
+  }
+}

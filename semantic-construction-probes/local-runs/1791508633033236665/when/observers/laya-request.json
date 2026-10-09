@@ -1,0 +1,48 @@
+{
+  "model": "english",
+  "state": {
+    "source": "when he was",
+    "relation": {
+      "id": "r0",
+      "family": "binding",
+      "constitution": "temporal-clause",
+      "ends": [
+        {
+          "role": "head",
+          "target": "n0"
+        },
+        {
+          "role": "subordinate",
+          "target": "n1"
+        }
+      ]
+    },
+    "operands": [
+      {
+        "id": "n0",
+        "type": "lexical-occurrence",
+        "anchors": [
+          "t0"
+        ]
+      },
+      {
+        "id": "n1",
+        "type": "lexical-occurrence",
+        "anchors": [
+          "t1"
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "fit": {
+      "type": "choice",
+      "instructions": "Is this exact proposed relation licensed by the source?",
+      "criteria": {
+        "supported": "Source supports roles.",
+        "unsupported": "Roles conflict with source.",
+        "unresolved": "Insufficient evidence."
+      }
+    }
+  }
+}

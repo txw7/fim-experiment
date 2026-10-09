@@ -1,0 +1,92 @@
+[
+  {
+    "id": "t0",
+    "text": "what",
+    "begin": 0,
+    "end": 4
+  },
+  {
+    "id": "t1",
+    "text": "she",
+    "begin": 5,
+    "end": 8
+  },
+  {
+    "id": "t2",
+    "text": "was",
+    "begin": 9,
+    "end": 12
+  },
+  {
+    "id": "t3",
+    "text": "when",
+    "begin": 13,
+    "end": 17
+  },
+  {
+    "id": "t4",
+    "text": "he",
+    "begin": 18,
+    "end": 20
+  },
+  {
+    "id": "t5",
+    "text": "was",
+    "begin": 21,
+    "end": 24
+  },
+  {
+    "id": "t6",
+    "text": "where",
+    "begin": 25,
+    "end": 30
+  },
+  {
+    "id": "t7",
+    "text": "they",
+    "begin": 31,
+    "end": 35
+  },
+  {
+    "id": "t8",
+    "text": "were",
+    "begin": 36,
+    "end": 40
+  },
+  {
+    "id": "t9",
+    "text": "where",
+    "begin": 41,
+    "end": 46
+  },
+  {
+    "id": "t10",
+    "text": "she",
+    "begin": 47,
+    "end": 50
+  },
+  {
+    "id": "t11",
+    "text": "was",
+    "begin": 51,
+    "end": 54
+  },
+  {
+    "id": "t12",
+    "text": "when",
+    "begin": 55,
+    "end": 59
+  },
+  {
+    "id": "t13",
+    "text": "it",
+    "begin": 60,
+    "end": 62
+  },
+  {
+    "id": "t14",
+    "text": "happened",
+    "begin": 63,
+    "end": 71
+  }
+]

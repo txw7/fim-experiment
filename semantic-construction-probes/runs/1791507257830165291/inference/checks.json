@@ -1,0 +1,197 @@
+{
+  "initial-0": {
+    "status": "REJECTED",
+    "errors": [
+      "non-network interior n1",
+      "non-network interior n5"
+    ],
+    "obligations": [
+      {
+        "subject": "n0",
+        "requirement": "operator constitution",
+        "claimed": "subject-predicate binding",
+        "hypothesized_type": "assertion"
+      },
+      {
+        "subject": "n1",
+        "requirement": "operator constitution",
+        "claimed": "modal permission",
+        "hypothesized_type": "proposition"
+      },
+      {
+        "subject": "n5",
+        "requirement": "operator constitution",
+        "claimed": "causal link",
+        "hypothesized_type": "justification"
+      },
+      {
+        "subject": "r0",
+        "requirement": "binding constitution",
+        "claimed": "n0 binds n1"
+      },
+      {
+        "subject": "r1",
+        "requirement": "argument constitution",
+        "claimed": "n1 applies to n2 and n3"
+      },
+      {
+        "subject": "r2",
+        "requirement": "attachment constitution",
+        "claimed": "n3 possesses n4"
+      },
+      {
+        "subject": "r3",
+        "requirement": "scope constitution",
+        "claimed": "n5 supports n1"
+      },
+      {
+        "subject": "r4",
+        "requirement": "binding constitution",
+        "claimed": "n6 is identified with n0"
+      }
+    ],
+    "backward_goals": [
+      {
+        "parent": "r0",
+        "child": "n0",
+        "role": "subject",
+        "requires": "establish typed interface and binding locality",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r0",
+        "child": "n1",
+        "role": "content",
+        "requires": "establish typed interface and binding locality",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r2",
+        "child": "n3",
+        "role": "holder",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r2",
+        "child": "n4",
+        "role": "state",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r4",
+        "child": "n6",
+        "role": "referent",
+        "requires": "establish typed interface and binding locality",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r4",
+        "child": "n0",
+        "role": "source",
+        "requires": "establish typed interface and binding locality",
+        "status": "OPEN"
+      }
+    ],
+    "semantic_admission": "NOT_RUN"
+  },
+  "feedback-0": {
+    "status": "REJECTED",
+    "errors": [
+      "non-network interior n1",
+      "dangling interior n5",
+      "non-network interior n5"
+    ],
+    "obligations": [
+      {
+        "subject": "n0",
+        "requirement": "operator constitution",
+        "claimed": "main clause assertion",
+        "hypothesized_type": "assertion"
+      },
+      {
+        "subject": "n1",
+        "requirement": "operator constitution",
+        "claimed": "modal permission proposition",
+        "hypothesized_type": "proposition"
+      },
+      {
+        "subject": "n5",
+        "requirement": "operator constitution",
+        "claimed": "causal link operator",
+        "hypothesized_type": "justification"
+      },
+      {
+        "subject": "r0",
+        "requirement": "binding constitution",
+        "claimed": "n0 binds n1"
+      },
+      {
+        "subject": "r1",
+        "requirement": "argument constitution",
+        "claimed": "n1 applies to n2 and n3"
+      },
+      {
+        "subject": "r2",
+        "requirement": "attachment constitution",
+        "claimed": "n3 possesses n4"
+      },
+      {
+        "subject": "r3",
+        "requirement": "scope constitution",
+        "claimed": "n5 supports n1"
+      },
+      {
+        "subject": "r4",
+        "requirement": "binding constitution",
+        "claimed": "n6 is identified with n0"
+      }
+    ],
+    "backward_goals": [
+      {
+        "parent": "r0",
+        "child": "n0",
+        "role": "subject",
+        "requires": "establish typed interface and binding locality",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r0",
+        "child": "n1",
+        "role": "content",
+        "requires": "establish typed interface and binding locality",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r2",
+        "child": "n3",
+        "role": "holder",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r2",
+        "child": "n4",
+        "role": "state",
+        "requires": "establish typed interface and source license",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r4",
+        "child": "n6",
+        "role": "referent",
+        "requires": "establish typed interface and binding locality",
+        "status": "OPEN"
+      },
+      {
+        "parent": "r4",
+        "child": "n0",
+        "role": "source",
+        "requires": "establish typed interface and binding locality",
+        "status": "OPEN"
+      }
+    ],
+    "semantic_admission": "NOT_RUN"
+  }
+}

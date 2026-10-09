@@ -1,0 +1,49 @@
+{
+  "model": "english",
+  "state": {
+    "source": "3. Instead, he must mean that one can then safely call a person blessed.\nBecause:\n1. He [that person] is now beyond evils and misfortunes.",
+    "relation": {
+      "id": "r0",
+      "family": "argument",
+      "constitution": "n0",
+      "ends": [
+        {
+          "role": "agent",
+          "target": "n0"
+        },
+        {
+          "role": "predicate",
+          "target": "n1"
+        }
+      ]
+    },
+    "operands": [
+      {
+        "id": "n0",
+        "type": "Subject",
+        "anchors": [
+          "t4"
+        ]
+      },
+      {
+        "id": "n1",
+        "type": "Predicate",
+        "anchors": [
+          "t5",
+          "t6"
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "fit": {
+      "type": "choice",
+      "instructions": "Is this exact proposed relation licensed by the source?",
+      "criteria": {
+        "supported": "Source supports roles.",
+        "unsupported": "Roles conflict with source.",
+        "unresolved": "Insufficient evidence."
+      }
+    }
+  }
+}

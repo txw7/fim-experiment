@@ -1,0 +1,43 @@
+{
+  "reading": "unresolved",
+  "applications": [],
+  "positions": [
+    {
+      "id": "t0",
+      "role": "interrogative_adverb",
+      "value_type": "location_reference",
+      "license": "fragment_incomplete"
+    },
+    {
+      "id": "t1",
+      "role": "pronoun_subject",
+      "value_type": "entity_reference",
+      "license": "fragment_incomplete"
+    },
+    {
+      "id": "t2",
+      "role": "verb_past",
+      "value_type": "state_reference",
+      "license": "fragment_incomplete"
+    }
+  ],
+  "bindings": [],
+  "networks": [],
+  "relations": [
+    {
+      "id": "r0",
+      "family": "adjacency",
+      "roles": [
+        { "role": "t0", "target": "t1" },
+        { "role": "t1", "target": "t2" }
+      ],
+      "license": "simple_sequence"
+    }
+  ],
+  "unresolved": [
+    "The fragment 'where they were' lacks a governing clause or antecedent to establish a complete proposition.",
+    "No semantic binding exists between the interrogative 'where' and the subject 'they' without an external context defining the location.",
+    "The verb 'were' has no complement or predicate object to resolve the state of the subject.",
+    "The sequence is syntactically valid as a dependent clause fragment but semantically incomplete as a standalone statement."
+  ]
+}

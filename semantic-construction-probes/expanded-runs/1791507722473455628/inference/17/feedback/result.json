@@ -1,0 +1,268 @@
+{
+  "status": "COMPLETED",
+  "proposal": {
+    "candidates": [
+      {
+        "id": "network-1",
+        "reading": "he must mean that one can then safely call a person blessed",
+        "objects": [
+          {
+            "id": "n0",
+            "kind": "operator",
+            "type": "Agent",
+            "anchors": [
+              "t4"
+            ],
+            "members": [
+              "t4"
+            ],
+            "license": "The pronoun 'he' functions as the agent initiating the modal assertion."
+          },
+          {
+            "id": "n1",
+            "kind": "operator",
+            "type": "Modal_Predicate",
+            "anchors": [
+              "t5",
+              "t6"
+            ],
+            "members": [
+              "t5",
+              "t6"
+            ],
+            "license": "The phrase 'must mean' establishes a necessary implication or definition."
+          },
+          {
+            "id": "n2",
+            "kind": "operator",
+            "type": "Proposition",
+            "anchors": [
+              "t7"
+            ],
+            "members": [
+              "t7"
+            ],
+            "license": "The conjunction 'that' introduces the content of the meaning."
+          },
+          {
+            "id": "n3",
+            "kind": "operator",
+            "type": "Ability",
+            "anchors": [
+              "t9"
+            ],
+            "members": [
+              "t9"
+            ],
+            "license": "The modal 'can' expresses the possibility or permission to perform an action."
+          },
+          {
+            "id": "n4",
+            "kind": "operator",
+            "type": "Action",
+            "anchors": [
+              "t12"
+            ],
+            "members": [
+              "t12"
+            ],
+            "license": "The verb 'call' denotes the act of labeling or categorizing."
+          },
+          {
+            "id": "n5",
+            "kind": "operator",
+            "type": "Patient",
+            "anchors": [
+              "t14"
+            ],
+            "members": [
+              "t14"
+            ],
+            "license": "The indefinite noun 'person' serves as the entity receiving the label."
+          },
+          {
+            "id": "n6",
+            "kind": "operator",
+            "type": "Attribute",
+            "anchors": [
+              "t15"
+            ],
+            "members": [
+              "t15"
+            ],
+            "license": "The adjective 'blessed' is the property ascribed to the patient."
+          },
+          {
+            "id": "n7",
+            "kind": "operator",
+            "type": "Condition",
+            "anchors": [
+              "t21"
+            ],
+            "members": [
+              "t21"
+            ],
+            "license": "The pronoun 'He' in the subordinate clause refers to the specific individual previously mentioned."
+          },
+          {
+            "id": "n8",
+            "kind": "operator",
+            "type": "State",
+            "anchors": [
+              "t26"
+            ],
+            "members": [
+              "t26"
+            ],
+            "license": "The copula 'is' links the subject to its current state."
+          },
+          {
+            "id": "n9",
+            "kind": "operator",
+            "type": "Location",
+            "anchors": [
+              "t28"
+            ],
+            "members": [
+              "t28"
+            ],
+            "license": "The preposition 'beyond' defines the spatial or metaphorical position relative to negatives."
+          },
+          {
+            "id": "n10",
+            "kind": "operator",
+            "type": "Negated_Set_1",
+            "anchors": [
+              "t29"
+            ],
+            "members": [
+              "t29"
+            ],
+            "license": "The noun 'evils' constitutes the first element of the excluded set."
+          },
+          {
+            "id": "n11",
+            "kind": "operator",
+            "type": "Negated_Set_2",
+            "anchors": [
+              "t31"
+            ],
+            "members": [
+              "t31"
+            ],
+            "license": "The noun 'misfortunes' constitutes the second element of the excluded set."
+          }
+        ],
+        "relations": [
+          {
+            "id": "r0",
+            "family": "argument",
+            "constitution": "n0",
+            "ends": [
+              {
+                "role": "agent",
+                "target": "n0"
+              },
+              {
+                "role": "predicate",
+                "target": "n1"
+              }
+            ]
+          },
+          {
+            "id": "r1",
+            "family": "argument",
+            "constitution": "n1",
+            "ends": [
+              {
+                "role": "complement",
+                "target": "n2"
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "family": "argument",
+            "constitution": "n2",
+            "ends": [
+              {
+                "role": "subject",
+                "target": "n3"
+              },
+              {
+                "role": "object",
+                "target": "n6"
+              },
+              {
+                "role": "patient",
+                "target": "n5"
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "family": "argument",
+            "constitution": "n4",
+            "ends": [
+              {
+                "role": "patient",
+                "target": "n5"
+              },
+              {
+                "role": "attribute",
+                "target": "n6"
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "family": "argument",
+            "constitution": "n7",
+            "ends": [
+              {
+                "role": "subject",
+                "target": "n7"
+              },
+              {
+                "role": "predicate",
+                "target": "n8"
+              }
+            ]
+          },
+          {
+            "id": "r5",
+            "family": "argument",
+            "constitution": "n8",
+            "ends": [
+              {
+                "role": "location",
+                "target": "n9"
+              }
+            ]
+          },
+          {
+            "id": "r6",
+            "family": "argument",
+            "constitution": "n9",
+            "ends": [
+              {
+                "role": "member",
+                "target": "n10"
+              },
+              {
+                "role": "member",
+                "target": "n11"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "unresolved": [
+      "The semantic link between 'one' (universal) and 'a person' (existential/indefinite) within the scope",
+      "The precise boundary of 'beyond' regarding 'evils' and 'misfortunes' as a continuous state versus a",
+      "The causal strength of the condition in the subordinate clause on the main assertion"
+    ]
+  },
+  "seconds": 82.5
+}

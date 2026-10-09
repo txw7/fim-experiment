@@ -1,0 +1,278 @@
+{
+  "what": {
+    "source": "what she was",
+    "initial": {
+      "status": "FAILED",
+      "error": "timed out",
+      "seconds": 45.1
+    },
+    "repair": {
+      "status": "NOT_RUN"
+    }
+  },
+  "when": {
+    "source": "when he was",
+    "initial": {
+      "status": "COMPLETED",
+      "candidate": {
+        "reading": "unresolved",
+        "applications": [],
+        "positions": [
+          {
+            "id": "t0",
+            "role": "temporal_subordinator",
+            "value_type": "interrogative_adverb",
+            "license": "hypothesis"
+          },
+          {
+            "id": "t1",
+            "role": "subject",
+            "value_type": "pronoun",
+            "license": "hypothesis"
+          },
+          {
+            "id": "t2",
+            "role": "verb_past",
+            "value_type": "copula",
+            "license": "hypothesis"
+          }
+        ],
+        "bindings": [],
+        "networks": [],
+        "relations": [
+          {
+            "id": "r0",
+            "family": "temporal_clause",
+            "roles": [
+              {
+                "role": "subordinator",
+                "target": "t0"
+              },
+              {
+                "role": "subject",
+                "target": "t1"
+              },
+              {
+                "role": "predicate",
+                "target": "t2"
+              }
+            ],
+            "license": "hypothesis"
+          }
+        ],
+        "unresolved": [
+          "The fragment 'when he was' lacks a complement (e.g., 'when he was here' or 'when he was born').",
+          "The temporal subordinator 'when' requires a clause to establish a time reference.",
+          "The copula 'was' requires a subject complement or predicate nominative to complete the proposition.",
+          "No semantic closure exists; the sequence is an open temporal phrase."
+        ]
+      },
+      "checks": {
+        "errors": [
+          "duplicate identity"
+        ],
+        "uncovered_occurrences": [],
+        "uninterpreted_operator_occurrences": [
+          "t0"
+        ],
+        "law_obligations": [
+          {
+            "subject": "t0",
+            "law": "hypothesis",
+            "status": "UNREGISTERED"
+          },
+          {
+            "subject": "t1",
+            "law": "hypothesis",
+            "status": "UNREGISTERED"
+          },
+          {
+            "subject": "t2",
+            "law": "hypothesis",
+            "status": "UNREGISTERED"
+          }
+        ],
+        "structural_gate": false,
+        "semantic_admission": "NOT_RUN",
+        "source_preservation": "IMMUTABLE_EXTERNAL_SUBSTRATE"
+      },
+      "seconds": 145.72
+    },
+    "repair": {
+      "status": "FAILED",
+      "error": "timed out",
+      "seconds": 45.05
+    }
+  },
+  "where": {
+    "source": "where they were",
+    "initial": {
+      "status": "COMPLETED",
+      "candidate": {
+        "reading": "unresolved",
+        "applications": [],
+        "positions": [
+          {
+            "id": "t0",
+            "role": "interrogative_adverb",
+            "value_type": "location_reference",
+            "license": "fragment_incomplete"
+          },
+          {
+            "id": "t1",
+            "role": "pronoun_subject",
+            "value_type": "entity_reference",
+            "license": "fragment_incomplete"
+          },
+          {
+            "id": "t2",
+            "role": "verb_past",
+            "value_type": "state_reference",
+            "license": "fragment_incomplete"
+          }
+        ],
+        "bindings": [],
+        "networks": [],
+        "relations": [
+          {
+            "id": "r0",
+            "family": "adjacency",
+            "roles": [
+              {
+                "role": "t0",
+                "target": "t1"
+              },
+              {
+                "role": "t1",
+                "target": "t2"
+              }
+            ],
+            "license": "simple_sequence"
+          }
+        ],
+        "unresolved": [
+          "The fragment 'where they were' lacks a governing clause or antecedent to establish a complete proposition.",
+          "No semantic binding exists between the interrogative 'where' and the subject 'they' without an external context defining the location.",
+          "The verb 'were' has no complement or predicate object to resolve the state of the subject.",
+          "The sequence is syntactically valid as a dependent clause fragment but semantically incomplete as a standalone statement."
+        ]
+      },
+      "checks": {
+        "errors": [
+          "duplicate identity"
+        ],
+        "uncovered_occurrences": [
+          "t0"
+        ],
+        "uninterpreted_operator_occurrences": [
+          "t0"
+        ],
+        "law_obligations": [
+          {
+            "subject": "t0",
+            "law": "fragment_incomplete",
+            "status": "UNREGISTERED"
+          },
+          {
+            "subject": "t1",
+            "law": "fragment_incomplete",
+            "status": "UNREGISTERED"
+          },
+          {
+            "subject": "t2",
+            "law": "fragment_incomplete",
+            "status": "UNREGISTERED"
+          }
+        ],
+        "structural_gate": false,
+        "semantic_admission": "NOT_RUN",
+        "source_preservation": "IMMUTABLE_EXTERNAL_SUBSTRATE"
+      },
+      "seconds": 109.34
+    },
+    "repair": {
+      "status": "COMPLETED",
+      "candidate": {
+        "reading": "unresolved",
+        "applications": [],
+        "positions": [
+          {
+            "id": "t0",
+            "role": "interrogative_adverb",
+            "value_type": "location_reference",
+            "license": "fragment_incomplete"
+          },
+          {
+            "id": "t1",
+            "role": "pronoun_subject",
+            "value_type": "entity_reference",
+            "license": "fragment_incomplete"
+          },
+          {
+            "id": "t2",
+            "role": "verb_past",
+            "value_type": "state_reference",
+            "license": "fragment_incomplete"
+          }
+        ],
+        "bindings": [],
+        "networks": [],
+        "relations": [
+          {
+            "id": "r0",
+            "family": "adjacency",
+            "roles": [
+              {
+                "role": "t0",
+                "target": "t1"
+              },
+              {
+                "role": "t1",
+                "target": "t2"
+              }
+            ],
+            "license": "simple_sequence"
+          }
+        ],
+        "unresolved": [
+          "The fragment 'where they were' lacks a governing clause or antecedent to establish a complete proposition.",
+          "No semantic binding exists between the interrogative 'where' and the subject 'they' without an external context defining the location.",
+          "The verb 'were' has no complement or predicate object to resolve the state of the subject.",
+          "The sequence is syntactically valid as a dependent clause fragment but semantically incomplete as a standalone statement."
+        ]
+      },
+      "checks": {
+        "errors": [
+          "duplicate identity"
+        ],
+        "uncovered_occurrences": [
+          "t0"
+        ],
+        "uninterpreted_operator_occurrences": [
+          "t0"
+        ],
+        "law_obligations": [
+          {
+            "subject": "t0",
+            "law": "fragment_incomplete",
+            "status": "UNREGISTERED"
+          },
+          {
+            "subject": "t1",
+            "law": "fragment_incomplete",
+            "status": "UNREGISTERED"
+          },
+          {
+            "subject": "t2",
+            "law": "fragment_incomplete",
+            "status": "UNREGISTERED"
+          }
+        ],
+        "structural_gate": false,
+        "semantic_admission": "NOT_RUN",
+        "source_preservation": "IMMUTABLE_EXTERNAL_SUBSTRATE"
+      },
+      "seconds": 76.41
+    }
+  }
+}

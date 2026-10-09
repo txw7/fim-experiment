@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETED",
+  "answers": {
+    "network": {
+      "type": "choice",
+      "choice": "initial-0",
+      "confidence": 0.48,
+      "probabilities": {
+        "initial-0": 0.74,
+        "unresolved": 0.26
+      }
+    }
+  },
+  "latency_seconds": 0.456,
+  "admission": "NOT_AUTHORIZED"
+}

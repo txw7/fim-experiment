@@ -1,0 +1,180 @@
+{
+  "model": "local",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Propose ONE grammatical operator setup against unchanged source. The supplied lexical objects are immutable: copy each exactly once, unchanged, into objects. New IDs start after the last supplied n-ID. Preserve lexical occurrences as addressable operands, not replacements. Do not summarize or merely nest the words. Propose argument positions, operator applications, binding, attachment, scope and output interfaces appropriate to your chosen analysis; retain ambiguity. Absent grammatical positions require named construction licenses; these are claims, not proofs. Only networks may have members; all references must resolve; no containment cycles. Groupings retain lexical members. Relation endpoints can be lexical occurrences, derived objects, or other relations. Do not invent lexical referents. Every what/when/where occurrence must be interpreted by a proposed construction or explicitly remain unresolved. For composition, supplied component graphs are evidence, not admitted meanings: preserve interiors and identities if reused, and expose incompatible components as obligations. Do not claim native admission. On repair address exact errors; dropping operators is not a repair."
+    },
+    {
+      "role": "user",
+      "content": "{\"source\":\"when he was\",\"occurrences\":[{\"id\":\"t0\",\"text\":\"when\",\"begin\":0,\"end\":4},{\"id\":\"t1\",\"text\":\"he\",\"begin\":5,\"end\":7},{\"id\":\"t2\",\"text\":\"was\",\"begin\":8,\"end\":11}],\"immutable_objects\":[{\"id\":\"n0\",\"kind\":\"occurrence\",\"type\":\"lexical-occurrence\",\"anchors\":[\"t0\"],\"members\":[],\"license\":\"literal source occurrence\"},{\"id\":\"n1\",\"kind\":\"occurrence\",\"type\":\"lexical-occurrence\",\"anchors\":[\"t1\"],\"members\":[],\"license\":\"literal source occurrence\"},{\"id\":\"n2\",\"kind\":\"occurrence\",\"type\":\"lexical-occurrence\",\"anchors\":[\"t2\"],\"members\":[],\"license\":\"literal source occurrence\"}],\"feedback\":{\"candidate\":{\"id\":\"op_001\",\"reading\":\"temporal-subordination\",\"objects\":[{\"id\":\"n0\",\"kind\":\"occurrence\",\"type\":\"lexical-occurrence\",\"anchors\":[\"t0\"],\"members\":[],\"license\":\"literal source occurrence\"},{\"id\":\"n1\",\"kind\":\"occurrence\",\"type\":\"lexical-occurrence\",\"anchors\":[\"t1\"],\"members\":[],\"license\":\"literal source occurrence\"},{\"id\":\"n2\",\"kind\":\"occurrence\",\"type\":\"lexical-occurrence\",\"anchors\":[\"t2\"],\"members\":[],\"license\":\"literal source occurrence\"}],\"relations\":[{\"id\":\"r0\",\"family\":\"binding\",\"constitution\":\"temporal-clause\",\"ends\":[{\"role\":\"head\",\"target\":\"n0\"},{\"role\":\"subordinate\",\"target\":\"n1\"}]},{\"id\":\"r1\",\"family\":\"binding\",\"constitution\":\"temporal-clause\",\"ends\":[{\"role\":\"head\",\"target\":\"n1\"},{\"role\":\"predicate\",\"target\":\"n2\"}]}]},\"checks\":{\"status\":\"STRUCTURALLY_REVIEWABLE\",\"errors\":[],\"obligations\":[{\"subject\":\"r0\",\"requirement\":\"binding constitution\",\"claimed\":\"temporal-clause\"},{\"subject\":\"r1\",\"requirement\":\"binding constitution\",\"claimed\":\"temporal-clause\"}],\"backward_goals\":[{\"parent\":\"r0\",\"child\":\"n0\",\"role\":\"head\",\"requires\":\"establish typed interface and binding locality\",\"status\":\"OPEN\"},{\"parent\":\"r0\",\"child\":\"n1\",\"role\":\"subordinate\",\"requires\":\"establish typed interface and binding locality\",\"status\":\"OPEN\"},{\"parent\":\"r1\",\"child\":\"n1\",\"role\":\"head\",\"requires\":\"establish typed interface and binding locality\",\"status\":\"OPEN\"},{\"parent\":\"r1\",\"child\":\"n2\",\"role\":\"predicate\",\"requires\":\"establish typed interface and binding locality\",\"status\":\"OPEN\"}],\"semantic_admission\":\"NOT_RUN\",\"occurrence_diagnostics\":[],\"metrics\":{\"networks\":0,\"network_operands\":0,\"relation_operands\":0,\"implicit_positions\":0},\"substrate_errors\":[],\"uninterpreted_occurrences\":[],\"uninterpreted_operators\":[],\"source_preserved\":true,\"complete_operator_coverage\":true,\"semantic_status\":\"UNVERIFIED_LICENSES\"},\"laya\":{\"status\":\"COMPLETED\",\"answers\":{\"fit\":{\"type\":\"choice\",\"choice\":\"unsupported\",\"probabilities\":{\"supported\":0.2497,\"unsupported\":0.4042,\"unresolved\":0.3462},\"confidence\":0.0171,\"answer_confidence\":0.4042,\"action\":{\"act_probability\":1.0}}}}},\"components\":null}"
+    }
+  ],
+  "temperature": 0,
+  "max_tokens": 6000,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "local_construction",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "candidates": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "maxLength": 100
+                },
+                "reading": {
+                  "type": "string",
+                  "maxLength": 100
+                },
+                "objects": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "pattern": "^n[0-9]+$"
+                      },
+                      "kind": {
+                        "type": "string",
+                        "enum": [
+                          "entity",
+                          "operator",
+                          "proposition",
+                          "network",
+                          "position",
+                          "binder",
+                          "occurrence"
+                        ]
+                      },
+                      "type": {
+                        "type": "string",
+                        "maxLength": 100
+                      },
+                      "anchors": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "maxLength": 100
+                        }
+                      },
+                      "members": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "maxLength": 100
+                        }
+                      },
+                      "license": {
+                        "type": "string",
+                        "maxLength": 100
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "kind",
+                      "type",
+                      "anchors",
+                      "members",
+                      "license"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "maxItems": 64
+                },
+                "relations": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "pattern": "^r[0-9]+$"
+                      },
+                      "family": {
+                        "type": "string",
+                        "enum": [
+                          "argument",
+                          "binding",
+                          "scope",
+                          "attachment",
+                          "inference",
+                          "enclosure",
+                          "lift"
+                        ]
+                      },
+                      "constitution": {
+                        "type": "string",
+                        "maxLength": 100
+                      },
+                      "ends": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "role": {
+                              "type": "string",
+                              "maxLength": 100
+                            },
+                            "target": {
+                              "type": "string",
+                              "maxLength": 100
+                            }
+                          },
+                          "required": [
+                            "role",
+                            "target"
+                          ],
+                          "additionalProperties": false
+                        }
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "family",
+                      "constitution",
+                      "ends"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "maxItems": 48
+                }
+              },
+              "required": [
+                "id",
+                "reading",
+                "objects",
+                "relations"
+              ],
+              "additionalProperties": false
+            },
+            "maxItems": 1
+          },
+          "unresolved": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 100
+            },
+            "maxItems": 3
+          }
+        },
+        "required": [
+          "candidates",
+          "unresolved"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

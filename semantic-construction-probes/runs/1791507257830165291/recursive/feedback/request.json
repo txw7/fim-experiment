@@ -1,0 +1,179 @@
+{
+  "model": "local",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Construct competing semantic graph hypotheses from unchanged source occurrences. No operator inventory or topology is supplied. Propose ONE compact candidate, at most 8 objects and 5 relations. It can cover part of the source; retain other extents as unresolved. Give objects IDs n0,n1,... and relations r0,r1,...; source token IDs t0,t1,... are anchors, not graph endpoints. All relation endpoints and members must name graph objects/relations actually declared in this response. ONLY network objects can have members; others MUST have empty members. Never put an object inside itself. Keep license names short. Choose operator names, types, grammatical positions, roles, binding, scope and network boundaries. Objects have source token IDs; missing grammatical positions may have no anchors ONLY with an explicit named grammatical construction license. No invented lexical referents. Networks retain member identities and may be operands of higher relations. Relation endpoints may reference relations. Different readings should differ in structure, not just labels. Separate argument, binding, attachment and scope. Every constitution/license is a CLAIM requiring native checking, not proof. On feedback, address narrower backward obligations and preserve viable alternatives; do not silently resolve source ambiguity. Do not summarize. Token anchors are IDs, never regenerate offsets."
+    },
+    {
+      "role": "user",
+      "content": "{\"source\":\"what she was when he was where they were where she was when it happened\",\"occurrences\":[{\"id\":\"t0\",\"text\":\"what\",\"begin\":0,\"end\":4},{\"id\":\"t1\",\"text\":\"she\",\"begin\":5,\"end\":8},{\"id\":\"t2\",\"text\":\"was\",\"begin\":9,\"end\":12},{\"id\":\"t3\",\"text\":\"when\",\"begin\":13,\"end\":17},{\"id\":\"t4\",\"text\":\"he\",\"begin\":18,\"end\":20},{\"id\":\"t5\",\"text\":\"was\",\"begin\":21,\"end\":24},{\"id\":\"t6\",\"text\":\"where\",\"begin\":25,\"end\":30},{\"id\":\"t7\",\"text\":\"they\",\"begin\":31,\"end\":35},{\"id\":\"t8\",\"text\":\"were\",\"begin\":36,\"end\":40},{\"id\":\"t9\",\"text\":\"where\",\"begin\":41,\"end\":46},{\"id\":\"t10\",\"text\":\"she\",\"begin\":47,\"end\":50},{\"id\":\"t11\",\"text\":\"was\",\"begin\":51,\"end\":54},{\"id\":\"t12\",\"text\":\"when\",\"begin\":55,\"end\":59},{\"id\":\"t13\",\"text\":\"it\",\"begin\":60,\"end\":62},{\"id\":\"t14\",\"text\":\"happened\",\"begin\":63,\"end\":71}],\"available_native_mechanisms\":[\"opaque occurrence formation\",\"partial graph/region/incidence holes\",\"bounded graph search\",\"region contraction/expansion\"],\"missing_native_meanings\":[\"arbitrary lexical/grammatical operator constitution admission\",\"wh gap licensing\",\"temporal operator disambiguation\",\"natural-language inference proof\"],\"feedback\":{\"candidates\":[{\"id\":\"initial-0\",\"reading\":\"Nested Temporal-Location Interrogatives\",\"objects\":[{\"id\":\"n0\",\"kind\":\"operator\",\"type\":\"wh-gap\",\"anchors\":[\"t0\"],\"members\":[],\"license\":\"wh-gap licensing\"},{\"id\":\"n1\",\"kind\":\"operator\",\"type\":\"temporal\",\"anchors\":[\"t3\"],\"members\":[],\"license\":\"temporal operator disambiguation\"},{\"id\":\"n2\",\"kind\":\"operator\",\"type\":\"temporal\",\"anchors\":[\"t12\"],\"members\":[],\"license\":\"temporal operator disambiguation\"},{\"id\":\"n3\",\"kind\":\"operator\",\"type\":\"location\",\"anchors\":[\"t6\"],\"members\":[],\"license\":\"wh-gap licensing\"},{\"id\":\"n4\",\"kind\":\"operator\",\"type\":\"location\",\"anchors\":[\"t9\"],\"members\":[],\"license\":\"wh-gap licensing\"},{\"id\":\"n5\",\"kind\":\"operator\",\"type\":\"event\",\"anchors\":[\"t14\"],\"members\":[],\"license\":\"opaque occurrence formation\"},{\"id\":\"n6\",\"kind\":\"operator\",\"type\":\"state\",\"anchors\":[\"t2\",\"t5\",\"t8\",\"t11\"],\"members\":[],\"license\":\"partial graph/region/incidence holes\"},{\"id\":\"n7\",\"kind\":\"operator\",\"type\":\"subject\",\"anchors\":[\"t1\",\"t4\",\"t7\",\"t10\"],\"members\":[],\"license\":\"partial graph/region/incidence holes\"}],\"relations\":[{\"id\":\"r0\",\"family\":\"binding\",\"constitution\":\"n0 binds n7\",\"ends\":[{\"role\":\"head\",\"target\":\"n0\"},{\"role\":\"tail\",\"target\":\"n7\"}]},{\"id\":\"r1\",\"family\":\"attachment\",\"constitution\":\"n1 attaches to n6\",\"ends\":[{\"role\":\"head\",\"target\":\"n1\"},{\"role\":\"tail\",\"target\":\"n6\"}]},{\"id\":\"r2\",\"family\":\"attachment\",\"constitution\":\"n3 attaches to n6\",\"ends\":[{\"role\":\"head\",\"target\":\"n3\"},{\"role\":\"tail\",\"target\":\"n6\"}]},{\"id\":\"r3\",\"family\":\"attachment\",\"constitution\":\"n4 attaches to n6\",\"ends\":[{\"role\":\"head\",\"target\":\"n4\"},{\"role\":\"tail\",\"target\":\"n6\"}]},{\"id\":\"r4\",\"family\":\"attachment\",\"constitution\":\"n2 attaches to n5\",\"ends\":[{\"role\":\"head\",\"target\":\"n2\"},{\"role\":\"tail\",\"target\":\"n5\"}]}]}],\"checks\":{\"initial-0\":{\"errors\":[],\"backward_goals\":[{\"parent\":\"r0\",\"child\":\"n0\",\"role\":\"head\",\"requires\":\"establish typed interface and binding locality\",\"status\":\"OPEN\"},{\"parent\":\"r0\",\"child\":\"n7\",\"role\":\"tail\",\"requires\":\"establish typed interface and binding locality\",\"status\":\"OPEN\"},{\"parent\":\"r1\",\"child\":\"n1\",\"role\":\"head\",\"requires\":\"establish typed interface and source license\",\"status\":\"OPEN\"}],\"missing_native_meanings\":[\"attachment constitution\",\"binding constitution\",\"operator constitution\"]}},\"observations\":{\"laya\":{\"status\":\"FAILED\",\"error\":\"HTTP Error 422: Unprocessable Entity\",\"latency_seconds\":0.009,\"admission\":\"NOT_AUTHORIZED\"},\"jev\":{\"status\":\"COMPLETED\",\"answers\":{\"network\":{\"type\":\"choice\",\"choice\":\"initial-0\",\"confidence\":0.48,\"probabilities\":{\"initial-0\":0.74,\"unresolved\":0.26}}},\"latency_seconds\":0.456,\"admission\":\"NOT_AUTHORIZED\"}}},\"limits\":{\"max_total_alternatives\":4,\"max_expansions\":100}}"
+    }
+  ],
+  "temperature": 0,
+  "max_tokens": 1300,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "construction_programs",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "candidates": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "maxLength": 100
+                },
+                "reading": {
+                  "type": "string",
+                  "maxLength": 100
+                },
+                "objects": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "pattern": "^n[0-9]+$"
+                      },
+                      "kind": {
+                        "type": "string",
+                        "enum": [
+                          "entity",
+                          "operator",
+                          "proposition",
+                          "network",
+                          "position",
+                          "binder"
+                        ]
+                      },
+                      "type": {
+                        "type": "string",
+                        "maxLength": 100
+                      },
+                      "anchors": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "maxLength": 100
+                        }
+                      },
+                      "members": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "maxLength": 100
+                        }
+                      },
+                      "license": {
+                        "type": "string",
+                        "maxLength": 100
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "kind",
+                      "type",
+                      "anchors",
+                      "members",
+                      "license"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "maxItems": 8
+                },
+                "relations": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "pattern": "^r[0-9]+$"
+                      },
+                      "family": {
+                        "type": "string",
+                        "enum": [
+                          "argument",
+                          "binding",
+                          "scope",
+                          "attachment",
+                          "inference",
+                          "enclosure",
+                          "lift"
+                        ]
+                      },
+                      "constitution": {
+                        "type": "string",
+                        "maxLength": 100
+                      },
+                      "ends": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "role": {
+                              "type": "string",
+                              "maxLength": 100
+                            },
+                            "target": {
+                              "type": "string",
+                              "maxLength": 100
+                            }
+                          },
+                          "required": [
+                            "role",
+                            "target"
+                          ],
+                          "additionalProperties": false
+                        }
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "family",
+                      "constitution",
+                      "ends"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "maxItems": 5
+                }
+              },
+              "required": [
+                "id",
+                "reading",
+                "objects",
+                "relations"
+              ],
+              "additionalProperties": false
+            },
+            "maxItems": 1
+          },
+          "unresolved": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 100
+            },
+            "maxItems": 3
+          }
+        },
+        "required": [
+          "candidates",
+          "unresolved"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

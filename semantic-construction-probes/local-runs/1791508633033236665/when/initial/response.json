@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"candidates\": [\n    {\n      \"id\": \"op_001\",\n      \"reading\": \"temporal-subordination\",\n      \"objects\": [\n        {\n          \"id\": \"n0\",\n          \"kind\": \"occurrence\",\n          \"type\": \"lexical-occurrence\",\n          \"anchors\": [\"t0\"],\n          \"members\": [],\n          \"license\": \"literal source occurrence\"\n        },\n        {\n          \"id\": \"n1\",\n          \"kind\": \"occurrence\",\n          \"type\": \"lexical-occurrence\",\n          \"anchors\": [\"t1\"],\n          \"members\": [],\n          \"license\": \"literal source occurrence\"\n        },\n        {\n          \"id\": \"n2\",\n          \"kind\": \"occurrence\",\n          \"type\": \"lexical-occurrence\",\n          \"anchors\": [\"t2\"],\n          \"members\": [],\n          \"license\": \"literal source occurrence\"\n        }\n      ],\n      \"relations\": [\n        {\n          \"id\": \"r0\",\n          \"family\": \"binding\",\n          \"constitution\": \"temporal-clause\",\n          \"ends\": [\n            {\n              \"role\": \"head\",\n              \"target\": \"n0\"\n            },\n            {\n              \"role\": \"subordinate\",\n              \"target\": \"n1\"\n            }\n          ]\n        },\n        {\n          \"id\": \"r1\",\n          \"family\": \"binding\",\n          \"constitution\": \"temporal-clause\",\n          \"ends\": [\n            {\n              \"role\": \"head\",\n              \"target\": \"n1\"\n            },\n            {\n              \"role\": \"predicate\",\n              \"target\": \"n2\"\n            }\n          ]\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"The referent of 'he' (n1) is not specified within the source fragment.\",\n    \"The temporal reference point for 'when' (n0) is external to the provided lexical objects.\",\n    \"The subject of 'was' (n2) is syntactically bound to 'he' (n1) but semantically undefined.\"\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1791508737,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 520,
+    "prompt_tokens": 392,
+    "total_tokens": 912,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-FB4Tt3d7VgDuP5ogZmxK94J05W71mKvO",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 392,
+    "prompt_ms": 3969.982,
+    "prompt_per_token_ms": 10.127505102040816,
+    "prompt_per_second": 98.7410018483711,
+    "predicted_n": 520,
+    "predicted_ms": 99641.672,
+    "predicted_per_token_ms": 191.98780732177266,
+    "predicted_per_second": 5.208664101903066
+  }
+}

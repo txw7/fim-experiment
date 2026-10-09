@@ -1,0 +1,155 @@
+{
+  "state": {
+    "source": "when he was",
+    "alternatives": {
+      "initial": {
+        "id": "op_001",
+        "reading": "temporal-subordination",
+        "objects": [
+          {
+            "id": "n0",
+            "kind": "occurrence",
+            "type": "lexical-occurrence",
+            "anchors": [
+              "t0"
+            ],
+            "members": [],
+            "license": "literal source occurrence"
+          },
+          {
+            "id": "n1",
+            "kind": "occurrence",
+            "type": "lexical-occurrence",
+            "anchors": [
+              "t1"
+            ],
+            "members": [],
+            "license": "literal source occurrence"
+          },
+          {
+            "id": "n2",
+            "kind": "occurrence",
+            "type": "lexical-occurrence",
+            "anchors": [
+              "t2"
+            ],
+            "members": [],
+            "license": "literal source occurrence"
+          }
+        ],
+        "relations": [
+          {
+            "id": "r0",
+            "family": "binding",
+            "constitution": "temporal-clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n0"
+              },
+              {
+                "role": "subordinate",
+                "target": "n1"
+              }
+            ]
+          },
+          {
+            "id": "r1",
+            "family": "binding",
+            "constitution": "temporal-clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n1"
+              },
+              {
+                "role": "predicate",
+                "target": "n2"
+              }
+            ]
+          }
+        ]
+      },
+      "repair": {
+        "id": "op_002",
+        "reading": "temporal-subordination-chain",
+        "objects": [
+          {
+            "id": "n0",
+            "kind": "occurrence",
+            "type": "lexical-occurrence",
+            "anchors": [
+              "t0"
+            ],
+            "members": [],
+            "license": "literal source occurrence"
+          },
+          {
+            "id": "n1",
+            "kind": "occurrence",
+            "type": "lexical-occurrence",
+            "anchors": [
+              "t1"
+            ],
+            "members": [],
+            "license": "literal source occurrence"
+          },
+          {
+            "id": "n2",
+            "kind": "occurrence",
+            "type": "lexical-occurrence",
+            "anchors": [
+              "t2"
+            ],
+            "members": [],
+            "license": "literal source occurrence"
+          }
+        ],
+        "relations": [
+          {
+            "id": "r0",
+            "family": "binding",
+            "constitution": "temporal-clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n0"
+              },
+              {
+                "role": "subordinate",
+                "target": "n1"
+              }
+            ]
+          },
+          {
+            "id": "r1",
+            "family": "binding",
+            "constitution": "temporal-clause",
+            "ends": [
+              {
+                "role": "head",
+                "target": "n1"
+              },
+              {
+                "role": "predicate",
+                "target": "n2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "questions": {
+    "fit": {
+      "type": "choice",
+      "instructions": "Which exact grammatical graph best preserves source operators, argument positions, bindings and unresolved attachment? Reject missing source structure. This is support, not native proof.",
+      "criteria": {
+        "initial": "initial exact graph",
+        "repair": "repair exact graph",
+        "neither": "Both unsupported or malformed.",
+        "unresolved": "Cannot distinguish."
+      }
+    }
+  }
+}

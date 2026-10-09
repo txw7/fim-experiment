@@ -1,0 +1,71 @@
+[
+  {
+    "source": "recursive",
+    "candidates": 0,
+    "initial_status": "FAILED",
+    "feedback_status": "FAILED",
+    "shape_signatures": [],
+    "native_semantic_admission": "NOT_RUN",
+    "observations": {
+      "laya": {
+        "status": "NOT_RUN"
+      },
+      "jev": {
+        "status": "NOT_RUN"
+      }
+    }
+  },
+  {
+    "source": "comparison",
+    "candidates": 2,
+    "initial_status": "FAILED",
+    "feedback_status": "COMPLETED",
+    "shape_signatures": [
+      {
+        "candidate": "feedback-0",
+        "objects": 8,
+        "relations": 5,
+        "kinds": [
+          "entity",
+          "operator"
+        ],
+        "network_operands": 0
+      },
+      {
+        "candidate": "feedback-1",
+        "objects": 7,
+        "relations": 6,
+        "kinds": [
+          "entity",
+          "operator"
+        ],
+        "network_operands": 0
+      }
+    ],
+    "native_semantic_admission": "NOT_RUN",
+    "observations": {
+      "laya": {
+        "status": "NOT_RUN"
+      },
+      "jev": {
+        "status": "NOT_RUN"
+      }
+    }
+  },
+  {
+    "source": "inference",
+    "candidates": 0,
+    "initial_status": "FAILED",
+    "feedback_status": "FAILED",
+    "shape_signatures": [],
+    "native_semantic_admission": "NOT_RUN",
+    "observations": {
+      "laya": {
+        "status": "NOT_RUN"
+      },
+      "jev": {
+        "status": "NOT_RUN"
+      }
+    }
+  }
+]

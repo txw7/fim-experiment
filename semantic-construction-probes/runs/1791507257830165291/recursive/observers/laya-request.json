@@ -1,0 +1,14 @@
+{
+  "model": "english",
+  "state": "{\"source\":\"what she was when he was where they were where she was when it happened\",\"goal\":{\"parent\":\"r0\",\"child\":\"n0\",\"role\":\"head\",\"requires\":\"establish typed interface and binding locality\",\"status\":\"OPEN\"},\"candidate_readings\":[\"Nested Temporal-Location Interrogatives\"],\"instruction\":\"Does source establish this exact dependency, conflict with it, or leave it unresolved?\"}",
+  "questions": {
+    "dependency": {
+      "type": "choice",
+      "criteria": {
+        "supported": "Exact proposed dependency is source-supported.",
+        "unsupported": "It conflicts with source.",
+        "unresolved": "Insufficient binding, role or construction evidence."
+      }
+    }
+  }
+}

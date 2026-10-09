@@ -1,0 +1,263 @@
+{
+  "state": {
+    "source": "1. Our discussion will be adequate if it has as much clarity as the subject-matter admits.",
+    "candidates": [
+      {
+        "id": "initial-0",
+        "reading": "Conditional Sufficiency via Wh-Gap Licensing",
+        "objects": [
+          {
+            "id": "n0",
+            "kind": "proposition",
+            "type": "conditional",
+            "anchors": [
+              "t4",
+              "t5",
+              "t6"
+            ],
+            "members": [],
+            "license": "wh-gap licensing"
+          },
+          {
+            "id": "n1",
+            "kind": "entity",
+            "type": "discussion",
+            "anchors": [
+              "t2",
+              "t3"
+            ],
+            "members": [],
+            "license": "subject formation"
+          },
+          {
+            "id": "n2",
+            "kind": "entity",
+            "type": "subject-matter",
+            "anchors": [
+              "t14",
+              "t15"
+            ],
+            "members": [],
+            "license": "subject formation"
+          },
+          {
+            "id": "n3",
+            "kind": "operator",
+            "type": "clarity_measure",
+            "anchors": [
+              "t12"
+            ],
+            "members": [],
+            "license": "arbitrary lexical constitution"
+          },
+          {
+            "id": "n4",
+            "kind": "operator",
+            "type": "admission_limit",
+            "anchors": [
+              "t16"
+            ],
+            "members": [
+              "n2"
+            ],
+            "license": "bounded graph search"
+          }
+        ],
+        "relations": [
+          {
+            "id": "r0",
+            "family": "scope",
+            "constitution": "conditional_clause",
+            "ends": [
+              {
+                "role": "antecedent",
+                "target": "n0"
+              },
+              {
+                "role": "consequent",
+                "target": "n0"
+              }
+            ]
+          },
+          {
+            "id": "r1",
+            "family": "attachment",
+            "constitution": "subject_predicate",
+            "ends": [
+              {
+                "role": "subject",
+                "target": "n1"
+              },
+              {
+                "role": "predicate",
+                "target": "n0"
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "family": "binding",
+            "constitution": "wh_gap",
+            "ends": [
+              {
+                "role": "gap",
+                "target": "n0"
+              },
+              {
+                "role": "licensor",
+                "target": "n3"
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "family": "attachment",
+            "constitution": "measure_limit",
+            "ends": [
+              {
+                "role": "measure",
+                "target": "n3"
+              },
+              {
+                "role": "limit_source",
+                "target": "n4"
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "family": "attachment",
+            "constitution": "entity_domain",
+            "ends": [
+              {
+                "role": "domain",
+                "target": "n4"
+              },
+              {
+                "role": "entity",
+                "target": "n2"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "checks": {
+      "initial-0": {
+        "status": "REJECTED",
+        "errors": [
+          "non-network interior n4"
+        ],
+        "obligations": [
+          {
+            "subject": "n3",
+            "requirement": "operator constitution",
+            "claimed": "arbitrary lexical constitution",
+            "hypothesized_type": "clarity_measure"
+          },
+          {
+            "subject": "n4",
+            "requirement": "operator constitution",
+            "claimed": "bounded graph search",
+            "hypothesized_type": "admission_limit"
+          },
+          {
+            "subject": "r0",
+            "requirement": "scope constitution",
+            "claimed": "conditional_clause"
+          },
+          {
+            "subject": "r1",
+            "requirement": "attachment constitution",
+            "claimed": "subject_predicate"
+          },
+          {
+            "subject": "r2",
+            "requirement": "binding constitution",
+            "claimed": "wh_gap"
+          },
+          {
+            "subject": "r3",
+            "requirement": "attachment constitution",
+            "claimed": "measure_limit"
+          },
+          {
+            "subject": "r4",
+            "requirement": "attachment constitution",
+            "claimed": "entity_domain"
+          }
+        ],
+        "backward_goals": [
+          {
+            "parent": "r1",
+            "child": "n1",
+            "role": "subject",
+            "requires": "establish typed interface and source license",
+            "status": "OPEN"
+          },
+          {
+            "parent": "r1",
+            "child": "n0",
+            "role": "predicate",
+            "requires": "establish typed interface and source license",
+            "status": "OPEN"
+          },
+          {
+            "parent": "r2",
+            "child": "n0",
+            "role": "gap",
+            "requires": "establish typed interface and binding locality",
+            "status": "OPEN"
+          },
+          {
+            "parent": "r2",
+            "child": "n3",
+            "role": "licensor",
+            "requires": "establish typed interface and binding locality",
+            "status": "OPEN"
+          },
+          {
+            "parent": "r3",
+            "child": "n3",
+            "role": "measure",
+            "requires": "establish typed interface and source license",
+            "status": "OPEN"
+          },
+          {
+            "parent": "r3",
+            "child": "n4",
+            "role": "limit_source",
+            "requires": "establish typed interface and source license",
+            "status": "OPEN"
+          },
+          {
+            "parent": "r4",
+            "child": "n4",
+            "role": "domain",
+            "requires": "establish typed interface and source license",
+            "status": "OPEN"
+          },
+          {
+            "parent": "r4",
+            "child": "n2",
+            "role": "entity",
+            "requires": "establish typed interface and source license",
+            "status": "OPEN"
+          }
+        ],
+        "semantic_admission": "NOT_RUN"
+      }
+    },
+    "authority": "Model alternatives only. Missing grammatical laws remain open."
+  },
+  "questions": {
+    "network": {
+      "type": "choice",
+      "instructions": "Compare whole source-grounded candidate graphs, including introduced positions, binding and higher-order operands. Which candidate has the best source support? Probabilities do not discharge laws.",
+      "criteria": {
+        "initial-0": "Conditional Sufficiency via Wh-Gap Licensing",
+        "unresolved": "Source/law evidence does not determine a unique graph."
+      }
+    }
+  }
+}

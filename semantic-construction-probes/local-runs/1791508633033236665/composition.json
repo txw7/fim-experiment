@@ -1,0 +1,4 @@
+{
+  "status": "BLOCKED",
+  "reason": "Local proposals fail structural/source/operator-preservation gates; no checked components to compose."
+}

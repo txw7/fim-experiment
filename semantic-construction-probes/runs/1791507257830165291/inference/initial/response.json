@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"candidates\": [\n    {\n      \"id\": \"hypothesis_01\",\n      \"reading\": \"The pronoun 'he' in the main clause refers to the same entity as the bracketed 'that person' in the \",\n      \"objects\": [\n        { \"id\": \"n0\", \"kind\": \"operator\", \"type\": \"assertion\", \"anchors\": [\"t4\", \"t5\", \"t6\"], \"members\": [], \"license\": \"subject-predicate binding\" },\n        { \"id\": \"n1\", \"kind\": \"operator\", \"type\": \"proposition\", \"anchors\": [\"t7\", \"t8\", \"t9\", \"t10\", \"t11\", \"t12\", \"t13\", \"t14\", \"t15\"], \"members\": [\"n2\"], \"license\": \"modal permission\" },\n        { \"id\": \"n2\", \"kind\": \"entity\", \"type\": \"agent\", \"anchors\": [\"t8\"], \"members\": [], \"license\": \"generic agent\" },\n        { \"id\": \"n3\", \"kind\": \"entity\", \"type\": \"patient\", \"anchors\": [\"t14\"], \"members\": [], \"license\": \"generic patient\" },\n        { \"id\": \"n4\", \"kind\": \"entity\", \"type\": \"state\", \"anchors\": [\"t15\"], \"members\": [], \"license\": \"predicative adjective\" },\n        { \"id\": \"n5\", \"kind\": \"operator\", \"type\": \"justification\", \"anchors\": [\"t17\", \"t18\", \"t19\"], \"members\": [\"n6\"], \"license\": \"causal link\" },\n        { \"id\": \"n6\", \"kind\": \"entity\", \"type\": \"subject\", \"anchors\": [\"t21\", \"t24\"], \"members\": [], \"license\": \"anaphoric reference\" },\n        { \"id\": \"n7\", \"kind\": \"entity\", \"type\": \"location\", \"anchors\": [\"t28\"], \"members\": [], \"license\": \"prepositional complement\" }\n      ],\n      \"relations\": [\n        { \"id\": \"r0\", \"family\": \"binding\", \"constitution\": \"n0 binds n1\", \"ends\": [\n          { \"role\": \"subject\", \"target\": \"n0\" },\n          { \"role\": \"content\", \"target\": \"n1\" }\n        ] },\n        { \"id\": \"r1\", \"family\": \"argument\", \"constitution\": \"n1 applies to n2 and n3\", \"ends\": [\n          { \"role\": \"agent\", \"target\": \"n2\" },\n          { \"role\": \"patient\", \"target\": \"n3\" }\n        ] },\n        { \"id\": \"r2\", \"family\": \"attachment\", \"constitution\": \"n3 possesses n4\", \"ends\": [\n          { \"role\": \"holder\", \"target\": \"n3\" },\n          { \"role\": \"state\", \"target\": \"n4\" }\n        ] },\n        { \"id\": \"r3\", \"family\": \"scope\", \"constitution\": \"n5 supports n1\", \"ends\": [\n          { \"role\": \"basis\", \"target\": \"n5\" },\n          { \"role\": \"conclusion\", \"target\": \"n1\" }\n        ] },\n        { \"id\": \"r4\", \"family\": \"binding\", \"constitution\": \"n6 is identified with n0\", \"ends\": [\n          { \"role\": \"referent\", \"target\": \"n6\" },\n          { \"role\": \"source\", \"target\": \"n0\" }\n        ] }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"The specific identity of 'he' (n0) vs 'that person' (n6) remains anaphoric without external context.\",\n    \"The temporal scope of 'then' (t10) relative to 'now' (t27) is not explicitly linked in the graph.\"\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1791507319,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 948,
+    "prompt_tokens": 1062,
+    "total_tokens": 2010,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Hr6l8QdXXQsTzPDIyelr59z7cmv4xPNV",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 1062,
+    "prompt_ms": 3080.747,
+    "prompt_per_token_ms": 2.900891713747646,
+    "prompt_per_second": 344.7215886276932,
+    "predicted_n": 948,
+    "predicted_ms": 58246.818,
+    "predicted_per_token_ms": 61.50667159450897,
+    "predicted_per_second": 16.258398870819004
+  }
+}

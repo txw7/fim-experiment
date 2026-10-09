@@ -1,0 +1,163 @@
+{
+  "model": "local",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Construct competing semantic graph hypotheses from unchanged source occurrences. No operator inventory or topology is supplied. Propose at most TWO small different analyses, each at most 10 objects and 10 relations. Choose operator names, types, grammatical positions, roles, binding, scope and network boundaries. Objects have source token IDs; missing grammatical positions may have no anchors ONLY with an explicit named grammatical construction license. No invented lexical referents. Networks retain member identities and may be operands of higher relations. Relation endpoints may reference relations. Different readings should differ in structure, not just labels. Separate argument, binding, attachment and scope. Every constitution/license is a CLAIM requiring native checking, not proof. On feedback, address narrower backward obligations and preserve viable alternatives; do not silently resolve source ambiguity. Do not summarize. Token anchors are IDs, never regenerate offsets."
+    },
+    {
+      "role": "user",
+      "content": "{\"source\":\"what she was when he was where they were where she was when it happened\",\"occurrences\":[{\"id\":\"t0\",\"text\":\"what\",\"begin\":0,\"end\":4},{\"id\":\"t1\",\"text\":\"she\",\"begin\":5,\"end\":8},{\"id\":\"t2\",\"text\":\"was\",\"begin\":9,\"end\":12},{\"id\":\"t3\",\"text\":\"when\",\"begin\":13,\"end\":17},{\"id\":\"t4\",\"text\":\"he\",\"begin\":18,\"end\":20},{\"id\":\"t5\",\"text\":\"was\",\"begin\":21,\"end\":24},{\"id\":\"t6\",\"text\":\"where\",\"begin\":25,\"end\":30},{\"id\":\"t7\",\"text\":\"they\",\"begin\":31,\"end\":35},{\"id\":\"t8\",\"text\":\"were\",\"begin\":36,\"end\":40},{\"id\":\"t9\",\"text\":\"where\",\"begin\":41,\"end\":46},{\"id\":\"t10\",\"text\":\"she\",\"begin\":47,\"end\":50},{\"id\":\"t11\",\"text\":\"was\",\"begin\":51,\"end\":54},{\"id\":\"t12\",\"text\":\"when\",\"begin\":55,\"end\":59},{\"id\":\"t13\",\"text\":\"it\",\"begin\":60,\"end\":62},{\"id\":\"t14\",\"text\":\"happened\",\"begin\":63,\"end\":71}],\"available_native_mechanisms\":[\"opaque occurrence formation\",\"partial graph/region/incidence holes\",\"bounded graph search\",\"region contraction/expansion\"],\"missing_native_meanings\":[\"arbitrary lexical/grammatical operator constitution admission\",\"wh gap licensing\",\"temporal operator disambiguation\",\"natural-language inference proof\"],\"feedback\":null,\"limits\":{\"max_total_alternatives\":4,\"max_expansions\":100}}"
+    }
+  ],
+  "temperature": 0,
+  "max_tokens": 1900,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "construction_programs",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "candidates": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "reading": {
+                  "type": "string"
+                },
+                "objects": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "kind": {
+                        "type": "string",
+                        "enum": [
+                          "entity",
+                          "operator",
+                          "proposition",
+                          "network",
+                          "position",
+                          "binder"
+                        ]
+                      },
+                      "type": {
+                        "type": "string"
+                      },
+                      "anchors": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "members": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "license": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "kind",
+                      "type",
+                      "anchors",
+                      "members",
+                      "license"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "relations": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "family": {
+                        "type": "string",
+                        "enum": [
+                          "argument",
+                          "binding",
+                          "scope",
+                          "attachment",
+                          "inference",
+                          "enclosure",
+                          "lift"
+                        ]
+                      },
+                      "constitution": {
+                        "type": "string"
+                      },
+                      "ends": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "role": {
+                              "type": "string"
+                            },
+                            "target": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "role",
+                            "target"
+                          ],
+                          "additionalProperties": false
+                        }
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "family",
+                      "constitution",
+                      "ends"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "reading",
+                "objects",
+                "relations"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "unresolved": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "candidates",
+          "unresolved"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

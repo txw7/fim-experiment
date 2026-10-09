@@ -1,0 +1,48 @@
+{
+  "model": "english",
+  "state": {
+    "source": "1. Our discussion will be adequate if it has as much clarity as the subject-matter admits.",
+    "relation": {
+      "id": "r0",
+      "family": "inference",
+      "constitution": "conditional",
+      "ends": [
+        {
+          "role": "condition",
+          "target": "n3"
+        },
+        {
+          "role": "consequent",
+          "target": "n0"
+        }
+      ]
+    },
+    "operands": [
+      {
+        "id": "n3",
+        "type": "adequacy",
+        "anchors": [
+          "t6"
+        ]
+      },
+      {
+        "id": "n0",
+        "type": "discussion",
+        "anchors": [
+          "t3"
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "fit": {
+      "type": "choice",
+      "instructions": "Is this exact proposed relation licensed by the source?",
+      "criteria": {
+        "supported": "Source supports roles.",
+        "unsupported": "Roles conflict with source.",
+        "unresolved": "Insufficient evidence."
+      }
+    }
+  }
+}

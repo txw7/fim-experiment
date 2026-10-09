@@ -1,0 +1,204 @@
+[
+  {
+    "id": "initial-29",
+    "reading": "r0",
+    "objects": [
+      {
+        "id": "n0",
+        "kind": "entity",
+        "type": "discussion",
+        "anchors": [
+          "t3"
+        ],
+        "members": [],
+        "license": "t2-t3"
+      },
+      {
+        "id": "n1",
+        "kind": "entity",
+        "type": "clarity",
+        "anchors": [
+          "t12"
+        ],
+        "members": [],
+        "license": "t12"
+      },
+      {
+        "id": "n2",
+        "kind": "entity",
+        "type": "subject-matter",
+        "anchors": [
+          "t15"
+        ],
+        "members": [],
+        "license": "t14-t15"
+      },
+      {
+        "id": "n3",
+        "kind": "entity",
+        "type": "adequacy",
+        "anchors": [
+          "t6"
+        ],
+        "members": [],
+        "license": "t6"
+      }
+    ],
+    "relations": [
+      {
+        "id": "r0",
+        "family": "inference",
+        "constitution": "conditional",
+        "ends": [
+          {
+            "role": "condition",
+            "target": "n3"
+          },
+          {
+            "role": "consequent",
+            "target": "n0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feedback-29",
+    "reading": "r1",
+    "objects": [
+      {
+        "id": "n0",
+        "kind": "entity",
+        "type": "discussion",
+        "anchors": [
+          "t3"
+        ],
+        "members": [],
+        "license": "t2-t3"
+      },
+      {
+        "id": "n1",
+        "kind": "entity",
+        "type": "clarity",
+        "anchors": [
+          "t12"
+        ],
+        "members": [],
+        "license": "t12"
+      },
+      {
+        "id": "n2",
+        "kind": "entity",
+        "type": "subject-matter",
+        "anchors": [
+          "t15"
+        ],
+        "members": [],
+        "license": "t14-t15"
+      },
+      {
+        "id": "n3",
+        "kind": "entity",
+        "type": "adequacy",
+        "anchors": [
+          "t6"
+        ],
+        "members": [],
+        "license": "t6"
+      },
+      {
+        "id": "n4",
+        "kind": "entity",
+        "type": "capacity",
+        "anchors": [],
+        "members": [],
+        "license": "inference-bound"
+      },
+      {
+        "id": "n5",
+        "kind": "entity",
+        "type": "limit",
+        "anchors": [],
+        "members": [],
+        "license": "inference-bound"
+      }
+    ],
+    "relations": [
+      {
+        "id": "r0",
+        "family": "inference",
+        "constitution": "conditional",
+        "ends": [
+          {
+            "role": "condition",
+            "target": "n3"
+          },
+          {
+            "role": "consequent",
+            "target": "n0"
+          }
+        ]
+      },
+      {
+        "id": "r1",
+        "family": "inference",
+        "constitution": "comparative_equality",
+        "ends": [
+          {
+            "role": "operand_a",
+            "target": "n1"
+          },
+          {
+            "role": "operand_b",
+            "target": "n4"
+          }
+        ]
+      },
+      {
+        "id": "r2",
+        "family": "inference",
+        "constitution": "attribute_of",
+        "ends": [
+          {
+            "role": "subject",
+            "target": "n4"
+          },
+          {
+            "role": "predicate",
+            "target": "n2"
+          }
+        ]
+      },
+      {
+        "id": "r3",
+        "family": "inference",
+        "constitution": "attribute_of",
+        "ends": [
+          {
+            "role": "subject",
+            "target": "n5"
+          },
+          {
+            "role": "predicate",
+            "target": "n2"
+          }
+        ]
+      },
+      {
+        "id": "r4",
+        "family": "inference",
+        "constitution": "conditional_limit",
+        "ends": [
+          {
+            "role": "condition",
+            "target": "n5"
+          },
+          {
+            "role": "result",
+            "target": "n1"
+          }
+        ]
+      }
+    ]
+  }
+]

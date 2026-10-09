@@ -1,0 +1,267 @@
+{
+  "source": "when he was",
+  "initial": {
+    "status": "COMPLETED",
+    "candidate": {
+      "id": "op_001",
+      "reading": "temporal-subordination",
+      "objects": [
+        {
+          "id": "n0",
+          "kind": "occurrence",
+          "type": "lexical-occurrence",
+          "anchors": [
+            "t0"
+          ],
+          "members": [],
+          "license": "literal source occurrence"
+        },
+        {
+          "id": "n1",
+          "kind": "occurrence",
+          "type": "lexical-occurrence",
+          "anchors": [
+            "t1"
+          ],
+          "members": [],
+          "license": "literal source occurrence"
+        },
+        {
+          "id": "n2",
+          "kind": "occurrence",
+          "type": "lexical-occurrence",
+          "anchors": [
+            "t2"
+          ],
+          "members": [],
+          "license": "literal source occurrence"
+        }
+      ],
+      "relations": [
+        {
+          "id": "r0",
+          "family": "binding",
+          "constitution": "temporal-clause",
+          "ends": [
+            {
+              "role": "head",
+              "target": "n0"
+            },
+            {
+              "role": "subordinate",
+              "target": "n1"
+            }
+          ]
+        },
+        {
+          "id": "r1",
+          "family": "binding",
+          "constitution": "temporal-clause",
+          "ends": [
+            {
+              "role": "head",
+              "target": "n1"
+            },
+            {
+              "role": "predicate",
+              "target": "n2"
+            }
+          ]
+        }
+      ]
+    },
+    "checks": {
+      "status": "STRUCTURALLY_REVIEWABLE",
+      "errors": [],
+      "obligations": [
+        {
+          "subject": "r0",
+          "requirement": "binding constitution",
+          "claimed": "temporal-clause"
+        },
+        {
+          "subject": "r1",
+          "requirement": "binding constitution",
+          "claimed": "temporal-clause"
+        }
+      ],
+      "backward_goals": [
+        {
+          "parent": "r0",
+          "child": "n0",
+          "role": "head",
+          "requires": "establish typed interface and binding locality",
+          "status": "OPEN"
+        },
+        {
+          "parent": "r0",
+          "child": "n1",
+          "role": "subordinate",
+          "requires": "establish typed interface and binding locality",
+          "status": "OPEN"
+        },
+        {
+          "parent": "r1",
+          "child": "n1",
+          "role": "head",
+          "requires": "establish typed interface and binding locality",
+          "status": "OPEN"
+        },
+        {
+          "parent": "r1",
+          "child": "n2",
+          "role": "predicate",
+          "requires": "establish typed interface and binding locality",
+          "status": "OPEN"
+        }
+      ],
+      "semantic_admission": "NOT_RUN",
+      "occurrence_diagnostics": [],
+      "metrics": {
+        "networks": 0,
+        "network_operands": 0,
+        "relation_operands": 0,
+        "implicit_positions": 0
+      },
+      "substrate_errors": [],
+      "uninterpreted_occurrences": [],
+      "uninterpreted_operators": [],
+      "source_preserved": true,
+      "complete_operator_coverage": true,
+      "semantic_status": "UNVERIFIED_LICENSES"
+    },
+    "seconds": 103.92
+  },
+  "repair": {
+    "status": "COMPLETED",
+    "candidate": {
+      "id": "op_002",
+      "reading": "temporal-subordination-chain",
+      "objects": [
+        {
+          "id": "n0",
+          "kind": "occurrence",
+          "type": "lexical-occurrence",
+          "anchors": [
+            "t0"
+          ],
+          "members": [],
+          "license": "literal source occurrence"
+        },
+        {
+          "id": "n1",
+          "kind": "occurrence",
+          "type": "lexical-occurrence",
+          "anchors": [
+            "t1"
+          ],
+          "members": [],
+          "license": "literal source occurrence"
+        },
+        {
+          "id": "n2",
+          "kind": "occurrence",
+          "type": "lexical-occurrence",
+          "anchors": [
+            "t2"
+          ],
+          "members": [],
+          "license": "literal source occurrence"
+        }
+      ],
+      "relations": [
+        {
+          "id": "r0",
+          "family": "binding",
+          "constitution": "temporal-clause",
+          "ends": [
+            {
+              "role": "head",
+              "target": "n0"
+            },
+            {
+              "role": "subordinate",
+              "target": "n1"
+            }
+          ]
+        },
+        {
+          "id": "r1",
+          "family": "binding",
+          "constitution": "temporal-clause",
+          "ends": [
+            {
+              "role": "head",
+              "target": "n1"
+            },
+            {
+              "role": "predicate",
+              "target": "n2"
+            }
+          ]
+        }
+      ]
+    },
+    "checks": {
+      "status": "STRUCTURALLY_REVIEWABLE",
+      "errors": [],
+      "obligations": [
+        {
+          "subject": "r0",
+          "requirement": "binding constitution",
+          "claimed": "temporal-clause"
+        },
+        {
+          "subject": "r1",
+          "requirement": "binding constitution",
+          "claimed": "temporal-clause"
+        }
+      ],
+      "backward_goals": [
+        {
+          "parent": "r0",
+          "child": "n0",
+          "role": "head",
+          "requires": "establish typed interface and binding locality",
+          "status": "OPEN"
+        },
+        {
+          "parent": "r0",
+          "child": "n1",
+          "role": "subordinate",
+          "requires": "establish typed interface and binding locality",
+          "status": "OPEN"
+        },
+        {
+          "parent": "r1",
+          "child": "n1",
+          "role": "head",
+          "requires": "establish typed interface and binding locality",
+          "status": "OPEN"
+        },
+        {
+          "parent": "r1",
+          "child": "n2",
+          "role": "predicate",
+          "requires": "establish typed interface and binding locality",
+          "status": "OPEN"
+        }
+      ],
+      "semantic_admission": "NOT_RUN",
+      "occurrence_diagnostics": [],
+      "metrics": {
+        "networks": 0,
+        "network_operands": 0,
+        "relation_operands": 0,
+        "implicit_positions": 0
+      },
+      "substrate_errors": [],
+      "uninterpreted_occurrences": [],
+      "uninterpreted_operators": [],
+      "source_preserved": true,
+      "complete_operator_coverage": true,
+      "semantic_status": "UNVERIFIED_LICENSES"
+    },
+    "seconds": 68.65
+  }
+}

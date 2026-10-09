@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"candidates\":[{\"id\":\"c1\",\"reading\":\"where they were\",\"objects\":[{\"id\":\"n0\",\"kind\":\"occurrence\",\"type\":\"lexical-occurrence\",\"anchors\":[\"t0\"],\"members\":[],\"license\":\"literal source occurrence\"},{\"id\":\"n1\",\"kind\":\"occurrence\",\"type\":\"lexical-occurrence\",\"anchors\":[\"t1\"],\"members\":[],\"license\":\"literal source occurrence\"},{\"id\":\"n2\",\"kind\":\"occurrence\",\"type\":\"lexical-occurrence\",\"anchors\":[\"t2\"],\"members\":[],\"license\":\"literal source occurrence\"}],\"relations\":[{\"id\":\"r0\",\"family\":\"argument\",\"constitution\":\"clause\",\"ends\":[{\"role\":\"head\",\"target\":\"n0\"},{\"role\":\"argument\",\"target\":\"n1\"},{\"role\":\"argument\",\"target\":\"n2\"}]},{\"id\":\"r1\",\"family\":\"binding\",\"constitution\":\"operator\",\"ends\":[{\"role\":\"source\",\"target\":\"n0\"},{\"role\":\"target\",\"target\":\"n1\"}]},{\"id\":\"r2\",\"family\":\"binding\",\"constitution\":\"operator\",\"ends\":[{\"role\":\"source\",\"target\":\"n1\"},{\"role\":\"target\",\"target\":\"n2\"}]},{\"id\":\"r3\",\"family\":\"scope\",\"constitution\":\"operator\",\"ends\":[{\"role\":\"domain\",\"target\":\"r0\"},{\"role\":\"range\",\"target\":\"r1\"}]},{\"id\":\"r4\",\"family\":\"scope\",\"constitution\":\"operator\",\"ends\":[{\"role\":\"domain\",\"target\":\"r0\"},{\"role\":\"range\",\"target\":\"r2\"}]}]}],\"unresolved\":[\"n0\",\"n1\",\"n2\"]}"
+      }
+    }
+  ],
+  "created": 1791508770,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 312,
+    "prompt_tokens": 740,
+    "total_tokens": 1052,
+    "prompt_tokens_details": {
+      "cached_tokens": 212
+    }
+  },
+  "id": "chatcmpl-jGdid2aeFaV21X5RzWQofOPswWmPLKsN",
+  "timings": {
+    "cache_n": 212,
+    "prompt_n": 528,
+    "prompt_ms": 1706.868,
+    "prompt_per_token_ms": 3.2327045454545456,
+    "prompt_per_second": 309.3385077229171,
+    "predicted_n": 312,
+    "predicted_ms": 65482.104,
+    "predicted_per_token_ms": 210.5533890675241,
+    "predicted_per_second": 4.74938923770684
+  }
+}

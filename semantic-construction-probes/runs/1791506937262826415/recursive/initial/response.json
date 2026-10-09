@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"candidates\": [\n    {\n      \"id\": \"hypothesis_1\",\n      \"reading\": \"Nested Temporal-Location Interrogatives with Subject-Verb-Object Linearization\",\n      \"objects\": [\n        {\"id\": \"t0\", \"kind\": \"operator\", \"type\": \"wh-constituent\", \"anchors\": [\"t0\"],\"members\": [\"t1\", \"t2\", \"t3\", \"t4\", \"t5\", \"t6\", \"t7\", \"t8\", \"t9\", \"t10\", \"t11\", \"t12\", \"t13\", \"t14\"],\"license\": \"recursive wh-gap licensing\"},\n        {\"id\": \"t1\", \"kind\": \"entity\", \"type\": \"subject\", \"anchors\": [\"t1\"],\"members\": [],\"license\": \"pronoun resolution\"},\n        {\"id\": \"t2\", \"kind\": \"operator\", \"type\": \"copula\", \"anchors\": [\"t2\"],\"members\": [\"t1\"],\"license\": \"tense agreement\"},\n        {\"id\": \"t3\", \"kind\": \"operator\", \"type\": \"temporal-clause\", \"anchors\": [\"t3\"],\"members\": [\"t4\", \"t5\", \"t6\"],\"license\": \"subordinate clause formation\"},\n        {\"id\": \"t4\", \"kind\": \"entity\", \"type\": \"subject\", \"anchors\": [\"t4\"],\"members\": [],\"license\": \"pronoun resolution\"},\n        {\"id\": \"t5\", \"kind\": \"operator\", \"type\": \"copula\", \"anchors\": [\"t5\"],\"members\": [\"t4\"],\"license\": \"tense agreement\"},\n        {\"id\": \"t6\", \"kind\": \"operator\", \"type\": \"locative-clause\", \"anchors\": [\"t6\"],\"members\": [\"t7\", \"t8\"],\"license\": \"subordinate clause formation\"},\n        {\"id\": \"t7\", \"kind\": \"entity\", \"type\": \"subject\", \"anchors\": [\"t7\"],\"members\": [],\"license\": \"pronoun resolution\"},\n        {\"id\": \"t8\", \"kind\": \"operator\", \"type\": \"locative-predicate\", \"anchors\": [\"t8\"],\"members\": [\"t7\"],\"license\": \"verb agreement\"},\n        {\"id\": \"t9\", \"kind\": \"operator\", \"type\": \"locative-clause\", \"anchors\": [\"t9\"],\"members\": [\"t10\", \"t11\"],\"license\": \"subordinate clause formation\"},\n        {\"id\": \"t10\", \"kind\": \"entity\", \"type\": \"subject\", \"anchors\": [\"t10\"],\"members\": [],\"license\": \"pronoun resolution\"},\n        {\"id\": \"t11\", \"kind\": \"operator\", \"type\": \"copula\", \"anchors\": [\"t11\"],\"members\": [\"t10\"],\"license\": \"tense agreement\"},\n        {\"id\": \"t12\", \"kind\": \"operator\", \"type\": \"temporal-clause\", \"anchors\": [\"t12\"],\"members\": [\"t13\", \"t14\"],\"license\": \"subordinate clause formation\"},\n        {\"id\": \"t13\", \"kind\": \"entity\", \"type\": \"subject\", \"anchors\": [\"t13\"],\"members\": [],\"license\": \"pronoun resolution\"},\n        {\"id\": \"t14\", \"kind\": \"operator\", \"type\": \"event-predicate\", \"anchors\": [\"t14\"],\"members\": [\"t13\"],\"license\": \"intransitive verb usage\"}\n      ],\n      \"relations\": [\n        {\"id\": \"r1\", \"family\": \"binding\", \"constitution\": \"subject-predicate attachment\", \"ends\": [{\"role\": \"subject\", \"target\": \"t1\"}, {\"role\": \"predicate\", \"target\": \"t2\"}]},\n        {\"id\": \"r2\", \"family\": \"binding\", \"constitution\": \"subject-predicate attachment\", \"ends\": [{\"role\": \"subject\", \"target\": \"t4\"}, {\"role\": \"predicate\", \"target\": \"t5\"}]},\n        {\"id\": \"r3\", \"family\": \"binding\", \"constitution\": \"subject-predicate attachment\", \"ends\": [{\"role\": \"subject\", \"target\": \"t7\"}, {\"role\": \"predicate\", \"target\": \"t8\"}]},\n        {\"id\": \"r4\", \"family\": \"binding\", \"constitution\": \"subject-predicate attachment\", \"ends\": [{\"role\": \"subject\", \"target\": \"t10\"}, {\"role\": \"predicate\", \"target\": \"t11\"}]},\n        {\"id\": \"r5\", \"family\": \"binding\", \"constitution\": \"subject-predicate attachment\", \"ends\": [{\"role\": \"subject\", \"target\": \"t13\"}, {\"role\": \"predicate\", \"target\": \"t14\"}]},\n        {\"id\": \"r6\", \"family\": \"scope\", \"constitution\": \"temporal embedding\", \"ends\": [{\"role\": \"container\", \"target\": \"t3\"}, {\"role\": \"contained\", \"target\": \"r2\"}]},\n        {\"id\": \"r7\", \"family\": \"scope\", \"constitution\": \"locative embedding\", \"ends\": [{\"role\": \"container\", \"target\": \"t6\"}, {\"role\": \"contained\", \"target\": \"r3\"}]},\n        {\"id\": \"r8\", \"family\": \"scope\", \"constitution\": \"locative embedding\", \"ends\": [{\"role\": \"container\", \"target\": \"t9\"}, {\"role\": \"contained\", \"target\": \"r4\"}]},\n        {\"id\": \"r9\", \"family\": \"scope\", \"constitution\": \"temporal embedding\", \"ends\": [{\"role\": \"container\", \"target\": \"t12\"}, {\"role\": \"contained\", \"target\": \"r5\"}]},\n        {\"id\": \"r10\", \"family\": \"attachment\", \"constitution\": \"main clause integration\", \"ends\": [{\"role\": \"head\", \"target\": \"t0\"}, {\"role\": \"tail\", \"target\": \"r1\"}]}\n      ]\n    },\n    {\n      \"id\": \"hypothesis_2\",\n      \"reading\": \"Parallel Coordinate Structure with Shared Temporal Anchor\",\n      \"objects\": [\n        {\"id\": \"t0\", \"kind\": \"operator\", \"type\": \"wh-constituent\", \"anchors\": [\"t0\"],\"members\": [\"t1\", \"t2\", \"t3\", \"t4\", \"t5\", \"t6\", \"t7\", \"t8\", \"t9\", \"t10\", \"t11\", \"t12\", \"t13\", \"t14\"],\"license\": \"parallel wh-construction\"},\n        {\"id\": \"t1\", \"kind\": \"entity\", \"type\": \"subject\", \"anchors\": [\"t1\"],\"members\": [],\"license\": \"pronoun resolution\"},\n        {\"id\": \"t2\", \"kind\": \"operator\", \"type\": \"copula\", \"anchors\": [\"t2\"],\"members\": [\"t1\"],\"license\": \"tense agreement\"},\n        {\"id\": \"t3\", \"kind\": \"operator\", \"type\": \"temporal-anchor\", \"anchors\": [\"t3\"],\"members\": [\"t4\", \"t5\", \"t6\", \"t7\", \"t8\", \"t9\", \"t10\", \"t11\"],\"license\": \"shared temporal frame\"},\n        {\"id\": \"t4\", \"kind\": \"entity\", \"type\": \"subject\", \"anchors\": [\"t4\"],\"members\": [],\"license\": \"pronoun resolution\"},\n        {\"id\": \"t5\", \"kind\": \"operator\", \"type\": \"copula\", \"anchors\": [\"t5\"],\"members\": [\"t4\"],\"license\": \"tense agreement\"},\n        {\"id\": \"t6\", \"kind\": \"operator\", \"type\": \"locative-anchor\", \"anchors\": [\"t6\"],\"members\": [\"t7\", \"t8\"],\"license\": \"shared locative frame\"},\n        {\"id\": \"t7\", \"kind\": \"entity\", \"type\": \"subject\", \"anchors\": [\"t7\"],\"members\": [],\"license\": \"pronoun resolution\"},\n        {\"id\": \"t8\", \"kind\":"
+      }
+    }
+  ],
+  "created": 1791507046,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 1900,
+    "prompt_tokens": 582,
+    "total_tokens": 2482,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-RIvegmpIsPIF3QaawJPnnCbdktmJNEH4",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 582,
+    "prompt_ms": 3037.989,
+    "prompt_per_token_ms": 5.21991237113402,
+    "prompt_per_second": 191.5740972070669,
+    "predicted_n": 1900,
+    "predicted_ms": 105571.628,
+    "predicted_per_token_ms": 55.59327435492364,
+    "predicted_per_second": 17.987787400607296
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "status": "COMPLETED",
+  "candidate": {
+    "reading": "unresolved",
+    "applications": [],
+    "positions": [
+      {
+        "id": "t0",
+        "role": "temporal_subordinator",
+        "value_type": "interrogative_adverb",
+        "license": "hypothesis"
+      },
+      {
+        "id": "t1",
+        "role": "subject",
+        "value_type": "pronoun",
+        "license": "hypothesis"
+      },
+      {
+        "id": "t2",
+        "role": "verb_past",
+        "value_type": "copula",
+        "license": "hypothesis"
+      }
+    ],
+    "bindings": [],
+    "networks": [],
+    "relations": [
+      {
+        "id": "r0",
+        "family": "temporal_clause",
+        "roles": [
+          {
+            "role": "subordinator",
+            "target": "t0"
+          },
+          {
+            "role": "subject",
+            "target": "t1"
+          },
+          {
+            "role": "predicate",
+            "target": "t2"
+          }
+        ],
+        "license": "hypothesis"
+      }
+    ],
+    "unresolved": [
+      "The fragment 'when he was' lacks a complement (e.g., 'when he was here' or 'when he was born').",
+      "The temporal subordinator 'when' requires a clause to establish a time reference.",
+      "The copula 'was' requires a subject complement or predicate nominative to complete the proposition.",
+      "No semantic closure exists; the sequence is an open temporal phrase."
+    ]
+  },
+  "checks": {
+    "errors": [
+      "duplicate identity"
+    ],
+    "uncovered_occurrences": [],
+    "uninterpreted_operator_occurrences": [
+      "t0"
+    ],
+    "law_obligations": [
+      {
+        "subject": "t0",
+        "law": "hypothesis",
+        "status": "UNREGISTERED"
+      },
+      {
+        "subject": "t1",
+        "law": "hypothesis",
+        "status": "UNREGISTERED"
+      },
+      {
+        "subject": "t2",
+        "law": "hypothesis",
+        "status": "UNREGISTERED"
+      }
+    ],
+    "structural_gate": false,
+    "semantic_admission": "NOT_RUN",
+    "source_preservation": "IMMUTABLE_EXTERNAL_SUBSTRATE"
+  },
+  "seconds": 145.72
+}

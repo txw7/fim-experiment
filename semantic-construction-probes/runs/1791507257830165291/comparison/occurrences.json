@@ -1,0 +1,110 @@
+[
+  {
+    "id": "t0",
+    "text": "1",
+    "begin": 0,
+    "end": 1
+  },
+  {
+    "id": "t1",
+    "text": ".",
+    "begin": 1,
+    "end": 2
+  },
+  {
+    "id": "t2",
+    "text": "Our",
+    "begin": 3,
+    "end": 6
+  },
+  {
+    "id": "t3",
+    "text": "discussion",
+    "begin": 7,
+    "end": 17
+  },
+  {
+    "id": "t4",
+    "text": "will",
+    "begin": 18,
+    "end": 22
+  },
+  {
+    "id": "t5",
+    "text": "be",
+    "begin": 23,
+    "end": 25
+  },
+  {
+    "id": "t6",
+    "text": "adequate",
+    "begin": 26,
+    "end": 34
+  },
+  {
+    "id": "t7",
+    "text": "if",
+    "begin": 35,
+    "end": 37
+  },
+  {
+    "id": "t8",
+    "text": "it",
+    "begin": 38,
+    "end": 40
+  },
+  {
+    "id": "t9",
+    "text": "has",
+    "begin": 41,
+    "end": 44
+  },
+  {
+    "id": "t10",
+    "text": "as",
+    "begin": 45,
+    "end": 47
+  },
+  {
+    "id": "t11",
+    "text": "much",
+    "begin": 48,
+    "end": 52
+  },
+  {
+    "id": "t12",
+    "text": "clarity",
+    "begin": 53,
+    "end": 60
+  },
+  {
+    "id": "t13",
+    "text": "as",
+    "begin": 61,
+    "end": 63
+  },
+  {
+    "id": "t14",
+    "text": "the",
+    "begin": 64,
+    "end": 67
+  },
+  {
+    "id": "t15",
+    "text": "subject-matter",
+    "begin": 68,
+    "end": 82
+  },
+  {
+    "id": "t16",
+    "text": "admits",
+    "begin": 83,
+    "end": 89
+  },
+  {
+    "id": "t17",
+    "text": ".",
+    "begin": 89,
+    "end": 90
+  }
+]

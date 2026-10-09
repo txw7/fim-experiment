@@ -1,0 +1,51 @@
+{
+  "source": "recursive",
+  "candidates": 2,
+  "initial_status": "COMPLETED",
+  "feedback_status": "COMPLETED",
+  "shape_signatures": [
+    {
+      "candidate": "initial-0",
+      "objects": 8,
+      "relations": 5,
+      "kinds": [
+        "operator"
+      ],
+      "network_operands": 0
+    },
+    {
+      "candidate": "feedback-0",
+      "objects": 8,
+      "relations": 5,
+      "kinds": [
+        "operator"
+      ],
+      "network_operands": 0
+    }
+  ],
+  "native_semantic_admission": "NOT_RUN",
+  "observations": {
+    "laya": {
+      "status": "FAILED",
+      "error": "HTTP Error 422: Unprocessable Entity",
+      "latency_seconds": 0.009,
+      "admission": "NOT_AUTHORIZED"
+    },
+    "jev": {
+      "status": "COMPLETED",
+      "answers": {
+        "network": {
+          "type": "choice",
+          "choice": "initial-0",
+          "confidence": 0.48,
+          "probabilities": {
+            "initial-0": 0.74,
+            "unresolved": 0.26
+          }
+        }
+      },
+      "latency_seconds": 0.456,
+      "admission": "NOT_AUTHORIZED"
+    }
+  }
+}
