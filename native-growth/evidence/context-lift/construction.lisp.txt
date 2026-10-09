@@ -1,0 +1,56 @@
+context
+(abstract
+  ($work (VmState -> StepResult))
+  (bounded-loop-region
+    $work
+    budget/correlation/continue/exit obligations OPEN
+    vm-state-access; containment obligation OPEN))
+
+lift
+(abstract
+  ($generator (VmState -> StepResult))
+  (apply
+    (abstract
+      ($work (VmState -> StepResult))
+      (bounded-loop-region
+        $work
+        budget/correlation/continue/exit obligations OPEN
+        vm-state-access; containment obligation OPEN))
+    $generator))
+
+step-generator
+(abstract
+  ($input VmState)
+  (apply
+    execute
+    (apply
+      decode
+      (apply
+        fetch
+        $input))))
+
+run-candidate
+(bounded-loop-region
+  (abstract
+    ($input VmState)
+    (apply
+      execute
+      (apply
+        decode
+        (apply
+          fetch
+          $input))))
+  budget/correlation/continue/exit obligations OPEN
+  vm-state-access; containment obligation OPEN)
+
+alternative-run
+(bounded-loop-region
+  (abstract
+    ($input VmState)
+    (apply
+      inspect-fetched
+      (apply
+        fetch
+        $input)))
+  budget/correlation/continue/exit obligations OPEN
+  vm-state-access; containment obligation OPEN)

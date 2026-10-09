@@ -1,0 +1,9 @@
+{
+  "byte_identical": true,
+  "files": [
+    "receipt.json",
+    "terms.json",
+    "construction.lisp.txt",
+    "graph.json"
+  ]
+}

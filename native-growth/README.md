@@ -86,3 +86,13 @@ python3 native-growth/fim-register-demo.py /tmp/register-fim-fresh-run
 ```
 
 The output directory must not already exist. The runner verifies the configured local checkpoint digest and native FIM tokenization, uses the existing raw serializer and digest-checked insertion adapter, and records the exact prompt, response, candidate and checks. One actual local Qwen2.5-Coder-1.5B-Base request produced the body in `evidence/register-fim/completion.txt`; Rust checked all 256 indices across three register states, including preservation. Stale source and invalid ranges were rejected by category. These are tests, not a theorem over arbitrary register values. Implementation proof, native refinement admission and executable admission remain OPEN/false. The source graph is unchanged.
+
+## VM context/generator lifting — before code
+
+`vm-context-lift.py` reuses `/home/user0/semalg-flow-viewer/tower/calculus.py` and its binding-aware exporter. It does not call FIM or modify native graphs. The authored sequence law composes proposed `VmState -> Fetched -> Decoded -> StepResult` interfaces associated with the existing native fetch/decode/execute addresses. Typed application structure yields three CALL-use candidates and four value connections; these use construction-term coordinates, not newly admitted H002 addresses.
+
+```sh
+python3 native-growth/vm-context-lift.py /tmp/vm-lift-fresh-run
+```
+
+The resulting step generator is supplied to an unchanged higher-order loop context. A second compatible generator fits the same context; an incompatible interface is rejected. Capture-free substitution, alpha equivalence, type rejection and normalization checks reuse the original calculus. `evidence/context-lift/` retains terms, exact native source references, beta steps, candidate graph and owner source snapshots. Rebuilding into another fresh directory produced byte-identical artifacts. This establishes symbolic composition only: native interfaces remain OPEN, loop policies are retained obligations, and native construction/admission is the next boundary. It does not establish new-rule discovery, native SHG lowering or execution.

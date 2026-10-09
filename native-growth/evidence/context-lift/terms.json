@@ -1,0 +1,364 @@
+{
+  "context": {
+    "kind": "abstract",
+    "name": "work",
+    "type": [
+      "arrow",
+      "VmState",
+      "StepResult"
+    ],
+    "args": [
+      {
+        "kind": "call",
+        "name": "bounded-loop-region",
+        "type": null,
+        "args": [
+          {
+            "kind": "var",
+            "name": "work",
+            "type": [
+              "arrow",
+              "VmState",
+              "StepResult"
+            ],
+            "args": [],
+            "origin": ""
+          },
+          {
+            "kind": "atom",
+            "name": "budget/correlation/continue/exit obligations OPEN",
+            "type": "LoopPolicy",
+            "args": [],
+            "origin": ""
+          },
+          {
+            "kind": "atom",
+            "name": "vm-state-access; containment obligation OPEN",
+            "type": "EffectBoundary",
+            "args": [],
+            "origin": ""
+          }
+        ],
+        "origin": ""
+      }
+    ],
+    "origin": ""
+  },
+  "lift": {
+    "kind": "abstract",
+    "name": "generator",
+    "type": [
+      "arrow",
+      "VmState",
+      "StepResult"
+    ],
+    "args": [
+      {
+        "kind": "apply",
+        "name": "",
+        "type": null,
+        "args": [
+          {
+            "kind": "abstract",
+            "name": "work",
+            "type": [
+              "arrow",
+              "VmState",
+              "StepResult"
+            ],
+            "args": [
+              {
+                "kind": "call",
+                "name": "bounded-loop-region",
+                "type": null,
+                "args": [
+                  {
+                    "kind": "var",
+                    "name": "work",
+                    "type": [
+                      "arrow",
+                      "VmState",
+                      "StepResult"
+                    ],
+                    "args": [],
+                    "origin": ""
+                  },
+                  {
+                    "kind": "atom",
+                    "name": "budget/correlation/continue/exit obligations OPEN",
+                    "type": "LoopPolicy",
+                    "args": [],
+                    "origin": ""
+                  },
+                  {
+                    "kind": "atom",
+                    "name": "vm-state-access; containment obligation OPEN",
+                    "type": "EffectBoundary",
+                    "args": [],
+                    "origin": ""
+                  }
+                ],
+                "origin": ""
+              }
+            ],
+            "origin": ""
+          },
+          {
+            "kind": "var",
+            "name": "generator",
+            "type": [
+              "arrow",
+              "VmState",
+              "StepResult"
+            ],
+            "args": [],
+            "origin": ""
+          }
+        ],
+        "origin": ""
+      }
+    ],
+    "origin": ""
+  },
+  "step-generator": {
+    "kind": "abstract",
+    "name": "input",
+    "type": "VmState",
+    "args": [
+      {
+        "kind": "apply",
+        "name": "",
+        "type": null,
+        "args": [
+          {
+            "kind": "atom",
+            "name": "execute",
+            "type": [
+              "arrow",
+              "Decoded",
+              "StepResult"
+            ],
+            "args": [],
+            "origin": "22e9a0f64ed012567835b7152f2ac7dc4e91e2d8e26d0c5a6149575f2b5e0c5e"
+          },
+          {
+            "kind": "apply",
+            "name": "",
+            "type": null,
+            "args": [
+              {
+                "kind": "atom",
+                "name": "decode",
+                "type": [
+                  "arrow",
+                  "Fetched",
+                  "Decoded"
+                ],
+                "args": [],
+                "origin": "3f2a50e9e07cec2d91a8773697a91980a7d4cae172e1ad0f497563f49986d35b"
+              },
+              {
+                "kind": "apply",
+                "name": "",
+                "type": null,
+                "args": [
+                  {
+                    "kind": "atom",
+                    "name": "fetch",
+                    "type": [
+                      "arrow",
+                      "VmState",
+                      "Fetched"
+                    ],
+                    "args": [],
+                    "origin": "b2f52fee24cbfc712cc8dfd709336342ed4d80302fce0d85c25f53a95348dcde"
+                  },
+                  {
+                    "kind": "var",
+                    "name": "input",
+                    "type": "VmState",
+                    "args": [],
+                    "origin": ""
+                  }
+                ],
+                "origin": ""
+              }
+            ],
+            "origin": ""
+          }
+        ],
+        "origin": ""
+      }
+    ],
+    "origin": ""
+  },
+  "run-candidate": {
+    "kind": "call",
+    "name": "bounded-loop-region",
+    "type": null,
+    "args": [
+      {
+        "kind": "abstract",
+        "name": "input",
+        "type": "VmState",
+        "args": [
+          {
+            "kind": "apply",
+            "name": "",
+            "type": null,
+            "args": [
+              {
+                "kind": "atom",
+                "name": "execute",
+                "type": [
+                  "arrow",
+                  "Decoded",
+                  "StepResult"
+                ],
+                "args": [],
+                "origin": "22e9a0f64ed012567835b7152f2ac7dc4e91e2d8e26d0c5a6149575f2b5e0c5e"
+              },
+              {
+                "kind": "apply",
+                "name": "",
+                "type": null,
+                "args": [
+                  {
+                    "kind": "atom",
+                    "name": "decode",
+                    "type": [
+                      "arrow",
+                      "Fetched",
+                      "Decoded"
+                    ],
+                    "args": [],
+                    "origin": "3f2a50e9e07cec2d91a8773697a91980a7d4cae172e1ad0f497563f49986d35b"
+                  },
+                  {
+                    "kind": "apply",
+                    "name": "",
+                    "type": null,
+                    "args": [
+                      {
+                        "kind": "atom",
+                        "name": "fetch",
+                        "type": [
+                          "arrow",
+                          "VmState",
+                          "Fetched"
+                        ],
+                        "args": [],
+                        "origin": "b2f52fee24cbfc712cc8dfd709336342ed4d80302fce0d85c25f53a95348dcde"
+                      },
+                      {
+                        "kind": "var",
+                        "name": "input",
+                        "type": "VmState",
+                        "args": [],
+                        "origin": ""
+                      }
+                    ],
+                    "origin": ""
+                  }
+                ],
+                "origin": ""
+              }
+            ],
+            "origin": ""
+          }
+        ],
+        "origin": ""
+      },
+      {
+        "kind": "atom",
+        "name": "budget/correlation/continue/exit obligations OPEN",
+        "type": "LoopPolicy",
+        "args": [],
+        "origin": ""
+      },
+      {
+        "kind": "atom",
+        "name": "vm-state-access; containment obligation OPEN",
+        "type": "EffectBoundary",
+        "args": [],
+        "origin": ""
+      }
+    ],
+    "origin": ""
+  },
+  "alternative-run": {
+    "kind": "call",
+    "name": "bounded-loop-region",
+    "type": null,
+    "args": [
+      {
+        "kind": "abstract",
+        "name": "input",
+        "type": "VmState",
+        "args": [
+          {
+            "kind": "apply",
+            "name": "",
+            "type": null,
+            "args": [
+              {
+                "kind": "atom",
+                "name": "inspect-fetched",
+                "type": [
+                  "arrow",
+                  "Fetched",
+                  "StepResult"
+                ],
+                "args": [],
+                "origin": ""
+              },
+              {
+                "kind": "apply",
+                "name": "",
+                "type": null,
+                "args": [
+                  {
+                    "kind": "atom",
+                    "name": "fetch",
+                    "type": [
+                      "arrow",
+                      "VmState",
+                      "Fetched"
+                    ],
+                    "args": [],
+                    "origin": "b2f52fee24cbfc712cc8dfd709336342ed4d80302fce0d85c25f53a95348dcde"
+                  },
+                  {
+                    "kind": "var",
+                    "name": "input",
+                    "type": "VmState",
+                    "args": [],
+                    "origin": ""
+                  }
+                ],
+                "origin": ""
+              }
+            ],
+            "origin": ""
+          }
+        ],
+        "origin": ""
+      },
+      {
+        "kind": "atom",
+        "name": "budget/correlation/continue/exit obligations OPEN",
+        "type": "LoopPolicy",
+        "args": [],
+        "origin": ""
+      },
+      {
+        "kind": "atom",
+        "name": "vm-state-access; containment obligation OPEN",
+        "type": "EffectBoundary",
+        "args": [],
+        "origin": ""
+      }
+    ],
+    "origin": ""
+  }
+}

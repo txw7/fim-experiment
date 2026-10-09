@@ -1,0 +1,148 @@
+{
+  "schema": "vm-context-lift-candidate-v1",
+  "source_view_sha256": "80caba6a584530d789c4fa06d5f327ad50f847048ac364d07ff2a4e04a3b7cf7",
+  "source_pins": {
+    "/home/user0/semalg-flow-viewer/tower/calculus.py": "d7e86791da2f11b27fada8cb6c91275968671315c5030eeb7d13ca7534863c08",
+    "/home/user0/semalg-flow-viewer/tower/analyze.py": "4c4dbac4985ea0b1c1e879dc684df45ce9eb778f1f2bbf1da999e738d7e761ba",
+    "/home/user0/FIM/experiment/native-growth/vm-context-lift.py": "4109e0f2d70cf3bc69b9fcac5c204b8b0ffc1c13dd2b902e14133c313f235cb0"
+  },
+  "bindings": {
+    "fetch": {
+      "native_member": "9048b02460f88a34eea56178c0dc3226eda0dd40f85c0c8649dc5bf0ce054700",
+      "native_address": "b2f52fee24cbfc712cc8dfd709336342ed4d80302fce0d85c25f53a95348dcde",
+      "header": {
+        "scope": "parent",
+        "bundle": "6e8c8eb87ae821c4ee0629ac20ec901afa66da0b073e9c2eeba5b207b94b8149",
+        "snapshot": "a69db5f1c1476deb9417fb600bcf0944868f43dfe38123469d89e9fd4c291688"
+      },
+      "interface": [
+        "VmState",
+        "Fetched"
+      ],
+      "interface_status": "PROPOSED; native interface remains OPEN"
+    },
+    "decode": {
+      "native_member": "ae1fd25e5508e66b6ea33652778f5f982f45cd3def6ccd0255dba532898c4dd3",
+      "native_address": "3f2a50e9e07cec2d91a8773697a91980a7d4cae172e1ad0f497563f49986d35b",
+      "header": {
+        "scope": "parent",
+        "bundle": "6e8c8eb87ae821c4ee0629ac20ec901afa66da0b073e9c2eeba5b207b94b8149",
+        "snapshot": "a69db5f1c1476deb9417fb600bcf0944868f43dfe38123469d89e9fd4c291688"
+      },
+      "interface": [
+        "Fetched",
+        "Decoded"
+      ],
+      "interface_status": "PROPOSED; native interface remains OPEN"
+    },
+    "execute": {
+      "native_member": "4c74b0335861ef12c0341c94d9b933973a15000f05cc572170ee202bafc1bcd6",
+      "native_address": "22e9a0f64ed012567835b7152f2ac7dc4e91e2d8e26d0c5a6149575f2b5e0c5e",
+      "header": {
+        "scope": "parent",
+        "bundle": "6e8c8eb87ae821c4ee0629ac20ec901afa66da0b073e9c2eeba5b207b94b8149",
+        "snapshot": "a69db5f1c1476deb9417fb600bcf0944868f43dfe38123469d89e9fd4c291688"
+      },
+      "interface": [
+        "Decoded",
+        "StepResult"
+      ],
+      "interface_status": "PROPOSED; native interface remains OPEN"
+    }
+  },
+  "decomposition_origin": "authored sequence law",
+  "loop_semantics": "OPEN; retained policy, not an executing loop",
+  "step_beta_events": [
+    {
+      "law": "beta-capture-avoiding",
+      "address": "root/0/1",
+      "input": "dd1f3f89495e9c3d1c41edcc040071fdb9c9ccc7b173456f9a69db24e2094c7c",
+      "output": "55fdb9110c5556a82380bbdd627326853da4007c56289c8e4ab7f5520ab4db8d"
+    }
+  ],
+  "enclosure_beta_events": [
+    {
+      "law": "beta-capture-avoiding",
+      "address": "root/0/0",
+      "input": "abb60a64578d45ce46e03fa606759130da72cb8d0fbdaeb0bd9784b0d0852430",
+      "output": "750715b6fa8289683dcafed5b1a870efa2fedc6c4a37a2e85449928e0a88b926"
+    },
+    {
+      "law": "beta-capture-avoiding",
+      "address": "root",
+      "input": "7c262faa04a14d163b654c73d05769d9471c75cd2a0f0e64d28b94a7d56a7f60",
+      "output": "53c5359a881f5947fbc6ef9f53511837e0a452cf74cf10f87065886148a58f9f"
+    }
+  ],
+  "calculus_checks": {
+    "capture_avoidance": true,
+    "alpha_equivalence": true,
+    "type_rejection": true,
+    "unbound_rejection": true,
+    "normalization_idempotence": true,
+    "beta_steps": 1
+  },
+  "interface_mismatch_rejected": true,
+  "alternative_generator_same_boundary": true,
+  "calls": [
+    {
+      "kind": "CALL-use",
+      "address": "ec072f829cf3d690c59f612c9538397f64b9bbe7584ad25df5b8b89a39c8ae3a#step/body/argument/argument",
+      "callee": "fetch",
+      "callee_native_address": "b2f52fee24cbfc712cc8dfd709336342ed4d80302fce0d85c25f53a95348dcde",
+      "input_type": "VmState",
+      "output_type": "Fetched"
+    },
+    {
+      "kind": "CALL-use",
+      "address": "ec072f829cf3d690c59f612c9538397f64b9bbe7584ad25df5b8b89a39c8ae3a#step/body/argument",
+      "callee": "decode",
+      "callee_native_address": "3f2a50e9e07cec2d91a8773697a91980a7d4cae172e1ad0f497563f49986d35b",
+      "input_type": "Fetched",
+      "output_type": "Decoded"
+    },
+    {
+      "kind": "CALL-use",
+      "address": "ec072f829cf3d690c59f612c9538397f64b9bbe7584ad25df5b8b89a39c8ae3a#step/body",
+      "callee": "execute",
+      "callee_native_address": "22e9a0f64ed012567835b7152f2ac7dc4e91e2d8e26d0c5a6149575f2b5e0c5e",
+      "input_type": "Decoded",
+      "output_type": "StepResult"
+    }
+  ],
+  "dataflows": [
+    {
+      "kind": "DATAFLOW",
+      "source": "ec072f829cf3d690c59f612c9538397f64b9bbe7584ad25df5b8b89a39c8ae3a#input",
+      "target": "ec072f829cf3d690c59f612c9538397f64b9bbe7584ad25df5b8b89a39c8ae3a#step/body/argument/argument",
+      "value_type": "VmState",
+      "derivation": "typed application argument -> function input"
+    },
+    {
+      "kind": "DATAFLOW",
+      "source": "ec072f829cf3d690c59f612c9538397f64b9bbe7584ad25df5b8b89a39c8ae3a#step/body/argument/argument",
+      "target": "ec072f829cf3d690c59f612c9538397f64b9bbe7584ad25df5b8b89a39c8ae3a#step/body/argument",
+      "value_type": "Fetched",
+      "derivation": "typed application argument -> function input"
+    },
+    {
+      "kind": "DATAFLOW",
+      "source": "ec072f829cf3d690c59f612c9538397f64b9bbe7584ad25df5b8b89a39c8ae3a#step/body/argument",
+      "target": "ec072f829cf3d690c59f612c9538397f64b9bbe7584ad25df5b8b89a39c8ae3a#step/body",
+      "value_type": "Decoded",
+      "derivation": "typed application argument -> function input"
+    },
+    {
+      "kind": "DATAFLOW",
+      "source": "ec072f829cf3d690c59f612c9538397f64b9bbe7584ad25df5b8b89a39c8ae3a#step/body",
+      "target": "ec072f829cf3d690c59f612c9538397f64b9bbe7584ad25df5b8b89a39c8ae3a#result",
+      "value_type": "StepResult",
+      "derivation": "lambda body -> boundary result"
+    }
+  ],
+  "native_admission": false,
+  "effect_preservation": "OPEN",
+  "behavioral_proof": "OPEN",
+  "model_calls": 0,
+  "fim_calls": 0
+}
