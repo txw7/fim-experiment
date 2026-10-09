@@ -1,0 +1,53 @@
+S3_LIVE_AB  [OPEN CANDIDATE]
+  source sha256: c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3
+  depends-on S2.5  [clause-012]
+  topology (SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2)))  [clause-007]
+  aliases B1→A, C1→B  [clause-008]
+  fresh independent pair B2,C2  [clause-009]
+  live scope A→B within pair-1 B1→C1  [clause-010]
+
+  provider requirement (not observed execution)  [clause-013]
+    source A typed pair output
+    → first-class authorized pipe
+    → S2 effect attempt durable journal with graph/input generation, correlation+activation IDs, provider realization, idempotency key, exact pipe
+    → Looper actual provider turn via existing local controller
+    → observed actual Codex result in a DISTINCT provider thread/session from implementing agent
+    → validate exact correlation/generation/types
+    → commit ONCE to B typed destination input, with trustworthy source→effect→provider turn→return→graph commit receipts
+
+  bounds: one invocation; no uncertain retry; no duplicate send  [clause-020]
+  receipt: evidence/live_ab.json with provider turn, addresses, IDs, generation, transport, commit  [clause-022]
+  negative tests: stale, correlation mismatch, wrong target/type, private access, double commit, unavailable, uncertain retry, restart  [clause-023]
+  unavailable provider ⇒ remain OPEN; no fabricated success  [clause-026]
+  forbid flattening, pair-2-live claims, background runner, second dispatcher  [clause-011]
+  no mocks/replay, thread hijack, fabricated provider IDs/receipts  [clauses-015:017]
+  gates: check-s3; check-s3-live; package-s3; promote only on accepted evidence  [clause-021]
+  preserve prior tests/digests; no S4+  [clauses-024,027]
+
+  higher-order links (Qwen observations):
+    c1: scope-constrains execution — UNRESOLVED
+    c2: guard-constrains execution — UNRESOLVED
+    c3: execution-witnessed-by evidence — UNRESOLVED
+    c4: gate-requires evidence — UNRESOLVED
+    c5: gate-checks execution — UNRESOLVED
+
+  feedback obligations:
+    topology-closure — OPEN
+      PARSED_SOURCE_FORM: literal-topology-parse [clause-007]
+      OPEN: pair1-boundary-selection [clause-010]
+      OPEN: B1-C1-identity-correspondence [clause-008]
+      OPEN: runtime-identity-state-preservation [clause-007]
+    guard-execution — OPEN
+      OPEN: uncertain-submission-policy [clause-020]
+      OPEN: idempotency-key-binding [clause-013]
+      OPEN: one-invocation-bound [clause-020]
+      OPEN: no-duplicate-browser-send [clause-020]
+    gate-evidence — OPEN
+      OPEN: receipt-field-to-observation-map [clause-022]
+      OPEN: negative-test-to-gate-map [clause-023]
+      OPEN: provider-turn-identity [clause-022]
+      OPEN: source-result-commitment-receipt [clause-022]
+
+  semantic equivalence to all of S3: NOT ESTABLISHED
+  provider execution: NOT RUN · native admission: NOT RUN
+  selected clause text and anchors: provenance.txt

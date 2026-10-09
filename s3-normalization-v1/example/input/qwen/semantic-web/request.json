@@ -1,0 +1,123 @@
+{
+  "model": "local",
+  "temperature": 0,
+  "max_tokens": 192,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "messages": [
+    {
+      "role": "system",
+      "content": "For c1-c5, assess only whether each named relation is licensed by its cited source clause. Use unresolved if not established. Return exactly the required status fields; no explanations or admission."
+    },
+    {
+      "role": "user",
+      "content": "{\"cross_network_candidates\":[{\"candidate_key\":\"c1\",\"id\":\"web/relation/scope-constrains-execution\",\"law\":\"scope-constrains.v1\",\"roles\":[\"scope\",\"topology\",\"target\"],\"source_clause_id\":\"req/clause-010\"},{\"candidate_key\":\"c2\",\"id\":\"web/relation/guards-execution\",\"law\":\"guard-constrains.v1\",\"roles\":[\"guard\",\"target\",\"source_clause\"],\"source_clause_id\":\"req/clause-020\"},{\"candidate_key\":\"c3\",\"id\":\"web/relation/execution-witnessed-by-evidence\",\"law\":\"execution-evidence.v1\",\"roles\":[\"execution\",\"evidence\",\"source_clause\"],\"source_clause_id\":\"req/clause-013\"},{\"candidate_key\":\"c4\",\"id\":\"web/relation/gate-requires-evidence\",\"law\":\"gate-requires-evidence.v1\",\"roles\":[\"gate\",\"evidence\",\"source_clause\"],\"source_clause_id\":\"req/clause-022\"},{\"candidate_key\":\"c5\",\"id\":\"web/relation/gate-checks-execution\",\"law\":\"gate-checks-execution.v1\",\"roles\":[\"gate\",\"execution\",\"source_clause\"],\"source_clause_id\":\"req/clause-021\"}],\"higher_order_relation\":\"web/higher-order-conformance\",\"instruction\":\"For each c-key, check only its named relation against its cited clause. Use unresolved unless that clause licenses it. No admission.\",\"source_clauses\":{\"req/clause-010\":\"S3 exercises only original A→B real provider handoff within pair-1 B1→C1 boundary\",\"req/clause-013\":\"source A typed pair output → first-class authorized pipe → S2 effect attempt durable journal with graph/input generation, correlation+activation IDs, provider realization, idempotency key, exact pipe → Looper actual provider turn via existing local controller → observed actual Codex result in a DISTINCT provider thread/session from implementing agent → validate exact correlation/generation/types → commit ONCE to B typed destination input, with trustworthy source→effect→provider turn→return→graph commit receipts\",\"req/clause-020\":\"Limit to ONE explicitly requested live provider invocation, no retries after uncertain submissions, no duplicate browser sends\",\"req/clause-021\":\"create test_live_ab.py, explicit scripts/run_live_ab.py or equivalent, make check-s3 for offline tests and validating existing evidence, make check-s3-live to initiate one bounded real turn, make package-s3 to freeze reproducible S3 source archive with fresh-extraction tests and promote to integration ONLY if real evidence is accepted\",\"req/clause-022\":\"Define evidence/live_ab.json with exact observed Looper provider thread/turn, graph addresses, correlation/attempt IDs, generation, transport observation and source/result commitment receipt\"},\"source_sha256\":\"c1c5c9ed7b35fa7da68c94b737517cc27b0202606094cb5d2b129e7c18711fe3\"}"
+    }
+  ],
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "semantic_slice",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "c1": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string",
+                "enum": [
+                  "supported",
+                  "unsupported",
+                  "unresolved"
+                ]
+              }
+            },
+            "required": [
+              "status"
+            ],
+            "additionalProperties": false
+          },
+          "c2": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string",
+                "enum": [
+                  "supported",
+                  "unsupported",
+                  "unresolved"
+                ]
+              }
+            },
+            "required": [
+              "status"
+            ],
+            "additionalProperties": false
+          },
+          "c3": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string",
+                "enum": [
+                  "supported",
+                  "unsupported",
+                  "unresolved"
+                ]
+              }
+            },
+            "required": [
+              "status"
+            ],
+            "additionalProperties": false
+          },
+          "c4": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string",
+                "enum": [
+                  "supported",
+                  "unsupported",
+                  "unresolved"
+                ]
+              }
+            },
+            "required": [
+              "status"
+            ],
+            "additionalProperties": false
+          },
+          "c5": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string",
+                "enum": [
+                  "supported",
+                  "unsupported",
+                  "unresolved"
+                ]
+              }
+            },
+            "required": [
+              "status"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "c1",
+          "c2",
+          "c3",
+          "c4",
+          "c5"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}
