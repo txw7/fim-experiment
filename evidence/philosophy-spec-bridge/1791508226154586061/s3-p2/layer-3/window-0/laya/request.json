@@ -1,0 +1,129 @@
+{
+  "model": "english",
+  "state": "SOURCE DATA (classify expressed structure, not world truth):\nARCHITECTURE: S2.5 graph is (SUPERVISE A0 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))). B1/C1 are identity-preserving aliases for original A/B; B2/C2 are new agents and independently looping pairs. S3 exercises only original A→B real provider handoff within pair-1 B1→C1 boundary; do not flatten nested topology, claim both pairs executed live, use autonomous background task, or introduce second dispatcher. S3 should depend on S2.5 in stages.json, not merely S2.",
+  "questions": {
+    "logic:nested": {
+      "type": "choice",
+      "instructions": "One operator/predicate/flow is scoped inside another.",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "logic:chain": {
+      "type": "choice",
+      "instructions": "Multiple dependent inference/relation steps form a chain.",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "logic:shared_premise": {
+      "type": "choice",
+      "instructions": "One premise participates in more than one flow.",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "logic:branch": {
+      "type": "choice",
+      "instructions": "A premise/condition connects to multiple consequences.",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "logic:equivalence": {
+      "type": "choice",
+      "instructions": "Two formulas/claims are explicitly equivalent, not merely similar.",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "logic:substitution": {
+      "type": "choice",
+      "instructions": "An identity/equivalence licenses replacing a term/formula within a larger expression.",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "logic:missing_premise": {
+      "type": "choice",
+      "instructions": "An intended inference has a required premise that is absent.",
+      "criteria": {
+        "present": "Explicitly supported in this scope.",
+        "absent": "Not expressed in this scope.",
+        "unresolved": "Scope or binding is insufficient."
+      }
+    },
+    "axis:composition_topology": {
+      "type": "choice",
+      "instructions": "Classify the dominant composition of actual premise/conclusion dependencies.",
+      "criteria": {
+        "chain": "A conclusion feeds a later inference.",
+        "branch": "One premise/condition feeds multiple consequences.",
+        "shared": "Multiple flows share a premise without a serial chain.",
+        "none_or_unresolved": "No supported composition or unclear topology."
+      }
+    },
+    "axis:reference_alignment": {
+      "type": "choice",
+      "instructions": "Assess whether repeated terms in the proposed composition preserve referents and senses.",
+      "criteria": {
+        "aligned": "Same referents and senses are supported.",
+        "shifted": "A referent or sense changes.",
+        "mixed": "Some align and others shift.",
+        "unresolved": "Insufficient evidence to merge nodes."
+      }
+    },
+    "axis:composition_support": {
+      "type": "choice",
+      "instructions": "Assess source support for the larger connection, not philosophical truth.",
+      "criteria": {
+        "explicit": "Connection is explicitly expressed.",
+        "licensed": "Connection follows from supported component relations.",
+        "invented": "Connection requires an unsupported relation.",
+        "unresolved": "No candidate or uncertain support."
+      }
+    },
+    "axis:equivalence_strength": {
+      "type": "choice",
+      "instructions": "Distinguish two directions from similarity or a single implication.",
+      "criteria": {
+        "biconditional": "Both conditional directions with matching terms.",
+        "one_direction": "Only one conditional direction.",
+        "similarity": "Only analogy or resemblance.",
+        "none_or_unresolved": "No equivalence candidate or unclear senses."
+      }
+    },
+    "axis:context_dependence": {
+      "type": "choice",
+      "instructions": "Assess how much context is required for the proposed composition.",
+      "criteria": {
+        "unit": "One source unit suffices.",
+        "pair": "Both paired units are required.",
+        "parent": "Wider context is required.",
+        "unresolved": "Insufficient context to decide."
+      }
+    },
+    "axis:assumption_sensitivity": {
+      "type": "choice",
+      "instructions": "Assess reliance on an unstated bridge, identity or interpretation.",
+      "criteria": {
+        "independent": "Composition does not require an unstated bridge.",
+        "dependent": "Composition needs an unstated assumption.",
+        "not_applicable": "No composition candidate.",
+        "unresolved": "Cannot identify necessary assumptions."
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"profiles\": {\n    \"s3-p0\": {\n      \"nested\": \"unresolved\",\n      \"chain\": \"unresolved\",\n      \"shared_premise\": \"unresolved\",\n      \"branch\": \"unresolved\",\n      \"equivalence\": \"unresolved\",\n      \"substitution\": \"unresolved\",\n      \"missing_premise\": \"unresolved\"\n    }\n  },\n  \"symbolic\": {\n    \"atoms\": [\n      {\n        \"symbol\": \"S3_LIVE_AB\",\n        \"text\": \"IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.\",\n        \"source_quote\": \"IMPLEMENT S3_LIVE_AB — ONE BOUNDED REAL LOOPER PROVIDER EXECUTION in isolated SHG-mu project.\",\n        \"kind\": \"proposition\"\n      }\n    ],\n    \"premises\": [\n      \"S3_LIVE_AB is to be implemented in an isolated SHG-mu project.\"\n    ],\n    \"conclusion\": \"unresolved\",\n    \"identities\": [],\n    \"flows\": [],\n    \"compositions\": [],\n    \"unresolved\": [\n      \"execution status\",\n      \"stage gate status\",\n      \"authorization status\"\n    ]\n  }\n}"
+      }
+    }
+  ],
+  "created": 1791516937,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 299,
+    "prompt_tokens": 1966,
+    "total_tokens": 2265,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-xhsjqrNYd7k26eEGDQUGX0ajfilyYW25",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 1966,
+    "prompt_ms": 25971.152,
+    "prompt_per_token_ms": 13.210148524923701,
+    "prompt_per_second": 75.69937598455394,
+    "predicted_n": 299,
+    "predicted_ms": 63010.789,
+    "predicted_per_token_ms": 211.44560067114094,
+    "predicted_per_second": 4.729348810407691
+  }
+}

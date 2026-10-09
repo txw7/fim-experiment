@@ -1,0 +1,7 @@
+Filename,nwords,nsentences,nparagraphs,nlemmas,nlemma_types,ncontent_words,ncontent_types
+s3-p5.txt,60,5,1,60,53,51,45
+s3-p1.txt,49,5,1,49,41,41,35
+s3-p0.txt,14,1,1,14,14,11,11
+s3-p2.txt,73,4,1,73,60,59,48
+s3-p3.txt,147,7,1,147,110,116,90
+s3-p4.txt,136,6,1,136,96,105,82

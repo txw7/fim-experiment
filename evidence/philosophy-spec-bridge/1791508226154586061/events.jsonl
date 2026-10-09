@@ -1,0 +1,187 @@
+{"time_ns": 1791509058997627549, "kind": "observer_start", "provider": "jev", "record": "s3-p0", "phase": "layer-1"}
+{"time_ns": 1791509058999736034, "kind": "observer_start", "provider": "jev", "record": "s3-p1", "phase": "layer-1"}
+{"time_ns": 1791509059605527782, "kind": "observer_start", "provider": "laya", "record": "s3-p0", "phase": "layer-1/window-0"}
+{"time_ns": 1791509059605891081, "kind": "observer_start", "provider": "laya", "record": "s3-p1", "phase": "layer-1/window-0"}
+{"time_ns": 1791509059914330075, "kind": "observer_complete", "provider": "jev", "record": "s3-p0", "phase": "layer-1", "elapsed": 0.9164428539806977}
+{"time_ns": 1791509059916868077, "kind": "observer_start", "provider": "laya", "record": "s3-p2", "phase": "layer-1/window-0"}
+{"time_ns": 1791509059921863016, "kind": "observer_complete", "provider": "jev", "record": "s3-p1", "phase": "layer-1", "elapsed": 0.9208760199835524}
+{"time_ns": 1791509059923374917, "kind": "observer_start", "provider": "jev", "record": "s3-p2", "phase": "layer-1"}
+{"time_ns": 1791509060367310370, "kind": "observer_complete", "provider": "jev", "record": "s3-p2", "phase": "layer-1", "elapsed": 0.44380356709007174}
+{"time_ns": 1791509060370726258, "kind": "observer_start", "provider": "laya", "record": "s3-p3", "phase": "layer-1/window-0"}
+{"time_ns": 1791509062884264307, "kind": "observer_complete", "provider": "laya", "record": "s3-p0", "phase": "layer-1/window-0", "elapsed": 3.2770375160034746}
+{"time_ns": 1791509062885640433, "kind": "observer_start", "provider": "jev", "record": "s3-p3", "phase": "layer-1"}
+{"time_ns": 1791509063339471765, "kind": "observer_complete", "provider": "jev", "record": "s3-p3", "phase": "layer-1", "elapsed": 0.4537150989053771}
+{"time_ns": 1791509063343303827, "kind": "observer_start", "provider": "laya", "record": "s3-p4", "phase": "layer-1/window-0"}
+{"time_ns": 1791509068153406319, "kind": "observer_complete", "provider": "laya", "record": "s3-p1", "phase": "layer-1/window-0", "elapsed": 8.547267826041207}
+{"time_ns": 1791509068155677000, "kind": "observer_start", "provider": "jev", "record": "s3-p4", "phase": "layer-1"}
+{"time_ns": 1791509068549101159, "kind": "observer_complete", "provider": "jev", "record": "s3-p4", "phase": "layer-1", "elapsed": 0.3931961610214785}
+{"time_ns": 1791509068552676284, "kind": "observer_start", "provider": "laya", "record": "s3-p5", "phase": "layer-1/window-0"}
+{"time_ns": 1791509073817729169, "kind": "observer_complete", "provider": "laya", "record": "s3-p2", "phase": "layer-1/window-0", "elapsed": 13.900740984012373}
+{"time_ns": 1791509073819062321, "kind": "observer_start", "provider": "jev", "record": "s3-p5", "phase": "layer-1"}
+{"time_ns": 1791509074195791406, "kind": "observer_complete", "provider": "jev", "record": "s3-p5", "phase": "layer-1", "elapsed": 0.37661131902132183}
+{"time_ns": 1791509080428326781, "kind": "observer_complete", "provider": "laya", "record": "s3-p3", "phase": "layer-1/window-0", "elapsed": 20.05743765796069}
+{"time_ns": 1791509087331938493, "kind": "observer_complete", "provider": "laya", "record": "s3-p4", "phase": "layer-1/window-0", "elapsed": 23.9884227339644}
+{"time_ns": 1791509091561133051, "kind": "observer_complete", "provider": "laya", "record": "s3-p5", "phase": "layer-1/window-0", "elapsed": 23.008236826048233}
+{"time_ns": 1791509091702957707, "kind": "observer_start", "provider": "qwen", "record": "shared-tower", "phase": "layer-1/initial"}
+{"time_ns": 1791509091819564992, "kind": "observer_failed", "provider": "qwen", "record": "shared-tower", "phase": "layer-1/initial"}
+{"time_ns": 1791509170111668869, "kind": "observer_start", "provider": "qwen", "record": "s3-p0", "phase": "layer-1/initial"}
+{"time_ns": 1791509266037017794, "kind": "observer_complete", "provider": "qwen", "record": "s3-p0", "phase": "layer-1/initial", "elapsed": 95.92520580603741}
+{"time_ns": 1791509266039035916, "kind": "observer_start", "provider": "qwen", "record": "s3-p1", "phase": "layer-1/initial"}
+{"time_ns": 1791509378624977680, "kind": "observer_start", "provider": "qwen", "record": "s3-p2", "phase": "layer-1/initial"}
+{"time_ns": 1791509378632237558, "kind": "observer_start", "provider": "qwen", "record": "s3-p1", "phase": "layer-1/initial"}
+{"time_ns": 1791509378658893906, "kind": "observer_start", "provider": "qwen", "record": "s3-p3", "phase": "layer-1/initial"}
+{"time_ns": 1791509481117397261, "kind": "observer_start", "provider": "qwen", "record": "s3-p2", "phase": "layer-1/initial"}
+{"time_ns": 1791509481152746518, "kind": "observer_start", "provider": "qwen", "record": "s3-p3", "phase": "layer-1/initial"}
+{"time_ns": 1791509481155839362, "kind": "observer_start", "provider": "qwen", "record": "s3-p4", "phase": "layer-1/initial"}
+{"time_ns": 1791509627290364354, "kind": "observer_complete", "provider": "qwen", "record": "s3-p2", "phase": "layer-1/initial", "elapsed": 146.17265526403207}
+{"time_ns": 1791509627318565041, "kind": "observer_start", "provider": "qwen", "record": "s3-p5", "phase": "layer-1/initial"}
+{"time_ns": 1791509635388096478, "kind": "observer_complete", "provider": "qwen", "record": "s3-p3", "phase": "layer-1/initial", "elapsed": 154.2344924849458}
+{"time_ns": 1791509662367679108, "kind": "observer_complete", "provider": "qwen", "record": "s3-p4", "phase": "layer-1/initial", "elapsed": 181.21168562793173}
+{"time_ns": 1791509741824901795, "kind": "observer_start", "provider": "qwen", "record": "s3-p5", "phase": "layer-1/initial"}
+{"time_ns": 1791509891198680307, "kind": "observer_complete", "provider": "qwen", "record": "s3-p5", "phase": "layer-1/initial", "elapsed": 149.373515317915}
+{"time_ns": 1791509994161594016, "kind": "observer_start", "provider": "qwen", "record": "s3-p1", "phase": "layer-1/initial"}
+{"time_ns": 1791510074379824104, "kind": "observer_complete", "provider": "qwen", "record": "s3-p1", "phase": "layer-1/initial", "elapsed": 80.21723704505712}
+{"time_ns": 1791510074384040955, "kind": "student_training_start", "provider": "symbolic", "record": "shared-tower", "phase": "layer-1/before-feedback", "step": 0}
+{"time_ns": 1791510079298488509, "kind": "student_training_complete", "provider": "symbolic", "record": "shared-tower", "phase": "layer-1/before-feedback", "step": 250}
+{"time_ns": 1791510079298725549, "kind": "student_training_start", "provider": "probabilistic", "record": "shared-tower", "phase": "layer-1/before-feedback", "step": 0}
+{"time_ns": 1791510083671298752, "kind": "student_training_complete", "provider": "probabilistic", "record": "shared-tower", "phase": "layer-1/before-feedback", "step": 250}
+{"time_ns": 1791510083736253611, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p1", "phase": "layer-1/feedback"}
+{"time_ns": 1791510083737299479, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p0", "phase": "layer-1/feedback"}
+{"time_ns": 1791510083762968209, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p2", "phase": "layer-1/feedback"}
+{"time_ns": 1791510165175095174, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p0", "phase": "layer-1/feedback", "elapsed": 81.43748244806193}
+{"time_ns": 1791510165244134203, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p3", "phase": "layer-1/feedback"}
+{"time_ns": 1791510190551448213, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p1", "phase": "layer-1/feedback", "elapsed": 106.81489913596306}
+{"time_ns": 1791510190607630095, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p4", "phase": "layer-1/feedback"}
+{"time_ns": 1791510208136265709, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p2", "phase": "layer-1/feedback", "elapsed": 124.37312459293753}
+{"time_ns": 1791510208169063788, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p5", "phase": "layer-1/feedback"}
+{"time_ns": 1791510261044887317, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p3", "phase": "layer-1/feedback", "elapsed": 95.80054727010429}
+{"time_ns": 1791510290343934433, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p4", "phase": "layer-1/feedback", "elapsed": 99.73614852398168}
+{"time_ns": 1791510298496385947, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p5", "phase": "layer-1/feedback", "elapsed": 90.32709837099537}
+{"time_ns": 1791510298498637474, "kind": "student_training_start", "provider": "symbolic", "record": "shared-tower", "phase": "layer-1/after-feedback", "step": 250}
+{"time_ns": 1791510303901983728, "kind": "student_training_complete", "provider": "symbolic", "record": "shared-tower", "phase": "layer-1/after-feedback", "step": 500}
+{"time_ns": 1791510303902280513, "kind": "student_training_start", "provider": "probabilistic", "record": "shared-tower", "phase": "layer-1/after-feedback", "step": 250}
+{"time_ns": 1791510309058635247, "kind": "student_training_complete", "provider": "probabilistic", "record": "shared-tower", "phase": "layer-1/after-feedback", "step": 500}
+{"time_ns": 1791510309103669325, "kind": "observer_start", "provider": "laya", "record": "s3-p0", "phase": "layer-2/window-0"}
+{"time_ns": 1791510309109006807, "kind": "observer_start", "provider": "jev", "record": "s3-p0", "phase": "layer-2"}
+{"time_ns": 1791510309111755692, "kind": "observer_start", "provider": "laya", "record": "s3-p1", "phase": "layer-2/window-0"}
+{"time_ns": 1791510309113311624, "kind": "observer_start", "provider": "jev", "record": "s3-p1", "phase": "layer-2"}
+{"time_ns": 1791510309124176225, "kind": "observer_failed", "provider": "jev", "record": "s3-p1", "phase": "layer-2"}
+{"time_ns": 1791510309127473046, "kind": "observer_failed", "provider": "jev", "record": "s3-p0", "phase": "layer-2"}
+{"time_ns": 1791510309127562685, "kind": "observer_start", "provider": "laya", "record": "s3-p2", "phase": "layer-2/window-0"}
+{"time_ns": 1791510309129781603, "kind": "observer_start", "provider": "jev", "record": "s3-p2", "phase": "layer-2"}
+{"time_ns": 1791510309136406522, "kind": "observer_failed", "provider": "jev", "record": "s3-p2", "phase": "layer-2"}
+{"time_ns": 1791510309140203522, "kind": "observer_start", "provider": "laya", "record": "s3-p3", "phase": "layer-2/window-0"}
+{"time_ns": 1791510310292380814, "kind": "observer_complete", "provider": "laya", "record": "s3-p0", "phase": "layer-2/window-0", "elapsed": 1.1875509519595653}
+{"time_ns": 1791510310294436792, "kind": "observer_start", "provider": "jev", "record": "s3-p3", "phase": "layer-2"}
+{"time_ns": 1791510310302327651, "kind": "observer_failed", "provider": "jev", "record": "s3-p3", "phase": "layer-2"}
+{"time_ns": 1791510310306581601, "kind": "observer_start", "provider": "laya", "record": "s3-p4", "phase": "layer-2/window-0"}
+{"time_ns": 1791510312794730462, "kind": "observer_complete", "provider": "laya", "record": "s3-p1", "phase": "layer-2/window-0", "elapsed": 3.682682201033458}
+{"time_ns": 1791510312795722578, "kind": "observer_start", "provider": "jev", "record": "s3-p4", "phase": "layer-2"}
+{"time_ns": 1791510312800248092, "kind": "observer_failed", "provider": "jev", "record": "s3-p4", "phase": "layer-2"}
+{"time_ns": 1791510312802363235, "kind": "observer_start", "provider": "laya", "record": "s3-p5", "phase": "layer-2/window-0"}
+{"time_ns": 1791510315020055033, "kind": "observer_complete", "provider": "laya", "record": "s3-p2", "phase": "layer-2/window-0", "elapsed": 5.891341696027666}
+{"time_ns": 1791510315020870215, "kind": "observer_start", "provider": "jev", "record": "s3-p5", "phase": "layer-2"}
+{"time_ns": 1791510315024656698, "kind": "observer_failed", "provider": "jev", "record": "s3-p5", "phase": "layer-2"}
+{"time_ns": 1791510317786950245, "kind": "observer_complete", "provider": "laya", "record": "s3-p3", "phase": "layer-2/window-0", "elapsed": 8.646526358090341}
+{"time_ns": 1791510320521734117, "kind": "observer_complete", "provider": "laya", "record": "s3-p4", "phase": "layer-2/window-0", "elapsed": 10.214851137017831}
+{"time_ns": 1791510322161283782, "kind": "observer_complete", "provider": "laya", "record": "s3-p5", "phase": "layer-2/window-0", "elapsed": 9.35876539198216}
+{"time_ns": 1791515843223912523, "kind": "observer_start", "provider": "jev", "record": "s3-p0", "phase": "layer-2/retry-1791515843221112273"}
+{"time_ns": 1791515843224898861, "kind": "observer_start", "provider": "jev", "record": "s3-p1", "phase": "layer-2/retry-1791515843222957253"}
+{"time_ns": 1791515843228331698, "kind": "observer_start", "provider": "jev", "record": "s3-p2", "phase": "layer-2/retry-1791515843224796157"}
+{"time_ns": 1791515843230524654, "kind": "observer_start", "provider": "jev", "record": "s3-p3", "phase": "layer-2/retry-1791515843228946780"}
+{"time_ns": 1791515843665722736, "kind": "observer_complete", "provider": "jev", "record": "s3-p1", "phase": "layer-2/retry-1791515843222957253", "elapsed": 0.43874112400226295}
+{"time_ns": 1791515843676239240, "kind": "observer_start", "provider": "jev", "record": "s3-p4", "phase": "layer-2/retry-1791515843675513565"}
+{"time_ns": 1791515843682391934, "kind": "observer_complete", "provider": "jev", "record": "s3-p0", "phase": "layer-2/retry-1791515843221112273", "elapsed": 0.45826353994198143}
+{"time_ns": 1791515843686302593, "kind": "observer_start", "provider": "jev", "record": "s3-p5", "phase": "layer-2/retry-1791515843684931508"}
+{"time_ns": 1791515843721803398, "kind": "observer_complete", "provider": "jev", "record": "s3-p3", "phase": "layer-2/retry-1791515843228946780", "elapsed": 0.48985369002912194}
+{"time_ns": 1791515843723798087, "kind": "observer_complete", "provider": "jev", "record": "s3-p2", "phase": "layer-2/retry-1791515843224796157", "elapsed": 0.49460372794419527}
+{"time_ns": 1791515844024330435, "kind": "observer_complete", "provider": "jev", "record": "s3-p4", "phase": "layer-2/retry-1791515843675513565", "elapsed": 0.3479292968986556}
+{"time_ns": 1791515844062678973, "kind": "observer_complete", "provider": "jev", "record": "s3-p5", "phase": "layer-2/retry-1791515843684931508", "elapsed": 0.37613810098264366}
+{"time_ns": 1791515844226305599, "kind": "observer_start", "provider": "qwen", "record": "s3-p1", "phase": "layer-2/initial"}
+{"time_ns": 1791515844227924366, "kind": "observer_start", "provider": "qwen", "record": "s3-p2", "phase": "layer-2/initial"}
+{"time_ns": 1791515844228912220, "kind": "observer_start", "provider": "qwen", "record": "s3-p0", "phase": "layer-2/initial"}
+{"time_ns": 1791515917976482701, "kind": "observer_complete", "provider": "qwen", "record": "s3-p1", "phase": "layer-2/initial", "elapsed": 73.7483017819468}
+{"time_ns": 1791515918019062981, "kind": "observer_start", "provider": "qwen", "record": "s3-p3", "phase": "layer-2/initial"}
+{"time_ns": 1791515933080608340, "kind": "observer_complete", "provider": "qwen", "record": "s3-p2", "phase": "layer-2/initial", "elapsed": 88.85152402799577}
+{"time_ns": 1791515933106999679, "kind": "observer_start", "provider": "qwen", "record": "s3-p4", "phase": "layer-2/initial"}
+{"time_ns": 1791515941993419131, "kind": "observer_complete", "provider": "qwen", "record": "s3-p0", "phase": "layer-2/initial", "elapsed": 97.7634474330116}
+{"time_ns": 1791515942011754925, "kind": "observer_start", "provider": "qwen", "record": "s3-p5", "phase": "layer-2/initial"}
+{"time_ns": 1791515999022970806, "kind": "observer_complete", "provider": "qwen", "record": "s3-p3", "phase": "layer-2/initial", "elapsed": 81.00360645796172}
+{"time_ns": 1791516010958536173, "kind": "observer_complete", "provider": "qwen", "record": "s3-p5", "phase": "layer-2/initial", "elapsed": 68.94658518198412}
+{"time_ns": 1791516011083558667, "kind": "observer_complete", "provider": "qwen", "record": "s3-p4", "phase": "layer-2/initial", "elapsed": 77.97626540600322}
+{"time_ns": 1791516011085858919, "kind": "student_training_start", "provider": "symbolic", "record": "shared-tower", "phase": "layer-2/before-feedback", "step": 500}
+{"time_ns": 1791516015454378039, "kind": "student_training_complete", "provider": "symbolic", "record": "shared-tower", "phase": "layer-2/before-feedback", "step": 750}
+{"time_ns": 1791516015454637987, "kind": "student_training_start", "provider": "probabilistic", "record": "shared-tower", "phase": "layer-2/before-feedback", "step": 500}
+{"time_ns": 1791516020380357539, "kind": "student_training_complete", "provider": "probabilistic", "record": "shared-tower", "phase": "layer-2/before-feedback", "step": 750}
+{"time_ns": 1791516020417410181, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p2", "phase": "layer-2/feedback"}
+{"time_ns": 1791516020417600734, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p1", "phase": "layer-2/feedback"}
+{"time_ns": 1791516020419571131, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p0", "phase": "layer-2/feedback"}
+{"time_ns": 1791516110400302207, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p2", "phase": "layer-2/feedback", "elapsed": 89.98266395903192}
+{"time_ns": 1791516110478102043, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p4", "phase": "layer-2/feedback"}
+{"time_ns": 1791516121362050898, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p0", "phase": "layer-2/feedback", "elapsed": 100.94231812900398}
+{"time_ns": 1791516121400650821, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p5", "phase": "layer-2/feedback"}
+{"time_ns": 1791516153591298209, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p1", "phase": "layer-2/feedback", "elapsed": 133.1723413739819}
+{"time_ns": 1791516193114699663, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p4", "phase": "layer-2/feedback", "elapsed": 82.63648804195691}
+{"time_ns": 1791516193257939592, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p5", "phase": "layer-2/feedback", "elapsed": 71.85711171291769}
+{"time_ns": 1791516443198762834, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p3", "phase": "layer-2/feedback"}
+{"time_ns": 1791516510214492299, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p3", "phase": "layer-2/feedback", "elapsed": 67.01552764896769}
+{"time_ns": 1791516510216752401, "kind": "student_training_start", "provider": "symbolic", "record": "shared-tower", "phase": "layer-2/after-feedback", "step": 750}
+{"time_ns": 1791516517072027656, "kind": "student_training_complete", "provider": "symbolic", "record": "shared-tower", "phase": "layer-2/after-feedback", "step": 1000}
+{"time_ns": 1791516517072520156, "kind": "student_training_start", "provider": "probabilistic", "record": "shared-tower", "phase": "layer-2/after-feedback", "step": 750}
+{"time_ns": 1791516522914511534, "kind": "student_training_complete", "provider": "probabilistic", "record": "shared-tower", "phase": "layer-2/after-feedback", "step": 1000}
+{"time_ns": 1791516522943599617, "kind": "observer_start", "provider": "laya", "record": "s3-p0", "phase": "layer-3/window-0"}
+{"time_ns": 1791516522943511859, "kind": "observer_start", "provider": "jev", "record": "s3-p0", "phase": "layer-3"}
+{"time_ns": 1791516522945144301, "kind": "observer_start", "provider": "jev", "record": "s3-p1", "phase": "layer-3"}
+{"time_ns": 1791516522945453101, "kind": "observer_start", "provider": "laya", "record": "s3-p1", "phase": "layer-3/window-0"}
+{"time_ns": 1791516523344294405, "kind": "observer_complete", "provider": "jev", "record": "s3-p0", "phase": "layer-3", "elapsed": 0.39974562893621624}
+{"time_ns": 1791516523347458433, "kind": "observer_start", "provider": "laya", "record": "s3-p2", "phase": "layer-3/window-0"}
+{"time_ns": 1791516523386214534, "kind": "observer_complete", "provider": "jev", "record": "s3-p1", "phase": "layer-3", "elapsed": 0.44070508307777345}
+{"time_ns": 1791516523388636922, "kind": "observer_start", "provider": "jev", "record": "s3-p2", "phase": "layer-3"}
+{"time_ns": 1791516523694003350, "kind": "observer_complete", "provider": "laya", "record": "s3-p0", "phase": "layer-3/window-0", "elapsed": 0.7500294441124424}
+{"time_ns": 1791516523696888947, "kind": "observer_start", "provider": "laya", "record": "s3-p3", "phase": "layer-3/window-0"}
+{"time_ns": 1791516523771039986, "kind": "observer_complete", "provider": "jev", "record": "s3-p2", "phase": "layer-3", "elapsed": 0.38221926998812705}
+{"time_ns": 1791516523772379088, "kind": "observer_start", "provider": "jev", "record": "s3-p3", "phase": "layer-3"}
+{"time_ns": 1791516524209557489, "kind": "observer_complete", "provider": "jev", "record": "s3-p3", "phase": "layer-3", "elapsed": 0.43708484491799027}
+{"time_ns": 1791516524212070848, "kind": "observer_start", "provider": "laya", "record": "s3-p4", "phase": "layer-3/window-0"}
+{"time_ns": 1791516525028942680, "kind": "observer_complete", "provider": "laya", "record": "s3-p1", "phase": "layer-3/window-0", "elapsed": 2.083273511962034}
+{"time_ns": 1791516525030532295, "kind": "observer_start", "provider": "jev", "record": "s3-p4", "phase": "layer-3"}
+{"time_ns": 1791516525553756881, "kind": "observer_complete", "provider": "jev", "record": "s3-p4", "phase": "layer-3", "elapsed": 0.5230234679765999}
+{"time_ns": 1791516525556138005, "kind": "observer_start", "provider": "laya", "record": "s3-p5", "phase": "layer-3/window-0"}
+{"time_ns": 1791516526383678740, "kind": "observer_complete", "provider": "laya", "record": "s3-p2", "phase": "layer-3/window-0", "elapsed": 3.036035247030668}
+{"time_ns": 1791516526384985766, "kind": "observer_start", "provider": "jev", "record": "s3-p5", "phase": "layer-3"}
+{"time_ns": 1791516526833703683, "kind": "observer_complete", "provider": "jev", "record": "s3-p5", "phase": "layer-3", "elapsed": 0.4485886840848252}
+{"time_ns": 1791516528054554538, "kind": "observer_complete", "provider": "laya", "record": "s3-p3", "phase": "layer-3/window-0", "elapsed": 4.357495398027822}
+{"time_ns": 1791516529891317925, "kind": "observer_complete", "provider": "laya", "record": "s3-p4", "phase": "layer-3/window-0", "elapsed": 5.679121316992678}
+{"time_ns": 1791516530929813968, "kind": "observer_complete", "provider": "laya", "record": "s3-p5", "phase": "layer-3/window-0", "elapsed": 5.3734820280224085}
+{"time_ns": 1791516531051420444, "kind": "observer_start", "provider": "qwen", "record": "s3-p1", "phase": "layer-3/initial"}
+{"time_ns": 1791516531051495674, "kind": "observer_start", "provider": "qwen", "record": "s3-p0", "phase": "layer-3/initial"}
+{"time_ns": 1791516531054883688, "kind": "observer_start", "provider": "qwen", "record": "s3-p2", "phase": "layer-3/initial"}
+{"time_ns": 1791516618289852143, "kind": "observer_complete", "provider": "qwen", "record": "s3-p0", "phase": "layer-3/initial", "elapsed": 87.23702421993949}
+{"time_ns": 1791516618314397074, "kind": "observer_start", "provider": "qwen", "record": "s3-p3", "phase": "layer-3/initial"}
+{"time_ns": 1791516638935901305, "kind": "observer_complete", "provider": "qwen", "record": "s3-p1", "phase": "layer-3/initial", "elapsed": 107.88233302393928}
+{"time_ns": 1791516638957454293, "kind": "observer_start", "provider": "qwen", "record": "s3-p4", "phase": "layer-3/initial"}
+{"time_ns": 1791516708372094540, "kind": "observer_complete", "provider": "qwen", "record": "s3-p2", "phase": "layer-3/initial", "elapsed": 177.31683692603838}
+{"time_ns": 1791516708395596604, "kind": "observer_start", "provider": "qwen", "record": "s3-p5", "phase": "layer-3/initial"}
+{"time_ns": 1791516745807585095, "kind": "observer_complete", "provider": "qwen", "record": "s3-p3", "phase": "layer-3/initial", "elapsed": 127.4930574890459}
+{"time_ns": 1791516775264656988, "kind": "observer_complete", "provider": "qwen", "record": "s3-p4", "phase": "layer-3/initial", "elapsed": 136.30707355902996}
+{"time_ns": 1791516835254773182, "kind": "observer_complete", "provider": "qwen", "record": "s3-p5", "phase": "layer-3/initial", "elapsed": 126.85906085907482}
+{"time_ns": 1791516835257374101, "kind": "student_training_start", "provider": "symbolic", "record": "shared-tower", "phase": "layer-3/before-feedback", "step": 1000}
+{"time_ns": 1791516841788493233, "kind": "student_training_complete", "provider": "symbolic", "record": "shared-tower", "phase": "layer-3/before-feedback", "step": 1250}
+{"time_ns": 1791516841788991087, "kind": "student_training_start", "provider": "probabilistic", "record": "shared-tower", "phase": "layer-3/before-feedback", "step": 1000}
+{"time_ns": 1791516847881660832, "kind": "student_training_complete", "provider": "probabilistic", "record": "shared-tower", "phase": "layer-3/before-feedback", "step": 1250}
+{"time_ns": 1791516847928833516, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p1", "phase": "layer-3/feedback"}
+{"time_ns": 1791516847934513053, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p0", "phase": "layer-3/feedback"}
+{"time_ns": 1791516847937544989, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p2", "phase": "layer-3/feedback"}
+{"time_ns": 1791516937226023805, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p0", "phase": "layer-3/feedback", "elapsed": 89.29112091707066}
+{"time_ns": 1791516937256237789, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p3", "phase": "layer-3/feedback"}
+{"time_ns": 1791516955975155118, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p1", "phase": "layer-3/feedback", "elapsed": 108.04614803206641}
+{"time_ns": 1791516956003853924, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p4", "phase": "layer-3/feedback"}
+{"time_ns": 1791517055489463212, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p3", "phase": "layer-3/feedback", "elapsed": 118.23306599596981}
+{"time_ns": 1791517055506943487, "kind": "observer_start", "provider": "qwen-feedback", "record": "s3-p5", "phase": "layer-3/feedback"}
+{"time_ns": 1791517064290627179, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p2", "phase": "layer-3/feedback", "elapsed": 216.35294887202326}
+{"time_ns": 1791517090553032759, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p4", "phase": "layer-3/feedback", "elapsed": 134.54902366397437}
+{"time_ns": 1791517152971712271, "kind": "observer_complete", "provider": "qwen-feedback", "record": "s3-p5", "phase": "layer-3/feedback", "elapsed": 97.46466465399135}
+{"time_ns": 1791517152974759783, "kind": "student_training_start", "provider": "symbolic", "record": "shared-tower", "phase": "layer-3/after-feedback", "step": 1250}
+{"time_ns": 1791517158475163185, "kind": "student_training_complete", "provider": "symbolic", "record": "shared-tower", "phase": "layer-3/after-feedback", "step": 1500}
+{"time_ns": 1791517158475425502, "kind": "student_training_start", "provider": "probabilistic", "record": "shared-tower", "phase": "layer-3/after-feedback", "step": 1250}
+{"time_ns": 1791517164546242909, "kind": "student_training_complete", "provider": "probabilistic", "record": "shared-tower", "phase": "layer-3/after-feedback", "step": 1500}

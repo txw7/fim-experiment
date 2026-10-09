@@ -1,0 +1,264 @@
+{
+  "model": "laya-rl-agent",
+  "answers": {
+    "logic:identity": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.4692,
+        "absent": 0.2358,
+        "unresolved": 0.295
+      },
+      "confidence": 0.0389,
+      "answer_confidence": 0.4692,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:reflexivity": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.4841,
+        "absent": 0.2427,
+        "unresolved": 0.2732
+      },
+      "confidence": 0.0448,
+      "answer_confidence": 0.4841,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:symmetry": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.5058,
+        "absent": 0.2285,
+        "unresolved": 0.2657
+      },
+      "confidence": 0.0586,
+      "answer_confidence": 0.5058,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:transitivity": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.4744,
+        "absent": 0.2484,
+        "unresolved": 0.2772
+      },
+      "confidence": 0.0394,
+      "answer_confidence": 0.4744,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:modus_ponens": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.5669,
+        "absent": 0.2061,
+        "unresolved": 0.227
+      },
+      "confidence": 0.1045,
+      "answer_confidence": 0.5669,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:modus_tollens": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.5525,
+        "absent": 0.2135,
+        "unresolved": 0.2341
+      },
+      "confidence": 0.0922,
+      "answer_confidence": 0.5525,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:and_introduction": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.5375,
+        "absent": 0.2237,
+        "unresolved": 0.2388
+      },
+      "confidence": 0.08,
+      "answer_confidence": 0.5375,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:and_elimination": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.5668,
+        "absent": 0.2065,
+        "unresolved": 0.2267
+      },
+      "confidence": 0.1044,
+      "answer_confidence": 0.5668,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:or_introduction": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.5055,
+        "absent": 0.2393,
+        "unresolved": 0.2552
+      },
+      "confidence": 0.0574,
+      "answer_confidence": 0.5055,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:disjunctive_syllogism": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.5775,
+        "absent": 0.1968,
+        "unresolved": 0.2256
+      },
+      "confidence": 0.1144,
+      "answer_confidence": 0.5775,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "logic:hypothetical_syllogism": {
+      "type": "choice",
+      "choice": "present",
+      "probabilities": {
+        "present": 0.5482,
+        "absent": 0.2173,
+        "unresolved": 0.2346
+      },
+      "confidence": 0.0885,
+      "answer_confidence": 0.5482,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:argument_direction": {
+      "type": "choice",
+      "choice": "both",
+      "probabilities": {
+        "forward": 0.275,
+        "reverse": 0.2269,
+        "both": 0.3744,
+        "unresolved": 0.1237
+      },
+      "confidence": 0.0493,
+      "answer_confidence": 0.3744,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:premise_status": {
+      "type": "choice",
+      "choice": "asserted",
+      "probabilities": {
+        "asserted": 0.3809,
+        "supposed": 0.2638,
+        "mixed": 0.1641,
+        "unresolved": 0.1912
+      },
+      "confidence": 0.0391,
+      "answer_confidence": 0.3809,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:premise_sufficiency": {
+      "type": "choice",
+      "choice": "complete",
+      "probabilities": {
+        "complete": 0.5138,
+        "missing": 0.195,
+        "not_applicable": 0.1644,
+        "unresolved": 0.1268
+      },
+      "confidence": 0.1202,
+      "answer_confidence": 0.5138,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:rule_pattern": {
+      "type": "choice",
+      "choice": "matches",
+      "probabilities": {
+        "matches": 0.4495,
+        "mismatches": 0.179,
+        "not_applicable": 0.198,
+        "unresolved": 0.1735
+      },
+      "confidence": 0.0681,
+      "answer_confidence": 0.4495,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:identity_basis": {
+      "type": "choice",
+      "choice": "explicit",
+      "probabilities": {
+        "explicit": 0.3581,
+        "inferred": 0.1527,
+        "unsupported": 0.2333,
+        "not_applicable": 0.256
+      },
+      "confidence": 0.0312,
+      "answer_confidence": 0.3581,
+      "action": {
+        "act_probability": 1.0
+      }
+    },
+    "axis:reply_role": {
+      "type": "choice",
+      "choice": "assent",
+      "probabilities": {
+        "assent": 0.4901,
+        "denial": 0.1667,
+        "qualification": 0.1862,
+        "unresolved": 0.157
+      },
+      "confidence": 0.097,
+      "answer_confidence": 0.4901,
+      "action": {
+        "act_probability": 1.0
+      }
+    }
+  },
+  "usage": {
+    "input_tokens": 2571,
+    "output_tokens": 0,
+    "state_tokens": 95,
+    "state_tokens_dropped": 0,
+    "truncated": false,
+    "truncated_questions": []
+  },
+  "routing": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "explicit model='english'",
+    "detection": null,
+    "workflow": null
+  }
+}

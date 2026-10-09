@@ -1,0 +1,119 @@
+{
+  "model": "jev-1.13.0",
+  "answers": {
+    "logic:identity": {
+      "type": "noul",
+      "noul": 0.3
+    },
+    "logic:reflexivity": {
+      "type": "noul",
+      "noul": 0.16
+    },
+    "logic:symmetry": {
+      "type": "noul",
+      "noul": 0.23
+    },
+    "logic:transitivity": {
+      "type": "noul",
+      "noul": 0.16
+    },
+    "logic:modus_ponens": {
+      "type": "noul",
+      "noul": 0.1
+    },
+    "logic:modus_tollens": {
+      "type": "noul",
+      "noul": 0.14
+    },
+    "logic:and_introduction": {
+      "type": "noul",
+      "noul": 0.16
+    },
+    "logic:and_elimination": {
+      "type": "noul",
+      "noul": 0.25
+    },
+    "logic:or_introduction": {
+      "type": "noul",
+      "noul": 0.1
+    },
+    "logic:disjunctive_syllogism": {
+      "type": "noul",
+      "noul": 0.09
+    },
+    "logic:hypothetical_syllogism": {
+      "type": "noul",
+      "noul": 0.07
+    },
+    "axis:argument_direction": {
+      "type": "choice",
+      "choice": "unresolved",
+      "confidence": 0.6,
+      "probabilities": {
+        "forward": 0.29,
+        "reverse": 0.0,
+        "both": 0.01,
+        "unresolved": 0.7
+      }
+    },
+    "axis:premise_status": {
+      "type": "choice",
+      "choice": "unresolved",
+      "confidence": 0.31,
+      "probabilities": {
+        "asserted": 0.3,
+        "supposed": 0.04,
+        "mixed": 0.18,
+        "unresolved": 0.48
+      }
+    },
+    "axis:premise_sufficiency": {
+      "type": "choice",
+      "choice": "not_applicable",
+      "confidence": 0.88,
+      "probabilities": {
+        "complete": 0.03,
+        "missing": 0.05,
+        "not_applicable": 0.91,
+        "unresolved": 0.01
+      }
+    },
+    "axis:rule_pattern": {
+      "type": "choice",
+      "choice": "not_applicable",
+      "confidence": 0.85,
+      "probabilities": {
+        "matches": 0.02,
+        "mismatches": 0.07,
+        "not_applicable": 0.89,
+        "unresolved": 0.02
+      }
+    },
+    "axis:identity_basis": {
+      "type": "choice",
+      "choice": "not_applicable",
+      "confidence": 0.51,
+      "probabilities": {
+        "explicit": 0.04,
+        "inferred": 0.16,
+        "unsupported": 0.17,
+        "not_applicable": 0.63
+      }
+    },
+    "axis:reply_role": {
+      "type": "choice",
+      "choice": "unresolved",
+      "confidence": 0.84,
+      "probabilities": {
+        "assent": 0.01,
+        "denial": 0.0,
+        "qualification": 0.11,
+        "unresolved": 0.88
+      }
+    }
+  },
+  "usage": {
+    "input_tokens": 1358,
+    "output_tokens": 571
+  }
+}

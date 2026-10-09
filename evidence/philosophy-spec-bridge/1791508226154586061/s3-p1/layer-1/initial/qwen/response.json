@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"profiles\": {\n    \"s3-p1\": {\n      \"entity\": \"present\",\n      \"predicate\": \"present\",\n      \"proposition\": \"present\",\n      \"not\": \"absent\",\n      \"and\": \"absent\",\n      \"or\": \"absent\",\n      \"implies\": \"absent\",\n      \"iff\": \"absent\"\n    }\n  },\n  \"symbolic\": {\n    \"atoms\": [\n      {\n        \"symbol\": \"S2.5_accepted\",\n        \"text\": \"S2.5 accepted 71 tests\",\n        \"source_quote\": \"S2.5 accepted 71 tests\",\n        \"kind\": \"proposition\"\n      },\n      {\n        \"symbol\": \"S2.5_immutable\",\n        \"text\": \"S2.5 archives and promoted receipts immutable\",\n        \"source_quote\": \"Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable\",\n        \"kind\": \"proposition\"\n      },\n      {\n        \"symbol\": \"S4_S6_blocked\",\n        \"text\": \"S4-S6 blocked\",\n        \"source_quote\": \"S4-S6 blocked\",\n        \"kind\": \"proposition\"\n      }\n    ],\n    \"premises\": [\n      \"S2.5_accepted\",\n      \"S2.5_immutable\",\n      \"S4_S6_blocked\"\n    ],\n    \"conclusion\": \"unresolved\",\n    \"identities\": [],\n    \"flows\": [],\n    \"compositions\": [],\n    \"unresolved\": [\n      \"S2.5_accepted\",\n      \"S2.5_immutable\",\n      \"S4_S6_blocked\"\n    ]\n  }\n}"
+      }
+    }
+  ],
+  "created": 1791510074,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 413,
+    "prompt_tokens": 2677,
+    "total_tokens": 3090,
+    "prompt_tokens_details": {
+      "cached_tokens": 478
+    }
+  },
+  "id": "chatcmpl-usj7vfFmZeDM2ewSm63bj7iwIE8EnNm5",
+  "timings": {
+    "cache_n": 478,
+    "prompt_n": 2199,
+    "prompt_ms": 9995.738,
+    "prompt_per_token_ms": 4.545583447021373,
+    "prompt_per_second": 219.99376134108357,
+    "predicted_n": 413,
+    "predicted_ms": 70151.275,
+    "predicted_per_token_ms": 170.27008495145628,
+    "predicted_per_second": 5.873022265097819
+  }
+}

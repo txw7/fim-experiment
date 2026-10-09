@@ -1,0 +1,103 @@
+{
+  "model": "jev-1.13.0",
+  "answers": {
+    "logic:nested": {
+      "type": "noul",
+      "noul": 0.43
+    },
+    "logic:chain": {
+      "type": "noul",
+      "noul": 0.36
+    },
+    "logic:shared_premise": {
+      "type": "noul",
+      "noul": 0.36
+    },
+    "logic:branch": {
+      "type": "noul",
+      "noul": 0.81
+    },
+    "logic:equivalence": {
+      "type": "noul",
+      "noul": 0.05
+    },
+    "logic:substitution": {
+      "type": "noul",
+      "noul": 0.13
+    },
+    "logic:missing_premise": {
+      "type": "noul",
+      "noul": 0.59
+    },
+    "axis:composition_topology": {
+      "type": "choice",
+      "choice": "branch",
+      "confidence": 0.16,
+      "probabilities": {
+        "chain": 0.05,
+        "branch": 0.37,
+        "shared": 0.35,
+        "none_or_unresolved": 0.23
+      }
+    },
+    "axis:reference_alignment": {
+      "type": "choice",
+      "choice": "aligned",
+      "confidence": 0.6,
+      "probabilities": {
+        "aligned": 0.7,
+        "shifted": 0.03,
+        "mixed": 0.03,
+        "unresolved": 0.24
+      }
+    },
+    "axis:composition_support": {
+      "type": "choice",
+      "choice": "unresolved",
+      "confidence": 0.32,
+      "probabilities": {
+        "explicit": 0.33,
+        "licensed": 0.09,
+        "invented": 0.09,
+        "unresolved": 0.49
+      }
+    },
+    "axis:equivalence_strength": {
+      "type": "choice",
+      "choice": "none_or_unresolved",
+      "confidence": 0.49,
+      "probabilities": {
+        "biconditional": 0.01,
+        "one_direction": 0.36,
+        "similarity": 0.01,
+        "none_or_unresolved": 0.62
+      }
+    },
+    "axis:context_dependence": {
+      "type": "choice",
+      "choice": "unit",
+      "confidence": 0.31,
+      "probabilities": {
+        "unit": 0.48,
+        "pair": 0.03,
+        "parent": 0.37,
+        "unresolved": 0.12
+      }
+    },
+    "axis:assumption_sensitivity": {
+      "type": "choice",
+      "choice": "dependent",
+      "confidence": 0.52,
+      "probabilities": {
+        "independent": 0.3,
+        "dependent": 0.64,
+        "not_applicable": 0.05,
+        "unresolved": 0.01
+      }
+    }
+  },
+  "usage": {
+    "input_tokens": 1140,
+    "output_tokens": 477
+  }
+}

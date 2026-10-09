@@ -1,0 +1,59 @@
+{
+  "spec_vs_philosophy": {
+    "kl_p_q_bits": 2.6456167141941846,
+    "kl_q_p_bits": 2.871390316959113,
+    "js_bits": 0.4950387275182096,
+    "smoothing": 0.5,
+    "vocabulary": 4879
+  },
+  "source_unit_comparisons": [
+    {
+      "source_id": "s3-p0",
+      "kl_p_q_bits": 2.479045121912155,
+      "kl_q_p_bits": 3.561660596176571,
+      "js_bits": 0.5247083702097801,
+      "smoothing": 0.5,
+      "vocabulary": 4747
+    },
+    {
+      "source_id": "s3-p1",
+      "kl_p_q_bits": 2.5161091462864995,
+      "kl_q_p_bits": 3.49523223255534,
+      "js_bits": 0.5222325870622704,
+      "smoothing": 0.5,
+      "vocabulary": 4767
+    },
+    {
+      "source_id": "s3-p2",
+      "kl_p_q_bits": 2.4466910008663243,
+      "kl_q_p_bits": 3.3153505501790943,
+      "js_bits": 0.5130140388502963,
+      "smoothing": 0.5,
+      "vocabulary": 4755
+    },
+    {
+      "source_id": "s3-p3",
+      "kl_p_q_bits": 2.5177421692497264,
+      "kl_q_p_bits": 3.1666106654624073,
+      "js_bits": 0.5107527970074908,
+      "smoothing": 0.5,
+      "vocabulary": 4790
+    },
+    {
+      "source_id": "s3-p4",
+      "kl_p_q_bits": 2.5045150548229644,
+      "kl_q_p_bits": 3.2215799963815943,
+      "js_bits": 0.5116609972874068,
+      "smoothing": 0.5,
+      "vocabulary": 4778
+    },
+    {
+      "source_id": "s3-p5",
+      "kl_p_q_bits": 2.49936438018769,
+      "kl_q_p_bits": 3.4190471601361505,
+      "js_bits": 0.5211641380348787,
+      "smoothing": 0.5,
+      "vocabulary": 4765
+    }
+  ]
+}

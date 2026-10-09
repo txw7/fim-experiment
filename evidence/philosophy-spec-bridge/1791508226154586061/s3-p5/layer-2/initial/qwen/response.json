@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"profiles\":{\"s3-p5\":{\"identity\":\"unresolved\",\"reflexivity\":\"unresolved\",\"symmetry\":\"unresolved\",\"transitivity\":\"unresolved\",\"modus_ponens\":\"unresolved\",\"modus_tollens\":\"unresolved\",\"and_introduction\":\"unresolved\",\"and_elimination\":\"unresolved\",\"or_introduction\":\"unresolved\",\"disjunctive_syllogism\":\"unresolved\",\"hypothetical_syllogism\":\"unresolved\"}},\"symbolic\":{\"atoms\":[{\"symbol\":\"CICD_remain_local\",\"text\":\"CICD: remain local.\",\"source_quote\":\"CICD: remain local.\",\"kind\":\"proposition\"},{\"symbol\":\"isolated_service_restarted\",\"text\":\"The isolated delivery service has already been restarted with draft overwrite policy\",\"source_quote\":\"The isolated delivery service has already been restarted with draft overwrite policy\",\"kind\":\"proposition\"},{\"symbol\":\"user_wants_drafts_discarded\",\"text\":\"user expressly wants drafts discarded\",\"source_quote\":\"user expressly wants drafts discarded\",\"kind\":\"proposition\"}],\"premises\":[\"CICD_remain_local\",\"isolated_service_restarted\",\"user_wants_drafts_discarded\"],\"conclusion\":\"unresolved\",\"identities\":[],\"flows\":[{\"id\":\"f1\",\"rule\":\"unresolved\",\"premises\":[\"CICD_remain_local\"],\"conclusion\":\"unresolved\"},{\"id\":\"f2\",\"rule\":\"unresolved\",\"premises\":[\"isolated_service_restarted\"],\"conclusion\":\"unresolved\"}],\"compositions\":[{\"kind\":\"nested\",\"members\":[\"CICD_remain_local\",\"report_commands\"]},{\"kind\":\"nested\",\"members\":[\"isolated_service_restarted\",\"user_wants_drafts_discarded\"]}],\"unresolved\":[\"report_commands\",\"final_concise_report_via_looper\"]}}"
+      }
+    }
+  ],
+  "created": 1791516010,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 352,
+    "prompt_tokens": 2097,
+    "total_tokens": 2449,
+    "prompt_tokens_details": {
+      "cached_tokens": 548
+    }
+  },
+  "id": "chatcmpl-j4t9muBfKRfUmvLd3Sx5tPEtEmccKdot",
+  "timings": {
+    "cache_n": 548,
+    "prompt_n": 1549,
+    "prompt_ms": 5332.79,
+    "prompt_per_token_ms": 3.4427307940606844,
+    "prompt_per_second": 290.46709133492976,
+    "predicted_n": 352,
+    "predicted_ms": 63193.275,
+    "predicted_per_token_ms": 180.03782051282053,
+    "predicted_per_second": 5.5543885009916005
+  }
+}

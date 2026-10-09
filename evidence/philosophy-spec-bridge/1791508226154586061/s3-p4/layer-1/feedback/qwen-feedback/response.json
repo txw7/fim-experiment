@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"profiles\":{\"s3-p4\":{\"entity\":\"present\",\"predicate\":\"present\",\"proposition\":\"present\",\"not\":\"present\",\"and\":\"present\",\"or\":\"present\",\"implies\":\"present\",\"iff\":\"unresolved\"}},\"symbolic\":{\"atoms\":[{\"symbol\":\"create_test_live_ab_py\",\"text\":\"create test_live_ab.py\",\"source_quote\":\"create test_live_ab.py\",\"kind\":\"proposition\"},{\"symbol\":\"run_live_ab_py\",\"text\":\"explicit scripts/run_live_ab.py\",\"source_quote\":\"explicit scripts/run_live_ab.py\",\"kind\":\"proposition\"},{\"symbol\":\"provider_unavailable\",\"text\":\"provider unavailable\",\"source_quote\":\"provider unavailable\",\"kind\":\"proposition\"}],\"premises\":[\"(implies (and (implies (not (implies (not create_test_live_ab_py) (not run_live_ab_py))) (not provider_unavailable)) (or create_test_live_ab_py run_live_ab_py))\",\"(implies (not provider_unavailable) (or create_test_live_ab_py run_live_ab_py))\"],\"conclusion\":\"unresolved\",\"identities\":[],\"flows\":[{\"id\":\"flow_1\",\"rule\":\"unresolved\",\"premises\":[\"create_test_live_ab_py\",\"run_live_ab_py\"],\"conclusion\":\"unresolved\"},{\"id\":\"flow_2\",\"rule\":\"unresolved\",\"premises\":[\"provider_unavailable\"],\"conclusion\":\"unresolved\"}],\"compositions\":[{\"kind\":\"substitution\",\"members\":[\"create_test_live_ab_py\",\"run_live_ab_py\"]},{\"kind\":\"substitution\",\"members\":[\"provider_unavailable\"]}],\"unresolved\":[\"S3_OPEN\",\"manufactured_positive\"]}}"
+      }
+    }
+  ],
+  "created": 1791510290,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 321,
+    "prompt_tokens": 2708,
+    "total_tokens": 3029,
+    "prompt_tokens_details": {
+      "cached_tokens": 505
+    }
+  },
+  "id": "chatcmpl-OVJsvL00HvrqK8frAWGqa2RY510mTb0Y",
+  "timings": {
+    "cache_n": 505,
+    "prompt_n": 2203,
+    "prompt_ms": 9440.036,
+    "prompt_per_token_ms": 4.285082160689968,
+    "prompt_per_second": 233.36775410602246,
+    "predicted_n": 321,
+    "predicted_ms": 89908.654,
+    "predicted_per_token_ms": 280.96454374999996,
+    "predicted_per_second": 3.5591679528424485
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"profiles\":{\"s3-p2\":{\"identity\":\"unresolved\",\"reflexivity\":\"unresolved\",\"symmetry\":\"unresolved\",\"transitivity\":\"unresolved\",\"modus_ponens\":\"unresolved\",\"modus_tollens\":\"unresolved\",\"and_introduction\":\"unresolved\",\"and_elimination\":\"unresolved\",\"or_introduction\":\"unresolved\",\"disjunctive_syllogism\":\"unresolved\",\"hypothetical_syllogism\":\"unresolved\"}},\"symbolic\":{\"atoms\":[{\"symbol\":\"S3\",\"text\":\"stage:S3\",\"source_quote\":\"stage:S3\",\"kind\":\"entity\"},{\"symbol\":\"S2_5\",\"text\":\"stage:S2.5\",\"source_quote\":\"stage:S2.5\",\"kind\":\"entity\"},{\"symbol\":\"B1\",\"text\":\"identity:B1\",\"source_quote\":\"identity:B1\",\"kind\":\"entity\"}],\"premises\":[\"(implies S3 (SUPERVISE S3 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))))\"],\"conclusion\":\"unresolved\",\"identities\":[{\"left\":\"B1\",\"right\":\"A\",\"source_quote\":\"B1/C1 are identity-preserving aliases for original A/B\"}],\"flows\":[{\"id\":\"flow-1\",\"rule\":\"unresolved\",\"premises\":[\"(implies S3 (SUPERVISE S3 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))))\"],\"conclusion\":\"unresolved\"}],\"compositions\":[{\"kind\":\"nested\",\"members\":[\"S3\",\"S2_5\"]}],\"unresolved\":[\"S3 execution status\",\"S2.5 execution status\",\"B1/C1 pair execution status\"]}}"
+      }
+    }
+  ],
+  "created": 1791515933,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 338,
+    "prompt_tokens": 2725,
+    "total_tokens": 3063,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-uuYXKbxif6jSJOo1j5D4MpKuiwaZq9Ty",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 2725,
+    "prompt_ms": 20226.291,
+    "prompt_per_token_ms": 7.422492110091744,
+    "prompt_per_second": 134.7256400098268,
+    "predicted_n": 338,
+    "predicted_ms": 68530.761,
+    "predicted_per_token_ms": 203.35537388724035,
+    "predicted_per_second": 4.917499748762458
+  }
+}

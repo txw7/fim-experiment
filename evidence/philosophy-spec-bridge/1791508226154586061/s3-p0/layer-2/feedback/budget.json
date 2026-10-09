@@ -1,0 +1,24 @@
+{
+  "requested_output_tokens": 1000,
+  "format": "column-row tables; labeled probability vectors",
+  "prompt_tokens": 2321,
+  "output_tokens": 1000,
+  "safety_tokens": 32,
+  "context_tokens": 4096,
+  "active_heads": [
+    "identity",
+    "reflexivity",
+    "symmetry",
+    "transitivity",
+    "modus_ponens",
+    "modus_tollens",
+    "and_introduction",
+    "and_elimination",
+    "or_introduction",
+    "disjunctive_syllogism",
+    "hypothetical_syllogism"
+  ],
+  "source_preserved": true,
+  "model_probability_precision": 3,
+  "native_probabilities_retained_in_observer_receipts": true
+}

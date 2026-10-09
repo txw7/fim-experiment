@@ -1,0 +1,14 @@
+{
+  "symbolic": {
+    "origin_snapshot": "/home/user0/FIM/experiment/working/philosophy-spec-bridge/1791508226154586061/origin-symbolic.pt",
+    "reader_equals_frozen_origin": true,
+    "feature_projection_initialization": "all-zero weights and bias",
+    "initial_snapshot_sha256": "d916e995117bf9a51a9a1b44719a66019bac667316e995f17f95f8c5ce00dddd"
+  },
+  "probabilistic": {
+    "origin_snapshot": "/home/user0/FIM/experiment/working/philosophy-spec-bridge/1791508226154586061/origin-probabilistic.pt",
+    "reader_equals_frozen_origin": true,
+    "feature_projection_initialization": "all-zero weights and bias",
+    "initial_snapshot_sha256": "c45ba0d603cbaa3a6aa9c7baf3904415d2ec2e63dc6c2bc4f65c31b917703f69"
+  }
+}

@@ -1,0 +1,462 @@
+{
+  "model": "jev-1.13.0",
+  "answers": {
+    "logic:entity": {
+      "type": "noul",
+      "noul": 0.72
+    },
+    "logic:predicate": {
+      "type": "noul",
+      "noul": 0.63
+    },
+    "logic:proposition": {
+      "type": "noul",
+      "noul": 0.48
+    },
+    "logic:not": {
+      "type": "noul",
+      "noul": 0.8
+    },
+    "logic:and": {
+      "type": "noul",
+      "noul": 0.44
+    },
+    "logic:or": {
+      "type": "noul",
+      "noul": 0.38
+    },
+    "logic:implies": {
+      "type": "noul",
+      "noul": 0.44
+    },
+    "logic:iff": {
+      "type": "noul",
+      "noul": 0.31
+    },
+    "axis:assertion": {
+      "type": "choice",
+      "choice": "hypothetical",
+      "confidence": 0.2,
+      "probabilities": {
+        "asserted": 0.31,
+        "hypothetical": 0.4,
+        "questioned": 0.02,
+        "unresolved": 0.27
+      }
+    },
+    "axis:negation_scope": {
+      "type": "choice",
+      "choice": "proposition",
+      "confidence": 0.44,
+      "probabilities": {
+        "predicate": 0.22,
+        "proposition": 0.58,
+        "modal": 0.15,
+        "none_or_unresolved": 0.05
+      }
+    },
+    "axis:modal_force": {
+      "type": "choice",
+      "choice": "necessary",
+      "confidence": 0.43,
+      "probabilities": {
+        "necessary": 0.57,
+        "possible": 0.04,
+        "nonmodal": 0.25,
+        "unresolved": 0.14
+      }
+    },
+    "axis:being_reading": {
+      "type": "choice",
+      "choice": "unresolved",
+      "confidence": 0.81,
+      "probabilities": {
+        "existence": 0.01,
+        "predication": 0.11,
+        "identity": 0.02,
+        "unresolved": 0.86
+      }
+    },
+    "axis:connective_origin": {
+      "type": "choice",
+      "choice": "editorial",
+      "confidence": 0.39,
+      "probabilities": {
+        "source": 0.31,
+        "editorial": 0.54,
+        "both": 0.06,
+        "none_or_unresolved": 0.09
+      }
+    },
+    "axis:proposition_nesting": {
+      "type": "choice",
+      "choice": "flat",
+      "confidence": 0.38,
+      "probabilities": {
+        "embedded": 0.08,
+        "flat": 0.59,
+        "unresolved": 0.33
+      }
+    },
+    "legacy:negation": {
+      "type": "choice",
+      "choice": "present",
+      "confidence": 1.0,
+      "probabilities": {
+        "present": 1.0,
+        "absent": 0.0,
+        "ambiguous": 0.0
+      }
+    },
+    "legacy:conditional": {
+      "type": "choice",
+      "choice": "present",
+      "confidence": 1.0,
+      "probabilities": {
+        "present": 1.0,
+        "absent": 0.0,
+        "ambiguous": 0.0
+      }
+    },
+    "legacy:quantification": {
+      "type": "choice",
+      "choice": "both",
+      "confidence": 0.59,
+      "probabilities": {
+        "universal": 0.1,
+        "existential": 0.17,
+        "both": 0.67,
+        "none": 0.04,
+        "ambiguous": 0.02
+      }
+    },
+    "operator:not": {
+      "type": "choice",
+      "choice": "present",
+      "confidence": 0.94,
+      "probabilities": {
+        "present": 0.96,
+        "absent": 0.04,
+        "unresolved": 0.0
+      }
+    },
+    "operator:if": {
+      "type": "choice",
+      "choice": "present",
+      "confidence": 0.98,
+      "probabilities": {
+        "present": 0.99,
+        "absent": 0.01,
+        "unresolved": 0.0
+      }
+    },
+    "operator:and": {
+      "type": "choice",
+      "choice": "absent",
+      "confidence": 0.35,
+      "probabilities": {
+        "present": 0.41,
+        "absent": 0.57,
+        "unresolved": 0.02
+      }
+    },
+    "operator:or": {
+      "type": "choice",
+      "choice": "present",
+      "confidence": 0.66,
+      "probabilities": {
+        "present": 0.77,
+        "absent": 0.22,
+        "unresolved": 0.01
+      }
+    },
+    "operator:but": {
+      "type": "choice",
+      "choice": "absent",
+      "confidence": 0.85,
+      "probabilities": {
+        "present": 0.09,
+        "absent": 0.9,
+        "unresolved": 0.01
+      }
+    },
+    "operator:only": {
+      "type": "choice",
+      "choice": "absent",
+      "confidence": 0.38,
+      "probabilities": {
+        "present": 0.39,
+        "absent": 0.59,
+        "unresolved": 0.02
+      }
+    },
+    "operator:universal": {
+      "type": "choice",
+      "choice": "absent",
+      "confidence": 0.98,
+      "probabilities": {
+        "present": 0.01,
+        "absent": 0.99,
+        "unresolved": 0.0
+      }
+    },
+    "operator:existential": {
+      "type": "choice",
+      "choice": "absent",
+      "confidence": 0.97,
+      "probabilities": {
+        "present": 0.02,
+        "absent": 0.98,
+        "unresolved": 0.0
+      }
+    },
+    "operator:modal": {
+      "type": "choice",
+      "choice": "absent",
+      "confidence": 0.33,
+      "probabilities": {
+        "present": 0.44,
+        "absent": 0.55,
+        "unresolved": 0.01
+      }
+    },
+    "operator:question": {
+      "type": "choice",
+      "choice": "absent",
+      "confidence": 0.97,
+      "probabilities": {
+        "present": 0.01,
+        "absent": 0.98,
+        "unresolved": 0.01
+      }
+    },
+    "proofaxis:objects_types": {
+      "type": "choice",
+      "choice": "program",
+      "confidence": 0.87,
+      "probabilities": {
+        "entity": 0.0,
+        "proposition": 0.1,
+        "program": 0.9,
+        "unresolved": 0.0
+      }
+    },
+    "proofaxis:operators_scope": {
+      "type": "choice",
+      "choice": "no_operator",
+      "confidence": 0.81,
+      "probabilities": {
+        "no_operator": 0.86,
+        "clause": 0.09,
+        "nested": 0.03,
+        "unresolved": 0.02
+      }
+    },
+    "proofaxis:relations_obligations": {
+      "type": "choice",
+      "choice": "not_established",
+      "confidence": 0.84,
+      "probabilities": {
+        "a_to_b": 0.11,
+        "b_to_a": 0.01,
+        "mutual": 0.0,
+        "not_established": 0.88
+      }
+    },
+    "proofaxis:composition": {
+      "type": "choice",
+      "choice": "standalone",
+      "confidence": 0.95,
+      "probabilities": {
+        "standalone": 0.96,
+        "linked_inference": 0.02,
+        "missing_premise": 0.0,
+        "unresolved": 0.02
+      }
+    },
+    "spec:required": {
+      "type": "choice",
+      "choice": "present",
+      "confidence": 0.64,
+      "probabilities": {
+        "present": 0.76,
+        "absent": 0.19,
+        "unresolved": 0.05
+      }
+    },
+    "spec:forbidden": {
+      "type": "choice",
+      "choice": "present",
+      "confidence": 0.86,
+      "probabilities": {
+        "present": 0.91,
+        "absent": 0.06,
+        "unresolved": 0.03
+      }
+    },
+    "spec:authorization": {
+      "type": "choice",
+      "choice": "absent",
+      "confidence": 0.85,
+      "probabilities": {
+        "present": 0.09,
+        "absent": 0.9,
+        "unresolved": 0.01
+      }
+    },
+    "spec:generation": {
+      "type": "choice",
+      "choice": "present",
+      "confidence": 0.98,
+      "probabilities": {
+        "present": 0.99,
+        "absent": 0.01,
+        "unresolved": 0.0
+      }
+    },
+    "spec:exactly_once": {
+      "type": "choice",
+      "choice": "present",
+      "confidence": 0.77,
+      "probabilities": {
+        "present": 0.85,
+        "absent": 0.13,
+        "unresolved": 0.02
+      }
+    },
+    "spec:uncertain_no_retry": {
+      "type": "choice",
+      "choice": "present",
+      "confidence": 0.89,
+      "probabilities": {
+        "present": 0.93,
+        "absent": 0.04,
+        "unresolved": 0.03
+      }
+    },
+    "spec:typed_endpoint": {
+      "type": "choice",
+      "choice": "present",
+      "confidence": 0.48,
+      "probabilities": {
+        "present": 0.65,
+        "absent": 0.32,
+        "unresolved": 0.03
+      }
+    },
+    "spec:stage_gate": {
+      "type": "choice",
+      "choice": "present",
+      "confidence": 0.97,
+      "probabilities": {
+        "present": 0.98,
+        "absent": 0.02,
+        "unresolved": 0.0
+      }
+    },
+    "profile:N-1": {
+      "type": "noul",
+      "noul": 0.49
+    },
+    "profile:N-2": {
+      "type": "noul",
+      "noul": 0.35
+    },
+    "profile:N-3": {
+      "type": "noul",
+      "noul": 0.95
+    },
+    "profile:N-4": {
+      "type": "noul",
+      "noul": 0.23
+    },
+    "profile:N-5": {
+      "type": "noul",
+      "noul": 0.18
+    },
+    "profile:C-1": {
+      "type": "choice",
+      "choice": "Boundary-drawing",
+      "confidence": 0.78,
+      "probabilities": {
+        "Re-entry": 0.01,
+        "Boundary-drawing": 0.82,
+        "Collapse": 0.0,
+        "Ostension": 0.06,
+        "Equivocation": 0.0,
+        "Statement": 0.11
+      }
+    },
+    "profile:C-2": {
+      "type": "choice",
+      "choice": "Boundary-treatment",
+      "confidence": 0.66,
+      "probabilities": {
+        "Region-treatment": 0.14,
+        "Boundary-treatment": 0.77,
+        "Mixed": 0.09
+      }
+    },
+    "profile:S-2": {
+      "type": "score",
+      "score": 3.48,
+      "confidence": 0.56,
+      "legend": {
+        "0": "Pure assertion—makes a truth-claim that could be denied.",
+        "1": "Mostly assertion with some pointing.",
+        "2": "Balanced—asserts and points in equal measure.",
+        "3": "Mostly ostension with some assertion.",
+        "4": "Pure ostension—directs attention without asserting anything."
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.02,
+        "2": 0.01,
+        "3": 0.41,
+        "4": 0.55
+      }
+    },
+    "profile:S-1:truth": {
+      "type": "score",
+      "score": 2.7,
+      "confidence": 0.52,
+      "legend": {
+        "0": "Collapses immediately—the self-application produces contradiction or emptiness.",
+        "1": "Oscillates—the self-application alternates between two states without settling.",
+        "2": "Degrades—the self-application produces a weakened or partial version of the original.",
+        "3": "Holds—the self-application reproduces the distinction without change.",
+        "4": "Strengthens—the self-application reveals the distinction to be more fundamental than before."
+      },
+      "probabilities": {
+        "0": 0.09,
+        "1": 0.01,
+        "2": 0.13,
+        "3": 0.62,
+        "4": 0.15000000000000002
+      }
+    },
+    "profile:S-1:falsity": {
+      "type": "score",
+      "score": 2.46,
+      "confidence": 0.42,
+      "legend": {
+        "0": "Collapses immediately—the self-application produces contradiction or emptiness.",
+        "1": "Oscillates—the self-application alternates between two states without settling.",
+        "2": "Degrades—the self-application produces a weakened or partial version of the original.",
+        "3": "Holds—the self-application reproduces the distinction without change.",
+        "4": "Strengthens—the self-application reveals the distinction to be more fundamental than before."
+      },
+      "probabilities": {
+        "0": 0.15,
+        "1": 0.02,
+        "2": 0.14,
+        "3": 0.62,
+        "4": 0.07
+      }
+    }
+  },
+  "usage": {
+    "input_tokens": 4598,
+    "output_tokens": 1888
+  }
+}

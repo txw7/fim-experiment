@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"profiles\":{\"s3-p3\":{\"entity\":\"present\",\"predicate\":\"present\",\"proposition\":\"present\",\"not\":\"present\",\"and\":\"present\",\"or\":\"present\",\"implies\":\"present\",\"iff\":\"present\"}},\"symbolic\":{\"atoms\":[{\"symbol\":\"A\",\"text\":\"IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable\",\"source_quote\":\"IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable\",\"kind\":\"proposition\"},{\"symbol\":\"B\",\"text\":\"commit ONCE to B typed destination input\",\"source_quote\":\"commit ONCE to B typed destination input\",\"kind\":\"proposition\"},{\"symbol\":\"C\",\"text\":\"Looper actual provider turn via existing local controller\",\"source_quote\":\"Looper actual provider turn via existing local controller\",\"kind\":\"proposition\"}],\"premises\":[\"(and A C)\",\"(implies (and A C) B)\"],\"conclusion\":\"unresolved\",\"identities\":[],\"flows\":[{\"id\":\"flow-0\",\"rule\":\"and_introduction\",\"premises\":[\"A\",\"C\"],\"conclusion\":\"(and A C)\"},{\"id\":\"flow-1\",\"rule\":\"modus_ponens\",\"premises\":[\"(and A C)\",\"(implies (and A C) B)\"],\"conclusion\":\"B\"}],\"compositions\":[{\"kind\":\"chain\",\"members\":[\"A\",\"C\",\"B\"]}],\"unresolved\":[\"Does A imply C?\",\"Is B actually committed?\"]}}"
+      }
+    }
+  ],
+  "created": 1791510261,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 297,
+    "prompt_tokens": 3055,
+    "total_tokens": 3352,
+    "prompt_tokens_details": {
+      "cached_tokens": 505
+    }
+  },
+  "id": "chatcmpl-JJrcHwa92TuzPY16xsbZerTmAyJxD6ry",
+  "timings": {
+    "cache_n": 505,
+    "prompt_n": 2550,
+    "prompt_ms": 11741.638,
+    "prompt_per_token_ms": 4.604563921568627,
+    "prompt_per_second": 217.17583185582794,
+    "predicted_n": 297,
+    "predicted_ms": 83636.962,
+    "predicted_per_token_ms": 282.55730405405404,
+    "predicted_per_second": 3.539105114793624
+  }
+}

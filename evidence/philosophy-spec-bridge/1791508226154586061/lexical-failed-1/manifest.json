@@ -1,0 +1,68 @@
+{
+  "schema": "text-primitives-v1",
+  "documents": 5,
+  "tokens": 504,
+  "vocabulary": 272,
+  "families": {
+    "spec": 5
+  },
+  "window": 5,
+  "pair_events": 4890,
+  "min_pair_count": 1,
+  "normalization": "casefold; Snowball stems retained separately; logical function words kept",
+  "lemmatization": "not implemented; lemma null, no invented equivalence",
+  "tfidf": "(1+ln(tf)) * (1+ln((1+N)/(1+df)))",
+  "pmi": "log2(count(a,b)*pair_events/(context_marginal(a)*context_marginal(b)))",
+  "zipf": "empirical rank/frequency observations; no assumed exact law",
+  "authority": "Counts and lexical associations only; no semantic identity or logical entailment",
+  "files": {
+    "occurrences": {
+      "path": "/home/user0/FIM/experiment/working/philosophy-spec-bridge/1791508226154586061/lexical/token-occurrences.jsonl",
+      "sha256": "0a2018c01583e89d560704772970111915642cb104bc0c485ea363280f633430"
+    },
+    "sources": {
+      "path": "/home/user0/FIM/experiment/working/philosophy-spec-bridge/1791508226154586061/lexical/sources.jsonl",
+      "sha256": "bc7de864d5066ac5eec58cd6c0a5c88962f3aa94c5050189a1dbde317a0b7173"
+    },
+    "terms": {
+      "path": "/home/user0/FIM/experiment/working/philosophy-spec-bridge/1791508226154586061/lexical/terms.jsonl",
+      "sha256": "5f6ca9b3cd48bbd74c538211dd7117f6585f29be3e2531ce03218b400cfd6fff"
+    },
+    "normalization": {
+      "path": "/home/user0/FIM/experiment/working/philosophy-spec-bridge/1791508226154586061/lexical/normalization.jsonl",
+      "sha256": "eb15195176cf71040e2db7bb18df882be353f12f668ec8283a17960202af5cae"
+    },
+    "ngrams2": {
+      "path": "/home/user0/FIM/experiment/working/philosophy-spec-bridge/1791508226154586061/lexical/ngrams-2.jsonl",
+      "sha256": "048801633c96593bfb0d378a60284b1b2f4e2a0c0f605d82f261bd7d4585a6cd"
+    },
+    "ngrams3": {
+      "path": "/home/user0/FIM/experiment/working/philosophy-spec-bridge/1791508226154586061/lexical/ngrams-3.jsonl",
+      "sha256": "8a18cd58bce67f58214b96e5c049b9931b946d5dc7f34798bda1f13cd9af2be3"
+    },
+    "association": {
+      "path": "/home/user0/FIM/experiment/working/philosophy-spec-bridge/1791508226154586061/lexical/association.jsonl",
+      "sha256": "d242df101f22b8a2d1f777621d93ffabd99c85a86d7aa08c1113c44b7eda2dad"
+    },
+    "document_metrics": {
+      "path": "/home/user0/FIM/experiment/working/philosophy-spec-bridge/1791508226154586061/lexical/document-metrics.jsonl",
+      "sha256": "0b4bd6190407814d123ae7c19e4d2cd9741d8ea3f31326c0d3a7509282856067"
+    },
+    "dispersion": {
+      "path": "/home/user0/FIM/experiment/working/philosophy-spec-bridge/1791508226154586061/lexical/dispersion.jsonl",
+      "sha256": "e679dcfc6eafafa44c9f8bd41c730ff24c244816b920d17ab14ec61c66041176"
+    },
+    "keyword_network": {
+      "path": "/home/user0/FIM/experiment/working/philosophy-spec-bridge/1791508226154586061/lexical/keyword-network.json",
+      "sha256": "2077c9f8d1a2bbdff45afe7de9795ec4ed22b10327fd22ad33a57f700930c21e"
+    },
+    "tfidf": {
+      "path": "/home/user0/FIM/experiment/working/philosophy-spec-bridge/1791508226154586061/lexical/tfidf.jsonl",
+      "sha256": "ba1af40c7f379c2e9deec44d42fd78f73d0cefe265da9b68c503e93429b4ac09"
+    },
+    "zipf": {
+      "path": "/home/user0/FIM/experiment/working/philosophy-spec-bridge/1791508226154586061/lexical/zipf.jsonl",
+      "sha256": "759788ee82470c33a7be38c9bdcaee973c069b8e2ba0efcad13bdcbc6be64e49"
+    }
+  }
+}

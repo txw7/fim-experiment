@@ -1,0 +1,110 @@
+{
+  "model": "jev-latest",
+  "state": "SOURCE DATA (classify expressed structure, not world truth):\nPROJECT /home/user0/shg_mu_workspace/project. Isolated controller http://127.0.0.1:8767 and code /home/user0/shg_mu_workspace/runtime/looper. Original /home/user0/greenfield, Factory, Goggles, other repositories: no edits. Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable, no push or GitHub Actions, S4-S6 blocked. S2.5 accepted 71 tests; promoted SHA256 90eb9703b8b97e981b93fdbc95ab9ee17a0224dd423d12b757f8d86f376dd536.",
+  "questions": {
+    "logic:identity": {
+      "type": "noul",
+      "instructions": "Does this span explicitly equate two referents?"
+    },
+    "logic:reflexivity": {
+      "type": "noul",
+      "instructions": "Does this span explicitly apply the same relation from a referent to itself?"
+    },
+    "logic:symmetry": {
+      "type": "noul",
+      "instructions": "Does this span express both directions of the same relation?"
+    },
+    "logic:transitivity": {
+      "type": "noul",
+      "instructions": "Does this span use A-to-B and B-to-C to obtain A-to-C?"
+    },
+    "logic:modus_ponens": {
+      "type": "noul",
+      "instructions": "Does this span supply P implies Q and P, then infer Q?"
+    },
+    "logic:modus_tollens": {
+      "type": "noul",
+      "instructions": "Does this span supply P implies Q and not Q, then infer not P?"
+    },
+    "logic:and_introduction": {
+      "type": "noul",
+      "instructions": "Does this span infer P and Q from separately supplied P and Q?"
+    },
+    "logic:and_elimination": {
+      "type": "noul",
+      "instructions": "Does this span infer a conjunct from a supplied conjunction?"
+    },
+    "logic:or_introduction": {
+      "type": "noul",
+      "instructions": "Does this span infer a disjunction from a supplied disjunct?"
+    },
+    "logic:disjunctive_syllogism": {
+      "type": "noul",
+      "instructions": "Does this span supply P or Q and not P, then infer Q?"
+    },
+    "logic:hypothetical_syllogism": {
+      "type": "noul",
+      "instructions": "Does this span compose P implies Q and Q implies R into P implies R?"
+    },
+    "axis:argument_direction": {
+      "type": "choice",
+      "instructions": "Assess the direction of the main ordered relation, using the candidate argument order when available.",
+      "criteria": {
+        "forward": "Only A-to-B is supported.",
+        "reverse": "Only B-to-A is supported.",
+        "both": "Both directions are independently supported.",
+        "unresolved": "No ordered candidate or uncertain binding."
+      }
+    },
+    "axis:premise_status": {
+      "type": "choice",
+      "instructions": "Assess premises of the proposed inference, distinguishing assertion from supposition.",
+      "criteria": {
+        "asserted": "Required premises are asserted.",
+        "supposed": "Required premises are only supposed.",
+        "mixed": "Both asserted and supposed premises.",
+        "unresolved": "No inference or uncertain premise status."
+      }
+    },
+    "axis:premise_sufficiency": {
+      "type": "choice",
+      "instructions": "Assess whether the stated inference has its required premises. Do not invent bridging claims.",
+      "criteria": {
+        "complete": "All required premises supplied.",
+        "missing": "At least one required premise absent.",
+        "not_applicable": "No performed inference.",
+        "unresolved": "Cannot establish the required premises."
+      }
+    },
+    "axis:rule_pattern": {
+      "type": "choice",
+      "instructions": "Assess whether the candidate named rule matches its actual premise/conclusion pattern; entailment alone does not establish modus ponens.",
+      "criteria": {
+        "matches": "The named standard rule pattern matches.",
+        "mismatches": "The named pattern does not match.",
+        "not_applicable": "No named application.",
+        "unresolved": "Pattern or binding is uncertain."
+      }
+    },
+    "axis:identity_basis": {
+      "type": "choice",
+      "instructions": "Assess support for the proposed identity; is alone is insufficient.",
+      "criteria": {
+        "explicit": "Source explicitly equates the referents.",
+        "inferred": "Identity requires an interpretation or inference.",
+        "unsupported": "Proposed identity lacks source support.",
+        "not_applicable": "No identity candidate."
+      }
+    },
+    "axis:reply_role": {
+      "type": "choice",
+      "instructions": "Classify the reply relative to its preceding question or claim, retaining dialogue context.",
+      "criteria": {
+        "assent": "Reply endorses the prior proposition.",
+        "denial": "Reply rejects it.",
+        "qualification": "Reply qualifies or restricts it.",
+        "unresolved": "No reply or uncertain antecedent."
+      }
+    }
+  }
+}

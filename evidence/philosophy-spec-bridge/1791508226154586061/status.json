@@ -1,0 +1,13 @@
+{
+  "state": "COMPLETED",
+  "fresh_calls": {
+    "jev": 18,
+    "laya": 18,
+    "qwen": 18,
+    "qwen-feedback": 18
+  },
+  "student_steps": {
+    "symbolic": 1500,
+    "probabilistic": 1500
+  }
+}

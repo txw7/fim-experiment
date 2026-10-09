@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"profiles\":{\"s3-p4\":{\"identity\":\"unresolved\",\"reflexivity\":\"unresolved\",\"symmetry\":\"unresolved\",\"transitivity\":\"unresolved\",\"modus_ponens\":\"unresolved\",\"modus_tollens\":\"unresolved\",\"and_introduction\":\"unresolved\",\"and_elimination\":\"unresolved\",\"or_introduction\":\"unresolved\",\"disjunctive_syllogism\":\"unresolved\",\"hypothetical_syllogism\":\"unresolved\"}},\"symbolic\":{\"atoms\":[{\"symbol\":\"create_test_live_ab_py\",\"text\":\"create test_live_ab.py\",\"source_quote\":\"create test_live_ab.py\",\"kind\":\"proposition\"},{\"symbol\":\"run_live_ab_py\",\"text\":\"explicit scripts/run_live_ab.py\",\"source_quote\":\"explicit scripts/run_live_ab.py\",\"kind\":\"proposition\"},{\"symbol\":\"provider_unavailable\",\"text\":\"provider unavailable\",\"source_quote\":\"provider unavailable\",\"kind\":\"proposition\"}],\"premises\":[\"(implies (and (implies (not (implies (not create_test_live_ab_py) (not run_live_ab_py))) (not provider_unavailable)) (or create_test_live_ab_py run_live_ab_py))\",\"(implies (not provider_unavailable) (or create_test_live_ab_py run_live_ab_py))\"],\"conclusion\":\"unresolved\",\"identities\":[],\"flows\":[{\"id\":\"flow_1\",\"rule\":\"unresolved\",\"premises\":[\"create_test_live_ab_py\",\"run_live_ab_py\"],\"conclusion\":\"unresolved\"},{\"id\":\"flow_2\",\"rule\":\"unresolved\",\"premises\":[\"provider_unavailable\"],\"conclusion\":\"unresolved\"}],\"compositions\":[{\"kind\":\"substitution\",\"members\":[\"create_test_live_ab_py\",\"run_live_ab_py\"]},{\"kind\":\"substitution\",\"members\":[\"provider_unavailable\"]}],\"unresolved\":[\"S3_OPEN\",\"manufactured_positive\"]}}"
+      }
+    }
+  ],
+  "created": 1791516193,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 371,
+    "prompt_tokens": 3113,
+    "total_tokens": 3484,
+    "prompt_tokens_details": {
+      "cached_tokens": 575
+    }
+  },
+  "id": "chatcmpl-8YXPOyBlpMbk14LPGrJd85ZjTtITNEV0",
+  "timings": {
+    "cache_n": 575,
+    "prompt_n": 2538,
+    "prompt_ms": 7920.448,
+    "prompt_per_token_ms": 3.120743892828999,
+    "prompt_per_second": 320.4364197580743,
+    "predicted_n": 371,
+    "predicted_ms": 74455.231,
+    "predicted_per_token_ms": 201.23035405405406,
+    "predicted_per_second": 4.969429213106598
+  }
+}

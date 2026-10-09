@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"profiles\":{\"s3-p1\":{\"identity\":\"unresolved\",\"reflexivity\":\"unresolved\",\"symmetry\":\"unresolved\",\"transitivity\":\"unresolved\",\"modus_ponens\":\"unresolved\",\"modus_tollens\":\"unresolved\",\"and_introduction\":\"unresolved\",\"and_elimination\":\"unresolved\",\"or_introduction\":\"unresolved\",\"disjunctive_syllogism\":\"unresolved\",\"hypothetical_syllogism\":\"unresolved\"}},\"symbolic\":{\"atoms\":[{\"symbol\":\"S2.5_accepted\",\"text\":\"S2.5 accepted 71 tests\",\"source_quote\":\"S2.5 accepted 71 tests\",\"kind\":\"proposition\"},{\"symbol\":\"S2.5_immutable\",\"text\":\"Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable\",\"source_quote\":\"Keep all S0/S1/S2/S2.5 archives and promoted receipts immutable\",\"kind\":\"proposition\"},{\"symbol\":\"S4_S6_blocked\",\"text\":\"S4-S6 blocked\",\"source_quote\":\"S4-S6 blocked\",\"kind\":\"proposition\"}],\"premises\":[\"S2.5_accepted\",\"S2.5_immutable\",\"S4_S6_blocked\"],\"conclusion\":\"unresolved\",\"identities\":[],\"flows\":[],\"compositions\":[],\"unresolved\":[\"S2.5_accepted\",\"S2.5_immutable\",\"S4_S6_blocked\"]}}"
+      }
+    }
+  ],
+  "created": 1791515917,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 287,
+    "prompt_tokens": 2106,
+    "total_tokens": 2393,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-dEr4B7YTQYSMM5ChR7lGiWkWG1NIyzm6",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 2106,
+    "prompt_ms": 20738.571,
+    "prompt_per_token_ms": 9.847374643874645,
+    "prompt_per_second": 101.54990910415188,
+    "predicted_n": 287,
+    "predicted_ms": 52884.894,
+    "predicted_per_token_ms": 184.9122167832168,
+    "predicted_per_second": 5.407971508839556
+  }
+}

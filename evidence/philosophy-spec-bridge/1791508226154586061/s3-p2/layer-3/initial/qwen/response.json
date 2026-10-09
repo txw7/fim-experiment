@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"profiles\": {\n    \"s3-p2\": {\n      \"nested\": \"unresolved\",\n      \"chain\": \"unresolved\",\n      \"shared_premise\": \"unresolved\",\n      \"branch\": \"unresolved\",\n      \"equivalence\": \"unresolved\",\n      \"substitution\": \"unresolved\",\n      \"missing_premise\": \"unresolved\"\n    }\n  },\n  \"symbolic\": {\n    \"atoms\": [\n      {\n        \"symbol\": \"S3_executes\",\n        \"text\": \"S3 exercises only original A→B real provider handoff\",\n        \"source_quote\": \"S3 exercises only original A→B real provider handoff within pair-1 B1→C1 boundary\",\n        \"kind\": \"proposition\"\n      },\n      {\n        \"symbol\": \"S2_5_active\",\n        \"text\": \"S2.5 graph is active\",\n        \"source_quote\": \"S3 should depend on S2.5 in stages.json\",\n        \"kind\": \"proposition\"\n      },\n      {\n        \"symbol\": \"B1_C1_alias\",\n        \"text\": \"B1/C1 are identity-preserving aliases\",\n        \"source_quote\": \"B1/C1 are identity-preserving aliases for original A/B\",\n        \"kind\": \"proposition\"\n      }\n    ],\n    \"premises\": [\n      \"(implies S3_executes (SUPERVISE S3 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))))\",\n      \"(implies S3_executes S2_5_active)\"\n    ],\n    \"conclusion\": \"unresolved\",\n    \"identities\": [\n      {\n        \"left\": \"B1\",\n        \"right\": \"A\",\n        \"source_quote\": \"B1/C1 are identity-preserving aliases for original A/B\"\n      }\n    ],\n    \"flows\": [\n      {\n        \"id\": \"flow-1\",\n        \"rule\": \"unresolved\",\n        \"premises\": [\n          \"(implies S3_executes (SUPERVISE S3 (PARALLEL (PAIR B1 C1) (PAIR B2 C2))))\"\n        ],\n        \"conclusion\": \"unresolved\"\n      },\n      {\n        \"id\": \"flow-2\",\n        \"rule\": \"unresolved\",\n        \"premises\": [\n          \"(implies S3_executes S2_5_active)\"\n        ],\n        \"conclusion\": \"unresolved\"\n      }\n    ],\n    \"compositions\": [\n      {\n        \"kind\": \"nested\",\n        \"members\": [\n          \"S3\",\n          \"S2_5\"\n        ]\n      }\n    ],\n    \"unresolved\": [\n      \"S3 execution status\",\n      \"S2.5 execution status\",\n      \"B1/C1 pair execution status\"\n    ]\n  }\n}"
+      }
+    }
+  ],
+  "created": 1791516708,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 673,
+    "prompt_tokens": 2409,
+    "total_tokens": 3082,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-yYpQHJEJLrHirwE8LXmdF0e3ErPgrM4A",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 2409,
+    "prompt_ms": 18421.434,
+    "prompt_per_token_ms": 7.646921544209216,
+    "prompt_per_second": 130.77157836898039,
+    "predicted_n": 673,
+    "predicted_ms": 158496.898,
+    "predicted_per_token_ms": 235.85847916666665,
+    "predicted_per_second": 4.239830611700679
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"profiles\":{\"s3-p3\":{\"identity\":\"unresolved\",\"reflexivity\":\"unresolved\",\"symmetry\":\"unresolved\",\"transitivity\":\"unresolved\",\"modus_ponens\":\"unresolved\",\"modus_tollens\":\"unresolved\",\"and_introduction\":\"unresolved\",\"and_elimination\":\"unresolved\",\"or_introduction\":\"unresolved\",\"disjunctive_syllogism\":\"unresolved\",\"hypothetical_syllogism\":\"unresolved\"}},\"symbolic\":{\"atoms\":[{\"symbol\":\"A\",\"text\":\"IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable\",\"source_quote\":\"IMPLEMENT: source A typed pair output → first-class authorized pipe → S2 effect attempt durable\",\"kind\":\"proposition\"},{\"symbol\":\"B\",\"text\":\"commit ONCE to B typed destination input\",\"source_quote\":\"commit ONCE to B typed destination input\",\"kind\":\"proposition\"},{\"symbol\":\"C\",\"text\":\"Looper actual provider turn via existing local controller\",\"source_quote\":\"Looper actual provider turn via existing local controller\",\"kind\":\"proposition\"}],\"premises\":[\"(and A C)\",\"(implies (and A C) B)\"],\"conclusion\":\"unresolved\",\"identities\":[],\"flows\":[{\"id\":\"flow-0\",\"rule\":\"and_introduction\",\"premises\":[\"A\",\"C\"],\"conclusion\":\"(and A C)\"},{\"id\":\"flow-1\",\"rule\":\"modus_ponens\",\"premises\":[\"(and A C)\",\"(implies (and A C) B)\"],\"conclusion\":\"B\"}],\"compositions\":[{\"kind\":\"chain\",\"members\":[\"A\",\"C\",\"B\"]}],\"unresolved\":[\"Does A imply C?\",\"Is B actually committed?\"]}}"
+      }
+    }
+  ],
+  "created": 1791515999,
+  "model": "Qwen3.5-9B-Q4_K_M",
+  "system_fingerprint": "b1-bd4f514",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 347,
+    "prompt_tokens": 2673,
+    "total_tokens": 3020,
+    "prompt_tokens_details": {
+      "cached_tokens": 548
+    }
+  },
+  "id": "chatcmpl-ji94rDOKdc3MxPwjG8wEzHpg7KucuWeD",
+  "timings": {
+    "cache_n": 548,
+    "prompt_n": 2125,
+    "prompt_ms": 7117.606,
+    "prompt_per_token_ms": 3.349461647058823,
+    "prompt_per_second": 298.5554412537025,
+    "predicted_n": 347,
+    "predicted_ms": 73535.61,
+    "predicted_per_token_ms": 212.5306647398844,
+    "predicted_per_second": 4.705203370176708
+  }
+}
